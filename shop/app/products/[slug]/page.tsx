@@ -62,12 +62,55 @@ export default async function ProductPage({ params }: Props) {
     },
   };
 
+  const faqsMap: Record<string, { q: string; a: string }[]> = {
+    "freelancer-client-crm": [
+      { q: "Do I need any special Notion plan?", a: "No — the free Notion plan is enough. You just need a Notion account, which is free to create at notion.so." },
+      { q: "How long does setup take?", a: "Most people are up and running in 15-20 minutes. Duplicate the template, delete the sample data, and add your first real client." },
+      { q: "Can I share it with a VA or team member?", a: "Yes. On the free Notion plan you can share with up to 10 guests. The CRM is fully sharable." },
+      { q: "Does it work for my type of freelance work?", a: "Yes — the CRM is built for any service-based freelancer: designers, developers, marketers, consultants, coaches, writers, and more." },
+    ],
+    "solopreneur-os": [
+      { q: "What if I don't use all sections?", a: "Start with just the goal planner and revenue dashboard. The template is modular — use what helps, ignore what doesn't. Delete sections you don't need." },
+      { q: "How is this different from the Freelancer CRM?", a: "The CRM focuses on client pipeline and invoicing. The Solopreneur OS is the full picture: goals, content, revenue, tasks. Get both if you want a complete setup." },
+      { q: "Is the revenue dashboard automatic?", a: "You input your revenue and expenses. The dashboard auto-calculates profit, margins, and monthly totals using Notion's built-in formulas." },
+    ],
+    "ai-prompt-pack-pro": [
+      { q: "What format does the pack come in?", a: "You get a Notion page you can duplicate and a downloadable PDF. Both contain all 200 prompts organized by category." },
+      { q: "Will these prompts work with my AI tool?", a: "Yes — all prompts are tested with Claude, ChatGPT, and Gemini. They work with any instruction-following AI." },
+      { q: "Can I edit and customize the prompts?", a: "Absolutely. Every prompt has bracketed placeholders for you to fill in your specifics." },
+    ],
+    "sop-starter-pack": [
+      { q: "What formats do the SOPs come in?", a: "You get both a Notion page (with duplicate access) and a Google Docs folder. Use whichever fits your workflow." },
+      { q: "Can I customize the SOPs for my business?", a: "Yes — the templates are a starting structure. Rename them, add your specific steps, remove what doesn't apply." },
+      { q: "I'm a solo operator with no team. Are SOPs still useful?", a: "Yes — SOPs are for you as much as for your team. They help you stay consistent and eventually delegate without long explanations." },
+    ],
+  };
+
+  const productFaqs = faqsMap[slug];
+  const faqJsonLd = productFaqs
+    ? {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        mainEntity: productFaqs.map((faq) => ({
+          "@type": "Question",
+          name: faq.q,
+          acceptedAnswer: { "@type": "Answer", text: faq.a },
+        })),
+      }
+    : null;
+
   return (
     <>
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
+      {faqJsonLd && (
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
+        />
+      )}
       <MobileStickyBuy productSlug={product.slug} productName={product.name} price={product.price} />
       <Header />
 
