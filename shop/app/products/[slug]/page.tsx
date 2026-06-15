@@ -3,6 +3,7 @@ import Link from "next/link";
 import { getProduct, formatPrice, products } from "@/lib/products";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import CheckoutButton from "@/components/CheckoutButton";
 import type { Metadata } from "next";
 
 type Props = { params: Promise<{ slug: string }> };
@@ -133,15 +134,7 @@ export default async function ProductPage({ params }: Props) {
                 <li className="flex items-center gap-2"><span className="text-green-500">✓</span> 30-day money-back guarantee</li>
               </ul>
 
-              <form action="/api/checkout" method="POST">
-                <input type="hidden" name="productSlug" value={product.slug} />
-                <button
-                  type="submit"
-                  className="w-full bg-gray-900 text-white font-semibold py-3.5 rounded-xl hover:bg-gray-700 transition-colors text-sm"
-                >
-                  Buy Now — {formatPrice(product.price)}
-                </button>
-              </form>
+              <CheckoutButton productSlug={product.slug} price={product.price} />
 
               <p className="text-xs text-gray-400 text-center">
                 Secure checkout powered by Lemon Squeezy. Accepts all major cards.
