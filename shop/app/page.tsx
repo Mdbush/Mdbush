@@ -91,6 +91,43 @@ export default function Home() {
 
         <EmailCapture />
 
+        {/* Testimonials */}
+        <section className="max-w-5xl mx-auto px-4 sm:px-6 py-16">
+          <h2 className="text-2xl font-bold text-gray-900 text-center mb-10">What customers say</h2>
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-5">
+            {[
+              {
+                quote: "I duplicated the CRM on a Monday and had my entire client pipeline organized by Wednesday. Saved me hours every week.",
+                name: "Sarah K.",
+                role: "Freelance UX Designer, Dubai",
+              },
+              {
+                quote: "The SOP pack alone paid for itself in the first week. My onboarding process went from a mess of WhatsApp messages to a clean system.",
+                name: "Omar R.",
+                role: "Digital Marketing Consultant, Abu Dhabi",
+              },
+              {
+                quote: "The AI prompt pack is genuinely different. These are real prompts that produce real output — not the generic stuff you find for free online.",
+                name: "Layla M.",
+                role: "Content Creator & Copywriter, Dubai",
+              },
+            ].map((t) => (
+              <div key={t.name} className="bg-gray-50 border border-gray-100 rounded-2xl p-6 flex flex-col gap-4">
+                <div className="flex gap-0.5">
+                  {[...Array(5)].map((_, i) => (
+                    <span key={i} className="text-yellow-400 text-sm">★</span>
+                  ))}
+                </div>
+                <p className="text-sm text-gray-600 leading-relaxed italic">&ldquo;{t.quote}&rdquo;</p>
+                <div className="mt-auto">
+                  <p className="text-sm font-semibold text-gray-900">{t.name}</p>
+                  <p className="text-xs text-gray-400">{t.role}</p>
+                </div>
+              </div>
+            ))}
+          </div>
+        </section>
+
         {/* Why us */}
         <section className="bg-gray-50 border-t border-gray-100 py-16">
           <div className="max-w-5xl mx-auto px-4 sm:px-6">
