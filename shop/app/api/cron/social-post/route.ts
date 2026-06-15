@@ -22,6 +22,15 @@ const posts = [
   {
     text: `Freelancers in the UAE: you're undercharging.\n\nNot because your work isn't worth more — because your process looks unprofessional.\n\nProper CRM + proposal templates + SOPs = clients take you more seriously = higher rates.\n\nAll three, bundled: ${SITE_URL}\n\n#Freelance #UAE #Dubai #SoloKit`,
   },
+  {
+    text: `10 free AI prompts for freelancers — no email required.\n\nProposal writing, follow-up emails, invoice reminders, LinkedIn bios, scope creep replies, and more.\n\nCopy-paste, fill in the brackets, use immediately.\n\n→ ${SITE_URL}/free\n\n#AI #ChatGPT #Freelance #UAE #SoloKit`,
+  },
+  {
+    text: `Why UAE freelancers stay stuck at AED 10K/month:\n\nFor every billable hour, they spend 2-4 more hours on:\n→ Chasing leads manually\n→ Writing proposals from scratch\n→ Tracking projects in their head\n→ Sending invoice reminders late\n\nThat's 40-80 hours/month of unpaid work.\n\nThe fix isn't working harder. It's systems.\n\nFull breakdown: ${SITE_URL}/blog/freelance-systems-uae\n\n#Freelance #UAE #Productivity #SoloKit`,
+  },
+  {
+    text: `The most important client SOP you're not using:\n\nClient offboarding.\n\nMost freelancers end a project with "that's a wrap" and nothing else.\n\nA proper offboarding SOP:\n✅ Final deliverables checklist\n✅ Testimonial request\n✅ Referral ask\n✅ Follow-up date (3-6 months)\n\nThis single process generates 20-30% of future revenue.\n\nFull guide: ${SITE_URL}/blog/sop-templates-freelancers-online-business\n\n#Freelance #SOP #BusinessSystems #SoloKit`,
+  },
 ];
 
 function getPostIndex(): number {
