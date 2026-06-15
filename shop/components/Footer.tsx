@@ -10,6 +10,7 @@ export default function Footer() {
             <Link href="/about" className="hover:text-gray-900 transition-colors">About</Link>
             <Link href="/blog" className="hover:text-gray-900 transition-colors">Blog</Link>
             <Link href="/free" className="hover:text-gray-900 transition-colors">Free Prompts</Link>
+            <Link href="/affiliates" className="hover:text-gray-900 transition-colors">Affiliates</Link>
             <a href="mailto:mohamed.bushara@woccars.com" className="hover:text-gray-900 transition-colors">Contact</a>
           </div>
           <div className="flex flex-wrap justify-center gap-x-4 gap-y-1 text-xs text-gray-400">
