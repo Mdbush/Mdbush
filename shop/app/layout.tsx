@@ -23,9 +23,7 @@ export const metadata: Metadata = {
     title: "SoloKit",
     description: "Notion templates, AI prompts & SOPs for freelancers and solopreneurs.",
   },
-  ...(process.env.NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION
-    ? { verification: { google: process.env.NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION } }
-    : {}),
+  verification: { google: "1WaNUPezAWlG0bqkFi4gn9YLZAZsA3mOjjBWtGSs_z0" },
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
