@@ -14,6 +14,9 @@ export default function Header() {
           <Link href="/free" className="text-sm text-gray-600 hover:text-gray-900 transition-colors">
             Free Prompts
           </Link>
+          <Link href="/blog" className="text-sm text-gray-600 hover:text-gray-900 transition-colors">
+            Blog
+          </Link>
           <Link
             href="/#products"
             className="bg-gray-900 text-white text-sm font-semibold px-4 py-1.5 rounded-lg hover:bg-gray-700 transition-colors"

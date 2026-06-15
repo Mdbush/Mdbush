@@ -1,0 +1,198 @@
+import Link from "next/link";
+import Header from "@/components/Header";
+import Footer from "@/components/Footer";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Best Notion Templates for Freelancers in the UAE (2026) — SoloKit",
+  description:
+    "Stop rebuilding your client tracker, invoice log, and project board every time you start a new project. These Notion templates save UAE freelancers 10+ hours a month.",
+  openGraph: {
+    title: "Best Notion Templates for Freelancers in the UAE (2026)",
+    description: "Save 10+ hours a month with these ready-to-use Notion templates for UAE freelancers.",
+    type: "article",
+  },
+};
+
+export default function Article() {
+  return (
+    <>
+      <Header />
+
+      <main className="flex-1 max-w-2xl mx-auto px-4 sm:px-6 py-14">
+        <Link href="/blog" className="text-sm text-gray-400 hover:text-gray-700 transition-colors mb-8 inline-block">
+          ← Blog
+        </Link>
+
+        <div className="mb-8">
+          <div className="flex items-center gap-3 mb-4">
+            <span className="text-xs font-semibold text-gray-400 uppercase tracking-widest">Notion</span>
+            <span className="text-gray-200">·</span>
+            <span className="text-xs text-gray-400">June 12, 2026</span>
+            <span className="text-gray-200">·</span>
+            <span className="text-xs text-gray-400">5 min read</span>
+          </div>
+          <h1 className="text-3xl sm:text-4xl font-bold text-gray-900 leading-tight mb-4">
+            Best Notion Templates for Freelancers in the UAE (2026)
+          </h1>
+          <p className="text-lg text-gray-500 leading-relaxed">
+            Most freelancers in the UAE are running their business out of WhatsApp, scattered notes, and memory.
+            That's why projects fall through the cracks, invoices go unpaid, and burnout hits earlier than it should.
+          </p>
+        </div>
+
+        <div className="prose prose-gray max-w-none text-gray-700 leading-relaxed space-y-6">
+
+          <p>
+            Notion fixes all of that — but only if you have the right setup. The blank canvas is a curse, not a feature.
+            Nobody has time to build a full freelance OS from scratch.
+          </p>
+
+          <p>
+            I've tested dozens of Notion setups over two years. These are the only templates worth using.
+          </p>
+
+          <h2 className="text-xl font-bold text-gray-900 mt-10 mb-3">1. Client CRM (The Most Important One)</h2>
+
+          <p>
+            Every freelancer needs a place to track leads, ongoing projects, and follow-ups. Without it, you're
+            guessing who to chase up and when.
+          </p>
+
+          <p>
+            A good client CRM template should include:
+          </p>
+
+          <ul className="list-disc pl-5 space-y-1 text-gray-600">
+            <li>A deal pipeline (Lead → Proposal Sent → In Progress → Invoiced → Done)</li>
+            <li>Revenue tracking per client</li>
+            <li>Project timeline with milestones</li>
+            <li>Follow-up reminders</li>
+            <li>Invoice log with overdue flags</li>
+          </ul>
+
+          <p>
+            The{" "}
+            <Link href="/products/freelancer-client-crm" className="text-gray-900 font-semibold underline underline-offset-2 hover:text-gray-600">
+              SoloKit Freelancer Client CRM
+            </Link>{" "}
+            covers all of this in one Notion workspace you can duplicate and use immediately.
+            It also comes with 10 email follow-up templates, so you're never staring at a blank screen
+            when it's time to chase a late invoice.
+          </p>
+
+          <div className="bg-gray-50 border border-gray-200 rounded-2xl p-5 my-6">
+            <p className="text-sm font-semibold text-gray-900 mb-1">📋 Freelancer Client CRM — AED 175</p>
+            <p className="text-sm text-gray-500 mb-3">
+              Client database, project tracker, invoice log, and 10 email templates. One-time purchase.
+            </p>
+            <Link
+              href="/products/freelancer-client-crm"
+              className="inline-block bg-gray-900 text-white text-sm font-semibold px-5 py-2 rounded-xl hover:bg-gray-700 transition-colors"
+            >
+              Get it →
+            </Link>
+          </div>
+
+          <h2 className="text-xl font-bold text-gray-900 mt-10 mb-3">2. Solopreneur OS (For the Full Picture)</h2>
+
+          <p>
+            If you're running a solo business — not just freelancing but building something — you need more than
+            a client tracker. You need a place to manage tasks, content, revenue, and goals in one place.
+          </p>
+
+          <p>
+            The trap most people fall into: they have a CRM in Notion, a content calendar in Google Sheets,
+            a goal tracker in a notes app, and their finances in email threads. Context switching between
+            tools kills at least 2 hours a week.
+          </p>
+
+          <p>
+            The{" "}
+            <Link href="/products/solopreneur-os" className="text-gray-900 font-semibold underline underline-offset-2 hover:text-gray-600">
+              Solopreneur OS
+            </Link>{" "}
+            brings all of this into one workspace. It has a 90-day goal planner, a content calendar for
+            newsletter, social, and YouTube, a daily planning system, and a revenue/expense dashboard that
+            auto-calculates profit.
+          </p>
+
+          <div className="bg-gray-50 border border-gray-200 rounded-2xl p-5 my-6">
+            <p className="text-sm font-semibold text-gray-900 mb-1">🚀 Solopreneur OS — AED 249</p>
+            <p className="text-sm text-gray-500 mb-3">
+              All-in-one workspace for solo business owners. Revenue dashboard, 90-day goals, content calendar.
+            </p>
+            <Link
+              href="/products/solopreneur-os"
+              className="inline-block bg-gray-900 text-white text-sm font-semibold px-5 py-2 rounded-xl hover:bg-gray-700 transition-colors"
+            >
+              Get it →
+            </Link>
+          </div>
+
+          <h2 className="text-xl font-bold text-gray-900 mt-10 mb-3">How to Actually Use Notion Templates</h2>
+
+          <p>
+            Most people buy or download a template, open it once, feel overwhelmed by the structure,
+            and never use it. Here's how to avoid that:
+          </p>
+
+          <ol className="list-decimal pl-5 space-y-3 text-gray-600">
+            <li>
+              <strong className="text-gray-900">Duplicate it into your workspace first.</strong> Don't edit the original.
+              Click the three dots → Duplicate Page.
+            </li>
+            <li>
+              <strong className="text-gray-900">Delete the sample data immediately.</strong> Nothing kills adoption
+              faster than a template full of fake clients and fake projects.
+            </li>
+            <li>
+              <strong className="text-gray-900">Add one real thing on day one.</strong> One actual client. One real project.
+              The template becomes yours the moment real data is in it.
+            </li>
+            <li>
+              <strong className="text-gray-900">Update it every Monday morning.</strong> 10 minutes reviewing your
+              pipeline and flagging overdue invoices will change your business.
+            </li>
+          </ol>
+
+          <h2 className="text-xl font-bold text-gray-900 mt-10 mb-3">Free vs. Paid Templates</h2>
+
+          <p>
+            Free templates are fine to start with — Notion's own template gallery has decent options.
+            The problem is they're built for a generic audience, which means they're either too simple
+            (basic task list) or too complex (built for teams of 20).
+          </p>
+
+          <p>
+            Paid templates built for a specific use case — like a freelancer in the UAE managing
+            AED-denominated invoices — are worth the investment. You get something that works out of the box,
+            built by someone who's actually done the thing.
+          </p>
+
+          <div className="bg-gray-900 text-white rounded-2xl p-6 mt-10">
+            <p className="text-sm font-semibold text-gray-300 mb-1">Ready to get organized?</p>
+            <p className="text-xl font-bold mb-3">Start with the Freelancer Client CRM</p>
+            <p className="text-gray-400 text-sm mb-4">
+              AED 175. Instant access. 30-day money-back guarantee.
+            </p>
+            <Link
+              href="/products/freelancer-client-crm"
+              className="inline-block bg-white text-gray-900 text-sm font-semibold px-6 py-2.5 rounded-xl hover:bg-gray-100 transition-colors"
+            >
+              Get the CRM →
+            </Link>
+          </div>
+        </div>
+
+        <div className="mt-12 pt-8 border-t border-gray-100">
+          <Link href="/blog" className="text-sm text-gray-400 hover:text-gray-700 transition-colors">
+            ← Back to Blog
+          </Link>
+        </div>
+      </main>
+
+      <Footer />
+    </>
+  );
+}
