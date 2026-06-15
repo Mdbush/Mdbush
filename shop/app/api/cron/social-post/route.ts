@@ -3,63 +3,380 @@ import { NextResponse } from "next/server";
 const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? "https://solokit.cloud";
 const FB_PAGE_ID = "1098756576664555";
 
+// Educational, expert-voice posts — not ads
 const posts = [
+  // ── TIPS & INSIGHTS ──
   {
-    text: `5 signs you need a Freelancer CRM:\n\n1. You track clients in your head\n2. Invoices go out late\n3. You forget follow-ups\n4. Projects overlap\n5. Every client = starting from scratch\n\nFix it: ${SITE_URL}/products/freelancer-client-crm\n\n#Freelance #SoloKit #Notion #UAE`,
+    text: `Most UAE freelancers lose 2-3 hours every day on things that should take 20 minutes.
+
+Not because they're slow. Because they have no system.
+
+The three biggest time drains I see:
+→ Manually tracking who owes money
+→ Writing proposals from scratch
+→ Re-explaining the same onboarding steps
+
+Each one is a 1-hour fix. Build the system once, save the hour forever.
+
+What's the one thing in your business you're still doing manually?
+
+#FreelanceUAE #Productivity #Solopreneur #Dubai`,
   },
   {
-    text: `Most freelancers use AI wrong.\n\nThey type "write me a proposal" and get garbage back.\n\nThe fix is a better prompt — not a better AI.\n\n200 tested prompts for proposals, emails, content & strategy: ${SITE_URL}/products/ai-prompt-pack-pro\n\n#AI #ChatGPT #Freelance #SoloKit`,
+    text: `Honest truth about freelancing in Dubai:
+
+Your rate is not your income.
+
+AED 300/hour sounds great until you account for:
+→ 2 weeks unpaid vacation = AED 0
+→ Health insurance: ~AED 400/month
+→ Freelance visa renewal: ~AED 600/month averaged
+→ Slow months: 15% buffer minimum
+
+To take home AED 20K/month you need to bill ~AED 25,600/month.
+
+That's the number most people ignore when they set rates.
+
+#FreelanceUAE #FreelanceTips #DubaiFreelancer #SoloKit`,
   },
   {
-    text: `Your freelance business should run without you.\n\nThat's what SOPs do.\n\n50 ready-to-use Standard Operating Procedures for:\n→ Client onboarding\n→ Content creation\n→ Finance & invoicing\n→ Hiring & delegation\n\nEditable in Notion or Google Docs: ${SITE_URL}/products/sop-starter-pack\n\n#SOPs #Freelance #SoloKit #Productivity`,
+    text: `Stop pitching services. Start selling outcomes.
+
+"I design websites" → weak
+"I build websites that convert visitors into clients" → stronger
+"I built a landing page for a Dubai consultant that booked 8 clients in the first month" → wins
+
+Clients don't buy what you do. They buy what they get.
+
+Every time you update your proposal, ask: "Does this describe the result, or just the task?"
+
+#FreelanceTips #UAE #ClientAcquisition #SoloKit`,
   },
   {
-    text: `The difference between a $2k/month freelancer and a $10k/month freelancer:\n\nSystems.\n\nNot skills. Not experience. Not luck.\n\nJust repeatable systems that let you work faster, charge more, and stress less.\n\nSoloKit gives you those systems, ready to plug in: ${SITE_URL}\n\n#Freelance #Solopreneur #SoloKit #UAE`,
+    text: `I've seen UAE freelancers get paid in 1 day and in 6 months.
+
+The difference? The contract.
+
+The 3 clauses that get you paid faster:
+1. 50% upfront before work starts
+2. Late payment fee (2% per week after due date)
+3. Work pauses if payment is 14+ days overdue
+
+Most clients pay immediately once they see clause 3. They don't want you to stop.
+
+#FreelanceUAE #FreelanceContracts #GetPaid #SoloKit`,
   },
   {
-    text: `Running your entire business from WhatsApp chats and sticky notes?\n\nThere's a better way.\n\nThe Solopreneur OS puts everything in one Notion workspace:\n✅ Revenue dashboard\n✅ 90-day goal planner\n✅ Content calendar\n✅ Daily planning system\n✅ Project pipeline\n\nAED 249 → ${SITE_URL}/products/solopreneur-os\n\n#Notion #Solopreneur #SoloKit #Productivity`,
+    text: `Client fired you? Good.
+
+That sounds harsh but hear me out.
+
+The clients worth keeping:
+✓ Pay on time (or early)
+✓ Respect your process
+✓ Give clear feedback
+✓ Refer you to others
+
+The clients worth firing:
+✗ Pay late every time
+✗ Add scope without asking
+✗ Disappear then demand overnight delivery
+✗ Negotiate after the contract is signed
+
+One good client at AED 20K/month is worth more than 5 bad ones at AED 5K.
+
+#FreelanceUAE #ClientManagement #Dubai #SoloKit`,
   },
   {
-    text: `Freelancers in the UAE: you're undercharging.\n\nNot because your work isn't worth more — because your process looks unprofessional.\n\nProper CRM + proposal templates + SOPs = clients take you more seriously = higher rates.\n\nAll three, bundled: ${SITE_URL}\n\n#Freelance #UAE #Dubai #SoloKit`,
+    text: `The fastest way to double your freelance income in UAE:
+
+Stop finding new clients.
+
+Keep the ones you have.
+
+A client who pays AED 10K for a project is worth AED 50K+ over 2 years if you:
+→ Deliver great work
+→ Follow up 3 months later
+→ Offer a retainer or next phase
+→ Ask for a referral
+
+Most freelancers spend 80% of their time on client acquisition and 20% on client retention.
+
+Flip that ratio.
+
+#FreelanceUAE #ClientRetention #Retainers #SoloKit`,
   },
   {
-    text: `10 free AI prompts for freelancers — no email required.\n\nProposal writing, follow-up emails, invoice reminders, LinkedIn bios, scope creep replies, and more.\n\nCopy-paste, fill in the brackets, use immediately.\n\n→ ${SITE_URL}/free\n\n#AI #ChatGPT #Freelance #UAE #SoloKit`,
+    text: `Free Notion template for UAE freelancers:
+
+10 AI prompts you can use today:
+→ Proposal that wins clients
+→ Scope creep reply (polite but firm)
+→ Invoice reminder (not awkward)
+→ Client onboarding welcome email
+→ LinkedIn bio that gets attention
+
+No email required. No upsell on the page.
+
+Just copy, fill the brackets, use immediately.
+
+${SITE_URL}/free
+
+#FreelanceUAE #AITools #ChatGPT #SoloKit`,
   },
   {
-    text: `Why UAE freelancers stay stuck at AED 10K/month:\n\nFor every billable hour, they spend 2-4 more hours on:\n→ Chasing leads manually\n→ Writing proposals from scratch\n→ Tracking projects in their head\n→ Sending invoice reminders late\n\nThat's 40-80 hours/month of unpaid work.\n\nThe fix isn't working harder. It's systems.\n\nFull breakdown: ${SITE_URL}/blog/freelance-systems-uae\n\n#Freelance #UAE #Productivity #SoloKit`,
+    text: `UAE freelance reality check:
+
+Most freelancers don't fail because of bad work.
+
+They fail because:
+→ No consistent lead source
+→ Feast-or-famine income
+→ Clients that take 90 days to pay
+→ No system to repeat what's working
+
+Systems don't replace skill. They protect it.
+
+What's the biggest operational headache in your freelance business right now?
+
+#FreelanceUAE #FreelanceTips #Dubai #SoloKit`,
   },
   {
-    text: `The most important client SOP you're not using:\n\nClient offboarding.\n\nMost freelancers end a project with "that's a wrap" and nothing else.\n\nA proper offboarding SOP:\n✅ Final deliverables checklist\n✅ Testimonial request\n✅ Referral ask\n✅ Follow-up date (3-6 months)\n\nThis single process generates 20-30% of future revenue.\n\nFull guide: ${SITE_URL}/blog/sop-templates-freelancers-online-business\n\n#Freelance #SOP #BusinessSystems #SoloKit`,
+    text: `5 things successful UAE freelancers do differently:
+
+1. They track revenue weekly, not monthly
+   (Monthly is too late to course-correct)
+
+2. They have a CRM — even a simple Notion table
+   (No client falls through the cracks)
+
+3. They raise rates every 12 months
+   (Inflation in Dubai is real)
+
+4. They have 2 months expenses in reserve
+   (Slow months exist — plan for them)
+
+5. They get referrals systematically
+   (Not just when they remember to ask)
+
+Which one are you still not doing?
+
+#FreelanceUAE #Solopreneur #DubaiFreelancer #SoloKit`,
   },
   {
-    text: `Your freelance proposal is probably about you.\n\nIt shouldn't be.\n\nThe proposals that win:\n→ Start with the client's problem\n→ Show your specific approach to solving it\n→ Give a week-by-week timeline\n→ End with one clear next step\n\nThe proposals that lose:\n→ Start with "I am a freelancer with X years of experience…"\n→ List every tool you use\n→ Say "looking forward to working with you"\n\nFull breakdown (+ 5 common mistakes): ${SITE_URL}/blog/freelance-proposal-tips-uae\n\n#Freelance #Proposals #ClientWin #SoloKit #UAE`,
+    text: `The hardest part of freelancing in Dubai isn't getting clients.
+
+It's getting GOOD clients.
+
+Red flags before you sign:
+🚩 "This is a simple project" (it never is)
+🚩 "We have a tight budget" before even discussing scope
+🚩 "We've worked with 3 freelancers who all disappointed us"
+🚩 "Can you do a small test project for free?"
+🚩 No contract — "we work on trust here"
+
+You can say no. Your pipeline is worth protecting.
+
+#FreelanceUAE #ClientVetting #Dubai #SoloKit`,
   },
   {
-    text: `Late invoice payments are the #1 cash flow killer for freelancers.\n\nHere's a 4-step follow-up sequence that works:\n\nDay 1 (due date): Friendly reminder\nDay 7: Polite but direct follow-up\nDay 14: Firm, professional escalation\nDay 30: Final notice with consequence\n\nMost clients pay by day 14. The ones who don't are usually testing whether you'll follow up at all.\n\nFull guide + copy-paste email templates: ${SITE_URL}/blog/late-payment-freelance-uae\n\n#Freelance #Invoicing #CashFlow #UAE #SoloKit`,
+    text: `What a AED 50K/month freelancer's week looks like vs AED 10K/month:
+
+AED 10K/month:
+→ Responds to every inquiry immediately
+→ Proposes hourly rates
+→ Does revisions until client is "happy"
+→ No follow-up system
+→ Takes any project
+
+AED 50K/month:
+→ Has a discovery call before quoting
+→ Sells project packages
+→ Limits revisions to 2 rounds (in writing)
+→ Follows up with past clients quarterly
+→ Turns down bad-fit projects
+
+Same skills. Different systems.
+
+#FreelanceUAE #FreelanceTips #Solopreneur #SoloKit`,
   },
   {
-    text: `The first 72 hours of a project tell you everything.\n\nIf onboarding is messy → the project will be messy.\nIf it's professional → clients trust you from day one.\n\n5-step client onboarding process:\n\n1. Welcome email (within 24 hours of signing)\n2. Kickoff call (within 48-72 hours)\n3. Written project brief — 1 page\n4. Shared workspace for progress tracking\n5. Week 1 check-in\n\nSkipping steps 3-5 is where scope creep comes from.\n\nFull guide + email templates: ${SITE_URL}/blog/client-onboarding-freelance-uae\n\n#Freelance #ClientManagement #UAE #SoloKit`,
+    text: `LinkedIn tip for UAE freelancers:
+
+Post about your client results, not your services.
+
+Instead of: "I offer social media management services"
+
+Post: "Helped a Dubai F&B brand grow from 2K to 18K followers in 4 months. Here's the 3-part content strategy that did it."
+
+One gets scrolled past. The other gets saved, shared, and leads to DMs.
+
+The best freelance marketing isn't marketing. It's proof.
+
+#FreelanceUAE #LinkedIn #ContentMarketing #SoloKit`,
   },
   {
-    text: `"Freelancing earns more than a salary in the UAE."\n\nOnly if you do the math correctly.\n\nA AED 15,000 salary with full benefits is often worth AED 19,000–22,000 total (housing, health, gratuity, visa).\n\nFreelance overhead costs:\n→ Permit/visa: AED 7,000–15,000/year\n→ Health insurance: AED 3,000–8,000/year\n→ Accounting: AED 3,000–8,000/year\n→ Income gaps: 10–15% buffer needed\n\nBreak-even to replace a AED 20K salary package:\nYou need AED 26,450/month in freelance revenue — before you're "better off."\n\nFull breakdown + calculator: ${SITE_URL}/blog/freelance-vs-salary-uae\n\n#Freelance #UAE #Dubai #SoloKit #Salary`,
+    text: `Freelance visa reality in UAE (2026):
+
+The cheapest legal way to work independently:
+→ SHAMS or RAKEZ: ~AED 6,000-7,500/year for permit
+→ Residency visa on top: ~AED 3,500-5,000
+→ Total first year: ~AED 10,000-16,000
+
+After that, renewal is just the annual permit fee.
+
+Worth it? If you bill AED 15K+/month: yes, easily.
+Under AED 10K/month: consider if the math works for you first.
+
+Full breakdown: ${SITE_URL}/blog/freelance-visa-uae
+
+#FreelanceUAE #UAEVisa #DubaiFreelancer #SoloKit`,
   },
   {
-    text: `How much does it actually cost to get a freelance visa in the UAE?\n\nRealistic breakdown:\n→ Freelance permit: AED 6,000–8,000/year\n→ Residency visa: AED 3,500–5,000\n→ Medical + Emirates ID: ~AED 800\n→ Business bank account: AED 0–2,000\n\nTotal first year: AED 10,000–16,000\n\nMost popular options:\n• Lowest cost: RAKEZ or Shams\n• Best for media/marketing: Dubai Media City\n• Best for tech: Dubai Silicon Oasis\n\nFull step-by-step guide: ${SITE_URL}/blog/freelance-visa-uae\n\n#UAE #FreelanceVisa #DubaiFreelancer #SoloKit #Freelance`,
+    text: `Most freelance proposals get rejected in the first paragraph.
+
+Not because the price is wrong.
+
+Because the opening line is always the same:
+
+"My name is [X] and I am a freelance [Y] with [Z] years of experience."
+
+The client doesn't care. Not yet.
+
+Better opening: Start with their problem.
+
+"Your website currently has no way to capture leads. This proposal outlines how to fix that in 3 weeks."
+
+Same project. Completely different first impression.
+
+Full guide: ${SITE_URL}/blog/freelance-proposal-tips-uae
+
+#FreelanceProposals #UAE #ClientWork #SoloKit`,
   },
   {
-    text: `Do freelancers pay tax in the UAE?\n\nShort answer: barely.\n\nHere's the full picture:\n\n✅ Personal income tax: 0% — none, forever\n✅ Corporate tax if revenue < AED 375K/yr: 0% — exempt\n⚠️ Corporate tax if revenue > AED 375K/yr: 9% on profit\n⚠️ VAT: required if UAE clients > AED 375K/yr\n\nMost freelancers in Dubai earn under the threshold and pay absolutely nothing.\n\nBut you MUST register for corporate tax on EmaraTax — even if you owe zero.\n\nFull 2026 tax guide: ${SITE_URL}/blog/freelance-tax-uae\n\n#UAE #FreelancerTax #DubaiFreelancer #TaxFree #SoloKit`,
+    text: `Unpopular opinion: UAE freelancers should raise their rates right now.
+
+Not because you can charge anything you want.
+
+Because the market has moved.
+
+Mid-level designer rates in Dubai:
+2022: AED 100-150/hr
+2026: AED 180-280/hr
+
+Mid-level developer rates:
+2022: AED 150-200/hr
+2026: AED 250-400/hr
+
+If you haven't raised rates since 2022 or 2023, you've taken a pay cut.
+
+January is the easiest time to raise. "New year, updated rates." Give clients 30 days notice.
+
+#FreelanceUAE #FreelanceRates #DubaiFreelancer #SoloKit`,
   },
   {
-    text: `Best bank accounts for UAE freelancers in 2026:\n\n🏆 Emirates NBD — most trusted, AED 3K min balance\n⚡ Liv — zero balance, opens in minutes on your phone\n📊 Mashreq Neo — zero balance + built-in expense tracking\n💼 Wio Bank — business account, invoicing, multi-currency\n🌍 HSBC — best for international, AED 25K min balance\n\nOur pick for most freelancers:\nStart with Liv (free, instant), upgrade to Emirates NBD business when you have your trade license.\n\nAdd Wise as a second account for international client payments.\n\nFull comparison: ${SITE_URL}/blog/best-banks-freelancers-uae\n\n#UAE #FreelancerBanking #DubaiFreelancer #SoloKit #Freelance`,
+    text: `The 3-email sequence that gets UAE freelancers paid faster:
+
+Email 1 (day invoice is due):
+"Hi [name], just confirming you received invoice #X due today. Let me know if you need anything."
+
+Email 2 (7 days overdue):
+"Invoice #X is now 7 days past due. Can you confirm an ETA for payment?"
+
+Email 3 (14 days overdue):
+"Per our contract, a 2% late fee is now applied. I've sent an updated invoice. Please confirm payment by [date]."
+
+Most get paid at Email 1 or 2. Email 3 is for people who actually need to see consequences.
+
+#FreelanceUAE #GetPaid #Invoicing #SoloKit`,
   },
   {
-    text: `Freelancers in the UAE: here's the formula to calculate your minimum rate.\n\nMost people guess. Here's the math:\n\nStep 1 — Monthly target take-home: AED 20,000\nStep 2 — Add annual overhead:\n→ Visa/permit: AED 7,500\n→ Health insurance: AED 5,000\n→ Software + tools: AED 3,600\n→ Total: ~AED 27,500/yr\nStep 3 — Add 15% income gap buffer\nStep 4 — Divide by billable hours (25/week × 46 weeks = 1,150)\n\nResult: AED 267/hour minimum to take home AED 20K/month.\n\nMost freelancers are charging less than this.\n\nFull rate calculator + market rates by profession: ${SITE_URL}/blog/freelance-rate-calculator-uae\n\n#UAE #FreelanceRates #DubaiFreelancer #Freelance #SoloKit`,
+    text: `Notion for freelancers — the actual setup that works:
+
+Most people download a template and never use it.
+
+What makes it stick:
+1. One database for clients (not a spreadsheet)
+2. Projects linked to clients (not a separate list)
+3. Invoice log with status column (paid/unpaid/overdue)
+4. Weekly revenue number visible on your home page
+5. Daily task list that clears at end of day
+
+That's it. 5 views. One workspace.
+
+We built exactly this: ${SITE_URL}/products/freelancer-client-crm
+
+#Notion #FreelanceUAE #Productivity #SoloKit`,
   },
   {
-    text: `Best freelance platforms for UAE-based freelancers in 2026:\n\n🏆 Upwork — biggest pool, 20% fee (drops to 5% for long-term clients)\n⚡ Fiverr — gig-based, no pitching, good for beginners\n💎 Toptal — top 3% only, $80-200+/hr, 0% fee to freelancer\n🇦🇪 LinkedIn — best for UAE local clients, 0% platform fee\n🌍 Nabbesh — Middle East-focused, AED projects, lower competition\n\nThe right stack:\n→ Starting out: Fiverr + LinkedIn\n→ Mid-level: Upwork + LinkedIn\n→ Senior: Toptal + direct referrals\n\nFull platform comparison: ${SITE_URL}/blog/best-freelance-platforms-uae\n\n#UAE #FreelancePlatforms #DubaiFreelancer #Upwork #SoloKit`,
+    text: `Every UAE freelancer eventually learns this the hard way:
+
+50% upfront. Always.
+
+Not because clients are dishonest.
+Because projects change, decisions change, priorities change.
+
+When a client has paid 50% upfront:
+→ They show up to calls on time
+→ They give feedback faster
+→ They don't ghost when you deliver
+
+The deposit isn't about trust.
+It's about shared commitment to the project.
+
+If a client refuses a deposit, that tells you something important.
+
+#FreelanceUAE #FreelanceTips #ClientManagement #SoloKit`,
   },
   {
-    text: `UAE freelancers: if you start projects without a signed contract, you will get burned.\n\nNot maybe. Will.\n\nThe 9 clauses every freelance contract needs:\n\n1. Scope of Work (what's IN and what's NOT)\n2. Payment terms (50% upfront minimum)\n3. Timeline (pauses if client delays feedback)\n4. Revision policy (cap at 2 rounds)\n5. IP & ownership (transfers on final payment)\n6. Confidentiality (2-3 years)\n7. Termination clause (7-day notice, deposit kept)\n8. Governing law (UAE courts, Dubai jurisdiction)\n9. Limitation of liability (capped at project fee)\n\nFull template + example contract language: ${SITE_URL}/blog/freelance-contract-template-uae\n\n#Freelance #UAE #DubaiFreelancer #FreelanceContracts #SoloKit`,
+    text: `How to get your first 3 freelance clients in Dubai with zero budget:
+
+Step 1: Make a list of 20 people you know who work in companies that could use your service.
+
+Step 2: Message them individually. Not a broadcast. Not a pitch deck.
+"Hey [name] — I've started taking on freelance [projects]. If you ever need [X], I'd love to help. Know anyone who might?"
+
+Step 3: Deliver exceptional work for the first client. Ask for a LinkedIn recommendation immediately after.
+
+Step 4: Use that recommendation in your next outreach.
+
+That's the whole playbook.
+
+#FreelanceUAE #GettingClients #Dubai #SoloKit`,
+  },
+  {
+    text: `AI is changing freelancing — but not in the way most people think.
+
+It's not replacing freelancers.
+It's replacing slow freelancers.
+
+A designer who uses AI to generate 20 concept directions in 1 hour beats a designer who presents 3 directions after a week.
+
+A copywriter who uses AI to draft, then edits for voice and accuracy, produces better work faster.
+
+The freelancers who will struggle: those who ignore AI entirely.
+The freelancers who will thrive: those who use it as a productivity layer.
+
+10 free AI prompts for freelancers: ${SITE_URL}/free
+
+#AI #FreelanceUAE #ChatGPT #SoloKit`,
+  },
+  {
+    text: `SOPs are not just for big companies.
+
+If you do something more than twice, write down how you do it.
+
+The 5 SOPs every freelancer needs first:
+1. Client onboarding (first 72 hours of every project)
+2. Proposal → contract → deposit sequence
+3. Revision request handling
+4. Invoice + follow-up sequence
+5. Project closeout + testimonial request
+
+Once these are documented, you can delegate any of them.
+Before they're documented, every project starts from zero.
+
+#FreelanceUAE #SOPs #Productivity #SoloKit`,
   },
 ];
 
