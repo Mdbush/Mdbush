@@ -1,6 +1,7 @@
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import ProductCard from "@/components/ProductCard";
+import EmailCapture from "@/components/EmailCapture";
 import { products } from "@/lib/products";
 
 const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? "https://solokit.cloud";
@@ -87,6 +88,8 @@ export default function Home() {
             ))}
           </div>
         </section>
+
+        <EmailCapture />
 
         {/* Why us */}
         <section className="bg-gray-50 border-t border-gray-100 py-16">
