@@ -173,7 +173,7 @@ export default function StartPage() {
             </div>
 
             <div className="mt-8 flex flex-col items-center gap-3 text-sm text-gray-500">
-              <Link href="/products" className="underline hover:text-gray-800">
+              <Link href="/#products" className="underline hover:text-gray-800">
                 See all products →
               </Link>
               <button onClick={reset} className="underline hover:text-gray-800">
