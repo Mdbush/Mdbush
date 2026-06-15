@@ -36,6 +36,15 @@ const posts = [
     readTime: "6 min read",
     category: "Business",
   },
+  {
+    slug: "sop-templates-freelancers-online-business",
+    title: "Best SOP Templates for Freelancers and Online Businesses (2026)",
+    description:
+      "Stop reinventing your client onboarding and content workflow every time. 50 SOPs that cover every repeatable process in your business.",
+    date: "June 14, 2026",
+    readTime: "5 min read",
+    category: "SOPs & Systems",
+  },
 ];
 
 export default function BlogPage() {
