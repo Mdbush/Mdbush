@@ -43,6 +43,9 @@ const posts = [
   {
     text: `"Freelancing earns more than a salary in the UAE."\n\nOnly if you do the math correctly.\n\nA AED 15,000 salary with full benefits is often worth AED 19,000–22,000 total (housing, health, gratuity, visa).\n\nFreelance overhead costs:\n→ Permit/visa: AED 7,000–15,000/year\n→ Health insurance: AED 3,000–8,000/year\n→ Accounting: AED 3,000–8,000/year\n→ Income gaps: 10–15% buffer needed\n\nBreak-even to replace a AED 20K salary package:\nYou need AED 26,450/month in freelance revenue — before you're "better off."\n\nFull breakdown + calculator: ${SITE_URL}/blog/freelance-vs-salary-uae\n\n#Freelance #UAE #Dubai #SoloKit #Salary`,
   },
+  {
+    text: `How much does it actually cost to get a freelance visa in the UAE?\n\nRealistic breakdown:\n→ Freelance permit: AED 6,000–8,000/year\n→ Residency visa: AED 3,500–5,000\n→ Medical + Emirates ID: ~AED 800\n→ Business bank account: AED 0–2,000\n\nTotal first year: AED 10,000–16,000\n\nMost popular options:\n• Lowest cost: RAKEZ or Shams\n• Best for media/marketing: Dubai Media City\n• Best for tech: Dubai Silicon Oasis\n\nFull step-by-step guide: ${SITE_URL}/blog/freelance-visa-uae\n\n#UAE #FreelanceVisa #DubaiFreelancer #SoloKit #Freelance`,
+  },
 ];
 
 function getPostIndex(): number {

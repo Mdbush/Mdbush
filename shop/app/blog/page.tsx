@@ -99,6 +99,15 @@ const posts = [
     readTime: "7 min read",
     category: "Business",
   },
+  {
+    slug: "freelance-visa-uae",
+    title: "How to Get a Freelance Visa in the UAE (2026 Guide)",
+    description:
+      "Step-by-step guide to getting a freelance permit or visa in the UAE. Covers free zones, costs, renewal, and which permit is right for your situation.",
+    date: "June 15, 2026",
+    readTime: "8 min read",
+    category: "Business",
+  },
 ];
 
 export default function BlogPage() {
