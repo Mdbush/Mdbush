@@ -36,7 +36,7 @@ export default function AffiliatesPage() {
             and earn passive income every time someone buys.
           </p>
           <a
-            href="mailto:mohamed.bushara@woccars.com?subject=SoloKit%20Affiliate%20Program&body=Hi%2C%20I%27d%20like%20to%20join%20the%20SoloKit%20affiliate%20program."
+            href="mailto:md.a.bushara@gmail.com?subject=SoloKit%20Affiliate%20Program&body=Hi%2C%20I%27d%20like%20to%20join%20the%20SoloKit%20affiliate%20program."
             target="_blank"
             rel="noopener noreferrer"
             className="inline-block bg-gray-900 text-white font-semibold px-8 py-3.5 rounded-xl hover:bg-gray-700 transition-colors"
@@ -128,7 +128,7 @@ export default function AffiliatesPage() {
             earn 30% on every sale, get paid monthly.
           </p>
           <a
-            href="mailto:mohamed.bushara@woccars.com?subject=SoloKit%20Affiliate%20Program&body=Hi%2C%20I%27d%20like%20to%20join%20the%20SoloKit%20affiliate%20program."
+            href="mailto:md.a.bushara@gmail.com?subject=SoloKit%20Affiliate%20Program&body=Hi%2C%20I%27d%20like%20to%20join%20the%20SoloKit%20affiliate%20program."
             target="_blank"
             rel="noopener noreferrer"
             className="inline-block bg-gray-900 text-white font-semibold px-8 py-3.5 rounded-xl hover:bg-gray-700 transition-colors"
@@ -136,7 +136,7 @@ export default function AffiliatesPage() {
             Apply by email →
           </a>
           <p className="mt-4 text-xs text-gray-400">
-            Questions? <a href="mailto:mohamed.bushara@woccars.com" className="underline hover:text-gray-600">Email us</a>
+            Questions? <a href="mailto:md.a.bushara@gmail.com" className="underline hover:text-gray-600">Email us</a>
           </p>
         </section>
       </main>

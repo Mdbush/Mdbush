@@ -181,7 +181,7 @@ export default function LandingPage() {
             <CheckoutButton productSlug="sop-starter-pack" price={product.price} />
           </div>
           <p className="mt-4 text-xs text-gray-400">
-            Questions? <a href="mailto:mohamed.bushara@woccars.com" className="underline">Email us</a> — we respond within 24 hours.
+            Questions? <a href="mailto:md.a.bushara@gmail.com" className="underline">Email us</a> — we respond within 24 hours.
           </p>
         </section>
       </main>

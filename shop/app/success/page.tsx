@@ -91,7 +91,7 @@ export default async function SuccessPage({ searchParams }: Props) {
 
         <p className="text-xs text-gray-400 mb-4">
           Questions?{" "}
-          <a href="mailto:mohamed.bushara@woccars.com" className="underline hover:text-gray-600">
+          <a href="mailto:md.a.bushara@gmail.com" className="underline hover:text-gray-600">
             Email us
           </a>{" "}
           — we respond within 24 hours.
