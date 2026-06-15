@@ -1,3 +1,4 @@
+import Link from "next/link";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import ProductCard from "@/components/ProductCard";
@@ -305,6 +306,73 @@ export default function Home() {
                 <h4 className="font-semibold text-gray-900 mb-2">{item.q}</h4>
                 <p className="text-sm text-gray-500 leading-relaxed">{item.a}</p>
               </div>
+            ))}
+          </div>
+        </section>
+
+        {/* Blog teaser */}
+        <section className="max-w-5xl mx-auto px-4 sm:px-6 py-16">
+          <div className="flex items-center justify-between mb-8">
+            <div>
+              <h2 className="text-2xl font-bold text-gray-900">Free guides for UAE freelancers</h2>
+              <p className="text-sm text-gray-500 mt-1">22 practical articles — no fluff</p>
+            </div>
+            <Link href="/blog" className="text-sm font-semibold text-gray-900 hover:text-gray-600 transition-colors shrink-0">
+              All articles →
+            </Link>
+          </div>
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-5">
+            {[
+              {
+                slug: "freelance-visa-uae",
+                title: "How to Get a Freelance Visa in the UAE",
+                category: "Visa & Legal",
+                time: "8 min read",
+              },
+              {
+                slug: "freelance-rate-calculator-uae",
+                title: "Freelance Rate Calculator: How Much Should You Charge?",
+                category: "Pricing",
+                time: "8 min read",
+              },
+              {
+                slug: "freelance-tax-uae",
+                title: "Do Freelancers Pay Tax in the UAE?",
+                category: "Tax & Finance",
+                time: "8 min read",
+              },
+              {
+                slug: "get-freelance-clients-uae",
+                title: "How to Get Freelance Clients in the UAE",
+                category: "Client Acquisition",
+                time: "7 min read",
+              },
+              {
+                slug: "best-ai-tools-uae-freelancers",
+                title: "Best AI Tools for UAE Freelancers in 2026",
+                category: "AI Tools",
+                time: "5 min read",
+              },
+              {
+                slug: "freelance-contract-template-uae",
+                title: "Freelance Contract: 9 Clauses You Must Include",
+                category: "Legal",
+                time: "9 min read",
+              },
+            ].map((post) => (
+              <Link
+                key={post.slug}
+                href={`/blog/${post.slug}`}
+                className="group border border-gray-200 rounded-xl p-5 hover:border-gray-400 hover:shadow-sm transition-all"
+              >
+                <span className="text-xs font-semibold text-gray-400 uppercase tracking-widest block mb-2">
+                  {post.category}
+                </span>
+                <p className="text-sm font-bold text-gray-900 group-hover:text-gray-700 transition-colors leading-snug mb-2">
+                  {post.title}
+                </p>
+                <p className="text-xs text-gray-400">{post.time}</p>
+              </Link>
             ))}
           </div>
         </section>
