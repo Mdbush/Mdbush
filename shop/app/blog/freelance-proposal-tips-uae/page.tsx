@@ -272,6 +272,9 @@ export default function Article() {
               <Link href="/blog/freelance-systems-uae" className="text-sm text-gray-500 hover:text-gray-900 transition-colors underline underline-offset-2">
                 Why Most UAE Freelancers Stay Stuck at AED 10K/Month →
               </Link>
+              <Link href="/blog/client-onboarding-freelance-uae" className="text-sm text-gray-500 hover:text-gray-900 transition-colors underline underline-offset-2">
+                Client Onboarding Process for UAE Freelancers (Step-by-Step) →
+              </Link>
             </div>
           </div>
         </div>
