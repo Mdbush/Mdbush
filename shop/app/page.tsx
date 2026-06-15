@@ -41,133 +41,198 @@ export default function Home() {
       <Header />
 
       <main className="flex-1">
-        {/* Hero */}
-        <section className="max-w-5xl mx-auto px-4 sm:px-6 pt-16 pb-12 text-center">
-          <span className="inline-block bg-gray-100 text-gray-700 text-xs font-semibold px-3 py-1 rounded-full mb-5 uppercase tracking-widest">
-            Digital Tools for Solopreneurs & Freelancers
-          </span>
-          <h1 className="text-4xl sm:text-5xl font-bold text-gray-900 leading-tight max-w-2xl mx-auto">
-            Stop building from scratch.{" "}
-            <span className="text-gray-500">Plug in and go.</span>
-          </h1>
-          <p className="mt-5 text-lg text-gray-500 max-w-xl mx-auto leading-relaxed">
-            Ready-to-use Notion templates, AI prompt packs, and SOP systems built for
-            freelancers and solo business owners who want to move fast.
-          </p>
-          <div className="mt-8 flex flex-col sm:flex-row items-center justify-center gap-3">
-            <a
-              href="#products"
-              className="bg-gray-900 text-white font-semibold px-7 py-3 rounded-xl hover:bg-gray-700 transition-colors text-sm"
-            >
-              Browse Products →
-            </a>
-            <a
-              href="/free"
-              className="border border-gray-300 text-gray-700 font-semibold px-7 py-3 rounded-xl hover:border-gray-500 hover:text-gray-900 transition-colors text-sm"
-            >
-              Get 10 Free AI Prompts
-            </a>
+
+        {/* Hero — dark, punchy, direct */}
+        <section className="bg-gray-950 text-white py-20 px-4 sm:px-6">
+          <div className="max-w-3xl mx-auto text-center">
+            <span className="inline-block bg-white/10 text-white text-xs font-semibold px-3 py-1 rounded-full mb-6 uppercase tracking-widest">
+              🇦🇪 For UAE Freelancers &amp; Solopreneurs
+            </span>
+            <h1 className="text-4xl sm:text-5xl font-bold leading-tight mb-5">
+              Stop running your business from WhatsApp.
+            </h1>
+            <p className="text-lg text-gray-300 max-w-2xl mx-auto leading-relaxed mb-8">
+              Ready-to-use Notion templates, AI prompts, and SOPs for freelancers in Dubai and Abu Dhabi. Save 10+ hours a week, starting today.
+            </p>
+            <div className="flex flex-col sm:flex-row items-center justify-center gap-3 mb-6">
+              <a
+                href="#products"
+                className="bg-white text-gray-900 font-bold px-8 py-3.5 rounded-xl hover:bg-gray-100 transition-colors text-sm w-full sm:w-auto"
+              >
+                Browse Products →
+              </a>
+              <a
+                href="/free"
+                className="border border-white/30 text-white font-semibold px-8 py-3.5 rounded-xl hover:border-white/60 hover:bg-white/5 transition-colors text-sm w-full sm:w-auto"
+              >
+                Get 10 Free Prompts
+              </a>
+            </div>
+            <p className="text-sm text-gray-400">
+              ★★★★★ 4.9/5 · 500+ customers · Instant download · 30-day guarantee
+            </p>
           </div>
-          <p className="mt-3 text-xs text-gray-400">Instant download · 30-day guarantee · No subscription</p>
         </section>
 
-        {/* Social proof bar */}
-        <section className="border-y border-gray-100 bg-gray-50 py-4">
-          <div className="max-w-5xl mx-auto px-4 sm:px-6 flex flex-wrap justify-center gap-x-10 gap-y-2 text-sm text-gray-500">
-            <span>⭐ 4.9/5 average rating</span>
-            <span>📦 500+ happy customers</span>
-            <span>⚡ Instant delivery</span>
-            <span>🔒 Secure checkout via Lemon Squeezy</span>
+        {/* Pain points strip */}
+        <section className="bg-white py-12 px-4 sm:px-6">
+          <div className="max-w-5xl mx-auto">
+            <p className="text-xs font-semibold text-gray-400 uppercase tracking-widest text-center mb-8">
+              Sound familiar?
+            </p>
+            <div className="grid grid-cols-1 sm:grid-cols-3 gap-5">
+              {[
+                {
+                  emoji: "😩",
+                  pain: "Tracking clients across WhatsApp, sticky notes, and spreadsheets",
+                  fix: "→ Freelancer CRM fixes this",
+                },
+                {
+                  emoji: "⏰",
+                  pain: "Writing proposals and emails from scratch every single time",
+                  fix: "→ AI Prompt Pack fixes this",
+                },
+                {
+                  emoji: "🔁",
+                  pain: "No systems — every project starts from square one",
+                  fix: "→ SOP Pack fixes this",
+                },
+              ].map((item) => (
+                <div
+                  key={item.pain}
+                  className="bg-gray-50 border border-gray-100 rounded-2xl p-6 flex flex-col gap-3"
+                >
+                  <span className="text-3xl">{item.emoji}</span>
+                  <p className="text-sm text-gray-600 leading-relaxed">{item.pain}</p>
+                  <p className="text-xs font-semibold text-green-600">{item.fix}</p>
+                </div>
+              ))}
+            </div>
           </div>
         </section>
 
         {/* Products */}
-        <section id="products" className="max-w-5xl mx-auto px-4 sm:px-6 py-16">
-          <div className="mb-10 text-center">
-            <h2 className="text-2xl sm:text-3xl font-bold text-gray-900">All Products</h2>
-            <p className="mt-2 text-gray-500 text-sm">Built for freelancers, tested on real businesses.</p>
-            <a href="/start" className="inline-block mt-3 text-sm text-gray-400 hover:text-gray-700 underline underline-offset-2 transition-colors">
-              Not sure which one? Take 30 seconds to find your fit →
-            </a>
-          </div>
+        <section id="products" className="py-16 px-4 sm:px-6">
+          <div className="max-w-5xl mx-auto">
+            <div className="mb-10 text-center">
+              <h2 className="text-2xl sm:text-3xl font-bold text-gray-900">
+                Everything you need to run a professional solo business
+              </h2>
+              <p className="mt-2 text-gray-500 text-sm">
+                Built for freelancers. Tested on real businesses. Used across the UAE.
+              </p>
+              <a
+                href="/start"
+                className="inline-block mt-3 text-sm text-gray-400 hover:text-gray-700 underline underline-offset-2 transition-colors"
+              >
+                Not sure which one? Take 30 seconds to find your fit →
+              </a>
+            </div>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
-            {products.map((product) => (
-              <ProductCard key={product.id} product={product} />
-            ))}
-          </div>
-        </section>
-
-        <EmailCapture />
-
-        {/* Testimonials */}
-        <section className="max-w-5xl mx-auto px-4 sm:px-6 py-16">
-          <h2 className="text-2xl font-bold text-gray-900 text-center mb-10">What customers say</h2>
-          <div className="grid grid-cols-1 sm:grid-cols-3 gap-5">
-            {[
-              {
-                quote: "I duplicated the CRM on a Monday and had my entire client pipeline organized by Wednesday. Saved me hours every week.",
-                name: "Sarah K.",
-                role: "Freelance UX Designer, Dubai",
-              },
-              {
-                quote: "The SOP pack alone paid for itself in the first week. My onboarding process went from a mess of WhatsApp messages to a clean system.",
-                name: "Omar R.",
-                role: "Digital Marketing Consultant, Abu Dhabi",
-              },
-              {
-                quote: "The AI prompt pack is genuinely different. These are real prompts that produce real output — not the generic stuff you find for free online.",
-                name: "Layla M.",
-                role: "Content Creator & Copywriter, Dubai",
-              },
-            ].map((t) => (
-              <div key={t.name} className="bg-gray-50 border border-gray-100 rounded-2xl p-6 flex flex-col gap-4">
-                <div className="flex gap-0.5">
-                  {[...Array(5)].map((_, i) => (
-                    <span key={i} className="text-yellow-400 text-sm">★</span>
-                  ))}
-                </div>
-                <p className="text-sm text-gray-600 leading-relaxed italic">&ldquo;{t.quote}&rdquo;</p>
-                <div className="mt-auto">
-                  <p className="text-sm font-semibold text-gray-900">{t.name}</p>
-                  <p className="text-xs text-gray-400">{t.role}</p>
-                </div>
-              </div>
-            ))}
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
+              {products.map((product) => (
+                <ProductCard key={product.id} product={product} />
+              ))}
+            </div>
           </div>
         </section>
 
-        {/* Why us */}
-        <section className="bg-gray-50 border-t border-gray-100 py-16">
-          <div className="max-w-5xl mx-auto px-4 sm:px-6">
-            <h2 className="text-2xl font-bold text-gray-900 text-center mb-10">
-              Why buy here?
-            </h2>
+        {/* How it works */}
+        <section className="bg-gray-50 py-14 px-4 sm:px-6">
+          <div className="max-w-5xl mx-auto">
+            <h2 className="text-2xl font-bold text-gray-900 text-center mb-10">How it works</h2>
             <div className="grid grid-cols-1 sm:grid-cols-3 gap-6">
               {[
                 {
-                  icon: "⚡",
-                  title: "Instant delivery",
-                  desc: "Download your product immediately after purchase. No waiting.",
+                  step: "1",
+                  title: "Buy once",
+                  desc: "One-time payment. No subscription. No upsells.",
                 },
                 {
-                  icon: "🎯",
-                  title: "Built for a specific person",
-                  desc: "Every product is made for one job. No bloat, no filler.",
+                  step: "2",
+                  title: "Download instantly",
+                  desc: "You get the product the second you pay. Direct to your inbox.",
                 },
                 {
-                  icon: "🛡️",
-                  title: "30-day guarantee",
-                  desc: "Not happy? Email mohamed.bushara@woccars.com within 30 days and we'll refund you. No questions.",
+                  step: "3",
+                  title: "Plug in and go",
+                  desc: "Duplicate to Notion or open in Google Docs. Start using in minutes.",
                 },
               ].map((item) => (
-                <div key={item.title} className="bg-white border border-gray-200 rounded-2xl p-6">
-                  <div className="text-3xl mb-3">{item.icon}</div>
-                  <h3 className="font-semibold text-gray-900 mb-1">{item.title}</h3>
+                <div key={item.step} className="bg-white border border-gray-200 rounded-2xl p-6 flex flex-col gap-3">
+                  <span className="text-xs font-bold text-gray-400 uppercase tracking-widest">
+                    Step {item.step}
+                  </span>
+                  <h3 className="text-base font-bold text-gray-900">{item.title}</h3>
                   <p className="text-sm text-gray-500 leading-relaxed">{item.desc}</p>
                 </div>
               ))}
             </div>
+          </div>
+        </section>
+
+        {/* Testimonials */}
+        <section className="py-16 px-4 sm:px-6">
+          <div className="max-w-5xl mx-auto">
+            <h2 className="text-2xl font-bold text-gray-900 text-center mb-10">
+              What freelancers in the UAE say
+            </h2>
+            <div className="grid grid-cols-1 sm:grid-cols-3 gap-5">
+              {[
+                {
+                  quote:
+                    "Duplicated the CRM on Monday, had my entire pipeline organized by Wednesday. Saves me hours every week.",
+                  name: "Sarah K.",
+                  role: "Freelance UX Designer, Dubai",
+                },
+                {
+                  quote:
+                    "The SOP pack alone paid for itself in the first week. My onboarding went from a mess of WhatsApp messages to a clean system.",
+                  name: "Omar R.",
+                  role: "Marketing Consultant, Abu Dhabi",
+                },
+                {
+                  quote:
+                    "The AI prompt pack is genuinely different. Real prompts that produce real output — not generic stuff.",
+                  name: "Layla M.",
+                  role: "Copywriter, Dubai",
+                },
+              ].map((t) => (
+                <div
+                  key={t.name}
+                  className="bg-gray-50 border border-gray-100 rounded-2xl p-7 flex flex-col gap-4"
+                >
+                  <div className="flex gap-0.5">
+                    {[...Array(5)].map((_, i) => (
+                      <span key={i} className="text-yellow-400 text-base">
+                        ★
+                      </span>
+                    ))}
+                  </div>
+                  <p className="text-base text-gray-700 leading-relaxed italic">
+                    &ldquo;{t.quote}&rdquo;
+                  </p>
+                  <div className="mt-auto">
+                    <p className="text-sm font-bold text-gray-900">{t.name}</p>
+                    <p className="text-xs text-gray-400">{t.role}</p>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        {/* Guarantee */}
+        <section className="bg-gray-950 text-white py-14 px-4 sm:px-6">
+          <div className="max-w-xl mx-auto text-center">
+            <div className="text-5xl mb-4">🛡️</div>
+            <h2 className="text-2xl font-bold mb-3">30-Day Money-Back Guarantee</h2>
+            <p className="text-gray-300 leading-relaxed mb-4">
+              Not satisfied? Email us within 30 days for a full refund. No questions, no drama. We&apos;re confident you&apos;ll love it.
+            </p>
+            <p className="text-xs text-gray-500">
+              Secure checkout via Lemon Squeezy. Your payment info is never stored.
+            </p>
           </div>
         </section>
 
@@ -200,6 +265,8 @@ export default function Home() {
             ))}
           </div>
         </section>
+
+        <EmailCapture />
       </main>
 
       <Footer />
