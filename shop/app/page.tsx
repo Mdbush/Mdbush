@@ -3,9 +3,40 @@ import Footer from "@/components/Footer";
 import ProductCard from "@/components/ProductCard";
 import { products } from "@/lib/products";
 
+const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? "https://mdbush.vercel.app";
+
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@type": "Store",
+  name: "SoloKit",
+  url: siteUrl,
+  description: "Ready-to-use Notion templates, AI prompt packs, and SOPs for freelancers and solopreneurs.",
+  currenciesAccepted: "AED",
+  hasOfferCatalog: {
+    "@type": "OfferCatalog",
+    name: "SoloKit Digital Products",
+    itemListElement: products.map((p) => ({
+      "@type": "Product",
+      name: p.name,
+      description: p.tagline,
+      url: `${siteUrl}/products/${p.slug}`,
+      offers: {
+        "@type": "Offer",
+        price: (p.price / 100).toFixed(0),
+        priceCurrency: "AED",
+        availability: "https://schema.org/InStock",
+      },
+    })),
+  },
+};
+
 export default function Home() {
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
       <Header />
 
       <main className="flex-1">

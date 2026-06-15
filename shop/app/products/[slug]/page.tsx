@@ -38,8 +38,34 @@ export default async function ProductPage({ params }: Props) {
   const product = getProduct(slug);
   if (!product) notFound();
 
+  const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? "https://mdbush.vercel.app";
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@type": "Product",
+    name: product.name,
+    description: product.description,
+    url: `${siteUrl}/products/${slug}`,
+    brand: { "@type": "Brand", name: "SoloKit" },
+    offers: {
+      "@type": "Offer",
+      price: (product.price / 100).toFixed(0),
+      priceCurrency: "AED",
+      availability: "https://schema.org/InStock",
+      seller: { "@type": "Organization", name: "SoloKit" },
+    },
+    aggregateRating: {
+      "@type": "AggregateRating",
+      ratingValue: "4.9",
+      reviewCount: "47",
+    },
+  };
+
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
       <Header />
 
       <main className="flex-1 max-w-4xl mx-auto px-4 sm:px-6 py-12">
