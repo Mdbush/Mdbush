@@ -40,6 +40,9 @@ const posts = [
   {
     text: `The first 72 hours of a project tell you everything.\n\nIf onboarding is messy → the project will be messy.\nIf it's professional → clients trust you from day one.\n\n5-step client onboarding process:\n\n1. Welcome email (within 24 hours of signing)\n2. Kickoff call (within 48-72 hours)\n3. Written project brief — 1 page\n4. Shared workspace for progress tracking\n5. Week 1 check-in\n\nSkipping steps 3-5 is where scope creep comes from.\n\nFull guide + email templates: ${SITE_URL}/blog/client-onboarding-freelance-uae\n\n#Freelance #ClientManagement #UAE #SoloKit`,
   },
+  {
+    text: `"Freelancing earns more than a salary in the UAE."\n\nOnly if you do the math correctly.\n\nA AED 15,000 salary with full benefits is often worth AED 19,000–22,000 total (housing, health, gratuity, visa).\n\nFreelance overhead costs:\n→ Permit/visa: AED 7,000–15,000/year\n→ Health insurance: AED 3,000–8,000/year\n→ Accounting: AED 3,000–8,000/year\n→ Income gaps: 10–15% buffer needed\n\nBreak-even to replace a AED 20K salary package:\nYou need AED 26,450/month in freelance revenue — before you're "better off."\n\nFull breakdown + calculator: ${SITE_URL}/blog/freelance-vs-salary-uae\n\n#Freelance #UAE #Dubai #SoloKit #Salary`,
+  },
 ];
 
 function getPostIndex(): number {

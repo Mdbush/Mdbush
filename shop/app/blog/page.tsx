@@ -90,6 +90,15 @@ const posts = [
     readTime: "6 min read",
     category: "Business",
   },
+  {
+    slug: "freelance-vs-salary-uae",
+    title: "Freelance vs Salary in the UAE: The Real Numbers (2026)",
+    description:
+      "Is freelancing worth it in the UAE? We break down the real income comparison, benefits trade-off, and what you actually need to earn more than your current salary.",
+    date: "June 15, 2026",
+    readTime: "7 min read",
+    category: "Business",
+  },
 ];
 
 export default function BlogPage() {
