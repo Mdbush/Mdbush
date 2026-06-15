@@ -2,6 +2,7 @@ import Link from "next/link";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import EmailCapture from "@/components/EmailCapture";
+import MidPageCapture from "@/components/MidPageCapture";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -111,10 +112,10 @@ export default function FreePage() {
           </div>
         </section>
 
-        {/* Prompts */}
-        <section className="max-w-3xl mx-auto px-4 sm:px-6 pb-16">
+        {/* Prompts — first 5 */}
+        <section className="max-w-3xl mx-auto px-4 sm:px-6 pb-8">
           <div className="flex flex-col gap-5">
-            {prompts.map((p, i) => (
+            {prompts.slice(0, 5).map((p, i) => (
               <div
                 key={p.category}
                 className="border border-gray-200 rounded-2xl p-5 sm:p-6 hover:border-gray-300 transition-colors"
@@ -123,6 +124,34 @@ export default function FreePage() {
                   <span className="text-xl">{p.emoji}</span>
                   <span className="text-xs font-semibold text-gray-400 uppercase tracking-widest">
                     Prompt #{i + 1} · {p.category}
+                  </span>
+                </div>
+                <p className="text-sm text-gray-700 bg-gray-50 border border-gray-200 rounded-xl p-4 font-mono leading-relaxed mb-3">
+                  {p.prompt}
+                </p>
+                <p className="text-xs text-gray-500">
+                  <strong className="text-gray-700">Why it works:</strong> {p.use}
+                </p>
+              </div>
+            ))}
+          </div>
+        </section>
+
+        {/* Mid-page email capture */}
+        <MidPageCapture />
+
+        {/* Prompts — last 5 */}
+        <section className="max-w-3xl mx-auto px-4 sm:px-6 pb-16">
+          <div className="flex flex-col gap-5">
+            {prompts.slice(5).map((p, i) => (
+              <div
+                key={p.category}
+                className="border border-gray-200 rounded-2xl p-5 sm:p-6 hover:border-gray-300 transition-colors"
+              >
+                <div className="flex items-center gap-2 mb-3">
+                  <span className="text-xl">{p.emoji}</span>
+                  <span className="text-xs font-semibold text-gray-400 uppercase tracking-widest">
+                    Prompt #{i + 6} · {p.category}
                   </span>
                 </div>
                 <p className="text-sm text-gray-700 bg-gray-50 border border-gray-200 rounded-xl p-4 font-mono leading-relaxed mb-3">

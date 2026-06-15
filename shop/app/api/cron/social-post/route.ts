@@ -378,6 +378,430 @@ Before they're documented, every project starts from zero.
 
 #FreelanceUAE #SOPs #Productivity #SoloKit`,
   },
+
+  // ── BATCH 2 ──
+  {
+    text: `The discovery call is where projects are won or lost.
+
+Not at proposal stage. Not at contract stage.
+
+What to ask on every discovery call:
+1. "What does success look like for this project?"
+2. "What's the timeline, and is there a hard deadline?"
+3. "Who else is involved in the decision to move forward?"
+4. "What happened with the last freelancer/agency you worked with?"
+
+Question 4 tells you everything. If they avoided the question or said "it didn't work out" — dig deeper before you agree to anything.
+
+The discovery call is free. The mess of a bad project is not.
+
+#FreelanceUAE #ClientWork #Dubai #SoloKit`,
+  },
+  {
+    text: `Retainer vs project pricing — when to push for which:
+
+Go retainer when:
+→ The client needs you every month (ongoing content, maintenance, monthly reports)
+→ You want predictable income
+→ The relationship is strong and they trust your judgment
+
+Go project when:
+→ It's a one-time scope (website, branding, strategy doc)
+→ You're still proving your value
+→ The client doesn't have ongoing budget approved
+
+The goal: land the project, deliver great work, then propose a retainer.
+
+"I'd love to keep supporting you after launch — I offer monthly retainers from AED X. Want to discuss?"
+
+Most clients say yes. Most freelancers never ask.
+
+#Retainer #FreelanceUAE #Income #SoloKit`,
+  },
+  {
+    text: `Niching down feels scary. It's actually your fastest path to higher rates.
+
+"I do social media management" → you're competing with everyone
+
+"I do LinkedIn content for B2B SaaS companies in the UAE" → you're the obvious choice for a specific buyer
+
+When you niche:
+→ Your proposals take 20 minutes instead of 2 hours
+→ Your rates are higher because you're the specialist
+→ Referrals happen naturally ("you need to speak to [your name], she does exactly this")
+→ Your content attracts exactly the right clients
+
+The niche doesn't need to be tiny. It needs to be specific enough that clients immediately see themselves in it.
+
+#FreelanceNiche #DubaiFreelancer #FreelanceUAE #SoloKit`,
+  },
+  {
+    text: `How to close a proposal that's been sitting for 2 weeks:
+
+Don't send "just checking in."
+
+Send this instead:
+
+"Hi [name], I wanted to flag that I'm holding your project slot until [date]. After that, my schedule opens to new clients and I can't guarantee the same timeline.
+
+Happy to adjust the scope or payment terms if that would help move things forward.
+
+What's the current status on your end?"
+
+This works because:
+1. It creates real urgency (not fake)
+2. It gives them an out (scope/payment adjustment)
+3. It asks a direct question they can't ignore
+
+About 40% of stalled proposals close within 48 hours of this message.
+
+#FreelanceProposals #ClosingDeals #DubaiFreelancer #SoloKit`,
+  },
+  {
+    text: `Your freelance business has a revenue ceiling you can't see.
+
+It's your hourly rate multiplied by your available hours.
+
+At AED 150/hr × 25 billable hours/week × 48 weeks = AED 180,000/year.
+
+That's the ceiling. You cannot earn more by working harder.
+
+To break through:
+→ Raise your hourly rate (hardest but fastest)
+→ Move to project pricing (stop selling hours)
+→ Create a product (our store is proof this works)
+→ Hire a subcontractor and take a margin
+
+Most UAE freelancers plateau at AED 15-25K/month for years without realizing why.
+
+The ceiling is always a business model problem, not a skills problem.
+
+#FreelanceIncome #UAE #BusinessModel #SoloKit`,
+  },
+  {
+    text: `The client ghosted after you sent the proposal.
+
+Here's what actually happened:
+
+50% of the time: they got busy and forgot to reply
+25% of the time: someone internally pushed back on the budget
+15% of the time: they went with another freelancer and feel awkward telling you
+10% of the time: your proposal didn't address their real concern
+
+What to do:
+→ Wait 5 business days after submission
+→ Send one short follow-up (not an essay)
+→ If no reply after 3 more days, send a final close: "Closing this out — if timing changes, reach out."
+
+Then move on.
+
+Chasing ghosts is the biggest waste of time in freelancing. Build a pipeline so you can afford to let them go.
+
+#FreelanceUAE #ProposalTips #DubaiFreelancer #SoloKit`,
+  },
+  {
+    text: `How UAE freelancers should handle slow months:
+
+Do NOT:
+✗ Drop your rates to fill the calendar
+✗ Take projects you'd normally decline
+✗ Panic and burn through savings
+
+DO:
+✓ Double down on outreach to past clients
+✓ Post more content (slow month = more time to create)
+✓ Build something (template, guide, product)
+✓ Review and raise your rates for when busy season returns
+✓ Network — Dubai is a relationship-based economy
+
+Slow months are planning months. Every freelancer who runs a sustainable business has learned to use them this way.
+
+Budget rule: 2 months of expenses in reserve means a slow month is a strategy choice, not a crisis.
+
+#FreelanceUAE #SlowMonth #Dubai #FreelanceTips #SoloKit`,
+  },
+  {
+    text: `January is the best time to raise your freelance rates. Here's the script:
+
+Email subject: "Updated rates for 2026"
+
+"Hi [name],
+
+I wanted to let you know that my rates will be updated from [date].
+
+[Current rate] → [New rate]
+
+For any projects we kick off before [date], I'm happy to honor my current pricing.
+
+As always, thank you for the continued work — it's been great collaborating with you.
+
+[Your name]"
+
+That's it. No apology, no long explanation, no asking for permission.
+
+Clients who respect your work will stay. Clients who leave over a reasonable rate increase were never the clients you wanted long-term.
+
+#FreelanceRates #RaiseYourRates #DubaiFreelancer #SoloKit`,
+  },
+  {
+    text: `The freelance financial review every UAE solopreneur should do in December:
+
+1. Total revenue for the year (in AED)
+2. Total expenses (visa, insurance, software, coworking)
+3. Actual take-home (revenue minus expenses)
+4. Average monthly revenue
+5. Top 3 clients by revenue — are they coming back?
+6. Rate in January vs December — did it go up?
+7. Biggest lost deal — what could you have done differently?
+8. Best project — why? Do more of that.
+
+Most freelancers have no idea what they actually earned until tax season.
+
+Running a business means knowing your numbers monthly, not annually.
+
+Template for tracking this: ${SITE_URL}/products/freelancer-client-crm
+
+#FreelanceFinance #UAE #EndOfYear #SoloKit`,
+  },
+  {
+    text: `How to handle a client asking you to lower your rate:
+
+What they say: "We love your work but the budget is AED 8,000 — can you match that?"
+Your target: AED 12,000
+
+Don't say: "Okay, I can do AED 9,000."
+
+Do say: "I can work within AED 8,000. Here's what that covers: [reduced scope]. If you need [original scope], the investment is AED 12,000. Which option works better for your goals?"
+
+You've done three things:
+1. You didn't say no
+2. You protected your rate
+3. You made them choose between value and price — not between you and a cheaper freelancer
+
+Most will pick the full scope. Some will take the reduced version. Very few will go elsewhere.
+
+#FreelanceRates #Negotiation #Dubai #SoloKit`,
+  },
+  {
+    text: `Dubai's real freelance advantage nobody talks about:
+
+It's not the tax-free income.
+It's not the lifestyle.
+
+It's the density.
+
+More than 3 million professionals in one city. Most companies are SMEs. Decision-makers are accessible.
+
+In Dubai, you can go from "meeting someone at a networking event" to "signed contract" in 3 weeks.
+
+In London or New York, that same path takes 3 months of procurement processes.
+
+If you're a UAE freelancer not networking: you're leaving the biggest advantage of your location on the table.
+
+One coffee meeting a week = 52 meetings a year = a pipeline that doesn't dry up.
+
+#DubaiFreelancer #Dubai #Networking #FreelanceUAE #SoloKit`,
+  },
+  {
+    text: `The 3-sentence client brief that saves hours of revision:
+
+Before starting any project, send this to your client:
+
+"Before I begin, I want to confirm my understanding:
+
+[1 sentence: the problem you're solving]
+[1 sentence: what the deliverable looks like]
+[1 sentence: how success will be measured]
+
+Does this match what you're expecting?"
+
+Takes 2 minutes to write. Saves 10 hours of revision.
+
+Most freelancers skip this step because it feels over-formal. But misaligned expectations are the #1 cause of scope creep, client dissatisfaction, and unpaid extra work.
+
+The best projects start with the clearest briefs.
+
+#FreelanceTips #DubaiFreelancer #ClientWork #SoloKit`,
+  },
+  {
+    text: `Building a referral system in Dubai is easier than you think:
+
+1. Deliver exceptional work
+2. Ask for a testimonial the day you deliver
+3. Ask: "Do you know anyone who could use [your service]?"
+4. Send a WhatsApp follow-up 3 months later: "How's everything going? Happy to help if you have anything new."
+5. When someone refers you — send a thank you gift or discount for their next project
+
+That's the system. Most people only do step 1 and then wonder why referrals are rare.
+
+In Dubai, business runs on relationships and trust. One referral client is worth AED 20,000+ over a year.
+
+How many past clients have you followed up with in the last 90 days?
+
+#FreelanceUAE #Referrals #Dubai #ClientRetention #SoloKit`,
+  },
+  {
+    text: `Pricing in AED vs USD as a UAE freelancer:
+
+Charge in AED when:
+→ Your client is a UAE-based company
+→ They have a UAE bank account
+→ The project is local work
+
+Charge in USD when:
+→ Client is international
+→ Project involves US/EU market work
+→ Platform billing is in USD (Upwork, Toptal)
+
+Why USD matters: USD/AED is pegged at 3.67. USD billing means your rate looks lower internationally ($100/hr vs AED 367/hr) while being identical in value.
+
+On international platforms: USD pricing is standard. Don't convert to AED — you'll look out of place.
+
+For local Dubai clients: AED is more professional and avoids conversion confusion.
+
+#FreelanceUAE #Pricing #Dubai #Freelancing #SoloKit`,
+  },
+  {
+    text: `One Notion tip that changed how I manage clients:
+
+Create a "relationship status" property on every client record.
+
+Options:
+→ Active (current project)
+→ Delivered (finished, awaiting testimonial)
+→ Nurture (past client, follow up in 90 days)
+→ Prospect (in conversation)
+→ On hold (paused)
+
+Filter to "Nurture" every Monday. Send a short WhatsApp to 2-3 people.
+
+"Hey [name], hope the [project] has been working well. If you have anything new coming up, I'd love to help."
+
+Response rate: around 30%. Conversion to project: around 50% of those.
+
+This simple filter generates AED 3-5K in revenue a month from clients you've already won.
+
+Free CRM template with this built in: ${SITE_URL}/products/freelancer-client-crm
+
+#Notion #FreelanceUAE #ClientRetention #SoloKit`,
+  },
+  {
+    text: `What no one tells you about freelancing in Ramadan in the UAE:
+
+→ Business slows significantly in weeks 1-2
+→ Decision-making stalls as people focus inward
+→ Then weeks 3-4 pick back up as Eid approaches
+→ Post-Eid: 2-week burst of activity as everyone tries to close Q2
+
+How to use this pattern:
+
+Before Ramadan: close projects, collect outstanding invoices
+During Ramadan weeks 1-2: content creation, planning, proposal drafting
+During Ramadan weeks 3-4: outreach ramps up ahead of Eid
+Post-Eid: available and ready for new projects
+
+Freelancers who understand this cycle don't panic in slow weeks.
+They plan around it like the professionals they are.
+
+#DubaiFreelancer #Ramadan #UAE #FreelanceTips #SoloKit`,
+  },
+  {
+    text: `Hot take: the UAE freelance market is underpriced.
+
+Compared to equivalent markets:
+
+UAE senior developer hourly:    AED 250-400
+London senior developer hourly: AED 700-1,100
+NYC senior developer hourly:    AED 1,100-1,800
+
+Same skills. Same deliverables. 40-70% cheaper in UAE.
+
+Why?
+→ Many UAE freelancers benchmark locally, not globally
+→ International clients don't know UAE market rates
+→ Platform buyers see "Dubai" and assume it's expensive (it's not)
+
+Opportunity: International clients on platforms like Upwork and Toptal get UAE-quality work at a massive discount. That's your pitch.
+
+"Senior-level work. UAE-based. Competitive international rates."
+
+#FreelanceUAE #InternationalClients #DubaiFreelancer #SoloKit`,
+  },
+  {
+    text: `The email signature every freelance professional needs:
+
+[Your Name]
+[Your Title, e.g. Freelance UX Designer]
+solokit.cloud | +971 XX XXX XXXX
+[LinkedIn URL]
+
+[2-line portfolio teaser, e.g.: "Recent work: Dubai retail brand refresh → 34% increase in online sales"]
+
+30-second reply policy: I aim to respond within 24hrs Mon-Fri.
+
+Why this works:
+→ Your title tells them what you do immediately
+→ Website + LinkedIn = two proof points without asking
+→ Portfolio teaser = social proof in every email
+→ Response policy = sets expectations, reduces pressure
+
+Most freelancers have no signature or a default one with just their name.
+
+This costs nothing and works every time someone opens an email from you.
+
+#FreelanceUAE #PersonalBrand #DubaiFreelancer #SoloKit`,
+  },
+  {
+    text: `How to onboard a new client in 72 hours without wasting 3 emails:
+
+Hour 0 — Deposit received:
+Send welcome email with:
+→ Project start date
+→ What you need from them this week
+→ Communication channel (WhatsApp/email/Slack)
+→ Your working hours
+
+Day 2 — Kick-off call (30 minutes):
+→ Confirm goals and success criteria
+→ Walk through timeline
+→ Identify decision-maker and review contact
+→ Agree on revision process
+
+Day 3 — Brief confirmation email:
+→ "Per our call, here's what we agreed…"
+→ First milestone date
+→ Next communication point
+
+Clients who feel organized in the first 72 hours become your longest-term clients.
+
+SOP template for this: ${SITE_URL}/products/sop-starter-pack
+
+#ClientOnboarding #FreelanceUAE #DubaiFreelancer #SoloKit`,
+  },
+  {
+    text: `The fastest way to build a personal brand in Dubai as a freelancer:
+
+Not a personal website.
+Not a logo.
+Not 10,000 LinkedIn followers.
+
+One sentence that says exactly what you do and for whom.
+
+"I help Dubai F&B brands grow Instagram accounts that drive restaurant bookings."
+
+Not: "I'm a social media manager."
+
+When you can say it in one sentence, strangers immediately know if they're your client.
+
+When your clients can repeat it, you get referrals.
+
+When your LinkedIn headline says it, people click through.
+
+Write your one sentence. Test it in real conversations.
+If they say "oh, interesting — do you work with companies like [X]?" you've got it right.
+
+#PersonalBrand #DubaiFreelancer #Freelancing #UAE #SoloKit`,
+  },
 ];
 
 function getPostIndex(): number {

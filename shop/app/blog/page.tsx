@@ -153,9 +153,72 @@ const posts = [
     readTime: "9 min read",
     category: "Legal & Contracts",
   },
+  {
+    slug: "freelance-invoice-uae",
+    title: "How to Invoice Clients in the UAE (AED Invoicing Guide for Freelancers)",
+    description:
+      "What to include in a UAE freelance invoice, when you need a VAT invoice, how to set payment terms, and how to add late payment clauses that actually work.",
+    date: "June 15, 2026",
+    readTime: "5 min read",
+    category: "Finance",
+  },
+  {
+    slug: "how-to-negotiate-freelance-rates-uae",
+    title: "How to Negotiate Freelance Rates in the UAE (Without Losing the Client)",
+    description:
+      "Word-for-word scripts to handle lowball offers, anchor high, respond to 'your rate is too high', and close retainers. Written for UAE freelancers.",
+    date: "June 15, 2026",
+    readTime: "6 min read",
+    category: "Business",
+  },
+  {
+    slug: "best-ai-tools-uae-freelancers",
+    title: "Best AI Tools for UAE Freelancers in 2026 (Actually Useful Ones)",
+    description:
+      "Honest ratings of AI tools UAE freelancers are using to save time and win more clients — with specific use cases, AED pricing, and the recommended 4-tool stack.",
+    date: "June 15, 2026",
+    readTime: "5 min read",
+    category: "AI Tools",
+  },
+  {
+    slug: "notion-setup-guide-freelancers",
+    title: "Notion Setup Guide for UAE Freelancers (From Blank Page to Full Business OS)",
+    description:
+      "Step-by-step Notion workspace setup for freelancers: client database, project tracker, invoice log, proposal library, and daily tasks. Works on mobile in Dubai.",
+    date: "June 15, 2026",
+    readTime: "6 min read",
+    category: "Notion",
+  },
+  {
+    slug: "how-to-get-clients-linkedin-uae",
+    title: "How to Get Freelance Clients on LinkedIn in the UAE (Step-by-Step)",
+    description:
+      "Profile optimization, 3 post types that attract inbound clients, and the 3-step outreach formula that doesn't feel like spam. Built for UAE-based freelancers.",
+    date: "June 15, 2026",
+    readTime: "7 min read",
+    category: "Client Acquisition",
+  },
+  {
+    slug: "freelancer-burnout-uae",
+    title: "Freelancer Burnout in Dubai: How to Recognize It and Fix It Before It Costs You Clients",
+    description:
+      "Why UAE freelancers burn out faster, the 3 stages of burnout, 5 practical prevention systems, and a recovery protocol for when you're already in it.",
+    date: "June 15, 2026",
+    readTime: "6 min read",
+    category: "Business",
+  },
+];
+
+const featured = [
+  "freelance-visa-uae",
+  "freelance-rate-calculator-uae",
+  "freelance-tax-uae",
 ];
 
 export default function BlogPage() {
+  const featuredPosts = posts.filter((p) => featured.includes(p.slug));
+  const otherPosts = posts.filter((p) => !featured.includes(p.slug));
+
   return (
     <>
       <Header />
@@ -163,11 +226,34 @@ export default function BlogPage() {
       <main className="flex-1 max-w-3xl mx-auto px-4 sm:px-6 py-14">
         <div className="mb-10">
           <h1 className="text-3xl font-bold text-gray-900 mb-2">Blog</h1>
-          <p className="text-gray-500">Guides and resources for freelancers and solopreneurs.</p>
+          <p className="text-gray-500">Practical guides for freelancers and solopreneurs in the UAE. No fluff.</p>
         </div>
 
+        {/* Featured */}
+        <div className="mb-10">
+          <p className="text-xs font-semibold text-gray-400 uppercase tracking-widest mb-4">Most read</p>
+          <div className="grid gap-4 sm:grid-cols-3">
+            {featuredPosts.map((post) => (
+              <Link
+                key={post.slug}
+                href={`/blog/${post.slug}`}
+                className="group border border-gray-200 rounded-2xl p-5 hover:border-gray-400 hover:shadow-sm transition-all bg-gray-50"
+              >
+                <span className="text-xs font-semibold text-gray-400 uppercase tracking-widest block mb-2">
+                  {post.category}
+                </span>
+                <h2 className="text-sm font-bold text-gray-900 group-hover:text-gray-700 transition-colors leading-snug mb-2">
+                  {post.title}
+                </h2>
+                <p className="text-xs text-gray-500">{post.readTime}</p>
+              </Link>
+            ))}
+          </div>
+        </div>
+
+        {/* All posts */}
         <div className="flex flex-col gap-6">
-          {posts.map((post) => (
+          {otherPosts.map((post) => (
             <Link
               key={post.slug}
               href={`/blog/${post.slug}`}
@@ -177,8 +263,6 @@ export default function BlogPage() {
                 <span className="text-xs font-semibold text-gray-400 uppercase tracking-widest">
                   {post.category}
                 </span>
-                <span className="text-gray-200">·</span>
-                <span className="text-xs text-gray-400">{post.date}</span>
                 <span className="text-gray-200">·</span>
                 <span className="text-xs text-gray-400">{post.readTime}</span>
               </div>
