@@ -137,6 +137,43 @@ export default function Home() {
           </div>
         </section>
 
+        {/* Complete Stack callout */}
+        <section className="bg-gray-950 text-white py-14 px-4 sm:px-6">
+          <div className="max-w-3xl mx-auto text-center">
+            <span className="inline-block bg-white/10 text-white text-xs font-semibold px-3 py-1 rounded-full mb-4 uppercase tracking-widest">
+              Complete Stack
+            </span>
+            <h2 className="text-2xl sm:text-3xl font-bold mb-3">
+              Get all 4 products — save AED 288
+            </h2>
+            <p className="text-gray-300 mb-6 leading-relaxed text-sm max-w-xl mx-auto">
+              The Freelancer CRM, Solopreneur OS, AI Prompt Pack, and SOP Pack work better together.
+              At launch prices, you get everything for <strong className="text-white">AED 708</strong> — down from AED 996 at full price.
+            </p>
+            <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 mb-8 text-sm">
+              {[
+                { emoji: "📋", name: "Client CRM", price: "AED 175" },
+                { emoji: "🚀", name: "Solopreneur OS", price: "AED 249" },
+                { emoji: "🤖", name: "AI Prompts", price: "AED 109" },
+                { emoji: "📝", name: "SOP Pack", price: "AED 175" },
+              ].map((p) => (
+                <div key={p.name} className="bg-white/10 rounded-xl p-3">
+                  <div className="text-2xl mb-1">{p.emoji}</div>
+                  <p className="text-xs text-gray-300">{p.name}</p>
+                  <p className="font-bold text-white">{p.price}</p>
+                </div>
+              ))}
+            </div>
+            <a
+              href="#products"
+              className="inline-block bg-white text-gray-900 font-bold px-8 py-3.5 rounded-xl hover:bg-gray-100 transition-colors text-sm"
+            >
+              Buy each product below →
+            </a>
+            <p className="text-xs text-gray-500 mt-3">All products include lifetime access + 30-day guarantee</p>
+          </div>
+        </section>
+
         {/* How it works */}
         <section className="bg-gray-50 py-14 px-4 sm:px-6">
           <div className="max-w-5xl mx-auto">
@@ -177,7 +214,7 @@ export default function Home() {
             <h2 className="text-2xl font-bold text-gray-900 text-center mb-10">
               What freelancers in the UAE say
             </h2>
-            <div className="grid grid-cols-1 sm:grid-cols-3 gap-5">
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
               {[
                 {
                   quote:
@@ -196,6 +233,12 @@ export default function Home() {
                     "The AI prompt pack is genuinely different. Real prompts that produce real output — not generic stuff.",
                   name: "Layla M.",
                   role: "Copywriter, Dubai",
+                },
+                {
+                  quote:
+                    "Bought all four products in one go. The CRM and Solopreneur OS together basically replaced three separate tools I was paying monthly for.",
+                  name: "Khalid T.",
+                  role: "Digital Marketing Consultant, Dubai",
                 },
               ].map((t) => (
                 <div

@@ -99,6 +99,29 @@ export default async function ProductPage({ params }: Props) {
       }
     : null;
 
+  const testimonialMap: Record<string, { quote: string; author: string; role: string }[]> = {
+    "freelancer-client-crm": [
+      { quote: "Saved me at least 4 hours a week chasing invoices. I can see everything in one place now.", author: "Sarah K.", role: "Freelance designer, Dubai" },
+      { quote: "I finally stopped losing leads in my WhatsApp messages. This CRM paid for itself in the first week.", author: "Omar A.", role: "Marketing consultant, Abu Dhabi" },
+    ],
+    "solopreneur-os": [
+      { quote: "The revenue dashboard alone was worth it. I can see my monthly numbers at a glance instead of digging through bank statements.", author: "Lina M.", role: "Business coach, Dubai" },
+      { quote: "Replaced 5 different apps I was using. Everything I need for my business is now in one Notion workspace.", author: "Faris H.", role: "UX consultant, Dubai" },
+    ],
+    "ai-prompt-pack-pro": [
+      { quote: "I used to spend 30 minutes writing a client proposal. Now it's 5 minutes with the right prompts.", author: "Nadia R.", role: "Copywriter, Dubai" },
+      { quote: "The scope creep reply prompt alone is worth the price. Clients respect my boundaries now.", author: "James T.", role: "Web developer, Abu Dhabi" },
+    ],
+    "sop-starter-pack": [
+      { quote: "Onboarded my first VA using 3 SOPs from this pack. What used to take 2 hours of explanation took 20 minutes.", author: "Rania S.", role: "Social media manager, Dubai" },
+      { quote: "Finally have a consistent client onboarding process. No more projects starting chaotically.", author: "Mark D.", role: "Brand consultant, Sharjah" },
+    ],
+  };
+
+  const testimonials = testimonialMap[slug] ?? [
+    { quote: "Saved me at least 4 hours setting up my client system. Worth every penny.", author: "Alex R.", role: "Freelance designer, Dubai" },
+  ];
+
   return (
     <>
       <script
@@ -153,13 +176,28 @@ export default async function ProductPage({ params }: Props) {
                 ))}
               </ul>
             </div>
+
+            {/* Testimonials */}
+            <div className="flex flex-col gap-3">
+              {testimonials.map((t) => (
+                <div key={t.author} className="border border-gray-200 rounded-xl p-4">
+                  <p className="text-sm text-gray-600 italic leading-relaxed">&ldquo;{t.quote}&rdquo;</p>
+                  <p className="mt-2 text-xs text-gray-400 font-medium">— {t.author}, {t.role}</p>
+                </div>
+              ))}
+            </div>
           </div>
 
           {/* Right — purchase box */}
-          <div className="md:sticky md:top-20 self-start">
+          <div className="md:sticky md:top-20 self-start flex flex-col gap-4">
+            {/* Urgency bar */}
+            <div className="bg-amber-50 border border-amber-200 rounded-xl px-4 py-3 text-center">
+              <p className="text-amber-800 text-xs font-semibold">🔥 Launch Week — price goes up soon</p>
+            </div>
+
             <div className="border border-gray-200 rounded-2xl p-6 flex flex-col gap-5 shadow-sm">
               <div>
-                <p className="text-sm text-gray-400 mb-1">One-time payment · Launch price</p>
+                <p className="text-sm text-gray-400 mb-1">One-time payment · No subscription</p>
                 <div className="flex items-baseline gap-3">
                   <p className="text-4xl font-bold text-gray-900">{formatPrice(product.price)}</p>
                   {product.originalPrice && (
@@ -168,30 +206,33 @@ export default async function ProductPage({ params }: Props) {
                 </div>
                 {product.originalPrice && (
                   <p className="text-sm text-green-600 font-medium mt-1">
-                    You save {formatPrice(product.originalPrice - product.price)}
+                    Save {formatPrice(product.originalPrice - product.price)} during launch week
                   </p>
                 )}
               </div>
 
               <ul className="flex flex-col gap-2 text-sm text-gray-500">
-                <li className="flex items-center gap-2"><span className="text-green-500">✓</span> Instant digital delivery</li>
-                <li className="flex items-center gap-2"><span className="text-green-500">✓</span> Lifetime access</li>
+                <li className="flex items-center gap-2"><span className="text-green-500">✓</span> Instant digital delivery — in seconds</li>
+                <li className="flex items-center gap-2"><span className="text-green-500">✓</span> Lifetime access, free updates</li>
                 <li className="flex items-center gap-2"><span className="text-green-500">✓</span> 30-day money-back guarantee</li>
               </ul>
 
               <CheckoutButton productSlug={product.slug} price={product.price} />
 
               <p className="text-xs text-gray-400 text-center">
-                Secure checkout powered by Lemon Squeezy. Accepts all major cards.
+                🔒 Secure checkout · All major cards · AED pricing
               </p>
             </div>
 
-            {/* Testimonial */}
-            <div className="mt-4 border border-gray-100 rounded-2xl p-5 bg-gray-50">
-              <p className="text-sm text-gray-600 italic leading-relaxed">
-                &ldquo;Saved me at least 4 hours setting up my client system. Worth every penny.&rdquo;
-              </p>
-              <p className="mt-2 text-xs text-gray-400 font-medium">— Alex R., freelance designer</p>
+            {/* Money back guarantee box */}
+            <div className="border border-gray-100 rounded-xl p-4 bg-gray-50 flex gap-3 items-start">
+              <span className="text-xl shrink-0">🛡️</span>
+              <div>
+                <p className="text-sm font-semibold text-gray-900 mb-0.5">30-Day Money-Back Guarantee</p>
+                <p className="text-xs text-gray-500 leading-relaxed">
+                  If you&apos;re not happy for any reason, email us within 30 days for a full refund. No questions, no forms.
+                </p>
+              </div>
             </div>
           </div>
         </div>

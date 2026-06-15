@@ -74,8 +74,8 @@ export default function AboutPage() {
           <div className="bg-gray-50 border border-gray-200 rounded-2xl p-5 mt-8">
             <p className="text-sm font-semibold text-gray-900 mb-2">Questions or feedback?</p>
             <p className="text-sm text-gray-500 mb-1">
-              Email: <a href="mailto:mohamed.bushara@woccars.com" className="text-gray-900 underline hover:text-gray-600">
-                mohamed.bushara@woccars.com
+              Email: <a href="mailto:md.a.bushara@gmail.com" className="text-gray-900 underline hover:text-gray-600">
+                md.a.bushara@gmail.com
               </a>
             </p>
             <p className="text-sm text-gray-500">We respond within 24 hours.</p>
