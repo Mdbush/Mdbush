@@ -20,6 +20,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "get-freelance-clients-uae",
     "freelance-proposal-tips-uae",
     "late-payment-freelance-uae",
+    "client-onboarding-freelance-uae",
   ].map((slug) => ({
     url: `${base}/blog/${slug}`,
     lastModified: new Date(),

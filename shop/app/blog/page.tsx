@@ -81,6 +81,15 @@ const posts = [
     readTime: "6 min read",
     category: "Business",
   },
+  {
+    slug: "client-onboarding-freelance-uae",
+    title: "Client Onboarding Process for UAE Freelancers (Step-by-Step)",
+    description:
+      "The first 72 hours of a project determine whether it will be smooth or chaotic. Here's the 5-step onboarding process that sets the right tone with every client.",
+    date: "June 15, 2026",
+    readTime: "6 min read",
+    category: "Business",
+  },
 ];
 
 export default function BlogPage() {
