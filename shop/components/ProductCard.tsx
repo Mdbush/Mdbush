@@ -30,7 +30,12 @@ export default function ProductCard({ product }: { product: Product }) {
       </ul>
 
       <div className="flex items-center justify-between mt-2 pt-4 border-t border-gray-100">
-        <span className="text-2xl font-bold text-gray-900">{formatPrice(product.price)}</span>
+        <div className="flex flex-col">
+          {product.originalPrice && (
+            <span className="text-sm text-gray-400 line-through">{formatPrice(product.originalPrice)}</span>
+          )}
+          <span className="text-2xl font-bold text-gray-900">{formatPrice(product.price)}</span>
+        </div>
         <Link
           href={`/products/${product.slug}`}
           className="bg-gray-900 text-white text-sm font-semibold px-5 py-2.5 rounded-xl hover:bg-gray-700 transition-colors"

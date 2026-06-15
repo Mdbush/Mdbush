@@ -22,6 +22,7 @@ export const products: Product[] = [
     description:
       "A complete Notion workspace for freelancers to manage clients, track projects, send proposals, and follow up on invoices — all in one place. Duplicate once and run your entire freelance business from it.",
     price: 17500,
+    originalPrice: 24900,
     lemonSqueezyVariantId: process.env.LS_VARIANT_FREELANCER_CRM ?? "",
     emoji: "📋",
     features: [
@@ -42,6 +43,7 @@ export const products: Product[] = [
     description:
       "The all-in-one operating system for solo business owners. Manage tasks, content, revenue, and 90-day goals in a single beautifully designed Notion workspace. Built for people who wear every hat.",
     price: 24900,
+    originalPrice: 34900,
     lemonSqueezyVariantId: process.env.LS_VARIANT_SOLOPRENEUR_OS ?? "",
     emoji: "🚀",
     features: [
@@ -61,6 +63,7 @@ export const products: Product[] = [
     description:
       "Stop wasting time on bad AI outputs. This pack gives you 200 battle-tested Claude & ChatGPT prompts for writing, marketing, client work, and content — organized by use case with example outputs included.",
     price: 10900,
+    originalPrice: 14900,
     lemonSqueezyVariantId: process.env.LS_VARIANT_AI_PROMPTS ?? "",
     emoji: "🤖",
     features: [
@@ -82,6 +85,7 @@ export const products: Product[] = [
     description:
       "Stop reinventing the wheel every time you hire or delegate. 50 battle-tested Standard Operating Procedures covering client onboarding, content, finance, and team management — editable in Notion or Google Docs.",
     price: 17500,
+    originalPrice: 24900,
     lemonSqueezyVariantId: process.env.LS_VARIANT_SOP_PACK ?? "",
     emoji: "📝",
     features: [

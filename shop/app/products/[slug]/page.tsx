@@ -113,8 +113,18 @@ export default async function ProductPage({ params }: Props) {
           <div className="md:sticky md:top-20 self-start">
             <div className="border border-gray-200 rounded-2xl p-6 flex flex-col gap-5 shadow-sm">
               <div>
-                <p className="text-sm text-gray-400 mb-1">One-time payment</p>
-                <p className="text-4xl font-bold text-gray-900">{formatPrice(product.price)}</p>
+                <p className="text-sm text-gray-400 mb-1">One-time payment · Launch price</p>
+                <div className="flex items-baseline gap-3">
+                  <p className="text-4xl font-bold text-gray-900">{formatPrice(product.price)}</p>
+                  {product.originalPrice && (
+                    <p className="text-lg text-gray-400 line-through">{formatPrice(product.originalPrice)}</p>
+                  )}
+                </div>
+                {product.originalPrice && (
+                  <p className="text-sm text-green-600 font-medium mt-1">
+                    You save {formatPrice(product.originalPrice - product.price)}
+                  </p>
+                )}
               </div>
 
               <ul className="flex flex-col gap-2 text-sm text-gray-500">
