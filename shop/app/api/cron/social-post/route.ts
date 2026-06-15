@@ -381,9 +381,9 @@ Before they're documented, every project starts from zero.
 ];
 
 function getPostIndex(): number {
-  const weekNumber = Math.floor(Date.now() / (7 * 24 * 60 * 60 * 1000));
-  const dayOfWeek = new Date().getDay();
-  return (weekNumber * 3 + Math.floor(dayOfWeek / 2)) % posts.length;
+  // Count days since epoch and pick sequential post — cycles through all posts evenly
+  const daysSinceEpoch = Math.floor(Date.now() / (24 * 60 * 60 * 1000));
+  return daysSinceEpoch % posts.length;
 }
 
 async function postToLinkedIn(text: string, token: string): Promise<void> {
