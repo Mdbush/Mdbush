@@ -7,37 +7,35 @@ export async function POST(request: Request) {
       return NextResponse.json({ error: "Invalid email" }, { status: 400 });
     }
 
-    const apiKey = process.env.MAILCHIMP_API_KEY;
-    const listId = process.env.MAILCHIMP_LIST_ID;
-    const dc = process.env.MAILCHIMP_DC ?? "us1";
+    const apiKey = process.env.BREVO_API_KEY;
 
-    if (!apiKey || !listId) {
-      console.error("Mailchimp env vars not configured");
+    if (!apiKey) {
+      console.error("BREVO_API_KEY not configured");
       return NextResponse.json({ ok: true });
     }
 
-    const res = await fetch(
-      `https://${dc}.api.mailchimp.com/3.0/lists/${listId}/members`,
-      {
-        method: "POST",
-        headers: {
-          Authorization: `Bearer ${apiKey}`,
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify({
-          email_address: email,
-          status: "subscribed",
-          tags: ["solokit-free-prompts"],
-        }),
-      }
-    );
+    const res = await fetch("https://api.brevo.com/v3/contacts", {
+      method: "POST",
+      headers: {
+        "api-key": apiKey,
+        "Content-Type": "application/json",
+        Accept: "application/json",
+      },
+      body: JSON.stringify({
+        email,
+        listIds: [2],
+        updateEnabled: true,
+        attributes: { SOURCE: "solokit-free-prompts" },
+      }),
+    });
 
     if (!res.ok) {
-      const body = await res.json();
-      if (body.title === "Member Exists") {
+      const body = await res.json().catch(() => ({}));
+      // 400 with "Contact already exist" is fine
+      if (res.status === 400 && body?.message?.includes("already exist")) {
         return NextResponse.json({ ok: true });
       }
-      console.error("Mailchimp error:", body);
+      console.error("Brevo error:", body);
       return NextResponse.json({ error: "Subscription failed" }, { status: 500 });
     }
 
