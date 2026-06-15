@@ -244,6 +244,9 @@ export default function Article() {
               <Link href="/blog/get-freelance-clients-uae" className="text-sm text-gray-500 hover:text-gray-900 transition-colors underline underline-offset-2">
                 How to Get Freelance Clients in the UAE (6 Strategies) →
               </Link>
+              <Link href="/blog/late-payment-freelance-uae" className="text-sm text-gray-500 hover:text-gray-900 transition-colors underline underline-offset-2">
+                How to Chase Late Payments as a Freelancer in the UAE →
+              </Link>
             </div>
           </div>
 
