@@ -207,6 +207,33 @@ const posts = [
     readTime: "6 min read",
     category: "Business",
   },
+  {
+    slug: "how-to-become-freelancer-uae",
+    title: "How to Become a Freelancer in the UAE — Complete 2026 Guide",
+    description:
+      "Everything you need to start freelancing in the UAE: your first client, the freelance visa, bank accounts, rates, taxes, contracts, and a 90-day action plan.",
+    date: "June 15, 2026",
+    readTime: "10 min read",
+    category: "Business",
+  },
+  {
+    slug: "best-coworking-spaces-dubai",
+    title: "Best Coworking Spaces in Dubai for Freelancers (2026)",
+    description:
+      "Honest comparison of the best coworking spaces in Dubai — Astrolabs, WeWork, Hive, The Bureau, Warehouse421. Price, location, vibe, and who each is best for.",
+    date: "June 15, 2026",
+    readTime: "6 min read",
+    category: "Business",
+  },
+  {
+    slug: "how-to-get-international-clients-uae",
+    title: "How to Get International Clients as a UAE-Based Freelancer",
+    description:
+      "How UAE freelancers attract US, UK, and European clients — Upwork, Toptal, LinkedIn, USD pricing, Wise payments, and the time zone advantage.",
+    date: "June 15, 2026",
+    readTime: "7 min read",
+    category: "Client Acquisition",
+  },
 ];
 
 const featured = [

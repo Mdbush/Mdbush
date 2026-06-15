@@ -34,6 +34,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "notion-setup-guide-freelancers",
     "how-to-get-clients-linkedin-uae",
     "freelancer-burnout-uae",
+    "how-to-become-freelancer-uae",
+    "best-coworking-spaces-dubai",
+    "how-to-get-international-clients-uae",
   ].map((slug) => ({
     url: `${base}/blog/${slug}`,
     lastModified: new Date(),

@@ -15,6 +15,23 @@ export default function BrandPage() {
         Download your profile images and copy the exact text for each platform.
       </p>
 
+      {/* Internal Content Hub */}
+      <section className="mb-10 bg-gray-50 border border-gray-200 rounded-xl p-5">
+        <h2 className="text-sm font-bold text-gray-900 mb-3">Internal content pages</h2>
+        <div className="grid grid-cols-1 sm:grid-cols-3 gap-3">
+          {[
+            { label: "TikTok Scripts", href: "/tiktok", desc: "20 ready-to-record video scripts" },
+            { label: "Instagram Content", href: "/instagram", desc: "10 Reels + 3 static posts with captions" },
+            { label: "LinkedIn Posts", href: "/linkedin", desc: "12 posts + profile optimization guide" },
+          ].map(({ label, href, desc }) => (
+            <a key={label} href={href} className="bg-white border border-gray-200 rounded-lg p-4 hover:border-gray-400 transition-colors">
+              <p className="font-semibold text-sm text-gray-900 mb-1">{label}</p>
+              <p className="text-xs text-gray-500">{desc}</p>
+            </a>
+          ))}
+        </div>
+      </section>
+
       {/* Images */}
       <section className="mb-12">
         <h2 className="text-lg font-bold mb-6">Brand Images</h2>
