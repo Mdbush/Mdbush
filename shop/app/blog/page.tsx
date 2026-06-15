@@ -234,6 +234,33 @@ const posts = [
     readTime: "7 min read",
     category: "Client Acquisition",
   },
+  {
+    slug: "digital-nomad-visa-vs-freelance-visa-uae",
+    title: "Digital Nomad Visa vs Freelance Visa UAE: Which Is Right for You? (2026)",
+    description:
+      "Comparing the UAE Remote Work Visa (Digital Nomad) with the Freelance Permit. Cost, eligibility, what each allows, and how to choose between them.",
+    date: "June 15, 2026",
+    readTime: "6 min read",
+    category: "Business",
+  },
+  {
+    slug: "emaratax-registration-freelancers-uae",
+    title: "How to Register on EmaraTax as a UAE Freelancer (Step-by-Step 2026)",
+    description:
+      "All UAE business owners (including freelancers) must register on EmaraTax.ae for corporate tax — even if they owe zero. Here's the exact step-by-step process.",
+    date: "June 15, 2026",
+    readTime: "7 min read",
+    category: "Tax & Finance",
+  },
+  {
+    slug: "how-much-do-uae-freelancers-earn",
+    title: "How Much Do Freelancers Earn in the UAE? (2026 Income Guide)",
+    description:
+      "Real income data for UAE freelancers by profession and experience level — plus what separates AED 10K earners from AED 50K earners in Dubai.",
+    date: "June 15, 2026",
+    readTime: "7 min read",
+    category: "Business",
+  },
 ];
 
 const featured = [

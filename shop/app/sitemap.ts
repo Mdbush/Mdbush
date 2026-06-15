@@ -37,6 +37,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "how-to-become-freelancer-uae",
     "best-coworking-spaces-dubai",
     "how-to-get-international-clients-uae",
+    "digital-nomad-visa-vs-freelance-visa-uae",
+    "emaratax-registration-freelancers-uae",
+    "how-much-do-uae-freelancers-earn",
   ].map((slug) => ({
     url: `${base}/blog/${slug}`,
     lastModified: new Date(),
