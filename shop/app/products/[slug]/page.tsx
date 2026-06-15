@@ -16,7 +16,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const product = getProduct(slug);
   if (!product) return {};
   return {
-    title: `${product.name} — DigitalTools`,
+    title: `${product.name} — SoloKit`,
     description: product.tagline,
     alternates: { canonical: `/products/${slug}` },
     openGraph: {

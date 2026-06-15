@@ -6,19 +6,19 @@ const geist = Geist({ subsets: ["latin"], variable: "--font-geist-sans" });
 
 export const metadata: Metadata = {
   metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL ?? "http://localhost:3000"),
-  title: "Digital Tools Store — Templates, Prompts & Systems for Solopreneurs",
+  title: "SoloKit — Notion Templates, AI Prompts & SOPs for Solopreneurs",
   description:
     "Ready-to-use Notion templates, AI prompt packs, and SOPs built for freelancers and solopreneurs. Stop building from scratch — plug in and go.",
   openGraph: {
-    title: "Digital Tools Store",
-    description: "Templates, prompts & systems for freelancers and solopreneurs.",
+    title: "SoloKit",
+    description: "Notion templates, AI prompts & SOPs for freelancers and solopreneurs.",
     type: "website",
     url: "/",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Digital Tools Store",
-    description: "Templates, prompts & systems for freelancers and solopreneurs.",
+    title: "SoloKit",
+    description: "Notion templates, AI prompts & SOPs for freelancers and solopreneurs.",
   },
 };
 
