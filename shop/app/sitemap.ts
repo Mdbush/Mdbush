@@ -26,6 +26,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "freelance-tax-uae",
     "best-banks-freelancers-uae",
     "freelance-rate-calculator-uae",
+    "best-freelance-platforms-uae",
+    "freelance-contract-template-uae",
   ].map((slug) => ({
     url: `${base}/blog/${slug}`,
     lastModified: new Date(),

@@ -55,6 +55,12 @@ const posts = [
   {
     text: `Freelancers in the UAE: here's the formula to calculate your minimum rate.\n\nMost people guess. Here's the math:\n\nStep 1 — Monthly target take-home: AED 20,000\nStep 2 — Add annual overhead:\n→ Visa/permit: AED 7,500\n→ Health insurance: AED 5,000\n→ Software + tools: AED 3,600\n→ Total: ~AED 27,500/yr\nStep 3 — Add 15% income gap buffer\nStep 4 — Divide by billable hours (25/week × 46 weeks = 1,150)\n\nResult: AED 267/hour minimum to take home AED 20K/month.\n\nMost freelancers are charging less than this.\n\nFull rate calculator + market rates by profession: ${SITE_URL}/blog/freelance-rate-calculator-uae\n\n#UAE #FreelanceRates #DubaiFreelancer #Freelance #SoloKit`,
   },
+  {
+    text: `Best freelance platforms for UAE-based freelancers in 2026:\n\n🏆 Upwork — biggest pool, 20% fee (drops to 5% for long-term clients)\n⚡ Fiverr — gig-based, no pitching, good for beginners\n💎 Toptal — top 3% only, $80-200+/hr, 0% fee to freelancer\n🇦🇪 LinkedIn — best for UAE local clients, 0% platform fee\n🌍 Nabbesh — Middle East-focused, AED projects, lower competition\n\nThe right stack:\n→ Starting out: Fiverr + LinkedIn\n→ Mid-level: Upwork + LinkedIn\n→ Senior: Toptal + direct referrals\n\nFull platform comparison: ${SITE_URL}/blog/best-freelance-platforms-uae\n\n#UAE #FreelancePlatforms #DubaiFreelancer #Upwork #SoloKit`,
+  },
+  {
+    text: `UAE freelancers: if you start projects without a signed contract, you will get burned.\n\nNot maybe. Will.\n\nThe 9 clauses every freelance contract needs:\n\n1. Scope of Work (what's IN and what's NOT)\n2. Payment terms (50% upfront minimum)\n3. Timeline (pauses if client delays feedback)\n4. Revision policy (cap at 2 rounds)\n5. IP & ownership (transfers on final payment)\n6. Confidentiality (2-3 years)\n7. Termination clause (7-day notice, deposit kept)\n8. Governing law (UAE courts, Dubai jurisdiction)\n9. Limitation of liability (capped at project fee)\n\nFull template + example contract language: ${SITE_URL}/blog/freelance-contract-template-uae\n\n#Freelance #UAE #DubaiFreelancer #FreelanceContracts #SoloKit`,
+  },
 ];
 
 function getPostIndex(): number {

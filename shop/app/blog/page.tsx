@@ -135,6 +135,24 @@ const posts = [
     readTime: "8 min read",
     category: "Business",
   },
+  {
+    slug: "best-freelance-platforms-uae",
+    title: "Best Freelance Platforms in the UAE (2026): Where to Find Clients",
+    description:
+      "Upwork, Fiverr, Toptal, LinkedIn, and Nabbesh compared for UAE freelancers. Where you'll actually land clients — and which platform to use at each stage of your career.",
+    date: "June 15, 2026",
+    readTime: "8 min read",
+    category: "Client Acquisition",
+  },
+  {
+    slug: "freelance-contract-template-uae",
+    title: "Freelance Contract Template UAE (2026): 9 Clauses You Must Include",
+    description:
+      "The 9 essential clauses every UAE freelancer needs in their client contract. Scope creep protection, payment terms, IP rights, and dispute resolution for UAE law.",
+    date: "June 15, 2026",
+    readTime: "9 min read",
+    category: "Legal & Contracts",
+  },
 ];
 
 export default function BlogPage() {
