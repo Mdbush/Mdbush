@@ -45,6 +45,24 @@ const posts = [
     readTime: "5 min read",
     category: "SOPs & Systems",
   },
+  {
+    slug: "how-to-price-freelance-services-uae",
+    title: "How to Price Your Freelance Services in the UAE (2026 Guide)",
+    description:
+      "Market rate benchmarks, value-based vs hourly pricing, and the most common mistakes UAE freelancers make when setting their rates.",
+    date: "June 15, 2026",
+    readTime: "6 min read",
+    category: "Business",
+  },
+  {
+    slug: "get-freelance-clients-uae",
+    title: "How to Get Freelance Clients in the UAE (6 Strategies That Work)",
+    description:
+      "LinkedIn outreach, referral systems, local networking, and the platforms that pay well in Dubai and Abu Dhabi.",
+    date: "June 15, 2026",
+    readTime: "7 min read",
+    category: "Business",
+  },
 ];
 
 export default function BlogPage() {
