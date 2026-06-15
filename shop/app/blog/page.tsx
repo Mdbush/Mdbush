@@ -108,6 +108,15 @@ const posts = [
     readTime: "8 min read",
     category: "Business",
   },
+  {
+    slug: "freelance-tax-uae",
+    title: "Do Freelancers Pay Tax in the UAE? (2026 Complete Guide)",
+    description:
+      "UAE freelancers: zero personal income tax, but corporate tax and VAT rules changed in 2023. Here's exactly what taxes you owe, who's exempt, and what records to keep.",
+    date: "June 15, 2026",
+    readTime: "8 min read",
+    category: "Tax & Finance",
+  },
 ];
 
 export default function BlogPage() {

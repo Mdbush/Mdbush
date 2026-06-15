@@ -46,6 +46,9 @@ const posts = [
   {
     text: `How much does it actually cost to get a freelance visa in the UAE?\n\nRealistic breakdown:\n→ Freelance permit: AED 6,000–8,000/year\n→ Residency visa: AED 3,500–5,000\n→ Medical + Emirates ID: ~AED 800\n→ Business bank account: AED 0–2,000\n\nTotal first year: AED 10,000–16,000\n\nMost popular options:\n• Lowest cost: RAKEZ or Shams\n• Best for media/marketing: Dubai Media City\n• Best for tech: Dubai Silicon Oasis\n\nFull step-by-step guide: ${SITE_URL}/blog/freelance-visa-uae\n\n#UAE #FreelanceVisa #DubaiFreelancer #SoloKit #Freelance`,
   },
+  {
+    text: `Do freelancers pay tax in the UAE?\n\nShort answer: barely.\n\nHere's the full picture:\n\n✅ Personal income tax: 0% — none, forever\n✅ Corporate tax if revenue < AED 375K/yr: 0% — exempt\n⚠️ Corporate tax if revenue > AED 375K/yr: 9% on profit\n⚠️ VAT: required if UAE clients > AED 375K/yr\n\nMost freelancers in Dubai earn under the threshold and pay absolutely nothing.\n\nBut you MUST register for corporate tax on EmaraTax — even if you owe zero.\n\nFull 2026 tax guide: ${SITE_URL}/blog/freelance-tax-uae\n\n#UAE #FreelancerTax #DubaiFreelancer #TaxFree #SoloKit`,
+  },
 ];
 
 function getPostIndex(): number {
