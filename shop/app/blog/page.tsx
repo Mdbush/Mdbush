@@ -72,6 +72,15 @@ const posts = [
     readTime: "7 min read",
     category: "Business",
   },
+  {
+    slug: "late-payment-freelance-uae",
+    title: "How to Chase Late Payments as a Freelancer in the UAE",
+    description:
+      "Late invoices kill cash flow. Here's a 4-step follow-up sequence, prevention tactics, and legal options for UAE freelancers dealing with clients who don't pay on time.",
+    date: "June 15, 2026",
+    readTime: "6 min read",
+    category: "Business",
+  },
 ];
 
 export default function BlogPage() {

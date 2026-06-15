@@ -34,6 +34,9 @@ const posts = [
   {
     text: `Your freelance proposal is probably about you.\n\nIt shouldn't be.\n\nThe proposals that win:\n→ Start with the client's problem\n→ Show your specific approach to solving it\n→ Give a week-by-week timeline\n→ End with one clear next step\n\nThe proposals that lose:\n→ Start with "I am a freelancer with X years of experience…"\n→ List every tool you use\n→ Say "looking forward to working with you"\n\nFull breakdown (+ 5 common mistakes): ${SITE_URL}/blog/freelance-proposal-tips-uae\n\n#Freelance #Proposals #ClientWin #SoloKit #UAE`,
   },
+  {
+    text: `Late invoice payments are the #1 cash flow killer for freelancers.\n\nHere's a 4-step follow-up sequence that works:\n\nDay 1 (due date): Friendly reminder\nDay 7: Polite but direct follow-up\nDay 14: Firm, professional escalation\nDay 30: Final notice with consequence\n\nMost clients pay by day 14. The ones who don't are usually testing whether you'll follow up at all.\n\nFull guide + copy-paste email templates: ${SITE_URL}/blog/late-payment-freelance-uae\n\n#Freelance #Invoicing #CashFlow #UAE #SoloKit`,
+  },
 ];
 
 function getPostIndex(): number {
