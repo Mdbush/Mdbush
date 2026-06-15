@@ -54,15 +54,21 @@ export default function Home() {
             Ready-to-use Notion templates, AI prompt packs, and SOP systems built for
             freelancers and solo business owners who want to move fast.
           </p>
-          <div className="mt-8 flex flex-col sm:flex-row items-center justify-center gap-4">
+          <div className="mt-8 flex flex-col sm:flex-row items-center justify-center gap-3">
             <a
               href="#products"
               className="bg-gray-900 text-white font-semibold px-7 py-3 rounded-xl hover:bg-gray-700 transition-colors text-sm"
             >
               Browse Products →
             </a>
-            <span className="text-sm text-gray-400">Instant download · 30-day guarantee</span>
+            <a
+              href="/free"
+              className="border border-gray-300 text-gray-700 font-semibold px-7 py-3 rounded-xl hover:border-gray-500 hover:text-gray-900 transition-colors text-sm"
+            >
+              Get 10 Free AI Prompts
+            </a>
           </div>
+          <p className="mt-3 text-xs text-gray-400">Instant download · 30-day guarantee · No subscription</p>
         </section>
 
         {/* Social proof bar */}
