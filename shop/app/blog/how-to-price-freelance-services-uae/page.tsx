@@ -7,10 +7,12 @@ export const metadata: Metadata = {
   title: "How to Price Your Freelance Services in the UAE (2026 Guide) — SoloKit",
   description:
     "Stop undercharging. A practical guide to setting freelance rates in Dubai and Abu Dhabi — with market benchmarks, pricing strategies, and common mistakes to avoid.",
+  alternates: { canonical: "/blog/how-to-price-freelance-services-uae" },
   openGraph: {
     title: "How to Price Your Freelance Services in the UAE",
     description: "Stop undercharging. Market benchmarks and pricing strategies for UAE freelancers.",
     type: "article",
+    url: "/blog/how-to-price-freelance-services-uae",
   },
 };
 

@@ -7,10 +7,12 @@ export const metadata: Metadata = {
   title: "How to Get Freelance Clients in the UAE (6 Strategies That Work) — SoloKit",
   description:
     "Practical strategies for finding and winning freelance clients in Dubai and Abu Dhabi. LinkedIn, referrals, cold outreach, and the platforms that actually pay well in the UAE.",
+  alternates: { canonical: "/blog/get-freelance-clients-uae" },
   openGraph: {
     title: "How to Get Freelance Clients in the UAE",
     description: "6 strategies for finding high-paying freelance clients in Dubai and Abu Dhabi.",
     type: "article",
+    url: "/blog/get-freelance-clients-uae",
   },
 };
 

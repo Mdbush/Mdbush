@@ -7,10 +7,12 @@ export const metadata: Metadata = {
   title: "Why Most Freelancers in the UAE Stay Stuck at AED 10K/Month — SoloKit",
   description:
     "It's not a skills problem. It's a systems problem. The exact setup that lets UAE freelancers and solopreneurs scale without burning out or hiring.",
+  alternates: { canonical: "/blog/freelance-systems-uae" },
   openGraph: {
     title: "Why Most Freelancers in the UAE Stay Stuck at AED 10K/Month",
     description: "It's not a skills problem. It's a systems problem.",
     type: "article",
+    url: "/blog/freelance-systems-uae",
   },
 };
 

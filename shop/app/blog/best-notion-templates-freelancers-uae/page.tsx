@@ -7,10 +7,12 @@ export const metadata: Metadata = {
   title: "Best Notion Templates for Freelancers in the UAE (2026) — SoloKit",
   description:
     "Stop rebuilding your client tracker, invoice log, and project board every time you start a new project. These Notion templates save UAE freelancers 10+ hours a month.",
+  alternates: { canonical: "/blog/best-notion-templates-freelancers-uae" },
   openGraph: {
     title: "Best Notion Templates for Freelancers in the UAE (2026)",
     description: "Save 10+ hours a month with these ready-to-use Notion templates for UAE freelancers.",
     type: "article",
+    url: "/blog/best-notion-templates-freelancers-uae",
   },
 };
 

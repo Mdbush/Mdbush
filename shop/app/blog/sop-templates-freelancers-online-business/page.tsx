@@ -7,10 +7,12 @@ export const metadata: Metadata = {
   title: "Best SOP Templates for Freelancers and Online Businesses (2026) — SoloKit",
   description:
     "Stop reinventing your onboarding, content, and finance processes from scratch. These SOP templates for freelancers cover client onboarding, team management, and more.",
+  alternates: { canonical: "/blog/sop-templates-freelancers-online-business" },
   openGraph: {
     title: "Best SOP Templates for Freelancers and Online Businesses",
     description: "50 ready-to-use SOPs for freelancers covering client onboarding, content, finance, and team management.",
     type: "article",
+    url: "/blog/sop-templates-freelancers-online-business",
   },
 };
 

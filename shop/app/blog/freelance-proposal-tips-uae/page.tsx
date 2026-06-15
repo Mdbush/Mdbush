@@ -7,10 +7,12 @@ export const metadata: Metadata = {
   title: "How to Write a Freelance Proposal That Wins Clients in the UAE — SoloKit",
   description:
     "Most freelance proposals are rejected because they talk about the freelancer, not the client. Here's how to write proposals that consistently win projects in the UAE.",
+  alternates: { canonical: "/blog/freelance-proposal-tips-uae" },
   openGraph: {
     title: "How to Write a Freelance Proposal That Wins Clients in the UAE",
     description: "Stop sending proposals that get ignored. Here's what actually works in Dubai and Abu Dhabi.",
     type: "article",
+    url: "/blog/freelance-proposal-tips-uae",
   },
 };
 

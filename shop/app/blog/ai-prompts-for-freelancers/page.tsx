@@ -7,10 +7,12 @@ export const metadata: Metadata = {
   title: "How to Use AI to Do More Freelance Work in Less Time — SoloKit",
   description:
     "The exact AI prompts I use for client proposals, follow-up emails, content creation, and more — plus the mistakes that waste your time with ChatGPT and Claude.",
+  alternates: { canonical: "/blog/ai-prompts-for-freelancers" },
   openGraph: {
     title: "How to Use AI to Do More Freelance Work in Less Time",
     description: "The exact prompts freelancers need for proposals, emails, and content creation.",
     type: "article",
+    url: "/blog/ai-prompts-for-freelancers",
   },
 };
 
