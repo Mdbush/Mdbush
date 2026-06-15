@@ -23,9 +23,15 @@ export async function POST(request: NextRequest) {
   }
 
   const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? "http://localhost:3000";
-  const successUrl = `${siteUrl}/success?product=${productSlug}`;
+  const successUrl = `${siteUrl}/success?product=${encodeURIComponent(productSlug)}`;
 
-  const checkout = await createProductCheckout(product.lemonSqueezyVariantId, successUrl);
+  let checkout;
+  try {
+    checkout = await createProductCheckout(product.lemonSqueezyVariantId, successUrl);
+  } catch (err) {
+    console.error("Lemon Squeezy network error:", err);
+    return NextResponse.json({ error: "Failed to create checkout" }, { status: 500 });
+  }
 
   if (checkout.error) {
     console.error("Lemon Squeezy checkout error:", checkout.error);

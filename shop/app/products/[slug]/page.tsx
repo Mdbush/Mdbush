@@ -18,6 +18,18 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   return {
     title: `${product.name} — DigitalTools`,
     description: product.tagline,
+    alternates: { canonical: `/products/${slug}` },
+    openGraph: {
+      title: product.name,
+      description: product.tagline,
+      url: `/products/${slug}`,
+      type: "website",
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: product.name,
+      description: product.tagline,
+    },
   };
 }
 

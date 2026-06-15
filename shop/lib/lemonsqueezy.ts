@@ -20,7 +20,7 @@ export async function createProductCheckout(variantId: string, successUrl: strin
     },
     productOptions: {
       redirectUrl: successUrl,
-      receiptButtonText: "Go to Dashboard",
+      receiptButtonText: "Back to Store",
       receiptThankYouNote: "Thank you! Check your email for the download link.",
     },
   });

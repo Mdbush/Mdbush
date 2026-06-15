@@ -2,9 +2,10 @@ import type { Metadata } from "next";
 import { Geist } from "next/font/google";
 import "./globals.css";
 
-const geist = Geist({ subsets: ["latin"], variable: "--font-geist" });
+const geist = Geist({ subsets: ["latin"], variable: "--font-geist-sans" });
 
 export const metadata: Metadata = {
+  metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL ?? "http://localhost:3000"),
   title: "Digital Tools Store — Templates, Prompts & Systems for Solopreneurs",
   description:
     "Ready-to-use Notion templates, AI prompt packs, and SOPs built for freelancers and solopreneurs. Stop building from scratch — plug in and go.",
@@ -12,6 +13,12 @@ export const metadata: Metadata = {
     title: "Digital Tools Store",
     description: "Templates, prompts & systems for freelancers and solopreneurs.",
     type: "website",
+    url: "/",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Digital Tools Store",
+    description: "Templates, prompts & systems for freelancers and solopreneurs.",
   },
 };
 

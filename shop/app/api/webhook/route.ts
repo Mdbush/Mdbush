@@ -2,9 +2,13 @@ import { NextRequest, NextResponse } from "next/server";
 import crypto from "crypto";
 
 function verifySignature(payload: string, signature: string, secret: string): boolean {
+  if (!signature) return false;
   const hmac = crypto.createHmac("sha256", secret);
   const digest = hmac.update(payload).digest("hex");
-  return crypto.timingSafeEqual(Buffer.from(digest), Buffer.from(signature));
+  const digestBuf = Buffer.from(digest);
+  const sigBuf = Buffer.from(signature);
+  if (digestBuf.byteLength !== sigBuf.byteLength) return false;
+  return crypto.timingSafeEqual(digestBuf, sigBuf);
 }
 
 export async function POST(request: NextRequest) {
@@ -20,14 +24,19 @@ export async function POST(request: NextRequest) {
     return NextResponse.json({ error: "Invalid signature" }, { status: 401 });
   }
 
-  const event = JSON.parse(payload);
-  const eventName: string = event.meta?.event_name ?? "";
+  let event: Record<string, unknown>;
+  try {
+    event = JSON.parse(payload);
+  } catch {
+    return NextResponse.json({ received: true });
+  }
+  const eventName: string = (event.meta as Record<string, unknown>)?.event_name as string ?? "";
 
   switch (eventName) {
     case "order_created": {
-      const order = event.data?.attributes;
+      const order = (event.data as Record<string, unknown>)?.attributes as Record<string, unknown>;
       console.log("New order:", {
-        id: event.data?.id,
+        id: (event.data as Record<string, unknown>)?.id,
         email: order?.user_email,
         status: order?.status,
         total: order?.total,
@@ -36,11 +45,11 @@ export async function POST(request: NextRequest) {
       break;
     }
     case "subscription_created": {
-      console.log("New subscription:", event.data?.id);
+      console.log("New subscription:", (event.data as Record<string, unknown>)?.id);
       break;
     }
     case "subscription_cancelled": {
-      console.log("Subscription cancelled:", event.data?.id);
+      console.log("Subscription cancelled:", (event.data as Record<string, unknown>)?.id);
       break;
     }
     default:

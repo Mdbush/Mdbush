@@ -6,6 +6,7 @@ import type { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Order Complete — DigitalTools",
+  robots: { index: false, follow: false },
 };
 
 type Props = { searchParams: Promise<{ product?: string }> };
