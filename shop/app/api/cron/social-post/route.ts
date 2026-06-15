@@ -49,6 +49,9 @@ const posts = [
   {
     text: `Do freelancers pay tax in the UAE?\n\nShort answer: barely.\n\nHere's the full picture:\n\n✅ Personal income tax: 0% — none, forever\n✅ Corporate tax if revenue < AED 375K/yr: 0% — exempt\n⚠️ Corporate tax if revenue > AED 375K/yr: 9% on profit\n⚠️ VAT: required if UAE clients > AED 375K/yr\n\nMost freelancers in Dubai earn under the threshold and pay absolutely nothing.\n\nBut you MUST register for corporate tax on EmaraTax — even if you owe zero.\n\nFull 2026 tax guide: ${SITE_URL}/blog/freelance-tax-uae\n\n#UAE #FreelancerTax #DubaiFreelancer #TaxFree #SoloKit`,
   },
+  {
+    text: `Best bank accounts for UAE freelancers in 2026:\n\n🏆 Emirates NBD — most trusted, AED 3K min balance\n⚡ Liv — zero balance, opens in minutes on your phone\n📊 Mashreq Neo — zero balance + built-in expense tracking\n💼 Wio Bank — business account, invoicing, multi-currency\n🌍 HSBC — best for international, AED 25K min balance\n\nOur pick for most freelancers:\nStart with Liv (free, instant), upgrade to Emirates NBD business when you have your trade license.\n\nAdd Wise as a second account for international client payments.\n\nFull comparison: ${SITE_URL}/blog/best-banks-freelancers-uae\n\n#UAE #FreelancerBanking #DubaiFreelancer #SoloKit #Freelance`,
+  },
 ];
 
 function getPostIndex(): number {

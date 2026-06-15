@@ -117,6 +117,15 @@ const posts = [
     readTime: "8 min read",
     category: "Tax & Finance",
   },
+  {
+    slug: "best-banks-freelancers-uae",
+    title: "Best Banks for Freelancers in the UAE (2026)",
+    description:
+      "The best bank accounts for UAE freelancers in 2026. Compare Emirates NBD, Liv, Mashreq Neo, Wio, and HSBC. No minimum balance picks included.",
+    date: "June 15, 2026",
+    readTime: "7 min read",
+    category: "Finance",
+  },
 ];
 
 export default function BlogPage() {
