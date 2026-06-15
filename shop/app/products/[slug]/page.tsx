@@ -38,7 +38,7 @@ export default async function ProductPage({ params }: Props) {
   const product = getProduct(slug);
   if (!product) notFound();
 
-  const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? "https://mdbush.vercel.app";
+  const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? "https://solokit.cloud";
   const jsonLd = {
     "@context": "https://schema.org",
     "@type": "Product",

@@ -1,6 +1,6 @@
 import { NextResponse } from "next/server";
 
-const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? "https://mdbush.vercel.app";
+const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? "https://solokit.cloud";
 const FB_PAGE_ID = "1098756576664555";
 
 const posts = [
