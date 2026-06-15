@@ -4,6 +4,7 @@ import { getProduct, formatPrice, products } from "@/lib/products";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import CheckoutButton from "@/components/CheckoutButton";
+import MobileStickyBuy from "@/components/MobileStickyBuy";
 import type { Metadata } from "next";
 
 type Props = { params: Promise<{ slug: string }> };
@@ -67,6 +68,7 @@ export default async function ProductPage({ params }: Props) {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
+      <MobileStickyBuy productSlug={product.slug} productName={product.name} price={product.price} />
       <Header />
 
       <main className="flex-1 max-w-4xl mx-auto px-4 sm:px-6 py-12">
