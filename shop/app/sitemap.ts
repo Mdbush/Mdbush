@@ -18,6 +18,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "sop-templates-freelancers-online-business",
     "how-to-price-freelance-services-uae",
     "get-freelance-clients-uae",
+    "freelance-proposal-tips-uae",
   ].map((slug) => ({
     url: `${base}/blog/${slug}`,
     lastModified: new Date(),

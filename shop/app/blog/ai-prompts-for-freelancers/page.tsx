@@ -14,6 +14,20 @@ export const metadata: Metadata = {
   },
 };
 
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@type": "Article",
+  headline: "How to Use AI to Do More Freelance Work in Less Time",
+  description:
+    "The exact AI prompts I use for client proposals, follow-up emails, content creation, and more — plus the mistakes that waste your time with ChatGPT and Claude.",
+  datePublished: "2026-06-10",
+  dateModified: "2026-06-10",
+  author: { "@type": "Organization", name: "SoloKit" },
+  publisher: { "@type": "Organization", name: "SoloKit", url: "https://solokit.cloud" },
+  url: "https://solokit.cloud/blog/ai-prompts-for-freelancers",
+  mainEntityOfPage: "https://solokit.cloud/blog/ai-prompts-for-freelancers",
+};
+
 const prompts = [
   {
     label: "Write a project proposal",
@@ -35,6 +49,7 @@ const prompts = [
 export default function Article() {
   return (
     <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
       <Header />
 
       <main className="flex-1 max-w-2xl mx-auto px-4 sm:px-6 py-14">

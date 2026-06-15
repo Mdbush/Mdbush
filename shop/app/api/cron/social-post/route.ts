@@ -31,6 +31,9 @@ const posts = [
   {
     text: `The most important client SOP you're not using:\n\nClient offboarding.\n\nMost freelancers end a project with "that's a wrap" and nothing else.\n\nA proper offboarding SOP:\n✅ Final deliverables checklist\n✅ Testimonial request\n✅ Referral ask\n✅ Follow-up date (3-6 months)\n\nThis single process generates 20-30% of future revenue.\n\nFull guide: ${SITE_URL}/blog/sop-templates-freelancers-online-business\n\n#Freelance #SOP #BusinessSystems #SoloKit`,
   },
+  {
+    text: `Your freelance proposal is probably about you.\n\nIt shouldn't be.\n\nThe proposals that win:\n→ Start with the client's problem\n→ Show your specific approach to solving it\n→ Give a week-by-week timeline\n→ End with one clear next step\n\nThe proposals that lose:\n→ Start with "I am a freelancer with X years of experience…"\n→ List every tool you use\n→ Say "looking forward to working with you"\n\nFull breakdown (+ 5 common mistakes): ${SITE_URL}/blog/freelance-proposal-tips-uae\n\n#Freelance #Proposals #ClientWin #SoloKit #UAE`,
+  },
 ];
 
 function getPostIndex(): number {

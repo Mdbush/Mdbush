@@ -63,6 +63,15 @@ const posts = [
     readTime: "7 min read",
     category: "Business",
   },
+  {
+    slug: "freelance-proposal-tips-uae",
+    title: "How to Write a Freelance Proposal That Wins Clients in the UAE",
+    description:
+      "Most proposals get ignored because they talk about the freelancer, not the client. Here's the structure that consistently wins projects in Dubai and Abu Dhabi.",
+    date: "June 15, 2026",
+    readTime: "7 min read",
+    category: "Business",
+  },
 ];
 
 export default function BlogPage() {

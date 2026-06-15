@@ -14,6 +14,20 @@ export const metadata: Metadata = {
   },
 };
 
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@type": "Article",
+  headline: "How to Price Your Freelance Services in the UAE (2026 Guide)",
+  description:
+    "Stop undercharging. A practical guide to setting freelance rates in Dubai and Abu Dhabi — with market benchmarks, pricing strategies, and common mistakes to avoid.",
+  datePublished: "2026-06-15",
+  dateModified: "2026-06-15",
+  author: { "@type": "Organization", name: "SoloKit" },
+  publisher: { "@type": "Organization", name: "SoloKit", url: "https://solokit.cloud" },
+  url: "https://solokit.cloud/blog/how-to-price-freelance-services-uae",
+  mainEntityOfPage: "https://solokit.cloud/blog/how-to-price-freelance-services-uae",
+};
+
 const benchmarks = [
   { role: "Graphic Designer", junior: "AED 80–120/hr", mid: "AED 150–250/hr", senior: "AED 300–500/hr" },
   { role: "Web Developer", junior: "AED 100–150/hr", mid: "AED 200–350/hr", senior: "AED 400–700/hr" },
@@ -26,6 +40,7 @@ const benchmarks = [
 export default function Article() {
   return (
     <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
       <Header />
 
       <main className="flex-1 max-w-2xl mx-auto px-4 sm:px-6 py-14">

@@ -14,9 +14,24 @@ export const metadata: Metadata = {
   },
 };
 
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@type": "Article",
+  headline: "How to Get Freelance Clients in the UAE (6 Strategies That Work)",
+  description:
+    "Practical strategies for finding and winning freelance clients in Dubai and Abu Dhabi. LinkedIn, referrals, cold outreach, and the platforms that actually pay well in the UAE.",
+  datePublished: "2026-06-15",
+  dateModified: "2026-06-15",
+  author: { "@type": "Organization", name: "SoloKit" },
+  publisher: { "@type": "Organization", name: "SoloKit", url: "https://solokit.cloud" },
+  url: "https://solokit.cloud/blog/get-freelance-clients-uae",
+  mainEntityOfPage: "https://solokit.cloud/blog/get-freelance-clients-uae",
+};
+
 export default function Article() {
   return (
     <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
       <Header />
 
       <main className="flex-1 max-w-2xl mx-auto px-4 sm:px-6 py-14">

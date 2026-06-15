@@ -14,9 +14,24 @@ export const metadata: Metadata = {
   },
 };
 
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@type": "Article",
+  headline: "Best Notion Templates for Freelancers in the UAE (2026)",
+  description:
+    "Stop rebuilding your client tracker, invoice log, and project board every time you start a new project. These Notion templates save UAE freelancers 10+ hours a month.",
+  datePublished: "2026-06-12",
+  dateModified: "2026-06-12",
+  author: { "@type": "Organization", name: "SoloKit" },
+  publisher: { "@type": "Organization", name: "SoloKit", url: "https://solokit.cloud" },
+  url: "https://solokit.cloud/blog/best-notion-templates-freelancers-uae",
+  mainEntityOfPage: "https://solokit.cloud/blog/best-notion-templates-freelancers-uae",
+};
+
 export default function Article() {
   return (
     <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
       <Header />
 
       <main className="flex-1 max-w-2xl mx-auto px-4 sm:px-6 py-14">

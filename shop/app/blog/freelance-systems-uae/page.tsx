@@ -14,9 +14,24 @@ export const metadata: Metadata = {
   },
 };
 
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@type": "Article",
+  headline: "Why Most Freelancers in the UAE Stay Stuck at AED 10K/Month",
+  description:
+    "It's not a skills problem. It's a systems problem. The exact setup that lets UAE freelancers and solopreneurs scale without burning out or hiring.",
+  datePublished: "2026-06-08",
+  dateModified: "2026-06-08",
+  author: { "@type": "Organization", name: "SoloKit" },
+  publisher: { "@type": "Organization", name: "SoloKit", url: "https://solokit.cloud" },
+  url: "https://solokit.cloud/blog/freelance-systems-uae",
+  mainEntityOfPage: "https://solokit.cloud/blog/freelance-systems-uae",
+};
+
 export default function Article() {
   return (
     <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
       <Header />
 
       <main className="flex-1 max-w-2xl mx-auto px-4 sm:px-6 py-14">

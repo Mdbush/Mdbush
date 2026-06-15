@@ -14,6 +14,20 @@ export const metadata: Metadata = {
   },
 };
 
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@type": "Article",
+  headline: "Best SOP Templates for Freelancers and Online Businesses (2026)",
+  description:
+    "Stop reinventing your onboarding, content, and finance processes from scratch. These SOP templates for freelancers cover client onboarding, team management, and more.",
+  datePublished: "2026-06-14",
+  dateModified: "2026-06-14",
+  author: { "@type": "Organization", name: "SoloKit" },
+  publisher: { "@type": "Organization", name: "SoloKit", url: "https://solokit.cloud" },
+  url: "https://solokit.cloud/blog/sop-templates-freelancers-online-business",
+  mainEntityOfPage: "https://solokit.cloud/blog/sop-templates-freelancers-online-business",
+};
+
 const sopCategories = [
   { name: "Client Onboarding", count: 7, examples: ["New client intake form", "Contract signing checklist", "Kickoff call agenda", "First-week communication template"] },
   { name: "Content Creation", count: 12, examples: ["Blog post publishing workflow", "Social media scheduling SOP", "Video production checklist", "Newsletter send process"] },
@@ -24,6 +38,7 @@ const sopCategories = [
 export default function Article() {
   return (
     <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
       <Header />
 
       <main className="flex-1 max-w-2xl mx-auto px-4 sm:px-6 py-14">
