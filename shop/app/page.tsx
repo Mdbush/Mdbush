@@ -78,7 +78,7 @@ export default function Home() {
                 {
                   icon: "🛡️",
                   title: "30-day guarantee",
-                  desc: "Not happy? Email us within 30 days and we'll refund you. No questions.",
+                  desc: "Not happy? Email mohamed.bushara@woccars.com within 30 days and we'll refund you. No questions.",
                 },
               ].map((item) => (
                 <div key={item.title} className="bg-white border border-gray-200 rounded-2xl p-6">
