@@ -233,6 +233,18 @@ export default function Article() {
           </div>
         </div>
 
+          <div className="mt-10 pt-6 border-t border-gray-100">
+            <p className="text-sm font-semibold text-gray-900 mb-3">Further reading</p>
+            <div className="flex flex-col gap-2">
+              <Link href="/blog/freelance-proposal-tips-uae" className="text-sm text-gray-500 hover:text-gray-900 transition-colors underline underline-offset-2">
+                How to Write a Freelance Proposal That Wins Clients →
+              </Link>
+              <Link href="/blog/get-freelance-clients-uae" className="text-sm text-gray-500 hover:text-gray-900 transition-colors underline underline-offset-2">
+                How to Get Freelance Clients in the UAE (6 Strategies) →
+              </Link>
+            </div>
+          </div>
+
         <div className="mt-12 pt-8 border-t border-gray-100">
           <Link href="/blog" className="text-sm text-gray-400 hover:text-gray-700 transition-colors">
             ← Back to Blog
