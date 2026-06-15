@@ -198,6 +198,49 @@ export default async function ProductPage({ params }: Props) {
           );
         })()}
 
+        {/* Related blog post */}
+        {(() => {
+          const relatedPost: Record<string, { title: string; slug: string; desc: string }> = {
+            "freelancer-client-crm": {
+              title: "Best Notion Templates for Freelancers in the UAE",
+              slug: "best-notion-templates-freelancers-uae",
+              desc: "How to pick and actually use a Notion template for your freelance business.",
+            },
+            "solopreneur-os": {
+              title: "Why Most UAE Freelancers Stay Stuck at AED 10K/Month",
+              slug: "freelance-systems-uae",
+              desc: "The exact systems that let solo operators scale without burning out.",
+            },
+            "ai-prompt-pack-pro": {
+              title: "How to Use AI to Do More Freelance Work in Less Time",
+              slug: "ai-prompts-for-freelancers",
+              desc: "The prompts that actually work — and the mistakes that waste your time with AI.",
+            },
+            "sop-starter-pack": {
+              title: "Best SOP Templates for Freelancers and Online Businesses",
+              slug: "sop-templates-freelancers-online-business",
+              desc: "The 4 SOP categories every freelancer needs, and the most important one most skip.",
+            },
+          };
+          const post = relatedPost[product.slug];
+          if (!post) return null;
+          return (
+            <section className="mt-10">
+              <p className="text-xs font-semibold text-gray-400 uppercase tracking-widest mb-3">Further reading</p>
+              <Link
+                href={`/blog/${post.slug}`}
+                className="flex items-start gap-4 border border-gray-200 rounded-xl p-4 hover:border-gray-400 hover:shadow-sm transition-all group"
+              >
+                <span className="text-2xl shrink-0">📖</span>
+                <div>
+                  <p className="font-semibold text-sm text-gray-900 group-hover:text-gray-700">{post.title}</p>
+                  <p className="text-xs text-gray-500 mt-0.5">{post.desc}</p>
+                </div>
+              </Link>
+            </section>
+          );
+        })()}
+
         {/* More products */}
         <section className="mt-16 border-t border-gray-100 pt-12">
           <h2 className="text-lg font-bold text-gray-900 mb-6">You might also like</h2>
