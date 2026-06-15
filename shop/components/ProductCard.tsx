@@ -35,6 +35,11 @@ export default function ProductCard({ product }: { product: Product }) {
             <span className="text-sm text-gray-400 line-through">{formatPrice(product.originalPrice)}</span>
           )}
           <span className="text-2xl font-bold text-gray-900">{formatPrice(product.price)}</span>
+          {product.originalPrice && (
+            <span className="text-xs text-green-600 font-medium mt-0.5">
+              Save {formatPrice(product.originalPrice - product.price)}
+            </span>
+          )}
         </div>
         <Link
           href={`/products/${product.slug}`}

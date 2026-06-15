@@ -86,6 +86,9 @@ export default function Home() {
           <div className="mb-10 text-center">
             <h2 className="text-2xl sm:text-3xl font-bold text-gray-900">All Products</h2>
             <p className="mt-2 text-gray-500 text-sm">Built for freelancers, tested on real businesses.</p>
+            <a href="/start" className="inline-block mt-3 text-sm text-gray-400 hover:text-gray-700 underline underline-offset-2 transition-colors">
+              Not sure which one? Take 30 seconds to find your fit →
+            </a>
           </div>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
