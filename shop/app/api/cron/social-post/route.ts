@@ -52,6 +52,9 @@ const posts = [
   {
     text: `Best bank accounts for UAE freelancers in 2026:\n\n🏆 Emirates NBD — most trusted, AED 3K min balance\n⚡ Liv — zero balance, opens in minutes on your phone\n📊 Mashreq Neo — zero balance + built-in expense tracking\n💼 Wio Bank — business account, invoicing, multi-currency\n🌍 HSBC — best for international, AED 25K min balance\n\nOur pick for most freelancers:\nStart with Liv (free, instant), upgrade to Emirates NBD business when you have your trade license.\n\nAdd Wise as a second account for international client payments.\n\nFull comparison: ${SITE_URL}/blog/best-banks-freelancers-uae\n\n#UAE #FreelancerBanking #DubaiFreelancer #SoloKit #Freelance`,
   },
+  {
+    text: `Freelancers in the UAE: here's the formula to calculate your minimum rate.\n\nMost people guess. Here's the math:\n\nStep 1 — Monthly target take-home: AED 20,000\nStep 2 — Add annual overhead:\n→ Visa/permit: AED 7,500\n→ Health insurance: AED 5,000\n→ Software + tools: AED 3,600\n→ Total: ~AED 27,500/yr\nStep 3 — Add 15% income gap buffer\nStep 4 — Divide by billable hours (25/week × 46 weeks = 1,150)\n\nResult: AED 267/hour minimum to take home AED 20K/month.\n\nMost freelancers are charging less than this.\n\nFull rate calculator + market rates by profession: ${SITE_URL}/blog/freelance-rate-calculator-uae\n\n#UAE #FreelanceRates #DubaiFreelancer #Freelance #SoloKit`,
+  },
 ];
 
 function getPostIndex(): number {

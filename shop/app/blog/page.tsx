@@ -126,6 +126,15 @@ const posts = [
     readTime: "7 min read",
     category: "Finance",
   },
+  {
+    slug: "freelance-rate-calculator-uae",
+    title: "Freelance Rate Calculator UAE: How Much Should You Charge? (2026)",
+    description:
+      "Calculate your minimum freelance rate in AED. Covers target salary, overhead, billable hours, and market rate benchmarks by profession for UAE freelancers.",
+    date: "June 15, 2026",
+    readTime: "8 min read",
+    category: "Business",
+  },
 ];
 
 export default function BlogPage() {
