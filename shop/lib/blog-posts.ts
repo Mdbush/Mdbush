@@ -728,6 +728,33 @@ export const posts: BlogPost[] = [
     readTime: "9 min read",
     category: "Visa & Legal",
   },
+  {
+    slug: "freelance-seo-consultant-rates-uae",
+    title: "Freelance SEO Consultant Rates in the UAE (2026): What to Charge",
+    description:
+      "Real AED rates for freelance SEO consultants in Dubai and Abu Dhabi — monthly retainers, project fees, hourly rates, and what UAE businesses actually pay for SEO services in 2026.",
+    date: "June 16, 2026",
+    readTime: "7 min read",
+    category: "Pricing & Rates",
+  },
+  {
+    slug: "how-to-create-freelance-website-uae",
+    title: "How to Create a Freelance Website in the UAE (What to Include + Tools)",
+    description:
+      "How to build a freelance website that converts UAE clients — what pages to include, what to write, which platform to use, and why most freelancer websites fail to generate leads.",
+    date: "June 16, 2026",
+    readTime: "7 min read",
+    category: "Getting Clients",
+  },
+  {
+    slug: "freelance-goals-setting-uae",
+    title: "Goal Setting for UAE Freelancers: How to Plan a Profitable Year",
+    description:
+      "How UAE freelancers set annual income targets, reverse-engineer them into monthly and weekly actions, and track progress without a manager or performance review.",
+    date: "June 16, 2026",
+    readTime: "7 min read",
+    category: "Business & Mindset",
+  },
 ];
 
 export function getPost(slug: string): BlogPost | undefined {

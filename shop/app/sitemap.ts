@@ -92,6 +92,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "freelance-writer-rates-uae",
     "best-project-management-tools-freelancers",
     "dubai-free-zone-comparison-freelancers",
+    "freelance-seo-consultant-rates-uae",
+    "how-to-create-freelance-website-uae",
+    "freelance-goals-setting-uae",
   ].map((slug) => ({
     url: `${base}/blog/${slug}`,
     lastModified: new Date(),

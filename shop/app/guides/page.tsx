@@ -6,11 +6,11 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "UAE Freelancer Guides & Resources — SoloKit",
   description:
-    "80 practical guides for freelancers and solopreneurs in the UAE. Visa, tax, rates, clients, contracts, AI tools, and more. All free.",
+    "83 practical guides for freelancers and solopreneurs in the UAE. Visa, tax, rates, clients, contracts, AI tools, and more. All free.",
   alternates: { canonical: "/guides" },
   openGraph: {
     title: "UAE Freelancer Guides & Resources — SoloKit",
-    description: "80 free guides covering everything a UAE freelancer needs to know.",
+    description: "83 free guides covering everything a UAE freelancer needs to know.",
     type: "website",
     url: "/guides",
   },
@@ -70,6 +70,7 @@ const categories = [
       { slug: "personal-brand-freelancer-uae", title: "How to Build a Personal Brand as a UAE Freelancer", time: "8 min" },
       { slug: "how-to-get-uae-clients-from-abroad", title: "How to Get UAE Clients from Abroad (Remote Freelancing)", time: "8 min" },
       { slug: "uae-freelance-community-groups", title: "UAE Freelance Communities & Groups (Where to Find Your Network)", time: "5 min" },
+      { slug: "how-to-create-freelance-website-uae", title: "How to Create a Freelance Website in the UAE (What to Include + Tools)", time: "7 min" },
     ],
   },
   {
@@ -95,6 +96,7 @@ const categories = [
       { slug: "freelance-niche-uae", title: "How to Find Your Freelance Niche in the UAE (And Charge More for It)", time: "8 min" },
       { slug: "freelance-rates-increase-strategy-uae", title: "How to Increase Your Freelance Revenue Without More Clients", time: "8 min" },
       { slug: "freelance-writer-rates-uae", title: "Freelance Writer Rates in the UAE (2026): What to Charge", time: "7 min" },
+      { slug: "freelance-seo-consultant-rates-uae", title: "Freelance SEO Consultant Rates in the UAE (2026): What to Charge", time: "7 min" },
     ],
   },
   {
@@ -161,6 +163,7 @@ const categories = [
       { slug: "freelance-financial-planning-uae", title: "Financial Planning for UAE Freelancers: Save, Invest, and Retire", time: "8 min" },
       { slug: "freelance-work-life-balance-uae", title: "Work-Life Balance for UAE Freelancers: Protect Your Time Without Losing Clients", time: "6 min" },
       { slug: "freelance-dry-spells-uae", title: "How to Handle Dry Spells as a UAE Freelancer (When Work Goes Quiet)", time: "7 min" },
+      { slug: "freelance-goals-setting-uae", title: "Goal Setting for UAE Freelancers: How to Plan a Profitable Year", time: "7 min" },
     ],
   },
 ];
@@ -178,7 +181,7 @@ export default function GuidesPage() {
           <span className="text-xs font-semibold text-gray-400 uppercase tracking-widest">Free Resources</span>
           <h1 className="text-3xl sm:text-4xl font-bold text-gray-900 mt-2 mb-3">UAE Freelancer Guides</h1>
           <p className="text-gray-500 max-w-xl mx-auto leading-relaxed">
-            80 practical guides covering everything you need to know about freelancing in Dubai and Abu Dhabi.
+            83 practical guides covering everything you need to know about freelancing in Dubai and Abu Dhabi.
             Written specifically for the UAE market — AED pricing, local laws, free zone context.
           </p>
         </div>
