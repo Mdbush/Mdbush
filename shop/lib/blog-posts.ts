@@ -1431,15 +1431,6 @@ export const posts: BlogPost[] = [
     category: "Pricing & Rates",
   },
   {
-    slug: "freelance-blockchain-developer-rates-uae",
-    title: "Freelance Blockchain Developer Rates in the UAE (2026): What to Charge",
-    description:
-      "Real AED rates for freelance blockchain developers in Dubai and Abu Dhabi — smart contract development, DeFi protocols, NFT platforms, Web3 product integration, blockchain consulting, and tokenomics advisory rates for 2026.",
-    date: "June 16, 2026",
-    readTime: "7 min read",
-    category: "Pricing & Rates",
-  },
-  {
     slug: "freelance-technical-writer-rates-uae",
     title: "Freelance Technical Writer Rates in the UAE (2026): What to Charge",
     description:
@@ -1609,15 +1600,6 @@ export const posts: BlogPost[] = [
     date: "June 16, 2026",
     readTime: "8 min read",
     category: "AI Tools",
-  },
-  {
-    slug: "freelance-learning-development-consultant-rates-uae",
-    title: "Freelance Learning & Development Consultant Rates in the UAE (2026)",
-    description:
-      "Real AED day rates for freelance L&D consultants and corporate trainers in Dubai and Abu Dhabi. Instructional design, leadership development, Emiratisation training, e-learning development, and corporate workshop rates.",
-    date: "June 16, 2026",
-    readTime: "8 min read",
-    category: "Pricing & Rates",
   },
   {
     slug: "freelance-risk-management-consultant-rates-uae",
@@ -2176,15 +2158,6 @@ export const posts: BlogPost[] = [
     date: "June 16, 2026",
     readTime: "8 min read",
     category: "Business & Mindset",
-  },
-  {
-    slug: "freelance-procurement-consultant-rates-uae",
-    title: "Freelance Procurement Consultant Rates in the UAE (2026)",
-    description:
-      "Real AED day rates for freelance procurement consultants in Dubai and Abu Dhabi. Strategic sourcing, supplier rationalisation, category management, tender management, and procurement transformation fees for UAE companies in 2026.",
-    date: "June 16, 2026",
-    readTime: "7 min read",
-    category: "Pricing & Rates",
   },
   {
     slug: "freelance-salesforce-developer-rates-uae",
