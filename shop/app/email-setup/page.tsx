@@ -323,12 +323,14 @@ export default function EmailSetupPage() {
       </div>
 
       <div className="mt-10 bg-gray-950 text-white rounded-xl p-8">
-        <h2 className="font-bold text-lg mb-3">Email priorities</h2>
+        <h2 className="font-bold text-lg mb-3">Current automation status</h2>
         <div className="space-y-3 text-sm text-gray-300">
-          <p><strong className="text-white">Priority 1:</strong> Welcome sequence. This is already partially wired (the /api/subscribe route sends to Brevo). Set up the 3-email Brevo automation on the &quot;SoloKit Subscribers&quot; list.</p>
-          <p><strong className="text-white">Priority 2:</strong> Post-purchase sequence. Requires Lemon Squeezy → Brevo connection via Zapier or the webhook route. Needs Brevo contact tagging by product bought.</p>
-          <p><strong className="text-white">Priority 3:</strong> Weekly newsletter. Manual for now — schedule 30 minutes on Sunday to write and schedule each week&apos;s email.</p>
-          <p><strong className="text-white">Free tier limits:</strong> Brevo free = 300 emails/day. With 500 subscribers sending weekly = 500 emails/week. Well within limits.</p>
+          <p><span className="bg-green-500 text-white text-xs font-bold px-2 py-0.5 rounded mr-2">LIVE</span><strong className="text-white">Welcome email:</strong> /api/subscribe sends prompts email immediately. Set BREVO_API_KEY in Vercel to activate. Contact added to list 2.</p>
+          <p><span className="bg-green-500 text-white text-xs font-bold px-2 py-0.5 rounded mr-2">LIVE</span><strong className="text-white">Purchase confirmation:</strong> /api/webhook sends branded confirmation email + adds buyer to Brevo list 3. Requires BREVO_API_KEY + LEMONSQUEEZY_WEBHOOK_SECRET in Vercel.</p>
+          <p><span className="bg-amber-500 text-white text-xs font-bold px-2 py-0.5 rounded mr-2">TODO</span><strong className="text-white">Welcome sequence emails 2 & 3:</strong> Set up 3-day and 7-day Brevo automations on list 2. Content above is ready to copy.</p>
+          <p><span className="bg-amber-500 text-white text-xs font-bold px-2 py-0.5 rounded mr-2">TODO</span><strong className="text-white">Post-purchase follow-ups (day 2, 7, 21):</strong> Set up Brevo automations on list 3. The immediate confirmation is already sent by the webhook.</p>
+          <p><span className="bg-gray-600 text-white text-xs font-bold px-2 py-0.5 rounded mr-2">MANUAL</span><strong className="text-white">Weekly newsletter:</strong> Schedule 30 min on Sunday. Use Brevo Campaigns → Email campaigns → schedule for Monday 8am UAE.</p>
+          <p className="text-gray-500 text-xs mt-2">Brevo free plan: 300 emails/day. With 500 subscribers weekly = 500 emails/week. Within limits.</p>
         </div>
       </div>
     </main>
