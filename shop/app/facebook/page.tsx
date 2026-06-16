@@ -8,6 +8,88 @@ export const metadata: Metadata = {
   robots: { index: false, follow: false },
 };
 
+const pageSetup = [
+  { label: "Page name", value: "SoloKit" },
+  { label: "Category", value: "Software Company · Digital Products" },
+  { label: "Username", value: "@solokitco" },
+  { label: "Website", value: "solokit.cloud" },
+  { label: "Page ID", value: "1098756576664555" },
+  { label: "CTA button", value: "Shop Now → solokit.cloud" },
+  { label: "Post frequency", value: "1× per day" },
+  { label: "Best times (UAE)", value: "7–9 AM · 12–2 PM · 7–9 PM" },
+];
+
+const facebookRules = [
+  {
+    rule: "Never put links in the post body",
+    detail: "Facebook's algorithm penalizes posts with external URLs in the body text. This is the single biggest reach killer. ALWAYS put links in the FIRST COMMENT immediately after publishing. Write 'Link in the first comment' in the post body if referencing a resource.",
+  },
+  {
+    rule: "Native text posts beat everything",
+    detail: "Facebook rewards text posts and image posts the most. Video comes second. External link posts get the least reach. Write conversationally — like you're talking to a person, not broadcasting to an audience.",
+  },
+  {
+    rule: "Comments are the distribution signal",
+    detail: "Facebook shows posts to more people when they get early comments. Every post must end with a direct, specific question. Avoid 'like if you agree' — Facebook suppressed engagement bait since 2018.",
+  },
+  {
+    rule: "Reply to every comment within 1 hour",
+    detail: "Set a reminder when you post. Reply to every comment in the first 60 minutes. This triggers the algorithm to extend the post's reach. Each reply resets the distribution window.",
+  },
+  {
+    rule: "Automated posts run via cron job",
+    detail: "The cron job at /api/cron/social-post auto-posts Sunday–Friday at 7 AM UAE time once FACEBOOK_PAGE_ACCESS_TOKEN is set in Vercel. The 12 posts below are for MANUAL supplemental posting at midday and evening windows.",
+  },
+];
+
+const groupsStrategy = [
+  {
+    group: "UAE Freelancers Network",
+    action: "Join and answer questions. Mention SoloKit only when directly relevant. Rule: 10 helpful comments before any product mention.",
+  },
+  {
+    group: "Dubai Entrepreneurs & Startups",
+    action: "Share educational content from the blog (not product links). Build authority as the SoloKit voice. Engage with others' posts first.",
+  },
+  {
+    group: "Abu Dhabi Freelancers",
+    action: "Expand reach to non-Dubai UAE market. Same approach: value first. Top-performing content: freelance visa breakdown, tax explainer, rate calculator.",
+  },
+  {
+    group: "UAE Remote Workers",
+    action: "Strong fit with visa and setup content. Post the rate calculator and freelance visa guide as standalone educational value — no product pitch needed.",
+  },
+];
+
+const boostingGuide = [
+  {
+    trigger: "20+ organic comments",
+    budget: "AED 50–100",
+    audience: "UAE · Age 24–40 · Interests: freelancing, entrepreneurship, digital work",
+    duration: "3 days",
+  },
+  {
+    trigger: "Best-performing post of the month",
+    budget: "AED 200–300",
+    audience: "UAE + KSA · Lookalike of page engagers",
+    duration: "5–7 days",
+  },
+  {
+    trigger: "New product launch post",
+    budget: "AED 500",
+    audience: "UAE · Custom audience from website visitors",
+    duration: "7 days",
+  },
+];
+
+const schedulingGuide = [
+  { step: "1", action: "Open Meta Business Suite", detail: "business.facebook.com → your page → Posts" },
+  { step: "2", action: "Click 'Create post'", detail: "Select your Facebook page (not Instagram)" },
+  { step: "3", action: "Paste post text — no link in body", detail: "Write the post, end with a question, no external URLs" },
+  { step: "4", action: "Click 'Schedule for later'", detail: "Set time: 7 AM, 12 PM, or 7 PM UAE time (GST, UTC+4)" },
+  { step: "5", action: "Post goes live — add link to first comment", detail: "When the post publishes, immediately post any links as the first comment" },
+];
+
 const posts = [
   {
     id: 1,
@@ -27,7 +109,7 @@ That's what most people ignore when they set their rates.
 
 If you're a UAE freelancer wondering why you're always "busy but broke" — this is why.
 
-👉 Free rate calculator at solokit.cloud/blog/freelance-rate-calculator-uae`,
+Free rate calculator in the first comment 👇`,
   },
   {
     id: 2,
@@ -127,7 +209,7 @@ Most UAE freelancers pay: nothing.
 
 BUT — you still need to register on EmaraTax.ae for corporate tax, even if you owe zero. It's free. It takes 20 minutes. Skip it and you create problems later.
 
-Full breakdown with step-by-step instructions 👉 solokit.cloud/blog/freelance-tax-uae
+Full breakdown with step-by-step instructions in the first comment 👇
 
 Save this and share it with any freelancer who asks about UAE taxes 📌`,
   },
@@ -155,8 +237,7 @@ Most UAE freelancers track clients in WhatsApp. Then wonder why they miss follow
 
 A simple database changes everything.
 
-⬇️ We built a ready-to-use version. Duplicate it in 5 minutes.
-👉 solokit.cloud/products/freelancer-client-crm`,
+Ready-to-use version in the first comment 👇`,
   },
   {
     id: 8,
@@ -204,11 +285,11 @@ Agree or disagree? 👇`,
 ✅ Service description for your website
 ✅ Content idea generator
 
-All 10 are at solokit.cloud/free — ready to copy, fill the brackets, and use immediately.
+All 10 are ready to copy, fill the brackets, and use immediately.
 
 No signup. No credit card. Just 10 prompts that work.
 
-👉 solokit.cloud/free
+Link in the first comment 👇
 
 Share with a freelancer who could use these 🙏`,
   },
@@ -255,8 +336,7 @@ The 5 SOPs every UAE freelancer needs first:
 4️⃣ Invoice + follow-up sequence
 5️⃣ Project closeout + testimonial request
 
-We built all 5 — ready to adapt and use:
-👉 solokit.cloud/products/sop-starter-pack
+We built all 5 — link in the first comment 👇
 
 30-day guarantee. Instant download.`,
   },
@@ -301,15 +381,30 @@ export default function FacebookPage() {
             <span className="text-gray-600">Facebook Content</span>
           </nav>
 
-          {/* Dark hero */}
+          {/* Dark hero — Facebook identity */}
           <div className="bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 text-white px-6 py-10 rounded-2xl mb-8">
-            <span className="text-xs font-bold text-emerald-400 uppercase tracking-widest mb-3 block">Content Strategy</span>
-            <h1 className="text-3xl sm:text-4xl font-bold leading-tight mb-4">Facebook Content Library — SoloKit</h1>
-            <p className="text-gray-300 text-sm mb-5 leading-relaxed max-w-xl">12 ready-to-post Facebook posts. Conversational, ends with a question — optimised for comments and reach.</p>
+            <div className="flex items-center gap-3 mb-4">
+              {/* Facebook blue platform badge */}
+              <span className="inline-flex items-center gap-1.5 bg-[#1877F2]/20 border border-[#1877F2]/40 text-[#74a9f7] text-xs font-bold px-3 py-1 rounded-full uppercase tracking-widest">
+                <svg viewBox="0 0 24 24" className="w-3.5 h-3.5 shrink-0" fill="currentColor">
+                  <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z" />
+                </svg>
+                Facebook
+              </span>
+              <span className="text-xs font-bold text-emerald-400 uppercase tracking-widest">Community · Conversational · Groups</span>
+            </div>
+            <h1 className="text-3xl sm:text-4xl font-bold leading-tight mb-4">Facebook Content Library</h1>
+            <p className="text-gray-300 text-sm mb-5 leading-relaxed max-w-xl">
+              12 ready-to-post conversational posts. Native text wins on Facebook. Links always go in the FIRST COMMENT — never in the body.
+            </p>
             <div className="flex flex-wrap gap-3">
               <div className="bg-white/10 backdrop-blur rounded-xl px-4 py-2.5 text-sm">
                 <span className="text-gray-400">Page</span>
                 <span className="ml-2 font-semibold text-white">SoloKit (@solokitco)</span>
+              </div>
+              <div className="bg-white/10 backdrop-blur rounded-xl px-4 py-2.5 text-sm">
+                <span className="text-gray-400">Page ID</span>
+                <span className="ml-2 font-semibold text-white">1098756576664555</span>
               </div>
               <div className="bg-white/10 backdrop-blur rounded-xl px-4 py-2.5 text-sm">
                 <span className="text-gray-400">Frequency</span>
@@ -322,20 +417,32 @@ export default function FacebookPage() {
             </div>
           </div>
 
+          {/* Facebook-specific protocol */}
+          <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2">
+            <span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>
+            Facebook Protocol — read before posting
+          </h2>
+          <div className="space-y-3 mb-10">
+            {facebookRules.map(({ rule, detail }) => (
+              <div key={rule} className="bg-white border border-gray-200 rounded-xl p-4">
+                <div className="flex items-start gap-3">
+                  <span className="w-2 h-2 rounded-full bg-[#1877F2] mt-1.5 shrink-0"></span>
+                  <div>
+                    <p className="text-sm font-bold text-gray-900 mb-1">{rule}</p>
+                    <p className="text-sm text-gray-600">{detail}</p>
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
+
           {/* Page Setup */}
           <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2">
             <span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>
-            Page Setup
+            Page Setup — configuration
           </h2>
-          <div className="grid sm:grid-cols-2 gap-4 mb-8">
-            {[
-              { label: "Page name", value: "SoloKit" },
-              { label: "Username", value: "@solokitco" },
-              { label: "Website", value: "solokit.cloud" },
-              { label: "CTA button", value: "Shop Now → solokit.cloud" },
-              { label: "Page ID", value: "1098756576664555" },
-              { label: "Category", value: "Software Company · Digital Products" },
-            ].map(({ label, value }) => (
+          <div className="grid sm:grid-cols-2 gap-3 mb-8">
+            {pageSetup.map(({ label, value }) => (
               <div key={label} className="bg-white border border-gray-200 rounded-xl p-4">
                 <p className="text-xs font-semibold text-gray-400 uppercase tracking-widest mb-1">{label}</p>
                 <p className="text-sm font-semibold text-gray-900">{value}</p>
@@ -343,18 +450,94 @@ export default function FacebookPage() {
             ))}
           </div>
 
-          <div className="bg-emerald-50 border border-emerald-200 rounded-xl p-5 mb-8">
-            <p className="text-sm font-bold text-emerald-800 mb-2">Automated posting</p>
-            <p className="text-sm text-emerald-800">The cron job at <code className="bg-emerald-100 px-1.5 py-0.5 rounded text-xs font-mono">/api/cron/social-post</code> auto-posts to this Facebook page Sunday–Friday at 7am UAE time — once <code className="bg-emerald-100 px-1.5 py-0.5 rounded text-xs font-mono">FACEBOOK_PAGE_ACCESS_TOKEN</code> is set in Vercel env vars. Posts below are for manual supplemental posting.</p>
+          {/* Automation notice */}
+          <div className="bg-emerald-50 border border-emerald-200 rounded-xl p-5 mb-10">
+            <p className="text-sm font-bold text-emerald-800 mb-1">Automated posting active</p>
+            <p className="text-sm text-emerald-700">The cron job at <code className="bg-emerald-100 px-1.5 py-0.5 rounded text-xs font-mono">/api/cron/social-post</code> auto-posts Sunday–Friday at 7 AM UAE time once <code className="bg-emerald-100 px-1.5 py-0.5 rounded text-xs font-mono">FACEBOOK_PAGE_ACCESS_TOKEN</code> is set in Vercel. The 12 posts below are for <strong>manual supplemental posting</strong> at midday and evening windows.</p>
+          </div>
+
+          {/* Meta Business Suite Scheduling */}
+          <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2">
+            <span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>
+            Meta Business Suite — Scheduling Guide
+          </h2>
+          <div className="bg-white border border-gray-200 rounded-2xl overflow-hidden mb-10">
+            <div className="px-5 py-3 bg-gray-50 border-b border-gray-100">
+              <p className="text-xs font-bold text-gray-500 uppercase tracking-widest">Step-by-step: schedule posts without killing reach</p>
+            </div>
+            <div className="divide-y divide-gray-100">
+              {schedulingGuide.map(({ step, action, detail }) => (
+                <div key={step} className="px-5 py-3.5 flex items-start gap-4">
+                  <span className="w-6 h-6 rounded-full bg-emerald-500 text-white text-xs font-bold flex items-center justify-center shrink-0 mt-0.5">{step}</span>
+                  <div>
+                    <p className="text-sm font-semibold text-gray-900">{action}</p>
+                    <p className="text-xs text-gray-500 mt-0.5">{detail}</p>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+
+          {/* Groups strategy */}
+          <h2 className="text-xl font-bold text-gray-900 mt-10 mb-2 flex items-center gap-2">
+            <span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>
+            UAE Facebook Groups Strategy
+          </h2>
+          <p className="text-sm text-gray-500 mb-5">Groups reach people outside your page followers. Rule: contribute value 10 times before mentioning SoloKit once.</p>
+          <div className="space-y-3 mb-10">
+            {groupsStrategy.map(({ group, action }) => (
+              <div key={group} className="bg-white border border-gray-200 rounded-xl p-4">
+                <p className="text-sm font-bold text-gray-900 mb-1">{group}</p>
+                <p className="text-sm text-gray-600">{action}</p>
+              </div>
+            ))}
+          </div>
+
+          {/* Boosting strategy */}
+          <h2 className="text-xl font-bold text-gray-900 mt-10 mb-2 flex items-center gap-2">
+            <span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>
+            Post Boosting Strategy — AED amounts
+          </h2>
+          <p className="text-sm text-gray-500 mb-5">Only boost posts that already have organic engagement. Paying to push a zero-comment post is wasted spend.</p>
+          <div className="space-y-3 mb-10">
+            {boostingGuide.map(({ trigger, budget, audience, duration }) => (
+              <div key={trigger} className="bg-white border border-gray-200 rounded-2xl overflow-hidden">
+                <div className="px-5 py-2.5 bg-gray-50 border-b border-gray-100">
+                  <span className="text-xs font-bold text-gray-500 uppercase tracking-widest">Trigger: {trigger}</span>
+                </div>
+                <div className="px-5 py-4 grid sm:grid-cols-3 gap-3">
+                  <div>
+                    <p className="text-xs text-gray-400 mb-0.5">Budget</p>
+                    <p className="text-sm font-semibold text-gray-900">{budget}</p>
+                  </div>
+                  <div>
+                    <p className="text-xs text-gray-400 mb-0.5">Duration</p>
+                    <p className="text-sm font-semibold text-gray-900">{duration}</p>
+                  </div>
+                  <div>
+                    <p className="text-xs text-gray-400 mb-0.5">Audience</p>
+                    <p className="text-xs text-gray-700">{audience}</p>
+                  </div>
+                </div>
+              </div>
+            ))}
           </div>
 
           {/* Post Library */}
-          <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2">
-            <span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>
-            Post Library
-          </h2>
+          <div className="flex items-center justify-between mb-5 mt-10">
+            <h2 className="text-xl font-bold text-gray-900 flex items-center gap-2">
+              <span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>
+              Post Library — 12 posts
+            </h2>
+            <span className="bg-red-100 text-red-700 text-xs font-semibold px-3 py-1 rounded-full">Highest engagement first</span>
+          </div>
 
-          <div className="space-y-5 mb-10">
+          <div className="bg-amber-50 border border-amber-200 rounded-xl px-4 py-3 mb-6">
+            <p className="text-xs font-bold text-amber-800 mb-1">Link placement rule</p>
+            <p className="text-xs text-amber-700">Any post referencing a link: paste it in the FIRST COMMENT immediately after publishing. Never in the post body — Facebook suppresses reach on posts with external URLs in the body.</p>
+          </div>
+
+          <div className="space-y-5 mb-12">
             {posts.map((p) => (
               <div key={p.id} className="bg-white border border-gray-200 rounded-2xl overflow-hidden">
                 <div className="px-5 py-4 border-b border-gray-100 flex items-start gap-3">
@@ -376,29 +559,8 @@ export default function FacebookPage() {
                   <pre className="text-sm text-gray-700 bg-gray-50 border border-gray-100 rounded-xl p-4 whitespace-pre-wrap leading-relaxed font-sans overflow-x-auto select-all">
                     {p.content}
                   </pre>
+                  <p className="text-xs text-[#1877F2] mt-2 font-medium">After publishing: paste any links as the first comment</p>
                 </div>
-              </div>
-            ))}
-          </div>
-
-          {/* Strategy */}
-          <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2">
-            <span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>
-            Strategy
-          </h2>
-
-          <div className="space-y-3 mb-10">
-            {[
-              { title: "Native text posts win", desc: "Facebook rewards native text posts + image posts. Avoid adding links in the post body — it kills reach. Put links in the first comment instead." },
-              { title: "Engagement is the signal", desc: "Facebook shows posts to more people when they have comments. Every post should end with a direct question. Reply to every comment within 1 hour of posting." },
-              { title: "Image posts", desc: "Post a simple quote card or stat graphic with an educational caption. Create these in Canva using the brand colors (dark background, white text)." },
-              { title: "Groups", desc: "Join UAE freelancer Facebook groups and post value there too. Don't spam — contribute, then mention SoloKit when relevant." },
-              { title: "Automated vs manual", desc: "The cron job handles daily automated posts. These 12 posts are for manual scheduling using Meta Business Suite at specific high-engagement times." },
-              { title: "Boost high performers", desc: "Any post that gets 20+ organic comments — boost it with AED 50-100 ad spend to UAE freelancer audience. High ROI." },
-            ].map(({ title, desc }) => (
-              <div key={title} className="bg-white border border-gray-200 rounded-xl p-4">
-                <p className="text-sm font-bold text-gray-900 mb-1">{title}</p>
-                <p className="text-sm text-gray-600">{desc}</p>
               </div>
             ))}
           </div>
