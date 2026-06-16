@@ -195,7 +195,7 @@ export default function HowToSetUpFreelanceBusinessSaudiArabia() {
         <div className="space-y-4 mb-10">
           {steps.map((step) => (
             <div key={step.num} className="flex gap-4">
-              <div className="w-8 h-8 bg-gray-900 text-white rounded-full flex items-center justify-center text-sm font-bold shrink-0 mt-0.5">
+              <div className="w-8 h-8 bg-emerald-500 text-white rounded-full flex items-center justify-center text-sm font-bold shrink-0 mt-0.5">
                 {step.num}
               </div>
               <div className="flex-1 border border-gray-200 rounded-xl p-5">

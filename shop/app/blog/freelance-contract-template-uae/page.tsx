@@ -46,14 +46,15 @@ export default function FreelanceContractTemplateUAEPage() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
       <Header />
-      <main className="max-w-2xl mx-auto px-4 py-12 text-gray-900">
+      <main className="min-h-screen bg-white">
+        <div className="max-w-3xl mx-auto px-4 py-10">
 
         {/* Breadcrumb */}
-        <nav className="text-sm text-gray-500 mb-8">
-          <Link href="/" className="hover:text-gray-700">Home</Link>
-          <span className="mx-2">›</span>
-          <Link href="/blog" className="hover:text-gray-700">Blog</Link>
-          <span className="mx-2">›</span>
+        <nav className="text-xs text-gray-400 mb-6 flex items-center gap-1.5">
+          <Link href="/" className="hover:text-gray-600">Home</Link>
+          <span>/</span>
+          <Link href="/blog" className="hover:text-gray-600">Blog</Link>
+          <span>/</span>
           <span>Freelance Contract Template UAE</span>
         </nav>
 
@@ -192,7 +193,7 @@ export default function FreelanceContractTemplateUAEPage() {
             ].map(({ n, title, why, include, example }) => (
               <div key={n} className="border border-gray-200 rounded-xl overflow-hidden">
                 <div className="bg-gray-50 px-5 py-4 flex items-start gap-3">
-                  <span className="bg-gradient-to-br from-gray-900 to-gray-800 text-white text-sm font-bold w-7 h-7 rounded-full flex items-center justify-center shrink-0 mt-0.5">{n}</span>
+                  <span className="bg-emerald-500 text-white text-sm font-bold w-7 h-7 rounded-full flex items-center justify-center shrink-0 mt-0.5">{n}</span>
                   <div>
                     <h3 className="font-bold text-gray-900">{title}</h3>
                     <p className="text-sm text-gray-600 mt-0.5">{why}</p>
@@ -211,8 +212,8 @@ export default function FreelanceContractTemplateUAEPage() {
                     </ul>
                   </div>
                   <div className="bg-emerald-50 rounded-lg p-3">
-                    <p className="text-xs font-semibold text-blue-700 mb-1">Example language</p>
-                    <p className="text-xs text-blue-800 leading-relaxed italic">{example}</p>
+                    <p className="text-xs font-semibold text-emerald-700 mb-1">Example language</p>
+                    <p className="text-xs text-emerald-800 leading-relaxed italic">{example}</p>
                   </div>
                 </div>
               </div>
@@ -297,7 +298,7 @@ export default function FreelanceContractTemplateUAEPage() {
           </p>
           <Link
             href="/products/sop-starter-pack"
-            className="inline-block bg-gray-950 text-white font-semibold px-6 py-3 rounded-lg hover:bg-gray-800 transition-colors"
+            className="inline-block bg-gradient-to-br from-gray-900 to-gray-800 text-white font-semibold px-6 py-3 rounded-lg hover:bg-gray-800 transition-colors"
           >
             See the SOP Pack →
           </Link>
@@ -325,6 +326,7 @@ export default function FreelanceContractTemplateUAEPage() {
           </div>
         </section>
 
+        </div>
       </main>
       <Footer />
     </>

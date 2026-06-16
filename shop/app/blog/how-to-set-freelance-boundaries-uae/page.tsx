@@ -43,7 +43,8 @@ export default function HowToSetFreelanceBoundariesUAE() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
       <Header />
 
-      <main className="max-w-2xl mx-auto px-4 py-10">
+      <main className="min-h-screen bg-white">
+        <div className="max-w-3xl mx-auto px-4 py-10">
 
         
         <nav className="text-xs text-gray-400 mb-6 flex items-center gap-1.5">
@@ -229,6 +230,7 @@ export default function HowToSetFreelanceBoundariesUAE() {
               ))}
             </div>
           </div>
+        </div>
         </div>
       </main>
 

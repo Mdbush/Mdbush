@@ -275,7 +275,7 @@ export default function Article() {
 
           <div className="space-y-4 my-6">
             <div className="flex gap-4">
-              <div className="w-8 h-8 bg-gray-900 text-white rounded-full flex items-center justify-center text-sm font-bold shrink-0 mt-0.5">
+              <div className="w-8 h-8 bg-emerald-500 text-white rounded-full flex items-center justify-center text-sm font-bold shrink-0 mt-0.5">
                 1
               </div>
               <div>
@@ -290,7 +290,7 @@ export default function Article() {
               </div>
             </div>
             <div className="flex gap-4">
-              <div className="w-8 h-8 bg-gray-900 text-white rounded-full flex items-center justify-center text-sm font-bold shrink-0 mt-0.5">
+              <div className="w-8 h-8 bg-emerald-500 text-white rounded-full flex items-center justify-center text-sm font-bold shrink-0 mt-0.5">
                 2
               </div>
               <div>
@@ -305,7 +305,7 @@ export default function Article() {
               </div>
             </div>
             <div className="flex gap-4">
-              <div className="w-8 h-8 bg-gray-900 text-white rounded-full flex items-center justify-center text-sm font-bold shrink-0 mt-0.5">
+              <div className="w-8 h-8 bg-emerald-500 text-white rounded-full flex items-center justify-center text-sm font-bold shrink-0 mt-0.5">
                 3
               </div>
               <div>

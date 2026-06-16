@@ -158,7 +158,7 @@ export default function Article() {
             {stages.map((stage) => (
               <div key={stage.num} className="border border-gray-200 rounded-xl p-4">
                 <div className="flex items-center gap-3 mb-2">
-                  <div className="w-7 h-7 bg-gray-900 text-white rounded-full flex items-center justify-center text-xs font-bold shrink-0">
+                  <div className="w-7 h-7 bg-emerald-500 text-white rounded-full flex items-center justify-center text-xs font-bold shrink-0">
                     {stage.num}
                   </div>
                   <p className="font-semibold text-gray-900">{stage.title}</p>
@@ -200,7 +200,7 @@ export default function Article() {
           <div className="space-y-4 my-6">
             {systems.map((system) => (
               <div key={system.num} className="flex gap-4">
-                <div className="w-8 h-8 bg-gray-900 text-white rounded-full flex items-center justify-center text-sm font-bold shrink-0 mt-0.5">
+                <div className="w-8 h-8 bg-emerald-500 text-white rounded-full flex items-center justify-center text-sm font-bold shrink-0 mt-0.5">
                   {system.num}
                 </div>
                 <div>

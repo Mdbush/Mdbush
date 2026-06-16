@@ -132,7 +132,7 @@ export default function FreelanceRateCalculatorUAEPage() {
           <div className="space-y-4 mb-8">
             <div className="border border-gray-200 rounded-xl p-5">
               <h3 className="font-semibold mb-3 flex items-center gap-2">
-                <span className="bg-gradient-to-br from-gray-900 to-gray-800 text-white text-xs w-6 h-6 rounded-full flex items-center justify-center font-mono">1</span>
+                <span className="bg-emerald-500 text-white text-xs w-6 h-6 rounded-full flex items-center justify-center font-mono">1</span>
                 Monthly take-home breakdown
               </h3>
               <div className="space-y-2 text-sm text-gray-600">
@@ -146,7 +146,7 @@ export default function FreelanceRateCalculatorUAEPage() {
 
             <div className="border border-gray-200 rounded-xl p-5">
               <h3 className="font-semibold mb-3 flex items-center gap-2">
-                <span className="bg-gradient-to-br from-gray-900 to-gray-800 text-white text-xs w-6 h-6 rounded-full flex items-center justify-center font-mono">2</span>
+                <span className="bg-emerald-500 text-white text-xs w-6 h-6 rounded-full flex items-center justify-center font-mono">2</span>
                 Annual business overhead
               </h3>
               <div className="space-y-2 text-sm text-gray-600">
@@ -161,7 +161,7 @@ export default function FreelanceRateCalculatorUAEPage() {
 
             <div className="border border-gray-200 rounded-xl p-5">
               <h3 className="font-semibold mb-3 flex items-center gap-2">
-                <span className="bg-gradient-to-br from-gray-900 to-gray-800 text-white text-xs w-6 h-6 rounded-full flex items-center justify-center font-mono">3</span>
+                <span className="bg-emerald-500 text-white text-xs w-6 h-6 rounded-full flex items-center justify-center font-mono">3</span>
                 Gross revenue needed
               </h3>
               <div className="space-y-2 text-sm text-gray-600">
@@ -176,7 +176,7 @@ export default function FreelanceRateCalculatorUAEPage() {
 
             <div className="border border-gray-200 rounded-xl p-5">
               <h3 className="font-semibold mb-3 flex items-center gap-2">
-                <span className="bg-gradient-to-br from-gray-900 to-gray-800 text-white text-xs w-6 h-6 rounded-full flex items-center justify-center font-mono">4</span>
+                <span className="bg-emerald-500 text-white text-xs w-6 h-6 rounded-full flex items-center justify-center font-mono">4</span>
                 Convert to hourly rate
               </h3>
               <div className="space-y-2 text-sm text-gray-600">

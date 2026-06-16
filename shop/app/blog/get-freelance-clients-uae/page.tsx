@@ -118,7 +118,7 @@ export default function Article() {
           <div className="space-y-4 mb-8">
             {strategies.map((strategy) => (
               <div key={strategy.num} className="flex gap-4">
-                <div className="w-8 h-8 bg-gray-900 text-white rounded-full flex items-center justify-center text-sm font-bold shrink-0 mt-0.5">
+                <div className="w-8 h-8 bg-emerald-500 text-white rounded-full flex items-center justify-center text-sm font-bold shrink-0 mt-0.5">
                   {strategy.num}
                 </div>
                 <div>

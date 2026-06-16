@@ -48,12 +48,13 @@ export default function FreelanceSustainabilityConsultantRatesUAE() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
       <Header />
-      <main className="max-w-2xl mx-auto px-4 py-10">
+      <main className="min-h-screen bg-white">
+        <div className="max-w-3xl mx-auto px-4 py-10">
           {/* Breadcrumb */}
-          <nav className="text-sm text-gray-500 mb-8">
-            <Link href="/" className="hover:text-gray-700">Home</Link>
+          <nav className="text-xs text-gray-400 mb-6 flex items-center gap-1.5">
+            <Link href="/" className="hover:text-gray-600">Home</Link>
             <span className="mx-2">/</span>
-            <Link href="/blog" className="hover:text-gray-700">Blog</Link>
+            <Link href="/blog" className="hover:text-gray-600">Blog</Link>
             <span className="mx-2">/</span>
             <span className="text-gray-900">Sustainability Consultant Rates UAE</span>
           </nav>
@@ -265,6 +266,7 @@ export default function FreelanceSustainabilityConsultantRatesUAE() {
             </div>
           </div>
         
+        </div>
       </main>
       <Footer />
     </>
