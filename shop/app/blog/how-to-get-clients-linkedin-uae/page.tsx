@@ -72,52 +72,73 @@ export default function Article() {
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
       <Header />
+      <main className="min-h-screen bg-white">
+        <div className="max-w-3xl mx-auto px-4 py-10">
+          {/* Breadcrumb */}
+          <nav className="text-xs text-gray-400 mb-6 flex items-center gap-1.5">
+            <Link href="/" className="hover:text-gray-600">Home</Link>
+            <span>/</span>
+            <Link href="/blog" className="hover:text-gray-600">Blog</Link>
+            <span>/</span>
+            <span className="text-gray-600">LinkedIn Clients UAE</span>
+          </nav>
 
-      <main className="flex-1 max-w-2xl mx-auto px-4 sm:px-6 py-14">
-        <Link href="/blog" className="text-sm text-gray-400 hover:text-gray-700 transition-colors mb-8 inline-block">
-          ← Blog
-        </Link>
-
-        <div className="mb-8">
-          <div className="flex items-center gap-3 mb-4">
-            <span className="text-xs font-semibold text-gray-400 uppercase tracking-widest">Growth</span>
-            <span className="text-gray-200">·</span>
-            <span className="text-xs text-gray-400">June 15, 2026</span>
-            <span className="text-gray-200">·</span>
-            <span className="text-xs text-gray-400">5 min read</span>
+          {/* Hero */}
+          <div className="bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 text-white px-6 py-10 rounded-2xl mb-8">
+            <span className="text-xs font-bold text-emerald-400 uppercase tracking-widest mb-3 block">Growth</span>
+            <h1 className="text-3xl sm:text-4xl font-bold leading-tight mb-4">
+              How to Get Freelance Clients on LinkedIn in the UAE (Step-by-Step)
+            </h1>
+            <p className="text-gray-300 text-sm mb-5 leading-relaxed max-w-xl">
+              Practical, non-cringe LinkedIn strategy for UAE-based freelancers to attract inbound clients —
+              what to post, how to optimize your profile, and outreach that actually works.
+            </p>
+            <div className="flex flex-wrap gap-4 text-xs text-gray-400">
+              <span>June 15, 2026</span>
+              <span>·</span>
+              <span>5 min read</span>
+            </div>
           </div>
-          <h1 className="text-3xl sm:text-4xl font-bold text-gray-900 leading-tight mb-4">
-            How to Get Freelance Clients on LinkedIn in the UAE (Step-by-Step)
-          </h1>
-          <p className="text-lg text-gray-500 leading-relaxed">
-            Practical, non-cringe LinkedIn strategy for UAE-based freelancers to attract inbound clients —
-            what to post, how to optimize your profile, and outreach that actually works.
-          </p>
-        </div>
 
-        <div className="text-gray-700 leading-relaxed space-y-6">
+          {/* Stats grid */}
+          <div className="grid grid-cols-3 gap-3 mb-8">
+            {[
+              { value: "55%", label: "Connection rate with personalised note" },
+              { value: "10–15%", label: "Reply rate from targeted outreach" },
+              { value: "6 months", label: "To fully inbound pipeline" },
+            ].map((s) => (
+              <div key={s.label} className="bg-gray-50 border border-gray-200 rounded-xl p-4 text-center">
+                <div className="text-lg font-bold text-gray-900">{s.value}</div>
+                <div className="text-xs text-gray-500 mt-1">{s.label}</div>
+              </div>
+            ))}
+          </div>
 
-          <p>
+          <p className="text-gray-700 leading-relaxed mb-6">
             LinkedIn works differently in Dubai than it does anywhere else. The city has one of the highest
             concentrations of C-suite decision-makers per square kilometre on the planet. Everyone is within
             2 degrees of everyone else. And unlike Western markets where LinkedIn DMs go ignored for weeks,
             Dubai professionals move fast — often straight to WhatsApp within 48 hours of an initial connection.
           </p>
 
-          <p>
+          <p className="text-gray-700 leading-relaxed mb-6">
             If you&apos;re a UAE-based freelancer and you&apos;re not active on LinkedIn, you are invisible to
             a huge segment of your potential clients. Here&apos;s how to fix that without posting cringe
             content or cold-pitching strangers.
           </p>
 
-          <h2 className="text-xl font-bold text-gray-900 mt-10 mb-3">Profile Optimisation (10 Minutes)</h2>
+          {/* Profile Optimisation */}
+          <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2">
+            <span className="w-1 h-6 bg-emerald-500 rounded-full inline-block"></span>
+            Profile Optimisation (10 Minutes)
+          </h2>
 
-          <p>
+          <p className="text-gray-700 leading-relaxed mb-6">
             Your profile is a landing page. Most freelancers treat it like a CV. That&apos;s the wrong frame.
             A client visiting your profile is asking one question: <em>can this person solve my problem?</em>
           </p>
 
-          <div className="space-y-4 my-6">
+          <div className="space-y-4 mb-6">
             {[
               {
                 field: "Headline",
@@ -158,7 +179,7 @@ export default function Article() {
                     <span className="text-gray-500">{item.bad}</span>
                   </div>
                   <div className="flex items-start gap-2">
-                    <span className="text-green-600 shrink-0">✓</span>
+                    <span className="text-emerald-600 shrink-0">✓</span>
                     <span className="text-gray-700 font-medium">{item.good}</span>
                   </div>
                 </div>
@@ -167,14 +188,18 @@ export default function Article() {
             ))}
           </div>
 
-          <h2 className="text-xl font-bold text-gray-900 mt-10 mb-3">Content Strategy That Actually Gets Clients</h2>
+          {/* Content Strategy */}
+          <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2">
+            <span className="w-1 h-6 bg-emerald-500 rounded-full inline-block"></span>
+            Content Strategy That Actually Gets Clients
+          </h2>
 
-          <p>
+          <p className="text-gray-700 leading-relaxed mb-4">
             Most freelancers post service announcements ("I&apos;m available for web design projects!") or
             generic motivational content. Neither attracts clients. Here are the 3 post types that do:
           </p>
 
-          <div className="flex flex-col gap-4 my-6">
+          <div className="flex flex-col gap-4 mb-6">
             {postTypes.map((item) => (
               <div key={item.type} className="bg-gray-50 border border-gray-200 rounded-xl p-4">
                 <p className="text-sm font-semibold text-gray-900 mb-1">{item.type}</p>
@@ -184,16 +209,17 @@ export default function Article() {
             ))}
           </div>
 
-          <p>
-            Post frequency: <strong>3x per week minimum.</strong> Consistency beats quality.
-            A decent post every Monday, Wednesday, Friday outperforms a brilliant post once a month.
-            The LinkedIn algorithm rewards regular posting with progressive reach — stop for 2 weeks
-            and you restart from zero.
-          </p>
+          <div className="bg-emerald-50 border border-emerald-200 rounded-xl p-5 mb-6">
+            <p className="text-sm font-semibold text-emerald-900 mb-1">💡 Pro Tip</p>
+            <p className="text-sm text-emerald-800">
+              Post frequency: 3x per week minimum. Consistency beats quality. A decent post every Monday, Wednesday, Friday
+              outperforms a brilliant post once a month. Stop for 2 weeks and you restart from zero.
+            </p>
+          </div>
 
-          <div className="bg-gray-50 border border-gray-200 rounded-2xl p-5 my-6">
-            <p className="text-sm font-semibold text-gray-900 mb-1">What NOT to post</p>
-            <div className="space-y-1 text-sm text-gray-500 mt-2">
+          <div className="bg-amber-50 border border-amber-200 rounded-xl p-5 mb-6">
+            <p className="text-sm font-semibold text-amber-900 mb-1">⚠️ What NOT to post</p>
+            <div className="space-y-1 text-sm text-amber-800 mt-2">
               {[
                 "\"I'm excited to announce I'm open to new freelance opportunities\"",
                 "General motivational quotes with no connection to your work",
@@ -201,137 +227,103 @@ export default function Article() {
                 "Reposts of other people's content with no added commentary",
               ].map((item, i) => (
                 <div key={i} className="flex items-start gap-2">
-                  <span className="text-red-400 shrink-0">✗</span>
+                  <span className="text-red-500 shrink-0">✗</span>
                   <span>{item}</span>
                 </div>
               ))}
             </div>
           </div>
 
-          <div className="bg-gray-50 border border-gray-200 rounded-2xl p-5 my-6">
-            <p className="text-sm font-semibold text-gray-900 mb-2">Writing LinkedIn posts faster</p>
-            <p className="text-sm text-gray-500 mb-3">
-              SoloKit&apos;s{" "}
-              <Link
-                href="https://solokit.cloud/products/ai-prompt-pack-pro"
-                className="text-gray-900 font-semibold underline underline-offset-2 hover:text-gray-600 transition-colors"
-              >
-                AI Prompt Pack Pro
-              </Link>{" "}
-              includes ready-made prompts for writing all 3 LinkedIn post types — results posts, tips posts, and story
-              posts — tailored for UAE freelancers. Feed your project notes in and get a post draft in 2 minutes.
-            </p>
-            <Link
-              href="https://solokit.cloud/products/ai-prompt-pack-pro"
-              className="inline-block bg-gray-900 text-white text-sm font-semibold px-5 py-2 rounded-xl hover:bg-gray-700 transition-colors"
-            >
-              Get AI Prompt Pack Pro →
-            </Link>
-          </div>
+          {/* Outreach Formula */}
+          <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2">
+            <span className="w-1 h-6 bg-emerald-500 rounded-full inline-block"></span>
+            The Outreach Formula (Non-Spammy)
+          </h2>
 
-          <h2 className="text-xl font-bold text-gray-900 mt-10 mb-3">The Outreach Formula (Non-Spammy)</h2>
-
-          <p>
+          <p className="text-gray-700 leading-relaxed mb-4">
             Cold DMs that open with "Hi, I&apos;m a [service] provider and I&apos;d love to work with you"
             get ignored. Here&apos;s the 3-step approach that actually gets replies:
           </p>
 
-          <div className="space-y-4 my-6">
+          <ul className="space-y-3 mb-6">
             {outreachSteps.map((step) => (
-              <div key={step.num} className="flex gap-4">
-                <div className="w-8 h-8 bg-gray-900 text-white rounded-full flex items-center justify-center text-sm font-bold shrink-0 mt-0.5">
-                  {step.num}
-                </div>
-                <div>
-                  <h3 className="font-semibold text-gray-900 mb-1">{step.title}</h3>
-                  <p className="text-sm text-gray-600 leading-relaxed">{step.body}</p>
-                </div>
-              </div>
+              <li key={step.num} className="flex gap-3 text-sm text-gray-700">
+                <span className="text-emerald-500 font-bold mt-0.5 shrink-0">→</span>
+                <span><strong className="text-gray-900">{step.title}:</strong> {step.body}</span>
+              </li>
             ))}
-          </div>
+          </ul>
 
-          <p>
+          <p className="text-gray-700 leading-relaxed mb-6">
             What to realistically expect: a <strong>10–15% reply rate</strong> and 2–3 discovery calls per
             month from 30 outreach messages sent. That&apos;s not a small number — 2 calls per month can
             convert to 1 new client, which for a mid-tier Dubai freelancer is AED 8,000–15,000 of new work.
           </p>
 
-          <h2 className="text-xl font-bold text-gray-900 mt-10 mb-3">The UAE Specific: Move to WhatsApp</h2>
+          {/* UAE Specific */}
+          <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2">
+            <span className="w-1 h-6 bg-emerald-500 rounded-full inline-block"></span>
+            The UAE Specific: Move to WhatsApp
+          </h2>
 
-          <p>
+          <p className="text-gray-700 leading-relaxed mb-4">
             Dubai professionals read LinkedIn but they respond on WhatsApp. Once you&apos;ve had a meaningful
             exchange on LinkedIn and they&apos;ve expressed interest, suggest moving the conversation:
             <em>"Happy to share more — easiest if we hop on WhatsApp, here&apos;s my number."</em>
           </p>
 
-          <p>
+          <p className="text-gray-700 leading-relaxed mb-6">
             This is not unusual in the UAE context. Decision-makers expect it. WhatsApp voice notes
             are a completely normal way to send a brief here. Lean into the local communication culture
             instead of insisting on formal email chains.
           </p>
 
-          <h2 className="text-xl font-bold text-gray-900 mt-10 mb-3">The Timeline: What to Expect</h2>
+          {/* Timeline */}
+          <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2">
+            <span className="w-1 h-6 bg-emerald-500 rounded-full inline-block"></span>
+            The Timeline: What to Expect
+          </h2>
 
-          <div className="flex flex-col gap-3 my-4">
+          <div className="grid sm:grid-cols-2 gap-4 mb-6">
             {[
               { period: "Weeks 1–2", outcome: "Profile optimised, posting routine established. Little visible traction — this is normal." },
               { period: "Weeks 3–6", outcome: "Posts start getting traction from your existing network. First inbound DMs or profile views from decision-makers." },
               { period: "Months 2–3", outcome: "Consistent posting builds a small but real reputation in your niche. Referrals from LinkedIn connections start." },
               { period: "Month 6+", outcome: "You stop needing outreach. Inbound is consistent enough that you choose clients rather than chase them." },
             ].map((item) => (
-              <div key={item.period} className="flex items-start gap-3 text-sm border-b border-gray-100 pb-3">
-                <span className="font-semibold text-gray-900 shrink-0 w-24">{item.period}</span>
-                <span className="text-gray-500">{item.outcome}</span>
+              <div key={item.period} className="border border-gray-200 rounded-xl p-5">
+                <h3 className="font-semibold text-gray-900 mb-2">{item.period}</h3>
+                <p className="text-sm text-gray-600">{item.outcome}</p>
               </div>
             ))}
           </div>
 
-          <p>
+          <p className="text-gray-700 leading-relaxed mb-8">
             The freelancers who fail at LinkedIn give up at week 3 when they don&apos;t see immediate results.
             The ones who succeed treat it like a 6-month compounding investment — uncomfortable at first,
             then increasingly valuable.
           </p>
 
-          <div className="bg-gray-900 rounded-2xl p-6 my-8">
-            <p className="text-white font-semibold mb-2">Write better LinkedIn posts, faster</p>
-            <p className="text-gray-400 text-sm mb-4">
-              The AI Prompt Pack Pro includes 50+ battle-tested prompts for UAE freelancers — LinkedIn posts,
-              client emails, proposals, and more. Write a week of content in under an hour.
-            </p>
-            <Link
-              href="https://solokit.cloud/products/ai-prompt-pack-pro"
-              className="inline-block bg-white text-gray-900 text-sm font-semibold px-5 py-2 rounded-xl hover:bg-gray-100 transition-colors"
-            >
-              Get AI Prompt Pack Pro →
-            </Link>
+          {/* CTA */}
+          <div className="bg-gradient-to-br from-gray-900 to-gray-800 text-white rounded-2xl p-8 mt-12 text-center">
+            <span className="text-xs font-bold text-emerald-400 uppercase tracking-widest block mb-3">SoloKit</span>
+            <h3 className="text-2xl font-bold mb-3">Run Your UAE Freelance Business Like a Pro</h3>
+            <p className="text-gray-400 text-sm mb-6 max-w-sm mx-auto">Templates, SOPs, and systems built for UAE freelancers.</p>
+            <Link href="/products/solokit-freelance-os" className="inline-block bg-emerald-500 hover:bg-emerald-400 text-white font-bold px-8 py-3 rounded-xl transition-colors text-sm">Get SoloKit →</Link>
           </div>
 
-          <div className="mt-10 pt-6 border-t border-gray-100">
-            <p className="text-sm font-semibold text-gray-900 mb-3">Further reading</p>
-            <div className="flex flex-col gap-2">
-              <Link href="/blog/get-freelance-clients-uae" className="text-sm text-gray-500 hover:text-gray-900 transition-colors underline underline-offset-2">
-                How to Get Freelance Clients in the UAE (6 Strategies) →
-              </Link>
-              <Link href="/blog/how-to-price-freelance-services-uae" className="text-sm text-gray-500 hover:text-gray-900 transition-colors underline underline-offset-2">
-                How to Price Your Freelance Services in the UAE →
-              </Link>
-              <Link href="/blog/notion-setup-guide-freelancers" className="text-sm text-gray-500 hover:text-gray-900 transition-colors underline underline-offset-2">
-                Notion Setup Guide for UAE Freelancers →
-              </Link>
-              <Link href="/blog/freelancer-burnout-uae" className="text-sm text-gray-500 hover:text-gray-900 transition-colors underline underline-offset-2">
-                Freelancer Burnout in Dubai: How to Recognize It and Fix It →
-              </Link>
+          {/* Related links */}
+          <div className="mt-10">
+            <h3 className="text-sm font-semibold text-gray-900 mb-3">Related Guides</h3>
+            <div className="space-y-1.5">
+              <Link href="/blog/freelance-linkedin-profile-uae" className="block text-blue-600 hover:text-blue-800 text-sm">→ How to Optimize Your LinkedIn Profile as a UAE Freelancer</Link>
+              <Link href="/blog/personal-brand-freelancer-uae" className="block text-blue-600 hover:text-blue-800 text-sm">→ How to Build a Personal Brand as a UAE Freelancer</Link>
+              <Link href="/blog/get-freelance-clients-uae" className="block text-blue-600 hover:text-blue-800 text-sm">→ How to Get Freelance Clients in the UAE (6 Strategies)</Link>
+              <Link href="/blog/how-to-get-international-clients-uae" className="block text-blue-600 hover:text-blue-800 text-sm">→ How to Get International Clients as a UAE Freelancer</Link>
             </div>
           </div>
         </div>
-
-        <div className="mt-12 pt-8 border-t border-gray-100">
-          <Link href="/blog" className="text-sm text-gray-400 hover:text-gray-700 transition-colors">
-            ← Back to Blog
-          </Link>
-        </div>
       </main>
-
       <Footer />
     </>
   );
