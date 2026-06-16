@@ -4,9 +4,68 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 
 export const metadata: Metadata = {
-  title: "Instagram Content Library — SoloKit",
+  title: "Instagram Content — SoloKit",
   robots: { index: false, follow: false },
 };
+
+const instagramRules = [
+  {
+    rule: "Reels dominate reach",
+    detail: "Instagram's algorithm pushes Reels to non-followers more than any other format. If you want discovery and new followers, Reels are your primary vehicle. Post at least 3 per week.",
+  },
+  {
+    rule: "Carousels drive saves",
+    detail: "Saves are a strong ranking signal — they tell the algorithm the content was worth keeping. Educational carousels (5–8 slides) consistently get the most saves. Post 2 carousels per week.",
+  },
+  {
+    rule: "Stories for daily presence",
+    detail: "Stories keep you visible without competing in the main feed. Post 3–5 daily: polls, questions, behind-the-scenes, product sneak peeks. Stories views signal account health to the algorithm.",
+  },
+  {
+    rule: "Hook in the first frame",
+    detail: "The first frame of a Reel or the first slide of a carousel must earn the scroll-stop. Text overlays on video should appear within the first 1–2 seconds. No slow intros.",
+  },
+  {
+    rule: "Hashtags: 5–8 per post, mix sizes",
+    detail: "Use 5–8 hashtags maximum. Mix: 2 large (#FreelanceUAE, 100K+ posts), 3 medium (#DubaiFreelancer, 20K–100K posts), 2–3 small (#FreelanceToolsDubai, under 20K). Never use 30 hashtags.",
+  },
+  {
+    rule: "CTA on every post",
+    detail: "End every caption with 'Link in bio → solokit.cloud' or 'Save this for later.' Saves and bio clicks are both ranking signals. Pick one CTA per post — don't ask for both.",
+  },
+  {
+    rule: "Reply to every comment in the first hour",
+    detail: "Engagement velocity in the first 60 minutes tells the algorithm how to distribute the post. Set a reminder. Reply to every comment. Each reply counts as additional engagement.",
+  },
+];
+
+const storiesStrategy = [
+  { day: "Monday", type: "Poll", example: "'Do you track your freelance income in a spreadsheet or Notion?' — Yes / No" },
+  { day: "Tuesday", type: "Question sticker", example: "'What's your biggest freelance challenge right now?' — reshare answers as content" },
+  { day: "Wednesday", type: "Behind the scenes", example: "Screen recording of the Notion CRM in use, or a product screenshot with a caption overlay" },
+  { day: "Thursday", type: "Countdown / teaser", example: "New blog post or product launch teaser — 'Dropping tomorrow'" },
+  { day: "Friday", type: "Re-share a Reel", example: "Repost the week's best-performing Reel into Stories with 'In case you missed it'" },
+  { day: "Saturday", type: "Community", example: "Re-share a follower comment or DM (with permission) — builds social proof" },
+  { day: "Sunday", type: "Quick tip", example: "One actionable tip as a text slide — something new followers can use immediately" },
+];
+
+const hashtagSets = [
+  {
+    size: "Large (100K+ posts)",
+    tags: "#FreelanceUAE #DubaiFreelancer #Freelancing #UAE #Dubai",
+    note: "Use 2 per post — discovered by large audiences but high competition",
+  },
+  {
+    size: "Medium (20K–100K posts)",
+    tags: "#UAEFreelancer #DubaiSolopreneur #UAEBusiness #FreelanceLife #DubaiEntrepreneur",
+    note: "Use 3 per post — best balance of reach and competition",
+  },
+  {
+    size: "Small (under 20K posts)",
+    tags: "#FreelanceToolsDubai #DubaiRemoteWork #UAEFreelanceTips #SoloKitUAE",
+    note: "Use 2–3 per post — easier to rank in, builds a niche community",
+  },
+];
 
 const reels = [
   {
@@ -323,19 +382,30 @@ export default function InstagramPage() {
             <span className="text-gray-600">Instagram Content</span>
           </nav>
 
-          {/* Dark hero */}
+          {/* Dark hero — Instagram identity */}
           <div className="bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 text-white px-6 py-10 rounded-2xl mb-8">
-            <span className="text-xs font-bold text-emerald-400 uppercase tracking-widest mb-3 block">Content Strategy</span>
-            <h1 className="text-3xl sm:text-4xl font-bold leading-tight mb-4">Instagram Content Library — SoloKit</h1>
-            <p className="text-gray-300 text-sm mb-5 leading-relaxed max-w-xl">10 reels, carousels &amp; static posts for @solokitco. Ready to copy, customise, and post.</p>
+            <div className="flex items-center gap-3 mb-4">
+              {/* Instagram pink platform badge */}
+              <span className="inline-flex items-center gap-1.5 bg-pink-500/20 border border-pink-500/40 text-pink-300 text-xs font-bold px-3 py-1 rounded-full uppercase tracking-widest">
+                <svg viewBox="0 0 24 24" className="w-3.5 h-3.5 shrink-0" fill="currentColor">
+                  <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" />
+                </svg>
+                Instagram
+              </span>
+              <span className="text-xs font-bold text-emerald-400 uppercase tracking-widest">Visual-first · Reels dominate · Carousels save</span>
+            </div>
+            <h1 className="text-3xl sm:text-4xl font-bold leading-tight mb-4">Instagram Content Library</h1>
+            <p className="text-gray-300 text-sm mb-5 leading-relaxed max-w-xl">
+              10 reels + carousels + static posts for @solokitco. Weekly mix: 3 Reels for reach, 2 Carousels for saves, 2 Static posts, Daily Stories for presence.
+            </p>
             <div className="flex flex-wrap gap-3">
               <div className="bg-white/10 backdrop-blur rounded-xl px-4 py-2.5 text-sm">
                 <span className="text-gray-400">Account</span>
                 <span className="ml-2 font-semibold text-white">@solokitco</span>
               </div>
               <div className="bg-white/10 backdrop-blur rounded-xl px-4 py-2.5 text-sm">
-                <span className="text-gray-400">Frequency</span>
-                <span className="ml-2 font-semibold text-white">1× per day</span>
+                <span className="text-gray-400">Weekly mix</span>
+                <span className="ml-2 font-semibold text-white">3 Reels + 2 Carousels + 2 Static + Daily Stories</span>
               </div>
               <div className="bg-white/10 backdrop-blur rounded-xl px-4 py-2.5 text-sm">
                 <span className="text-gray-400">Best times (UAE)</span>
@@ -344,19 +414,38 @@ export default function InstagramPage() {
             </div>
           </div>
 
+          {/* Instagram protocol */}
+          <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2">
+            <span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>
+            Instagram Protocol — read before posting
+          </h2>
+          <div className="space-y-3 mb-10">
+            {instagramRules.map(({ rule, detail }) => (
+              <div key={rule} className="bg-white border border-gray-200 rounded-xl p-4">
+                <div className="flex items-start gap-3">
+                  <span className="w-2 h-2 rounded-full bg-pink-500 mt-1.5 shrink-0"></span>
+                  <div>
+                    <p className="text-sm font-bold text-gray-900 mb-1">{rule}</p>
+                    <p className="text-sm text-gray-600">{detail}</p>
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
+
           {/* Account Setup */}
           <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2">
             <span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>
-            Account Setup
+            Account Setup + Bio Formula
           </h2>
-          <div className="grid sm:grid-cols-2 gap-4 mb-8">
+          <div className="grid sm:grid-cols-2 gap-3 mb-8">
             {[
               { label: "Username", value: "@solokitco (or @solokit.ae)" },
-              { label: "Name", value: "SoloKit — Tools for UAE Freelancers" },
+              { label: "Name field", value: "SoloKit — Tools for UAE Freelancers" },
               { label: "Category", value: "Software Company" },
               { label: "Link in bio", value: "solokit.cloud" },
-              { label: "Post frequency", value: "1× per day (reels + carousels)" },
-              { label: "Best times (UAE)", value: "7-9 AM, 12-2 PM, 7-9 PM" },
+              { label: "Bio formula", value: "What you do → Who you serve → Social proof → CTA" },
+              { label: "Bio example", value: "Notion + AI tools for UAE freelancers | Used by 2,000+ | Free rate calculator ↓" },
             ].map(({ label, value }) => (
               <div key={label} className="bg-white border border-gray-200 rounded-xl p-4">
                 <p className="text-xs font-semibold text-gray-400 uppercase tracking-widest mb-1">{label}</p>
@@ -368,24 +457,27 @@ export default function InstagramPage() {
           {/* Content Mix */}
           <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2">
             <span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>
-            Content Mix
+            Weekly Content Mix
           </h2>
 
           <div className="bg-emerald-50 border border-emerald-200 rounded-xl p-5 mb-8">
-            <p className="text-sm font-bold text-emerald-800 mb-2">Weekly content mix</p>
-            <div className="space-y-1.5 text-sm text-emerald-700">
-              <div className="flex gap-2"><span className="text-emerald-500 shrink-0">→</span> 3× Reels (talking head or text animation) — highest reach</div>
-              <div className="flex gap-2"><span className="text-emerald-500 shrink-0">→</span> 2× Carousels — highest saves, great for discovery</div>
-              <div className="flex gap-2"><span className="text-emerald-500 shrink-0">→</span> 2× Static posts — quotes, stats, quick tips</div>
-              <div className="flex gap-2"><span className="text-emerald-500 shrink-0">→</span> Daily Stories: behind-the-scenes, polls, Q&amp;A</div>
+            <p className="text-sm font-bold text-emerald-800 mb-3">Per week — in priority order</p>
+            <div className="space-y-2 text-sm text-emerald-700">
+              <div className="flex gap-2"><span className="text-emerald-500 shrink-0 font-bold">3×</span> Reels (talking head or text animation) — highest reach, pushes to non-followers</div>
+              <div className="flex gap-2"><span className="text-emerald-500 shrink-0 font-bold">2×</span> Carousels — highest saves, great for discovery and educational content</div>
+              <div className="flex gap-2"><span className="text-emerald-500 shrink-0 font-bold">2×</span> Static posts — quote cards, stat graphics, quick tips</div>
+              <div className="flex gap-2"><span className="text-emerald-500 shrink-0 font-bold">Daily</span> Stories (3–5 per day): polls, questions, behind-the-scenes, reposts</div>
             </div>
           </div>
 
           {/* Reels & Videos */}
-          <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2">
-            <span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>
-            Reels &amp; Videos
-          </h2>
+          <div className="flex items-center justify-between mb-5 mt-10">
+            <h2 className="text-xl font-bold text-gray-900 flex items-center gap-2">
+              <span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>
+              Reels &amp; Carousels
+            </h2>
+            <span className="bg-red-100 text-red-700 text-xs font-semibold px-3 py-1 rounded-full">High reach marked</span>
+          </div>
 
           <div className="space-y-5 mb-10">
             {reels.map((r) => (
@@ -458,24 +550,36 @@ export default function InstagramPage() {
             ))}
           </div>
 
-          {/* Strategy */}
-          <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2">
+          {/* Stories strategy */}
+          <h2 className="text-xl font-bold text-gray-900 mt-10 mb-2 flex items-center gap-2">
             <span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>
-            Strategy
+            Stories Strategy — daily presence
           </h2>
+          <p className="text-sm text-gray-500 mb-5">Stories don&apos;t compete for feed reach — they keep you visible and build intimacy. Post every day without exception.</p>
+          <div className="space-y-2 mb-10">
+            {storiesStrategy.map(({ day, type, example }) => (
+              <div key={day} className="bg-white border border-gray-200 rounded-xl p-4 flex items-start gap-4">
+                <div className="w-24 shrink-0">
+                  <p className="text-xs font-bold text-gray-900">{day}</p>
+                  <p className="text-xs text-pink-500 font-semibold mt-0.5">{type}</p>
+                </div>
+                <p className="text-sm text-gray-600">{example}</p>
+              </div>
+            ))}
+          </div>
 
+          {/* Hashtag strategy */}
+          <h2 className="text-xl font-bold text-gray-900 mt-10 mb-2 flex items-center gap-2">
+            <span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>
+            Hashtag Strategy — 5–8 per post
+          </h2>
+          <p className="text-sm text-gray-500 mb-5">Pick from each tier. Never use 30 hashtags — it looks like spam and the algorithm has devalued it since 2022.</p>
           <div className="space-y-3 mb-10">
-            {[
-              { title: "Reels first", desc: "Instagram pushes Reels to non-followers. Do 1 Reel per day for the first 30 days." },
-              { title: "Carousels for saves", desc: "Saves are a strong ranking signal. Educational carousels (5-8 slides) get saved most." },
-              { title: "CTA on every post", desc: "End every caption with \"link in bio → solokit.cloud\" or \"save this for later.\"" },
-              { title: "Hashtags", desc: "Use 5-8 per post. Mix: 2 large (#FreelanceUAE), 3 medium (#DubaiFreelancer), 3 small (#FreelanceToolsDubai)." },
-              { title: "Stories daily", desc: "Post 3-5 stories per day — polls, questions, behind the scenes. Stories keep you in the algorithm." },
-              { title: "Don't post and ghost", desc: "Reply to every comment in the first hour — this signals engagement to the algorithm." },
-            ].map(({ title, desc }) => (
-              <div key={title} className="bg-white border border-gray-200 rounded-xl p-4">
-                <p className="text-sm font-bold text-gray-900 mb-1">{title}</p>
-                <p className="text-sm text-gray-600">{desc}</p>
+            {hashtagSets.map(({ size, tags, note }) => (
+              <div key={size} className="bg-white border border-gray-200 rounded-xl p-4">
+                <p className="text-xs font-bold text-gray-500 uppercase tracking-widest mb-2">{size}</p>
+                <p className="text-sm font-mono text-gray-800 mb-1.5">{tags}</p>
+                <p className="text-xs text-gray-500">{note}</p>
               </div>
             ))}
           </div>

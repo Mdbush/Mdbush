@@ -8,6 +8,61 @@ export const metadata: Metadata = {
   robots: { index: false, follow: false },
 };
 
+const tiktokRules = [
+  {
+    rule: "Hook in the first 3 seconds — non-negotiable",
+    detail: "TikTok's algorithm measures whether viewers watch past 3 seconds. If they don't, the video gets buried. Your hook must be verbal AND on-screen text — a bold claim, a question, or a pattern interrupt that makes the viewer stay.",
+  },
+  {
+    rule: "15–60 second videos perform best",
+    detail: "Under 15 seconds: too short for watch time signals. Over 60 seconds: completion rate drops sharply, which kills distribution. Target 30–45 seconds as your default sweet spot.",
+  },
+  {
+    rule: "Captions on screen at all times",
+    detail: "60% of TikTok is watched without sound. Use auto-captions (Creator Tools → Auto Captions) or CapCut. Captions increase watch time — the primary ranking signal.",
+  },
+  {
+    rule: "Entertainment over pure education",
+    detail: "TikTok rewards content that is entertaining first, educational second. Even informational videos need energy, pacing, and personality. Dry recitations get skipped. Add a story, a POV format, or a dramatic reveal.",
+  },
+  {
+    rule: "Use trending sounds when relevant",
+    detail: "Trending sounds give an algorithmic boost — TikTok promotes content using popular audio. Open the Sounds tab, filter by 'Trending in your region,' and add where it fits naturally. Never force it.",
+  },
+  {
+    rule: "Post 1–3× per day for the first 30 days",
+    detail: "TikTok rewards new and active accounts with more distribution. The first 30 days are when the algorithm gives the most organic reach. After 30 days: maintain at minimum 1× per day.",
+  },
+  {
+    rule: "HOOK / BODY / CTA structure on every video",
+    detail: "Every script in this library follows this structure: HOOK (first 3 seconds — say it AND show it on screen), BODY (the value), CTA (one action — 'follow for more' OR 'link in bio' — not both).",
+  },
+];
+
+const contentCalendar = [
+  { day: "Day 1", type: "Hook-driven reveal", video: "Script #1 — Real earnings numbers in Dubai" },
+  { day: "Day 2", type: "Problem/mistake", video: "Script #3 — 3 mistakes that keep UAE freelancers broke" },
+  { day: "Day 3", type: "Educational (tax)", video: "Script #6 — UAE tax explained in 60 seconds" },
+  { day: "Day 4", type: "Data/rate reveal", video: "Script #7 — The AED 267 rule" },
+  { day: "Day 5", type: "Entertainment (POV)", video: "Script #10 — POV: late payment" },
+  { day: "Day 6", type: "Story/journey", video: "Script #5 — First client from zero" },
+  { day: "Day 7", type: "Hot take", video: "Script #9 — AED 50K freelancer habits" },
+  { day: "Day 8", type: "Red flags", video: "Script #11 — 3 client red flags" },
+  { day: "Day 9", type: "Visa breakdown", video: "Script #2 — Freelance visa UAE" },
+  { day: "Day 10", type: "Day in the life", video: "Script #4 — Real workday Dubai freelancer" },
+  { day: "Day 11", type: "Platform ranked", video: "Script #8 — Freelance platforms ranked for UAE" },
+  { day: "Day 12", type: "Morning routine", video: "Script #12 — AED 10K vs AED 50K morning" },
+  { day: "Day 13", type: "Tax (short)", video: "Script #13 — Tax in 30 seconds" },
+  { day: "Day 14", type: "Personal story", video: "Script #14 — 3 years freelancing in Dubai" },
+  { day: "Day 15", type: "Rate raise", video: "Script #15 — How to raise rates by 40%" },
+  { day: "Day 16", type: "Getting clients", video: "Script #16 — First client from zero (different angle)" },
+  { day: "Day 17", type: "Tool tutorial", video: "Script #17 — Notion 5-minute setup" },
+  { day: "Day 18", type: "Client psychology", video: "Script #18 — Why you get ghosted on proposals" },
+  { day: "Day 19", type: "Step by step", video: "Script #19 — Freelance visa walkthrough step by step" },
+  { day: "Day 20", type: "Business lesson", video: "Script #20 — Stop using WhatsApp as your CRM" },
+  { day: "Days 21–30", type: "Remixes", video: "Re-record the top 3 videos from days 1–7 with a different hook. Same content, new opening. This is a TikTok-native growth strategy." },
+];
+
 const setupChecklist = [
   "Switch to a Business account (Settings → Account → Switch to Business)",
   "Category: Software / Digital Content / Business Services",
@@ -689,11 +744,22 @@ export default function TikTokPage() {
             <span className="text-gray-600">TikTok Content</span>
           </nav>
 
-          {/* Dark hero */}
+          {/* Dark hero — TikTok identity */}
           <div className="bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 text-white px-6 py-10 rounded-2xl mb-8">
-            <span className="text-xs font-bold text-emerald-400 uppercase tracking-widest mb-3 block">Content Strategy</span>
-            <h1 className="text-3xl sm:text-4xl font-bold leading-tight mb-4">TikTok Content Scripts — SoloKit</h1>
-            <p className="text-gray-300 text-sm mb-5 leading-relaxed max-w-xl">20 ready-to-record scripts targeting UAE freelancer searches. Each video takes 5–10 minutes to record on your phone.</p>
+            <div className="flex items-center gap-3 mb-4">
+              {/* TikTok red platform badge */}
+              <span className="inline-flex items-center gap-1.5 bg-red-500/20 border border-red-500/40 text-red-300 text-xs font-bold px-3 py-1 rounded-full uppercase tracking-widest">
+                <svg viewBox="0 0 24 24" className="w-3.5 h-3.5 shrink-0" fill="currentColor">
+                  <path d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.99-.32-2.15-.23-3.02.37-.63.41-1.11 1.04-1.36 1.75-.21.51-.15 1.07-.14 1.61.24 1.64 1.82 3.02 3.5 2.87 1.12-.01 2.19-.66 2.77-1.61.19-.33.4-.67.41-1.06.1-1.79.06-3.57.07-5.36.01-4.03-.01-8.05.02-12.07z" />
+                </svg>
+                TikTok
+              </span>
+              <span className="text-xs font-bold text-emerald-400 uppercase tracking-widest">Hook First · Entertainment · Post Daily</span>
+            </div>
+            <h1 className="text-3xl sm:text-4xl font-bold leading-tight mb-4">TikTok Content Scripts</h1>
+            <p className="text-gray-300 text-sm mb-5 leading-relaxed max-w-xl">
+              20 ready-to-record scripts with full HOOK / BODY / CTA structure. Hook must land in the first 3 seconds. Post 1–3× per day for 30 days minimum.
+            </p>
             <div className="flex flex-wrap gap-3">
               <div className="bg-white/10 backdrop-blur rounded-xl px-4 py-2.5 text-sm">
                 <span className="text-gray-400">Account</span>
@@ -704,23 +770,46 @@ export default function TikTokPage() {
                 <span className="ml-2 font-semibold text-white">Vertical 9:16 · 30–60 sec</span>
               </div>
               <div className="bg-white/10 backdrop-blur rounded-xl px-4 py-2.5 text-sm">
+                <span className="text-gray-400">Posting frequency</span>
+                <span className="ml-2 font-semibold text-white">1–3× per day · first 30 days</span>
+              </div>
+              <div className="bg-white/10 backdrop-blur rounded-xl px-4 py-2.5 text-sm">
                 <span className="text-gray-400">Best times (UAE)</span>
                 <span className="ml-2 font-semibold text-white">7–9 AM · 12–2 PM · 7–9 PM</span>
               </div>
             </div>
           </div>
 
+          {/* TikTok protocol */}
+          <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2">
+            <span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>
+            TikTok Protocol — read before recording
+          </h2>
+          <div className="space-y-3 mb-10">
+            {tiktokRules.map(({ rule, detail }) => (
+              <div key={rule} className="bg-white border border-gray-200 rounded-xl p-4">
+                <div className="flex items-start gap-3">
+                  <span className="w-2 h-2 rounded-full bg-red-500 mt-1.5 shrink-0"></span>
+                  <div>
+                    <p className="text-sm font-bold text-gray-900 mb-1">{rule}</p>
+                    <p className="text-sm text-gray-600">{detail}</p>
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
+
           {/* Account Setup */}
           <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2">
             <span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>
-            Account Setup — do this first
+            Account Setup Checklist — do this first
           </h2>
 
           <div className="bg-white border border-gray-200 rounded-2xl p-6 mb-8">
             <ul className="space-y-3">
               {setupChecklist.map((item, i) => (
                 <li key={item} className="flex gap-3 text-sm text-gray-700">
-                  <span className="w-8 h-8 bg-emerald-500 text-white rounded-full flex items-center justify-center shrink-0 font-bold text-sm">
+                  <span className="w-6 h-6 rounded-full bg-emerald-100 text-emerald-700 text-xs font-bold flex items-center justify-center shrink-0 mt-0.5">
                     {i + 1}
                   </span>
                   {item}
@@ -729,15 +818,41 @@ export default function TikTokPage() {
             </ul>
           </div>
 
-          {/* Script Library */}
-          <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2">
+          {/* 30-day content calendar */}
+          <h2 className="text-xl font-bold text-gray-900 mt-10 mb-2 flex items-center gap-2">
             <span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>
-            Script Library ({scripts.length} videos)
+            30-Day Content Calendar
           </h2>
+          <p className="text-sm text-gray-500 mb-5">Highest viral-potential scripts front-loaded in week 1. The algorithm gives new accounts more reach early — use it.</p>
+          <div className="bg-white border border-gray-200 rounded-2xl overflow-hidden mb-10">
+            <div className="px-5 py-3 bg-gray-50 border-b border-gray-100">
+              <p className="text-xs font-bold text-gray-500 uppercase tracking-widest">Posting schedule — 1 video per day minimum</p>
+            </div>
+            <div className="divide-y divide-gray-100">
+              {contentCalendar.map(({ day, type, video }) => (
+                <div key={day} className="px-5 py-3 flex items-start gap-4">
+                  <div className="w-24 shrink-0">
+                    <p className="text-xs font-bold text-gray-900">{day}</p>
+                    <p className="text-xs text-red-500 font-semibold mt-0.5">{type}</p>
+                  </div>
+                  <p className="text-sm text-gray-600">{video}</p>
+                </div>
+              ))}
+            </div>
+          </div>
 
-          <div className="bg-emerald-50 border border-emerald-200 rounded-xl p-5 mb-8">
-            <p className="text-sm font-bold text-emerald-800 mb-2">Posting order</p>
-            <p className="text-sm text-emerald-800">Week 1–2: Scripts #1, #3, #6, #7, #9 — highest viral potential. Week 3–4: Scripts #11, #13, #14, #15, #16, #18, #20. Week 5–6: Remaining scripts, then repost best performer with a new hook.</p>
+          {/* Script Library */}
+          <div className="flex items-center justify-between mb-5 mt-10">
+            <h2 className="text-xl font-bold text-gray-900 flex items-center gap-2">
+              <span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>
+              Script Library — {scripts.length} videos
+            </h2>
+            <span className="bg-red-100 text-red-700 text-xs font-semibold px-3 py-1 rounded-full">Highest viral first</span>
+          </div>
+
+          <div className="bg-amber-50 border border-amber-200 rounded-xl px-4 py-3 mb-6">
+            <p className="text-xs font-bold text-amber-800 mb-1">Recording tip</p>
+            <p className="text-xs text-amber-700">Record directly in the TikTok app for best compression. Good lighting matters more than a script. Enable auto-captions under Creator Tools before publishing. Each video should take 5–10 minutes to record and post.</p>
           </div>
 
           <div className="space-y-5 mb-10">
@@ -759,34 +874,12 @@ export default function TikTokPage() {
                 </div>
                 <div className="px-5 py-4">
                   <p className="text-xs font-bold text-gray-400 uppercase tracking-widest mb-1.5">Opening hook — say in first 2–3 seconds</p>
-                  <p className="text-sm text-gray-900 font-semibold italic mb-4 pl-3 border-l-2 border-emerald-400">&ldquo;{s.hook}&rdquo;</p>
-                  <p className="text-xs font-bold text-gray-400 uppercase tracking-widest mb-2">Full script — copy &amp; record</p>
+                  <p className="text-sm text-gray-900 font-semibold italic mb-4 pl-3 border-l-2 border-red-400">&ldquo;{s.hook}&rdquo;</p>
+                  <p className="text-xs font-bold text-gray-400 uppercase tracking-widest mb-2">Full script — HOOK / BODY / CTA structure</p>
                   <pre className="text-sm text-gray-700 bg-gray-50 border border-gray-100 rounded-xl p-4 whitespace-pre-wrap leading-relaxed font-sans overflow-x-auto select-all">
                     {s.script}
                   </pre>
                 </div>
-              </div>
-            ))}
-          </div>
-
-          {/* Strategy */}
-          <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2">
-            <span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>
-            Strategy
-          </h2>
-
-          <div className="space-y-3 mb-10">
-            {[
-              { title: "Week 1–2", desc: "Post scripts #1, #3, #6, #7, #9 (highest viral potential). One per day." },
-              { title: "Week 3–4", desc: "Post scripts #11, #13, #14, #15, #16, #18, #20. Still one per day." },
-              { title: "Week 5–6", desc: "Post remaining scripts. Repost the best performing video from week 1–2 with a different hook." },
-              { title: "Ongoing", desc: "Every time you publish a new blog article on SoloKit, record a 45-second TikTok version of the key insight." },
-              { title: "CTA on every video", desc: "End every video with \"Link in bio → solokit.cloud\"" },
-              { title: "Don't over-edit", desc: "Don't edit heavily, use complex transitions, or wait for perfect lighting. Just record and post." },
-            ].map(({ title, desc }) => (
-              <div key={title} className="bg-white border border-gray-200 rounded-xl p-4">
-                <p className="text-sm font-bold text-gray-900 mb-1">{title}</p>
-                <p className="text-sm text-gray-600">{desc}</p>
               </div>
             ))}
           </div>
