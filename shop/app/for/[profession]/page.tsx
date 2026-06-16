@@ -384,26 +384,27 @@ export default async function ProfessionPage({
       <Header />
 
       <main className="flex-1">
-        {/* Hero */}
-        <section className="max-w-4xl mx-auto px-4 sm:px-6 pt-16 pb-12">
-          <div className="max-w-2xl">
-            <span className="text-xs font-semibold text-gray-400 uppercase tracking-widest">
+
+        {/* Dark gradient hero */}
+        <section className="bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 text-white px-4 sm:px-6 py-14">
+          <div className="max-w-4xl mx-auto">
+            <span className="text-xs font-bold text-emerald-400 uppercase tracking-widest mb-3 block">
               For UAE Freelance {data.namePlural.charAt(0).toUpperCase() + data.namePlural.slice(1)}
             </span>
-            <h1 className="text-3xl sm:text-4xl font-bold text-gray-900 mt-3 mb-4 leading-tight">
+            <h1 className="text-3xl sm:text-4xl font-bold leading-tight mb-4 max-w-2xl">
               {data.headline}
             </h1>
-            <p className="text-lg text-gray-500 leading-relaxed mb-8">{data.subheadline}</p>
+            <p className="text-gray-300 text-sm leading-relaxed mb-8 max-w-xl">{data.subheadline}</p>
             <div className="flex flex-wrap gap-3">
               <Link
                 href="/#products"
-                className="bg-gray-900 text-white font-semibold px-6 py-3 rounded-xl hover:bg-gray-700 transition-colors text-sm"
+                className="bg-emerald-500 hover:bg-emerald-400 text-white font-bold px-6 py-3 rounded-xl transition-colors text-sm"
               >
                 Browse all products →
               </Link>
               <Link
                 href="/free"
-                className="border border-gray-200 text-gray-700 font-semibold px-6 py-3 rounded-xl hover:border-gray-400 transition-colors text-sm"
+                className="border border-white/20 text-white font-semibold px-6 py-3 rounded-xl hover:bg-white/10 transition-colors text-sm"
               >
                 10 free AI prompts
               </Link>
@@ -419,7 +420,7 @@ export default async function ProfessionPage({
             </p>
             <div className="grid sm:grid-cols-2 gap-3">
               {data.painPoints.map((p) => (
-                <div key={p} className="flex items-start gap-3 bg-white border border-gray-200 rounded-xl p-4">
+                <div key={p} className="flex items-start gap-3 bg-white border border-gray-200 rounded-xl p-4 hover:border-orange-300 transition-colors">
                   <span className="text-orange-400 shrink-0 mt-0.5">⚠</span>
                   <p className="text-sm text-gray-600">{p}</p>
                 </div>
@@ -431,9 +432,9 @@ export default async function ProfessionPage({
         {/* Products */}
         <section className="max-w-4xl mx-auto px-4 sm:px-6 py-16">
           <div className="mb-10">
-            <span className="text-xs font-semibold text-gray-400 uppercase tracking-widest">The fix</span>
-            <h2 className="text-2xl font-bold text-gray-900 mt-2">
-              Tools that solve these problems — built for UAE {data.namePlural}
+            <h2 className="text-2xl font-bold text-gray-900 mt-2 flex items-center gap-2">
+              <span className="w-1 h-7 bg-emerald-500 rounded-full inline-block shrink-0"></span>
+              Tools built for UAE {data.namePlural}
             </h2>
           </div>
           <div className="grid gap-5 sm:grid-cols-2">
@@ -441,24 +442,24 @@ export default async function ProfessionPage({
               <Link
                 key={product.slug}
                 href={`/products/${product.slug}`}
-                className="group border border-gray-200 rounded-2xl p-6 hover:border-gray-400 hover:shadow-sm transition-all"
+                className="group border border-gray-200 rounded-2xl p-6 hover:border-emerald-400 hover:shadow-sm transition-all"
               >
                 <div className="flex items-start gap-4 mb-4">
                   <span className="text-3xl shrink-0">{product.emoji}</span>
                   <div>
-                    <p className="font-bold text-gray-900 group-hover:text-gray-700 transition-colors">
+                    <p className="font-bold text-gray-900 group-hover:text-emerald-700 transition-colors">
                       {product.name}
                     </p>
-                    <p className="text-sm font-semibold text-gray-500">{product.price}</p>
+                    <p className="text-sm font-semibold text-emerald-600">{product.price}</p>
                   </div>
                   {i === 0 && (
-                    <span className="ml-auto text-xs font-semibold bg-gray-900 text-white px-2 py-1 rounded-full shrink-0">
+                    <span className="ml-auto text-xs font-semibold bg-emerald-500 text-white px-2 py-1 rounded-full shrink-0">
                       Best for you
                     </span>
                   )}
                 </div>
                 <p className="text-sm text-gray-500 leading-relaxed">{product.why}</p>
-                <p className="mt-4 text-sm font-semibold text-gray-900 group-hover:text-gray-600 transition-colors">
+                <p className="mt-4 text-sm font-semibold text-emerald-600 group-hover:text-emerald-500 transition-colors">
                   View product →
                 </p>
               </Link>
@@ -467,8 +468,9 @@ export default async function ProfessionPage({
         </section>
 
         {/* Testimonial */}
-        <section className="bg-gray-950 text-white py-14">
+        <section className="bg-gradient-to-br from-gray-900 to-gray-800 text-white py-14">
           <div className="max-w-2xl mx-auto px-4 sm:px-6 text-center">
+            <span className="text-xs font-bold text-emerald-400 uppercase tracking-widest block mb-6">What customers say</span>
             <p className="text-xl font-medium leading-relaxed text-gray-200 mb-6">
               &ldquo;{data.testimonial.quote}&rdquo;
             </p>
@@ -480,11 +482,11 @@ export default async function ProfessionPage({
 
         {/* Guarantee */}
         <section className="max-w-4xl mx-auto px-4 sm:px-6 py-12">
-          <div className="flex items-start gap-5 border border-gray-200 rounded-2xl p-6 bg-gray-50">
+          <div className="flex items-start gap-5 bg-emerald-50 border border-emerald-200 rounded-2xl p-6">
             <span className="text-3xl shrink-0">🛡️</span>
             <div>
-              <h3 className="font-bold text-gray-900 mb-1">30-Day Money-Back Guarantee</h3>
-              <p className="text-sm text-gray-500 leading-relaxed">
+              <h3 className="font-bold text-emerald-900 mb-1">30-Day Money-Back Guarantee</h3>
+              <p className="text-sm text-emerald-800 leading-relaxed">
                 If any SoloKit product isn&apos;t right for you, email us within 30 days for a full refund.
                 No questions asked, no forms to fill, no hassle. That&apos;s the deal.
               </p>
@@ -494,8 +496,8 @@ export default async function ProfessionPage({
 
         {/* Related guides */}
         <section className="max-w-4xl mx-auto px-4 sm:px-6 pb-16">
-          <p className="text-xs font-semibold text-gray-400 uppercase tracking-widest mb-5">Free reading</p>
-          <h2 className="text-xl font-bold text-gray-900 mb-6">
+          <h2 className="text-xl font-bold text-gray-900 mb-6 flex items-center gap-2">
+            <span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>
             Guides for UAE freelance {data.namePlural}
           </h2>
           <div className="grid gap-3 sm:grid-cols-2">
@@ -503,9 +505,9 @@ export default async function ProfessionPage({
               <Link
                 key={guide.slug}
                 href={`/blog/${guide.slug}`}
-                className="group flex items-start justify-between gap-3 border border-gray-200 rounded-xl p-4 hover:border-gray-400 hover:shadow-sm transition-all"
+                className="group flex items-start justify-between gap-3 border border-gray-200 rounded-xl p-4 hover:border-emerald-400 hover:shadow-sm transition-all"
               >
-                <p className="text-sm font-semibold text-gray-900 group-hover:text-gray-700 leading-snug">
+                <p className="text-sm font-semibold text-gray-900 group-hover:text-emerald-700 leading-snug">
                   {guide.title}
                 </p>
                 <span className="text-xs text-gray-400 shrink-0 whitespace-nowrap mt-0.5">{guide.time}</span>
@@ -515,24 +517,25 @@ export default async function ProfessionPage({
         </section>
 
         {/* Final CTA */}
-        <section className="bg-gray-50 border-t border-gray-100 py-16">
+        <section className="bg-gradient-to-br from-gray-900 to-gray-800 py-16">
           <div className="max-w-2xl mx-auto px-4 sm:px-6 text-center">
-            <h2 className="text-2xl font-bold text-gray-900 mb-3">
+            <span className="text-xs font-bold text-emerald-400 uppercase tracking-widest block mb-3">SoloKit</span>
+            <h2 className="text-2xl font-bold text-white mb-3">
               Ready to run a more organized freelance {data.name} business?
             </h2>
-            <p className="text-gray-500 text-sm mb-8">
+            <p className="text-gray-400 text-sm mb-8">
               One-time payment. Instant delivery. 30-day guarantee. AED pricing.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link
                 href="/#products"
-                className="bg-gray-900 text-white font-semibold px-7 py-3.5 rounded-xl hover:bg-gray-700 transition-colors text-sm"
+                className="bg-emerald-500 hover:bg-emerald-400 text-white font-bold px-7 py-3.5 rounded-xl transition-colors text-sm"
               >
                 Browse all products →
               </Link>
               <Link
                 href="/free"
-                className="border border-gray-200 text-gray-700 font-semibold px-7 py-3.5 rounded-xl hover:border-gray-400 transition-colors text-sm"
+                className="border border-white/20 text-white font-semibold px-7 py-3.5 rounded-xl hover:bg-white/10 transition-colors text-sm"
               >
                 Try 10 free prompts first
               </Link>

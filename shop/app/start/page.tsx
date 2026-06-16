@@ -90,7 +90,7 @@ function getRecommendation(answers: string[]): string {
 }
 
 export default function StartPage() {
-  const [step, setStep] = useState<number>(0); // 0-2 = questions, 3 = result
+  const [step, setStep] = useState<number>(0);
   const [answers, setAnswers] = useState<string[]>([]);
 
   function handleAnswer(value: string) {
@@ -114,13 +114,15 @@ export default function StartPage() {
     <>
       <Header />
 
-      <main className="flex-1 max-w-2xl mx-auto px-4 sm:px-6 py-14">
-        <div className="text-center mb-10">
-          <span className="text-xs font-semibold text-gray-400 uppercase tracking-widest">Start Here</span>
-          <h1 className="text-3xl font-bold text-gray-900 mt-2 mb-2">
+      <main className="flex-1 max-w-2xl mx-auto px-4 sm:px-6 py-10">
+
+        {/* Dark gradient hero */}
+        <div className="bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 text-white px-6 py-10 rounded-2xl mb-10 text-center">
+          <span className="text-xs font-bold text-emerald-400 uppercase tracking-widest mb-3 block">Start Here</span>
+          <h1 className="text-3xl sm:text-4xl font-bold leading-tight mb-3">
             Find your perfect SoloKit tool
           </h1>
-          <p className="text-gray-500">3 questions. 30 seconds.</p>
+          <p className="text-gray-300 text-sm">3 questions · 30 seconds · instant recommendation</p>
         </div>
 
         {step < 3 && (
@@ -135,7 +137,7 @@ export default function StartPage() {
                   <div
                     key={i}
                     className={`h-1.5 w-8 rounded-full transition-colors ${
-                      i <= step ? "bg-gray-900" : "bg-gray-200"
+                      i <= step ? "bg-emerald-500" : "bg-gray-200"
                     }`}
                   />
                 ))}
@@ -153,7 +155,7 @@ export default function StartPage() {
                 <button
                   key={opt.value + opt.label}
                   onClick={() => handleAnswer(opt.value)}
-                  className="w-full text-left border border-gray-200 rounded-xl p-4 hover:border-gray-900 hover:bg-gray-50 transition-all text-sm text-gray-800 font-medium"
+                  className="w-full text-left border border-gray-200 rounded-xl p-4 hover:border-emerald-500 hover:bg-emerald-50 transition-all text-sm text-gray-800 font-medium"
                 >
                   {opt.label}
                 </button>
@@ -164,7 +166,7 @@ export default function StartPage() {
 
         {step === 3 && recommendation && (
           <div>
-            <p className="text-center text-xs font-semibold text-gray-400 uppercase tracking-widest mb-6">Your result</p>
+            <p className="text-center text-xs font-semibold text-emerald-600 uppercase tracking-widest mb-6">Your result</p>
 
             <div className={`border-2 rounded-2xl p-7 mb-5 ${recommendation.color}`}>
               <div className="flex items-start gap-4 mb-4">
@@ -183,7 +185,7 @@ export default function StartPage() {
                 <p className="text-2xl font-bold text-gray-900">{recommendation.price}</p>
                 <Link
                   href={`/products/${recommendation.slug}`}
-                  className="bg-gray-900 text-white font-semibold px-6 py-2.5 rounded-xl hover:bg-gray-700 transition-colors text-sm"
+                  className="bg-emerald-500 hover:bg-emerald-400 text-white font-bold px-6 py-2.5 rounded-xl transition-colors text-sm"
                 >
                   Get this product →
                 </Link>
@@ -191,9 +193,9 @@ export default function StartPage() {
             </div>
 
             {/* Guarantee */}
-            <div className="flex items-center gap-3 bg-gray-50 border border-gray-100 rounded-xl p-4 mb-6 text-sm text-gray-600">
+            <div className="flex items-center gap-3 bg-emerald-50 border border-emerald-200 rounded-xl p-4 mb-6 text-sm text-emerald-800">
               <span className="text-lg shrink-0">🛡️</span>
-              <span>30-day money-back guarantee. If it's not right, email us for a full refund.</span>
+              <span>30-day money-back guarantee. If it&apos;s not right, email us for a full refund.</span>
             </div>
 
             {/* Also consider */}
@@ -201,22 +203,22 @@ export default function StartPage() {
               const other = products[recommendation.alsoConsider];
               if (!other) return null;
               return (
-                <div className="border border-gray-200 rounded-xl p-4 mb-6">
+                <div className="border border-gray-200 rounded-xl p-4 mb-6 hover:border-emerald-300 transition-colors">
                   <p className="text-xs font-semibold text-gray-400 uppercase tracking-widest mb-3">Also consider</p>
                   <Link href={`/products/${other.slug}`} className="flex items-center gap-3 group">
                     <span className="text-2xl">{other.emoji}</span>
                     <div className="flex-1 min-w-0">
-                      <p className="text-sm font-semibold text-gray-900 group-hover:text-gray-600">{other.name}</p>
+                      <p className="text-sm font-semibold text-gray-900 group-hover:text-emerald-700">{other.name}</p>
                       <p className="text-xs text-gray-500 truncate">{other.tagline}</p>
                     </div>
-                    <span className="text-sm font-bold text-gray-900 shrink-0">{other.price} →</span>
+                    <span className="text-sm font-bold text-emerald-600 shrink-0">{other.price} →</span>
                   </Link>
                 </div>
               );
             })()}
 
             <div className="flex flex-col items-center gap-3 text-sm text-gray-400">
-              <Link href="/#products" className="hover:text-gray-700 transition-colors">
+              <Link href="/#products" className="hover:text-emerald-600 transition-colors">
                 Browse all 4 products →
               </Link>
               <button onClick={reset} className="hover:text-gray-700 transition-colors">

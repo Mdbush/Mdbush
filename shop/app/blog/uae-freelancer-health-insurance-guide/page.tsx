@@ -187,7 +187,7 @@ export default function Article() {
           </ul>
 
           {/* Section 4 */}
-          <h2 className="text-xl font-bold text="gray-900 mt-10 mb-4 flex items-center gap-2">
+          <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2">
             <span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>
             Factor Insurance Into Your Freelance Rate
           </h2>

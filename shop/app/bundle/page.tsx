@@ -71,20 +71,20 @@ export default function BundlePage() {
 
       <main className="flex-1">
 
-        {/* Hero */}
-        <section className="bg-gray-950 text-white py-20 px-4 sm:px-6">
+        {/* Dark gradient hero */}
+        <section className="bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 text-white py-14 px-4 sm:px-6">
           <div className="max-w-3xl mx-auto text-center">
-            <span className="inline-block bg-white/10 text-white text-xs font-semibold px-3 py-1 rounded-full mb-6 uppercase tracking-widest">
+            <span className="text-xs font-bold text-emerald-400 uppercase tracking-widest mb-3 block">
               Complete Stack
             </span>
             <h1 className="text-4xl sm:text-5xl font-bold leading-tight mb-5">
               Everything you need to run a professional freelance business
             </h1>
-            <p className="text-lg text-gray-300 max-w-2xl mx-auto leading-relaxed mb-4">
+            <p className="text-lg text-gray-300 max-w-2xl mx-auto leading-relaxed mb-6">
               Get all 4 SoloKit products — the CRM, OS, AI prompts, and SOPs — at launch pricing.
               Together they replace 5+ tools you&apos;d otherwise pay monthly for.
             </p>
-            <div className="inline-flex items-center gap-3 bg-white/10 border border-white/20 rounded-2xl px-6 py-4 mb-8">
+            <div className="inline-flex items-center gap-4 bg-white/10 border border-white/20 rounded-2xl px-6 py-4 mb-8">
               <div className="text-left">
                 <p className="text-xs text-gray-400 uppercase tracking-widest">Bundle price</p>
                 <div className="flex items-baseline gap-3">
@@ -92,16 +92,16 @@ export default function BundlePage() {
                   <span className="text-xl text-gray-500 line-through">{formatPrice(totalPrice)}</span>
                 </div>
               </div>
-              <div className="bg-green-500 text-white text-sm font-bold px-3 py-1.5 rounded-full">
+              <div className="bg-emerald-500 text-white text-sm font-bold px-3 py-1.5 rounded-full shrink-0">
                 Save {formatPrice(savings)}
               </div>
             </div>
-            <div className="flex flex-col sm:flex-row gap-3 justify-center">
+            <div className="flex flex-wrap gap-3 justify-center">
               {bundleProducts.map((p) => (
                 <Link
                   key={p.slug}
                   href={`/products/${p.slug}`}
-                  className="text-xs text-gray-400 hover:text-gray-200 transition-colors"
+                  className="text-xs text-gray-400 hover:text-emerald-400 transition-colors"
                 >
                   {p.emoji} {p.name}
                 </Link>
@@ -113,27 +113,28 @@ export default function BundlePage() {
         {/* What's in the bundle */}
         <section className="max-w-4xl mx-auto px-4 sm:px-6 py-16">
           <div className="text-center mb-10">
-            <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-2">What you get</h2>
+            <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-2 flex items-center justify-center gap-2">
+              <span className="w-1 h-7 bg-emerald-500 rounded-full inline-block shrink-0"></span>
+              What you get
+            </h2>
             <p className="text-gray-500 text-sm">4 products · Instant delivery · Lifetime access · 30-day guarantee</p>
           </div>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-5 mb-12">
             {bundleProducts.map((p) => (
-              <div key={p.slug} className="border border-gray-200 rounded-2xl p-6 flex flex-col gap-3 hover:border-gray-400 transition-colors">
-                <div className="flex items-start justify-between gap-3">
-                  <div className="flex items-center gap-3">
-                    <span className="text-3xl">{p.emoji}</span>
-                    <div>
-                      <p className="font-bold text-gray-900 text-sm">{p.name}</p>
-                      <p className="text-xs text-gray-400 mt-0.5">{formatPrice(p.price)} individually</p>
-                    </div>
+              <div key={p.slug} className="border border-gray-200 rounded-2xl p-6 flex flex-col gap-3 hover:border-emerald-400 hover:shadow-sm transition-all">
+                <div className="flex items-start gap-3">
+                  <span className="text-3xl">{p.emoji}</span>
+                  <div>
+                    <p className="font-bold text-gray-900 text-sm">{p.name}</p>
+                    <p className="text-xs text-gray-400 mt-0.5">{formatPrice(p.price)} individually</p>
                   </div>
                 </div>
                 <p className="text-sm font-semibold text-gray-900">{p.highlight}</p>
                 <p className="text-xs text-gray-500 leading-relaxed">{p.keyFeature}</p>
                 <Link
                   href={`/products/${p.slug}`}
-                  className="text-xs font-semibold text-gray-400 hover:text-gray-700 transition-colors mt-auto"
+                  className="text-xs font-semibold text-emerald-600 hover:text-emerald-500 transition-colors mt-auto"
                 >
                   View details →
                 </Link>
@@ -143,7 +144,10 @@ export default function BundlePage() {
 
           {/* Pricing summary */}
           <div className="bg-gray-50 border border-gray-200 rounded-2xl p-6 mb-12">
-            <h3 className="font-bold text-gray-900 mb-4">Bundle vs buying separately</h3>
+            <h3 className="font-bold text-gray-900 mb-4 flex items-center gap-2">
+              <span className="w-1 h-5 bg-emerald-500 rounded-full inline-block shrink-0"></span>
+              Bundle vs buying separately
+            </h3>
             <div className="flex flex-col gap-2 mb-4">
               {bundleProducts.map((p) => (
                 <div key={p.slug} className="flex items-center justify-between text-sm">
@@ -160,14 +164,15 @@ export default function BundlePage() {
                 <span className="font-bold text-gray-900 text-lg">{formatPrice(bundlePrice)}</span>
               </div>
             </div>
-            <div className="bg-green-50 border border-green-200 rounded-xl p-3 flex items-center justify-between">
-              <span className="text-green-700 font-semibold text-sm">Your savings</span>
-              <span className="text-green-700 font-bold">{formatPrice(savings)}</span>
+            <div className="bg-emerald-50 border border-emerald-200 rounded-xl p-3 flex items-center justify-between">
+              <span className="text-emerald-700 font-semibold text-sm">Your savings</span>
+              <span className="text-emerald-700 font-bold">{formatPrice(savings)}</span>
             </div>
           </div>
 
           {/* Buy each product CTA */}
-          <div className="bg-gray-900 text-white rounded-2xl p-8 text-center mb-12">
+          <div className="bg-gradient-to-br from-gray-900 to-gray-800 text-white rounded-2xl p-8 text-center mb-12">
+            <span className="text-xs font-bold text-emerald-400 uppercase tracking-widest block mb-3">SoloKit</span>
             <h3 className="text-xl font-bold mb-2">Ready to get the full stack?</h3>
             <p className="text-gray-400 text-sm mb-6 max-w-md mx-auto">
               Add all 4 products to your library. Each is a one-time payment — no subscriptions, no renewal fees.
@@ -183,7 +188,7 @@ export default function BundlePage() {
                     <span>{p.emoji}</span>
                     <span className="font-medium">{p.name}</span>
                   </span>
-                  <span className="text-gray-300 font-semibold shrink-0">{formatPrice(p.price)}</span>
+                  <span className="text-emerald-400 font-bold shrink-0">{formatPrice(p.price)}</span>
                 </Link>
               ))}
             </div>
@@ -192,11 +197,14 @@ export default function BundlePage() {
 
           {/* Setup timeline */}
           <div className="mb-12">
-            <h2 className="text-xl font-bold text-gray-900 mb-6 text-center">Your first month with SoloKit</h2>
+            <h2 className="text-xl font-bold text-gray-900 mb-6 flex items-center gap-2">
+              <span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>
+              Your first month with SoloKit
+            </h2>
             <div className="flex flex-col gap-4">
               {timeline.map((item) => (
-                <div key={item.day} className="flex items-start gap-4 border border-gray-100 rounded-xl p-4">
-                  <div className="bg-gray-900 text-white text-xs font-bold rounded-lg px-3 py-1.5 shrink-0 whitespace-nowrap">
+                <div key={item.day} className="flex items-start gap-4 border border-gray-100 rounded-xl p-4 hover:border-emerald-200 transition-colors">
+                  <div className="bg-emerald-500 text-white text-xs font-bold rounded-lg px-3 py-1.5 shrink-0 whitespace-nowrap">
                     {item.day}
                   </div>
                   <div>
@@ -209,10 +217,10 @@ export default function BundlePage() {
           </div>
 
           {/* Guarantee */}
-          <div className="border border-gray-200 rounded-2xl p-6 text-center mb-10">
+          <div className="bg-emerald-50 border border-emerald-200 rounded-2xl p-6 text-center mb-10">
             <div className="text-4xl mb-3">🛡️</div>
-            <h3 className="font-bold text-gray-900 mb-2">30-Day Money-Back Guarantee</h3>
-            <p className="text-sm text-gray-500 max-w-sm mx-auto">
+            <h3 className="font-bold text-emerald-900 mb-2">30-Day Money-Back Guarantee</h3>
+            <p className="text-sm text-emerald-800 max-w-sm mx-auto">
               Not satisfied with any product? Email us within 30 days for a full refund.
               No forms, no questions, no drama.
             </p>
@@ -222,7 +230,7 @@ export default function BundlePage() {
           <div className="text-center">
             <Link
               href="/#products"
-              className="inline-block bg-gray-900 text-white font-bold px-8 py-4 rounded-xl hover:bg-gray-700 transition-colors text-sm"
+              className="inline-block bg-emerald-500 hover:bg-emerald-400 text-white font-bold px-8 py-4 rounded-xl transition-colors text-sm"
             >
               Browse all products and buy →
             </Link>

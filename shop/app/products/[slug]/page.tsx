@@ -205,19 +205,19 @@ export default async function ProductPage({ params }: Props) {
       <Header />
 
       <main className="flex-1 max-w-4xl mx-auto px-4 sm:px-6 py-12">
-        <Link href="/" className="text-sm text-gray-400 hover:text-gray-700 transition-colors mb-8 inline-block">
+        <Link href="/" className="text-sm text-gray-400 hover:text-emerald-600 transition-colors mb-8 inline-block">
           ← Back to all products
         </Link>
 
         {/* Social proof bar */}
-        <div className="flex flex-wrap gap-4 items-center mb-8 bg-gray-50 border border-gray-200 rounded-xl px-5 py-3">
-          <span className="text-sm font-semibold text-gray-700">★★★★★ 4.9/5</span>
-          <span className="text-gray-300">|</span>
-          <span className="text-sm text-gray-500">500+ UAE freelancers</span>
-          <span className="text-gray-300">|</span>
-          <span className="text-sm text-gray-500">Instant delivery</span>
-          <span className="text-gray-300">|</span>
-          <span className="text-sm text-gray-500">30-day guarantee</span>
+        <div className="flex flex-wrap gap-4 items-center mb-8 bg-gradient-to-r from-gray-900 to-gray-800 border border-gray-700 rounded-xl px-5 py-3">
+          <span className="text-sm font-semibold text-emerald-400">★★★★★ 4.9/5</span>
+          <span className="text-gray-600">|</span>
+          <span className="text-sm text-gray-300">500+ UAE freelancers</span>
+          <span className="text-gray-600">|</span>
+          <span className="text-sm text-gray-300">Instant delivery</span>
+          <span className="text-gray-600">|</span>
+          <span className="text-sm text-gray-300">30-day guarantee</span>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-10 mt-2">
@@ -230,7 +230,7 @@ export default async function ProductPage({ params }: Props) {
                 {product.category}
               </p>
               {product.badge && (
-                <span className="inline-block bg-gray-900 text-white text-xs font-semibold px-2.5 py-1 rounded-full mb-2">
+                <span className="inline-block bg-emerald-500 text-white text-xs font-semibold px-2.5 py-1 rounded-full mb-2">
                   {product.badge}
                 </span>
               )}
@@ -393,7 +393,7 @@ export default async function ProductPage({ params }: Props) {
         })()}
 
         {/* Final CTA */}
-        <section className="mt-12 bg-gray-950 rounded-2xl p-8 text-center">
+        <section className="mt-12 bg-gradient-to-br from-gray-900 to-gray-800 rounded-2xl p-8 text-center">
           <p className="text-xs font-semibold text-gray-400 uppercase tracking-widest mb-2">Ready to get started?</p>
           <h2 className="text-2xl font-bold text-white mb-2">{product.name}</h2>
           <p className="text-gray-400 text-sm mb-6 max-w-md mx-auto">{product.tagline} One-time payment. Instant delivery. 30-day guarantee.</p>

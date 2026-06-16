@@ -150,38 +150,42 @@ export default function FAQPage() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }} />
       <Header />
 
-      <main className="flex-1 max-w-3xl mx-auto px-4 sm:px-6 py-14">
-        <div className="mb-12 text-center">
-          <span className="text-xs font-semibold text-gray-400 uppercase tracking-widest">Help</span>
-          <h1 className="text-3xl font-bold text-gray-900 mt-2 mb-3">Frequently Asked Questions</h1>
-          <p className="text-gray-500 max-w-md mx-auto">
+      <main className="flex-1 max-w-3xl mx-auto px-4 sm:px-6 py-10">
+
+        {/* Dark gradient hero */}
+        <div className="bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 text-white px-6 py-10 rounded-2xl mb-10">
+          <span className="text-xs font-bold text-emerald-400 uppercase tracking-widest mb-3 block">Help Center</span>
+          <h1 className="text-3xl sm:text-4xl font-bold leading-tight mb-4">
+            Frequently Asked Questions
+          </h1>
+          <p className="text-gray-300 text-sm leading-relaxed max-w-xl mb-6">
             Everything you need to know about SoloKit products, payment, delivery, and refunds.
           </p>
-        </div>
-
-        {/* Quick nav */}
-        <div className="flex flex-wrap gap-2 justify-center mb-12">
-          {faqs.map((section) => (
-            <a
-              key={section.section}
-              href={`#${section.section.toLowerCase().replace(/\s+/g, "-")}`}
-              className="text-xs font-semibold bg-gray-100 text-gray-600 hover:bg-gray-200 px-3 py-1.5 rounded-full transition-colors"
-            >
-              {section.section}
-            </a>
-          ))}
+          {/* Quick nav pills inside hero */}
+          <div className="flex flex-wrap gap-2">
+            {faqs.map((section) => (
+              <a
+                key={section.section}
+                href={`#${section.section.toLowerCase().replace(/\s+/g, "-")}`}
+                className="text-xs font-semibold bg-white/10 hover:bg-white/20 text-white px-3 py-1.5 rounded-full transition-colors border border-white/20"
+              >
+                {section.section}
+              </a>
+            ))}
+          </div>
         </div>
 
         {/* FAQ sections */}
-        <div className="space-y-14">
+        <div className="space-y-12">
           {faqs.map((section) => (
             <section key={section.section} id={section.section.toLowerCase().replace(/\s+/g, "-")}>
-              <h2 className="text-lg font-bold text-gray-900 mb-5 pb-3 border-b border-gray-100">
+              <h2 className="text-xl font-bold text-gray-900 mb-5 flex items-center gap-2">
+                <span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>
                 {section.section}
               </h2>
-              <div className="space-y-4">
+              <div className="space-y-3">
                 {section.items.map((faq) => (
-                  <div key={faq.q} className="border border-gray-200 rounded-xl p-5">
+                  <div key={faq.q} className="border border-gray-200 rounded-xl p-5 hover:border-emerald-200 transition-colors">
                     <h3 className="font-semibold text-gray-900 mb-2 text-sm">{faq.q}</h3>
                     <p className="text-sm text-gray-500 leading-relaxed">{faq.a}</p>
                   </div>
@@ -192,21 +196,21 @@ export default function FAQPage() {
         </div>
 
         {/* Still have questions */}
-        <section className="mt-16 bg-gray-50 border border-gray-200 rounded-2xl p-8 text-center">
-          <h2 className="font-bold text-gray-900 mb-2">Still have a question?</h2>
-          <p className="text-sm text-gray-500 mb-5">
+        <div className="mt-12 bg-emerald-50 border border-emerald-200 rounded-2xl p-8 text-center">
+          <h2 className="font-bold text-emerald-900 mb-2">Still have a question?</h2>
+          <p className="text-sm text-emerald-700 mb-5">
             Email us and we&apos;ll reply within 24 hours.
           </p>
           <a
             href="mailto:md.a.bushara@gmail.com"
-            className="inline-block bg-gray-900 text-white font-semibold px-6 py-2.5 rounded-xl hover:bg-gray-700 transition-colors text-sm"
+            className="inline-block bg-emerald-500 hover:bg-emerald-400 text-white font-bold px-6 py-2.5 rounded-xl transition-colors text-sm"
           >
             Email us →
           </a>
-        </section>
+        </div>
 
-        {/* Products CTA */}
-        <section className="mt-10 grid grid-cols-2 sm:grid-cols-4 gap-3">
+        {/* Products grid */}
+        <div className="mt-8 grid grid-cols-2 sm:grid-cols-4 gap-3">
           {[
             { emoji: "📋", name: "Client CRM", slug: "freelancer-client-crm", price: "AED 175" },
             { emoji: "🚀", name: "Solopreneur OS", slug: "solopreneur-os", price: "AED 249" },
@@ -216,14 +220,14 @@ export default function FAQPage() {
             <Link
               key={p.slug}
               href={`/products/${p.slug}`}
-              className="border border-gray-200 rounded-xl p-4 hover:border-gray-400 hover:shadow-sm transition-all text-center"
+              className="border border-gray-200 rounded-xl p-4 hover:border-emerald-400 hover:shadow-sm transition-all text-center"
             >
               <div className="text-2xl mb-1">{p.emoji}</div>
               <p className="text-xs font-semibold text-gray-700">{p.name}</p>
-              <p className="text-xs text-gray-400 mt-0.5">{p.price}</p>
+              <p className="text-xs text-emerald-600 font-semibold mt-0.5">{p.price}</p>
             </Link>
           ))}
-        </section>
+        </div>
       </main>
 
       <Footer />
