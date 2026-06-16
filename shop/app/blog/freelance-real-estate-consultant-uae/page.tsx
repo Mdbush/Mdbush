@@ -140,7 +140,7 @@ export default function FreelanceRealEstateConsultantUAE() {
                 </p>
               </div>
               <div className="border border-gray-200 rounded-xl p-4">
-                <p className="font-bold text="gray-900 text-sm mb-2">Property investment advisor (consulting model)</p>
+                <p className="font-bold text-gray-900 text-sm mb-2">Property investment advisor (consulting model)</p>
                 <p className="text-sm text-gray-700">
                   Some independent real estate professionals position themselves as investment
                   advisors rather than agents — charging a fixed advisory fee for research,

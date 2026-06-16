@@ -139,7 +139,7 @@ export default function HowToGrowFreelanceRevenueUAE() {
               </p>
             </div>
             <div className="border border-gray-200 rounded-lg p-5">
-              <h3 className="font-semibold text="gray-900 mb-2">Productized Services</h3>
+              <h3 className="font-semibold text-gray-900 mb-2">Productized Services</h3>
               <p className="text-gray-600 text-sm">
                 Packaging a service that currently requires significant customisation per client
                 into a standardised offering that can be delivered more efficiently with templates,

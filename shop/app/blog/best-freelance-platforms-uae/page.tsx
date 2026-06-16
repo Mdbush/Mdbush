@@ -214,7 +214,7 @@ export default function BestFreelancePlatformsUAEPage() {
             <div className="bg-gray-50 rounded-lg p-4 text-sm mb-4">
               <p className="font-semibold text-gray-700 mb-2">What works in 2026</p>
               <ul className="space-y-1.5 text-gray-600 text-xs">
-                <li>→ Post 3× per week about your niche (results > process)</li>
+                <li>→ Post 3× per week about your niche (results &gt; process)</li>
                 <li>→ Connect with 10-15 new ICP contacts per week</li>
                 <li>→ Send 5 personalized cold DMs per week (not copy-paste)</li>
                 <li>→ Comment thoughtfully on prospects&apos; posts before DMing</li>
