@@ -1754,6 +1754,33 @@ export const posts: BlogPost[] = [
     readTime: "7 min read",
     category: "Pricing & Rates",
   },
+  {
+    slug: "freelance-sap-consultant-rates-uae",
+    title: "Freelance SAP Consultant Rates in the UAE (2026): FICO, MM, SD & Implementation Fees",
+    description:
+      "Real AED day rates for freelance SAP consultants in Dubai and Abu Dhabi. SAP FICO, MM, SD, HCM, S/4HANA migration, Basis, ABAP, and SAP project management rates for 2026.",
+    date: "June 16, 2026",
+    readTime: "8 min read",
+    category: "Pricing & Rates",
+  },
+  {
+    slug: "how-to-work-from-home-uae",
+    title: "How to Work From Home as a UAE Freelancer (2026): Setup, Productivity & Legal Guide",
+    description:
+      "Practical guide to working from home as a freelancer in Dubai and Abu Dhabi. Home office setup, productivity routines, client communication, visa considerations, and when to use a coworking space instead.",
+    date: "June 16, 2026",
+    readTime: "8 min read",
+    category: "Business & Mindset",
+  },
+  {
+    slug: "freelance-penetration-tester-rates-uae",
+    title: "Freelance Penetration Tester Rates in the UAE (2026): Ethical Hacking & Security Testing Fees",
+    description:
+      "Real AED day rates for freelance penetration testers in Dubai and Abu Dhabi. Web app pentesting, network pentesting, red teaming, mobile security, cloud security assessment, and bug bounty rates for 2026.",
+    date: "June 16, 2026",
+    readTime: "8 min read",
+    category: "Pricing & Rates",
+  },
 ];
 
 export function getPost(slug: string): BlogPost | undefined {
