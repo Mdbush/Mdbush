@@ -1916,6 +1916,33 @@ export const posts: BlogPost[] = [
     readTime: "7 min read",
     category: "Getting Started",
   },
+  {
+    slug: "freelance-low-code-developer-rates-uae",
+    title: "Freelance Low-Code Developer Rates in the UAE (2026): Power Platform, OutSystems & Mendix Fees",
+    description:
+      "Real AED day rates for freelance low-code developers in Dubai and Abu Dhabi. Microsoft Power Platform, OutSystems, Mendix, Appian, and low-code/no-code application development fees for 2026.",
+    date: "June 16, 2026",
+    readTime: "7 min read",
+    category: "Pricing & Rates",
+  },
+  {
+    slug: "freelance-oracle-consultant-rates-uae",
+    title: "Freelance Oracle Consultant Rates in the UAE (2026): ERP & Cloud Fees",
+    description:
+      "Real AED day rates for freelance Oracle consultants in Dubai and Abu Dhabi. Oracle Fusion Cloud, E-Business Suite, JD Edwards, Oracle HCM, Oracle Financials, APEX, and Oracle ERP implementation fees for 2026.",
+    date: "June 16, 2026",
+    readTime: "7 min read",
+    category: "Pricing & Rates",
+  },
+  {
+    slug: "how-to-price-discovery-calls-uae",
+    title: "Should UAE Freelancers Charge for Discovery Calls? (2026 Guide)",
+    description:
+      "Whether to charge for discovery calls as a UAE freelancer. When to charge, when to offer free consultations, how to structure paid discovery sessions, and how to handle the pricing conversation in Dubai and Abu Dhabi.",
+    date: "June 16, 2026",
+    readTime: "7 min read",
+    category: "Pricing & Rates",
+  },
 ];
 
 export function getPost(slug: string): BlogPost | undefined {
