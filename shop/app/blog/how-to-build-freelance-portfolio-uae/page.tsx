@@ -6,40 +6,49 @@ import type { Metadata } from "next";
 const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? "https://solokit.cloud";
 
 export const metadata: Metadata = {
-  title: "How to Build a Freelance Portfolio in the UAE (With No Clients Yet) — SoloKit",
+  title: "How to Build a Freelance Portfolio in UAE with No Clients Yet (2026) — SoloKit",
   description:
-    "Step-by-step guide to building a freelance portfolio that attracts clients in Dubai and Abu Dhabi — even if you're starting from zero. Includes portfolio formats, spec work, and pricing anchors.",
+    "Spec work, pro bono projects, and the case study format that wins UAE clients. Platforms, first testimonials strategy, and UAE-specific portfolio tips for 2026.",
   alternates: { canonical: "/blog/how-to-build-freelance-portfolio-uae" },
   openGraph: {
-    title: "How to Build a Freelance Portfolio in the UAE (With No Clients Yet)",
+    title: "How to Build a Freelance Portfolio in UAE with No Clients Yet (2026)",
     description:
-      "Step-by-step guide to building a freelance portfolio that attracts clients in Dubai and Abu Dhabi — even if you're starting from zero. Includes portfolio formats, spec work, and pricing anchors.",
+      "Spec work, pro bono projects, and the case study format that wins UAE clients. Platforms, first testimonials strategy, and UAE-specific portfolio tips for 2026.",
     type: "article",
     url: "/blog/how-to-build-freelance-portfolio-uae",
   },
   twitter: {
     card: "summary_large_image",
-    title: "How to Build a Freelance Portfolio in the UAE (With No Clients Yet)",
+    title: "How to Build a Freelance Portfolio in UAE with No Clients Yet (2026)",
     description:
-      "Step-by-step guide to building a freelance portfolio that attracts clients in Dubai and Abu Dhabi — even if you're starting from zero. Includes portfolio formats, spec work, and pricing anchors.",
+      "Spec work, pro bono projects, and the case study format that wins UAE clients. Platforms, first testimonials strategy, and UAE-specific portfolio tips for 2026.",
   },
 };
 
 const jsonLd = {
   "@context": "https://schema.org",
   "@type": "Article",
-  headline: "How to Build a Freelance Portfolio in the UAE (With No Clients Yet)",
+  headline: "How to Build a Freelance Portfolio in UAE with No Clients Yet (2026)",
   description:
-    "Step-by-step guide to building a freelance portfolio that attracts clients in Dubai and Abu Dhabi — even if you're starting from zero. Includes portfolio formats, spec work, and pricing anchors.",
+    "Spec work, pro bono projects, and the case study format that wins UAE clients. Platforms, first testimonials strategy, and UAE-specific portfolio tips for 2026.",
   datePublished: "2026-06-16",
   dateModified: "2026-06-16",
   author: { "@type": "Organization", name: "SoloKit" },
-  publisher: { "@type": "Organization", name: "SoloKit", url: siteUrl },
+  publisher: { "@type": "Organization", name: "SoloKit", url: "https://solokit.cloud" },
   url: `${siteUrl}/blog/how-to-build-freelance-portfolio-uae`,
   mainEntityOfPage: `${siteUrl}/blog/how-to-build-freelance-portfolio-uae`,
+  image: `${siteUrl}/og-image.png`,
+  keywords: [
+    "freelance portfolio UAE",
+    "how to build portfolio UAE no clients",
+    "spec work UAE freelancer",
+    "freelance portfolio Dubai 2026",
+    "Behance Dribbble UAE",
+    "first freelance clients UAE",
+  ],
 };
 
-export default function Article() {
+export default function HowToBuildFreelancePortfolioUAEPage() {
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
