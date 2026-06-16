@@ -863,6 +863,33 @@ export const posts: BlogPost[] = [
     readTime: "8 min read",
     category: "Pricing & Rates",
   },
+  {
+    slug: "freelance-cybersecurity-consultant-uae",
+    title: "Freelance Cybersecurity Consultant Rates in the UAE (2026): What to Charge",
+    description:
+      "Real AED rates for freelance cybersecurity consultants in Dubai and Abu Dhabi — penetration testing, CISO-as-a-service, compliance advisory, and incident response pricing for 2026.",
+    date: "June 16, 2026",
+    readTime: "8 min read",
+    category: "Pricing & Rates",
+  },
+  {
+    slug: "how-to-build-email-list-uae",
+    title: "How to Build an Email List as a UAE Freelancer (From Zero to 1,000 Subscribers)",
+    description:
+      "How UAE freelancers build email lists that generate consistent inbound — lead magnets, platforms, content cadence, and how to convert subscribers into paying clients. No paid ads required.",
+    date: "June 16, 2026",
+    readTime: "7 min read",
+    category: "Getting Clients",
+  },
+  {
+    slug: "freelance-financial-advisor-rates-uae",
+    title: "Freelance Financial Advisor Rates in the UAE (2026): What to Charge",
+    description:
+      "Real AED rates for freelance financial advisors and wealth managers in Dubai and Abu Dhabi — hourly, retainer, and AUM-based fees for personal finance, investment planning, and corporate treasury advisory in 2026.",
+    date: "June 16, 2026",
+    readTime: "8 min read",
+    category: "Pricing & Rates",
+  },
 ];
 
 export function getPost(slug: string): BlogPost | undefined {

@@ -6,11 +6,11 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "UAE Freelancer Guides & Resources — SoloKit",
   description:
-    "95 practical guides for freelancers and solopreneurs in the UAE. Visa, tax, rates, clients, contracts, AI tools, and more. All free.",
+    "98 practical guides for freelancers and solopreneurs in the UAE. Visa, tax, rates, clients, contracts, AI tools, and more. All free.",
   alternates: { canonical: "/guides" },
   openGraph: {
     title: "UAE Freelancer Guides & Resources — SoloKit",
-    description: "95 free guides covering everything a UAE freelancer needs to know.",
+    description: "98 free guides covering everything a UAE freelancer needs to know.",
     type: "website",
     url: "/guides",
   },
@@ -105,6 +105,8 @@ const categories = [
       { slug: "freelance-translator-rates-uae", title: "Freelance Translator & Interpreter Rates in the UAE (2026): What to Charge", time: "7 min" },
       { slug: "freelance-architect-rates-uae", title: "Freelance Architect & Interior Designer Rates in the UAE (2026)", time: "8 min" },
       { slug: "freelance-legal-consultant-rates-uae", title: "Freelance Legal Consultant Rates in the UAE (2026): What to Charge", time: "8 min" },
+      { slug: "freelance-cybersecurity-consultant-uae", title: "Freelance Cybersecurity Consultant Rates in the UAE (2026): What to Charge", time: "8 min" },
+      { slug: "freelance-financial-advisor-rates-uae", title: "Freelance Financial Advisor Rates in the UAE (2026): What to Charge", time: "8 min" },
     ],
   },
   {
@@ -139,6 +141,7 @@ const categories = [
       { slug: "how-to-get-government-contracts-uae", title: "How to Win Government Contracts as a UAE Freelancer (2026 Guide)", time: "9 min" },
       { slug: "how-to-use-ai-write-proposals-uae", title: "How to Use AI to Write Freelance Proposals That Win UAE Clients", time: "7 min" },
       { slug: "how-to-sell-digital-products-uae", title: "How to Create and Sell Digital Products as a UAE Freelancer (2026 Guide)", time: "8 min" },
+      { slug: "how-to-build-email-list-uae", title: "How to Build an Email List as a UAE Freelancer (From Zero to 1,000 Subscribers)", time: "7 min" },
     ],
   },
   {
@@ -193,7 +196,7 @@ export default function GuidesPage() {
           <span className="text-xs font-semibold text-gray-400 uppercase tracking-widest">Free Resources</span>
           <h1 className="text-3xl sm:text-4xl font-bold text-gray-900 mt-2 mb-3">UAE Freelancer Guides</h1>
           <p className="text-gray-500 max-w-xl mx-auto leading-relaxed">
-            95 practical guides covering everything you need to know about freelancing in Dubai and Abu Dhabi.
+            98 practical guides covering everything you need to know about freelancing in Dubai and Abu Dhabi.
             Written specifically for the UAE market — AED pricing, local laws, free zone context.
           </p>
         </div>
