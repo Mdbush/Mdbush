@@ -2591,6 +2591,33 @@ export const posts: BlogPost[] = [
     readTime: "7 min read",
     category: "Pricing & Rates",
   },
+  {
+    slug: "freelance-procurement-consultant-rates-uae",
+    title: "Freelance Procurement Consultant Rates in the UAE (2026)",
+    description:
+      "Real AED day rates for freelance procurement consultants in Dubai and Abu Dhabi. Category management, tender management, vendor selection, contract negotiation, spend analysis, and UAE government procurement advisory fees for 2026.",
+    date: "June 16, 2026",
+    readTime: "7 min read",
+    category: "Pricing & Rates",
+  },
+  {
+    slug: "how-to-create-a-freelance-niche-uae",
+    title: "How to Create a Freelance Niche in the UAE (2026 Guide)",
+    description:
+      "How UAE freelancers pick and own a profitable niche — why niching makes you more money, how to choose the right niche for the UAE market, how to position yourself as the specialist, and how to transition from generalist to niche consultant.",
+    date: "June 16, 2026",
+    readTime: "7 min read",
+    category: "Business & Mindset",
+  },
+  {
+    slug: "freelance-esg-consultant-rates-uae",
+    title: "Freelance ESG Consultant Rates in the UAE (2026)",
+    description:
+      "Real AED day rates for freelance ESG consultants in Dubai and Abu Dhabi. ESG strategy development, sustainability reporting, green finance advisory, UAE net zero compliance, carbon footprint assessment, and corporate governance consulting fees for 2026.",
+    date: "June 16, 2026",
+    readTime: "7 min read",
+    category: "Pricing & Rates",
+  },
 ];
 
 export function getPost(slug: string): BlogPost | undefined {

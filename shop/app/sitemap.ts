@@ -299,6 +299,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "freelance-supply-chain-consultant-rates-uae",
     "how-to-raise-your-rates-uae",
     "freelance-interior-stylist-rates-uae",
+    "freelance-procurement-consultant-rates-uae",
+    "how-to-create-a-freelance-niche-uae",
+    "freelance-esg-consultant-rates-uae",
   ].map((slug) => ({
     url: `${base}/blog/${slug}`,
     lastModified: new Date(),
