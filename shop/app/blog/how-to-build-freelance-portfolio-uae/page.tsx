@@ -51,432 +51,317 @@ const jsonLd = {
 export default function HowToBuildFreelancePortfolioUAEPage() {
   return (
     <>
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
       <Header />
+      <main className="max-w-2xl mx-auto px-4 py-12 text-gray-900">
 
-      <main className="flex-1 max-w-2xl mx-auto px-4 sm:px-6 py-14">
-        <Link href="/blog" className="text-sm text-gray-400 hover:text-gray-700 transition-colors mb-8 inline-block">
-          ← Blog
-        </Link>
+        {/* Breadcrumb */}
+        <nav className="text-sm text-gray-500 mb-8">
+          <Link href="/" className="hover:text-gray-700">Home</Link>
+          <span className="mx-2">›</span>
+          <Link href="/blog" className="hover:text-gray-700">Blog</Link>
+          <span className="mx-2">›</span>
+          <span>How to Build a Freelance Portfolio in UAE</span>
+        </nav>
 
-        <div className="mb-8">
-          
         {/* Dark hero */}
         <div className="bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 text-white px-6 py-10 rounded-2xl mb-8">
           <span className="text-xs font-bold text-emerald-400 uppercase tracking-widest mb-3 block">UAE FREELANCING</span>
-          <h1 className="text-3xl sm:text-4xl font-bold leading-tight mb-4">How to Build a Freelance Portfolio in the UAE (With No Clients Yet)</h1>
-          <p className="text-gray-300 text-sm mb-5 leading-relaxed max-w-xl">Step-by-step guide to building a freelance portfolio that attracts clients in Dubai and Abu Dhabi — even if you're starting from zero. Includes portfolio formats, spec work, and pricing anchors.</p>
+          <h1 className="text-3xl sm:text-4xl font-bold leading-tight mb-4">How to Build a Freelance Portfolio in UAE with No Clients Yet</h1>
+          <p className="text-gray-300 text-sm mb-5 leading-relaxed max-w-xl">Spec work, pro bono projects, case study format, platform recommendations, and the first-testimonial strategy that gets UAE freelancers off the ground in 2026.</p>
           <div className="flex flex-wrap gap-4 text-xs text-gray-400">
             <span>June 2026</span><span>·</span><span>7 min read</span>
           </div>
         </div>
 
-          <h1 className="text-3xl sm:text-4xl font-bold text-gray-900 leading-tight mb-4">
-            How to Build a Freelance Portfolio in the UAE (With No Clients Yet)
-          </h1>
-          <p className="text-lg text-gray-500 leading-relaxed">
-            Your portfolio is your sales page — not your CV. Here is how to build one that
-            attracts clients in Dubai and Abu Dhabi, even if you are starting from zero.
-          </p>
-        </div>
-
-        <div className="space-y-6 leading-relaxed">
-
-          <p>
+        {/* Intro */}
+        <section className="mb-10">
+          <p className="text-gray-700 text-sm mb-4 leading-relaxed">
             The most common question from new UAE freelancers: &quot;How do I get clients without a
             portfolio, and how do I build a portfolio without clients?&quot; It is a real paradox,
-            but it is also a solvable one — and the solution is not &quot;work for free until someone
-            takes pity on you.&quot;
+            but it has a practical solution — and the answer is not &quot;work for free until someone
+            takes a chance on you.&quot;
+          </p>
+          <p className="text-gray-700 text-sm mb-4 leading-relaxed">
+            Your portfolio is not a record of your employment history. It is a sales document.
+            Its job is to answer one question in the mind of a potential client: &quot;Can this person
+            solve the problem I have right now?&quot; You do not need ten past clients to answer that
+            question. You need three strong, well-presented case studies. This guide explains exactly
+            how to get them — even from zero.
+          </p>
+        </section>
+
+        {/* Spec work */}
+        <section className="mb-10">
+          <h2 className="text-xl font-bold mb-4 flex items-center gap-3">
+            <span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>
+            Strategy 1: Spec Work — Redesign a Real UAE Brand
+          </h2>
+          <p className="text-gray-700 text-sm mb-4 leading-relaxed">
+            Spec work means creating an unsolicited project for a real brand — a redesigned homepage,
+            a mock social media campaign, a refactored app UI, a rewritten landing page. You pick a
+            brand operating in the UAE where you can identify a genuine problem or opportunity, solve
+            it to the best of your ability, and present it in your portfolio as a self-initiated
+            concept project.
+          </p>
+          <p className="text-gray-700 text-sm mb-4 leading-relaxed">
+            Good UAE spec work targets: a mid-size Dubai restaurant chain with a weak website, an
+            Abu Dhabi retail brand with inconsistent social presence, a DIFC-based fintech startup
+            with a confusing onboarding flow. The more specific the problem you are solving, the
+            more clearly you demonstrate judgment — not just execution.
           </p>
 
-          <p>
-            The bigger conceptual shift needed first: your portfolio is not a record of your
-            employment history or a list of companies you have worked with. It is a sales
-            document. Its job is to answer one question in the mind of a potential client:
-            &quot;Can this person solve the problem I have right now?&quot; Everything else — the
-            design, the format, the length — is secondary to that.
-          </p>
-
-          <p>
-            Once you understand that, the &quot;no clients yet&quot; problem becomes much smaller.
-            Because you do not need ten past clients to answer that question. You need three
-            strong case studies, presented in a specific way.
-          </p>
-
-          <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2"><span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>Why UAE Clients Check Your Portfolio Before Anything Else</h2>
-
-          <p>
-            The UAE freelance market has specific dynamics that make portfolio quality particularly
-            important. Dubai and Abu Dhabi attract a high density of sophisticated buyers —
-            marketing directors at regional brands, COOs at fast-scaling startups, procurement
-            managers at large enterprises. These buyers see a lot of proposals. They have been
-            burned before by freelancers who oversold and underdelivered.
-          </p>
-
-          <p>
-            The first thing most of them do before replying to a message, before a call, and
-            often before reading a proposal is look at your portfolio. If they cannot find it,
-            they move to the next candidate. If they find it and it looks weak, your proposal
-            goes to the bottom of the pile.
-          </p>
-
-          <p>
-            This is not unique to the UAE, but it is intensified here by a few factors: the
-            market is competitive because of the high concentration of skilled professionals from
-            around the world, trust matters more in relationship-driven Gulf business culture,
-            and rates tend to be higher — which raises the buyer&apos;s caution proportionally.
-          </p>
-
-          <p>
-            The good news: because many freelancers in the UAE are not putting serious effort
-            into their portfolios, a well-structured one stands out immediately. You do not need
-            to be the most experienced — you need to be the clearest about what you do and the
-            proof that you can do it.
-          </p>
-
-          <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2"><span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>The 5 Elements Every Freelance Portfolio Needs</h2>
-
-          <p>
-            These are not suggestions — they are the minimum required for a portfolio that
-            does its job in the UAE market. Missing any one of them creates a doubt in the
-            client&apos;s mind that is hard to recover from.
-          </p>
-
-          <ol className="list-decimal pl-5 space-y-5 text-gray-600">
-            <li>
-              <strong className="text-gray-900">A specific, credible introduction.</strong>{" "}
-              Not &quot;I am a passionate creative professional with 5 years of experience.&quot;
-              Something like: &quot;I help Dubai e-commerce brands increase conversion rates through
-              performance-focused web design. My focus is the fashion, beauty, and lifestyle sectors.&quot;
-              Specificity signals expertise. Vagueness signals generalism.
-            </li>
-            <li>
-              <strong className="text-gray-900">Case studies with context, not just samples.</strong>{" "}
-              A screenshot of a logo you designed is not a case study. A case study describes
-              the problem, your approach, and the result. Three well-written case studies outperform
-              twenty decontextualised samples every time.
-            </li>
-            <li>
-              <strong className="text-gray-900">Results with numbers.</strong>{" "}
-              Not &quot;the client was happy with the outcome.&quot; Something like: &quot;reduced ad creative
-              production time by 60%&quot; or &quot;increased organic traffic by 3,400 sessions/month within
-              90 days.&quot; Numbers create credibility that adjectives cannot. If you do not have exact
-              numbers, use ranges or relative comparisons — they are still far more persuasive than
-              nothing.
-            </li>
-            <li>
-              <strong className="text-gray-900">Process visibility.</strong>{" "}
-              Show how you work — not just what you produced. Clients are hiring you, not just
-              a deliverable. A brief section on your process (how you take a brief, how you handle
-              feedback, what a typical engagement looks like) reduces client uncertainty and
-              builds trust before the first conversation.
-            </li>
-            <li>
-              <strong className="text-gray-900">A clear, frictionless contact path.</strong>{" "}
-              A dedicated email address, a WhatsApp link, or a short enquiry form. &quot;DM me on
-              Instagram&quot; or making someone dig for your contact information is a conversion killer.
-              Make it a one-click action to get in touch.
-            </li>
-          </ol>
-
-          <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2"><span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>How to Get Your First 3 Case Studies</h2>
-
-          <p>
-            You do not need paying clients to have case studies. Here are three approaches that
-            produce legitimate portfolio-quality work:
-          </p>
-
-          <p>
-            <strong>1. Spec work for real brands.</strong> Pick a brand operating in the UAE
-            that you would like to work with — ideally one where you can identify a genuine
-            problem or opportunity. Design a rebrand concept, write a content strategy, rebuild
-            their homepage layout, or create an ad campaign. Present it as an unsolicited concept,
-            not as commissioned work. Be transparent in your portfolio: &quot;Concept developed as
-            a self-initiated project.&quot; Done well, spec work demonstrates initiative and skill more
-            clearly than many paid projects.
-          </p>
-
-          <p>
-            <strong>2. Discounted work for testimonials.</strong> Offer two or three small
-            businesses a significant discount — not free — in exchange for a detailed testimonial
-            and permission to feature the work in your portfolio. Charging even a nominal amount
-            (AED 500–1,000 for a small project) changes the dynamic: the client takes the work
-            more seriously, gives better feedback, and the relationship feels more professional.
-            &quot;Free&quot; work often produces vague, unusable testimonials and work that never gets
-            properly finished because neither party has enough skin in the game.
-          </p>
-
-          <p>
-            <strong>3. Your own projects.</strong> If you are a copywriter, write a series on
-            LinkedIn. If you are a web designer, build your own website as a demonstration of
-            skill. If you are a social media manager, document how you grew your own following
-            using the same techniques you would apply for a client. Self-initiated projects
-            produced to a high standard are entirely legitimate portfolio entries — particularly
-            if you frame them as demonstrations of method rather than client work.
-          </p>
-
-          <div className="bg-emerald-50 border border-blue-100 rounded-2xl p-5 my-6">
-            <p className="text-sm font-semibold text-emerald-900 mb-2">Note on transparency</p>
-            <p className="text-sm text-blue-800">
-              Always label spec work and self-initiated projects clearly. UAE business culture
-              values directness and honesty. Presenting spec work as commissioned work is a
-              reputation risk that is not worth taking in a market as networked as Dubai.
-              Transparent, high-quality spec work will serve you better.
-            </p>
+          {/* Watermark tip */}
+          <div className="bg-emerald-50 border border-emerald-200 rounded-xl p-5 mb-4">
+            <div className="flex items-start gap-3">
+              <span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0 mt-0.5"></span>
+              <div>
+                <p className="font-bold text-emerald-900 mb-1">Watermark your spec work</p>
+                <p className="text-emerald-800 text-sm leading-relaxed">
+                  Always watermark spec work assets and state clearly in the caption: &quot;Self-initiated concept
+                  project — not commissioned by [Brand].&quot; UAE business culture values directness. Presenting
+                  spec work as commissioned work is a reputation risk that is not worth taking in a market
+                  as networked as Dubai. Transparent, high-quality spec work is far more credible than vague
+                  claims of past client work.
+                </p>
+              </div>
+            </div>
           </div>
 
-          <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2"><span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>Portfolio Formats: Notion vs Website vs PDF</h2>
-
-          <p>
-            New freelancers often spend weeks agonising over which format their portfolio should
-            take. The answer is simpler than it feels:
+          <p className="text-gray-700 text-sm leading-relaxed">
+            Done well, spec work demonstrates initiative and judgment that many paid projects cannot match
+            — because you chose the brief, defined the scope, and executed it without hand-holding. These
+            are exactly the qualities UAE clients at the AED 5,000+ project level are looking for.
           </p>
+        </section>
 
-          <p>
-            <strong>Notion</strong> is the fastest path to a portfolio that is live, shareable,
-            and professional. You can build a polished Notion page in a single day, share it
-            via a link, and update it instantly as you add new work. It handles images, text,
-            embedded links, and even video well. For most freelancers under AED 50K/month in
-            revenue, Notion is entirely sufficient.
+        {/* Pro bono */}
+        <section className="mb-10">
+          <h2 className="text-xl font-bold mb-4 flex items-center gap-3">
+            <span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>
+            Strategy 2: Pro Bono Work for UAE NGOs and Accelerators
+          </h2>
+          <p className="text-gray-700 text-sm mb-4 leading-relaxed">
+            Pro bono work — offered free of charge to a non-profit or early-stage organisation —
+            gives you real client experience, a real brief, and a real testimonial. In the UAE,
+            there are better pro bono opportunities than most freelancers realise.
           </p>
-
-          <p>
-            The{" "}
-            <Link href="/blog/notion-setup-guide-freelancers" className="text-gray-900 underline underline-offset-2 hover:text-gray-600 transition-colors">
-              Notion setup guide for freelancers
-            </Link>{" "}
-            includes a section specifically on building a client-facing portfolio page in Notion
-            — including how to structure it for the UAE market and how to use Notion&apos;s custom
-            domain feature if you want your own URL.
+          <p className="text-gray-700 text-sm mb-4 leading-relaxed">
+            <strong>NGOs and charities:</strong> Emirates Red Crescent regularly needs creative and
+            communications support. Local community groups, cultural organisations, and international
+            NGOs operating from UAE offices (Dubai Cares, for example) are worth approaching directly
+            with a specific offer of help — not an open-ended &quot;I&apos;d love to volunteer.&quot;
           </p>
-
-          <p>
-            <strong>A custom website</strong> (built on Webflow, Framer, or even WordPress) is
-            worth the investment once you are established and have consistent inbound enquiries.
-            It signals permanence and gives you more control over SEO and branding. But it
-            takes longer to build, costs more to maintain, and is overkill at the start. Do
-            not let &quot;I need a proper website&quot; stop you from having any portfolio at all.
+          <p className="text-gray-700 text-sm mb-4 leading-relaxed">
+            <strong>Startup accelerators:</strong> Hub71 in Abu Dhabi and DIFC Fintech Hive in Dubai
+            both support early-stage startups that need design, copywriting, marketing, and technical
+            help but cannot yet pay agency rates. Reaching out directly to founders through these
+            programmes — offering a specific, scoped piece of work — often results in paid follow-on
+            projects once you have demonstrated your value.
           </p>
-
-          <p>
-            <strong>A PDF</strong> is useful as a supplementary document — something you attach
-            to a proposal or send in a WhatsApp conversation. It should not be your only format,
-            because it cannot be updated, may not render correctly on every device, and makes it
-            harder for clients to navigate to specific work samples. Use it as a complement to
-            your main portfolio, not as the portfolio itself.
+          <p className="text-gray-700 text-sm leading-relaxed">
+            The key to good pro bono work: define scope clearly upfront, deliver at the same standard
+            as a paid project, and ask for a detailed written testimonial as part of the agreement.
+            The testimonial is the asset; the work is how you earn it.
           </p>
+        </section>
 
-          <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2"><span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>What UAE Clients Specifically Look For</h2>
-
-          <p>
-            Beyond the universal portfolio basics, there are elements that carry extra weight
-            with UAE-based clients specifically:
+        {/* Case study format */}
+        <section className="mb-10">
+          <h2 className="text-xl font-bold mb-4 flex items-center gap-3">
+            <span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>
+            The Case Study Format That Converts UAE Clients
+          </h2>
+          <p className="text-gray-700 text-sm mb-4 leading-relaxed">
+            A portfolio image is a sample. A case study is an argument. The structure that works
+            best in UAE client conversations is simple: <strong>Situation → Approach → Result</strong>.
           </p>
-
-          <ul className="list-disc pl-5 space-y-3 text-gray-600">
-            <li>
-              <strong className="text-gray-900">Familiarity with local brands and market context.</strong>{" "}
-              If you have worked with UAE brands — or produced spec work for them — show it.
-              A client in Dubai feels more confident hiring someone who already understands the
-              local landscape, consumer behaviour, and cultural context than someone bringing a
-              purely international perspective.
-            </li>
-            <li>
-              <strong className="text-gray-900">AED pricing in your portfolio or starting price signal.</strong>{" "}
-              Many UAE freelancers avoid showing any pricing on their portfolio — which is fine.
-              But having a &quot;projects start at AED [X]&quot; line signals that you know your market,
-              you are not going to waste anyone&apos;s time, and you are confident in your value.
-              It also filters out tyre-kickers before they contact you.
-            </li>
-            <li>
-              <strong className="text-gray-900">Understanding of Gulf business culture.</strong>{" "}
-              This comes through in how you write about your process: references to relationship-building,
-              flexibility, and clear communication resonate with UAE buyers in a way that purely
-              transactional language often does not.
-            </li>
-            <li>
-              <strong className="text-gray-900">Bilingual capability (if applicable).</strong>{" "}
-              If you work in both English and Arabic, make this explicit. It is a genuine
-              differentiator in the UAE market where many brands need content that works for
-              both audiences.
-            </li>
-          </ul>
-
-          <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2"><span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>How to Present Process, Not Just Output</h2>
-
-          <p>
-            The difference between a portfolio that gets enquiries and one that does not is often
-            this: does the client understand how you work, or only what you have made?
+          <div className="space-y-4 mb-4">
+            <div className="border border-gray-200 rounded-xl p-5">
+              <h3 className="font-semibold text-gray-900 mb-2">Situation</h3>
+              <p className="text-gray-700 text-sm leading-relaxed">
+                What was the problem or challenge? Be specific: &quot;A Dubai F&B brand was running
+                paid social ads with a 0.4% CTR and no coherent visual identity across platforms.&quot;
+                Not: &quot;The client needed help with their marketing.&quot;
+              </p>
+            </div>
+            <div className="border border-gray-200 rounded-xl p-5">
+              <h3 className="font-semibold text-gray-900 mb-2">Approach</h3>
+              <p className="text-gray-700 text-sm leading-relaxed">
+                What did you actually do? Walk through your method: research, decisions made,
+                tools used, how you handled constraints or challenges. This is where your
+                thinking becomes visible — and thinking is what clients are really paying for.
+              </p>
+            </div>
+            <div className="border border-gray-200 rounded-xl p-5">
+              <h3 className="font-semibold text-gray-900 mb-2">Result (with numbers)</h3>
+              <p className="text-gray-700 text-sm leading-relaxed">
+                What changed? Use numbers wherever possible: &quot;CTR increased from 0.4% to 2.1%
+                over 6 weeks. Monthly ad spend efficiency improved by 38%.&quot; If you do not have
+                exact numbers, use ranges or relative comparisons. Numbers create credibility that
+                adjectives cannot.
+              </p>
+            </div>
+          </div>
+          <p className="text-gray-700 text-sm leading-relaxed">
+            Three strong case studies in this format will outperform a portfolio of twenty
+            decontextualised samples. Quality over quantity is always the right call when you
+            are starting out.
           </p>
+        </section>
 
-          <p>
-            Clients who have been burned before — and most UAE business decision-makers have been —
-            are not just evaluating output quality. They are evaluating whether working with you
-            will be painful or smooth. A portfolio that shows your process reassures them on that
-            second dimension.
+        {/* Platforms */}
+        <section className="mb-10">
+          <h2 className="text-xl font-bold mb-4 flex items-center gap-3">
+            <span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>
+            Where to Host Your Portfolio (UAE-Relevant Platforms)
+          </h2>
+          <div className="overflow-x-auto mb-4">
+            <table className="w-full text-sm border-collapse">
+              <thead>
+                <tr className="bg-gray-100">
+                  <th className="text-left p-3 border border-gray-200 font-semibold">Platform</th>
+                  <th className="text-left p-3 border border-gray-200 font-semibold">Best For</th>
+                  <th className="text-left p-3 border border-gray-200 font-semibold">UAE Relevance</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td className="p-3 border border-gray-200 font-medium">Behance</td>
+                  <td className="p-3 border border-gray-200">Graphic design, photography, motion</td>
+                  <td className="p-3 border border-gray-200">High — UAE agencies browse Behance actively</td>
+                </tr>
+                <tr className="bg-gray-50">
+                  <td className="p-3 border border-gray-200 font-medium">Dribbble</td>
+                  <td className="p-3 border border-gray-200">UI/UX, branding, illustration</td>
+                  <td className="p-3 border border-gray-200">Medium — strong for tech/startup clients</td>
+                </tr>
+                <tr>
+                  <td className="p-3 border border-gray-200 font-medium">GitHub</td>
+                  <td className="p-3 border border-gray-200">Developers, engineers, data</td>
+                  <td className="p-3 border border-gray-200">High — UAE tech clients expect a GitHub profile</td>
+                </tr>
+                <tr className="bg-gray-50">
+                  <td className="p-3 border border-gray-200 font-medium">Personal website</td>
+                  <td className="p-3 border border-gray-200">All disciplines</td>
+                  <td className="p-3 border border-gray-200">High — signals permanence and professionalism</td>
+                </tr>
+                <tr>
+                  <td className="p-3 border border-gray-200 font-medium">LinkedIn</td>
+                  <td className="p-3 border border-gray-200">All disciplines</td>
+                  <td className="p-3 border border-gray-200">Very High — UAE&apos;s primary professional network</td>
+                </tr>
+                <tr className="bg-gray-50">
+                  <td className="p-3 border border-gray-200 font-medium">Bayt.com</td>
+                  <td className="p-3 border border-gray-200">MENA-focused job and talent platform</td>
+                  <td className="p-3 border border-gray-200">Medium — useful for GCC clients specifically</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <p className="text-gray-700 text-sm leading-relaxed">
+            <strong>LinkedIn Premium is notably more effective in the UAE</strong> than in most other
+            markets. Senior buyers in UAE companies — marketing directors, procurement heads, founders —
+            are active on LinkedIn and respond to InMail from credentialed professionals. If you are
+            investing in any premium tool, LinkedIn Premium is the one that pays off fastest in this market.
+            Bayt.com is worth a profile for GCC-focused client searches, particularly for consultants
+            targeting Arabic-speaking clients.
           </p>
+        </section>
 
-          <p>
-            For each case study, include a brief process note: how you took the brief, what you
-            discovered in your research or discovery phase, how you presented options to the client,
-            how you handled feedback, and what the handover looked like. This does not need to be
-            long — three or four sentences per case study is enough. What it does is make you real,
-            professional, and reassuring in a way that polished outputs alone cannot.
+        {/* First testimonials strategy */}
+        <section className="mb-10">
+          <h2 className="text-xl font-bold mb-4 flex items-center gap-3">
+            <span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>
+            How to Get Your First Testimonials
+          </h2>
+          <p className="text-gray-700 text-sm mb-4 leading-relaxed">
+            Testimonials are social proof that money cannot simply buy — they must be earned. The
+            fastest legitimate path to your first three strong testimonials is this: offer your
+            first three clients a 50% discount from your standard rate, explicitly in exchange for
+            a detailed written testimonial and permission to use the work in your portfolio.
           </p>
-
-          <p>
-            If you have standardised onboarding or delivery processes, mentioning them is a positive
-            signal. &quot;All projects start with a 30-minute briefing call and a written scope document.
-            Revisions are managed through a shared Notion workspace.&quot; Clients who read this know
-            they are not going to be managing a disorganised freelancer over chaotic WhatsApp threads.
+          <p className="text-gray-700 text-sm mb-4 leading-relaxed">
+            This works for several reasons. Charging even a discounted rate (AED 1,000–3,000 for
+            a small project instead of AED 2,000–6,000) means the client takes the engagement
+            seriously, gives better feedback, and is more invested in the outcome. &quot;Free&quot; work
+            tends to produce delayed responses, vague briefs, and testimonials like &quot;great to
+            work with, would recommend&quot; — which tell prospective clients nothing.
           </p>
-
-          <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2"><span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>The Portfolio-to-Proposal Pipeline</h2>
-
-          <p>
-            Building a portfolio is the first step. The second step — which most freelancers skip —
-            is tracking what happens after someone sees it.
+          <p className="text-gray-700 text-sm mb-4 leading-relaxed">
+            Frame the ask directly: &quot;I am building my portfolio in the UAE market. I will deliver
+            this project at 50% of my standard rate. In return, I am asking for a detailed testimonial
+            covering what you needed, what I delivered, and what the outcome was. Does that work for you?&quot;
+            Most clients who agree to this deal are happy to provide a useful testimonial — because
+            they got good work at a fair price and want to reciprocate.
           </p>
-
-          <p>
-            When a lead contacts you after viewing your portfolio, they are warm. They have already
-            seen your work and decided to take the next step. The conversion rate from this point is
-            much higher than cold outreach. But without a system, these warm leads slip through the
-            cracks: you reply, there is a back-and-forth, they say &quot;let me think about it&quot;, and two
-            weeks later you have forgotten to follow up.
+          <p className="text-gray-700 text-sm leading-relaxed">
+            Once you have three strong testimonials, raise your rates to standard. The discount period
+            is a deliberate investment in social proof, not a permanent pricing position.
           </p>
+        </section>
 
-          <p>
-            A CRM — even a simple one — tracks every enquiry from first contact to signed contract.
-            You know who saw your portfolio, when they contacted you, where they are in the pipeline,
-            and when to follow up. For the UAE market specifically, where a lot of business happens
-            through referrals and repeat engagements, this tracking has compounding returns. A client
-            who did not hire you six months ago may be ready now — but only if you remembered to stay
-            in touch.
+        {/* CTA */}
+        <div className="bg-gray-950 text-white rounded-xl p-8 mb-10">
+          <p className="text-sm text-gray-400 mb-2">Ready to manage your first clients?</p>
+          <h2 className="text-xl font-bold mb-3">Freelancer Client CRM — From First Lead to Signed Contract</h2>
+          <p className="text-gray-300 text-sm mb-4 leading-relaxed">
+            The Freelancer Client CRM is a Notion template built for UAE freelancers. Lead pipeline,
+            proposal tracker, invoice log, client database, and follow-up reminders. When your first
+            three spec work inquiries come in, you want a system to manage them — not a mess of
+            WhatsApp threads. AED 175, one-time purchase.
           </p>
-
-          <div className="bg-gray-900 text-white rounded-2xl p-6 mt-6 mb-6">
-            <p className="text-sm font-semibold text-gray-300 mb-1">Track every lead from portfolio to signed contract</p>
-            <p className="text-xl font-bold mb-3">Freelancer Client CRM</p>
-            <p className="text-gray-400 text-sm mb-4">
-              A Notion CRM built for UAE freelancers. Lead pipeline, proposal tracker, invoice log,
-              client database, and follow-up reminders — all in one place. AED 175, one-time.
-            </p>
+          <div className="flex flex-wrap gap-3">
             <Link
               href="/products/freelancer-client-crm"
-              className="inline-block bg-white text-gray-900 text-sm font-semibold px-6 py-2.5 rounded-xl hover:bg-gray-100 transition-colors"
+              className="inline-block bg-white text-gray-900 font-semibold px-6 py-3 rounded-lg hover:bg-gray-100 transition-colors text-sm"
             >
-              Get the CRM — AED 175 →
+              Get Freelancer Client CRM — AED 175
             </Link>
-          </div>
-
-          <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2"><span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>Red Flags That Kill Proposals Before They Start</h2>
-
-          <p>
-            Some portfolio mistakes do not just fail to impress — they actively create doubt that
-            is hard to overcome even in a strong proposal. Avoid these:
-          </p>
-
-          <ul className="list-disc pl-5 space-y-3 text-gray-600">
-            <li>
-              <strong className="text-gray-900">A portfolio that has not been updated in over a year.</strong>{" "}
-              Even if your best work is older, add something recent. A stale portfolio signals
-              either that you are not working much, or that you do not care about your own presentation.
-            </li>
-            <li>
-              <strong className="text-gray-900">Work that does not match the client you are targeting.</strong>{" "}
-              If you are pitching to Dubai fintech companies and your portfolio is full of wedding
-              photography, you are making the client do too much imaginative work. Tailor what you
-              show, or build multiple portfolio versions for different niches.
-            </li>
-            <li>
-              <strong className="text-gray-900">No testimonials at all.</strong>{" "}
-              Even one genuine testimonial — a sentence or two from a client, former colleague, or
-              even a course instructor — is better than none. Social proof matters, and its absence
-              is noticed.
-            </li>
-            <li>
-              <strong className="text-gray-900">Broken links or inaccessible files.</strong>{" "}
-              Test your portfolio link on mobile and desktop before every outreach campaign. A
-              portfolio that does not load is worse than no portfolio at all.
-            </li>
-            <li>
-              <strong className="text-gray-900">Generic, buzzword-heavy descriptions.</strong>{" "}
-              &quot;Passionate, results-driven creative with a proven track record of delivering innovative
-              solutions.&quot; This says nothing. Specificity is the antidote — specific industries,
-              specific tools, specific outcomes.
-            </li>
-          </ul>
-
-          <p>
-            For what to do once your portfolio is ready and you are actively pitching, read the
-            guides on{" "}
-            <Link href="/blog/freelance-proposal-template-uae" className="text-gray-900 underline underline-offset-2 hover:text-gray-600 transition-colors">
-              writing UAE freelance proposals
-            </Link>{" "}
-            and{" "}
-            <Link href="/blog/freelance-proposal-tips-uae" className="text-gray-900 underline underline-offset-2 hover:text-gray-600 transition-colors">
-              freelance proposal tips for UAE clients
-            </Link>.
-          </p>
-
-          <p>
-            For outreach strategies once you have a portfolio to point to, the{" "}
-            <Link href="/blog/how-to-get-clients-linkedin-uae" className="text-gray-900 underline underline-offset-2 hover:text-gray-600 transition-colors">
-              LinkedIn client acquisition guide for UAE freelancers
-            </Link>{" "}
-            covers exactly how to turn your portfolio into inbound enquiries through targeted
-            LinkedIn activity.
-          </p>
-
-          <div className="bg-gray-900 text-white rounded-2xl p-6 mt-8">
-            <p className="text-sm font-semibold text-gray-300 mb-1">Write faster proposals with AI</p>
-            <p className="text-xl font-bold mb-3">AI Prompt Pack Pro</p>
-            <p className="text-gray-400 text-sm mb-4">
-              Includes proposal-writing prompts, client email templates, portfolio bio prompts,
-              and case study writing frameworks — built for UAE freelancers. AED 109.
-            </p>
             <Link
-              href="/products/ai-prompt-pack-pro"
-              className="inline-block bg-white text-gray-900 text-sm font-semibold px-6 py-2.5 rounded-xl hover:bg-gray-100 transition-colors"
+              href="/products/solopreneur-os"
+              className="inline-block border border-gray-600 text-gray-300 font-semibold px-6 py-3 rounded-lg hover:border-gray-400 transition-colors text-sm"
             >
-              Get AI Prompt Pack Pro — AED 109 →
-            </Link>
-          </div>
-
-        </div>
-
-        <div className="mt-10 pt-6 border-t border-gray-100">
-          <p className="text-sm font-semibold text-gray-900 mb-3">Further reading</p>
-          <div className="flex flex-col gap-2">
-            <Link href="/blog/freelance-proposal-template-uae" className="text-sm text-gray-500 hover:text-gray-900 transition-colors underline underline-offset-2">
-              Freelance Proposal Template UAE (Copy-Paste Ready) →
-            </Link>
-            <Link href="/blog/get-freelance-clients-uae" className="text-sm text-gray-500 hover:text-gray-900 transition-colors underline underline-offset-2">
-              How to Get Freelance Clients in the UAE (6 Strategies) →
-            </Link>
-            <Link href="/blog/how-to-get-clients-linkedin-uae" className="text-sm text-gray-500 hover:text-gray-900 transition-colors underline underline-offset-2">
-              How to Get Clients on LinkedIn in the UAE →
-            </Link>
-            <Link href="/blog/freelance-proposal-tips-uae" className="text-sm text-gray-500 hover:text-gray-900 transition-colors underline underline-offset-2">
-              Freelance Proposal Tips for UAE Clients →
+              Solopreneur OS — AED 249
             </Link>
           </div>
         </div>
 
-        <div className="mt-10 pt-6 border-t border-gray-100">
-          <Link href="/#products" className="text-sm text-gray-600 hover:text-gray-900 transition-colors font-medium">
+        {/* Related links */}
+        <section className="mb-10">
+          <h2 className="text-xl font-bold mb-4">Related Guides</h2>
+          <div className="grid gap-3">
+            {[
+              { href: "/blog/freelance-rate-calculator-uae", label: "How to Calculate Your Freelance Rate in UAE" },
+              { href: "/blog/passive-income-ideas-freelancers-uae", label: "7 Passive Income Ideas for UAE Freelancers" },
+              { href: "/blog/freelance-tax-uae", label: "Do Freelancers Pay Tax in the UAE? (2026 Guide)" },
+              { href: "/blog/best-accounting-software-freelancers-uae", label: "Best Accounting Software for UAE Freelancers" },
+            ].map(({ href, label }) => (
+              <Link
+                key={href}
+                href={href}
+                className="flex items-center gap-2 text-gray-700 hover:text-gray-900 text-sm border border-gray-200 rounded-lg px-4 py-3 hover:border-gray-400 transition-colors"
+              >
+                <span className="text-gray-400">→</span>
+                {label}
+              </Link>
+            ))}
+          </div>
+        </section>
+
+        <div className="text-center">
+          <Link
+            href="/#products"
+            className="inline-block text-gray-600 hover:text-gray-900 text-sm font-semibold border border-gray-300 px-6 py-3 rounded-lg hover:border-gray-500 transition-colors"
+          >
             Browse all SoloKit products →
           </Link>
         </div>
 
-        <div className="mt-8">
-          <Link href="/blog" className="text-sm text-gray-400 hover:text-gray-700 transition-colors">
-            ← Back to Blog
-          </Link>
-        </div>
       </main>
-
       <Footer />
     </>
   );
