@@ -2348,6 +2348,33 @@ export const posts: BlogPost[] = [
     readTime: "7 min read",
     category: "Pricing & Rates",
   },
+  {
+    slug: "freelance-crm-consultant-rates-uae",
+    title: "Freelance CRM Consultant Rates in the UAE (2026)",
+    description:
+      "Real AED day rates for freelance CRM consultants in Dubai and Abu Dhabi. Salesforce, HubSpot, Microsoft Dynamics 365 CRM implementation, customisation, migration, and CRM strategy fees for UAE businesses in 2026.",
+    date: "June 16, 2026",
+    readTime: "7 min read",
+    category: "Pricing & Rates",
+  },
+  {
+    slug: "how-to-price-discovery-workshops-uae",
+    title: "How to Price and Sell Discovery Workshops as a UAE Freelancer (2026)",
+    description:
+      "How UAE freelancers charge for discovery workshops, strategy sessions, and paid consultations — pricing models, AED rates, how to position paid discovery, and how to convert workshops into ongoing client engagements.",
+    date: "June 16, 2026",
+    readTime: "7 min read",
+    category: "Pricing & Rates",
+  },
+  {
+    slug: "freelance-environmental-consultant-rates-uae",
+    title: "Freelance Environmental Consultant Rates in the UAE (2026)",
+    description:
+      "Real AED day rates for freelance environmental consultants in Dubai and Abu Dhabi. Environmental Impact Assessment (EIA), UAE environmental permits, pollution control, waste management, and environmental compliance fees for UAE projects in 2026.",
+    date: "June 16, 2026",
+    readTime: "7 min read",
+    category: "Pricing & Rates",
+  },
 ];
 
 export function getPost(slug: string): BlogPost | undefined {
