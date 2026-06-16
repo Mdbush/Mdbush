@@ -62,6 +62,20 @@ export default async function SuccessPage({ searchParams }: Props) {
           </ol>
         </div>
 
+        {/* Referral nudge */}
+        <div className="bg-gray-950 text-white rounded-2xl p-6 mb-8 text-left">
+          <p className="font-bold text-sm mb-1">Know someone who freelances in the UAE?</p>
+          <p className="text-gray-400 text-xs mb-3">
+            Forward them solokit.cloud — or earn 30% commission for every sale you refer through our affiliate program.
+          </p>
+          <Link
+            href="/affiliates"
+            className="inline-block text-xs font-semibold bg-white text-gray-900 px-4 py-2 rounded-lg hover:bg-gray-100 transition-colors"
+          >
+            Join affiliate program →
+          </Link>
+        </div>
+
         {/* Upsell */}
         {upsells.length > 0 && (
           <div className="text-left mb-10">
@@ -88,6 +102,23 @@ export default async function SuccessPage({ searchParams }: Props) {
             </div>
           </div>
         )}
+
+        {/* Free blog resources */}
+        <div className="text-left mb-10 border border-gray-100 rounded-2xl p-5 bg-gray-50">
+          <p className="text-xs font-semibold text-gray-400 uppercase tracking-widest mb-3">While you wait for the email</p>
+          <div className="space-y-2">
+            {[
+              { href: "/blog/freelance-rate-calculator-uae", label: "Calculate your minimum freelance rate" },
+              { href: "/blog/freelance-tax-uae", label: "UAE tax guide for freelancers" },
+              { href: "/blog/how-to-get-clients-linkedin-uae", label: "Get clients on LinkedIn in the UAE" },
+            ].map(({ href, label }) => (
+              <Link key={href} href={href} className="flex items-center gap-2 text-sm text-gray-600 hover:text-gray-900 transition-colors">
+                <span className="text-gray-300">→</span>
+                {label}
+              </Link>
+            ))}
+          </div>
+        </div>
 
         <p className="text-xs text-gray-400 mb-4">
           Questions?{" "}

@@ -40,6 +40,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "digital-nomad-visa-vs-freelance-visa-uae",
     "emaratax-registration-freelancers-uae",
     "how-much-do-uae-freelancers-earn",
+    "how-to-scale-freelance-business-uae",
+    "freelance-proposal-template-uae",
   ].map((slug) => ({
     url: `${base}/blog/${slug}`,
     lastModified: new Date(),

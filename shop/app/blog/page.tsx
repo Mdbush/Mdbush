@@ -261,6 +261,24 @@ const posts = [
     readTime: "7 min read",
     category: "Business",
   },
+  {
+    slug: "how-to-scale-freelance-business-uae",
+    title: "How to Scale Your Freelance Business in the UAE (AED 0 to AED 100K/Month)",
+    description:
+      "The 5 stages every UAE freelancer goes through — and the exact systems, pricing moves, and mindset shifts that break each income ceiling.",
+    date: "June 16, 2026",
+    readTime: "9 min read",
+    category: "Business",
+  },
+  {
+    slug: "freelance-proposal-template-uae",
+    title: "Freelance Proposal Template UAE: Copy-Paste Structure That Wins Projects",
+    description:
+      "A complete copy-paste proposal template for UAE freelancers. Includes 7-section structure, subject line, common mistakes, and AI prompt to customize it in 5 minutes.",
+    date: "June 16, 2026",
+    readTime: "6 min read",
+    category: "Business",
+  },
 ];
 
 const featured = [
