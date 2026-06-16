@@ -1349,6 +1349,33 @@ export const posts: BlogPost[] = [
     readTime: "7 min read",
     category: "Pricing & Rates",
   },
+  {
+    slug: "freelance-cybersecurity-rates-uae",
+    title: "Freelance Cybersecurity Consultant Rates in the UAE (2026): What to Charge",
+    description:
+      "Real AED rates for freelance cybersecurity consultants in Dubai and Abu Dhabi — penetration testing, security audits, CISO advisory, compliance consulting (ISO 27001, UAE NESA), incident response, and security awareness training rates for 2026.",
+    date: "June 16, 2026",
+    readTime: "7 min read",
+    category: "Pricing & Rates",
+  },
+  {
+    slug: "how-to-build-personal-brand-linkedin-uae",
+    title: "How to Build a Personal Brand on LinkedIn in the UAE (2026 Guide)",
+    description:
+      "A step-by-step guide to building a personal brand on LinkedIn as a UAE professional or freelancer — profile optimization for the Dubai market, content strategy, posting cadence, what types of content work in the UAE, and how to convert LinkedIn visibility into inbound client enquiries.",
+    date: "June 16, 2026",
+    readTime: "9 min read",
+    category: "Getting Clients",
+  },
+  {
+    slug: "freelance-devops-engineer-rates-uae",
+    title: "Freelance DevOps Engineer Rates in the UAE (2026): What to Charge",
+    description:
+      "Real AED rates for freelance DevOps engineers in Dubai and Abu Dhabi — CI/CD pipeline setup, Kubernetes and container orchestration, cloud infrastructure (AWS/Azure UAE), infrastructure as code, SRE advisory, and DevSecOps consulting rates for 2026.",
+    date: "June 16, 2026",
+    readTime: "7 min read",
+    category: "Pricing & Rates",
+  },
 ];
 
 export function getPost(slug: string): BlogPost | undefined {
