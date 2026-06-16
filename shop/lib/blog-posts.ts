@@ -2699,6 +2699,33 @@ export const posts: BlogPost[] = [
     readTime: "7 min read",
     category: "Pricing & Rates",
   },
+  {
+    slug: "freelance-electrical-engineer-rates-uae",
+    title: "Freelance Electrical Engineer Rates in the UAE (2026)",
+    description:
+      "Real AED day rates for freelance electrical engineers in Dubai and Abu Dhabi. MEP electrical design, power systems, substations, oil and gas electrical engineering, building automation, solar PV, and data centre electrical fees for 2026.",
+    date: "June 16, 2026",
+    readTime: "7 min read",
+    category: "Pricing & Rates",
+  },
+  {
+    slug: "freelance-food-photographer-rates-uae",
+    title: "Freelance Food Photographer Rates in the UAE (2026)",
+    description:
+      "Real AED rates for freelance food photographers in Dubai and Abu Dhabi. Restaurant menu photography, food brand campaigns, social media content retainers, cookbook photography, food styling, and FMCG product photography fees for 2026.",
+    date: "June 16, 2026",
+    readTime: "7 min read",
+    category: "Pricing & Rates",
+  },
+  {
+    slug: "freelance-game-developer-rates-uae",
+    title: "Freelance Game Developer Rates in the UAE (2026)",
+    description:
+      "Real AED day rates for freelance game developers in Dubai and Abu Dhabi. Unity and Unreal Engine development, mobile game development, AR/VR experiences, serious games, training simulations, and gamification consulting fees for 2026.",
+    date: "June 16, 2026",
+    readTime: "7 min read",
+    category: "Pricing & Rates",
+  },
 ];
 
 export function getPost(slug: string): BlogPost | undefined {
