@@ -42,27 +42,27 @@ export default function LandingPage() {
       <main className="max-w-4xl mx-auto px-4 sm:px-6">
 
         {/* Hero */}
-        <section className="py-14 text-center">
+        <section className="bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 text-white px-6 py-14 rounded-2xl mt-8 mb-6 text-center">
           <div className="text-6xl mb-6">📋</div>
-          <div className="inline-block bg-gray-900 text-white text-xs font-semibold px-3 py-1 rounded-full mb-5">
+          <div className="inline-block bg-emerald-500 text-white text-xs font-bold px-3 py-1 rounded-full mb-5 uppercase tracking-widest">
             Best Seller
           </div>
-          <h1 className="text-4xl sm:text-5xl font-bold text-gray-900 leading-tight max-w-2xl mx-auto mb-5">
+          <h1 className="text-4xl sm:text-5xl font-bold text-white leading-tight max-w-2xl mx-auto mb-5">
             Stop losing clients and invoices to WhatsApp chaos
           </h1>
-          <p className="text-xl text-gray-500 max-w-xl mx-auto leading-relaxed mb-8">
+          <p className="text-xl text-gray-300 max-w-xl mx-auto leading-relaxed mb-8">
             The complete Notion CRM for UAE freelancers. Track every client, project, and invoice
             in one place — set up in 20 minutes.
           </p>
           <div className="flex flex-col items-center gap-3">
             <div className="flex items-baseline gap-3 justify-center">
-              <span className="text-4xl font-bold text-gray-900">{formatPrice(product.price)}</span>
+              <span className="text-4xl font-bold text-white">{formatPrice(product.price)}</span>
               {product.originalPrice && (
                 <span className="text-xl text-gray-400 line-through">{formatPrice(product.originalPrice)}</span>
               )}
             </div>
             {product.originalPrice && (
-              <p className="text-sm text-green-600 font-medium">
+              <p className="text-sm text-emerald-400 font-medium">
                 Launch price — save {formatPrice(product.originalPrice - product.price)}
               </p>
             )}
@@ -85,7 +85,8 @@ export default function LandingPage() {
 
         {/* Pain */}
         <section className="py-14">
-          <h2 className="text-2xl font-bold text-gray-900 text-center mb-10">
+          <h2 className="text-2xl font-bold text-gray-900 text-center mb-10 flex items-center justify-center gap-2">
+            <span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>
             Sound familiar?
           </h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 max-w-2xl mx-auto">
@@ -107,7 +108,8 @@ export default function LandingPage() {
 
         {/* Solution */}
         <section className="py-14 border-t border-gray-100">
-          <h2 className="text-2xl font-bold text-gray-900 text-center mb-2">
+          <h2 className="text-2xl font-bold text-gray-900 text-center mb-2 flex items-center justify-center gap-2">
+            <span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>
             One workspace fixes all of it
           </h2>
           <p className="text-gray-500 text-center mb-10 max-w-lg mx-auto">
@@ -116,7 +118,7 @@ export default function LandingPage() {
           </p>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
             {features.map((f) => (
-              <div key={f.title} className="border border-gray-200 rounded-2xl p-5">
+              <div key={f.title} className="border border-gray-200 rounded-2xl p-5 hover:border-emerald-400 transition-colors">
                 <div className="text-2xl mb-3">{f.emoji}</div>
                 <h3 className="font-semibold text-gray-900 mb-1">{f.title}</h3>
                 <p className="text-sm text-gray-500 leading-relaxed">{f.desc}</p>
@@ -127,7 +129,10 @@ export default function LandingPage() {
 
         {/* Testimonials */}
         <section className="py-14 border-t border-gray-100">
-          <h2 className="text-2xl font-bold text-gray-900 text-center mb-10">What customers say</h2>
+          <h2 className="text-2xl font-bold text-gray-900 text-center mb-10 flex items-center justify-center gap-2">
+            <span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>
+            What customers say
+          </h2>
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-5">
             {testimonials.map((t) => (
               <div key={t.name} className="bg-gray-50 rounded-2xl p-5 flex flex-col gap-3">
@@ -146,7 +151,10 @@ export default function LandingPage() {
 
         {/* FAQ */}
         <section className="py-14 border-t border-gray-100">
-          <h2 className="text-2xl font-bold text-gray-900 text-center mb-8">Frequently asked questions</h2>
+          <h2 className="text-2xl font-bold text-gray-900 text-center mb-8 flex items-center justify-center gap-2">
+            <span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>
+            Frequently asked questions
+          </h2>
           <div className="max-w-2xl mx-auto space-y-4">
             {[
               { q: "Do I need to pay for Notion?", a: "No — the CRM works on Notion's free plan. You do not need a paid Notion subscription to use it." },
@@ -164,25 +172,28 @@ export default function LandingPage() {
         </section>
 
         {/* Final CTA */}
-        <section className="py-14 border-t border-gray-100 text-center">
-          <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-3">
-            Ready to get organized?
-          </h2>
-          <p className="text-gray-500 mb-6 max-w-sm mx-auto">
-            One-time payment. Instant Notion access. 30-day money-back guarantee.
-          </p>
-          <div className="flex items-baseline gap-3 justify-center mb-4">
-            <span className="text-4xl font-bold text-gray-900">{formatPrice(product.price)}</span>
-            {product.originalPrice && (
-              <span className="text-xl text-gray-400 line-through">{formatPrice(product.originalPrice)}</span>
-            )}
+        <section className="pb-14 border-t border-gray-100">
+          <div className="bg-gradient-to-br from-gray-900 to-gray-800 text-white rounded-2xl p-8 mt-8 text-center">
+            <span className="text-xs font-bold text-emerald-400 uppercase tracking-widest block mb-3">SoloKit</span>
+            <h2 className="text-2xl sm:text-3xl font-bold mb-3">
+              Ready to get organized?
+            </h2>
+            <p className="text-gray-300 mb-6 max-w-sm mx-auto text-sm">
+              One-time payment. Instant Notion access. 30-day money-back guarantee.
+            </p>
+            <div className="flex items-baseline gap-3 justify-center mb-4">
+              <span className="text-4xl font-bold text-white">{formatPrice(product.price)}</span>
+              {product.originalPrice && (
+                <span className="text-xl text-gray-400 line-through">{formatPrice(product.originalPrice)}</span>
+              )}
+            </div>
+            <div className="max-w-xs mx-auto">
+              <CheckoutButton productSlug="freelancer-client-crm" price={product.price} />
+            </div>
+            <p className="mt-4 text-xs text-gray-400">
+              Questions? <a href="mailto:md.a.bushara@gmail.com" className="underline">Email us</a> — we respond within 24 hours.
+            </p>
           </div>
-          <div className="max-w-xs mx-auto">
-            <CheckoutButton productSlug="freelancer-client-crm" price={product.price} />
-          </div>
-          <p className="mt-4 text-xs text-gray-400">
-            Questions? <a href="mailto:md.a.bushara@gmail.com" className="underline">Email us</a> — we respond within 24 hours.
-          </p>
         </section>
       </main>
     </div>

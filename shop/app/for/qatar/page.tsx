@@ -92,29 +92,21 @@ export default function QatarPage() {
       <main className="flex-1">
 
         {/* Hero */}
-        <section className="max-w-4xl mx-auto px-4 sm:px-6 pt-16 pb-12">
-          <div className="max-w-2xl">
-            <span className="text-xs font-semibold text-gray-400 uppercase tracking-widest">
-              For Qatar Freelancers
-            </span>
-            <h1 className="text-3xl sm:text-4xl font-bold text-gray-900 mt-3 mb-4 leading-tight">
+        <section className="max-w-4xl mx-auto px-4 sm:px-6 pt-10 pb-4">
+          <div className="bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 text-white px-6 py-10 rounded-2xl">
+            <span className="text-xs font-bold text-emerald-400 uppercase tracking-widest mb-3 block">For Qatar Freelancers</span>
+            <h1 className="text-3xl sm:text-4xl font-bold leading-tight mb-4">
               Freelancing in Qatar: Build Your Practice in the Gulf&apos;s Richest Economy
             </h1>
-            <p className="text-lg text-gray-500 leading-relaxed mb-8">
+            <p className="text-gray-300 text-sm mb-6 leading-relaxed max-w-xl">
               Post-FIFA legacy boom. QatarEnergy sector. QFC financial hub. The right tools for QAR-denominated projects.
               SoloKit gives you the Notion templates, AI prompts, and SOPs to run your Qatar freelance business like a professional operation.
             </p>
             <div className="flex flex-wrap gap-3">
-              <Link
-                href="/#products"
-                className="bg-gray-900 text-white font-semibold px-6 py-3 rounded-xl hover:bg-gray-700 transition-colors text-sm"
-              >
+              <Link href="/#products" className="bg-emerald-500 hover:bg-emerald-400 text-white font-bold px-6 py-3 rounded-xl transition-colors text-sm">
                 Browse all products →
               </Link>
-              <Link
-                href="/free"
-                className="border border-gray-200 text-gray-700 font-semibold px-6 py-3 rounded-xl hover:border-gray-400 transition-colors text-sm"
-              >
+              <Link href="/free" className="border border-white/20 text-white font-semibold px-6 py-3 rounded-xl hover:border-white/40 transition-colors text-sm">
                 10 free AI prompts
               </Link>
             </div>
@@ -122,9 +114,9 @@ export default function QatarPage() {
         </section>
 
         {/* Stats */}
-        <section className="bg-gray-50 border-y border-gray-100 py-12">
+        <section className="bg-gray-50 border-y border-gray-100 py-12 mt-8">
           <div className="max-w-4xl mx-auto px-4 sm:px-6">
-            <p className="text-xs font-semibold text-gray-400 uppercase tracking-widest mb-6">
+            <p className="text-xs font-bold text-gray-400 uppercase tracking-widest mb-6">
               Qatar freelance market at a glance
             </p>
             <div className="grid grid-cols-3 gap-4 mb-10">
@@ -140,7 +132,7 @@ export default function QatarPage() {
               ))}
             </div>
 
-            <p className="text-xs font-semibold text-gray-400 uppercase tracking-widest mb-6">
+            <p className="text-xs font-bold text-gray-400 uppercase tracking-widest mb-6">
               Why now is the time to go freelance in Qatar
             </p>
             <div className="grid sm:grid-cols-2 gap-4">
@@ -178,9 +170,10 @@ export default function QatarPage() {
 
         {/* Pain points */}
         <section className="max-w-4xl mx-auto px-4 sm:px-6 py-12">
-          <p className="text-xs font-semibold text-gray-400 uppercase tracking-widest mb-5">
-            Sound familiar?
-          </p>
+          <h2 className="text-xl font-bold text-gray-900 mb-5 flex items-center gap-2">
+            <span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>
+            Sound Familiar?
+          </h2>
           <div className="grid sm:grid-cols-2 gap-3">
             {painPoints.map((p) => (
               <div key={p} className="flex items-start gap-3 bg-gray-50 border border-gray-100 rounded-xl p-4">
@@ -193,21 +186,19 @@ export default function QatarPage() {
 
         {/* Products */}
         <section className="max-w-4xl mx-auto px-4 sm:px-6 py-12 border-t border-gray-100">
-          <div className="mb-10">
-            <span className="text-xs font-semibold text-gray-400 uppercase tracking-widest">What SoloKit gives Qatar freelancers</span>
-            <h2 className="text-2xl font-bold text-gray-900 mt-2">
-              Four tools. One system. Everything a Qatar freelancer needs.
-            </h2>
-            <p className="text-sm text-gray-500 mt-2">
-              Prices shown in QAR (1 AED ≈ 0.103 QAR). All products are delivered instantly as Notion templates and downloadable PDFs.
-            </p>
-          </div>
+          <h2 className="text-xl font-bold text-gray-900 mb-2 flex items-center gap-2">
+            <span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>
+            What SoloKit Gives Qatar Freelancers
+          </h2>
+          <p className="text-sm text-gray-500 mb-6">
+            Prices shown in QAR (1 AED ≈ 0.103 QAR). All products are delivered instantly as Notion templates and downloadable PDFs.
+          </p>
           <div className="grid gap-5 sm:grid-cols-2">
             {products.map((product, i) => (
               <Link
                 key={product.slug}
                 href={`/products/${product.slug}`}
-                className="group border border-gray-200 rounded-2xl p-6 hover:border-gray-400 hover:shadow-sm transition-all"
+                className="group border border-gray-200 rounded-2xl p-6 hover:border-emerald-400 hover:shadow-sm transition-all"
               >
                 <div className="flex items-start gap-4 mb-4">
                   <span className="text-3xl shrink-0">{product.emoji}</span>
@@ -215,16 +206,16 @@ export default function QatarPage() {
                     <p className="font-bold text-gray-900 group-hover:text-gray-700 transition-colors">
                       {product.name}
                     </p>
-                    <p className="text-sm font-semibold text-gray-500">{product.price}</p>
+                    <p className="text-sm font-semibold text-emerald-600">{product.price}</p>
                   </div>
                   {i === 0 && (
-                    <span className="ml-auto text-xs font-semibold bg-gray-900 text-white px-2 py-1 rounded-full shrink-0">
+                    <span className="ml-auto text-xs font-semibold bg-emerald-500 text-white px-2 py-1 rounded-full shrink-0">
                       Start here
                     </span>
                   )}
                 </div>
                 <p className="text-sm text-gray-500 leading-relaxed">{product.why}</p>
-                <p className="mt-4 text-sm font-semibold text-gray-900 group-hover:text-gray-600 transition-colors">
+                <p className="mt-4 text-sm font-semibold text-emerald-600 group-hover:text-emerald-700 transition-colors">
                   View product →
                 </p>
               </Link>
@@ -233,13 +224,13 @@ export default function QatarPage() {
         </section>
 
         {/* Testimonial */}
-        <section className="bg-gray-950 text-white py-14">
+        <section className="bg-gradient-to-br from-gray-900 to-gray-800 text-white py-14">
           <div className="max-w-2xl mx-auto px-4 sm:px-6 text-center">
             <p className="text-xl font-medium leading-relaxed text-gray-200 mb-6">
               &ldquo;I duplicated the CRM on Monday and had my entire client pipeline organized by Wednesday.
               Saves me hours every week that I used to waste on WhatsApp and spreadsheets.&rdquo;
             </p>
-            <p className="text-sm text-gray-500">
+            <p className="text-sm text-gray-400">
               — Ahmed R., Strategy Consultant, Doha
             </p>
           </div>
@@ -247,11 +238,11 @@ export default function QatarPage() {
 
         {/* Guarantee */}
         <section className="max-w-4xl mx-auto px-4 sm:px-6 py-12">
-          <div className="flex items-start gap-5 border border-gray-200 rounded-2xl p-6 bg-gray-50">
+          <div className="flex items-start gap-5 border border-emerald-200 rounded-2xl p-6 bg-emerald-50">
             <span className="text-3xl shrink-0">🛡️</span>
             <div>
               <h3 className="font-bold text-gray-900 mb-1">30-Day Money-Back Guarantee</h3>
-              <p className="text-sm text-gray-500 leading-relaxed">
+              <p className="text-sm text-gray-600 leading-relaxed">
                 If any SoloKit product isn&apos;t right for you, email us within 30 days for a full refund.
                 No questions asked, no forms to fill, no hassle. One-time payment — no subscriptions.
               </p>
@@ -261,16 +252,16 @@ export default function QatarPage() {
 
         {/* Related guides */}
         <section className="max-w-4xl mx-auto px-4 sm:px-6 pb-16">
-          <p className="text-xs font-semibold text-gray-400 uppercase tracking-widest mb-5">Free reading</p>
-          <h2 className="text-xl font-bold text-gray-900 mb-6">
-            Key resources for Qatar freelancers
+          <h2 className="text-xl font-bold text-gray-900 mb-5 flex items-center gap-2">
+            <span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>
+            Key Resources for Qatar Freelancers
           </h2>
           <div className="grid gap-3 sm:grid-cols-2">
             {relatedGuides.map((guide) => (
               <Link
                 key={guide.slug}
                 href={`/blog/${guide.slug}`}
-                className="group flex items-start justify-between gap-3 border border-gray-200 rounded-xl p-4 hover:border-gray-400 hover:shadow-sm transition-all"
+                className="group flex items-start justify-between gap-3 border border-gray-200 rounded-xl p-4 hover:border-emerald-400 hover:shadow-sm transition-all"
               >
                 <p className="text-sm font-semibold text-gray-900 group-hover:text-gray-700 leading-snug">
                   {guide.title}
@@ -289,24 +280,25 @@ export default function QatarPage() {
         </section>
 
         {/* Final CTA */}
-        <section className="bg-gray-50 border-t border-gray-100 py-16">
+        <section className="bg-gradient-to-br from-gray-900 to-gray-800 py-16">
           <div className="max-w-2xl mx-auto px-4 sm:px-6 text-center">
-            <h2 className="text-2xl font-bold text-gray-900 mb-3">
-              Set up in Qatar the right way
+            <span className="text-xs font-bold text-emerald-400 uppercase tracking-widest block mb-3">SoloKit</span>
+            <h2 className="text-2xl font-bold text-white mb-3">
+              Set Up in Qatar the Right Way
             </h2>
-            <p className="text-gray-500 text-sm mb-8">
+            <p className="text-gray-300 text-sm mb-8">
               One-time payment. Instant delivery. 30-day guarantee. Available across the entire GCC.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link
                 href="/blog/freelance-visa-qatar"
-                className="bg-gray-900 text-white font-semibold px-7 py-3.5 rounded-xl hover:bg-gray-700 transition-colors text-sm"
+                className="bg-emerald-500 hover:bg-emerald-400 text-white font-bold px-7 py-3.5 rounded-xl transition-colors text-sm"
               >
                 How to set up in Qatar →
               </Link>
               <Link
                 href="/#products"
-                className="border border-gray-200 text-gray-700 font-semibold px-7 py-3.5 rounded-xl hover:border-gray-400 transition-colors text-sm"
+                className="border border-white/20 text-white font-semibold px-7 py-3.5 rounded-xl hover:border-white/40 transition-colors text-sm"
               >
                 Browse all products
               </Link>

@@ -256,25 +256,30 @@ const breveSetupSteps = [
 export default function EmailSetupPage() {
   return (
     <main className="max-w-3xl mx-auto px-4 py-12 text-gray-900">
-      <div className="mb-10">
+
+      {/* Header */}
+      <div className="bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 text-white px-6 py-8 rounded-2xl mb-10">
+        <span className="text-xs font-bold text-emerald-400 uppercase tracking-widest mb-2 block">Internal</span>
         <h1 className="text-2xl font-bold mb-2">Email Setup Guide</h1>
-        <p className="text-gray-500 text-sm mb-4">
+        <p className="text-gray-400 text-sm mb-4">
           Step-by-step Brevo setup with ready-to-copy email sequences for SoloKit subscribers and customers.
         </p>
-
-        <div className="bg-amber-50 border border-amber-200 rounded-xl p-4 text-sm mb-6">
-          <p className="font-semibold text-amber-900 mb-1">Brevo API key</p>
-          <p className="text-amber-800 text-xs">Already set as <code className="bg-amber-100 px-1 rounded">BREVO_API_KEY</code> in Vercel environment variables. Find it in your Brevo dashboard under Settings → SMTP & API → API Keys.</p>
+        <div className="bg-amber-900/40 border border-amber-500/30 rounded-xl p-4 text-sm">
+          <p className="font-semibold text-amber-300 mb-1">Brevo API key</p>
+          <p className="text-amber-200 text-xs">Already set as <code className="bg-amber-900/40 px-1 rounded">BREVO_API_KEY</code> in Vercel environment variables. Find it in your Brevo dashboard under Settings → SMTP & API → API Keys.</p>
         </div>
       </div>
 
       {/* Setup steps */}
       <section className="mb-12">
-        <h2 className="text-lg font-bold mb-4">Brevo account setup (do once)</h2>
+        <h2 className="text-lg font-bold mb-4 flex items-center gap-2">
+          <span className="w-1 h-5 bg-emerald-500 rounded-full inline-block shrink-0"></span>
+          Brevo account setup (do once)
+        </h2>
         <div className="space-y-3">
           {breveSetupSteps.map(({ step, title, detail }) => (
             <div key={step} className="flex gap-4 border border-gray-200 rounded-xl p-4">
-              <div className="w-8 h-8 bg-gray-900 text-white rounded-full flex items-center justify-center shrink-0 font-bold text-sm">
+              <div className="w-8 h-8 bg-emerald-500 text-white rounded-full flex items-center justify-center shrink-0 font-bold text-sm">
                 {step}
               </div>
               <div>
@@ -287,11 +292,14 @@ export default function EmailSetupPage() {
       </section>
 
       {/* Email sequences */}
-      <h2 className="text-lg font-bold mb-4">Email sequences</h2>
+      <h2 className="text-lg font-bold mb-4 flex items-center gap-2">
+        <span className="w-1 h-5 bg-emerald-500 rounded-full inline-block shrink-0"></span>
+        Email sequences
+      </h2>
       <div className="space-y-10">
         {sequences.map((seq) => (
           <div key={seq.id} className="border border-gray-200 rounded-xl overflow-hidden">
-            <div className="bg-gray-900 text-white px-5 py-4">
+            <div className="bg-gradient-to-r from-gray-900 to-gray-800 text-white px-5 py-4">
               <p className="font-bold text-sm">{seq.name}</p>
               <p className="text-xs text-gray-400 mt-1">Trigger: {seq.trigger}</p>
             </div>
@@ -299,7 +307,7 @@ export default function EmailSetupPage() {
               {seq.emails.map((email, i) => (
                 <div key={i} className="p-5">
                   <div className="flex items-center gap-2 mb-3">
-                    <span className="bg-gray-100 text-gray-600 text-xs px-2 py-1 rounded-full font-semibold">{email.delay}</span>
+                    <span className="bg-emerald-100 text-emerald-700 text-xs px-2 py-1 rounded-full font-semibold">{email.delay}</span>
                   </div>
                   <div className="mb-2">
                     <p className="text-xs text-gray-400 uppercase tracking-widest mb-1">Subject</p>
@@ -322,11 +330,14 @@ export default function EmailSetupPage() {
         ))}
       </div>
 
-      <div className="mt-10 bg-gray-950 text-white rounded-xl p-8">
-        <h2 className="font-bold text-lg mb-3">Current automation status</h2>
+      <div className="mt-10 bg-gradient-to-br from-gray-900 to-gray-800 text-white rounded-xl p-8">
+        <h2 className="font-bold text-lg mb-3 flex items-center gap-2">
+          <span className="w-1 h-5 bg-emerald-500 rounded-full inline-block shrink-0"></span>
+          Current automation status
+        </h2>
         <div className="space-y-3 text-sm text-gray-300">
-          <p><span className="bg-green-500 text-white text-xs font-bold px-2 py-0.5 rounded mr-2">LIVE</span><strong className="text-white">Welcome email:</strong> /api/subscribe sends prompts email immediately. Set BREVO_API_KEY in Vercel to activate. Contact added to list 2.</p>
-          <p><span className="bg-green-500 text-white text-xs font-bold px-2 py-0.5 rounded mr-2">LIVE</span><strong className="text-white">Purchase confirmation:</strong> /api/webhook sends branded confirmation email + adds buyer to Brevo list 3. Requires BREVO_API_KEY + LEMONSQUEEZY_WEBHOOK_SECRET in Vercel.</p>
+          <p><span className="bg-emerald-500 text-white text-xs font-bold px-2 py-0.5 rounded mr-2">LIVE</span><strong className="text-white">Welcome email:</strong> /api/subscribe sends prompts email immediately. Set BREVO_API_KEY in Vercel to activate. Contact added to list 2.</p>
+          <p><span className="bg-emerald-500 text-white text-xs font-bold px-2 py-0.5 rounded mr-2">LIVE</span><strong className="text-white">Purchase confirmation:</strong> /api/webhook sends branded confirmation email + adds buyer to Brevo list 3. Requires BREVO_API_KEY + LEMONSQUEEZY_WEBHOOK_SECRET in Vercel.</p>
           <p><span className="bg-amber-500 text-white text-xs font-bold px-2 py-0.5 rounded mr-2">TODO</span><strong className="text-white">Welcome sequence emails 2 & 3:</strong> Set up 3-day and 7-day Brevo automations on list 2. Content above is ready to copy.</p>
           <p><span className="bg-amber-500 text-white text-xs font-bold px-2 py-0.5 rounded mr-2">TODO</span><strong className="text-white">Post-purchase follow-ups (day 2, 7, 21):</strong> Set up Brevo automations on list 3. The immediate confirmation is already sent by the webhook.</p>
           <p><span className="bg-gray-600 text-white text-xs font-bold px-2 py-0.5 rounded mr-2">MANUAL</span><strong className="text-white">Weekly newsletter:</strong> Schedule 30 min on Sunday. Use Brevo Campaigns → Email campaigns → schedule for Monday 8am UAE.</p>

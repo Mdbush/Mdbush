@@ -41,27 +41,27 @@ export default function LandingPage() {
       <main className="max-w-4xl mx-auto px-4 sm:px-6">
 
         {/* Hero */}
-        <section className="py-14 text-center">
+        <section className="bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 text-white px-6 py-14 rounded-2xl mt-8 mb-6 text-center">
           <div className="text-6xl mb-6">🤖</div>
-          <div className="inline-block bg-gray-100 text-gray-700 text-xs font-semibold px-3 py-1 rounded-full mb-5 uppercase tracking-widest">
+          <div className="inline-block bg-emerald-500 text-white text-xs font-bold px-3 py-1 rounded-full mb-5 uppercase tracking-widest">
             New Release
           </div>
-          <h1 className="text-4xl sm:text-5xl font-bold text-gray-900 leading-tight max-w-2xl mx-auto mb-5">
+          <h1 className="text-4xl sm:text-5xl font-bold text-white leading-tight max-w-2xl mx-auto mb-5">
             200 AI prompts that actually work for freelancers
           </h1>
-          <p className="text-xl text-gray-500 max-w-xl mx-auto leading-relaxed mb-8">
+          <p className="text-xl text-gray-300 max-w-xl mx-auto leading-relaxed mb-8">
             Stop getting generic outputs. These 200 battle-tested prompts are built for real freelance work —
             proposals, emails, content, and marketing. Works with ChatGPT, Claude, and Gemini.
           </p>
           <div className="flex flex-col items-center gap-3">
             <div className="flex items-baseline gap-3 justify-center">
-              <span className="text-4xl font-bold text-gray-900">{formatPrice(product.price)}</span>
+              <span className="text-4xl font-bold text-white">{formatPrice(product.price)}</span>
               {product.originalPrice && (
                 <span className="text-xl text-gray-400 line-through">{formatPrice(product.originalPrice)}</span>
               )}
             </div>
             {product.originalPrice && (
-              <p className="text-sm text-green-600 font-medium">
+              <p className="text-sm text-emerald-400 font-medium">
                 Launch price — save {formatPrice(product.originalPrice - product.price)}
               </p>
             )}
@@ -83,7 +83,10 @@ export default function LandingPage() {
 
         {/* Before/After */}
         <section className="py-14">
-          <h2 className="text-2xl font-bold text-gray-900 text-center mb-10">The difference a good prompt makes</h2>
+          <h2 className="text-2xl font-bold text-gray-900 text-center mb-10 flex items-center justify-center gap-2">
+            <span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>
+            The difference a good prompt makes
+          </h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
             <div className="border border-red-200 bg-red-50 rounded-2xl p-5">
               <p className="text-xs font-semibold text-red-500 uppercase tracking-widest mb-3">❌ Bad prompt</p>
@@ -104,13 +107,16 @@ export default function LandingPage() {
 
         {/* Categories */}
         <section className="py-14 border-t border-gray-100">
-          <h2 className="text-2xl font-bold text-gray-900 text-center mb-10">What&apos;s inside the pack</h2>
+          <h2 className="text-2xl font-bold text-gray-900 text-center mb-10 flex items-center justify-center gap-2">
+            <span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>
+            What&apos;s inside the pack
+          </h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
             {categories.map((cat) => (
               <div key={cat.label} className="border border-gray-200 rounded-2xl p-5">
                 <div className="flex items-center justify-between mb-3">
                   <p className="font-semibold text-gray-900">{cat.label}</p>
-                  <span className="bg-gray-100 text-gray-600 text-xs font-semibold px-2.5 py-0.5 rounded-full">
+                  <span className="bg-emerald-100 text-emerald-700 text-xs font-semibold px-2.5 py-0.5 rounded-full">
                     {cat.count} prompts
                   </span>
                 </div>
@@ -128,7 +134,10 @@ export default function LandingPage() {
 
         {/* Testimonials */}
         <section className="py-14 border-t border-gray-100">
-          <h2 className="text-2xl font-bold text-gray-900 text-center mb-10">What customers say</h2>
+          <h2 className="text-2xl font-bold text-gray-900 text-center mb-10 flex items-center justify-center gap-2">
+            <span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>
+            What customers say
+          </h2>
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-5">
             {testimonials.map((t) => (
               <div key={t.name} className="bg-gray-50 rounded-2xl p-5 flex flex-col gap-3">
@@ -147,7 +156,10 @@ export default function LandingPage() {
 
         {/* FAQ */}
         <section className="py-14 border-t border-gray-100">
-          <h2 className="text-2xl font-bold text-gray-900 text-center mb-8">Frequently asked questions</h2>
+          <h2 className="text-2xl font-bold text-gray-900 text-center mb-8 flex items-center justify-center gap-2">
+            <span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>
+            Frequently asked questions
+          </h2>
           <div className="max-w-2xl mx-auto space-y-4">
             {[
               { q: "Which AI tools do these prompts work with?", a: "All of them. The prompts are AI-agnostic — they work with ChatGPT, Claude, Gemini, Grok, and any other text-based AI model. They're written in plain language, not for any specific platform." },
@@ -165,25 +177,28 @@ export default function LandingPage() {
         </section>
 
         {/* Final CTA */}
-        <section className="py-14 border-t border-gray-100 text-center">
-          <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-3">
-            Stop wasting hours on bad AI outputs
-          </h2>
-          <p className="text-gray-500 mb-6 max-w-sm mx-auto">
-            200 prompts. Instant Notion + PDF access. 30-day money-back guarantee.
-          </p>
-          <div className="flex items-baseline gap-3 justify-center mb-4">
-            <span className="text-4xl font-bold text-gray-900">{formatPrice(product.price)}</span>
-            {product.originalPrice && (
-              <span className="text-xl text-gray-400 line-through">{formatPrice(product.originalPrice)}</span>
-            )}
+        <section className="pb-14 border-t border-gray-100">
+          <div className="bg-gradient-to-br from-gray-900 to-gray-800 text-white rounded-2xl p-8 mt-8 text-center">
+            <span className="text-xs font-bold text-emerald-400 uppercase tracking-widest block mb-3">SoloKit</span>
+            <h2 className="text-2xl sm:text-3xl font-bold mb-3">
+              Stop wasting hours on bad AI outputs
+            </h2>
+            <p className="text-gray-300 mb-6 max-w-sm mx-auto text-sm">
+              200 prompts. Instant Notion + PDF access. 30-day money-back guarantee.
+            </p>
+            <div className="flex items-baseline gap-3 justify-center mb-4">
+              <span className="text-4xl font-bold text-white">{formatPrice(product.price)}</span>
+              {product.originalPrice && (
+                <span className="text-xl text-gray-400 line-through">{formatPrice(product.originalPrice)}</span>
+              )}
+            </div>
+            <div className="max-w-xs mx-auto">
+              <CheckoutButton productSlug="ai-prompt-pack-pro" price={product.price} />
+            </div>
+            <p className="mt-4 text-xs text-gray-400">
+              Questions? <a href="mailto:md.a.bushara@gmail.com" className="underline">Email us</a>
+            </p>
           </div>
-          <div className="max-w-xs mx-auto">
-            <CheckoutButton productSlug="ai-prompt-pack-pro" price={product.price} />
-          </div>
-          <p className="mt-4 text-xs text-gray-400">
-            Questions? <a href="mailto:md.a.bushara@gmail.com" className="underline">Email us</a>
-          </p>
         </section>
       </main>
     </div>

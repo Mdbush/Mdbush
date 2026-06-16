@@ -10,21 +10,29 @@ const SITE_URL = "https://solokit.cloud";
 export default function BrandPage() {
   return (
     <main className="max-w-3xl mx-auto px-4 py-12 text-gray-900">
-      <h1 className="text-2xl font-bold mb-2">Brand Setup</h1>
-      <p className="text-gray-500 text-sm mb-10">
-        Download your profile images and copy the exact text for each platform.
-      </p>
+
+      {/* Header */}
+      <div className="bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 text-white px-6 py-8 rounded-2xl mb-10">
+        <span className="text-xs font-bold text-emerald-400 uppercase tracking-widest mb-2 block">Internal</span>
+        <h1 className="text-2xl font-bold mb-2">Brand Setup</h1>
+        <p className="text-gray-400 text-sm">
+          Download your profile images and copy the exact text for each platform.
+        </p>
+      </div>
 
       {/* Internal Content Hub */}
       <section className="mb-10 bg-gray-50 border border-gray-200 rounded-xl p-5">
-        <h2 className="text-sm font-bold text-gray-900 mb-3">Internal content pages</h2>
+        <h2 className="text-sm font-bold text-gray-900 mb-3 flex items-center gap-2">
+          <span className="w-1 h-5 bg-emerald-500 rounded-full inline-block shrink-0"></span>
+          Internal content pages
+        </h2>
         <div className="grid grid-cols-1 sm:grid-cols-3 gap-3">
           {[
             { label: "TikTok Scripts", href: "/tiktok", desc: "20 ready-to-record video scripts" },
             { label: "Instagram Content", href: "/instagram", desc: "10 Reels + 3 static posts with captions" },
             { label: "LinkedIn Posts", href: "/linkedin", desc: "12 posts + profile optimization guide" },
           ].map(({ label, href, desc }) => (
-            <a key={label} href={href} className="bg-white border border-gray-200 rounded-lg p-4 hover:border-gray-400 transition-colors">
+            <a key={label} href={href} className="bg-white border border-gray-200 rounded-lg p-4 hover:border-emerald-400 transition-colors">
               <p className="font-semibold text-sm text-gray-900 mb-1">{label}</p>
               <p className="text-xs text-gray-500">{desc}</p>
             </a>
@@ -34,7 +42,10 @@ export default function BrandPage() {
 
       {/* Images */}
       <section className="mb-12">
-        <h2 className="text-lg font-bold mb-6">Brand Images</h2>
+        <h2 className="text-lg font-bold mb-4 flex items-center gap-2">
+          <span className="w-1 h-5 bg-emerald-500 rounded-full inline-block shrink-0"></span>
+          Brand Images
+        </h2>
         <div className="grid gap-4 sm:grid-cols-2">
           {[
             {
@@ -65,7 +76,7 @@ export default function BrandPage() {
                 href={url}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-block text-xs font-semibold bg-gray-950 text-white px-4 py-2 rounded-lg hover:bg-gray-800 transition-colors"
+                className="inline-block text-xs font-bold bg-emerald-500 hover:bg-emerald-400 text-white px-4 py-2 rounded-lg transition-colors"
               >
                 Open / Download →
               </a>
@@ -79,7 +90,10 @@ export default function BrandPage() {
 
       {/* LinkedIn */}
       <section className="mb-12">
-        <h2 className="text-lg font-bold mb-1">LinkedIn Company Page</h2>
+        <h2 className="text-lg font-bold mb-1 flex items-center gap-2">
+          <span className="w-1 h-5 bg-emerald-500 rounded-full inline-block shrink-0"></span>
+          LinkedIn Company Page
+        </h2>
         <p className="text-xs text-gray-400 mb-4">Go to your LinkedIn company page → Edit page → paste each field below</p>
         <div className="space-y-4">
           <div className="border border-gray-200 rounded-xl p-5">
@@ -125,7 +139,10 @@ Website: solokit.cloud`}</code>
 
       {/* Facebook */}
       <section className="mb-12">
-        <h2 className="text-lg font-bold mb-1">Facebook Page</h2>
+        <h2 className="text-lg font-bold mb-1 flex items-center gap-2">
+          <span className="w-1 h-5 bg-emerald-500 rounded-full inline-block shrink-0"></span>
+          Facebook Page
+        </h2>
         <p className="text-xs text-gray-400 mb-4">Go to your Facebook page → Edit page info → paste each field below</p>
         <div className="space-y-4">
           <div className="border border-gray-200 rounded-xl p-5">
@@ -157,7 +174,10 @@ Website: solokit.cloud`}</code>
 
       {/* Instagram */}
       <section className="mb-12">
-        <h2 className="text-lg font-bold mb-1">Instagram Business Account</h2>
+        <h2 className="text-lg font-bold mb-1 flex items-center gap-2">
+          <span className="w-1 h-5 bg-emerald-500 rounded-full inline-block shrink-0"></span>
+          Instagram Business Account
+        </h2>
         <p className="text-xs text-gray-400 mb-4">Go to Edit Profile → paste each field below</p>
         <div className="space-y-4">
           <div className="border border-gray-200 rounded-xl p-5">
@@ -194,8 +214,11 @@ Stop starting from scratch ↓`}</code>
       </section>
 
       {/* Checklist */}
-      <section className="bg-gray-950 text-white rounded-xl p-8">
-        <h2 className="text-lg font-bold mb-4">Profile Setup Checklist</h2>
+      <section className="bg-gradient-to-br from-gray-900 to-gray-800 text-white rounded-xl p-8">
+        <h2 className="text-lg font-bold mb-4 flex items-center gap-2">
+          <span className="w-1 h-5 bg-emerald-500 rounded-full inline-block shrink-0"></span>
+          Profile Setup Checklist
+        </h2>
         <div className="space-y-2 text-sm text-gray-300">
           {[
             "Profile photo uploaded (use the image above)",
@@ -210,7 +233,7 @@ Stop starting from scratch ↓`}</code>
             "Facebook CTA button set to 'Shop Now' → solokit.cloud",
           ].map((item) => (
             <div key={item} className="flex gap-2">
-              <span className="text-gray-600 shrink-0">□</span>
+              <span className="text-emerald-500 shrink-0">□</span>
               {item}
             </div>
           ))}
