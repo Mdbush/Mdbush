@@ -1808,6 +1808,33 @@ export const posts: BlogPost[] = [
     readTime: "7 min read",
     category: "Pricing & Rates",
   },
+  {
+    slug: "freelance-dynamics-365-consultant-rates-uae",
+    title: "Freelance Dynamics 365 Consultant Rates in the UAE (2026): CRM & ERP Fees",
+    description:
+      "Real AED day rates for freelance Microsoft Dynamics 365 consultants in Dubai and Abu Dhabi. D365 CRM, Sales, Customer Service, Finance & Operations, Business Central, and implementation fees for 2026.",
+    date: "June 16, 2026",
+    readTime: "7 min read",
+    category: "Pricing & Rates",
+  },
+  {
+    slug: "freelance-power-bi-developer-rates-uae",
+    title: "Freelance Power BI Developer Rates in the UAE (2026): Data Analytics & BI Fees",
+    description:
+      "Real AED day rates for freelance Power BI developers and data analysts in Dubai and Abu Dhabi. Power BI dashboard development, DAX, data modeling, Azure Synapse, and business intelligence consulting fees for 2026.",
+    date: "June 16, 2026",
+    readTime: "7 min read",
+    category: "Pricing & Rates",
+  },
+  {
+    slug: "freelance-business-analyst-rates-uae",
+    title: "Freelance Business Analyst Rates in the UAE (2026): BA & Requirements Fees",
+    description:
+      "Real AED day rates for freelance business analysts in Dubai and Abu Dhabi. Requirements elicitation, process mapping, agile BA, ERP BA, digital transformation consulting, and business analysis fees for 2026.",
+    date: "June 16, 2026",
+    readTime: "7 min read",
+    category: "Pricing & Rates",
+  },
 ];
 
 export function getPost(slug: string): BlogPost | undefined {
