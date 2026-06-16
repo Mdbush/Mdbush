@@ -2564,6 +2564,33 @@ export const posts: BlogPost[] = [
     readTime: "7 min read",
     category: "Pricing & Rates",
   },
+  {
+    slug: "freelance-supply-chain-consultant-rates-uae",
+    title: "Freelance Supply Chain Consultant Rates in the UAE (2026)",
+    description:
+      "Real AED day rates for freelance supply chain consultants in Dubai and Abu Dhabi. Procurement advisory, logistics optimisation, warehouse strategy, vendor management, UAE customs compliance, and supply chain transformation fees for 2026.",
+    date: "June 16, 2026",
+    readTime: "7 min read",
+    category: "Pricing & Rates",
+  },
+  {
+    slug: "how-to-raise-your-rates-uae",
+    title: "How to Raise Your Freelance Rates in the UAE (2026 Guide)",
+    description:
+      "How UAE freelancers raise their day rates without losing clients — when to raise rates, how to communicate the increase, pricing psychology, and what to do if a client pushes back. Real scripts for UAE freelancers.",
+    date: "June 16, 2026",
+    readTime: "7 min read",
+    category: "Pricing & Rates",
+  },
+  {
+    slug: "freelance-interior-stylist-rates-uae",
+    title: "Freelance Interior Stylist Rates in the UAE (2026)",
+    description:
+      "Real AED day rates for freelance interior stylists in Dubai and Abu Dhabi. Residential staging, commercial space styling, hotel and hospitality styling, lifestyle photography styling, show home presentation, and retail visual merchandising fees for 2026.",
+    date: "June 16, 2026",
+    readTime: "7 min read",
+    category: "Pricing & Rates",
+  },
 ];
 
 export function getPost(slug: string): BlogPost | undefined {

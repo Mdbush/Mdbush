@@ -296,6 +296,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "freelance-real-estate-valuer-rates-uae",
     "how-to-manage-client-feedback-rounds-uae",
     "freelance-telecoms-consultant-rates-uae",
+    "freelance-supply-chain-consultant-rates-uae",
+    "how-to-raise-your-rates-uae",
+    "freelance-interior-stylist-rates-uae",
   ].map((slug) => ({
     url: `${base}/blog/${slug}`,
     lastModified: new Date(),
