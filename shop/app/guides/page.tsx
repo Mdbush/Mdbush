@@ -6,11 +6,11 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "UAE Freelancer Guides & Resources — SoloKit",
   description:
-    "249 practical guides for freelancers and solopreneurs in the UAE. Visa, tax, rates, clients, contracts, AI tools, and more. All free.",
+    "252 practical guides for freelancers and solopreneurs in the UAE. Visa, tax, rates, clients, contracts, AI tools, and more. All free.",
   alternates: { canonical: "/guides" },
   openGraph: {
     title: "UAE Freelancer Guides & Resources — SoloKit",
-    description: "249 free guides covering everything a UAE freelancer needs to know.",
+    description: "252 free guides covering everything a UAE freelancer needs to know.",
     type: "website",
     url: "/guides",
   },
@@ -91,6 +91,7 @@ const categories = [
       { slug: "how-to-ask-for-referrals-uae", title: "How to Ask for Referrals as a UAE Freelancer (2026): Scripts That Work", time: "7 min" },
       { slug: "how-to-upsell-freelance-clients-uae", title: "How to Upsell Existing Freelance Clients in the UAE (2026): Expand Your Revenue", time: "7 min" },
       { slug: "how-to-get-more-freelance-reviews-uae", title: "How to Get More Reviews & Testimonials as a UAE Freelancer (2026)", time: "6 min" },
+      { slug: "how-to-write-linkedin-content-uae", title: "How to Write LinkedIn Content That Gets Results as a UAE Freelancer (2026)", time: "7 min" },
     ],
   },
   {
@@ -234,6 +235,8 @@ const categories = [
       { slug: "freelance-procurement-consultant-rates-uae", title: "Freelance Procurement Consultant Rates in the UAE (2026)", time: "7 min" },
       { slug: "freelance-salesforce-developer-rates-uae", title: "Freelance Salesforce Developer Rates in the UAE (2026)", time: "7 min" },
       { slug: "freelance-healthcare-consultant-rates-uae", title: "Freelance Healthcare Consultant Rates in the UAE (2026)", time: "7 min" },
+      { slug: "freelance-infrastructure-engineer-rates-uae", title: "Freelance Infrastructure Engineer Rates in the UAE (2026)", time: "7 min" },
+      { slug: "freelance-legal-tech-consultant-rates-uae", title: "Freelance Legal Tech Consultant Rates in the UAE (2026)", time: "7 min" },
     ],
   },
   {
@@ -343,7 +346,7 @@ export default function GuidesPage() {
           <span className="text-xs font-semibold text-gray-400 uppercase tracking-widest">Free Resources</span>
           <h1 className="text-3xl sm:text-4xl font-bold text-gray-900 mt-2 mb-3">UAE Freelancer Guides</h1>
           <p className="text-gray-500 max-w-xl mx-auto leading-relaxed">
-            249 practical guides covering everything you need to know about freelancing in Dubai and Abu Dhabi.
+            252 practical guides covering everything you need to know about freelancing in Dubai and Abu Dhabi.
             Written specifically for the UAE market — AED pricing, local laws, free zone context.
           </p>
         </div>

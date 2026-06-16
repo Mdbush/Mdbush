@@ -2213,6 +2213,33 @@ export const posts: BlogPost[] = [
     readTime: "7 min read",
     category: "Pricing & Rates",
   },
+  {
+    slug: "freelance-infrastructure-engineer-rates-uae",
+    title: "Freelance Infrastructure Engineer Rates in the UAE (2026)",
+    description:
+      "Real AED day rates for freelance infrastructure engineers in Dubai and Abu Dhabi. Network design, VMware virtualisation, server infrastructure, hybrid cloud, and on-premises IT infrastructure fees for UAE companies in 2026.",
+    date: "June 16, 2026",
+    readTime: "7 min read",
+    category: "Pricing & Rates",
+  },
+  {
+    slug: "how-to-write-linkedin-content-uae",
+    title: "How to Write LinkedIn Content That Gets Results as a UAE Freelancer (2026)",
+    description:
+      "How UAE freelancers write LinkedIn posts that generate enquiries, referrals, and authority — content formats, posting cadence, what the UAE B2B audience responds to, and how to turn LinkedIn content into client conversations.",
+    date: "June 16, 2026",
+    readTime: "7 min read",
+    category: "Getting Clients",
+  },
+  {
+    slug: "freelance-legal-tech-consultant-rates-uae",
+    title: "Freelance Legal Tech Consultant Rates in the UAE (2026)",
+    description:
+      "Real AED day rates for freelance legal technology consultants in Dubai and Abu Dhabi. Contract management automation, legal AI implementation, document automation, legal operations (LegalOps), and DIFC/ADGM legal tech advisory fees in 2026.",
+    date: "June 16, 2026",
+    readTime: "7 min read",
+    category: "Pricing & Rates",
+  },
 ];
 
 export function getPost(slug: string): BlogPost | undefined {
