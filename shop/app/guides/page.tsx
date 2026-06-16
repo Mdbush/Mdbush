@@ -6,11 +6,11 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "UAE Freelancer Guides & Resources — SoloKit",
   description:
-    "159 practical guides for freelancers and solopreneurs in the UAE. Visa, tax, rates, clients, contracts, AI tools, and more. All free.",
+    "162 practical guides for freelancers and solopreneurs in the UAE. Visa, tax, rates, clients, contracts, AI tools, and more. All free.",
   alternates: { canonical: "/guides" },
   openGraph: {
     title: "UAE Freelancer Guides & Resources — SoloKit",
-    description: "159 free guides covering everything a UAE freelancer needs to know.",
+    description: "162 free guides covering everything a UAE freelancer needs to know.",
     type: "website",
     url: "/guides",
   },
@@ -81,6 +81,7 @@ const categories = [
       { slug: "how-to-use-upwork-uae", title: "How to Use Upwork as a UAE Freelancer (2026 Guide): Getting Clients", time: "8 min" },
       { slug: "how-to-build-personal-brand-linkedin-uae", title: "How to Build a Personal Brand on LinkedIn in the UAE (2026 Guide)", time: "9 min" },
       { slug: "how-to-use-fiverr-uae", title: "How to Use Fiverr as a UAE Freelancer (2026 Guide): Getting Clients", time: "8 min" },
+      { slug: "how-to-get-first-freelance-client-uae", title: "How to Get Your First Freelance Client in the UAE (2026 Guide)", time: "8 min" },
     ],
   },
   {
@@ -156,6 +157,8 @@ const categories = [
       { slug: "freelance-devops-engineer-rates-uae", title: "Freelance DevOps Engineer Rates in the UAE (2026): What to Charge", time: "7 min" },
       { slug: "freelance-product-manager-rates-uae", title: "Freelance Product Manager Rates in the UAE (2026): What to Charge", time: "7 min" },
       { slug: "freelance-ai-engineer-rates-uae", title: "Freelance AI Engineer Rates in the UAE (2026): What to Charge", time: "7 min" },
+      { slug: "freelance-blockchain-developer-rates-uae", title: "Freelance Blockchain Developer Rates in the UAE (2026): What to Charge", time: "7 min" },
+      { slug: "freelance-technical-writer-rates-uae", title: "Freelance Technical Writer Rates in the UAE (2026): What to Charge", time: "7 min" },
     ],
   },
   {
@@ -253,7 +256,7 @@ export default function GuidesPage() {
           <span className="text-xs font-semibold text-gray-400 uppercase tracking-widest">Free Resources</span>
           <h1 className="text-3xl sm:text-4xl font-bold text-gray-900 mt-2 mb-3">UAE Freelancer Guides</h1>
           <p className="text-gray-500 max-w-xl mx-auto leading-relaxed">
-            159 practical guides covering everything you need to know about freelancing in Dubai and Abu Dhabi.
+            162 practical guides covering everything you need to know about freelancing in Dubai and Abu Dhabi.
             Written specifically for the UAE market — AED pricing, local laws, free zone context.
           </p>
         </div>

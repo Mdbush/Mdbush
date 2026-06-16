@@ -1350,6 +1350,33 @@ export const posts: BlogPost[] = [
     category: "Pricing & Rates",
   },
   {
+    slug: "freelance-blockchain-developer-rates-uae",
+    title: "Freelance Blockchain Developer Rates in the UAE (2026): What to Charge",
+    description:
+      "Real AED rates for freelance blockchain developers in Dubai and Abu Dhabi — smart contract development, DeFi protocols, NFT platforms, Web3 product integration, blockchain consulting, and tokenomics advisory rates for 2026.",
+    date: "June 16, 2026",
+    readTime: "7 min read",
+    category: "Pricing & Rates",
+  },
+  {
+    slug: "freelance-technical-writer-rates-uae",
+    title: "Freelance Technical Writer Rates in the UAE (2026): What to Charge",
+    description:
+      "Real AED rates for freelance technical writers in Dubai and Abu Dhabi — API documentation, user guides, white papers, software documentation, SOP writing, and RFP tender response writing rates for 2026.",
+    date: "June 16, 2026",
+    readTime: "7 min read",
+    category: "Pricing & Rates",
+  },
+  {
+    slug: "how-to-get-first-freelance-client-uae",
+    title: "How to Get Your First Freelance Client in the UAE (2026 Guide)",
+    description:
+      "A step-by-step guide to landing your first freelance client in Dubai or Abu Dhabi — the exact outreach sequences, who to contact first, how to price when you have no portfolio, and how to convert your first client into a case study that brings the next.",
+    date: "June 16, 2026",
+    readTime: "8 min read",
+    category: "Getting Clients",
+  },
+  {
     slug: "freelance-product-manager-rates-uae",
     title: "Freelance Product Manager Rates in the UAE (2026): What to Charge",
     description:
