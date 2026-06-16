@@ -2456,6 +2456,33 @@ export const posts: BlogPost[] = [
     readTime: "7 min read",
     category: "Pricing & Rates",
   },
+  {
+    slug: "freelance-urban-planner-rates-uae",
+    title: "Freelance Urban Planner Rates in the UAE (2026)",
+    description:
+      "Real AED day rates for freelance urban planners in Dubai and Abu Dhabi. Masterplan advisory, zoning strategy, transit-oriented development, urban regeneration, and smart city planning fees for UAE government and developer projects in 2026.",
+    date: "June 16, 2026",
+    readTime: "7 min read",
+    category: "Pricing & Rates",
+  },
+  {
+    slug: "how-to-use-ai-for-client-onboarding-uae",
+    title: "How UAE Freelancers Use AI for Client Onboarding (2026)",
+    description:
+      "How UAE freelancers use AI tools to automate and improve their client onboarding process — AI-generated welcome packs, automated questionnaires, contract preparation, kickoff meeting prep, and Notion-based onboarding systems.",
+    date: "June 16, 2026",
+    readTime: "7 min read",
+    category: "Systems & Productivity",
+  },
+  {
+    slug: "freelance-wellbeing-consultant-rates-uae",
+    title: "Freelance Wellbeing Consultant Rates in the UAE (2026)",
+    description:
+      "Real AED day rates for freelance wellbeing consultants in Dubai and Abu Dhabi. Corporate wellness programmes, mental health strategy, employee wellbeing assessments, workplace stress management, and wellbeing coaching fees for UAE companies in 2026.",
+    date: "June 16, 2026",
+    readTime: "7 min read",
+    category: "Pricing & Rates",
+  },
 ];
 
 export function getPost(slug: string): BlogPost | undefined {

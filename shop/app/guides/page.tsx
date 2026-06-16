@@ -6,11 +6,11 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "UAE Freelancer Guides & Resources — SoloKit",
   description:
-    "276 practical guides for freelancers and solopreneurs in the UAE. Visa, tax, rates, clients, contracts, AI tools, and more. All free.",
+    "279 practical guides for freelancers and solopreneurs in the UAE. Visa, tax, rates, clients, contracts, AI tools, and more. All free.",
   alternates: { canonical: "/guides" },
   openGraph: {
     title: "UAE Freelancer Guides & Resources — SoloKit",
-    description: "276 free guides covering everything a UAE freelancer needs to know.",
+    description: "279 free guides covering everything a UAE freelancer needs to know.",
     type: "website",
     url: "/guides",
   },
@@ -258,6 +258,8 @@ const categories = [
       { slug: "freelance-talent-acquisition-consultant-rates-uae", title: "Freelance Talent Acquisition Consultant Rates in the UAE (2026)", time: "7 min" },
       { slug: "how-to-negotiate-equity-compensation-uae", title: "How UAE Freelancers Negotiate Equity Compensation (2026 Guide)", time: "7 min" },
       { slug: "freelance-landscape-architect-rates-uae", title: "Freelance Landscape Architect Rates in the UAE (2026)", time: "7 min" },
+      { slug: "freelance-urban-planner-rates-uae", title: "Freelance Urban Planner Rates in the UAE (2026)", time: "7 min" },
+      { slug: "freelance-wellbeing-consultant-rates-uae", title: "Freelance Wellbeing Consultant Rates in the UAE (2026)", time: "7 min" },
     ],
   },
   {
@@ -303,6 +305,7 @@ const categories = [
       { slug: "how-to-cold-email-clients-uae", title: "Cold Email for UAE Freelancers: Scripts That Get Replies (2026)", time: "8 min" },
       { slug: "how-to-use-notion-as-crm-uae", title: "How to Use Notion as a CRM for UAE Freelancers (2026): Client Tracking System", time: "8 min" },
       { slug: "how-to-set-up-whatsapp-business-uae", title: "How UAE Freelancers Use WhatsApp Business for Client Communication (2026)", time: "7 min" },
+      { slug: "how-to-use-ai-for-client-onboarding-uae", title: "How UAE Freelancers Use AI for Client Onboarding (2026)", time: "7 min" },
     ],
   },
   {
@@ -370,7 +373,7 @@ export default function GuidesPage() {
           <span className="text-xs font-semibold text-gray-400 uppercase tracking-widest">Free Resources</span>
           <h1 className="text-3xl sm:text-4xl font-bold text-gray-900 mt-2 mb-3">UAE Freelancer Guides</h1>
           <p className="text-gray-500 max-w-xl mx-auto leading-relaxed">
-            276 practical guides covering everything you need to know about freelancing in Dubai and Abu Dhabi.
+            279 practical guides covering everything you need to know about freelancing in Dubai and Abu Dhabi.
             Written specifically for the UAE market — AED pricing, local laws, free zone context.
           </p>
         </div>
