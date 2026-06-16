@@ -6,11 +6,11 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "UAE Freelancer Guides & Resources — SoloKit",
   description:
-    "192 practical guides for freelancers and solopreneurs in the UAE. Visa, tax, rates, clients, contracts, AI tools, and more. All free.",
+    "195 practical guides for freelancers and solopreneurs in the UAE. Visa, tax, rates, clients, contracts, AI tools, and more. All free.",
   alternates: { canonical: "/guides" },
   openGraph: {
     title: "UAE Freelancer Guides & Resources — SoloKit",
-    description: "192 free guides covering everything a UAE freelancer needs to know.",
+    description: "195 free guides covering everything a UAE freelancer needs to know.",
     type: "website",
     url: "/guides",
   },
@@ -87,6 +87,7 @@ const categories = [
       { slug: "how-to-manage-client-expectations-uae", title: "How to Manage Client Expectations as a UAE Freelancer (2026 Guide)", time: "8 min" },
       { slug: "how-to-negotiate-contracts-freelance-uae", title: "How to Negotiate Contracts as a UAE Freelancer (2026): Scripts & Tactics", time: "9 min" },
       { slug: "how-to-build-email-list-freelancers-uae", title: "How to Build an Email List as a UAE Freelancer (2026): From Zero to Warm Leads", time: "8 min" },
+      { slug: "how-to-ask-for-referrals-uae", title: "How to Ask for Referrals as a UAE Freelancer (2026): Scripts That Work", time: "7 min" },
     ],
   },
   {
@@ -184,6 +185,8 @@ const categories = [
       { slug: "freelance-android-developer-rates-uae", title: "Freelance Android Developer Rates in the UAE (2026): Kotlin & App Development Fees", time: "7 min" },
       { slug: "freelance-fullstack-developer-rates-uae", title: "Freelance Full-Stack Developer Rates in the UAE (2026): What to Charge", time: "8 min" },
       { slug: "freelance-machine-learning-engineer-rates-uae", title: "Freelance Machine Learning Engineer Rates in the UAE (2026): ML & AI Development Fees", time: "8 min" },
+      { slug: "freelance-frontend-developer-rates-uae", title: "Freelance Front-End Developer Rates in the UAE (2026): React, Vue & UI Engineering Fees", time: "7 min" },
+      { slug: "freelance-backend-developer-rates-uae", title: "Freelance Back-End Developer Rates in the UAE (2026): Node.js, Python & API Fees", time: "7 min" },
     ],
   },
   {
@@ -286,7 +289,7 @@ export default function GuidesPage() {
           <span className="text-xs font-semibold text-gray-400 uppercase tracking-widest">Free Resources</span>
           <h1 className="text-3xl sm:text-4xl font-bold text-gray-900 mt-2 mb-3">UAE Freelancer Guides</h1>
           <p className="text-gray-500 max-w-xl mx-auto leading-relaxed">
-            192 practical guides covering everything you need to know about freelancing in Dubai and Abu Dhabi.
+            195 practical guides covering everything you need to know about freelancing in Dubai and Abu Dhabi.
             Written specifically for the UAE market — AED pricing, local laws, free zone context.
           </p>
         </div>

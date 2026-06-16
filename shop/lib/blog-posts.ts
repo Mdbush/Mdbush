@@ -1700,6 +1700,33 @@ export const posts: BlogPost[] = [
     readTime: "8 min read",
     category: "Systems & Productivity",
   },
+  {
+    slug: "freelance-frontend-developer-rates-uae",
+    title: "Freelance Front-End Developer Rates in the UAE (2026): React, Vue & UI Engineering Fees",
+    description:
+      "Real AED day rates for freelance front-end developers in Dubai and Abu Dhabi. React, Next.js, Vue, TypeScript, Arabic RTL UI engineering, animation, and accessibility rates for 2026.",
+    date: "June 16, 2026",
+    readTime: "7 min read",
+    category: "Pricing & Rates",
+  },
+  {
+    slug: "how-to-ask-for-referrals-uae",
+    title: "How to Ask for Referrals as a UAE Freelancer (2026): Scripts That Work",
+    description:
+      "How UAE freelancers ask for referrals without being awkward — when to ask, who to ask, word-for-word WhatsApp and email scripts, and how to build a referral system that generates consistent leads.",
+    date: "June 16, 2026",
+    readTime: "7 min read",
+    category: "Getting Clients",
+  },
+  {
+    slug: "freelance-backend-developer-rates-uae",
+    title: "Freelance Back-End Developer Rates in the UAE (2026): Node.js, Python & API Fees",
+    description:
+      "Real AED day rates for freelance back-end developers in Dubai and Abu Dhabi. Node.js, Python, Go, Java, API design, database architecture, microservices, and cloud backend rates for 2026.",
+    date: "June 16, 2026",
+    readTime: "7 min read",
+    category: "Pricing & Rates",
+  },
 ];
 
 export function getPost(slug: string): BlogPost | undefined {
