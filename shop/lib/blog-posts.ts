@@ -890,6 +890,33 @@ export const posts: BlogPost[] = [
     readTime: "8 min read",
     category: "Pricing & Rates",
   },
+  {
+    slug: "freelance-supply-chain-consultant-uae",
+    title: "Freelance Supply Chain & Logistics Consultant Rates in the UAE (2026)",
+    description:
+      "Real AED rates for freelance supply chain and logistics consultants in Dubai and Abu Dhabi — procurement, sourcing, 3PL optimization, and Jebel Ali/Dubai trade corridor advisory fees in 2026.",
+    date: "June 16, 2026",
+    readTime: "8 min read",
+    category: "Pricing & Rates",
+  },
+  {
+    slug: "how-to-cold-email-clients-uae",
+    title: "Cold Email for UAE Freelancers: Scripts That Get Replies (2026)",
+    description:
+      "Cold email scripts and outreach systems that work for UAE freelancers — subject lines, email structure, follow-up sequences, and what UAE clients actually respond to. Copy-paste templates included.",
+    date: "June 16, 2026",
+    readTime: "8 min read",
+    category: "Getting Clients",
+  },
+  {
+    slug: "freelance-motion-designer-rates-uae",
+    title: "Freelance Motion Designer & Animator Rates in the UAE (2026)",
+    description:
+      "Real AED rates for freelance motion designers and animators in Dubai and Abu Dhabi — explainer videos, social media reels, brand animations, 3D motion, and After Effects work in 2026.",
+    date: "June 16, 2026",
+    readTime: "7 min read",
+    category: "Pricing & Rates",
+  },
 ];
 
 export function getPost(slug: string): BlogPost | undefined {

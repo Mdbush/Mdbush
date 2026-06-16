@@ -6,11 +6,11 @@ import type { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Blog — 65 Free Guides for UAE Freelancers — SoloKit",
-  description: "98 free guides for freelancers and solopreneurs in the UAE. Visa, tax, rates, proposals, AI tools, contracts, and more. No fluff.",
+  description: "101 free guides for freelancers and solopreneurs in the UAE. Visa, tax, rates, proposals, AI tools, contracts, and more. No fluff.",
   alternates: { canonical: "/blog" },
   openGraph: {
     title: "Free Guides for UAE Freelancers — SoloKit Blog",
-    description: "98 practical guides covering everything UAE freelancers need. No fluff.",
+    description: "101 practical guides covering everything UAE freelancers need. No fluff.",
     url: "/blog",
     type: "website",
   },
