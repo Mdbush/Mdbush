@@ -32,12 +32,43 @@ const jsonLd = {
   },
 };
 
+const faqJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: [
+    {
+      "@type": "Question",
+      name: "What format are the products in?",
+      acceptedAnswer: { "@type": "Answer", text: "Notion templates are delivered as a Notion page link you can duplicate instantly. AI prompt packs and SOPs come as a downloadable PDF and Notion page." },
+    },
+    {
+      "@type": "Question",
+      name: "Do I need a Notion account?",
+      acceptedAnswer: { "@type": "Answer", text: "For Notion templates, yes — Notion is free to use. AI prompt packs and SOP documents also come in Google Docs format." },
+    },
+    {
+      "@type": "Question",
+      name: "How do I get the product after buying?",
+      acceptedAnswer: { "@type": "Answer", text: "You'll receive an email with a download link immediately after checkout. You can also access your purchase anytime from the Lemon Squeezy receipt." },
+    },
+    {
+      "@type": "Question",
+      name: "What if I'm not satisfied?",
+      acceptedAnswer: { "@type": "Answer", text: "Email us within 30 days of purchase and we'll give you a full refund. No questions asked." },
+    },
+  ],
+};
+
 export default function Home() {
   return (
     <>
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
       />
       <Header />
 
