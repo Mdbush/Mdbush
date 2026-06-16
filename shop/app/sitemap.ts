@@ -146,6 +146,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "freelance-life-coach-rates-uae",
     "how-to-build-freelance-waitlist-uae",
     "freelance-music-producer-rates-uae",
+    "freelance-nutritionist-rates-uae",
+    "how-to-invoice-international-clients-uae",
+    "freelance-fitness-trainer-rates-uae",
   ].map((slug) => ({
     url: `${base}/blog/${slug}`,
     lastModified: new Date(),

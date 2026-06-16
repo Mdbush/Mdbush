@@ -1214,6 +1214,33 @@ export const posts: BlogPost[] = [
     readTime: "7 min read",
     category: "Pricing & Rates",
   },
+  {
+    slug: "freelance-nutritionist-rates-uae",
+    title: "Freelance Nutritionist & Dietitian Rates in the UAE (2026): What to Charge",
+    description:
+      "Real AED rates for freelance nutritionists and registered dietitians in Dubai and Abu Dhabi — initial consultations, coaching packages, corporate wellness nutrition programs, sports nutrition, clinical nutrition, and Ramadan programs for 2026.",
+    date: "June 16, 2026",
+    readTime: "7 min read",
+    category: "Pricing & Rates",
+  },
+  {
+    slug: "how-to-invoice-international-clients-uae",
+    title: "How to Invoice International Clients as a UAE Freelancer (2026)",
+    description:
+      "How UAE freelancers get paid in USD, EUR, and GBP from international clients — SWIFT transfers, Wise Business, Stripe, PayPal vs Wise comparison, invoice format requirements, W-8BEN for US clients, VAT on exports, and currency clauses for 2026.",
+    date: "June 16, 2026",
+    readTime: "8 min read",
+    category: "Getting Paid",
+  },
+  {
+    slug: "freelance-fitness-trainer-rates-uae",
+    title: "Freelance Personal Trainer & Fitness Coach Rates in the UAE (2026): What to Charge",
+    description:
+      "Real AED rates for freelance personal trainers and fitness coaches in Dubai and Abu Dhabi — 1-on-1 PT sessions, group classes, online coaching packages, corporate wellness fitness programs, and transformation packages for 2026.",
+    date: "June 16, 2026",
+    readTime: "7 min read",
+    category: "Pricing & Rates",
+  },
 ];
 
 export function getPost(slug: string): BlogPost | undefined {
