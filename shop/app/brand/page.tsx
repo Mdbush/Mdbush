@@ -166,8 +166,7 @@ Website: solokit.cloud`}</code>
           </div>
           <div className="border border-gray-200 rounded-xl p-5">
             <p className="text-xs font-semibold text-gray-400 uppercase tracking-widest mb-2">Username</p>
-            <code className="text-sm text-gray-900 bg-gray-50 block p-3 rounded-lg select-all">@solokitco</code>
-            <p className="text-xs text-gray-400 mt-2">If taken, try: @solokit.ae · @solokit.uae · @solokithq</p>
+            <code className="text-sm text-gray-900 bg-gray-50 block p-3 rounded-lg select-all">@getsolokit</code>
           </div>
           <div className="border border-gray-200 rounded-xl p-5">
             <p className="text-xs font-semibold text-gray-400 uppercase tracking-widest mb-2">Bio (150 chars)</p>
