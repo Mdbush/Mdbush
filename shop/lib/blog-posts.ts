@@ -2888,6 +2888,33 @@ export const posts: BlogPost[] = [
     readTime: "7 min read",
     category: "Business & Mindset",
   },
+  {
+    slug: "freelance-speech-therapist-rates-uae",
+    title: "Freelance Speech Therapist Rates in the UAE (2026)",
+    description:
+      "Real AED rates for freelance speech and language therapists in Dubai and Abu Dhabi. Paediatric speech therapy, adult speech therapy, stuttering, language delay, voice disorders, AAC, and school-based SLT fees for 2026.",
+    date: "June 16, 2026",
+    readTime: "7 min read",
+    category: "Pricing & Rates",
+  },
+  {
+    slug: "freelance-structural-engineer-rates-uae",
+    title: "Freelance Structural Engineer Rates in the UAE (2026)",
+    description:
+      "Real AED day rates for freelance structural engineers in Dubai and Abu Dhabi. Residential villa structural design, commercial building, high-rise structures, structural inspection, retrofit engineering, and expert witness fees for 2026.",
+    date: "June 16, 2026",
+    readTime: "7 min read",
+    category: "Pricing & Rates",
+  },
+  {
+    slug: "how-to-use-ai-freelance-productivity-uae",
+    title: "How to Use AI to 10x Your Freelance Productivity in the UAE (2026)",
+    description:
+      "Practical AI tools and workflows for UAE freelancers to automate proposals, client communication, research, content creation, and admin — saving 10+ hours per week and scaling output without hiring.",
+    date: "June 16, 2026",
+    readTime: "7 min read",
+    category: "AI Tools",
+  },
 ];
 
 export function getPost(slug: string): BlogPost | undefined {
