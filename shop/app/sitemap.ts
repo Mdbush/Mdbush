@@ -2,7 +2,8 @@ import { MetadataRoute } from "next";
 import { products } from "@/lib/products";
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const base = process.env.NEXT_PUBLIC_SITE_URL ?? "http://localhost:3000";
+  const rawBase = process.env.NEXT_PUBLIC_SITE_URL ?? "";
+  const base = rawBase.startsWith("http") ? rawBase : "https://solokit.cloud";
 
   const productUrls = products.map((p) => ({
     url: `${base}/products/${p.slug}`,
@@ -338,6 +339,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "freelance-occupational-therapist-rates-uae",
     "freelance-physiotherapist-rates-uae",
     "how-to-win-without-being-cheapest-uae",
+    "freelance-dietitian-rates-uae",
+    "freelance-mental-health-counsellor-rates-uae",
+    "how-to-get-paid-upfront-uae",
   ].map((slug) => ({
     url: `${base}/blog/${slug}`,
     lastModified: new Date(),

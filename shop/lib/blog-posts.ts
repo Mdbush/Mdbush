@@ -2942,6 +2942,33 @@ export const posts: BlogPost[] = [
     readTime: "7 min read",
     category: "Business & Mindset",
   },
+  {
+    slug: "freelance-dietitian-rates-uae",
+    title: "Freelance Dietitian & Nutritionist Rates in the UAE (2026)",
+    description:
+      "Real AED rates for freelance dietitians and nutritionists in Dubai and Abu Dhabi. Clinical dietetics, sports nutrition, weight management, paediatric nutrition, eating disorders, and corporate wellness nutrition fees for 2026.",
+    date: "June 16, 2026",
+    readTime: "7 min read",
+    category: "Pricing & Rates",
+  },
+  {
+    slug: "freelance-mental-health-counsellor-rates-uae",
+    title: "Freelance Mental Health Counsellor Rates in the UAE (2026)",
+    description:
+      "Real AED rates for freelance mental health counsellors and therapists in Dubai and Abu Dhabi. Individual therapy, CBT, trauma therapy (EMDR), couples counselling, child counselling, and corporate EAP fees for 2026.",
+    date: "June 16, 2026",
+    readTime: "7 min read",
+    category: "Pricing & Rates",
+  },
+  {
+    slug: "how-to-get-paid-upfront-uae",
+    title: "How to Get Paid Upfront as a UAE Freelancer (2026 Guide)",
+    description:
+      "How UAE freelancers get deposits and upfront payments from clients — deposit structures, how to ask, handling objections, and the contract clauses that protect you. Practical guide for Dubai and Abu Dhabi freelancers.",
+    date: "June 16, 2026",
+    readTime: "7 min read",
+    category: "Client Work & Proposals",
+  },
 ];
 
 export function getPost(slug: string): BlogPost | undefined {
