@@ -305,9 +305,18 @@ const featured = [
   "freelance-tax-uae",
 ];
 
-export default function BlogPage() {
+type Props = { searchParams: Promise<{ category?: string }> };
+
+export default async function BlogPage({ searchParams }: Props) {
+  const { category: activeCategory } = await searchParams;
+
+  const allCategories = Array.from(new Set(posts.map((p) => p.category))).sort();
+
   const featuredPosts = posts.filter((p) => featured.includes(p.slug));
   const otherPosts = posts.filter((p) => !featured.includes(p.slug));
+  const filteredPosts = activeCategory
+    ? otherPosts.filter((p) => p.category === activeCategory)
+    : otherPosts;
 
   return (
     <>
@@ -319,31 +328,63 @@ export default function BlogPage() {
           <p className="text-gray-500">Practical guides for freelancers and solopreneurs in the UAE. No fluff.</p>
         </div>
 
-        {/* Featured */}
-        <div className="mb-10">
-          <p className="text-xs font-semibold text-gray-400 uppercase tracking-widest mb-4">Most read</p>
-          <div className="grid gap-4 sm:grid-cols-3">
-            {featuredPosts.map((post) => (
-              <Link
-                key={post.slug}
-                href={`/blog/${post.slug}`}
-                className="group border border-gray-200 rounded-2xl p-5 hover:border-gray-400 hover:shadow-sm transition-all bg-gray-50"
-              >
-                <span className="text-xs font-semibold text-gray-400 uppercase tracking-widest block mb-2">
-                  {post.category}
-                </span>
-                <h2 className="text-sm font-bold text-gray-900 group-hover:text-gray-700 transition-colors leading-snug mb-2">
-                  {post.title}
-                </h2>
-                <p className="text-xs text-gray-500">{post.readTime}</p>
-              </Link>
-            ))}
+        {/* Featured — only shown when no category filter */}
+        {!activeCategory && (
+          <div className="mb-10">
+            <p className="text-xs font-semibold text-gray-400 uppercase tracking-widest mb-4">Most read</p>
+            <div className="grid gap-4 sm:grid-cols-3">
+              {featuredPosts.map((post) => (
+                <Link
+                  key={post.slug}
+                  href={`/blog/${post.slug}`}
+                  className="group border border-gray-200 rounded-2xl p-5 hover:border-gray-400 hover:shadow-sm transition-all bg-gray-50"
+                >
+                  <span className="text-xs font-semibold text-gray-400 uppercase tracking-widest block mb-2">
+                    {post.category}
+                  </span>
+                  <h2 className="text-sm font-bold text-gray-900 group-hover:text-gray-700 transition-colors leading-snug mb-2">
+                    {post.title}
+                  </h2>
+                  <p className="text-xs text-gray-500">{post.readTime}</p>
+                </Link>
+              ))}
+            </div>
           </div>
+        )}
+
+        {/* Category filter */}
+        <div className="flex flex-wrap gap-2 mb-8">
+          <Link
+            href="/blog"
+            className={`text-xs font-semibold px-3 py-1.5 rounded-full border transition-colors ${
+              !activeCategory
+                ? "bg-gray-900 text-white border-gray-900"
+                : "bg-white text-gray-600 border-gray-200 hover:border-gray-400"
+            }`}
+          >
+            All ({posts.length})
+          </Link>
+          {allCategories.map((cat) => {
+            const count = posts.filter((p) => p.category === cat).length;
+            return (
+              <Link
+                key={cat}
+                href={`/blog?category=${encodeURIComponent(cat)}`}
+                className={`text-xs font-semibold px-3 py-1.5 rounded-full border transition-colors ${
+                  activeCategory === cat
+                    ? "bg-gray-900 text-white border-gray-900"
+                    : "bg-white text-gray-600 border-gray-200 hover:border-gray-400"
+                }`}
+              >
+                {cat} ({count})
+              </Link>
+            );
+          })}
         </div>
 
-        {/* All posts */}
+        {/* Posts */}
         <div className="flex flex-col gap-6">
-          {otherPosts.map((post) => (
+          {filteredPosts.map((post) => (
             <Link
               key={post.slug}
               href={`/blog/${post.slug}`}
@@ -366,6 +407,10 @@ export default function BlogPage() {
             </Link>
           ))}
         </div>
+
+        {filteredPosts.length === 0 && (
+          <p className="text-center text-gray-400 py-12">No articles in this category yet.</p>
+        )}
       </main>
 
       <Footer />
