@@ -2645,6 +2645,33 @@ export const posts: BlogPost[] = [
     readTime: "7 min read",
     category: "Pricing & Rates",
   },
+  {
+    slug: "freelance-blockchain-developer-rates-uae",
+    title: "Freelance Blockchain Developer Rates in the UAE (2026)",
+    description:
+      "Real AED day rates for freelance blockchain developers in Dubai and Abu Dhabi. Smart contract development, DeFi protocol building, NFT platforms, Web3 advisory, DIFC and ADGM crypto regulatory compliance, tokenisation advisory, and blockchain architecture fees for 2026.",
+    date: "June 16, 2026",
+    readTime: "7 min read",
+    category: "Pricing & Rates",
+  },
+  {
+    slug: "how-to-create-freelance-packages-uae",
+    title: "How to Create Freelance Service Packages in the UAE (2026 Guide)",
+    description:
+      "How UAE freelancers create productised service packages — moving from custom quotes to fixed-scope packages that attract better clients, reduce sales effort, command premium pricing, and make your income more predictable.",
+    date: "June 16, 2026",
+    readTime: "7 min read",
+    category: "Pricing & Rates",
+  },
+  {
+    slug: "freelance-learning-development-consultant-rates-uae",
+    title: "Freelance Learning & Development Consultant Rates in the UAE (2026)",
+    description:
+      "Real AED day rates for freelance L&D consultants in Dubai and Abu Dhabi. Training needs analysis, leadership development programmes, e-learning design, UAE Emiratisation training, corporate learning strategy, and instructional design fees for 2026.",
+    date: "June 16, 2026",
+    readTime: "7 min read",
+    category: "Pricing & Rates",
+  },
 ];
 
 export function getPost(slug: string): BlogPost | undefined {
