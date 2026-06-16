@@ -6,11 +6,11 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "UAE Freelancer Guides & Resources — SoloKit",
   description:
-    "186 practical guides for freelancers and solopreneurs in the UAE. Visa, tax, rates, clients, contracts, AI tools, and more. All free.",
+    "189 practical guides for freelancers and solopreneurs in the UAE. Visa, tax, rates, clients, contracts, AI tools, and more. All free.",
   alternates: { canonical: "/guides" },
   openGraph: {
     title: "UAE Freelancer Guides & Resources — SoloKit",
-    description: "186 free guides covering everything a UAE freelancer needs to know.",
+    description: "189 free guides covering everything a UAE freelancer needs to know.",
     type: "website",
     url: "/guides",
   },
@@ -180,6 +180,8 @@ const categories = [
       { slug: "freelance-learning-development-consultant-rates-uae", title: "Freelance Learning & Development Consultant Rates in the UAE (2026)", time: "8 min" },
       { slug: "freelance-risk-management-consultant-rates-uae", title: "Freelance Risk Management Consultant Rates in the UAE (2026): ERM & Risk Advisory Fees", time: "7 min" },
       { slug: "freelance-qa-engineer-rates-uae", title: "Freelance QA Engineer Rates in the UAE (2026): Software Testing & Automation Fees", time: "7 min" },
+      { slug: "freelance-ios-developer-rates-uae", title: "Freelance iOS Developer Rates in the UAE (2026): Swift & App Development Fees", time: "7 min" },
+      { slug: "freelance-android-developer-rates-uae", title: "Freelance Android Developer Rates in the UAE (2026): Kotlin & App Development Fees", time: "7 min" },
     ],
   },
   {
@@ -198,6 +200,7 @@ const categories = [
       { slug: "how-to-get-paid-faster-uae", title: "How to Get Paid Faster as a UAE Freelancer (7 Practical Strategies)", time: "6 min" },
       { slug: "how-to-handle-scope-creep-uae", title: "How to Handle Scope Creep as a UAE Freelancer (Scripts & Systems)", time: "7 min" },
       { slug: "how-to-write-case-studies-uae", title: "How to Write Case Studies That Win UAE Clients (With Template)", time: "7 min" },
+      { slug: "how-to-deal-with-difficult-clients-uae", title: "How to Deal With Difficult Clients as a UAE Freelancer (2026): Scripts & Strategies", time: "9 min" },
     ],
   },
   {
@@ -280,7 +283,7 @@ export default function GuidesPage() {
           <span className="text-xs font-semibold text-gray-400 uppercase tracking-widest">Free Resources</span>
           <h1 className="text-3xl sm:text-4xl font-bold text-gray-900 mt-2 mb-3">UAE Freelancer Guides</h1>
           <p className="text-gray-500 max-w-xl mx-auto leading-relaxed">
-            186 practical guides covering everything you need to know about freelancing in Dubai and Abu Dhabi.
+            189 practical guides covering everything you need to know about freelancing in Dubai and Abu Dhabi.
             Written specifically for the UAE market — AED pricing, local laws, free zone context.
           </p>
         </div>

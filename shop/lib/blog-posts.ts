@@ -1646,6 +1646,33 @@ export const posts: BlogPost[] = [
     readTime: "7 min read",
     category: "Pricing & Rates",
   },
+  {
+    slug: "freelance-ios-developer-rates-uae",
+    title: "Freelance iOS Developer Rates in the UAE (2026): Swift & App Development Fees",
+    description:
+      "Real AED day rates for freelance iOS developers in Dubai and Abu Dhabi. Swift, SwiftUI, UIKit, app architecture, App Store deployment, and iOS consulting rates for 2026.",
+    date: "June 16, 2026",
+    readTime: "7 min read",
+    category: "Pricing & Rates",
+  },
+  {
+    slug: "freelance-android-developer-rates-uae",
+    title: "Freelance Android Developer Rates in the UAE (2026): Kotlin & App Development Fees",
+    description:
+      "Real AED day rates for freelance Android developers in Dubai and Abu Dhabi. Kotlin, Jetpack Compose, MVVM architecture, Google Play deployment, and Flutter cross-platform rates for 2026.",
+    date: "June 16, 2026",
+    readTime: "7 min read",
+    category: "Pricing & Rates",
+  },
+  {
+    slug: "how-to-deal-with-difficult-clients-uae",
+    title: "How to Deal With Difficult Clients as a UAE Freelancer (2026): Scripts & Strategies",
+    description:
+      "Practical guide to handling difficult clients in Dubai and Abu Dhabi. Late payers, scope creepers, always-on clients, endless revisions, rate negotiators, and ghosters — with real scripts and UAE legal context.",
+    date: "June 16, 2026",
+    readTime: "9 min read",
+    category: "Client Work & Proposals",
+  },
 ];
 
 export function getPost(slug: string): BlogPost | undefined {
