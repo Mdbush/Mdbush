@@ -386,6 +386,33 @@ export const posts: BlogPost[] = [
     readTime: "6 min read",
     category: "Client Acquisition",
   },
+  {
+    slug: "freelance-designer-rates-uae",
+    title: "Freelance Designer Rates in the UAE (2026): What to Charge",
+    description:
+      "Real AED rates by specialization — graphic design, UI/UX, brand identity, motion, social media — at junior, mid, and senior level. Plus common pricing mistakes and how to raise your rates.",
+    date: "June 16, 2026",
+    readTime: "8 min read",
+    category: "Pricing & Rates",
+  },
+  {
+    slug: "rakez-vs-ifza-freelance-license-uae",
+    title: "RAKEZ vs IFZA vs Meydan: Best Free Zone for UAE Freelancers (2026)",
+    description:
+      "Side-by-side comparison of the most popular UAE freelance license options — cost, setup time, visa eligibility, and hidden costs. Includes SHAMS and Fujairah Creative City as budget alternatives.",
+    date: "June 16, 2026",
+    readTime: "9 min read",
+    category: "Visa & Legal",
+  },
+  {
+    slug: "uae-golden-visa-freelancers",
+    title: "UAE Golden Visa for Freelancers: Requirements & How to Apply (2026)",
+    description:
+      "Can you get the 10-year UAE Golden Visa as a freelancer? Eligibility categories (skilled professional, entrepreneur, investor), documentation, costs, and the realistic paths for solopreneurs.",
+    date: "June 16, 2026",
+    readTime: "8 min read",
+    category: "Visa & Legal",
+  },
 ];
 
 export function getPost(slug: string): BlogPost | undefined {

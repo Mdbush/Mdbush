@@ -54,6 +54,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "freelance-work-life-balance-uae",
     "freelance-developer-rates-uae",
     "how-to-write-freelance-bio-uae",
+    "freelance-designer-rates-uae",
+    "rakez-vs-ifza-freelance-license-uae",
+    "uae-golden-visa-freelancers",
   ].map((slug) => ({
     url: `${base}/blog/${slug}`,
     lastModified: new Date(),
