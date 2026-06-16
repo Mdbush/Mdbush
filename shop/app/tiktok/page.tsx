@@ -8,6 +8,16 @@ export const metadata: Metadata = {
   robots: { index: false, follow: false },
 };
 
+const setupChecklist = [
+  "Switch to a Business account (Settings → Account → Switch to Business)",
+  "Category: Software / Digital Content / Business Services",
+  "Bio: 'Notion templates & AI tools for UAE freelancers 🇦🇪 | solokit.cloud'",
+  "Username: @solokitco (or @solokit.ae / @solokithq)",
+  "Profile photo: download from solokit.cloud/brand",
+  "Link in bio: https://solokit.cloud",
+  "Post 1 video per day for first 30 days — consistency beats production quality",
+];
+
 const scripts = [
   {
     id: 1,

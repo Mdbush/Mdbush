@@ -8,6 +8,17 @@ export const metadata: Metadata = {
   robots: { index: false, follow: false },
 };
 
+const setupItems = [
+  { label: "Page name", value: "SoloKit" },
+  { label: "Category", value: "Software Company · Digital Products" },
+  { label: "Username", value: "@solokitco" },
+  { label: "Website", value: "solokit.cloud" },
+  { label: "Post frequency", value: "1× per day" },
+  { label: "Best times (UAE)", value: "7-9 AM, 12-2 PM, 7-9 PM" },
+  { label: "Page ID", value: "1098756576664555" },
+  { label: "CTA button", value: "Shop Now → solokit.cloud" },
+];
+
 const posts = [
   {
     id: 1,
@@ -284,6 +295,33 @@ Chasing proposals is the biggest time drain in freelancing.
 Build a pipeline so you can afford to let go of the ones that go cold.
 
 Have a follow-up approach that's worked for you? Share it 👇`,
+  },
+];
+
+const strategyPoints = [
+  {
+    title: "Format",
+    desc: "Facebook rewards native text posts + image posts. Avoid adding links in the post body — it kills reach. Put links in the first comment instead.",
+  },
+  {
+    title: "Engagement is the signal",
+    desc: "Facebook shows posts to more people when they have comments. Every post should end with a direct question. Reply to every comment within 1 hour of posting.",
+  },
+  {
+    title: "Image posts",
+    desc: "Post a simple quote card or stat graphic with an educational caption. Create these in Canva using the brand colors (dark background, white text).",
+  },
+  {
+    title: "Groups",
+    desc: "Join UAE freelancer Facebook groups and post value there too. Don't spam — contribute, then mention SoloKit when relevant.",
+  },
+  {
+    title: "Automated vs manual",
+    desc: "The cron job handles daily automated posts. These 12 posts are for manual scheduling using Meta Business Suite at specific high-engagement times.",
+  },
+  {
+    title: "Boost high performers",
+    desc: "Any post that gets 20+ organic comments — boost it with AED 50-100 ad spend to UAE freelancer audience. High ROI.",
   },
 ];
 

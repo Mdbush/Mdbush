@@ -8,6 +8,22 @@ export const metadata: Metadata = {
   robots: { index: false, follow: false },
 };
 
+const setupItems = [
+  { label: "Username", value: "@solokitco (or @solokit.ae)" },
+  { label: "Name", value: "SoloKit — Tools for UAE Freelancers" },
+  { label: "Category", value: "Software Company" },
+  { label: "Link in bio", value: "solokit.cloud" },
+  { label: "Post frequency", value: "1× per day (reels + carousels)" },
+  { label: "Best times (UAE)", value: "7-9 AM, 12-2 PM, 7-9 PM" },
+];
+
+const contentMix = [
+  "3× Reels (talking head or text animation) — highest reach",
+  "2× Carousels — highest saves, great for discovery",
+  "2× Static posts — quotes, stats, quick tips",
+  "Daily Stories: behind-the-scenes, polls, Q&A",
+];
+
 const reels = [
   {
     id: 1,
@@ -28,6 +44,7 @@ Calculate your actual minimum rate at the link in bio. It's free.
 
 #DubaiFreelancer #FreelanceUAE #FreelanceRates #UAE #Dubai`,
     viral: true,
+    slides: null as string[] | null,
   },
   {
     id: 2,
@@ -49,6 +66,7 @@ Your pipeline is your protection.
 
 #FreelanceUAE #DubaiFreelancer #ClientTips #UAE #Freelancing`,
     viral: true,
+    slides: null as string[] | null,
   },
   {
     id: 3,
@@ -98,6 +116,7 @@ Full breakdown at the link in bio.
 
 #FreelanceVisaUAE #DubaiVisa #UAE #DubaiFreelancer #FreelanceUAE`,
     viral: true,
+    slides: null as string[] | null,
   },
   {
     id: 5,
@@ -145,6 +164,7 @@ Templates for all 3 are in my bio.
 
 #GetPaid #LatePayment #FreelanceUAE #DubaiFreelancer #Invoice`,
     viral: true,
+    slides: null as string[] | null,
   },
   {
     id: 7,
@@ -191,6 +211,7 @@ Full breakdown at link in bio.
 
 #UAETax #DubaiTax #TaxFree #UAE #DubaiFreelancer #FreelanceUAE`,
     viral: true,
+    slides: null as string[] | null,
   },
   {
     id: 9,
@@ -211,6 +232,7 @@ Free guide for new UAE freelancers at the link in bio.
 
 #DubaiFreelancer #FreelanceUAE #NewFreelancer #UAE #Dubai #Freelancing`,
     viral: true,
+    slides: null as string[] | null,
   },
   {
     id: 10,
@@ -300,6 +322,33 @@ The deposit creates shared commitment.
 If a client refuses a deposit — that tells you something important.
 
 #FreelanceUAE #DubaiFreelancer #ClientWork #GetPaid #UAE`,
+  },
+];
+
+const strategyPoints = [
+  {
+    title: "Reels first",
+    desc: "Instagram pushes Reels to non-followers. Do 1 Reel per day for the first 30 days.",
+  },
+  {
+    title: "Carousels for saves",
+    desc: "Saves are a strong ranking signal. Educational carousels (5-8 slides) get saved most.",
+  },
+  {
+    title: "CTA on every post",
+    desc: 'End every caption with "link in bio → solokit.cloud" or "save this for later."',
+  },
+  {
+    title: "Hashtags",
+    desc: "Use 5-8 per post. Mix: 2 large (#FreelanceUAE), 3 medium (#DubaiFreelancer), 3 small (#FreelanceToolsDubai).",
+  },
+  {
+    title: "Stories daily",
+    desc: "Post 3-5 stories per day — polls, questions, behind the scenes. Stories keep you in the algorithm.",
+  },
+  {
+    title: "Don't post and ghost",
+    desc: "Reply to every comment in the first hour — this signals engagement to the algorithm.",
   },
 ];
 
@@ -475,6 +524,22 @@ export default function InstagramPage() {
                 <p className="font-semibold text-gray-400 mb-0.5">Don&apos;t</p>
                 <p>Post and ghost. Reply to every comment in the first hour — this signals engagement to the algorithm.</p>
               </div>
+            ))}
+          </div>
+
+          {/* Strategy */}
+          <div className="bg-gradient-to-br from-gray-900 to-gray-800 text-white rounded-2xl p-8">
+            <h2 className="text-xl font-bold mb-6 flex items-center gap-2">
+              <span className="w-1 h-6 bg-emerald-500 rounded-full inline-block"></span>
+              Instagram Strategy
+            </h2>
+            <div className="space-y-4">
+              {strategyPoints.map(({ title, desc }) => (
+                <div key={title} className="border-l-2 border-emerald-500 pl-4">
+                  <p className="text-sm font-bold text-emerald-400 mb-1">{title}</p>
+                  <p className="text-sm text-gray-300 leading-relaxed">{desc}</p>
+                </div>
+              ))}
             </div>
             <div className="mt-6 pt-6 border-t border-white/10">
               <Link href="/blog" className="inline-block bg-emerald-500 hover:bg-emerald-400 text-white font-bold px-6 py-2.5 rounded-xl transition-colors text-sm">

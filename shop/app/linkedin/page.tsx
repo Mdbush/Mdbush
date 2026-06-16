@@ -8,6 +8,15 @@ export const metadata: Metadata = {
   robots: { index: false, follow: false },
 };
 
+const setupItems = [
+  { label: "Page name", value: "SoloKit" },
+  { label: "Tagline", value: "Notion templates, AI prompts & SOPs for UAE freelancers" },
+  { label: "Website", value: "solokit.cloud" },
+  { label: "Post frequency", value: "3-5× per week" },
+  { label: "Best times (UAE)", value: "7-9 AM, 12-1 PM, 6-8 PM" },
+  { label: "Industry", value: "Software / Professional Services" },
+];
+
 const posts = [
   {
     id: 1,
@@ -355,6 +364,37 @@ const profileOptimization = [
     field: "Experience",
     bad: "Freelance Designer — various clients",
     good: "Freelance UX Designer (self-employed) — 'Led product redesigns for 3 Dubai-based Series A startups. Key results: [specific metrics].'",
+  },
+];
+
+const strategyPoints = [
+  {
+    title: "Format mix",
+    desc: "40% story posts (personal experience), 40% educational (tips/data), 20% controversial opinions. This mix maximizes reach + trust.",
+  },
+  {
+    title: "Hook is everything",
+    desc: "The first line determines if anyone reads the rest. Test different hooks on the same content — different hooks on the same post can get 10× different reach.",
+  },
+  {
+    title: "End with a question",
+    desc: 'Every post ends with "What\'s your experience?" or a question. Comments signal relevance to the algorithm.',
+  },
+  {
+    title: "Post at 7-9 AM UAE",
+    desc: "This is when Dubai professionals are commuting or starting their day. Highest engagement window.",
+  },
+  {
+    title: "Reply to every comment in the first hour",
+    desc: "This dramatically boosts reach. Set a reminder when you post.",
+  },
+  {
+    title: "Personal account first",
+    desc: "Post from your personal LinkedIn, not the company page. Personal profiles get 3-5× more organic reach.",
+  },
+  {
+    title: "Don't add links in the post body",
+    desc: "LinkedIn suppresses external links. Put the link in the first comment instead.",
   },
 ];
 
