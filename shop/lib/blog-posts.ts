@@ -2429,6 +2429,33 @@ export const posts: BlogPost[] = [
     readTime: "7 min read",
     category: "Pricing & Rates",
   },
+  {
+    slug: "freelance-talent-acquisition-consultant-rates-uae",
+    title: "Freelance Talent Acquisition Consultant Rates in the UAE (2026)",
+    description:
+      "Real AED day rates for freelance talent acquisition consultants in Dubai and Abu Dhabi. Executive search, headhunting, RPO, tech hiring, and talent strategy fees for UAE companies in 2026.",
+    date: "June 16, 2026",
+    readTime: "7 min read",
+    category: "Pricing & Rates",
+  },
+  {
+    slug: "how-to-negotiate-equity-compensation-uae",
+    title: "How UAE Freelancers Negotiate Equity Compensation (2026 Guide)",
+    description:
+      "How UAE freelancers evaluate and negotiate equity compensation — options vs shares, ESOP structures, UAE free zone equity, vesting schedules, valuation, and when equity is worth accepting alongside or instead of fees.",
+    date: "June 16, 2026",
+    readTime: "7 min read",
+    category: "Pricing & Rates",
+  },
+  {
+    slug: "freelance-landscape-architect-rates-uae",
+    title: "Freelance Landscape Architect Rates in the UAE (2026)",
+    description:
+      "Real AED day rates and project fees for freelance landscape architects in Dubai and Abu Dhabi. Residential gardens, public realm design, urban greening, masterplan landscapes, and sustainable landscape consulting fees for UAE projects in 2026.",
+    date: "June 16, 2026",
+    readTime: "7 min read",
+    category: "Pricing & Rates",
+  },
 ];
 
 export function getPost(slug: string): BlogPost | undefined {

@@ -281,6 +281,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "freelance-hospitality-consultant-rates-uae",
     "how-to-set-up-whatsapp-business-uae",
     "freelance-education-consultant-rates-uae",
+    "freelance-talent-acquisition-consultant-rates-uae",
+    "how-to-negotiate-equity-compensation-uae",
+    "freelance-landscape-architect-rates-uae",
   ].map((slug) => ({
     url: `${base}/blog/${slug}`,
     lastModified: new Date(),
