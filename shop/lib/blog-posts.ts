@@ -3095,6 +3095,42 @@ export const posts: BlogPost[] = [
     readTime: "8 min read",
     category: "Getting Clients",
   },
+  {
+    slug: "freelance-ecommerce-consultant-rates-uae",
+    title: "Freelance Ecommerce Consultant Rates in the UAE (2026): What to Charge",
+    description:
+      "Real AED rates for freelance ecommerce consultants in Dubai and Abu Dhabi. Amazon.ae, Noon, Shopify, marketplace strategy, D2C launch consulting, and GCC expansion fees for 2026.",
+    date: "June 16, 2026",
+    readTime: "7 min read",
+    category: "Pricing & Rates",
+  },
+  {
+    slug: "how-to-set-up-freelance-business-uae",
+    title: "How to Set Up a Freelance Business in the UAE (2026): Complete Guide",
+    description:
+      "Step-by-step guide to setting up a legal freelance business in the UAE — free zone permit vs mainland licence, costs, banking, tax registration, and invoicing setup for Dubai and Abu Dhabi.",
+    date: "June 16, 2026",
+    readTime: "10 min read",
+    category: "Getting Started",
+  },
+  {
+    slug: "freelance-risk-manager-rates-uae",
+    title: "Freelance Risk Manager Rates in the UAE (2026): What to Charge",
+    description:
+      "Real AED rates for freelance risk managers and ERM consultants in Dubai and Abu Dhabi — hourly, retainer, and project benchmarks for financial risk, operational risk, cybersecurity risk, and board advisory in 2026.",
+    date: "June 16, 2026",
+    readTime: "9 min read",
+    category: "Pricing & Rates",
+  },
+  {
+    slug: "how-to-build-passive-income-uae",
+    title: "How to Build Passive Income as a UAE Freelancer (2026): 5 Real Streams",
+    description:
+      "5 realistic passive income streams for UAE-based freelancers — digital products, online courses, affiliate income, licensing your expertise, and productized services. AED income ranges and time-to-build estimates.",
+    date: "June 16, 2026",
+    readTime: "10 min read",
+    category: "Business & Mindset",
+  },
 ];
 
 export function getPost(slug: string): BlogPost | undefined {

@@ -188,7 +188,7 @@ export default function FreelanceSustainabilityConsultantRatesUAE() {
                 often land multi-year retainers with developers like Emaar, Aldar, and DAMAC.
               </p>
             </div>
-            <div className="border border-gray-200 Romans rounded-lg p-5">
+            <div className="border border-gray-200 rounded-lg p-5">
               <h3 className="font-semibold text-gray-900 mb-2">Oil & Gas Transition (Scope 3)</h3>
               <p className="text-gray-600 text-sm">
                 ADNOC, the UAE&apos;s national oil company, has committed to 25% renewable energy use and methane
