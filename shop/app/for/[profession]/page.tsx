@@ -72,10 +72,12 @@ const professions: Record<string, ProfessionData> = {
       },
     ],
     relatedGuides: [
+      { slug: "freelance-designer-rates-uae", title: "Freelance Designer Rates in the UAE (2026): What to Charge", time: "8 min" },
       { slug: "freelance-proposal-tips-uae", title: "How to Write a Freelance Proposal That Wins Clients", time: "7 min" },
       { slug: "freelance-rate-calculator-uae", title: "Freelance Rate Calculator: How Much Should You Charge?", time: "8 min" },
       { slug: "how-to-build-freelance-portfolio-uae", title: "How to Build a Freelance Portfolio in the UAE", time: "7 min" },
       { slug: "client-onboarding-freelance-uae", title: "Client Onboarding Process for UAE Freelancers", time: "6 min" },
+      { slug: "client-communication-tips-freelancers-uae", title: "Client Communication for UAE Freelancers: Scripts That Work", time: "8 min" },
     ],
     testimonial: {
       quote: "Saved me at least 4 hours a week chasing invoices. I can see everything in one place now — clients, projects, what's been paid and what hasn't.",
@@ -131,6 +133,7 @@ const professions: Record<string, ProfessionData> = {
       },
     ],
     relatedGuides: [
+      { slug: "freelance-developer-rates-uae", title: "Freelance Developer Rates in the UAE (2026): How Much to Charge", time: "8 min" },
       { slug: "freelance-rate-calculator-uae", title: "Freelance Rate Calculator: How Much Should You Charge?", time: "8 min" },
       { slug: "freelance-contract-template-uae", title: "Freelance Contract: 9 Clauses You Must Include", time: "9 min" },
       { slug: "how-to-negotiate-freelance-rates-uae", title: "How to Negotiate Rates Without Losing the Client", time: "6 min" },
@@ -190,6 +193,7 @@ const professions: Record<string, ProfessionData> = {
       },
     ],
     relatedGuides: [
+      { slug: "freelance-marketing-rates-uae", title: "Freelance Marketing Consultant Rates in the UAE (2026)", time: "7 min" },
       { slug: "ai-prompts-for-freelancers", title: "How to Use AI to Do More Freelance Work in Less Time", time: "7 min" },
       { slug: "how-to-get-clients-linkedin-uae", title: "How to Get Clients on LinkedIn in the UAE", time: "7 min" },
       { slug: "freelance-proposal-template-uae", title: "Freelance Proposal Template UAE: Copy-Paste Structure", time: "6 min" },
@@ -249,10 +253,11 @@ const professions: Record<string, ProfessionData> = {
       },
     ],
     relatedGuides: [
+      { slug: "freelance-consultant-rates-uae", title: "Freelance Consultant Rates in the UAE (2026): What to Charge", time: "8 min" },
+      { slug: "freelance-project-manager-rates-uae", title: "Freelance Project Manager Rates in the UAE (2026)", time: "7 min" },
       { slug: "freelance-contract-template-uae", title: "Freelance Contract: 9 Clauses You Must Include", time: "9 min" },
       { slug: "how-to-raise-rates-existing-clients-uae", title: "How to Raise Your Rates With Existing Clients", time: "7 min" },
       { slug: "client-onboarding-freelance-uae", title: "Client Onboarding Process for UAE Freelancers", time: "6 min" },
-      { slug: "freelance-rate-calculator-uae", title: "Freelance Rate Calculator: How Much Should You Charge?", time: "8 min" },
     ],
     testimonial: {
       quote: "Replaced 5 different apps I was using. Everything I need for my consulting business is now in one Notion workspace — goals, clients, revenue, tasks.",
@@ -309,6 +314,7 @@ const professions: Record<string, ProfessionData> = {
     ],
     relatedGuides: [
       { slug: "how-to-price-freelance-services-uae", title: "How to Price Your Freelance Services in the UAE", time: "6 min" },
+      { slug: "personal-brand-freelancer-uae", title: "How to Build a Personal Brand as a UAE Freelancer", time: "8 min" },
       { slug: "get-freelance-clients-uae", title: "How to Get Freelance Clients in the UAE", time: "7 min" },
       { slug: "freelance-passive-income-uae", title: "How UAE Freelancers Build Passive Income", time: "8 min" },
       { slug: "how-to-get-clients-linkedin-uae", title: "How to Get Clients on LinkedIn in the UAE", time: "7 min" },
