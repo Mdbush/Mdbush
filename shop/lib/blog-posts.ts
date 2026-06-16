@@ -809,6 +809,33 @@ export const posts: BlogPost[] = [
     readTime: "7 min read",
     category: "Pricing & Rates",
   },
+  {
+    slug: "freelance-trainer-rates-uae",
+    title: "Freelance Trainer & Coach Rates in the UAE (2026): What to Charge",
+    description:
+      "Real AED rates for freelance corporate trainers, life coaches, and executive coaches in Dubai and Abu Dhabi — per-session, per-day, and program pricing for 2026.",
+    date: "June 16, 2026",
+    readTime: "7 min read",
+    category: "Pricing & Rates",
+  },
+  {
+    slug: "how-to-use-ai-write-proposals-uae",
+    title: "How to Use AI to Write Freelance Proposals That Win UAE Clients",
+    description:
+      "How UAE freelancers use ChatGPT, Claude, and AI tools to write winning proposals in 20 minutes — prompts, templates, and the parts you must still write yourself.",
+    date: "June 16, 2026",
+    readTime: "7 min read",
+    category: "AI Tools",
+  },
+  {
+    slug: "freelance-translator-rates-uae",
+    title: "Freelance Translator & Interpreter Rates in the UAE (2026): What to Charge",
+    description:
+      "Real AED rates for freelance translators and interpreters in Dubai and Abu Dhabi — per-word, per-page, per-hour, and per-day rates for Arabic-English, legal, medical, and technical translation in 2026.",
+    date: "June 16, 2026",
+    readTime: "7 min read",
+    category: "Pricing & Rates",
+  },
 ];
 
 export function getPost(slug: string): BlogPost | undefined {
