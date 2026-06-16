@@ -1997,6 +1997,33 @@ export const posts: BlogPost[] = [
     readTime: "7 min read",
     category: "Pricing & Rates",
   },
+  {
+    slug: "freelance-influencer-marketing-rates-uae",
+    title: "Freelance Influencer Marketing Consultant Rates in the UAE (2026)",
+    description:
+      "Real AED rates for freelance influencer marketing consultants in Dubai and Abu Dhabi. Influencer strategy, campaign management, creator sourcing, UGC content, and influencer marketing retainer fees for UAE brands in 2026.",
+    date: "June 16, 2026",
+    readTime: "7 min read",
+    category: "Pricing & Rates",
+  },
+  {
+    slug: "how-to-subcontract-freelance-work-uae",
+    title: "How to Subcontract Freelance Work in the UAE (2026 Guide)",
+    description:
+      "How UAE freelancers build a subcontracting network to take on larger projects, handle overflow, and scale without going agency. Finding subcontractors, setting rates, contracts, quality control, and client communication.",
+    date: "June 16, 2026",
+    readTime: "7 min read",
+    category: "Business & Mindset",
+  },
+  {
+    slug: "freelance-agile-coach-rates-uae",
+    title: "Freelance Agile Coach Rates in the UAE (2026): Agile Transformation & SAFe Fees",
+    description:
+      "Real AED day rates for freelance Agile coaches in Dubai and Abu Dhabi. Agile transformation, SAFe implementation, team coaching, PI Planning facilitation, OKR coaching, and enterprise agility consulting fees for 2026.",
+    date: "June 16, 2026",
+    readTime: "7 min read",
+    category: "Pricing & Rates",
+  },
 ];
 
 export function getPost(slug: string): BlogPost | undefined {

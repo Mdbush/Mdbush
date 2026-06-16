@@ -19,7 +19,7 @@ export default function NotFound() {
           {[
             { href: "/#products", label: "Browse all products", desc: "Notion templates, AI prompts, SOPs", emoji: "🛍️" },
             { href: "/free", label: "10 free AI prompts", desc: "No email required", emoji: "🎁" },
-            { href: "/blog", label: "Free guides", desc: "225 articles for UAE freelancers", emoji: "📚" },
+            { href: "/blog", label: "Free guides", desc: "228 articles for UAE freelancers", emoji: "📚" },
             { href: "/start", label: "Product quiz", desc: "Find what's right for you in 30 sec", emoji: "🎯" },
           ].map((item) => (
             <Link
