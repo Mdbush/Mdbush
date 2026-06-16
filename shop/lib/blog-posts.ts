@@ -1187,6 +1187,33 @@ export const posts: BlogPost[] = [
     readTime: "7 min read",
     category: "Pricing & Rates",
   },
+  {
+    slug: "freelance-life-coach-rates-uae",
+    title: "Life Coach & Executive Coach Rates in the UAE (2026): What to Charge",
+    description:
+      "Real AED rates for life coaches and executive coaches in Dubai and Abu Dhabi — per session, monthly packages, group coaching, corporate leadership programs, and ICF-certified coach pricing for 2026.",
+    date: "June 16, 2026",
+    readTime: "7 min read",
+    category: "Pricing & Rates",
+  },
+  {
+    slug: "how-to-build-freelance-waitlist-uae",
+    title: "How to Build a Waitlist as a UAE Freelancer (Be Booked Out in Advance)",
+    description:
+      "How UAE freelancers build a client waitlist and move from feast-or-famine to consistently booked 4–8 weeks in advance — positioning, visibility, demand signals, and how to use scarcity to raise rates.",
+    date: "June 16, 2026",
+    readTime: "7 min read",
+    category: "Getting Clients",
+  },
+  {
+    slug: "freelance-music-producer-rates-uae",
+    title: "Freelance Music Producer Rates in the UAE (2026): What to Charge",
+    description:
+      "Real AED rates for freelance music producers in Dubai and Abu Dhabi — beat production, full song production, advertising jingles, brand sonic identity, Arabic music production, and film scoring rates for 2026.",
+    date: "June 16, 2026",
+    readTime: "7 min read",
+    category: "Pricing & Rates",
+  },
 ];
 
 export function getPost(slug: string): BlogPost | undefined {
