@@ -3068,6 +3068,33 @@ export const posts: BlogPost[] = [
     readTime: "7 min read",
     category: "Pricing & Rates",
   },
+  {
+    slug: "freelance-bookkeeper-rates-uae",
+    title: "Freelance Bookkeeper Rates in the UAE (2026): What to Charge",
+    description:
+      "Real AED rates for freelance bookkeepers in Dubai and Abu Dhabi. Monthly bookkeeping, VAT filing, payroll, and accounts preparation fees for UAE SMEs and startups in 2026.",
+    date: "June 16, 2026",
+    readTime: "7 min read",
+    category: "Pricing & Rates",
+  },
+  {
+    slug: "how-to-find-first-freelance-client-uae",
+    title: "How to Find Your First Freelance Client in the UAE (2026 Guide)",
+    description:
+      "Practical steps to land your first UAE freelance client — warm outreach, LinkedIn, Dubai networking events, paid discovery calls, and the fastest paths to a first paid project.",
+    date: "June 16, 2026",
+    readTime: "8 min read",
+    category: "Getting Clients",
+  },
+  {
+    slug: "how-to-write-freelance-proposal-uae",
+    title: "How to Write a Freelance Proposal That Wins in the UAE (2026 Guide)",
+    description:
+      "How UAE freelancers write proposals that get accepted — 7-section structure, pricing presentation, scope definition, and the exact sections that win projects in Dubai and Abu Dhabi.",
+    date: "June 16, 2026",
+    readTime: "8 min read",
+    category: "Getting Clients",
+  },
 ];
 
 export function getPost(slug: string): BlogPost | undefined {

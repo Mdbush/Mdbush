@@ -353,6 +353,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "how-to-get-freelance-clients-without-portfolio-uae",
     "how-to-handle-late-payments-uae",
     "freelance-audiologist-rates-uae",
+    "freelance-bookkeeper-rates-uae",
+    "how-to-find-first-freelance-client-uae",
+    "how-to-write-freelance-proposal-uae",
   ].map((slug) => ({
     url: `${base}/blog/${slug}`,
     lastModified: new Date(),
