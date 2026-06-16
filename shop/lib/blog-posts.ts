@@ -3059,6 +3059,15 @@ export const posts: BlogPost[] = [
     readTime: "8 min read",
     category: "Contracts & Legal",
   },
+  {
+    slug: "freelance-audiologist-rates-uae",
+    title: "Freelance Audiologist Rates in the UAE (2026): What to Charge",
+    description:
+      "Real AED rates for freelance and locum audiologists in Dubai and Abu Dhabi. Diagnostic audiology, hearing aid fitting, paediatric audiology, and industrial audiometry fees for 2026.",
+    date: "June 16, 2026",
+    readTime: "7 min read",
+    category: "Pricing & Rates",
+  },
 ];
 
 export function getPost(slug: string): BlogPost | undefined {

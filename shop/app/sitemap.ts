@@ -352,6 +352,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "freelance-medical-laboratory-scientist-rates-uae",
     "how-to-get-freelance-clients-without-portfolio-uae",
     "how-to-handle-late-payments-uae",
+    "freelance-audiologist-rates-uae",
   ].map((slug) => ({
     url: `${base}/blog/${slug}`,
     lastModified: new Date(),
