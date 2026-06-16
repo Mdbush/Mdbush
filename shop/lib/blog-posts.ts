@@ -1350,6 +1350,33 @@ export const posts: BlogPost[] = [
     category: "Pricing & Rates",
   },
   {
+    slug: "freelance-product-manager-rates-uae",
+    title: "Freelance Product Manager Rates in the UAE (2026): What to Charge",
+    description:
+      "Real AED rates for freelance product managers in Dubai and Abu Dhabi — product discovery, roadmap development, MVP scoping, agile coaching, fractional CPO retainers, and product strategy consulting rates for 2026.",
+    date: "June 16, 2026",
+    readTime: "7 min read",
+    category: "Pricing & Rates",
+  },
+  {
+    slug: "how-to-use-fiverr-uae",
+    title: "How to Use Fiverr as a UAE Freelancer (2026 Guide): Getting Clients",
+    description:
+      "A practical guide to using Fiverr from the UAE in 2026 — gig optimization that ranks, pricing strategy, buyer requests, UAE-specific payment options, handling international clients, and how to grow from Fiverr to direct retainers.",
+    date: "June 16, 2026",
+    readTime: "8 min read",
+    category: "Getting Clients",
+  },
+  {
+    slug: "freelance-ai-engineer-rates-uae",
+    title: "Freelance AI Engineer Rates in the UAE (2026): What to Charge",
+    description:
+      "Real AED rates for freelance AI engineers in Dubai and Abu Dhabi — LLM fine-tuning, AI product integration, machine learning models, computer vision, NLP systems, AI strategy consulting, and MLOps setup rates for 2026.",
+    date: "June 16, 2026",
+    readTime: "7 min read",
+    category: "Pricing & Rates",
+  },
+  {
     slug: "freelance-cybersecurity-rates-uae",
     title: "Freelance Cybersecurity Consultant Rates in the UAE (2026): What to Charge",
     description:
