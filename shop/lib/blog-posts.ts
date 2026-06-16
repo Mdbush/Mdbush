@@ -2672,6 +2672,33 @@ export const posts: BlogPost[] = [
     readTime: "7 min read",
     category: "Pricing & Rates",
   },
+  {
+    slug: "freelance-personal-trainer-rates-uae",
+    title: "Freelance Personal Trainer Rates in the UAE (2026)",
+    description:
+      "Real AED rates for freelance personal trainers in Dubai and Abu Dhabi. 1-on-1 PT sessions, group fitness, home training, online coaching packages, corporate wellness programs, and transformation package fees for 2026.",
+    date: "June 16, 2026",
+    readTime: "7 min read",
+    category: "Pricing & Rates",
+  },
+  {
+    slug: "freelance-mechanical-engineer-rates-uae",
+    title: "Freelance Mechanical Engineer Rates in the UAE (2026)",
+    description:
+      "Real AED day rates for freelance mechanical engineers in Dubai and Abu Dhabi. HVAC design, MEP consulting, oil and gas process engineering, rotating equipment, manufacturing advisory, and facilities mechanical engineering fees for 2026.",
+    date: "June 16, 2026",
+    readTime: "7 min read",
+    category: "Pricing & Rates",
+  },
+  {
+    slug: "freelance-quantity-surveyor-rates-uae",
+    title: "Freelance Quantity Surveyor Rates in the UAE (2026)",
+    description:
+      "Real AED day rates for freelance quantity surveyors in Dubai and Abu Dhabi. Cost planning, bills of quantities, tender management, contract administration (FIDIC, NEC), construction claims advisory, and project cost management fees for 2026.",
+    date: "June 16, 2026",
+    readTime: "7 min read",
+    category: "Pricing & Rates",
+  },
 ];
 
 export function getPost(slug: string): BlogPost | undefined {
