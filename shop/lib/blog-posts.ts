@@ -1619,6 +1619,33 @@ export const posts: BlogPost[] = [
     readTime: "8 min read",
     category: "Pricing & Rates",
   },
+  {
+    slug: "freelance-risk-management-consultant-rates-uae",
+    title: "Freelance Risk Management Consultant Rates in the UAE (2026): ERM & Risk Advisory Fees",
+    description:
+      "Real AED day rates for freelance risk management consultants in Dubai and Abu Dhabi. Enterprise risk management (ERM), operational risk, credit and market risk, business continuity (BCM), risk appetite frameworks, and ISO 31000 implementation rates.",
+    date: "June 16, 2026",
+    readTime: "7 min read",
+    category: "Pricing & Rates",
+  },
+  {
+    slug: "how-to-manage-freelance-finances-uae",
+    title: "How to Manage Your Finances as a UAE Freelancer (2026): AED Budgeting & Cash Flow Guide",
+    description:
+      "Practical financial management guide for UAE freelancers. How to budget irregular AED income, build a 3–6 month emergency fund, provision for UAE Corporate Tax, separate business and personal accounts, and manage cash flow through slow periods.",
+    date: "June 16, 2026",
+    readTime: "9 min read",
+    category: "Tax & Finance",
+  },
+  {
+    slug: "freelance-qa-engineer-rates-uae",
+    title: "Freelance QA Engineer Rates in the UAE (2026): Software Testing & Automation Fees",
+    description:
+      "Real AED day rates for freelance QA engineers and software testers in Dubai and Abu Dhabi. Manual testing, test automation (Selenium, Cypress, Playwright), API testing (Postman), performance testing (JMeter / k6), mobile testing (Appium), and QA lead rates.",
+    date: "June 16, 2026",
+    readTime: "7 min read",
+    category: "Pricing & Rates",
+  },
 ];
 
 export function getPost(slug: string): BlogPost | undefined {
