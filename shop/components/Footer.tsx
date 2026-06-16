@@ -19,6 +19,7 @@ export default function Footer() {
             <div className="space-y-2 text-sm text-gray-500">
               <Link href="/free" className="block hover:text-gray-900 transition-colors">Free Prompts</Link>
               <Link href="/blog" className="block hover:text-gray-900 transition-colors">Blog (34 guides)</Link>
+              <Link href="/guides" className="block hover:text-gray-900 transition-colors">All Guides</Link>
               <Link href="/start" className="block hover:text-gray-900 transition-colors">Product Quiz</Link>
               <Link href="/bundle" className="block hover:text-gray-900 transition-colors">Complete Bundle</Link>
               <Link href="/affiliates" className="block hover:text-gray-900 transition-colors">Affiliates</Link>
