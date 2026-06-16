@@ -38,40 +38,69 @@ const rateTable = [
   { spec: "Food Photography", hourly: "AED 450–800", halfDay: "AED 2,000–3,500", fullDay: "AED 4,000–7,000", notes: "Often priced per dish or per scene" },
 ];
 
+const statsData = [
+  { value: "AED 350–600/hr", label: "Entry Rate" },
+  { value: "AED 3,000–5,500", label: "Full Day (Real Estate)" },
+  { value: "AED 6,000–12,000", label: "Full Day (Fashion)" },
+];
+
+const rateTableRows = [
+  { type: "Corporate / Headshots — Full Day", notes: "C-suite portraits, team photos, LinkedIn content", rate: "AED 3,500–6,000" },
+  { type: "Commercial / Product — Full Day", notes: "E-commerce, advertising, brand assets", rate: "AED 5,000–9,000" },
+  { type: "Real Estate — Full Day", notes: "Per-property rates: AED 800–2,000", rate: "AED 3,000–5,500" },
+  { type: "Events — Full Day", notes: "Weddings: AED 8,000–25,000 packages", rate: "AED 3,500–7,000" },
+  { type: "Fashion / Editorial — Full Day", notes: "Usage rights significantly affect pricing", rate: "AED 6,000–12,000" },
+  { type: "Food Photography — Full Day", notes: "Often priced per dish or per scene", rate: "AED 4,000–7,000" },
+];
+
 export default function FreelancePhotographerRatesUAE() {
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
       <Header />
 
-      <main className="flex-1 max-w-2xl mx-auto px-4 sm:px-6 py-12">
+      <main className="min-h-screen bg-white">
+        <div className="max-w-3xl mx-auto px-4 py-10">
 
-        <nav className="text-xs text-gray-400 mb-6 flex gap-2 flex-wrap">
-          <Link href="/" className="hover:text-gray-600">Home</Link>
-          <span>›</span>
-          <Link href="/blog" className="hover:text-gray-600">Blog</Link>
-          <span>›</span>
-          <span className="text-gray-600">Freelance Photographer Rates UAE</span>
-        </nav>
+          {/* Breadcrumb */}
+          <nav className="text-xs text-gray-400 mb-6 flex gap-2 flex-wrap">
+            <Link href="/" className="hover:text-gray-600">Home</Link>
+            <span>›</span>
+            <Link href="/blog" className="hover:text-gray-600">Blog</Link>
+            <span>›</span>
+            <span className="text-gray-600">Freelance Photographer Rates UAE</span>
+          </nav>
 
-        <header className="mb-8">
-          <span className="text-xs font-semibold text-gray-400 uppercase tracking-widest">Pricing & Rates</span>
-          <h1 className="text-3xl font-bold text-gray-900 mt-2 mb-3 leading-tight">
-            Freelance Photographer Rates in the UAE (2026): What to Charge
-          </h1>
-          <p className="text-gray-500 text-sm">7 min read</p>
-        </header>
+          {/* Hero */}
+          <div className="bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 text-white px-6 py-10 rounded-2xl mb-8">
+            <span className="text-xs font-bold text-emerald-400 uppercase tracking-widest mb-3 block">Pricing &amp; Rates</span>
+            <h1 className="text-3xl sm:text-4xl font-bold leading-tight mb-4">Freelance Photographer Rates in the UAE (2026): What to Charge</h1>
+            <p className="text-gray-300 text-sm mb-5 leading-relaxed max-w-xl">
+              Day rates, half-day rates, and per-image fees across commercial, portrait, real estate, events, and fashion photography in Dubai and Abu Dhabi.
+            </p>
+            <div className="flex flex-wrap gap-4 text-xs text-gray-400">
+              <span>June 16, 2026</span><span>·</span><span>7 min read</span>
+            </div>
+          </div>
 
-        <div className="prose prose-gray max-w-none text-gray-700 leading-relaxed space-y-6">
+          {/* Stats grid */}
+          <div className="grid grid-cols-3 gap-3 mb-8">
+            {statsData.map((s) => (
+              <div key={s.label} className="bg-gray-50 border border-gray-200 rounded-xl p-4 text-center">
+                <div className="text-lg font-bold text-gray-900">{s.value}</div>
+                <div className="text-xs text-gray-500 mt-1">{s.label}</div>
+              </div>
+            ))}
+          </div>
 
-          <p>
+          <p className="text-gray-700 text-sm leading-relaxed mb-4">
             Photography pricing in the UAE varies enormously by specialization, experience, and
             usage rights — and the market has distinct norms that differ from what you might find
             in photography pricing guides written for the US or UK. This guide covers what
             freelance photographers are actually charging in Dubai and Abu Dhabi in 2026.
           </p>
 
-          <div className="bg-amber-50 border border-amber-200 rounded-xl p-4 text-sm">
+          <div className="bg-amber-50 border border-amber-200 rounded-xl p-4 text-sm mb-8">
             <p className="font-semibold text-amber-900 mb-1">Rates are starting points</p>
             <p className="text-amber-800">
               Every shoot is different. Rates below reflect the market range, not what you should
@@ -80,158 +109,90 @@ export default function FreelancePhotographerRatesUAE() {
             </p>
           </div>
 
-          <section>
-            <h2 className="text-xl font-bold text-gray-900 mt-8 mb-4">UAE Photography Rates by Specialization (2026)</h2>
+          {/* Rate table */}
+          <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2">
+            <span className="w-1 h-6 bg-emerald-500 rounded-full inline-block"></span>UAE Photography Rates by Specialization (2026)
+          </h2>
 
-            <div className="overflow-x-auto -mx-4 sm:mx-0">
-              <table className="w-full text-sm border-collapse min-w-[600px]">
-                <thead>
-                  <tr className="bg-gray-50">
-                    <th className="text-left p-3 border border-gray-200 font-semibold text-gray-900">Specialization</th>
-                    <th className="text-left p-3 border border-gray-200 font-semibold text-gray-900">Hourly</th>
-                    <th className="text-left p-3 border border-gray-200 font-semibold text-gray-900">Half Day</th>
-                    <th className="text-left p-3 border border-gray-200 font-semibold text-gray-900">Full Day</th>
-                    <th className="text-left p-3 border border-gray-200 font-semibold text-gray-900">Notes</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  {rateTable.map((row, i) => (
-                    <tr key={i} className={i % 2 === 0 ? "bg-white" : "bg-gray-50"}>
-                      <td className="p-3 border border-gray-200 font-medium text-gray-900">{row.spec}</td>
-                      <td className="p-3 border border-gray-200 text-gray-700">{row.hourly}</td>
-                      <td className="p-3 border border-gray-200 text-gray-700">{row.halfDay}</td>
-                      <td className="p-3 border border-gray-200 text-gray-700">{row.fullDay}</td>
-                      <td className="p-3 border border-gray-200 text-gray-500 text-xs">{row.notes}</td>
-                    </tr>
-                  ))}
-                </tbody>
-              </table>
+          <div className="rounded-2xl border border-gray-200 overflow-hidden mb-8">
+            <div className="bg-gray-900 px-5 py-3"><h2 className="text-sm font-bold text-white">UAE Photography Rate Benchmarks 2026</h2></div>
+            <div className="divide-y divide-gray-100">
+              {rateTableRows.map((row, i) => (
+                <div key={i} className={`flex items-start justify-between gap-4 px-5 py-4 ${i % 2 === 0 ? "bg-white" : "bg-gray-50"}`}>
+                  <div className="flex-1">
+                    <p className="text-sm font-semibold text-gray-900">{row.type}</p>
+                    <p className="text-xs text-gray-500 mt-0.5">{row.notes}</p>
+                  </div>
+                  <span className="text-xs font-bold text-emerald-700 bg-emerald-50 border border-emerald-200 px-3 py-1 rounded-full whitespace-nowrap shrink-0">{row.rate}</span>
+                </div>
+              ))}
             </div>
-          </section>
-
-          <section>
-            <h2 className="text-xl font-bold text-gray-900 mt-8 mb-3">How to Structure Your Photography Pricing</h2>
-
-            <h3 className="text-base font-semibold text-gray-900 mt-4 mb-2">Day rate vs per-image rate</h3>
-            <p>
-              Most UAE commercial photographers prefer day rates over per-image fees. Day rates
-              give you predictable income and clients know exactly what they are paying upfront.
-              Per-image rates (common in real estate and product photography) can work well for
-              high-volume, low-complexity shoots where the client wants flexibility.
-            </p>
-
-            <h3 className="text-base font-semibold text-gray-900 mt-4 mb-2">Separating shoot fees from editing fees</h3>
-            <p>
-              Many photographers in the UAE quote shoot fees and post-processing fees separately.
-              This is transparent and lets the client see exactly where costs go. It also
-              prevents the common situation of clients asking for "just a few more edits" once
-              they see the invoice — because editing time is clearly priced upfront.
-            </p>
-            <p className="mt-3">
-              A common structure: shoot fee (day rate) + editing fee (AED 80–200 per finished image,
-              depending on complexity). For real estate: AED 800–1,500 for the shoot, then
-              AED 50–120 per edited image delivered.
-            </p>
-
-            <h3 className="text-base font-semibold text-gray-900 mt-4 mb-2">Usage rights: the biggest pricing variable</h3>
-            <p>
-              A corporate headshot for internal use is priced very differently from a product
-              shot that will appear in a full-page magazine ad or a billboard campaign. Always
-              discuss intended usage before quoting. Industry standard for advertising usage:
-            </p>
-            <ul className="space-y-1 text-sm text-gray-600 mt-3">
-              <li>• <strong>Internal/web only:</strong> Base rate applies</li>
-              <li>• <strong>Social media campaigns:</strong> +25–50% on base rate</li>
-              <li>• <strong>Print advertising (local):</strong> +50–100% on base rate</li>
-              <li>• <strong>Regional / GCC campaign:</strong> +100–200% on base rate</li>
-              <li>• <strong>International advertising:</strong> Negotiate separately, often 3–5× base</li>
-            </ul>
-          </section>
-
-          <section>
-            <h2 className="text-xl font-bold text-gray-900 mt-8 mb-3">What Clients in the UAE Expect to Pay</h2>
-            <p>
-              Dubai and Abu Dhabi have a high proportion of corporate clients with significant
-              marketing budgets. Premium brands, real estate developers, hospitality groups, and
-              government-related entities are accustomed to paying professional rates — and are
-              often skeptical of very low pricing, which signals inexperience.
-            </p>
-            <p className="mt-3">
-              Budget-conscious clients (smaller restaurants, startups, SMEs) exist too and
-              will push for lower rates. It is fine to have a tiered rate card, but avoid
-              dramatically underpricing yourself — the clients who want AED 200 full-day shoots
-              are rarely the clients who value your work or build long-term relationships.
-            </p>
-
-            <div className="bg-gray-50 border border-gray-200 rounded-xl p-4 my-4 text-sm">
-              <p className="font-semibold text-gray-900 mb-2">Budget signaling in the UAE</p>
-              <p className="text-gray-700">
-                A useful benchmark: if a client&apos;s brief includes luxury brands, premium hotels,
-                government entities, or large developers — budget for AED 3,000+ per day at minimum.
-                If the brief starts with &ldquo;we&apos;re a small startup&rdquo; — expect pressure below AED 1,500.
-                You can accept either, but price accordingly.
-              </p>
-            </div>
-          </section>
-
-          <section>
-            <h2 className="text-xl font-bold text-gray-900 mt-8 mb-3">What to Include in Your Photography Package</h2>
-            <p>Always specify in writing before a shoot commences:</p>
-            <ul className="space-y-1 text-sm text-gray-600 mt-3">
-              <li>• Shoot duration (hours or half/full day)</li>
-              <li>• Number of final edited images to be delivered</li>
-              <li>• Turnaround time for delivery</li>
-              <li>• File formats (JPEG, RAW, TIFF)</li>
-              <li>• Usage rights (web only, print, advertising, exclusivity)</li>
-              <li>• Travel — within Dubai vs Abu Dhabi vs other emirates (add AED 300–600 for out-of-emirate)</li>
-              <li>• Studio hire: confirm who pays (if using a studio)</li>
-              <li>• Reshoots: included or charged separately</li>
-            </ul>
-          </section>
-
-          <section>
-            <h2 className="text-xl font-bold text-gray-900 mt-8 mb-3">Should You Charge VAT?</h2>
-            <p>
-              If your total turnover exceeds AED 375,000 per year, you are required to register
-              for VAT and charge 5% on your services. Below that threshold, VAT is optional.
-              For professional credibility (and because most corporate clients want a VAT invoice),
-              registering early — even below the threshold — can be worth considering. See our
-              guide on <Link href="/blog/freelance-tax-uae" className="text-gray-900 underline">UAE freelance tax and VAT</Link> for full details.
-            </p>
-          </section>
-
-          <section>
-            <h2 className="text-xl font-bold text-gray-900 mt-8 mb-3">Raising Your Rates as a UAE Photographer</h2>
-            <p>
-              The fastest way to raise your rates is to specialize and build a portfolio that
-              proves it. A generalist photographer struggles to charge more than AED 2,500/day.
-              A photographer with a portfolio of 20 luxury hotel shoots can charge AED 6,000+
-              because their clients know exactly what they are getting.
-            </p>
-            <p className="mt-3">
-              Practical steps to justify higher rates: shoot personal projects in your target
-              niche, collaborate on test shoots with styling teams and models, add case studies
-              to your website that show business outcomes (not just pretty pictures), and build
-              relationships with creative directors and marketing managers in your niche.
-            </p>
-          </section>
-
-          {/* CTA */}
-          <div className="bg-gray-950 text-white rounded-2xl p-6 mt-10">
-            <p className="text-xs font-semibold text-gray-400 uppercase tracking-widest mb-2">Track every client and invoice</p>
-            <h3 className="text-lg font-bold mb-2">The Freelancer Client CRM keeps your photography business organized</h3>
-            <p className="text-gray-400 text-sm mb-4">
-              Never lose a lead or forget to follow up. Track clients, shoot bookings, invoices,
-              and follow-ups in one Notion workspace — set up in 20 minutes.
-            </p>
-            <Link
-              href="/products/freelancer-client-crm"
-              className="inline-block bg-white text-gray-900 font-bold px-5 py-2.5 rounded-xl hover:bg-gray-100 transition-colors text-sm"
-            >
-              See the Client CRM →
-            </Link>
           </div>
 
+          <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2">
+            <span className="w-1 h-6 bg-emerald-500 rounded-full inline-block"></span>How to Structure Your Photography Pricing
+          </h2>
+
+          <ul className="space-y-3 mb-8">
+            <li className="flex gap-3 text-sm text-gray-700">
+              <span className="text-emerald-500 font-bold mt-0.5 shrink-0">→</span>
+              <span><strong className="text-gray-900">Day rate vs per-image rate:</strong> Most UAE commercial photographers prefer day rates over per-image fees. Day rates give predictable income and clients know exactly what they are paying upfront. Per-image rates work well for high-volume, low-complexity shoots.</span>
+            </li>
+            <li className="flex gap-3 text-sm text-gray-700">
+              <span className="text-emerald-500 font-bold mt-0.5 shrink-0">→</span>
+              <span><strong className="text-gray-900">Separating shoot fees from editing fees:</strong> Many photographers quote shoot fees and post-processing fees separately. A common structure: shoot fee (day rate) + editing fee (AED 80–200 per finished image). For real estate: AED 800–1,500 for the shoot, then AED 50–120 per edited image delivered.</span>
+            </li>
+            <li className="flex gap-3 text-sm text-gray-700">
+              <span className="text-emerald-500 font-bold mt-0.5 shrink-0">→</span>
+              <span><strong className="text-gray-900">Usage rights: the biggest pricing variable:</strong> A corporate headshot for internal use is priced very differently from a product shot for a billboard campaign. Always discuss intended usage before quoting. Regional/GCC campaigns add +100–200% on base rate; international advertising can be 3–5×.</span>
+            </li>
+          </ul>
+
+          <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2">
+            <span className="w-1 h-6 bg-emerald-500 rounded-full inline-block"></span>What to Include in Your Photography Package
+          </h2>
+
+          <ul className="space-y-3 mb-8">
+            {[
+              "Shoot duration (hours or half/full day)",
+              "Number of final edited images to be delivered",
+              "Turnaround time for delivery",
+              "File formats (JPEG, RAW, TIFF)",
+              "Usage rights (web only, print, advertising, exclusivity)",
+              "Travel — within Dubai vs Abu Dhabi vs other emirates (add AED 300–600 for out-of-emirate)",
+              "Studio hire: confirm who pays (if using a studio)",
+              "Reshoots: included or charged separately",
+            ].map((item, i) => (
+              <li key={i} className="flex gap-3 text-sm text-gray-700">
+                <span className="text-emerald-500 font-bold mt-0.5 shrink-0">→</span>
+                <span>{item}</span>
+              </li>
+            ))}
+          </ul>
+
+          <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2">
+            <span className="w-1 h-6 bg-emerald-500 rounded-full inline-block"></span>Raising Your Rates as a UAE Photographer
+          </h2>
+
+          <p className="text-sm text-gray-700 leading-relaxed mb-4">
+            The fastest way to raise your rates is to specialize and build a portfolio that
+            proves it. A generalist photographer struggles to charge more than AED 2,500/day.
+            A photographer with a portfolio of 20 luxury hotel shoots can charge AED 6,000+
+            because their clients know exactly what they are getting.
+          </p>
+          <p className="text-sm text-gray-700 leading-relaxed mb-8">
+            Practical steps: shoot personal projects in your target niche, collaborate on test shoots with styling teams, add case studies to your website that show business outcomes (not just pretty pictures), and build relationships with creative directors and marketing managers in your niche.
+          </p>
+
+          {/* CTA */}
+          <div className="bg-gradient-to-br from-gray-900 to-gray-800 text-white rounded-2xl p-8 mt-12 text-center">
+            <span className="text-xs font-bold text-emerald-400 uppercase tracking-widest block mb-3">SoloKit</span>
+            <h3 className="text-2xl font-bold mb-3">Run Your UAE Freelance Business Like a Pro</h3>
+            <p className="text-gray-400 text-sm mb-6 max-w-sm mx-auto">Templates, SOPs, and systems built for UAE freelancers.</p>
+            <Link href="/products/solokit-freelance-os" className="inline-block bg-emerald-500 hover:bg-emerald-400 text-white font-bold px-8 py-3 rounded-xl transition-colors text-sm">Get SoloKit →</Link>
+          </div>
+
+          {/* Related */}
           <div className="border border-gray-200 rounded-2xl p-5 mt-6">
             <p className="text-xs font-semibold text-gray-400 uppercase tracking-widest mb-3">Related guides</p>
             <div className="space-y-2">
@@ -247,6 +208,7 @@ export default function FreelancePhotographerRatesUAE() {
               ))}
             </div>
           </div>
+
         </div>
       </main>
 
