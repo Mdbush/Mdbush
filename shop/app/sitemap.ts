@@ -69,6 +69,11 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${base}/bundle`, lastModified: new Date(), changeFrequency: "monthly", priority: 0.7 },
     { url: `${base}/guides`, lastModified: new Date(), changeFrequency: "weekly", priority: 0.8 },
     { url: `${base}/faq`, lastModified: new Date(), changeFrequency: "monthly", priority: 0.6 },
+    { url: `${base}/for/designers`, lastModified: new Date(), changeFrequency: "monthly", priority: 0.7 },
+    { url: `${base}/for/developers`, lastModified: new Date(), changeFrequency: "monthly", priority: 0.7 },
+    { url: `${base}/for/marketers`, lastModified: new Date(), changeFrequency: "monthly", priority: 0.7 },
+    { url: `${base}/for/consultants`, lastModified: new Date(), changeFrequency: "monthly", priority: 0.7 },
+    { url: `${base}/for/coaches`, lastModified: new Date(), changeFrequency: "monthly", priority: 0.7 },
     ...productUrls,
     ...blogUrls,
   ];
