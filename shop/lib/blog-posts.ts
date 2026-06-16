@@ -1943,6 +1943,33 @@ export const posts: BlogPost[] = [
     readTime: "7 min read",
     category: "Pricing & Rates",
   },
+  {
+    slug: "freelance-ux-researcher-rates-uae",
+    title: "Freelance UX Researcher Rates in the UAE (2026): User Research & Usability Fees",
+    description:
+      "Real AED day rates for freelance UX researchers in Dubai and Abu Dhabi. User interviews, usability testing, survey research, Arabic user research, and UX strategy consulting fees for 2026.",
+    date: "June 16, 2026",
+    readTime: "7 min read",
+    category: "Pricing & Rates",
+  },
+  {
+    slug: "freelance-no-code-developer-rates-uae",
+    title: "Freelance No-Code Developer Rates in the UAE (2026): Webflow, Bubble & Builder Fees",
+    description:
+      "Real AED day rates for freelance no-code developers in Dubai and Abu Dhabi. Webflow, Bubble, Glide, Softr, Adalo, and no-code application development fees for UAE businesses in 2026.",
+    date: "June 16, 2026",
+    readTime: "7 min read",
+    category: "Pricing & Rates",
+  },
+  {
+    slug: "how-to-handle-payment-disputes-uae",
+    title: "How to Handle Payment Disputes as a Freelancer in the UAE (2026 Guide)",
+    description:
+      "What to do when UAE clients don't pay. Legal options in Dubai and Abu Dhabi — small claims court, DIFC Courts, free zone dispute resolution, demand letters, and how to recover unpaid freelance invoices.",
+    date: "June 16, 2026",
+    readTime: "7 min read",
+    category: "Client Work & Proposals",
+  },
 ];
 
 export function getPost(slug: string): BlogPost | undefined {
