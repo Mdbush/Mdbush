@@ -18,7 +18,7 @@ export default function Footer() {
             <p className="text-xs font-semibold text-gray-900 uppercase tracking-widest mb-3">Resources</p>
             <div className="space-y-2 text-sm text-gray-500">
               <Link href="/free" className="block hover:text-gray-900 transition-colors">Free Prompts</Link>
-              <Link href="/blog" className="block hover:text-gray-900 transition-colors">Blog (350 guides)</Link>
+              <Link href="/blog" className="block hover:text-gray-900 transition-colors">Blog (350 UAE &amp; GCC guides)</Link>
               <Link href="/guides" className="block hover:text-gray-900 transition-colors">All Guides</Link>
               <Link href="/start" className="block hover:text-gray-900 transition-colors">Product Quiz</Link>
               <Link href="/bundle" className="block hover:text-gray-900 transition-colors">Complete Bundle</Link>
@@ -27,6 +27,7 @@ export default function Footer() {
               <Link href="/for/designers" className="block hover:text-gray-900 transition-colors">For Designers</Link>
               <Link href="/for/developers" className="block hover:text-gray-900 transition-colors">For Developers</Link>
               <Link href="/for/marketers" className="block hover:text-gray-900 transition-colors">For Marketers</Link>
+              <Link href="/for/saudi-arabia" className="block hover:text-gray-900 transition-colors">For Saudi Arabia (KSA)</Link>
             </div>
           </div>
           <div>

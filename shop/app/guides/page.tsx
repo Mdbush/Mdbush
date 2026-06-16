@@ -4,13 +4,13 @@ import Footer from "@/components/Footer";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "UAE Freelancer Guides & Resources — SoloKit",
+  title: "UAE & GCC Freelancer Guides & Resources — SoloKit",
   description:
-    "350 practical guides for freelancers and solopreneurs in the UAE. Visa, tax, rates, clients, contracts, AI tools, and more. All free.",
+    "350 practical guides for freelancers and solopreneurs across the UAE, Saudi Arabia, and GCC. Visa, tax, rates, clients, contracts, AI tools, and more. All free.",
   alternates: { canonical: "/guides" },
   openGraph: {
-    title: "UAE Freelancer Guides & Resources — SoloKit",
-    description: "350 free guides covering everything a UAE freelancer needs to know.",
+    title: "UAE & GCC Freelancer Guides & Resources — SoloKit",
+    description: "350 free guides covering everything a UAE and GCC freelancer needs to know.",
     type: "website",
     url: "/guides",
   },
@@ -21,8 +21,8 @@ const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? "https://solokit.cloud";
 const jsonLd = {
   "@context": "https://schema.org",
   "@type": "CollectionPage",
-  name: "UAE Freelancer Guides & Resources",
-  description: "Practical guides for freelancers and solopreneurs in the UAE.",
+  name: "UAE & GCC Freelancer Guides & Resources",
+  description: "Practical guides for freelancers and solopreneurs across the UAE, Saudi Arabia, and GCC.",
   url: `${siteUrl}/guides`,
   publisher: { "@type": "Organization", name: "SoloKit", url: siteUrl },
 };
@@ -448,10 +448,10 @@ export default function GuidesPage() {
         {/* Hero */}
         <div className="text-center mb-14">
           <span className="text-xs font-semibold text-gray-400 uppercase tracking-widest">Free Resources</span>
-          <h1 className="text-3xl sm:text-4xl font-bold text-gray-900 mt-2 mb-3">UAE Freelancer Guides</h1>
+          <h1 className="text-3xl sm:text-4xl font-bold text-gray-900 mt-2 mb-3">UAE &amp; GCC Freelancer Guides</h1>
           <p className="text-gray-500 max-w-xl mx-auto leading-relaxed">
-            350 practical guides covering everything you need to know about freelancing in Dubai and Abu Dhabi.
-            Written specifically for the UAE market — AED pricing, local laws, free zone context.
+            350 practical guides covering everything you need to know about freelancing in the UAE, Saudi Arabia, and across the GCC.
+            Written for the Gulf market — AED pricing, local laws, free zone and KSA context.
           </p>
         </div>
 

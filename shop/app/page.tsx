@@ -78,13 +78,13 @@ export default function Home() {
         <section className="bg-gray-950 text-white py-20 px-4 sm:px-6">
           <div className="max-w-3xl mx-auto text-center">
             <span className="inline-block bg-white/10 text-white text-xs font-semibold px-3 py-1 rounded-full mb-6 uppercase tracking-widest">
-              🇦🇪 For UAE Freelancers &amp; Solopreneurs
+              🇦🇪 For UAE &amp; GCC Freelancers
             </span>
             <h1 className="text-4xl sm:text-5xl font-bold leading-tight mb-5">
               Stop running your business from WhatsApp.
             </h1>
             <p className="text-lg text-gray-300 max-w-2xl mx-auto leading-relaxed mb-8">
-              Ready-to-use Notion templates, AI prompts, and SOPs for freelancers in Dubai and Abu Dhabi. Save 10+ hours a week, starting today.
+              Ready-to-use Notion templates, AI prompts, and SOPs for freelancers across the UAE, Saudi Arabia, and the wider GCC. Save 10+ hours a week, starting today.
             </p>
             <div className="flex flex-col sm:flex-row items-center justify-center gap-3 mb-6">
               <a
@@ -151,7 +151,7 @@ export default function Home() {
                 Everything you need to run a professional solo business
               </h2>
               <p className="mt-2 text-gray-500 text-sm">
-                Built for freelancers. Tested on real businesses. Used across the UAE.
+                Built for freelancers. Tested on real businesses. Used across the UAE &amp; GCC.
               </p>
               <a
                 href="/start"
@@ -270,7 +270,7 @@ export default function Home() {
         <section className="py-16 px-4 sm:px-6">
           <div className="max-w-5xl mx-auto">
             <h2 className="text-2xl font-bold text-gray-900 text-center mb-10">
-              What freelancers in the UAE say
+              What freelancers across the UAE &amp; GCC say
             </h2>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
               {[
@@ -376,7 +376,7 @@ export default function Home() {
         <section className="max-w-5xl mx-auto px-4 sm:px-6 py-16">
           <div className="flex items-center justify-between mb-8">
             <div>
-              <h2 className="text-2xl font-bold text-gray-900">Free guides for UAE freelancers</h2>
+              <h2 className="text-2xl font-bold text-gray-900">Free guides for UAE &amp; GCC freelancers</h2>
               <p className="text-sm text-gray-500 mt-1">350 practical articles — no fluff</p>
             </div>
             <Link href="/blog" className="text-sm font-semibold text-gray-900 hover:text-gray-600 transition-colors shrink-0">

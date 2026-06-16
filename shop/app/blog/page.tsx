@@ -5,12 +5,12 @@ import { posts } from "@/lib/blog-posts";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Blog — 65 Free Guides for UAE Freelancers — SoloKit",
-  description: "101 free guides for freelancers and solopreneurs in the UAE. Visa, tax, rates, proposals, AI tools, contracts, and more. No fluff.",
+  title: "Blog — Free Guides for UAE & GCC Freelancers — SoloKit",
+  description: "350 free guides for freelancers and solopreneurs across the UAE, Saudi Arabia, and GCC. Visa, tax, rates, proposals, AI tools, contracts, and more. No fluff.",
   alternates: { canonical: "/blog" },
   openGraph: {
-    title: "Free Guides for UAE Freelancers — SoloKit Blog",
-    description: "350 practical guides covering everything UAE freelancers need. No fluff.",
+    title: "Free Guides for UAE & GCC Freelancers — SoloKit Blog",
+    description: "350 practical guides covering everything UAE and GCC freelancers need. No fluff.",
     url: "/blog",
     type: "website",
   },
@@ -42,7 +42,7 @@ export default async function BlogPage({ searchParams }: Props) {
       <main className="flex-1 max-w-3xl mx-auto px-4 sm:px-6 py-14">
         <div className="mb-10">
           <h1 className="text-3xl font-bold text-gray-900 mb-2">Blog</h1>
-          <p className="text-gray-500">Practical guides for freelancers and solopreneurs in the UAE. No fluff.</p>
+          <p className="text-gray-500">Practical guides for freelancers and solopreneurs across the UAE, Saudi Arabia &amp; GCC. No fluff.</p>
         </div>
 
         {/* Featured — only shown when no category filter */}
