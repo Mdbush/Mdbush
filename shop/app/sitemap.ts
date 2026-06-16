@@ -345,6 +345,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "freelance-pharmacist-rates-uae",
     "freelance-radiographer-rates-uae",
     "how-to-fire-a-freelance-client-uae",
+    "freelance-paramedic-rates-uae",
+    "freelance-optometrist-rates-uae",
+    "how-to-build-freelance-referral-network-uae",
   ].map((slug) => ({
     url: `${base}/blog/${slug}`,
     lastModified: new Date(),

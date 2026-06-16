@@ -2996,6 +2996,33 @@ export const posts: BlogPost[] = [
     readTime: "7 min read",
     category: "Client Work & Proposals",
   },
+  {
+    slug: "freelance-paramedic-rates-uae",
+    title: "Freelance Paramedic Rates in the UAE (2026)",
+    description:
+      "Real AED rates for freelance and locum paramedics in Dubai and Abu Dhabi. EMT, advanced paramedic, critical care paramedic, event medic, offshore medic, and flight paramedic fees for 2026.",
+    date: "June 16, 2026",
+    readTime: "7 min read",
+    category: "Pricing & Rates",
+  },
+  {
+    slug: "freelance-optometrist-rates-uae",
+    title: "Freelance Optometrist Rates in the UAE (2026)",
+    description:
+      "Real AED rates for freelance and locum optometrists in Dubai and Abu Dhabi. Comprehensive eye examination, contact lens fitting, paediatric optometry, low vision, and hospital eye department locum fees for 2026.",
+    date: "June 16, 2026",
+    readTime: "7 min read",
+    category: "Pricing & Rates",
+  },
+  {
+    slug: "how-to-build-freelance-referral-network-uae",
+    title: "How to Build a Freelance Referral Network in the UAE (2026 Guide)",
+    description:
+      "How UAE freelancers build referral networks that generate consistent inbound clients — who refers, why they refer, and how to structure a referral practice that compounds over time in Dubai and Abu Dhabi.",
+    date: "June 16, 2026",
+    readTime: "7 min read",
+    category: "Getting Clients",
+  },
 ];
 
 export function getPost(slug: string): BlogPost | undefined {
