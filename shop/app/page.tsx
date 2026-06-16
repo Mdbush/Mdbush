@@ -169,6 +169,32 @@ export default function Home() {
           </div>
         </section>
 
+        {/* Browse by profession */}
+        <section className="py-10 px-4 sm:px-6 border-t border-gray-100">
+          <div className="max-w-5xl mx-auto">
+            <p className="text-xs font-semibold text-gray-400 uppercase tracking-widest text-center mb-5">
+              Tools for your type of work
+            </p>
+            <div className="flex flex-wrap gap-2 justify-center">
+              {[
+                { label: "Designers", href: "/for/designers" },
+                { label: "Developers", href: "/for/developers" },
+                { label: "Marketers", href: "/for/marketers" },
+                { label: "Consultants", href: "/for/consultants" },
+                { label: "Coaches", href: "/for/coaches" },
+              ].map((item) => (
+                <Link
+                  key={item.href}
+                  href={item.href}
+                  className="text-sm font-semibold bg-gray-100 text-gray-700 hover:bg-gray-200 px-5 py-2 rounded-full transition-colors"
+                >
+                  {item.label} →
+                </Link>
+              ))}
+            </div>
+          </div>
+        </section>
+
         {/* Complete Stack callout */}
         <section className="bg-gray-950 text-white py-14 px-4 sm:px-6">
           <div className="max-w-3xl mx-auto text-center">
@@ -313,7 +339,12 @@ export default function Home() {
 
         {/* FAQ */}
         <section id="faq" className="max-w-3xl mx-auto px-4 sm:px-6 py-16">
-          <h2 className="text-2xl font-bold text-gray-900 text-center mb-10">FAQ</h2>
+          <div className="flex items-center justify-between mb-10">
+            <h2 className="text-2xl font-bold text-gray-900">FAQ</h2>
+            <Link href="/faq" className="text-sm font-semibold text-gray-500 hover:text-gray-900 transition-colors">
+              All questions →
+            </Link>
+          </div>
           <div className="flex flex-col gap-4">
             {[
               {

@@ -24,6 +24,9 @@ export default function Footer() {
               <Link href="/bundle" className="block hover:text-gray-900 transition-colors">Complete Bundle</Link>
               <Link href="/affiliates" className="block hover:text-gray-900 transition-colors">Affiliates</Link>
               <Link href="/faq" className="block hover:text-gray-900 transition-colors">FAQ</Link>
+              <Link href="/for/designers" className="block hover:text-gray-900 transition-colors">For Designers</Link>
+              <Link href="/for/developers" className="block hover:text-gray-900 transition-colors">For Developers</Link>
+              <Link href="/for/marketers" className="block hover:text-gray-900 transition-colors">For Marketers</Link>
             </div>
           </div>
           <div>
