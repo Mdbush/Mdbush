@@ -1970,6 +1970,33 @@ export const posts: BlogPost[] = [
     readTime: "7 min read",
     category: "Client Work & Proposals",
   },
+  {
+    slug: "freelance-content-strategist-rates-uae",
+    title: "Freelance Content Strategist Rates in the UAE (2026): Content Strategy & Editorial Fees",
+    description:
+      "Real AED day rates for freelance content strategists in Dubai and Abu Dhabi. Content audits, editorial calendars, SEO content strategy, brand voice development, and content programme management fees for 2026.",
+    date: "June 16, 2026",
+    readTime: "7 min read",
+    category: "Pricing & Rates",
+  },
+  {
+    slug: "how-to-set-payment-terms-uae",
+    title: "How to Set Payment Terms as a UAE Freelancer (2026 Guide)",
+    description:
+      "How to structure payment terms that protect UAE freelancers — deposit requirements, milestone schedules, late payment clauses, net payment periods, and how to get UAE clients to accept your terms.",
+    date: "June 16, 2026",
+    readTime: "7 min read",
+    category: "Client Work & Proposals",
+  },
+  {
+    slug: "freelance-social-media-content-creator-rates-uae",
+    title: "Freelance Social Media Content Creator Rates in the UAE (2026)",
+    description:
+      "Real AED rates for freelance social media content creators in Dubai and Abu Dhabi. Instagram, TikTok, LinkedIn, and Snapchat content creation fees, reel production rates, and retainer pricing for UAE brands in 2026.",
+    date: "June 16, 2026",
+    readTime: "7 min read",
+    category: "Pricing & Rates",
+  },
 ];
 
 export function getPost(slug: string): BlogPost | undefined {
