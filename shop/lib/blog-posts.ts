@@ -2834,6 +2834,33 @@ export const posts: BlogPost[] = [
     readTime: "7 min read",
     category: "Pricing & Rates",
   },
+  {
+    slug: "freelance-data-engineer-rates-uae",
+    title: "Freelance Data Engineer Rates in the UAE (2026)",
+    description:
+      "Real AED day rates for freelance data engineers in Dubai and Abu Dhabi. Data pipeline development, ETL/ELT architecture, data warehouse design, Spark, Kafka, Airflow, dbt, Databricks, Snowflake, BigQuery, and data platform architecture fees for 2026.",
+    date: "June 16, 2026",
+    readTime: "7 min read",
+    category: "Pricing & Rates",
+  },
+  {
+    slug: "freelance-environmental-consultant-rates-uae",
+    title: "Freelance Environmental Consultant Rates in the UAE (2026)",
+    description:
+      "Real AED day rates for freelance environmental consultants in Dubai and Abu Dhabi. Environmental Impact Assessment (EIA), environmental monitoring, contaminated land, waste management, biodiversity assessment, and ESG environmental strategy fees for 2026.",
+    date: "June 16, 2026",
+    readTime: "7 min read",
+    category: "Pricing & Rates",
+  },
+  {
+    slug: "how-to-productize-freelance-services-uae",
+    title: "How to Productize Your Freelance Services in the UAE (2026 Guide)",
+    description:
+      "How UAE freelancers productize their services — moving from custom quotes to fixed-scope, fixed-price offers. The UAE productization framework, how to price fixed offers, handle customisation requests, and create a service page that sells for you in Dubai and Abu Dhabi.",
+    date: "June 16, 2026",
+    readTime: "7 min read",
+    category: "Business & Mindset",
+  },
 ];
 
 export function getPost(slug: string): BlogPost | undefined {
