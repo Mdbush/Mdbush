@@ -2105,6 +2105,33 @@ export const posts: BlogPost[] = [
     readTime: "7 min read",
     category: "Pricing & Rates",
   },
+  {
+    slug: "freelance-solutions-architect-rates-uae",
+    title: "Freelance Solutions Architect Rates in the UAE (2026)",
+    description:
+      "Real AED day rates for freelance solutions architects in Dubai and Abu Dhabi. Cloud architecture, enterprise integration, solution design, and technical pre-sales fees for UAE technology and consulting projects in 2026.",
+    date: "June 16, 2026",
+    readTime: "7 min read",
+    category: "Pricing & Rates",
+  },
+  {
+    slug: "how-to-price-workshops-uae",
+    title: "How to Price Freelance Workshops & Training Sessions in the UAE (2026)",
+    description:
+      "How UAE freelancers price workshops, training sessions, and facilitated events — half-day, full-day, and multi-day rates, group pricing, and how to package workshop deliverables for corporate and SME clients in Dubai and Abu Dhabi.",
+    date: "June 16, 2026",
+    readTime: "7 min read",
+    category: "Pricing & Rates",
+  },
+  {
+    slug: "freelance-ai-consultant-rates-uae",
+    title: "Freelance AI Consultant Rates in the UAE (2026)",
+    description:
+      "Real AED day rates for freelance AI consultants in Dubai and Abu Dhabi. AI strategy, LLM implementation, automation consulting, AI roadmap design, and GenAI adoption fees for UAE businesses in 2026.",
+    date: "June 16, 2026",
+    readTime: "7 min read",
+    category: "Pricing & Rates",
+  },
 ];
 
 export function getPost(slug: string): BlogPost | undefined {
