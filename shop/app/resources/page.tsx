@@ -66,7 +66,7 @@ const sections = [
   {
     heading: "Blog (public, indexed)",
     items: [
-      { href: "/blog", title: "Blog Index", desc: "231 articles covering UAE freelance visa, tax, rates, clients, contracts, AI tools, and more.", badge: "231 articles" },
+      { href: "/blog", title: "Blog Index", desc: "234 articles covering UAE freelance visa, tax, rates, clients, contracts, AI tools, and more.", badge: "234 articles" },
     ],
   },
 ];

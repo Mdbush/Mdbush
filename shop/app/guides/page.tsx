@@ -6,11 +6,11 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "UAE Freelancer Guides & Resources — SoloKit",
   description:
-    "231 practical guides for freelancers and solopreneurs in the UAE. Visa, tax, rates, clients, contracts, AI tools, and more. All free.",
+    "234 practical guides for freelancers and solopreneurs in the UAE. Visa, tax, rates, clients, contracts, AI tools, and more. All free.",
   alternates: { canonical: "/guides" },
   openGraph: {
     title: "UAE Freelancer Guides & Resources — SoloKit",
-    description: "231 free guides covering everything a UAE freelancer needs to know.",
+    description: "234 free guides covering everything a UAE freelancer needs to know.",
     type: "website",
     url: "/guides",
   },
@@ -219,6 +219,8 @@ const categories = [
       { slug: "freelance-cto-rates-uae", title: "Freelance & Fractional CTO Rates in the UAE (2026): Chief Technology Officer Fees", time: "8 min" },
       { slug: "how-to-package-freelance-services-uae", title: "How to Package Your Freelance Services in the UAE (2026): Tiers & Bundles", time: "7 min" },
       { slug: "freelance-diversity-inclusion-consultant-rates-uae", title: "Freelance Diversity & Inclusion Consultant Rates in the UAE (2026)", time: "7 min" },
+      { slug: "freelance-corporate-communications-rates-uae", title: "Freelance Corporate Communications Rates in the UAE (2026)", time: "7 min" },
+      { slug: "freelance-environment-health-safety-consultant-rates-uae", title: "Freelance EHS Consultant Rates in the UAE (2026): Environment, Health & Safety Fees", time: "7 min" },
     ],
   },
   {
@@ -240,6 +242,7 @@ const categories = [
       { slug: "how-to-deal-with-difficult-clients-uae", title: "How to Deal With Difficult Clients as a UAE Freelancer (2026): Scripts & Strategies", time: "9 min" },
       { slug: "how-to-handle-payment-disputes-uae", title: "How to Handle Payment Disputes as a Freelancer in the UAE (2026 Guide)", time: "7 min" },
       { slug: "how-to-set-payment-terms-uae", title: "How to Set Payment Terms as a UAE Freelancer (2026 Guide)", time: "7 min" },
+      { slug: "how-to-run-discovery-workshops-uae", title: "How to Run Discovery Workshops with UAE Clients (2026 Guide)", time: "7 min" },
     ],
   },
   {
@@ -325,7 +328,7 @@ export default function GuidesPage() {
           <span className="text-xs font-semibold text-gray-400 uppercase tracking-widest">Free Resources</span>
           <h1 className="text-3xl sm:text-4xl font-bold text-gray-900 mt-2 mb-3">UAE Freelancer Guides</h1>
           <p className="text-gray-500 max-w-xl mx-auto leading-relaxed">
-            231 practical guides covering everything you need to know about freelancing in Dubai and Abu Dhabi.
+            234 practical guides covering everything you need to know about freelancing in Dubai and Abu Dhabi.
             Written specifically for the UAE market — AED pricing, local laws, free zone context.
           </p>
         </div>

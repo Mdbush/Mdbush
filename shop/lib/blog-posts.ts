@@ -2051,6 +2051,33 @@ export const posts: BlogPost[] = [
     readTime: "7 min read",
     category: "Pricing & Rates",
   },
+  {
+    slug: "freelance-corporate-communications-rates-uae",
+    title: "Freelance Corporate Communications Rates in the UAE (2026)",
+    description:
+      "Real AED day rates for freelance corporate communications consultants in Dubai and Abu Dhabi. Internal comms, executive communications, crisis comms, speechwriting, and corporate affairs fees for UAE companies in 2026.",
+    date: "June 16, 2026",
+    readTime: "7 min read",
+    category: "Pricing & Rates",
+  },
+  {
+    slug: "how-to-run-discovery-workshops-uae",
+    title: "How to Run Discovery Workshops with UAE Clients (2026 Guide)",
+    description:
+      "How UAE freelancers and consultants run paid discovery workshops to scope projects, align stakeholders, and increase average project value. Workshop structure, facilitation tips, pricing, and what to deliver afterwards.",
+    date: "June 16, 2026",
+    readTime: "7 min read",
+    category: "Client Work & Proposals",
+  },
+  {
+    slug: "freelance-environment-health-safety-consultant-rates-uae",
+    title: "Freelance EHS Consultant Rates in the UAE (2026): Environment, Health & Safety Fees",
+    description:
+      "Real AED day rates for freelance EHS consultants in Dubai and Abu Dhabi. HSE audits, OSHAD compliance, construction site safety, environmental assessments, ISO 45001/14001, and EHS training fees for UAE companies in 2026.",
+    date: "June 16, 2026",
+    readTime: "7 min read",
+    category: "Pricing & Rates",
+  },
 ];
 
 export function getPost(slug: string): BlogPost | undefined {
