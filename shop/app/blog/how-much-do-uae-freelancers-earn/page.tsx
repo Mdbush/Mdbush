@@ -59,121 +59,104 @@ export default function HowMuchDoUAEFreelancersEarnPage() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
       <Header />
-      <main className="max-w-2xl mx-auto px-4 py-12 text-gray-900">
+      <main className="min-h-screen bg-white">
+        <div className="max-w-3xl mx-auto px-4 py-10">
+          {/* Breadcrumb */}
+          <nav className="text-xs text-gray-400 mb-6 flex items-center gap-1.5">
+            <Link href="/" className="hover:text-gray-600">Home</Link>
+            <span>/</span>
+            <Link href="/blog" className="hover:text-gray-600">Blog</Link>
+            <span>/</span>
+            <span className="text-gray-600">How Much Do UAE Freelancers Earn?</span>
+          </nav>
 
-        {/* Breadcrumb */}
-        <nav className="text-sm text-gray-500 mb-8">
-          <Link href="/" className="hover:text-gray-700">Home</Link>
-          <span className="mx-2">›</span>
-          <Link href="/blog" className="hover:text-gray-700">Blog</Link>
-          <span className="mx-2">›</span>
-          <span>How Much Do UAE Freelancers Earn?</span>
-        </nav>
-
-        {/* Header */}
-        <header className="mb-10">
-          <div className="inline-block bg-blue-100 text-blue-800 text-xs font-semibold px-3 py-1 rounded-full mb-4">
-            Business
-          </div>
-          <h1 className="text-3xl font-bold leading-tight mb-4">
-            How Much Do Freelancers Earn in UAE? (2026 Income Guide)
-          </h1>
-          <p className="text-gray-500 text-sm mb-4">Updated June 2026 · 7 min read</p>
-          <p className="text-lg text-gray-700 leading-relaxed">
-            Freelancer income in the UAE varies enormously — from AED 8,000/month for someone just
-            starting out to AED 100,000+/month for experienced consultants with the right clients.
-            This guide breaks down real income ranges by profession and experience level, and explains
-            what actually drives the difference between the top and bottom of those ranges.
-          </p>
-        </header>
-
-        {/* Quick answer box */}
-        <div className="bg-blue-50 border border-blue-200 rounded-xl p-6 mb-10">
-          <h2 className="font-bold text-blue-900 mb-3">Quick Answer</h2>
-          <p className="text-blue-800 text-sm leading-relaxed mb-3">
-            UAE freelancers typically earn <strong>AED 8,000–80,000+/month</strong> depending on
-            skill, experience, and how they structure their business.
-          </p>
-          <ul className="space-y-1 text-blue-800 text-sm">
-            <li><strong>Entry level (0–2 years):</strong> AED 8,000–15,000/month</li>
-            <li><strong>Mid level (3–6 years):</strong> AED 15,000–35,000/month</li>
-            <li><strong>Senior (6+ years):</strong> AED 35,000–80,000+/month</li>
-          </ul>
-        </div>
-
-        {/* Section 1 */}
-        <section className="mb-10">
-          <h2 className="text-xl font-bold mb-4">1. Income by Experience Level</h2>
-          <p className="text-gray-700 mb-6 leading-relaxed">
-            Before looking at profession-specific data, it helps to understand how experience alone
-            affects earnings — independent of what you do.
-          </p>
-
-          <div className="space-y-4">
-            <div className="border border-gray-200 rounded-lg p-4">
-              <div className="flex items-center gap-3 mb-2">
-                <span className="bg-gray-100 text-gray-700 text-xs font-bold px-2 py-1 rounded">0–2 years</span>
-                <h3 className="font-semibold">Entry Level</h3>
-              </div>
-              <p className="text-gray-700 text-sm mb-2">
-                <strong>AED 8,000–15,000/month</strong>
-              </p>
-              <p className="text-gray-600 text-sm">
-                Building a portfolio, taking on smaller clients, learning to price and pitch. Income
-                is often inconsistent month-to-month. Focus at this stage is on landing 3–5 anchor
-                clients and building repeatable processes.
-              </p>
-            </div>
-
-            <div className="border border-gray-200 rounded-lg p-4">
-              <div className="flex items-center gap-3 mb-2">
-                <span className="bg-blue-100 text-blue-700 text-xs font-bold px-2 py-1 rounded">3–6 years</span>
-                <h3 className="font-semibold">Mid Level</h3>
-              </div>
-              <p className="text-gray-700 text-sm mb-2">
-                <strong>AED 15,000–35,000/month</strong>
-              </p>
-              <p className="text-gray-600 text-sm">
-                More referrals, clearer positioning, starting to charge for value rather than hours.
-                Retainer clients begin appearing. This is the stage where most freelancers plateau if
-                they don&apos;t actively raise rates.
-              </p>
-            </div>
-
-            <div className="border border-gray-200 rounded-lg p-4">
-              <div className="flex items-center gap-3 mb-2">
-                <span className="bg-green-100 text-green-700 text-xs font-bold px-2 py-1 rounded">6+ years</span>
-                <h3 className="font-semibold">Senior Level</h3>
-              </div>
-              <p className="text-gray-700 text-sm mb-2">
-                <strong>AED 35,000–80,000+/month</strong>
-              </p>
-              <p className="text-gray-600 text-sm">
-                Established reputation, high-value clients, retainer-heavy income. Often specialised
-                in a specific niche or industry. Income is more predictable and less dependent on
-                constant prospecting.
-              </p>
+          {/* Hero */}
+          <div className="bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 text-white px-6 py-10 rounded-2xl mb-8">
+            <span className="text-xs font-bold text-emerald-400 uppercase tracking-widest mb-3 block">Business</span>
+            <h1 className="text-3xl sm:text-4xl font-bold leading-tight mb-4">
+              How Much Do Freelancers Earn in UAE? (2026 Income Guide)
+            </h1>
+            <p className="text-gray-300 text-sm mb-5 leading-relaxed max-w-xl">
+              Freelancer income in the UAE varies enormously — from AED 8,000/month for someone just
+              starting out to AED 100,000+/month for experienced consultants with the right clients.
+            </p>
+            <div className="flex flex-wrap gap-4 text-xs text-gray-400">
+              <span>Updated June 2026</span>
+              <span>·</span>
+              <span>7 min read</span>
             </div>
           </div>
-        </section>
 
-        {/* Section 2: By profession */}
-        <section className="mb-10">
-          <h2 className="text-xl font-bold mb-2">2. Income by Profession (Monthly)</h2>
-          <p className="text-gray-700 mb-6 text-sm leading-relaxed">
-            These ranges reflect active freelancers billing clients — not salaried employees. Actual
-            income depends heavily on client quality, billing model, and how many hours you work.
-            See the{" "}
-            <Link href="/blog/freelance-rate-calculator-uae" className="text-blue-600 hover:underline">
-              freelance rate calculator guide
-            </Link>{" "}
-            to understand how billing rate translates to take-home income.
-          </p>
+          {/* Stats grid */}
+          <div className="grid grid-cols-3 gap-3 mb-8">
+            {[
+              { value: "AED 8–15K", label: "Entry-level monthly income" },
+              { value: "AED 35–80K+", label: "Senior-level monthly income" },
+              { value: "AED 160K+", label: "Extra retained vs UK equivalent per year" },
+            ].map((s) => (
+              <div key={s.label} className="bg-gray-50 border border-gray-200 rounded-xl p-4 text-center">
+                <div className="text-lg font-bold text-gray-900">{s.value}</div>
+                <div className="text-xs text-gray-500 mt-1">{s.label}</div>
+              </div>
+            ))}
+          </div>
 
-          <div className="overflow-x-auto">
+          {/* Quick Answer */}
+          <div className="bg-emerald-50 border border-emerald-200 rounded-xl p-5 mb-8">
+            <p className="text-sm font-semibold text-emerald-900 mb-2">Quick Answer</p>
+            <ul className="space-y-1 text-sm text-emerald-800">
+              <li>→ <strong>Entry level (0–2 years):</strong> AED 8,000–15,000/month</li>
+              <li>→ <strong>Mid level (3–6 years):</strong> AED 15,000–35,000/month</li>
+              <li>→ <strong>Senior (6+ years):</strong> AED 35,000–80,000+/month</li>
+            </ul>
+          </div>
+
+          {/* Experience Level */}
+          <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2">
+            <span className="w-1 h-6 bg-emerald-500 rounded-full inline-block"></span>
+            1. Income by Experience Level
+          </h2>
+
+          <div className="grid sm:grid-cols-3 gap-4 mb-8">
+            {[
+              {
+                badge: "0–2 years",
+                label: "Entry Level",
+                income: "AED 8,000–15,000/month",
+                detail: "Building a portfolio, taking on smaller clients, learning to price and pitch. Income is often inconsistent. Focus is on landing 3–5 anchor clients.",
+              },
+              {
+                badge: "3–6 years",
+                label: "Mid Level",
+                income: "AED 15,000–35,000/month",
+                detail: "More referrals, clearer positioning, starting to charge for value rather than hours. Retainer clients begin appearing.",
+              },
+              {
+                badge: "6+ years",
+                label: "Senior Level",
+                income: "AED 35,000–80,000+/month",
+                detail: "Established reputation, high-value clients, retainer-heavy income. Often specialised in a specific niche or industry.",
+              },
+            ].map((level) => (
+              <div key={level.label} className="border border-gray-200 rounded-xl p-5">
+                <span className="text-xs font-bold text-gray-500 bg-gray-100 px-2 py-1 rounded mb-2 inline-block">{level.badge}</span>
+                <h3 className="font-semibold text-gray-900 mb-1">{level.label}</h3>
+                <p className="text-sm font-bold text-gray-900 mb-2">{level.income}</p>
+                <p className="text-xs text-gray-500">{level.detail}</p>
+              </div>
+            ))}
+          </div>
+
+          {/* By Profession */}
+          <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2">
+            <span className="w-1 h-6 bg-emerald-500 rounded-full inline-block"></span>
+            2. Income by Profession (Monthly)
+          </h2>
+
+          <div className="overflow-x-auto mb-6">
             <table className="w-full text-sm border-collapse">
               <thead>
-                <tr className="bg-gray-950 text-white">
+                <tr className="bg-gray-900 text-white">
                   <th className="text-left p-3 border border-gray-700 font-semibold">Profession</th>
                   <th className="text-left p-3 border border-gray-700 font-semibold">Entry</th>
                   <th className="text-left p-3 border border-gray-700 font-semibold">Mid</th>
@@ -186,225 +169,107 @@ export default function HowMuchDoUAEFreelancersEarnPage() {
                     <td className="p-3 border border-gray-200 font-medium">{row.name}</td>
                     <td className="p-3 border border-gray-200 text-gray-600">{row.entry}</td>
                     <td className="p-3 border border-gray-200 text-gray-700">{row.mid}</td>
-                    <td className="p-3 border border-gray-200 text-green-700 font-medium">{row.senior}</td>
+                    <td className="p-3 border border-gray-200 text-emerald-700 font-medium">{row.senior}</td>
                   </tr>
                 ))}
               </tbody>
             </table>
           </div>
 
-          <div className="bg-amber-50 border border-amber-200 rounded-lg p-4 mt-4">
-            <p className="text-amber-900 text-sm">
-              <strong>Important:</strong> Billing rate is not the same as take-home income.
-              A freelancer billing AED 30,000/month may take home AED 22,000–25,000 after
-              business costs (permit, software, marketing, co-working). Use the{" "}
-              <Link href="/blog/freelance-rate-calculator-uae" className="text-amber-800 underline hover:text-amber-900">
-                rate calculator
-              </Link>{" "}
-              to model your real numbers.
+          <div className="bg-amber-50 border border-amber-200 rounded-xl p-5 mb-8">
+            <p className="text-sm font-semibold text-amber-900 mb-1">⚠️ Important</p>
+            <p className="text-sm text-amber-800">
+              Billing rate is not the same as take-home income. A freelancer billing AED 30,000/month may
+              take home AED 22,000–25,000 after business costs (permit, software, marketing, co-working).
             </p>
           </div>
-        </section>
 
-        {/* Section 3: What separates */}
-        <section className="mb-10">
-          <h2 className="text-xl font-bold mb-4">3. What Separates AED 10K from AED 50K Earners</h2>
-          <p className="text-gray-700 mb-6 leading-relaxed">
-            Two freelancers with the same skills and the same years of experience can earn 5x different
-            amounts. The difference almost always comes down to five factors:
-          </p>
+          {/* What Separates */}
+          <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2">
+            <span className="w-1 h-6 bg-emerald-500 rounded-full inline-block"></span>
+            3. What Separates AED 10K from AED 50K Earners
+          </h2>
 
-          <div className="space-y-5">
-            <div>
-              <h3 className="font-semibold mb-2">1. Pricing model</h3>
-              <p className="text-gray-700 text-sm leading-relaxed">
-                Hourly billing caps your income at the number of hours you work. Freelancers who move
-                to project-based and then retainer-based pricing consistently earn more for the same
-                (or fewer) hours. A AED 15,000/month retainer for ongoing strategy work pays more
-                than 100 hours at AED 150/hr — and takes less time to manage.
-              </p>
-            </div>
-
-            <div>
-              <h3 className="font-semibold mb-2">2. Client type</h3>
-              <p className="text-gray-700 text-sm leading-relaxed">
-                Early-stage freelancers often take local startup clients with small budgets. Mid-to-senior
-                earners work with enterprise clients, funded companies, and international brands. The
-                budget difference between a startup and an enterprise client for the same deliverable
-                can be 3–10x.
-              </p>
-            </div>
-
-            <div>
-              <h3 className="font-semibold mb-2">3. Specialisation</h3>
-              <p className="text-gray-700 text-sm leading-relaxed">
-                Generalists compete on price. Specialists command premium rates. A &quot;digital
-                marketer&quot; competes with thousands. A &quot;paid acquisition specialist for
-                Series A SaaS companies&quot; competes with dozens — and can charge accordingly.
-              </p>
-            </div>
-
-            <div>
-              <h3 className="font-semibold mb-2">4. Pipeline and systems</h3>
-              <p className="text-gray-700 text-sm leading-relaxed">
-                Reactive freelancers wait for inbound work and have income gaps between projects.
-                High earners have a proactive pipeline: referral systems, case studies, consistent
-                outreach, and a waiting list. A full pipeline lets you say no to low-value work.
-              </p>
-            </div>
-
-            <div>
-              <h3 className="font-semibold mb-2">5. Geography of clients</h3>
-              <p className="text-gray-700 text-sm leading-relaxed">
-                UAE-local clients pay in AED. International clients (US, UK, EU) pay in USD or GBP —
-                often at rates 2–4x higher than comparable UAE projects. The best-paid UAE freelancers
-                often serve international clients while living tax-free in Dubai.{" "}
-                <Link href="/blog/how-to-get-international-clients-uae" className="text-blue-600 hover:underline">
-                  How to get international clients as a UAE freelancer →
-                </Link>
-              </p>
-            </div>
-          </div>
-        </section>
-
-        {/* Section 4: How to increase */}
-        <section className="mb-10">
-          <h2 className="text-xl font-bold mb-4">4. How to Increase Your Freelance Income</h2>
-          <div className="space-y-3">
+          <ul className="space-y-3 mb-6">
             {[
-              {
-                num: "1",
-                title: "Raise rates 20–30% annually",
-                body: "If you haven't raised your rates in the past year, you've effectively taken a pay cut. Annual rate increases of 20–30% are normal and expected — existing clients rarely leave over a rate increase framed correctly.",
-              },
-              {
-                num: "2",
-                title: "Move from hourly to project or retainer billing",
-                body: "Price the outcome, not the hours. A client doesn't care how long it takes — they care what they get. Project pricing removes the ceiling on your hourly effective rate.",
-              },
-              {
-                num: "3",
-                title: "Specialise in a higher-value niche",
-                body: "Pick an industry or problem type and go deeper. Specialist positioning reduces competition and justifies higher prices. The fastest income jumps happen when a generalist niches down.",
-              },
-              {
-                num: "4",
-                title: "Pursue international clients",
-                body: "USD rates for the same work are significantly higher than AED market rates. Even 2–3 international clients can double your income without adding more hours.",
-              },
-              {
-                num: "5",
-                title: "Add retainer clients as your income base",
-                body: "Even 1–2 retainers at AED 5,000–10,000/month provides stability. You can then use remaining time for project work without the anxiety of a zero-income month.",
-              },
-            ].map(({ num, title, body }) => (
-              <div key={num} className="flex gap-4 border border-gray-200 rounded-lg p-4">
-                <div className="w-7 h-7 rounded-full bg-gray-950 text-white text-xs font-bold flex items-center justify-center shrink-0 mt-0.5">
-                  {num}
-                </div>
-                <div>
-                  <h3 className="font-semibold mb-1">{title}</h3>
-                  <p className="text-gray-700 text-sm leading-relaxed">{body}</p>
-                </div>
-              </div>
+              { factor: "Pricing model", detail: "Hourly billing caps your income at the number of hours you work. Freelancers who move to project-based and then retainer-based pricing consistently earn more for the same or fewer hours." },
+              { factor: "Client type", detail: "Early-stage freelancers often take local startup clients with small budgets. Mid-to-senior earners work with enterprise clients, funded companies, and international brands. The budget difference can be 3–10x." },
+              { factor: "Specialisation", detail: "Generalists compete on price. Specialists command premium rates. A 'digital marketer' competes with thousands. A 'paid acquisition specialist for Series A SaaS companies' competes with dozens." },
+              { factor: "Pipeline and systems", detail: "Reactive freelancers wait for inbound work and have income gaps between projects. High earners have a proactive pipeline: referral systems, case studies, consistent outreach, and a waiting list." },
+              { factor: "Geography of clients", detail: "UAE-local clients pay in AED. International clients (US, UK, EU) pay at rates 2–4x higher than comparable UAE projects. The best-paid UAE freelancers often serve international clients while living tax-free in Dubai." },
+            ].map((item) => (
+              <li key={item.factor} className="flex gap-3 text-sm text-gray-700">
+                <span className="text-emerald-500 font-bold mt-0.5 shrink-0">→</span>
+                <span><strong className="text-gray-900">{item.factor}:</strong> {item.detail}</span>
+              </li>
             ))}
-          </div>
-        </section>
+          </ul>
 
-        {/* Section 5: UAE advantage */}
-        <section className="mb-10">
-          <h2 className="text-xl font-bold mb-4">5. The UAE Tax Advantage</h2>
-          <p className="text-gray-700 mb-4 leading-relaxed">
+          {/* UAE Tax Advantage */}
+          <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2">
+            <span className="w-1 h-6 bg-emerald-500 rounded-full inline-block"></span>
+            4. The UAE Tax Advantage
+          </h2>
+
+          <p className="text-gray-700 leading-relaxed mb-4">
             One of the most overlooked advantages of freelancing in the UAE is the tax position.
             There is <strong>zero personal income tax</strong> — every dirham you earn is yours.
           </p>
 
-          <div className="bg-green-50 border border-green-200 rounded-xl p-6 mb-4">
-            <h3 className="font-semibold text-green-900 mb-3">Real comparison</h3>
-            <div className="overflow-x-auto">
-              <table className="w-full text-sm border-collapse">
-                <thead>
-                  <tr className="bg-green-100">
-                    <th className="text-left p-3 border border-green-200 font-semibold">Scenario</th>
-                    <th className="text-left p-3 border border-green-200 font-semibold">Gross Earning</th>
-                    <th className="text-left p-3 border border-green-200 font-semibold">Approximate Take-Home</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td className="p-3 border border-green-200">UAE freelancer</td>
-                    <td className="p-3 border border-green-200">AED 35,000/month</td>
-                    <td className="p-3 border border-green-200 text-green-700 font-medium">AED 35,000/month</td>
-                  </tr>
-                  <tr className="bg-green-50">
-                    <td className="p-3 border border-green-200">UK salaried employee (£75K)</td>
-                    <td className="p-3 border border-green-200">~AED 35,000/month equivalent</td>
-                    <td className="p-3 border border-green-200 text-red-700 font-medium">~AED 21,000/month (after ~40% tax)</td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-            <p className="text-green-800 text-sm mt-3">
-              A UAE-based freelancer earning AED 35,000/month keeps significantly more than an
-              equivalent earner in the UK, Germany, or Australia — simply because of where they
-              operate. Over a year, that difference is over AED 160,000.
+          <div className="overflow-x-auto mb-6">
+            <table className="w-full text-sm border-collapse">
+              <thead>
+                <tr className="bg-emerald-900 text-white">
+                  <th className="text-left p-3 border border-emerald-700 font-semibold">Scenario</th>
+                  <th className="text-left p-3 border border-emerald-700 font-semibold">Gross Earning</th>
+                  <th className="text-left p-3 border border-emerald-700 font-semibold">Approximate Take-Home</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td className="p-3 border border-gray-200">UAE freelancer</td>
+                  <td className="p-3 border border-gray-200">AED 35,000/month</td>
+                  <td className="p-3 border border-gray-200 text-emerald-700 font-medium">AED 35,000/month</td>
+                </tr>
+                <tr className="bg-gray-50">
+                  <td className="p-3 border border-gray-200">UK salaried employee (£75K)</td>
+                  <td className="p-3 border border-gray-200">~AED 35,000/month equivalent</td>
+                  <td className="p-3 border border-gray-200 text-red-700 font-medium">~AED 21,000/month (after ~40% tax)</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          {/* Reality Check */}
+          <div className="bg-amber-50 border border-amber-200 rounded-xl p-5 mb-8">
+            <p className="text-sm font-semibold text-amber-900 mb-1">⚠️ Reality Check</p>
+            <p className="text-sm text-amber-800 leading-relaxed">
+              The senior income figures — AED 40K, 60K, 100K/month — are real, but they represent freelancers
+              who have been building their business for 3–5+ years with established client relationships, clear
+              positioning, and refined systems. Plan for AED 8K–15K in your first year, AED 20K–30K by year
+              two or three, and build from there.
             </p>
           </div>
-        </section>
 
-        {/* Reality check */}
-        <div className="bg-amber-50 border border-amber-200 rounded-xl p-6 mb-10">
-          <h2 className="font-bold text-amber-900 mb-3">Reality Check</h2>
-          <p className="text-amber-800 text-sm leading-relaxed">
-            The senior income figures in this guide — AED 40K, 60K, 100K/month — are real, but
-            they represent freelancers who have been building their business for 3–5+ years. They
-            have established client relationships, clear positioning, and refined systems.{" "}
-            <strong>Don&apos;t set month-one expectations based on senior-level numbers.</strong>{" "}
-            Plan for AED 8K–15K in your first year, AED 20K–30K by year two or three, and build
-            from there.
-          </p>
-        </div>
-
-        {/* Product CTA */}
-        <div className="bg-gray-50 rounded-xl p-8 mb-10 text-center">
-          <p className="text-sm text-gray-500 mb-2">Track income, clients, and projects in one place</p>
-          <h2 className="text-xl font-bold mb-3">Freelancer Client CRM — Notion Template</h2>
-          <p className="text-gray-600 text-sm mb-6">
-            Manage your clients, track monthly revenue, log invoices, and monitor your pipeline —
-            all in a single Notion workspace built for UAE freelancers. See where your income comes
-            from and spot your highest-value clients at a glance.
-          </p>
-          <Link
-            href="/#products"
-            className="inline-block bg-gray-950 text-white font-semibold px-6 py-3 rounded-lg hover:bg-gray-800 transition-colors"
-          >
-            See the Freelancer CRM →
-          </Link>
-        </div>
-
-        {/* Further Reading */}
-        <section>
-          <h2 className="text-lg font-bold mb-4">Further Reading</h2>
-          <div className="grid gap-3">
-            {[
-              { href: "/blog/freelance-rate-calculator-uae", label: "Freelance Rate Calculator: How to Price Your Work in AED" },
-              { href: "/blog/how-to-get-international-clients-uae", label: "How to Get International Clients as a UAE Freelancer" },
-              { href: "/blog/freelance-vs-salary-uae", label: "Freelance vs Salary in UAE — Which Pays More?" },
-              { href: "/blog/freelance-visa-uae", label: "How to Get a Freelance Visa in UAE (2026)" },
-              { href: "/blog/freelance-tax-uae", label: "Do Freelancers Pay Tax in the UAE? (2026 Complete Guide)" },
-            ].map(({ href, label }) => (
-              <Link
-                key={href}
-                href={href}
-                className="flex items-center gap-2 text-gray-700 hover:text-gray-900 text-sm border border-gray-200 rounded-lg px-4 py-3 hover:border-gray-400 transition-colors"
-              >
-                <span className="text-gray-400">→</span>
-                {label}
-              </Link>
-            ))}
+          {/* CTA */}
+          <div className="bg-gradient-to-br from-gray-900 to-gray-800 text-white rounded-2xl p-8 mt-12 text-center">
+            <span className="text-xs font-bold text-emerald-400 uppercase tracking-widest block mb-3">SoloKit</span>
+            <h3 className="text-2xl font-bold mb-3">Run Your UAE Freelance Business Like a Pro</h3>
+            <p className="text-gray-400 text-sm mb-6 max-w-sm mx-auto">Templates, SOPs, and systems built for UAE freelancers.</p>
+            <Link href="/products/solokit-freelance-os" className="inline-block bg-emerald-500 hover:bg-emerald-400 text-white font-bold px-8 py-3 rounded-xl transition-colors text-sm">Get SoloKit →</Link>
           </div>
-        </section>
 
+          {/* Related links */}
+          <div className="mt-10">
+            <h3 className="text-sm font-semibold text-gray-900 mb-3">Related Guides</h3>
+            <div className="space-y-1.5">
+              <Link href="/blog/freelance-rate-calculator-uae" className="block text-blue-600 hover:text-blue-800 text-sm">→ Freelance Rate Calculator: How to Price Your Work in AED</Link>
+              <Link href="/blog/how-to-get-international-clients-uae" className="block text-blue-600 hover:text-blue-800 text-sm">→ How to Get International Clients as a UAE Freelancer</Link>
+              <Link href="/blog/freelance-vs-salary-uae" className="block text-blue-600 hover:text-blue-800 text-sm">→ Freelance vs Salary in UAE — Which Pays More?</Link>
+              <Link href="/blog/how-to-scale-freelance-business-uae" className="block text-blue-600 hover:text-blue-800 text-sm">→ How to Scale a Freelance Business in the UAE</Link>
+            </div>
+          </div>
+        </div>
       </main>
       <Footer />
     </>
