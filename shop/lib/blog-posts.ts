@@ -2969,6 +2969,33 @@ export const posts: BlogPost[] = [
     readTime: "7 min read",
     category: "Client Work & Proposals",
   },
+  {
+    slug: "freelance-pharmacist-rates-uae",
+    title: "Freelance Pharmacist Rates in the UAE (2026)",
+    description:
+      "Real AED rates for freelance and locum pharmacists in Dubai and Abu Dhabi. Community pharmacy locum, hospital pharmacy, clinical pharmacy specialist, pharmaceutical regulatory consulting, and pharmacovigilance fees for 2026.",
+    date: "June 16, 2026",
+    readTime: "7 min read",
+    category: "Pricing & Rates",
+  },
+  {
+    slug: "freelance-radiographer-rates-uae",
+    title: "Freelance Radiographer Rates in the UAE (2026)",
+    description:
+      "Real AED rates for freelance and locum radiographers in Dubai and Abu Dhabi. General radiography, MRI, CT, ultrasound sonography, mammography, interventional radiology, and occupational health radiography fees for 2026.",
+    date: "June 16, 2026",
+    readTime: "7 min read",
+    category: "Pricing & Rates",
+  },
+  {
+    slug: "how-to-fire-a-freelance-client-uae",
+    title: "How to Fire a Client as a UAE Freelancer (2026 Guide)",
+    description:
+      "When and how UAE freelancers end client relationships professionally — warning signs, the termination conversation, what to say, handling the contract, and protecting yourself legally and financially.",
+    date: "June 16, 2026",
+    readTime: "7 min read",
+    category: "Client Work & Proposals",
+  },
 ];
 
 export function getPost(slug: string): BlogPost | undefined {

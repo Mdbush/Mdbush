@@ -342,6 +342,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "freelance-dietitian-rates-uae",
     "freelance-mental-health-counsellor-rates-uae",
     "how-to-get-paid-upfront-uae",
+    "freelance-pharmacist-rates-uae",
+    "freelance-radiographer-rates-uae",
+    "how-to-fire-a-freelance-client-uae",
   ].map((slug) => ({
     url: `${base}/blog/${slug}`,
     lastModified: new Date(),
