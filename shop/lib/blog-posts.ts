@@ -2267,6 +2267,33 @@ export const posts: BlogPost[] = [
     readTime: "7 min read",
     category: "Pricing & Rates",
   },
+  {
+    slug: "freelance-sustainability-reporting-consultant-rates-uae",
+    title: "Freelance Sustainability Reporting Consultant Rates in the UAE (2026)",
+    description:
+      "Real AED day rates for freelance sustainability reporting consultants in Dubai and Abu Dhabi. ESG reporting, GRI Standards, TCFD disclosures, UAE sustainability regulations, and carbon accounting fees for UAE businesses in 2026.",
+    date: "June 16, 2026",
+    readTime: "7 min read",
+    category: "Pricing & Rates",
+  },
+  {
+    slug: "how-to-build-freelance-authority-uae",
+    title: "How to Build Authority as a UAE Freelancer (2026 Guide)",
+    description:
+      "How UAE freelancers build professional authority — thought leadership content, speaking engagements, media coverage, LinkedIn publishing, and the credibility signals that make premium clients choose you. Dubai and Abu Dhabi freelancer guide.",
+    date: "June 16, 2026",
+    readTime: "7 min read",
+    category: "Getting Clients",
+  },
+  {
+    slug: "freelance-treasury-consultant-rates-uae",
+    title: "Freelance Treasury Consultant Rates in the UAE (2026)",
+    description:
+      "Real AED day rates for freelance treasury consultants in Dubai and Abu Dhabi. Cash management, FX hedging, liquidity management, treasury technology, and corporate treasury advisory fees for UAE companies in 2026.",
+    date: "June 16, 2026",
+    readTime: "7 min read",
+    category: "Pricing & Rates",
+  },
 ];
 
 export function getPost(slug: string): BlogPost | undefined {
