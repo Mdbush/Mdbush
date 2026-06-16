@@ -7,11 +7,28 @@ export const metadata: Metadata = {
   title: "About SoloKit — Digital Tools for UAE Freelancers",
   description:
     "SoloKit builds ready-to-use Notion templates, AI prompt packs, and SOPs for freelancers and solopreneurs in the UAE and Gulf region.",
+  alternates: { canonical: "/about" },
+};
+
+const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? "https://solokit.cloud";
+
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  name: "SoloKit",
+  url: siteUrl,
+  description: "Ready-to-use Notion templates, AI prompt packs, and SOPs for freelancers and solopreneurs in the UAE.",
+  foundingDate: "2026",
+  founder: { "@type": "Person", name: "Mohamed Bushara" },
+  address: { "@type": "PostalAddress", addressLocality: "Dubai", addressCountry: "AE" },
+  contactPoint: { "@type": "ContactPoint", email: "md.a.bushara@gmail.com", contactType: "customer service" },
+  sameAs: [],
 };
 
 export default function AboutPage() {
   return (
     <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
       <Header />
 
       <main className="flex-1 max-w-2xl mx-auto px-4 sm:px-6 py-14">
