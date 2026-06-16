@@ -6,11 +6,11 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "UAE Freelancer Guides & Resources — SoloKit",
   description:
-    "234 practical guides for freelancers and solopreneurs in the UAE. Visa, tax, rates, clients, contracts, AI tools, and more. All free.",
+    "237 practical guides for freelancers and solopreneurs in the UAE. Visa, tax, rates, clients, contracts, AI tools, and more. All free.",
   alternates: { canonical: "/guides" },
   openGraph: {
     title: "UAE Freelancer Guides & Resources — SoloKit",
-    description: "234 free guides covering everything a UAE freelancer needs to know.",
+    description: "237 free guides covering everything a UAE freelancer needs to know.",
     type: "website",
     url: "/guides",
   },
@@ -90,6 +90,7 @@ const categories = [
       { slug: "how-to-build-email-list-freelancers-uae", title: "How to Build an Email List as a UAE Freelancer (2026): From Zero to Warm Leads", time: "8 min" },
       { slug: "how-to-ask-for-referrals-uae", title: "How to Ask for Referrals as a UAE Freelancer (2026): Scripts That Work", time: "7 min" },
       { slug: "how-to-upsell-freelance-clients-uae", title: "How to Upsell Existing Freelance Clients in the UAE (2026): Expand Your Revenue", time: "7 min" },
+      { slug: "how-to-get-more-freelance-reviews-uae", title: "How to Get More Reviews & Testimonials as a UAE Freelancer (2026)", time: "6 min" },
     ],
   },
   {
@@ -221,6 +222,8 @@ const categories = [
       { slug: "freelance-diversity-inclusion-consultant-rates-uae", title: "Freelance Diversity & Inclusion Consultant Rates in the UAE (2026)", time: "7 min" },
       { slug: "freelance-corporate-communications-rates-uae", title: "Freelance Corporate Communications Rates in the UAE (2026)", time: "7 min" },
       { slug: "freelance-environment-health-safety-consultant-rates-uae", title: "Freelance EHS Consultant Rates in the UAE (2026): Environment, Health & Safety Fees", time: "7 min" },
+      { slug: "freelance-interim-cfo-rates-uae", title: "Freelance & Fractional CFO Rates in the UAE (2026): Interim CFO & Finance Director Fees", time: "8 min" },
+      { slug: "freelance-customer-success-manager-rates-uae", title: "Freelance Customer Success Manager Rates in the UAE (2026)", time: "7 min" },
     ],
   },
   {
@@ -328,7 +331,7 @@ export default function GuidesPage() {
           <span className="text-xs font-semibold text-gray-400 uppercase tracking-widest">Free Resources</span>
           <h1 className="text-3xl sm:text-4xl font-bold text-gray-900 mt-2 mb-3">UAE Freelancer Guides</h1>
           <p className="text-gray-500 max-w-xl mx-auto leading-relaxed">
-            234 practical guides covering everything you need to know about freelancing in Dubai and Abu Dhabi.
+            237 practical guides covering everything you need to know about freelancing in Dubai and Abu Dhabi.
             Written specifically for the UAE market — AED pricing, local laws, free zone context.
           </p>
         </div>

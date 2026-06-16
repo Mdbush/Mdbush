@@ -2078,6 +2078,33 @@ export const posts: BlogPost[] = [
     readTime: "7 min read",
     category: "Pricing & Rates",
   },
+  {
+    slug: "freelance-interim-cfo-rates-uae",
+    title: "Freelance & Fractional CFO Rates in the UAE (2026): Interim CFO & Finance Director Fees",
+    description:
+      "Real AED rates for freelance and fractional CFOs in Dubai and Abu Dhabi. Financial strategy, fundraising support, board reporting, investor relations, cash flow management, and interim CFO fees for UAE companies in 2026.",
+    date: "June 16, 2026",
+    readTime: "8 min read",
+    category: "Pricing & Rates",
+  },
+  {
+    slug: "how-to-get-more-freelance-reviews-uae",
+    title: "How to Get More Reviews & Testimonials as a UAE Freelancer (2026)",
+    description:
+      "How UAE freelancers collect reviews on Google, LinkedIn, and Upwork — timing, scripts, what to ask, and how to use testimonials to win more clients. Practical guide for Dubai and Abu Dhabi freelancers.",
+    date: "June 16, 2026",
+    readTime: "6 min read",
+    category: "Getting Clients",
+  },
+  {
+    slug: "freelance-customer-success-manager-rates-uae",
+    title: "Freelance Customer Success Manager Rates in the UAE (2026)",
+    description:
+      "Real AED day rates for freelance customer success managers in Dubai and Abu Dhabi. SaaS CSM, onboarding design, retention strategy, churn reduction, and customer success programme fees for UAE tech companies in 2026.",
+    date: "June 16, 2026",
+    readTime: "7 min read",
+    category: "Pricing & Rates",
+  },
 ];
 
 export function getPost(slug: string): BlogPost | undefined {

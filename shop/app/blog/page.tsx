@@ -10,7 +10,7 @@ export const metadata: Metadata = {
   alternates: { canonical: "/blog" },
   openGraph: {
     title: "Free Guides for UAE Freelancers — SoloKit Blog",
-    description: "234 practical guides covering everything UAE freelancers need. No fluff.",
+    description: "237 practical guides covering everything UAE freelancers need. No fluff.",
     url: "/blog",
     type: "website",
   },
