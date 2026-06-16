@@ -2807,6 +2807,33 @@ export const posts: BlogPost[] = [
     readTime: "7 min read",
     category: "Getting Clients",
   },
+  {
+    slug: "freelance-recruitment-consultant-rates-uae",
+    title: "Freelance Recruitment Consultant Rates in the UAE (2026)",
+    description:
+      "Real AED rates for freelance recruitment consultants in Dubai and Abu Dhabi. Executive search, contingency recruitment fees, RPO day rates, Emiratisation hiring, tech and digital talent recruitment, and retained search fees for 2026.",
+    date: "June 16, 2026",
+    readTime: "7 min read",
+    category: "Pricing & Rates",
+  },
+  {
+    slug: "freelance-interior-architect-rates-uae",
+    title: "Freelance Interior Architect Rates in the UAE (2026)",
+    description:
+      "Real AED per sqm and day rates for freelance interior architects in Dubai and Abu Dhabi. Luxury residential, commercial office fit-out, hospitality, retail, FF&E specification, and interior design consultancy fees for UAE projects in 2026.",
+    date: "June 16, 2026",
+    readTime: "7 min read",
+    category: "Pricing & Rates",
+  },
+  {
+    slug: "how-to-value-based-pricing-uae",
+    title: "Value-Based Pricing for UAE Freelancers (2026 Guide)",
+    description:
+      "How UAE freelancers implement value-based pricing — moving from day rates to project fees based on client outcomes. The value conversation framework, how to quantify your impact, outcome framing, and value-based pricing scripts for Dubai and Abu Dhabi clients.",
+    date: "June 16, 2026",
+    readTime: "7 min read",
+    category: "Pricing & Rates",
+  },
 ];
 
 export function getPost(slug: string): BlogPost | undefined {
