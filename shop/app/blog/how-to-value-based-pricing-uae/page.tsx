@@ -39,8 +39,7 @@ export default function HowToValueBasedPricingUAE() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
       <Header />
-      <main className="min-h-screen bg-white">
-        <div className="max-w-3xl mx-auto px-4 py-12">
+      <main className="max-w-2xl mx-auto px-4 py-10">
           <nav className="text-sm text-gray-500 mb-8">
             <Link href="/" className="hover:text-gray-700">Home</Link>
             <span className="mx-2">/</span>
@@ -49,35 +48,17 @@ export default function HowToValueBasedPricingUAE() {
             <span className="text-gray-900">Value-Based Pricing UAE</span>
           </nav>
 
-          <div className="mb-10">
-            <span className="inline-block bg-blue-100 text-blue-700 text-xs font-semibold px-3 py-1 rounded-full mb-4">
-              Pricing & Rates
-            </span>
-            <h1 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4 leading-tight">
-              Value-Based Pricing for UAE Freelancers (2026 Guide)
-            </h1>
-            <p className="text-lg text-gray-600 mb-4">
-              Value-based pricing is the practice of setting your fee based on what
-              your work is worth to the client — not on how long it takes you or
-              what the market average rate is. For UAE freelancers, it is the single
-              most powerful pricing shift available: a consultant who moves from a
-              day rate of AED 1,500/day to a project fee of AED 25,000 for a
-              strategy engagement can earn more from 5 days of highly focused work
-              than from 16+ days of day rate billing. The key insight: clients do
-              not buy time — they buy outcomes. A financial model that helps a UAE
-              startup raise AED 20M in funding is worth a very different amount than
-              the 3 days it took to build. This guide walks through the complete
-              value-based pricing framework for UAE freelancers: how to identify
-              the value of your work, how to have the value conversation with UAE
-              clients, how to structure your proposal around outcomes, and copy-paste
-              scripts for the most common UAE value-based pricing situations.
-            </p>
-            <div className="flex items-center gap-4 text-sm text-gray-400">
-              <span>June 16, 2026</span>
-              <span>·</span>
-              <span>7 min read</span>
-            </div>
+          
+        {/* Dark hero */}
+        <div className="bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 text-white px-6 py-10 rounded-2xl mb-8">
+          <span className="text-xs font-bold text-emerald-400 uppercase tracking-widest mb-3 block">UAE FREELANCING</span>
+          <h1 className="text-3xl sm:text-4xl font-bold leading-tight mb-4">Value-Based Pricing for UAE Freelancers (2026 Guide)</h1>
+          <p className="text-gray-300 text-sm mb-5 leading-relaxed max-w-xl">How UAE freelancers implement value-based pricing — moving from day rates to project fees based on client outcomes. The value conversation framework, how to quantify your impact, and value-based pricing scripts for Dubai and Abu Dhabi clients.</p>
+          <div className="flex flex-wrap gap-4 text-xs text-gray-400">
+            <span>June 2026</span><span>·</span><span>7 min read</span>
           </div>
+        </div>
+
 
           <h2 className="text-2xl font-bold text-gray-900 mb-4">The Value-Based Pricing Framework</h2>
           <div className="space-y-4 mb-10">
@@ -218,7 +199,7 @@ export default function HowToValueBasedPricingUAE() {
               ))}
             </div>
           </div>
-        </div>
+        
       </main>
       <Footer />
     </>

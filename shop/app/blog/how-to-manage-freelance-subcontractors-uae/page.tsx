@@ -39,8 +39,7 @@ export default function HowToManageFreelanceSubcontractorsUAE() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
       <Header />
-      <main className="min-h-screen bg-white">
-        <div className="max-w-3xl mx-auto px-4 py-12">
+      <main className="max-w-2xl mx-auto px-4 py-10">
           <nav className="text-sm text-gray-500 mb-8">
             <Link href="/" className="hover:text-gray-700">Home</Link>
             <span className="mx-2">/</span>
@@ -49,32 +48,17 @@ export default function HowToManageFreelanceSubcontractorsUAE() {
             <span className="text-gray-900">Manage Freelance Subcontractors UAE</span>
           </nav>
 
-          <div className="mb-10">
-            <span className="inline-block bg-blue-100 text-blue-700 text-xs font-semibold px-3 py-1 rounded-full mb-4">
-              Business & Mindset
-            </span>
-            <h1 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4 leading-tight">
-              How to Manage Freelance Subcontractors in the UAE (2026 Guide)
-            </h1>
-            <p className="text-lg text-gray-600 mb-4">
-              Subcontracting — bringing other freelancers onto your projects — is the
-              primary way UAE freelancers scale beyond what a single person can deliver
-              without the overhead of a full agency. When you win a project that requires
-              skills you don&apos;t have (a brand brief that needs both strategy and design,
-              a tech project that needs both frontend and backend), or when you&apos;re
-              at capacity but don&apos;t want to turn away work, a reliable subcontractor
-              network is the answer. Done well, subcontracting lets you take on larger
-              projects, maintain quality, and earn a margin on work you manage rather than
-              personally deliver. Done poorly, it introduces quality risk, payment disputes,
-              and client relationship damage. This guide covers everything UAE freelancers
-              need to manage subcontractors professionally.
-            </p>
-            <div className="flex items-center gap-4 text-sm text-gray-400">
-              <span>June 16, 2026</span>
-              <span>·</span>
-              <span>7 min read</span>
-            </div>
+          
+        {/* Dark hero */}
+        <div className="bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 text-white px-6 py-10 rounded-2xl mb-8">
+          <span className="text-xs font-bold text-emerald-400 uppercase tracking-widest mb-3 block">CLIENT WORK</span>
+          <h1 className="text-3xl sm:text-4xl font-bold leading-tight mb-4">How to Manage Freelance Subcontractors in the UAE (2026 Guide)</h1>
+          <p className="text-gray-300 text-sm mb-5 leading-relaxed max-w-xl">How UAE freelancers hire, manage, and pay subcontractors — finding the right people, subcontractor agreements, quality control, payment structures, client disclosure, and building a reliable freelance team for larger projects.</p>
+          <div className="flex flex-wrap gap-4 text-xs text-gray-400">
+            <span>June 2026</span><span>·</span><span>7 min read</span>
           </div>
+        </div>
+
 
           <h2 className="text-2xl font-bold text-gray-900 mb-4">Finding and Vetting UAE Subcontractors</h2>
           <div className="space-y-4 mb-10">
@@ -189,7 +173,7 @@ export default function HowToManageFreelanceSubcontractorsUAE() {
               ))}
             </div>
           </div>
-        </div>
+        
       </main>
       <Footer />
     </>

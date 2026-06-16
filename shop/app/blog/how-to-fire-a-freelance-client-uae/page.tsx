@@ -39,8 +39,7 @@ export default function HowToFireAFreelanceClientUAE() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
       <Header />
-      <main className="min-h-screen bg-white">
-        <div className="max-w-3xl mx-auto px-4 py-12">
+      <main className="max-w-2xl mx-auto px-4 py-10">
           <nav className="text-sm text-gray-500 mb-8">
             <Link href="/" className="hover:text-gray-700">Home</Link>
             <span className="mx-2">/</span>
@@ -49,37 +48,17 @@ export default function HowToFireAFreelanceClientUAE() {
             <span className="text-gray-900">How to Fire a Client UAE</span>
           </nav>
 
-          <div className="mb-10">
-            <span className="inline-block bg-blue-100 text-blue-700 text-xs font-semibold px-3 py-1 rounded-full mb-4">
-              Client Work & Proposals
-            </span>
-            <h1 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4 leading-tight">
-              How to Fire a Client as a UAE Freelancer (2026 Guide)
-            </h1>
-            <p className="text-lg text-gray-600 mb-4">
-              Ending a client relationship is one of the most uncomfortable
-              actions a freelancer can take — and also one of the most
-              important business decisions available. Every bad client you
-              retain occupies capacity that could be used by a good client,
-              drains your energy disproportionate to their revenue contribution,
-              and often degrades the quality of work you produce for everyone
-              else. UAE freelancers sometimes hold on to difficult clients
-              longer than they should for specific reasons — concern about
-              income replacement in a market where visa status is tied to
-              income, reluctance to damage professional reputation in a small
-              market where everyone knows everyone, and uncertainty about
-              the contractual or legal implications of ending a retainer
-              or ongoing relationship. This guide covers the specific warning
-              signs that a client relationship has become untenable, the
-              practical mechanics of ending it professionally, and the
-              language to use in the UAE professional context.
-            </p>
-            <div className="flex items-center gap-4 text-sm text-gray-400">
-              <span>June 16, 2026</span>
-              <span>·</span>
-              <span>7 min read</span>
-            </div>
+          
+        {/* Dark hero */}
+        <div className="bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 text-white px-6 py-10 rounded-2xl mb-8">
+          <span className="text-xs font-bold text-emerald-400 uppercase tracking-widest mb-3 block">CLIENT WORK</span>
+          <h1 className="text-3xl sm:text-4xl font-bold leading-tight mb-4">How to Fire a Client as a UAE Freelancer (2026 Guide)</h1>
+          <p className="text-gray-300 text-sm mb-5 leading-relaxed max-w-xl">When and how UAE freelancers end client relationships professionally — the warning signs, the conversation, what to say, handling the contract, and protecting yourself legally and financially. Guide for Dubai and Abu Dhabi freelancers.</p>
+          <div className="flex flex-wrap gap-4 text-xs text-gray-400">
+            <span>June 2026</span><span>·</span><span>7 min read</span>
           </div>
+        </div>
+
 
           <h2 className="text-2xl font-bold text-gray-900 mb-4">Warning Signs You Should End a Client Relationship</h2>
           <div className="space-y-4 mb-10">
@@ -186,7 +165,7 @@ export default function HowToFireAFreelanceClientUAE() {
               ))}
             </div>
           </div>
-        </div>
+        
       </main>
       <Footer />
     </>

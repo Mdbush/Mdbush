@@ -39,8 +39,7 @@ export default function HowToPriceDiscoveryWorkshopsUAE() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
       <Header />
-      <main className="min-h-screen bg-white">
-        <div className="max-w-3xl mx-auto px-4 py-12">
+      <main className="max-w-2xl mx-auto px-4 py-10">
           <nav className="text-sm text-gray-500 mb-8">
             <Link href="/" className="hover:text-gray-700">Home</Link>
             <span className="mx-2">/</span>
@@ -49,30 +48,17 @@ export default function HowToPriceDiscoveryWorkshopsUAE() {
             <span className="text-gray-900">Price Discovery Workshops UAE</span>
           </nav>
 
-          <div className="mb-10">
-            <span className="inline-block bg-blue-100 text-blue-700 text-xs font-semibold px-3 py-1 rounded-full mb-4">
-              Pricing & Rates
-            </span>
-            <h1 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4 leading-tight">
-              How to Price and Sell Discovery Workshops as a UAE Freelancer (2026)
-            </h1>
-            <p className="text-lg text-gray-600 mb-4">
-              Discovery workshops — paid sessions where you diagnose a client&apos;s problem,
-              map their current state, and define the scope of a larger engagement — are one
-              of the most powerful tools in a UAE freelancer&apos;s commercial toolkit. A paid
-              discovery workshop does three things simultaneously: it generates immediate
-              revenue (AED 2,000–12,000 for a half or full day), it qualifies clients who
-              are serious enough to pay before seeing a full proposal, and it creates the
-              information you need to scope and price the main project accurately. UAE
-              freelancers who do not charge for discovery are leaving money on the table
-              and doing unpaid work for clients who may never proceed with the main engagement.
-            </p>
-            <div className="flex items-center gap-4 text-sm text-gray-400">
-              <span>June 16, 2026</span>
-              <span>·</span>
-              <span>7 min read</span>
-            </div>
+          
+        {/* Dark hero */}
+        <div className="bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 text-white px-6 py-10 rounded-2xl mb-8">
+          <span className="text-xs font-bold text-emerald-400 uppercase tracking-widest mb-3 block">UAE FREELANCING</span>
+          <h1 className="text-3xl sm:text-4xl font-bold leading-tight mb-4">How to Price and Sell Discovery Workshops as a UAE Freelancer (2026)</h1>
+          <p className="text-gray-300 text-sm mb-5 leading-relaxed max-w-xl">How UAE freelancers charge for discovery workshops, strategy sessions, and paid consultations — pricing models, AED rates, how to position paid discovery, and how to convert workshops into ongoing client engagements.</p>
+          <div className="flex flex-wrap gap-4 text-xs text-gray-400">
+            <span>June 2026</span><span>·</span><span>7 min read</span>
           </div>
+        </div>
+
 
           <h2 className="text-2xl font-bold text-gray-900 mb-4">Why UAE Freelancers Should Charge for Discovery</h2>
           <div className="space-y-4 mb-10">
@@ -187,7 +173,7 @@ export default function HowToPriceDiscoveryWorkshopsUAE() {
               ))}
             </div>
           </div>
-        </div>
+        
       </main>
       <Footer />
     </>

@@ -39,8 +39,7 @@ export default function HowToNegotiateContractsFreelanceUAE() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
       <Header />
-      <main className="min-h-screen bg-white">
-        <div className="max-w-3xl mx-auto px-4 py-12">
+      <main className="max-w-2xl mx-auto px-4 py-10">
           {/* Breadcrumb */}
           <nav className="text-sm text-gray-500 mb-8">
             <Link href="/" className="hover:text-gray-700">Home</Link>
@@ -51,25 +50,17 @@ export default function HowToNegotiateContractsFreelanceUAE() {
           </nav>
 
           {/* Header */}
-          <div className="mb-10">
-            <span className="inline-block bg-orange-100 text-orange-700 text-xs font-semibold px-3 py-1 rounded-full mb-4">
-              Client Work & Proposals
-            </span>
-            <h1 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4 leading-tight">
-              How to Negotiate Contracts as a UAE Freelancer (2026)
-            </h1>
-            <p className="text-lg text-gray-600 mb-4">
-              Most UAE freelancers sign whatever contract the client sends without reading it properly —
-              and pay for it with late payments, scope creep, and IP they no longer own. Negotiating a
-              fair contract isn&apos;t confrontational; it&apos;s professional. Here&apos;s how to push back on the
-              terms that matter most, with real scripts you can use.
-            </p>
-            <div className="flex items-center gap-4 text-sm text-gray-400">
-              <span>June 16, 2026</span>
-              <span>·</span>
-              <span>9 min read</span>
-            </div>
+          
+        {/* Dark hero */}
+        <div className="bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 text-white px-6 py-10 rounded-2xl mb-8">
+          <span className="text-xs font-bold text-emerald-400 uppercase tracking-widest mb-3 block">CLIENT WORK</span>
+          <h1 className="text-3xl sm:text-4xl font-bold leading-tight mb-4">How to Negotiate Contracts as a UAE Freelancer (2026): Scripts & Tactics</h1>
+          <p className="text-gray-300 text-sm mb-5 leading-relaxed max-w-xl">Practical contract negotiation guide for freelancers in Dubai and Abu Dhabi. How to push back on unfair terms, negotiate payment schedules, IP rights, kill fees, and scope creep clauses — with real scripts.</p>
+          <div className="flex flex-wrap gap-4 text-xs text-gray-400">
+            <span>June 2026</span><span>·</span><span>9 min read</span>
           </div>
+        </div>
+
 
           {/* Terms That Matter Most */}
           <h2 className="text-2xl font-bold text-gray-900 mb-4">The Six Contract Terms That Actually Matter</h2>
@@ -295,7 +286,7 @@ export default function HowToNegotiateContractsFreelanceUAE() {
               ))}
             </div>
           </div>
-        </div>
+        
       </main>
       <Footer />
     </>

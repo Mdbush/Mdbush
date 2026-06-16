@@ -48,8 +48,7 @@ export default function FreelanceEHSConsultantRatesUAE() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
       <Header />
-      <main className="min-h-screen bg-white">
-        <div className="max-w-3xl mx-auto px-4 py-12">
+      <main className="max-w-2xl mx-auto px-4 py-10">
           <nav className="text-sm text-gray-500 mb-8">
             <Link href="/" className="hover:text-gray-700">Home</Link>
             <span className="mx-2">/</span>
@@ -58,31 +57,17 @@ export default function FreelanceEHSConsultantRatesUAE() {
             <span className="text-gray-900">EHS Consultant Rates UAE</span>
           </nav>
 
-          <div className="mb-10">
-            <span className="inline-block bg-blue-100 text-blue-700 text-xs font-semibold px-3 py-1 rounded-full mb-4">
-              Pricing & Rates
-            </span>
-            <h1 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4 leading-tight">
-              Freelance EHS Consultant Rates in the UAE (2026)
-            </h1>
-            <p className="text-lg text-gray-600 mb-4">
-              Environment, Health and Safety (EHS) consulting is a regulated, high-stakes
-              specialism in the UAE — particularly in construction, oil and gas, manufacturing,
-              hospitality, and government-linked entities. The UAE has distinct regulatory
-              frameworks: OSHAD (Occupational Safety and Health Administration Abu Dhabi) for
-              Abu Dhabi, MOHRE-linked regulations for Dubai and the Northern Emirates, and
-              free zone-specific requirements in JAFZA, KIZAD, and other industrial zones.
-              EHS consultants who understand the UAE regulatory landscape — rather than applying
-              generic UK or US frameworks — are genuinely scarce and command premium rates.
-              The growth of UAE infrastructure projects (Expo City development, UAE Net Zero
-              projects, industrial expansion) maintains strong demand for project EHS support.
-            </p>
-            <div className="flex items-center gap-4 text-sm text-gray-400">
-              <span>June 16, 2026</span>
-              <span>·</span>
-              <span>7 min read</span>
-            </div>
+          
+        {/* Dark hero */}
+        <div className="bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 text-white px-6 py-10 rounded-2xl mb-8">
+          <span className="text-xs font-bold text-emerald-400 uppercase tracking-widest mb-3 block">UAE RATES 2026</span>
+          <h1 className="text-3xl sm:text-4xl font-bold leading-tight mb-4">Freelance EHS Consultant Rates in the UAE (2026): Environment, Health & Safety Fees</h1>
+          <p className="text-gray-300 text-sm mb-5 leading-relaxed max-w-xl">Real AED day rates for freelance EHS consultants in Dubai and Abu Dhabi. HSE audits, OSHAD compliance, construction site safety, environmental assessments, ISO 45001/14001, and EHS training fees for UAE companies in 2026.</p>
+          <div className="flex flex-wrap gap-4 text-xs text-gray-400">
+            <span>June 2026</span><span>·</span><span>7 min read</span>
           </div>
+        </div>
+
 
           <div className="bg-blue-50 border border-blue-200 rounded-xl p-6 mb-10">
             <h2 className="text-base font-semibold text-blue-900 mb-3">Quick Rate Benchmark</h2>
@@ -210,7 +195,7 @@ export default function FreelanceEHSConsultantRatesUAE() {
               ))}
             </div>
           </div>
-        </div>
+        
       </main>
       <Footer />
     </>

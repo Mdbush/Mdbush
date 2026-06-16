@@ -48,8 +48,7 @@ export default function FreelancePharmacistRatesUAE() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
       <Header />
-      <main className="min-h-screen bg-white">
-        <div className="max-w-3xl mx-auto px-4 py-12">
+      <main className="max-w-2xl mx-auto px-4 py-10">
           <nav className="text-sm text-gray-500 mb-8">
             <Link href="/" className="hover:text-gray-700">Home</Link>
             <span className="mx-2">/</span>
@@ -58,43 +57,17 @@ export default function FreelancePharmacistRatesUAE() {
             <span className="text-gray-900">Pharmacist Rates UAE</span>
           </nav>
 
-          <div className="mb-10">
-            <span className="inline-block bg-blue-100 text-blue-700 text-xs font-semibold px-3 py-1 rounded-full mb-4">
-              Pricing & Rates
-            </span>
-            <h1 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4 leading-tight">
-              Freelance Pharmacist Rates in the UAE (2026)
-            </h1>
-            <p className="text-lg text-gray-600 mb-4">
-              Pharmacy practice in the UAE operates across several distinct
-              work models for freelancers — community pharmacy locum coverage
-              (filling staffing gaps at retail pharmacies), hospital and
-              clinical pharmacy specialist roles on a contract or sessional
-              basis, pharmaceutical industry advisory work (medical affairs,
-              regulatory submissions, pharmacovigilance), and independent
-              pharmacy consulting for business and regulatory purposes.
-              All clinical pharmacy practice in the UAE requires DHA (Dubai)
-              or DOH (Abu Dhabi) registration for the relevant scope — community
-              pharmacist, clinical pharmacist, or specialist. The UAE has a
-              large and expanding pharmacy network (both community pharmacy
-              chains — Aster, Life, United, Boots — and hospital-integrated
-              pharmacy departments at private hospital networks), creating
-              consistent locum demand. The pharmaceutical industry in the
-              UAE (significant multinational pharma presence, DIFC-based
-              regional offices, and a growing generic pharma sector) generates
-              demand for freelance pharmacists in medical affairs, regulatory
-              submissions (MOHAP/DHA registration), pharmacovigilance, and
-              medical science liaison roles. Arabic-speaking pharmacists
-              hold a particular advantage in UAE community pharmacy — where
-              a significant proportion of clients are Emirati, Arabic-speaking
-              expats, or Arabic-medium communicators.
-            </p>
-            <div className="flex items-center gap-4 text-sm text-gray-400">
-              <span>June 16, 2026</span>
-              <span>·</span>
-              <span>7 min read</span>
-            </div>
+          
+        {/* Dark hero */}
+        <div className="bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 text-white px-6 py-10 rounded-2xl mb-8">
+          <span className="text-xs font-bold text-emerald-400 uppercase tracking-widest mb-3 block">UAE RATES 2026</span>
+          <h1 className="text-3xl sm:text-4xl font-bold leading-tight mb-4">Freelance Pharmacist Rates in the UAE (2026)</h1>
+          <p className="text-gray-300 text-sm mb-5 leading-relaxed max-w-xl">Real AED rates for freelance and locum pharmacists in Dubai and Abu Dhabi. Community pharmacy locum, hospital pharmacy, clinical pharmacy, regulatory consulting, and pharmaceutical industry advisory fees for 2026.</p>
+          <div className="flex flex-wrap gap-4 text-xs text-gray-400">
+            <span>June 2026</span><span>·</span><span>7 min read</span>
           </div>
+        </div>
+
 
           <div className="bg-blue-50 border border-blue-200 rounded-xl p-6 mb-10">
             <h2 className="text-base font-semibold text-blue-900 mb-3">Quick Rate Benchmark</h2>
@@ -248,7 +221,7 @@ export default function FreelancePharmacistRatesUAE() {
               ))}
             </div>
           </div>
-        </div>
+        
       </main>
       <Footer />
     </>

@@ -39,8 +39,7 @@ export default function HowToManageFreelanceFinancesUAE() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
       <Header />
-      <main className="min-h-screen bg-white">
-        <div className="max-w-3xl mx-auto px-4 py-12">
+      <main className="max-w-2xl mx-auto px-4 py-10">
           <nav className="text-sm text-gray-500 mb-8">
             <Link href="/" className="hover:text-gray-700">Home</Link>
             <span className="mx-2">/</span>
@@ -49,25 +48,17 @@ export default function HowToManageFreelanceFinancesUAE() {
             <span className="text-gray-900">Manage Freelance Finances UAE</span>
           </nav>
 
-          <div className="mb-10">
-            <span className="inline-block bg-emerald-100 text-emerald-700 text-xs font-semibold px-3 py-1 rounded-full mb-4">
-              Tax & Finance
-            </span>
-            <h1 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4 leading-tight">
-              How to Manage Your Finances as a UAE Freelancer (2026)
-            </h1>
-            <p className="text-lg text-gray-600 mb-4">
-              Irregular income is the defining financial challenge of freelancing. Unlike a salary arriving
-              on the 25th, freelance income arrives in lumps — AED 40,000 in March, nothing in April,
-              AED 60,000 in May. Without a system, most freelancers overspend in good months and panic
-              in slow ones. This guide gives you a practical financial framework for UAE freelance life.
-            </p>
-            <div className="flex items-center gap-4 text-sm text-gray-400">
-              <span>June 16, 2026</span>
-              <span>·</span>
-              <span>9 min read</span>
-            </div>
+          
+        {/* Dark hero */}
+        <div className="bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 text-white px-6 py-10 rounded-2xl mb-8">
+          <span className="text-xs font-bold text-emerald-400 uppercase tracking-widest mb-3 block">TAX &amp; FINANCE</span>
+          <h1 className="text-3xl sm:text-4xl font-bold leading-tight mb-4">How to Manage Your Finances as a UAE Freelancer (2026): AED Budgeting & Cash Flow Guide</h1>
+          <p className="text-gray-300 text-sm mb-5 leading-relaxed max-w-xl">Practical financial management guide for UAE freelancers. How to budget irregular income in AED, build an emergency fund, manage tax provisions, separate business and personal accounts, and plan for dry spells in Dubai.</p>
+          <div className="flex flex-wrap gap-4 text-xs text-gray-400">
+            <span>June 2026</span><span>·</span><span>9 min read</span>
           </div>
+        </div>
+
 
           {/* Step 1: Separate Accounts */}
           <h2 className="text-2xl font-bold text-gray-900 mb-4">Step 1: Separate Business and Personal Money</h2>
@@ -237,7 +228,7 @@ export default function HowToManageFreelanceFinancesUAE() {
               ))}
             </div>
           </div>
-        </div>
+        
       </main>
       <Footer />
     </>

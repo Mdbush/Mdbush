@@ -39,8 +39,7 @@ export default function HowToUseAIForClientOnboardingUAE() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
       <Header />
-      <main className="min-h-screen bg-white">
-        <div className="max-w-3xl mx-auto px-4 py-12">
+      <main className="max-w-2xl mx-auto px-4 py-10">
           <nav className="text-sm text-gray-500 mb-8">
             <Link href="/" className="hover:text-gray-700">Home</Link>
             <span className="mx-2">/</span>
@@ -49,32 +48,17 @@ export default function HowToUseAIForClientOnboardingUAE() {
             <span className="text-gray-900">AI for Client Onboarding UAE</span>
           </nav>
 
-          <div className="mb-10">
-            <span className="inline-block bg-blue-100 text-blue-700 text-xs font-semibold px-3 py-1 rounded-full mb-4">
-              Systems & Productivity
-            </span>
-            <h1 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4 leading-tight">
-              How UAE Freelancers Use AI for Client Onboarding (2026)
-            </h1>
-            <p className="text-lg text-gray-600 mb-4">
-              Client onboarding is one of the highest-leverage activities in a freelance
-              business: a well-run onboarding process sets project expectations, reduces
-              scope creep, creates a professional impression, and dramatically decreases
-              the time you spend on admin during project delivery. Most UAE freelancers
-              run onboarding informally — a few WhatsApp messages, a shared Google Doc,
-              maybe a contract. AI tools change what&apos;s possible: you can generate
-              polished welcome packs in minutes, draft detailed project questionnaires,
-              prepare contract language specific to your project type, and produce kickoff
-              meeting agendas that demonstrate exactly the level of professionalism UAE
-              corporate clients expect. This guide walks through exactly how to use AI
-              to systematise your onboarding without investing weeks building it from scratch.
-            </p>
-            <div className="flex items-center gap-4 text-sm text-gray-400">
-              <span>June 16, 2026</span>
-              <span>·</span>
-              <span>7 min read</span>
-            </div>
+          
+        {/* Dark hero */}
+        <div className="bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 text-white px-6 py-10 rounded-2xl mb-8">
+          <span className="text-xs font-bold text-emerald-400 uppercase tracking-widest mb-3 block">CLIENT WORK</span>
+          <h1 className="text-3xl sm:text-4xl font-bold leading-tight mb-4">How UAE Freelancers Use AI for Client Onboarding (2026)</h1>
+          <p className="text-gray-300 text-sm mb-5 leading-relaxed max-w-xl">How UAE freelancers use AI tools to automate and improve their client onboarding process — AI-generated welcome packs, automated questionnaires, contract preparation, kickoff meeting prep, and Notion-based onboarding systems.</p>
+          <div className="flex flex-wrap gap-4 text-xs text-gray-400">
+            <span>June 2026</span><span>·</span><span>7 min read</span>
           </div>
+        </div>
+
 
           <h2 className="text-2xl font-bold text-gray-900 mb-4">Using AI to Build Your Onboarding Documents</h2>
           <div className="space-y-4 mb-10">
@@ -170,7 +154,7 @@ export default function HowToUseAIForClientOnboardingUAE() {
               ))}
             </div>
           </div>
-        </div>
+        
       </main>
       <Footer />
     </>

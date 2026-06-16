@@ -35,23 +35,28 @@ export default function HowToSetFreelancePricesUAE() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
       <Header />
 
-      <main className="flex-1 max-w-2xl mx-auto px-4 sm:px-6 py-12">
+      <main className="max-w-2xl mx-auto px-4 py-10">
 
-        <nav className="text-xs text-gray-400 mb-6 flex gap-2 flex-wrap">
+        
+        <nav className="text-xs text-gray-400 mb-6 flex items-center gap-1.5">
           <Link href="/" className="hover:text-gray-600">Home</Link>
-          <span>›</span>
+          <span>/</span>
           <Link href="/blog" className="hover:text-gray-600">Blog</Link>
-          <span>›</span>
-          <span className="text-gray-600">How to Set Freelance Prices UAE</span>
+          <span>/</span>
+          <span className="text-gray-600">How to Set Your Freelance Prices in the UAE: The Comple</span>
         </nav>
 
-        <header className="mb-8">
-          <span className="text-xs font-semibold text-gray-400 uppercase tracking-widest">Pricing & Rates</span>
-          <h1 className="text-3xl font-bold text-gray-900 mt-2 mb-3 leading-tight">
-            How to Set Your Freelance Prices in the UAE: The Complete System (2026)
-          </h1>
-          <p className="text-gray-500 text-sm">9 min read</p>
-        </header>
+        
+        {/* Dark hero */}
+        <div className="bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 text-white px-6 py-10 rounded-2xl mb-8">
+          <span className="text-xs font-bold text-emerald-400 uppercase tracking-widest mb-3 block">UAE FREELANCING</span>
+          <h1 className="text-3xl sm:text-4xl font-bold leading-tight mb-4">How to Set Your Freelance Prices in the UAE: The Complete System (2026)</h1>
+          <p className="text-gray-300 text-sm mb-5 leading-relaxed max-w-xl">A step-by-step pricing system for UAE freelancers — how to calculate your minimum viable rate, what your UAE market actually pays, when to raise prices, and how to present your rates to clients without losing the deal.</p>
+          <div className="flex flex-wrap gap-4 text-xs text-gray-400">
+            <span>June 2026</span><span>·</span><span>9 min read</span>
+          </div>
+        </div>
+
 
         <div className="prose prose-gray max-w-none text-gray-700 leading-relaxed space-y-6">
 

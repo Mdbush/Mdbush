@@ -48,8 +48,7 @@ export default function FreelanceSocialMediaContentCreatorRatesUAE() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
       <Header />
-      <main className="min-h-screen bg-white">
-        <div className="max-w-3xl mx-auto px-4 py-12">
+      <main className="max-w-2xl mx-auto px-4 py-10">
           <nav className="text-sm text-gray-500 mb-8">
             <Link href="/" className="hover:text-gray-700">Home</Link>
             <span className="mx-2">/</span>
@@ -58,29 +57,17 @@ export default function FreelanceSocialMediaContentCreatorRatesUAE() {
             <span className="text-gray-900">Social Media Content Creator Rates UAE</span>
           </nav>
 
-          <div className="mb-10">
-            <span className="inline-block bg-blue-100 text-blue-700 text-xs font-semibold px-3 py-1 rounded-full mb-4">
-              Pricing & Rates
-            </span>
-            <h1 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4 leading-tight">
-              Freelance Social Media Content Creator Rates in the UAE (2026)
-            </h1>
-            <p className="text-lg text-gray-600 mb-4">
-              Social media content creation is one of the most in-demand freelance services in
-              the UAE — Dubai and Abu Dhabi brands across real estate, hospitality, F&amp;B, retail,
-              fashion, and professional services maintain active social media presence as a core
-              marketing channel. The UAE social media landscape has its own dynamics: Snapchat
-              is huge among Emiratis, Instagram dominates luxury and lifestyle, LinkedIn drives
-              B2B, and TikTok has grown rapidly across demographics. Creators who understand
-              which platform works for which client type — and who can create in Arabic for
-              Emirati and Arab audiences — earn the highest rates.
-            </p>
-            <div className="flex items-center gap-4 text-sm text-gray-400">
-              <span>June 16, 2026</span>
-              <span>·</span>
-              <span>7 min read</span>
-            </div>
+          
+        {/* Dark hero */}
+        <div className="bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 text-white px-6 py-10 rounded-2xl mb-8">
+          <span className="text-xs font-bold text-emerald-400 uppercase tracking-widest mb-3 block">UAE RATES 2026</span>
+          <h1 className="text-3xl sm:text-4xl font-bold leading-tight mb-4">Freelance Social Media Content Creator Rates in the UAE (2026)</h1>
+          <p className="text-gray-300 text-sm mb-5 leading-relaxed max-w-xl">Real AED rates for freelance social media content creators in Dubai and Abu Dhabi. Instagram, TikTok, LinkedIn, and Snapchat content creation fees, reel production rates, and retainer pricing for UAE brands in 2026.</p>
+          <div className="flex flex-wrap gap-4 text-xs text-gray-400">
+            <span>June 2026</span><span>·</span><span>7 min read</span>
           </div>
+        </div>
+
 
           <div className="bg-blue-50 border border-blue-200 rounded-xl p-6 mb-10">
             <h2 className="text-base font-semibold text-blue-900 mb-3">Quick Rate Benchmark</h2>
@@ -206,7 +193,7 @@ export default function FreelanceSocialMediaContentCreatorRatesUAE() {
               ))}
             </div>
           </div>
-        </div>
+        
       </main>
       <Footer />
     </>

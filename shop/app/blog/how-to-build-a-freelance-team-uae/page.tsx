@@ -39,8 +39,7 @@ export default function HowToBuildAFreelanceTeamUAE() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
       <Header />
-      <main className="min-h-screen bg-white">
-        <div className="max-w-3xl mx-auto px-4 py-12">
+      <main className="max-w-2xl mx-auto px-4 py-10">
           {/* Breadcrumb */}
           <nav className="text-sm text-gray-500 mb-8">
             <Link href="/" className="hover:text-gray-700">Home</Link>
@@ -51,25 +50,17 @@ export default function HowToBuildAFreelanceTeamUAE() {
           </nav>
 
           {/* Header */}
-          <div className="mb-10">
-            <span className="inline-block bg-purple-100 text-purple-700 text-xs font-semibold px-3 py-1 rounded-full mb-4">
-              Business & Mindset
-            </span>
-            <h1 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4 leading-tight">
-              How to Build a Freelance Team in the UAE (2026)
-            </h1>
-            <p className="text-lg text-gray-600 mb-4">
-              At some point every successful UAE freelancer faces the same problem: more work than they can
-              handle alone. Building a subcontractor network — without the overhead of a full agency —
-              is how you scale income without burning out. This guide covers exactly how to do it legally,
-              profitably, and professionally in the UAE.
-            </p>
-            <div className="flex items-center gap-4 text-sm text-gray-400">
-              <span>June 16, 2026</span>
-              <span>·</span>
-              <span>9 min read</span>
-            </div>
+          
+        {/* Dark hero */}
+        <div className="bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 text-white px-6 py-10 rounded-2xl mb-8">
+          <span className="text-xs font-bold text-emerald-400 uppercase tracking-widest mb-3 block">UAE FREELANCING</span>
+          <h1 className="text-3xl sm:text-4xl font-bold leading-tight mb-4">How to Build a Freelance Team in the UAE (2026): Subcontracting & Scaling Guide</h1>
+          <p className="text-gray-300 text-sm mb-5 leading-relaxed max-w-xl">Step-by-step guide to building a virtual freelance team in Dubai and Abu Dhabi. How to hire subcontractors, structure contracts, set rates, and scale from solo to agency without a trade license.</p>
+          <div className="flex flex-wrap gap-4 text-xs text-gray-400">
+            <span>June 2026</span><span>·</span><span>9 min read</span>
           </div>
+        </div>
+
 
           {/* Why Build a Team */}
           <h2 className="text-2xl font-bold text-gray-900 mb-4">Why Build a Team (and When)</h2>
@@ -279,7 +270,7 @@ export default function HowToBuildAFreelanceTeamUAE() {
               ))}
             </div>
           </div>
-        </div>
+        
       </main>
       <Footer />
     </>

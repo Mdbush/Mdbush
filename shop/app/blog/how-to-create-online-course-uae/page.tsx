@@ -39,8 +39,7 @@ export default function HowToCreateOnlineCourseUAE() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
       <Header />
-      <main className="min-h-screen bg-white">
-        <div className="max-w-3xl mx-auto px-4 py-12">
+      <main className="max-w-2xl mx-auto px-4 py-10">
           <nav className="text-sm text-gray-500 mb-8">
             <Link href="/" className="hover:text-gray-700">Home</Link>
             <span className="mx-2">/</span>
@@ -49,32 +48,17 @@ export default function HowToCreateOnlineCourseUAE() {
             <span className="text-gray-900">Create Online Course UAE</span>
           </nav>
 
-          <div className="mb-10">
-            <span className="inline-block bg-blue-100 text-blue-700 text-xs font-semibold px-3 py-1 rounded-full mb-4">
-              Business & Mindset
-            </span>
-            <h1 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4 leading-tight">
-              How to Create and Sell an Online Course as a UAE Freelancer (2026)
-            </h1>
-            <p className="text-lg text-gray-600 mb-4">
-              An online course is one of the most powerful ways for UAE freelancers to
-              generate income beyond client hours. Unlike retainers or project work, a course
-              sells while you sleep — once created, each sale requires no additional time from
-              you. UAE freelancers with genuine expertise in areas that others want to learn
-              (digital marketing, financial modelling, UAE visa and licensing, UX design,
-              real estate investment, Arabic content creation) have a significant advantage:
-              the MENA region is underserved by high-quality, locally relevant online learning.
-              Most courses on Udemy or Coursera are built for Western audiences with different
-              regulatory, cultural, and market contexts. A UAE-specific course on setting up
-              a Dubai freezone company, navigating CBUAE banking regulations, or building a
-              UAE real estate investment portfolio fills a gap that global platforms cannot.
-            </p>
-            <div className="flex items-center gap-4 text-sm text-gray-400">
-              <span>June 16, 2026</span>
-              <span>·</span>
-              <span>7 min read</span>
-            </div>
+          
+        {/* Dark hero */}
+        <div className="bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 text-white px-6 py-10 rounded-2xl mb-8">
+          <span className="text-xs font-bold text-emerald-400 uppercase tracking-widest mb-3 block">UAE FREELANCING</span>
+          <h1 className="text-3xl sm:text-4xl font-bold leading-tight mb-4">How to Create and Sell an Online Course as a UAE Freelancer (2026)</h1>
+          <p className="text-gray-300 text-sm mb-5 leading-relaxed max-w-xl">How UAE freelancers package expertise into online courses — topic validation, course structure, platform choice (Teachable, Kajabi, Gumroad), pricing in AED, and marketing to UAE and MENA audiences. Step-by-step guide for Dubai and Abu Dhabi freelancers.</p>
+          <div className="flex flex-wrap gap-4 text-xs text-gray-400">
+            <span>June 2026</span><span>·</span><span>7 min read</span>
           </div>
+        </div>
+
 
           <h2 className="text-2xl font-bold text-gray-900 mb-4">Step 1: Validate Your Course Idea Before Building</h2>
           <div className="space-y-4 mb-10">
@@ -188,7 +172,7 @@ export default function HowToCreateOnlineCourseUAE() {
               ))}
             </div>
           </div>
-        </div>
+        
       </main>
       <Footer />
     </>

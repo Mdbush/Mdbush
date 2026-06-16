@@ -39,8 +39,7 @@ export default function HowToGetFreelanceClientsWithoutPortfolioUAE() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
       <Header />
-      <main className="min-h-screen bg-white">
-        <div className="max-w-3xl mx-auto px-4 py-12">
+      <main className="max-w-2xl mx-auto px-4 py-10">
           <nav className="text-sm text-gray-500 mb-8">
             <Link href="/" className="hover:text-gray-700">Home</Link>
             <span className="mx-2">/</span>
@@ -49,37 +48,17 @@ export default function HowToGetFreelanceClientsWithoutPortfolioUAE() {
             <span className="text-gray-900">Get Clients Without Portfolio UAE</span>
           </nav>
 
-          <div className="mb-10">
-            <span className="inline-block bg-blue-100 text-blue-700 text-xs font-semibold px-3 py-1 rounded-full mb-4">
-              Getting Clients
-            </span>
-            <h1 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4 leading-tight">
-              How to Get Freelance Clients Without a Portfolio in the UAE (2026 Guide)
-            </h1>
-            <p className="text-lg text-gray-600 mb-4">
-              Every freelancer in the UAE who is building a new service
-              category, transitioning from employment, or starting out
-              in a new discipline faces the same fundamental problem:
-              clients want to see evidence of previous work, but you
-              cannot show previous work until you have had clients.
-              This is not a permanent obstacle — it is a temporary
-              credibility gap that all freelancers navigate at the
-              start of a new direction. The strategies that work in
-              the UAE market to bridge this gap are specific: the
-              relationship-first professional culture of Dubai and
-              Abu Dhabi means that personal trust and referral credibility
-              are more readily accessible to new freelancers than in
-              markets where cold digital presence is the primary filter.
-              This guide covers the concrete strategies that work in the
-              UAE market for winning first clients when you have no
-              client portfolio to show.
-            </p>
-            <div className="flex items-center gap-4 text-sm text-gray-400">
-              <span>June 16, 2026</span>
-              <span>·</span>
-              <span>7 min read</span>
-            </div>
+          
+        {/* Dark hero */}
+        <div className="bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 text-white px-6 py-10 rounded-2xl mb-8">
+          <span className="text-xs font-bold text-emerald-400 uppercase tracking-widest mb-3 block">CLIENT WORK</span>
+          <h1 className="text-3xl sm:text-4xl font-bold leading-tight mb-4">How to Get Freelance Clients Without a Portfolio in the UAE (2026 Guide)</h1>
+          <p className="text-gray-300 text-sm mb-5 leading-relaxed max-w-xl">How UAE freelancers win their first clients without a portfolio — the portfolio-free client acquisition strategies that work in Dubai and Abu Dhabi, including spec work, discovery offers, warm outreach, and credibility signals that replace client case studies.</p>
+          <div className="flex flex-wrap gap-4 text-xs text-gray-400">
+            <span>June 2026</span><span>·</span><span>7 min read</span>
           </div>
+        </div>
+
 
           <h2 className="text-2xl font-bold text-gray-900 mb-4">Why the Portfolio Problem Is Smaller in the UAE</h2>
           <p className="text-gray-700 mb-6">
@@ -251,7 +230,7 @@ export default function HowToGetFreelanceClientsWithoutPortfolioUAE() {
               ))}
             </div>
           </div>
-        </div>
+        
       </main>
       <Footer />
     </>

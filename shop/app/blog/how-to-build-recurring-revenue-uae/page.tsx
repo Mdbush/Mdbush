@@ -39,8 +39,7 @@ export default function HowToBuildRecurringRevenueUAE() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
       <Header />
-      <main className="min-h-screen bg-white">
-        <div className="max-w-3xl mx-auto px-4 py-12">
+      <main className="max-w-2xl mx-auto px-4 py-10">
           <nav className="text-sm text-gray-500 mb-8">
             <Link href="/" className="hover:text-gray-700">Home</Link>
             <span className="mx-2">/</span>
@@ -49,30 +48,17 @@ export default function HowToBuildRecurringRevenueUAE() {
             <span className="text-gray-900">Recurring Revenue UAE</span>
           </nav>
 
-          <div className="mb-10">
-            <span className="inline-block bg-blue-100 text-blue-700 text-xs font-semibold px-3 py-1 rounded-full mb-4">
-              Business & Mindset
-            </span>
-            <h1 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4 leading-tight">
-              How UAE Freelancers Build Recurring Revenue (2026 Guide)
-            </h1>
-            <p className="text-lg text-gray-600 mb-4">
-              The fundamental problem with project-based freelancing is that you finish one
-              project and immediately need to find the next one. Every month starts at zero.
-              Recurring revenue — income that arrives predictably each month without having
-              to sell a new project — changes this entirely. UAE freelancers who successfully
-              build recurring revenue report dramatically lower stress, better cash flow
-              predictability, and more headspace to do excellent work rather than constantly
-              chasing clients. The challenge is that recurring revenue models require
-              deliberate design — it does not happen automatically when you are billing
-              by the project.
-            </p>
-            <div className="flex items-center gap-4 text-sm text-gray-400">
-              <span>June 16, 2026</span>
-              <span>·</span>
-              <span>8 min read</span>
-            </div>
+          
+        {/* Dark hero */}
+        <div className="bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 text-white px-6 py-10 rounded-2xl mb-8">
+          <span className="text-xs font-bold text-emerald-400 uppercase tracking-widest mb-3 block">UAE FREELANCING</span>
+          <h1 className="text-3xl sm:text-4xl font-bold leading-tight mb-4">How UAE Freelancers Build Recurring Revenue (2026 Guide)</h1>
+          <p className="text-gray-300 text-sm mb-5 leading-relaxed max-w-xl">How UAE freelancers build predictable monthly income through retainers, productized services, digital products, and membership models. Practical strategies for Dubai and Abu Dhabi freelancers who want income stability without more clients.</p>
+          <div className="flex flex-wrap gap-4 text-xs text-gray-400">
+            <span>June 2026</span><span>·</span><span>8 min read</span>
           </div>
+        </div>
+
 
           <h2 className="text-2xl font-bold text-gray-900 mb-4">The Four Recurring Revenue Models for UAE Freelancers</h2>
           <div className="space-y-4 mb-10">
@@ -222,7 +208,7 @@ export default function HowToBuildRecurringRevenueUAE() {
               ))}
             </div>
           </div>
-        </div>
+        
       </main>
       <Footer />
     </>

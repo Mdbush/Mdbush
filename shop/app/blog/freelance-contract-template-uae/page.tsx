@@ -58,20 +58,17 @@ export default function FreelanceContractTemplateUAEPage() {
         </nav>
 
         {/* Header */}
-        <header className="mb-10">
-          <div className="inline-block bg-red-100 text-red-800 text-xs font-semibold px-3 py-1 rounded-full mb-4">
-            Legal & Contracts
+        
+        {/* Dark hero */}
+        <div className="bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 text-white px-6 py-10 rounded-2xl mb-8">
+          <span className="text-xs font-bold text-emerald-400 uppercase tracking-widest mb-3 block">CLIENT WORK</span>
+          <h1 className="text-3xl sm:text-4xl font-bold leading-tight mb-4">Freelance Contract Template UAE (2026) — What to Include & Why</h1>
+          <p className="text-gray-300 text-sm mb-5 leading-relaxed max-w-xl">A complete freelance contract template for UAE-based freelancers. 9 essential clauses, scope creep protection, payment terms, and legal tips for working in Dubai.</p>
+          <div className="flex flex-wrap gap-4 text-xs text-gray-400">
+            <span>June 2026</span><span>·</span><span>9 min read</span>
           </div>
-          <h1 className="text-3xl font-bold leading-tight mb-4">
-            Freelance Contract Template UAE (2026): 9 Clauses You Must Include
-          </h1>
-          <p className="text-gray-500 text-sm mb-4">Updated June 2026 · 9 min read</p>
-          <p className="text-lg text-gray-700 leading-relaxed">
-            Most UAE freelancers start projects on a handshake and a WhatsApp message. Then scope
-            creep hits, payment gets delayed, or the client ghosts. A proper contract prevents all
-            three. Here&apos;s what to include — and why each clause matters.
-          </p>
-        </header>
+        </div>
+
 
         {/* Why contracts matter */}
         <div className="bg-red-50 border border-red-200 rounded-xl p-6 mb-10">

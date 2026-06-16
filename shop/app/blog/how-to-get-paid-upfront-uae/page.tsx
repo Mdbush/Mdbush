@@ -39,8 +39,7 @@ export default function HowToGetPaidUpfrontUAE() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
       <Header />
-      <main className="min-h-screen bg-white">
-        <div className="max-w-3xl mx-auto px-4 py-12">
+      <main className="max-w-2xl mx-auto px-4 py-10">
           <nav className="text-sm text-gray-500 mb-8">
             <Link href="/" className="hover:text-gray-700">Home</Link>
             <span className="mx-2">/</span>
@@ -49,39 +48,17 @@ export default function HowToGetPaidUpfrontUAE() {
             <span className="text-gray-900">Get Paid Upfront UAE</span>
           </nav>
 
-          <div className="mb-10">
-            <span className="inline-block bg-blue-100 text-blue-700 text-xs font-semibold px-3 py-1 rounded-full mb-4">
-              Client Work & Proposals
-            </span>
-            <h1 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4 leading-tight">
-              How to Get Paid Upfront as a UAE Freelancer (2026 Guide)
-            </h1>
-            <p className="text-lg text-gray-600 mb-4">
-              Starting a project without a deposit is one of the most common
-              and most costly mistakes UAE freelancers make. Without upfront
-              payment, you carry all the financial risk: if the client delays,
-              changes direction, or disappears mid-project, you have invested
-              your time and received nothing. A deposit policy does three
-              things simultaneously: it filters out clients who were never
-              serious about the engagement, it demonstrates professional
-              standards that signal your seriousness as a business, and it
-              protects your cash flow against the inevitable delays that
-              come with UAE client organisations (where procurement and
-              finance approval cycles can extend payment timelines
-              significantly). The objection most freelancers have is &quot;clients
-              won&apos;t accept a deposit requirement.&quot; This is almost always
-              incorrect — serious clients expect it. The clients who object
-              strongly to deposits are typically the clients who will object
-              strongly to paying at all. This guide covers the mechanics
-              of getting deposits, the deposit structures that work in the
-              UAE context, and the exact language to use.
-            </p>
-            <div className="flex items-center gap-4 text-sm text-gray-400">
-              <span>June 16, 2026</span>
-              <span>·</span>
-              <span>7 min read</span>
-            </div>
+          
+        {/* Dark hero */}
+        <div className="bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 text-white px-6 py-10 rounded-2xl mb-8">
+          <span className="text-xs font-bold text-emerald-400 uppercase tracking-widest mb-3 block">UAE FREELANCING</span>
+          <h1 className="text-3xl sm:text-4xl font-bold leading-tight mb-4">How to Get Paid Upfront as a UAE Freelancer (2026 Guide)</h1>
+          <p className="text-gray-300 text-sm mb-5 leading-relaxed max-w-xl">How UAE freelancers get deposits and upfront payments from clients — deposit structures, how to ask, handling objections, and the contract clauses that protect you. Practical guide for Dubai and Abu Dhabi freelancers.</p>
+          <div className="flex flex-wrap gap-4 text-xs text-gray-400">
+            <span>June 2026</span><span>·</span><span>7 min read</span>
           </div>
+        </div>
+
 
           <div className="bg-amber-50 border border-amber-200 rounded-xl p-6 mb-10">
             <h2 className="text-base font-semibold text-amber-900 mb-2">Standard Deposit Structures</h2>
@@ -205,7 +182,7 @@ export default function HowToGetPaidUpfrontUAE() {
               ))}
             </div>
           </div>
-        </div>
+        
       </main>
       <Footer />
     </>

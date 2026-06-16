@@ -48,8 +48,7 @@ export default function FreelanceSpeechTherapistRatesUAE() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
       <Header />
-      <main className="min-h-screen bg-white">
-        <div className="max-w-3xl mx-auto px-4 py-12">
+      <main className="max-w-2xl mx-auto px-4 py-10">
           <nav className="text-sm text-gray-500 mb-8">
             <Link href="/" className="hover:text-gray-700">Home</Link>
             <span className="mx-2">/</span>
@@ -58,36 +57,17 @@ export default function FreelanceSpeechTherapistRatesUAE() {
             <span className="text-gray-900">Speech Therapist Rates UAE</span>
           </nav>
 
-          <div className="mb-10">
-            <span className="inline-block bg-blue-100 text-blue-700 text-xs font-semibold px-3 py-1 rounded-full mb-4">
-              Pricing & Rates
-            </span>
-            <h1 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4 leading-tight">
-              Freelance Speech Therapist Rates in the UAE (2026)
-            </h1>
-            <p className="text-lg text-gray-600 mb-4">
-              Speech and language therapy (SLT) is in significant and growing
-              demand in the UAE — driven by a large paediatric population with
-              multilingual language development needs, increasing awareness of
-              autism spectrum disorders and developmental delays, significant adult
-              speech and language needs following stroke and acquired neurological
-              conditions, and the multinational workforce with both paediatric and
-              adult clients requiring English-medium therapy. Freelance speech
-              therapists in the UAE work across private clinical practice, school
-              contracts, hospital outpatient departments, and home visit services.
-              All clinical practice requires DHA (Dubai) or DOH (Abu Dhabi) health
-              authority licence — the licensing process recognises internationally
-              qualified SLTs from major English-speaking countries (UK, Ireland,
-              Australia, USA, Canada) and is required before any clinical work
-              commences. The UAE has a structural shortage of licensed SLTs relative
-              to demand — creating a strong market position for qualified freelancers.
-            </p>
-            <div className="flex items-center gap-4 text-sm text-gray-400">
-              <span>June 16, 2026</span>
-              <span>·</span>
-              <span>7 min read</span>
-            </div>
+          
+        {/* Dark hero */}
+        <div className="bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 text-white px-6 py-10 rounded-2xl mb-8">
+          <span className="text-xs font-bold text-emerald-400 uppercase tracking-widest mb-3 block">UAE RATES 2026</span>
+          <h1 className="text-3xl sm:text-4xl font-bold leading-tight mb-4">Freelance Speech Therapist Rates in the UAE (2026)</h1>
+          <p className="text-gray-300 text-sm mb-5 leading-relaxed max-w-xl">Real AED rates for freelance speech and language therapists in Dubai and Abu Dhabi. Paediatric speech therapy, adult speech therapy, stuttering, language delay, voice disorders, AAC, and school-based SLT fees for 2026.</p>
+          <div className="flex flex-wrap gap-4 text-xs text-gray-400">
+            <span>June 2026</span><span>·</span><span>7 min read</span>
           </div>
+        </div>
+
 
           <div className="bg-blue-50 border border-blue-200 rounded-xl p-6 mb-10">
             <h2 className="text-base font-semibold text-blue-900 mb-3">Quick Rate Benchmark</h2>
@@ -229,7 +209,7 @@ export default function FreelanceSpeechTherapistRatesUAE() {
               ))}
             </div>
           </div>
-        </div>
+        
       </main>
       <Footer />
     </>

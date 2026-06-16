@@ -98,13 +98,17 @@ export default function Article() {
         </Link>
 
         <div className="mb-8">
-          <div className="flex items-center gap-3 mb-4">
-            <span className="text-xs font-semibold text-gray-400 uppercase tracking-widest">Business</span>
-            <span className="text-gray-200">·</span>
-            <span className="text-xs text-gray-400">June 15, 2026</span>
-            <span className="text-gray-200">·</span>
-            <span className="text-xs text-gray-400">6 min read</span>
+          
+        {/* Dark hero */}
+        <div className="bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 text-white px-6 py-10 rounded-2xl mb-8">
+          <span className="text-xs font-bold text-emerald-400 uppercase tracking-widest mb-3 block">CLIENT WORK</span>
+          <h1 className="text-3xl sm:text-4xl font-bold leading-tight mb-4">Freelance Proposal Template UAE (Copy-Paste Ready for Dubai Clients)</h1>
+          <p className="text-gray-300 text-sm mb-5 leading-relaxed max-w-xl">A complete copy-paste freelance proposal template for UAE clients, plus the structure, common mistakes, and AI prompts to write winning proposals in 20 minutes.</p>
+          <div className="flex flex-wrap gap-4 text-xs text-gray-400">
+            <span>June 2026</span><span>·</span><span>6 min read</span>
           </div>
+        </div>
+
           <h1 className="text-3xl sm:text-4xl font-bold text-gray-900 leading-tight mb-4">
             Freelance Proposal Template UAE (Copy-Paste Ready for Dubai Clients)
           </h1>

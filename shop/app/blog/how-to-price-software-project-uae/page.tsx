@@ -39,8 +39,7 @@ export default function HowToPriceSoftwareProjectUAE() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
       <Header />
-      <main className="min-h-screen bg-white">
-        <div className="max-w-3xl mx-auto px-4 py-12">
+      <main className="max-w-2xl mx-auto px-4 py-10">
           <nav className="text-sm text-gray-500 mb-8">
             <Link href="/" className="hover:text-gray-700">Home</Link>
             <span className="mx-2">/</span>
@@ -49,26 +48,17 @@ export default function HowToPriceSoftwareProjectUAE() {
             <span className="text-gray-900">How to Price Software Projects UAE</span>
           </nav>
 
-          <div className="mb-10">
-            <span className="inline-block bg-blue-100 text-blue-700 text-xs font-semibold px-3 py-1 rounded-full mb-4">
-              Pricing & Rates
-            </span>
-            <h1 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4 leading-tight">
-              How to Price a Software Development Project in the UAE (2026)
-            </h1>
-            <p className="text-lg text-gray-600 mb-4">
-              Pricing software projects is one of the hardest things freelance developers do. Quote too
-              low and you work for below your day rate. Quote too high and you lose the deal. Scope
-              badly and a 3-week project becomes a 10-week nightmare. This guide covers the full
-              pricing system: discovery, estimation, fixed vs T&M, contingency, and the change order
-              process — all calibrated for the UAE market.
-            </p>
-            <div className="flex items-center gap-4 text-sm text-gray-400">
-              <span>June 16, 2026</span>
-              <span>·</span>
-              <span>9 min read</span>
-            </div>
+          
+        {/* Dark hero */}
+        <div className="bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 text-white px-6 py-10 rounded-2xl mb-8">
+          <span className="text-xs font-bold text-emerald-400 uppercase tracking-widest mb-3 block">UAE FREELANCING</span>
+          <h1 className="text-3xl sm:text-4xl font-bold leading-tight mb-4">How to Price a Software Development Project in the UAE (2026): Fixed vs Time & Materials</h1>
+          <p className="text-gray-300 text-sm mb-5 leading-relaxed max-w-xl">How to estimate, scope, and price software projects as a freelance developer in the UAE. Fixed price vs time and materials, AED project benchmarks, change order process, and how to protect your margin.</p>
+          <div className="flex flex-wrap gap-4 text-xs text-gray-400">
+            <span>June 2026</span><span>·</span><span>9 min read</span>
           </div>
+        </div>
+
 
           <h2 className="text-2xl font-bold text-gray-900 mb-4">Fixed Price vs Time & Materials</h2>
           <div className="overflow-x-auto mb-10">
@@ -235,7 +225,7 @@ export default function HowToPriceSoftwareProjectUAE() {
               ))}
             </div>
           </div>
-        </div>
+        
       </main>
       <Footer />
     </>

@@ -48,8 +48,7 @@ export default function FreelanceSupplyChainDirectorRatesUAE() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
       <Header />
-      <main className="min-h-screen bg-white">
-        <div className="max-w-3xl mx-auto px-4 py-12">
+      <main className="max-w-2xl mx-auto px-4 py-10">
           <nav className="text-sm text-gray-500 mb-8">
             <Link href="/" className="hover:text-gray-700">Home</Link>
             <span className="mx-2">/</span>
@@ -58,32 +57,17 @@ export default function FreelanceSupplyChainDirectorRatesUAE() {
             <span className="text-gray-900">Supply Chain Director Rates UAE</span>
           </nav>
 
-          <div className="mb-10">
-            <span className="inline-block bg-blue-100 text-blue-700 text-xs font-semibold px-3 py-1 rounded-full mb-4">
-              Pricing & Rates
-            </span>
-            <h1 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4 leading-tight">
-              Freelance Supply Chain Director Rates in the UAE (2026)
-            </h1>
-            <p className="text-lg text-gray-600 mb-4">
-              The UAE&apos;s position as the GCC&apos;s premier logistics and trade hub —
-              with Jebel Ali Port (the largest in the Middle East), Dubai International Airport
-              (among the world&apos;s busiest cargo hubs), and Abu Dhabi&apos;s growing
-              logistics capacity — creates a substantial market for supply chain expertise.
-              UAE retailers, FMCG distributors, manufacturing operations, healthcare supply
-              chains, and e-commerce businesses all require senior supply chain leadership
-              that can be delivered more cost-effectively on a project or interim basis than
-              as a permanent senior hire. Supply chain disruptions during recent years also
-              accelerated UAE corporate appetite for supply chain resilience reviews and
-              transformation projects, creating a sustained freelance market for experienced
-              supply chain directors who can redesign and optimise complex supply chains.
-            </p>
-            <div className="flex items-center gap-4 text-sm text-gray-400">
-              <span>June 16, 2026</span>
-              <span>·</span>
-              <span>7 min read</span>
-            </div>
+          
+        {/* Dark hero */}
+        <div className="bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 text-white px-6 py-10 rounded-2xl mb-8">
+          <span className="text-xs font-bold text-emerald-400 uppercase tracking-widest mb-3 block">UAE RATES 2026</span>
+          <h1 className="text-3xl sm:text-4xl font-bold leading-tight mb-4">Freelance Supply Chain Director Rates in the UAE (2026)</h1>
+          <p className="text-gray-300 text-sm mb-5 leading-relaxed max-w-xl">Real AED day rates for freelance and interim supply chain directors in Dubai and Abu Dhabi. Supply chain transformation, procurement strategy, logistics optimisation, inventory management, and S&OP advisory fees for UAE companies in 2026.</p>
+          <div className="flex flex-wrap gap-4 text-xs text-gray-400">
+            <span>June 2026</span><span>·</span><span>7 min read</span>
           </div>
+        </div>
+
 
           <div className="bg-blue-50 border border-blue-200 rounded-xl p-6 mb-10">
             <h2 className="text-base font-semibold text-blue-900 mb-3">Quick Rate Benchmark</h2>
@@ -211,7 +195,7 @@ export default function FreelanceSupplyChainDirectorRatesUAE() {
               ))}
             </div>
           </div>
-        </div>
+        
       </main>
       <Footer />
     </>

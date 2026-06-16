@@ -39,8 +39,7 @@ export default function HowToBuildEmailListFreelancersUAE() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
       <Header />
-      <main className="min-h-screen bg-white">
-        <div className="max-w-3xl mx-auto px-4 py-12">
+      <main className="max-w-2xl mx-auto px-4 py-10">
           <nav className="text-sm text-gray-500 mb-8">
             <Link href="/" className="hover:text-gray-700">Home</Link>
             <span className="mx-2">/</span>
@@ -49,25 +48,17 @@ export default function HowToBuildEmailListFreelancersUAE() {
             <span className="text-gray-900">Build Email List UAE Freelancers</span>
           </nav>
 
-          <div className="mb-10">
-            <span className="inline-block bg-indigo-100 text-indigo-700 text-xs font-semibold px-3 py-1 rounded-full mb-4">
-              Getting Clients
-            </span>
-            <h1 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4 leading-tight">
-              How to Build an Email List as a UAE Freelancer (2026)
-            </h1>
-            <p className="text-lg text-gray-600 mb-4">
-              LinkedIn algorithm changes can cut your reach overnight. Referrals dry up between projects.
-              An email list is the one channel you own outright — no algorithm, no platform risk, no
-              middleman. A list of 500 engaged UAE professionals in your niche is worth more than
-              5,000 LinkedIn followers you&apos;ve never spoken to. Here&apos;s how to build it.
-            </p>
-            <div className="flex items-center gap-4 text-sm text-gray-400">
-              <span>June 16, 2026</span>
-              <span>·</span>
-              <span>8 min read</span>
-            </div>
+          
+        {/* Dark hero */}
+        <div className="bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 text-white px-6 py-10 rounded-2xl mb-8">
+          <span className="text-xs font-bold text-emerald-400 uppercase tracking-widest mb-3 block">UAE FREELANCING</span>
+          <h1 className="text-3xl sm:text-4xl font-bold leading-tight mb-4">How to Build an Email List as a UAE Freelancer (2026): From Zero to Warm Leads</h1>
+          <p className="text-gray-300 text-sm mb-5 leading-relaxed max-w-xl">Step-by-step guide to building an email list as a freelancer in Dubai and Abu Dhabi. Lead magnets, newsletter strategy, ConvertKit vs Brevo, and how to turn subscribers into paying clients in the UAE market.</p>
+          <div className="flex flex-wrap gap-4 text-xs text-gray-400">
+            <span>June 2026</span><span>·</span><span>8 min read</span>
           </div>
+        </div>
+
 
           {/* Why an Email List */}
           <h2 className="text-2xl font-bold text-gray-900 mb-4">Why UAE Freelancers Need an Email List</h2>
@@ -234,7 +225,7 @@ export default function HowToBuildEmailListFreelancersUAE() {
               ))}
             </div>
           </div>
-        </div>
+        
       </main>
       <Footer />
     </>

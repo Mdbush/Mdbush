@@ -39,8 +39,7 @@ export default function HowToUseNotionAsCRMUAE() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
       <Header />
-      <main className="min-h-screen bg-white">
-        <div className="max-w-3xl mx-auto px-4 py-12">
+      <main className="max-w-2xl mx-auto px-4 py-10">
           <nav className="text-sm text-gray-500 mb-8">
             <Link href="/" className="hover:text-gray-700">Home</Link>
             <span className="mx-2">/</span>
@@ -49,26 +48,17 @@ export default function HowToUseNotionAsCRMUAE() {
             <span className="text-gray-900">Notion as CRM UAE</span>
           </nav>
 
-          <div className="mb-10">
-            <span className="inline-block bg-blue-100 text-blue-700 text-xs font-semibold px-3 py-1 rounded-full mb-4">
-              Systems & Productivity
-            </span>
-            <h1 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4 leading-tight">
-              How to Use Notion as a CRM for UAE Freelancers (2026)
-            </h1>
-            <p className="text-lg text-gray-600 mb-4">
-              Most freelancers in the UAE manage client relationships through a mix of WhatsApp threads,
-              email inboxes, and memory — which works until it doesn&apos;t. A missed follow-up, a forgotten
-              proposal, a client you meant to re-engage three months ago. Notion gives you a lightweight
-              CRM that tracks leads, proposals, active projects, and follow-ups in one place — at zero
-              additional cost if you&apos;re already paying for Notion.
-            </p>
-            <div className="flex items-center gap-4 text-sm text-gray-400">
-              <span>June 16, 2026</span>
-              <span>·</span>
-              <span>8 min read</span>
-            </div>
+          
+        {/* Dark hero */}
+        <div className="bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 text-white px-6 py-10 rounded-2xl mb-8">
+          <span className="text-xs font-bold text-emerald-400 uppercase tracking-widest mb-3 block">UAE FREELANCING</span>
+          <h1 className="text-3xl sm:text-4xl font-bold leading-tight mb-4">How to Use Notion as a CRM for UAE Freelancers (2026): Client Tracking System</h1>
+          <p className="text-gray-300 text-sm mb-5 leading-relaxed max-w-xl">Set up Notion as a lightweight CRM for your UAE freelance business. Track leads, proposals, active clients, invoices, and follow-ups — without paying for expensive CRM software. Step-by-step Notion setup.</p>
+          <div className="flex flex-wrap gap-4 text-xs text-gray-400">
+            <span>June 2026</span><span>·</span><span>8 min read</span>
           </div>
+        </div>
+
 
           <h2 className="text-2xl font-bold text-gray-900 mb-4">Why a CRM Matters for UAE Freelancers</h2>
           <p className="text-gray-600 mb-6">
@@ -256,7 +246,7 @@ export default function HowToUseNotionAsCRMUAE() {
               ))}
             </div>
           </div>
-        </div>
+        
       </main>
       <Footer />
     </>

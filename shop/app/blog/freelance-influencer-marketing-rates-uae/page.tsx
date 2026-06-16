@@ -48,8 +48,7 @@ export default function FreelanceInfluencerMarketingRatesUAE() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
       <Header />
-      <main className="min-h-screen bg-white">
-        <div className="max-w-3xl mx-auto px-4 py-12">
+      <main className="max-w-2xl mx-auto px-4 py-10">
           <nav className="text-sm text-gray-500 mb-8">
             <Link href="/" className="hover:text-gray-700">Home</Link>
             <span className="mx-2">/</span>
@@ -58,30 +57,17 @@ export default function FreelanceInfluencerMarketingRatesUAE() {
             <span className="text-gray-900">Influencer Marketing Rates UAE</span>
           </nav>
 
-          <div className="mb-10">
-            <span className="inline-block bg-blue-100 text-blue-700 text-xs font-semibold px-3 py-1 rounded-full mb-4">
-              Pricing & Rates
-            </span>
-            <h1 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4 leading-tight">
-              Freelance Influencer Marketing Rates in the UAE (2026)
-            </h1>
-            <p className="text-lg text-gray-600 mb-4">
-              The UAE is one of the most active influencer marketing markets in the world —
-              Dubai&apos;s concentration of luxury brands, hospitality, real estate, F&amp;B, and
-              consumer lifestyle companies creates consistent demand for influencer marketing
-              consultants who can source the right creators, negotiate contracts, manage
-              campaigns, and measure ROI. Freelance influencer marketing consultants work
-              across both the brand side (managing campaigns for UAE companies) and the
-              agency side (subcontracting for creative and PR agencies). The Arabic and
-              Gulf influencer niche — managing campaigns targeting Emirati and GCC audiences
-              through Arabic-language creators — commands a significant premium.
-            </p>
-            <div className="flex items-center gap-4 text-sm text-gray-400">
-              <span>June 16, 2026</span>
-              <span>·</span>
-              <span>7 min read</span>
-            </div>
+          
+        {/* Dark hero */}
+        <div className="bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 text-white px-6 py-10 rounded-2xl mb-8">
+          <span className="text-xs font-bold text-emerald-400 uppercase tracking-widest mb-3 block">UAE RATES 2026</span>
+          <h1 className="text-3xl sm:text-4xl font-bold leading-tight mb-4">Freelance Influencer Marketing Consultant Rates in the UAE (2026)</h1>
+          <p className="text-gray-300 text-sm mb-5 leading-relaxed max-w-xl">Real AED rates for freelance influencer marketing consultants in Dubai and Abu Dhabi. Influencer strategy, campaign management, creator sourcing, UGC content, and influencer marketing retainer fees for UAE brands in 2026.</p>
+          <div className="flex flex-wrap gap-4 text-xs text-gray-400">
+            <span>June 2026</span><span>·</span><span>7 min read</span>
           </div>
+        </div>
+
 
           <div className="bg-blue-50 border border-blue-200 rounded-xl p-6 mb-10">
             <h2 className="text-base font-semibold text-blue-900 mb-3">Quick Rate Benchmark</h2>
@@ -206,7 +192,7 @@ export default function FreelanceInfluencerMarketingRatesUAE() {
               ))}
             </div>
           </div>
-        </div>
+        
       </main>
       <Footer />
     </>

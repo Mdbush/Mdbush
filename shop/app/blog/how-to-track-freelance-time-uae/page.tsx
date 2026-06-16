@@ -39,8 +39,7 @@ export default function HowToTrackFreelanceTimeUAE() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
       <Header />
-      <main className="min-h-screen bg-white">
-        <div className="max-w-3xl mx-auto px-4 py-12">
+      <main className="max-w-2xl mx-auto px-4 py-10">
           <nav className="text-sm text-gray-500 mb-8">
             <Link href="/" className="hover:text-gray-700">Home</Link>
             <span className="mx-2">/</span>
@@ -49,32 +48,17 @@ export default function HowToTrackFreelanceTimeUAE() {
             <span className="text-gray-900">Track Freelance Time UAE</span>
           </nav>
 
-          <div className="mb-10">
-            <span className="inline-block bg-blue-100 text-blue-700 text-xs font-semibold px-3 py-1 rounded-full mb-4">
-              Systems & Productivity
-            </span>
-            <h1 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4 leading-tight">
-              How UAE Freelancers Track Time Efficiently (2026 Guide)
-            </h1>
-            <p className="text-lg text-gray-600 mb-4">
-              Time tracking is one of the most underused tools in a UAE freelancer&apos;s
-              toolkit — and one of the most valuable. Most freelancers who don&apos;t track
-              time are systematically undercharging: they quote a project at what feels
-              like a fair fee, deliver it, then realise it took 40% more time than estimated.
-              Over a year, that silent loss compounds into tens of thousands of AED in
-              unbilled work. Time tracking doesn&apos;t just solve billing accuracy — it
-              gives you data to price future projects correctly, identify which client
-              relationships are genuinely profitable, spot scope creep before it becomes
-              a dispute, and justify rate increases with evidence. This guide covers the
-              tools, methods, and mindset that make time tracking practical for busy
-              UAE freelancers.
-            </p>
-            <div className="flex items-center gap-4 text-sm text-gray-400">
-              <span>June 16, 2026</span>
-              <span>·</span>
-              <span>7 min read</span>
-            </div>
+          
+        {/* Dark hero */}
+        <div className="bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 text-white px-6 py-10 rounded-2xl mb-8">
+          <span className="text-xs font-bold text-emerald-400 uppercase tracking-widest mb-3 block">UAE FREELANCING</span>
+          <h1 className="text-3xl sm:text-4xl font-bold leading-tight mb-4">How UAE Freelancers Track Time Efficiently (2026 Guide)</h1>
+          <p className="text-gray-300 text-sm mb-5 leading-relaxed max-w-xl">How UAE freelancers track time accurately for billing and project management — best time tracking tools, manual vs automated tracking, day rate vs hourly billing, time reporting for UAE clients, and how to use time data to raise rates.</p>
+          <div className="flex flex-wrap gap-4 text-xs text-gray-400">
+            <span>June 2026</span><span>·</span><span>7 min read</span>
           </div>
+        </div>
+
 
           <h2 className="text-2xl font-bold text-gray-900 mb-4">Time Tracking Tools for UAE Freelancers</h2>
           <div className="space-y-4 mb-10">
@@ -195,7 +179,7 @@ export default function HowToTrackFreelanceTimeUAE() {
               ))}
             </div>
           </div>
-        </div>
+        
       </main>
       <Footer />
     </>

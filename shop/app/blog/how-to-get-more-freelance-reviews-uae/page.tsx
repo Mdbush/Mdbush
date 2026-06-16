@@ -39,8 +39,7 @@ export default function HowToGetMoreFreelanceReviewsUAE() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
       <Header />
-      <main className="min-h-screen bg-white">
-        <div className="max-w-3xl mx-auto px-4 py-12">
+      <main className="max-w-2xl mx-auto px-4 py-10">
           <nav className="text-sm text-gray-500 mb-8">
             <Link href="/" className="hover:text-gray-700">Home</Link>
             <span className="mx-2">/</span>
@@ -49,28 +48,17 @@ export default function HowToGetMoreFreelanceReviewsUAE() {
             <span className="text-gray-900">Getting Reviews UAE</span>
           </nav>
 
-          <div className="mb-10">
-            <span className="inline-block bg-blue-100 text-blue-700 text-xs font-semibold px-3 py-1 rounded-full mb-4">
-              Getting Clients
-            </span>
-            <h1 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4 leading-tight">
-              How to Get More Reviews & Testimonials as a UAE Freelancer (2026)
-            </h1>
-            <p className="text-lg text-gray-600 mb-4">
-              Most UAE freelancers have satisfied clients but few reviews. The problem is never
-              a lack of willingness from clients — it&apos;s the lack of a systematic process to
-              collect reviews at the right moment, in the right format, on the right platform.
-              UAE clients are generally willing to provide testimonials when asked well;
-              the challenge is that many freelancers ask too vaguely, too late, or not at all.
-              This guide covers where to collect reviews in the UAE market, when to ask,
-              exactly what to say, and how to turn a testimonial into a client-winning asset.
-            </p>
-            <div className="flex items-center gap-4 text-sm text-gray-400">
-              <span>June 16, 2026</span>
-              <span>·</span>
-              <span>6 min read</span>
-            </div>
+          
+        {/* Dark hero */}
+        <div className="bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 text-white px-6 py-10 rounded-2xl mb-8">
+          <span className="text-xs font-bold text-emerald-400 uppercase tracking-widest mb-3 block">UAE FREELANCING</span>
+          <h1 className="text-3xl sm:text-4xl font-bold leading-tight mb-4">How to Get More Reviews & Testimonials as a UAE Freelancer (2026)</h1>
+          <p className="text-gray-300 text-sm mb-5 leading-relaxed max-w-xl">How UAE freelancers collect reviews on Google, LinkedIn, and Upwork — timing, scripts, what to ask, and how to use testimonials to win more clients. Practical guide for Dubai and Abu Dhabi freelancers.</p>
+          <div className="flex flex-wrap gap-4 text-xs text-gray-400">
+            <span>June 2026</span><span>·</span><span>6 min read</span>
           </div>
+        </div>
+
 
           <h2 className="text-2xl font-bold text-gray-900 mb-4">Where UAE Freelancers Should Collect Reviews</h2>
           <div className="space-y-4 mb-10">
@@ -198,7 +186,7 @@ export default function HowToGetMoreFreelanceReviewsUAE() {
               ))}
             </div>
           </div>
-        </div>
+        
       </main>
       <Footer />
     </>

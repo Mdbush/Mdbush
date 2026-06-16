@@ -39,8 +39,7 @@ export default function HowToBuildFreelanceReferralNetworkUAE() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
       <Header />
-      <main className="min-h-screen bg-white">
-        <div className="max-w-3xl mx-auto px-4 py-12">
+      <main className="max-w-2xl mx-auto px-4 py-10">
           <nav className="text-sm text-gray-500 mb-8">
             <Link href="/" className="hover:text-gray-700">Home</Link>
             <span className="mx-2">/</span>
@@ -49,39 +48,17 @@ export default function HowToBuildFreelanceReferralNetworkUAE() {
             <span className="text-gray-900">Build Referral Network UAE</span>
           </nav>
 
-          <div className="mb-10">
-            <span className="inline-block bg-blue-100 text-blue-700 text-xs font-semibold px-3 py-1 rounded-full mb-4">
-              Getting Clients
-            </span>
-            <h1 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4 leading-tight">
-              How to Build a Freelance Referral Network in the UAE (2026 Guide)
-            </h1>
-            <p className="text-lg text-gray-600 mb-4">
-              Referrals are the dominant client acquisition channel for
-              established UAE freelancers — not because of any strategy,
-              but because of how the Dubai and Abu Dhabi professional market
-              actually works. The UAE&apos;s professional community is
-              simultaneously enormous (Dubai alone has over three million
-              people) and remarkably small in terms of active professional
-              networks — the same names appear across multiple sectors,
-              WhatsApp groups connect professionals in ways that LinkedIn
-              does not capture, and a personal recommendation from a trusted
-              colleague carries far more weight in this market than any amount
-              of digital presence. Freelancers who understand the referral
-              dynamics of the UAE market — who refers, why they refer, what
-              they need to feel comfortable referring, and how to maintain
-              referral relationships — acquire clients at a significantly lower
-              cost and higher conversion rate than those who rely on outbound
-              marketing or platform-based lead generation. This guide covers
-              the practical mechanics of building and maintaining a referral
-              network in the UAE professional context.
-            </p>
-            <div className="flex items-center gap-4 text-sm text-gray-400">
-              <span>June 16, 2026</span>
-              <span>·</span>
-              <span>7 min read</span>
-            </div>
+          
+        {/* Dark hero */}
+        <div className="bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 text-white px-6 py-10 rounded-2xl mb-8">
+          <span className="text-xs font-bold text-emerald-400 uppercase tracking-widest mb-3 block">MARKETING &amp; GROWTH</span>
+          <h1 className="text-3xl sm:text-4xl font-bold leading-tight mb-4">How to Build a Freelance Referral Network in the UAE (2026 Guide)</h1>
+          <p className="text-gray-300 text-sm mb-5 leading-relaxed max-w-xl">How UAE freelancers build referral networks that generate consistent inbound clients. The mechanics of professional referrals in Dubai and Abu Dhabi — who refers, why they refer, and how to structure a referral practice that compounds over time.</p>
+          <div className="flex flex-wrap gap-4 text-xs text-gray-400">
+            <span>June 2026</span><span>·</span><span>7 min read</span>
           </div>
+        </div>
+
 
           <h2 className="text-2xl font-bold text-gray-900 mb-4">Who Refers and Why</h2>
           <div className="space-y-4 mb-10">
@@ -200,7 +177,7 @@ export default function HowToBuildFreelanceReferralNetworkUAE() {
               ))}
             </div>
           </div>
-        </div>
+        
       </main>
       <Footer />
     </>

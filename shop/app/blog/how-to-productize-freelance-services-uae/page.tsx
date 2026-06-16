@@ -39,8 +39,7 @@ export default function HowToProductizeFreelanceServicesUAE() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
       <Header />
-      <main className="min-h-screen bg-white">
-        <div className="max-w-3xl mx-auto px-4 py-12">
+      <main className="max-w-2xl mx-auto px-4 py-10">
           <nav className="text-sm text-gray-500 mb-8">
             <Link href="/" className="hover:text-gray-700">Home</Link>
             <span className="mx-2">/</span>
@@ -49,34 +48,17 @@ export default function HowToProductizeFreelanceServicesUAE() {
             <span className="text-gray-900">Productize Freelance Services UAE</span>
           </nav>
 
-          <div className="mb-10">
-            <span className="inline-block bg-blue-100 text-blue-700 text-xs font-semibold px-3 py-1 rounded-full mb-4">
-              Business & Mindset
-            </span>
-            <h1 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4 leading-tight">
-              How to Productize Your Freelance Services in the UAE (2026 Guide)
-            </h1>
-            <p className="text-lg text-gray-600 mb-4">
-              Productization is the practice of turning your custom freelance service
-              into a clearly defined, fixed-scope, fixed-price product that clients
-              can understand and buy without a lengthy discovery and proposal process.
-              Instead of &quot;I do UX consulting — let me understand your needs and
-              come back with a custom quote,&quot; a productized service says &quot;The
-              UAE SaaS UX Sprint: 5-day intensive, 10 user interviews, journey
-              mapping, wireframes for 3 core flows, AED 18,000.&quot; Productization
-              has three major benefits for UAE freelancers: it speeds up the sales
-              process (clients can say yes without a custom proposal), it positions
-              you as a specialist rather than a generalist, and it enables you to
-              charge more per day of work because the scope is defined by you,
-              not by the client. This guide walks through the complete process
-              of building a productized offer that works in the UAE market.
-            </p>
-            <div className="flex items-center gap-4 text-sm text-gray-400">
-              <span>June 16, 2026</span>
-              <span>·</span>
-              <span>7 min read</span>
-            </div>
+          
+        {/* Dark hero */}
+        <div className="bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 text-white px-6 py-10 rounded-2xl mb-8">
+          <span className="text-xs font-bold text-emerald-400 uppercase tracking-widest mb-3 block">UAE FREELANCING</span>
+          <h1 className="text-3xl sm:text-4xl font-bold leading-tight mb-4">How to Productize Your Freelance Services in the UAE (2026 Guide)</h1>
+          <p className="text-gray-300 text-sm mb-5 leading-relaxed max-w-xl">How UAE freelancers productize their services — moving from custom quotes to fixed-scope packages that sell themselves. The UAE productization framework, pricing fixed offers, and how to convert enquiries into sales without lengthy proposal cycles.</p>
+          <div className="flex flex-wrap gap-4 text-xs text-gray-400">
+            <span>June 2026</span><span>·</span><span>7 min read</span>
           </div>
+        </div>
+
 
           <h2 className="text-2xl font-bold text-gray-900 mb-4">What Makes a Good Productized Service</h2>
           <div className="space-y-4 mb-10">
@@ -210,7 +192,7 @@ export default function HowToProductizeFreelanceServicesUAE() {
               ))}
             </div>
           </div>
-        </div>
+        
       </main>
       <Footer />
     </>

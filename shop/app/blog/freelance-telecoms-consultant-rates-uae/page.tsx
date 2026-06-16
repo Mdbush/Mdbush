@@ -48,8 +48,7 @@ export default function FreelanceTelecomsConsultantRatesUAE() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
       <Header />
-      <main className="min-h-screen bg-white">
-        <div className="max-w-3xl mx-auto px-4 py-12">
+      <main className="max-w-2xl mx-auto px-4 py-10">
           <nav className="text-sm text-gray-500 mb-8">
             <Link href="/" className="hover:text-gray-700">Home</Link>
             <span className="mx-2">/</span>
@@ -58,34 +57,17 @@ export default function FreelanceTelecomsConsultantRatesUAE() {
             <span className="text-gray-900">Telecoms Consultant Rates UAE</span>
           </nav>
 
-          <div className="mb-10">
-            <span className="inline-block bg-blue-100 text-blue-700 text-xs font-semibold px-3 py-1 rounded-full mb-4">
-              Pricing & Rates
-            </span>
-            <h1 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4 leading-tight">
-              Freelance Telecoms Consultant Rates in the UAE (2026)
-            </h1>
-            <p className="text-lg text-gray-600 mb-4">
-              The UAE telecoms sector is one of the most advanced in the world — driven
-              by Etisalat (rebranded as e&amp;) and du, both of which have invested heavily
-              in 5G network rollout, fibre infrastructure, and digital services expansion.
-              The UAE Telecommunications and Digital Government Regulatory Authority (TDRA,
-              formerly TRA) actively regulates the sector and is implementing digital
-              transformation initiatives across government services. Beyond the major
-              operators, the UAE telecoms market includes significant enterprise connectivity
-              demand (smart city projects, free zone infrastructure, industrial IoT, logistics
-              connectivity), MVNO (Mobile Virtual Network Operator) market interest, and
-              substantial advisory demand from technology companies, real estate developers,
-              and government entities seeking connectivity strategy guidance. Freelance
-              telecoms consultants serve operators, regulators, enterprise clients, and
-              investors with specialist network, strategy, and regulatory expertise.
-            </p>
-            <div className="flex items-center gap-4 text-sm text-gray-400">
-              <span>June 16, 2026</span>
-              <span>·</span>
-              <span>7 min read</span>
-            </div>
+          
+        {/* Dark hero */}
+        <div className="bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 text-white px-6 py-10 rounded-2xl mb-8">
+          <span className="text-xs font-bold text-emerald-400 uppercase tracking-widest mb-3 block">UAE RATES 2026</span>
+          <h1 className="text-3xl sm:text-4xl font-bold leading-tight mb-4">Freelance Telecoms Consultant Rates in the UAE (2026)</h1>
+          <p className="text-gray-300 text-sm mb-5 leading-relaxed max-w-xl">Real AED day rates for freelance telecoms consultants in Dubai and Abu Dhabi. Network strategy, 5G advisory, MVNO consulting, spectrum management, UAE TRA regulatory compliance, telecom infrastructure, and connectivity advisory fees for 2026.</p>
+          <div className="flex flex-wrap gap-4 text-xs text-gray-400">
+            <span>June 2026</span><span>·</span><span>7 min read</span>
           </div>
+        </div>
+
 
           <div className="bg-blue-50 border border-blue-200 rounded-xl p-6 mb-10">
             <h2 className="text-base font-semibold text-blue-900 mb-3">Quick Rate Benchmark</h2>
@@ -220,7 +202,7 @@ export default function FreelanceTelecomsConsultantRatesUAE() {
               ))}
             </div>
           </div>
-        </div>
+        
       </main>
       <Footer />
     </>

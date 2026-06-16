@@ -39,8 +39,7 @@ export default function HowToWriteLinkedInContentUAE() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
       <Header />
-      <main className="min-h-screen bg-white">
-        <div className="max-w-3xl mx-auto px-4 py-12">
+      <main className="max-w-2xl mx-auto px-4 py-10">
           <nav className="text-sm text-gray-500 mb-8">
             <Link href="/" className="hover:text-gray-700">Home</Link>
             <span className="mx-2">/</span>
@@ -49,30 +48,17 @@ export default function HowToWriteLinkedInContentUAE() {
             <span className="text-gray-900">LinkedIn Content UAE</span>
           </nav>
 
-          <div className="mb-10">
-            <span className="inline-block bg-blue-100 text-blue-700 text-xs font-semibold px-3 py-1 rounded-full mb-4">
-              Getting Clients
-            </span>
-            <h1 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4 leading-tight">
-              How to Write LinkedIn Content That Gets Results as a UAE Freelancer (2026)
-            </h1>
-            <p className="text-lg text-gray-600 mb-4">
-              LinkedIn is the primary professional platform for B2B client acquisition in
-              the UAE — but most UAE freelancers post either too rarely, too generically,
-              or too self-promotionally to generate meaningful results. The UAE LinkedIn
-              audience is sophisticated and somewhat sceptical of obvious self-promotion.
-              What works in the UAE market: credibility-building content that demonstrates
-              expertise through specific insights, practical knowledge, and honest professional
-              reflection. This guide covers the content formats that perform best with UAE
-              B2B audiences, how to structure posts for maximum reach in the LinkedIn algorithm,
-              and how to convert content engagement into actual client conversations.
-            </p>
-            <div className="flex items-center gap-4 text-sm text-gray-400">
-              <span>June 16, 2026</span>
-              <span>·</span>
-              <span>7 min read</span>
-            </div>
+          
+        {/* Dark hero */}
+        <div className="bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 text-white px-6 py-10 rounded-2xl mb-8">
+          <span className="text-xs font-bold text-emerald-400 uppercase tracking-widest mb-3 block">MARKETING &amp; GROWTH</span>
+          <h1 className="text-3xl sm:text-4xl font-bold leading-tight mb-4">How to Write LinkedIn Content That Gets Results as a UAE Freelancer (2026)</h1>
+          <p className="text-gray-300 text-sm mb-5 leading-relaxed max-w-xl">How UAE freelancers write LinkedIn posts that generate enquiries, referrals, and authority — content formats, posting cadence, what the UAE B2B audience responds to, and how to turn LinkedIn content into client conversations.</p>
+          <div className="flex flex-wrap gap-4 text-xs text-gray-400">
+            <span>June 2026</span><span>·</span><span>7 min read</span>
           </div>
+        </div>
+
 
           <h2 className="text-2xl font-bold text-gray-900 mb-4">Content Formats That Work for UAE Freelancers</h2>
           <div className="space-y-4 mb-10">
@@ -203,7 +189,7 @@ export default function HowToWriteLinkedInContentUAE() {
               ))}
             </div>
           </div>
-        </div>
+        
       </main>
       <Footer />
     </>

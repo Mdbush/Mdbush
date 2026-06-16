@@ -48,8 +48,7 @@ export default function FreelanceWealthManagerRatesUAE() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
       <Header />
-      <main className="min-h-screen bg-white">
-        <div className="max-w-3xl mx-auto px-4 py-12">
+      <main className="max-w-2xl mx-auto px-4 py-10">
           {/* Breadcrumb */}
           <nav className="text-sm text-gray-500 mb-8">
             <Link href="/" className="hover:text-gray-700">Home</Link>
@@ -60,25 +59,17 @@ export default function FreelanceWealthManagerRatesUAE() {
           </nav>
 
           {/* Header */}
-          <div className="mb-10">
-            <span className="inline-block bg-blue-100 text-blue-700 text-xs font-semibold px-3 py-1 rounded-full mb-4">
-              Pricing & Rates
-            </span>
-            <h1 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4 leading-tight">
-              Freelance Wealth Manager &amp; IFA Rates in the UAE (2026)
-            </h1>
-            <p className="text-lg text-gray-600 mb-4">
-              Dubai and Abu Dhabi are among the world&apos;s leading private banking and wealth management
-              hubs. The UAE&apos;s HNWI population is growing faster than almost anywhere — bringing demand for
-              independent financial advisors, family office specialists, and portfolio managers who operate
-              outside traditional bank structures. Here are the real fee structures in this market.
-            </p>
-            <div className="flex items-center gap-4 text-sm text-gray-400">
-              <span>June 16, 2026</span>
-              <span>·</span>
-              <span>8 min read</span>
-            </div>
+          
+        {/* Dark hero */}
+        <div className="bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 text-white px-6 py-10 rounded-2xl mb-8">
+          <span className="text-xs font-bold text-emerald-400 uppercase tracking-widest mb-3 block">UAE RATES 2026</span>
+          <h1 className="text-3xl sm:text-4xl font-bold leading-tight mb-4">Freelance Wealth Manager & Private Banker Rates in the UAE (2026)</h1>
+          <p className="text-gray-300 text-sm mb-5 leading-relaxed max-w-xl">Real AED rates and fee structures for freelance wealth managers and independent financial advisors in Dubai and Abu Dhabi. Portfolio management, financial planning, family office advisory, and investment consulting fees.</p>
+          <div className="flex flex-wrap gap-4 text-xs text-gray-400">
+            <span>June 2026</span><span>·</span><span>8 min read</span>
           </div>
+        </div>
+
 
           {/* Quick Benchmark */}
           <div className="bg-blue-50 border border-blue-200 rounded-xl p-6 mb-10">
@@ -237,7 +228,7 @@ export default function FreelanceWealthManagerRatesUAE() {
               ))}
             </div>
           </div>
-        </div>
+        
       </main>
       <Footer />
     </>

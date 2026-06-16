@@ -39,8 +39,7 @@ export default function HowToManageCashFlowFreelanceUAE() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
       <Header />
-      <main className="min-h-screen bg-white">
-        <div className="max-w-3xl mx-auto px-4 py-12">
+      <main className="max-w-2xl mx-auto px-4 py-10">
           <nav className="text-sm text-gray-500 mb-8">
             <Link href="/" className="hover:text-gray-700">Home</Link>
             <span className="mx-2">/</span>
@@ -49,31 +48,17 @@ export default function HowToManageCashFlowFreelanceUAE() {
             <span className="text-gray-900">Cash Flow Management UAE</span>
           </nav>
 
-          <div className="mb-10">
-            <span className="inline-block bg-blue-100 text-blue-700 text-xs font-semibold px-3 py-1 rounded-full mb-4">
-              Tax & Finance
-            </span>
-            <h1 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4 leading-tight">
-              How to Manage Cash Flow as a UAE Freelancer (2026 Guide)
-            </h1>
-            <p className="text-lg text-gray-600 mb-4">
-              Cash flow is the number one operational challenge for UAE freelancers —
-              not talent, not marketing, not clients. Many Dubai and Abu Dhabi freelancers
-              who earn excellent annual incomes still experience months of genuine financial
-              stress when large invoices are delayed, projects end simultaneously, or dry
-              spells hit. The UAE freelance market has specific cash flow dynamics that make
-              the problem worse: UAE corporate clients often pay on 30–60 day terms (sometimes
-              90 days for large companies), project-based work creates lumpy income, and living
-              costs in Dubai are high enough that even two weeks of delayed payment creates
-              pressure. Building robust cash flow management is not optional — it is the
-              infrastructure that makes freelancing sustainable over years rather than months.
-            </p>
-            <div className="flex items-center gap-4 text-sm text-gray-400">
-              <span>June 16, 2026</span>
-              <span>·</span>
-              <span>7 min read</span>
-            </div>
+          
+        {/* Dark hero */}
+        <div className="bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 text-white px-6 py-10 rounded-2xl mb-8">
+          <span className="text-xs font-bold text-emerald-400 uppercase tracking-widest mb-3 block">TAX &amp; FINANCE</span>
+          <h1 className="text-3xl sm:text-4xl font-bold leading-tight mb-4">How to Manage Cash Flow as a UAE Freelancer (2026 Guide)</h1>
+          <p className="text-gray-300 text-sm mb-5 leading-relaxed max-w-xl">Practical cash flow management for UAE freelancers — how to handle feast-and-famine income cycles, build a financial buffer in AED, invoice for faster payment, and maintain stable finances as a Dubai or Abu Dhabi freelancer.</p>
+          <div className="flex flex-wrap gap-4 text-xs text-gray-400">
+            <span>June 2026</span><span>·</span><span>7 min read</span>
           </div>
+        </div>
+
 
           <h2 className="text-2xl font-bold text-gray-900 mb-4">Building Your Cash Flow Foundation</h2>
           <div className="space-y-4 mb-10">
@@ -192,7 +177,7 @@ export default function HowToManageCashFlowFreelanceUAE() {
               ))}
             </div>
           </div>
-        </div>
+        
       </main>
       <Footer />
     </>

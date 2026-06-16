@@ -48,8 +48,7 @@ export default function FreelanceYogaInstructorRatesUAE() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
       <Header />
-      <main className="min-h-screen bg-white">
-        <div className="max-w-3xl mx-auto px-4 py-12">
+      <main className="max-w-2xl mx-auto px-4 py-10">
           <nav className="text-sm text-gray-500 mb-8">
             <Link href="/" className="hover:text-gray-700">Home</Link>
             <span className="mx-2">/</span>
@@ -58,37 +57,17 @@ export default function FreelanceYogaInstructorRatesUAE() {
             <span className="text-gray-900">Yoga Instructor Rates UAE</span>
           </nav>
 
-          <div className="mb-10">
-            <span className="inline-block bg-blue-100 text-blue-700 text-xs font-semibold px-3 py-1 rounded-full mb-4">
-              Pricing & Rates
-            </span>
-            <h1 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4 leading-tight">
-              Freelance Yoga Instructor Rates in the UAE (2026)
-            </h1>
-            <p className="text-lg text-gray-600 mb-4">
-              The UAE wellness market has expanded significantly — Dubai in particular
-              has become a regional wellness hub with hundreds of yoga studios,
-              corporate wellness programmes, luxury resort partnerships, and a large
-              expat population with strong demand for premium fitness and mindfulness
-              services. Freelance yoga instructors in the UAE operate across multiple
-              formats: studio and gym classes, private home or hotel sessions, corporate
-              wellness programmes, retreats and workshops, and increasingly online.
-              Rates vary significantly by format — a studio class for a freelancer
-              working as a contractor earns considerably less per hour than a private
-              session or corporate programme, but provides volume and studio marketing.
-              Yoga instructors who build a strong personal brand, specialise in a
-              style (Ashtanga, Yin, prenatal, hot yoga, therapeutic), or develop
-              corporate wellness relationships can build high-income freelance
-              businesses in the UAE market. UAE clients — particularly expats —
-              are accustomed to paying premium wellness rates comparable to Europe
-              and Australia.
-            </p>
-            <div className="flex items-center gap-4 text-sm text-gray-400">
-              <span>June 16, 2026</span>
-              <span>·</span>
-              <span>7 min read</span>
-            </div>
+          
+        {/* Dark hero */}
+        <div className="bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 text-white px-6 py-10 rounded-2xl mb-8">
+          <span className="text-xs font-bold text-emerald-400 uppercase tracking-widest mb-3 block">UAE RATES 2026</span>
+          <h1 className="text-3xl sm:text-4xl font-bold leading-tight mb-4">Freelance Yoga Instructor Rates in the UAE (2026)</h1>
+          <p className="text-gray-300 text-sm mb-5 leading-relaxed max-w-xl">Real AED hourly and monthly rates for freelance yoga instructors in Dubai and Abu Dhabi. Group classes, private sessions, corporate wellness, yoga teacher training, and online yoga fees for 2026.</p>
+          <div className="flex flex-wrap gap-4 text-xs text-gray-400">
+            <span>June 2026</span><span>·</span><span>7 min read</span>
           </div>
+        </div>
+
 
           <div className="bg-blue-50 border border-blue-200 rounded-xl p-6 mb-10">
             <h2 className="text-base font-semibold text-blue-900 mb-3">Quick Rate Benchmark</h2>
@@ -225,7 +204,7 @@ export default function FreelanceYogaInstructorRatesUAE() {
               ))}
             </div>
           </div>
-        </div>
+        
       </main>
       <Footer />
     </>

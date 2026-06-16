@@ -48,8 +48,7 @@ export default function FreelanceSupplyChainConsultantRatesUAE() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
       <Header />
-      <main className="min-h-screen bg-white">
-        <div className="max-w-3xl mx-auto px-4 py-12">
+      <main className="max-w-2xl mx-auto px-4 py-10">
           <nav className="text-sm text-gray-500 mb-8">
             <Link href="/" className="hover:text-gray-700">Home</Link>
             <span className="mx-2">/</span>
@@ -58,34 +57,17 @@ export default function FreelanceSupplyChainConsultantRatesUAE() {
             <span className="text-gray-900">Supply Chain Consultant Rates UAE</span>
           </nav>
 
-          <div className="mb-10">
-            <span className="inline-block bg-blue-100 text-blue-700 text-xs font-semibold px-3 py-1 rounded-full mb-4">
-              Pricing & Rates
-            </span>
-            <h1 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4 leading-tight">
-              Freelance Supply Chain Consultant Rates in the UAE (2026)
-            </h1>
-            <p className="text-lg text-gray-600 mb-4">
-              The UAE is the logistics hub of the Middle East — home to Jebel Ali Port
-              (the world&apos;s largest man-made port), Dubai International Airport (the
-              world&apos;s busiest cargo airport), and a network of free zones specifically
-              designed for trade and re-export. Dubai and Abu Dhabi have invested heavily
-              in supply chain infrastructure to serve as gateway nodes connecting Asia,
-              Africa, and Europe. Beyond physical infrastructure, the UAE is implementing
-              supply chain digitalisation through Dubai Supply Chain and Logistics Summit
-              programmes, blockchain-based trade finance, and customs automation through
-              Dubai Customs. Major retail, manufacturing, healthcare, FMCG, and e-commerce
-              companies operating in the UAE require supply chain advisory across procurement,
-              logistics, warehouse operations, vendor management, and customs compliance.
-              Freelance supply chain consultants serve both UAE-headquartered companies
-              and multinationals using Dubai as their regional distribution hub.
-            </p>
-            <div className="flex items-center gap-4 text-sm text-gray-400">
-              <span>June 16, 2026</span>
-              <span>·</span>
-              <span>7 min read</span>
-            </div>
+          
+        {/* Dark hero */}
+        <div className="bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 text-white px-6 py-10 rounded-2xl mb-8">
+          <span className="text-xs font-bold text-emerald-400 uppercase tracking-widest mb-3 block">UAE RATES 2026</span>
+          <h1 className="text-3xl sm:text-4xl font-bold leading-tight mb-4">Freelance Supply Chain Consultant Rates in the UAE (2026)</h1>
+          <p className="text-gray-300 text-sm mb-5 leading-relaxed max-w-xl">Real AED day rates for freelance supply chain consultants in Dubai and Abu Dhabi. Procurement advisory, logistics optimisation, warehouse strategy, vendor management, UAE customs compliance, and supply chain transformation fees for 2026.</p>
+          <div className="flex flex-wrap gap-4 text-xs text-gray-400">
+            <span>June 2026</span><span>·</span><span>7 min read</span>
           </div>
+        </div>
+
 
           <div className="bg-blue-50 border border-blue-200 rounded-xl p-6 mb-10">
             <h2 className="text-base font-semibold text-blue-900 mb-3">Quick Rate Benchmark</h2>
@@ -215,7 +197,7 @@ export default function FreelanceSupplyChainConsultantRatesUAE() {
               ))}
             </div>
           </div>
-        </div>
+        
       </main>
       <Footer />
     </>

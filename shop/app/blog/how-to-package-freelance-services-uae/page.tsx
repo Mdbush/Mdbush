@@ -39,8 +39,7 @@ export default function HowToPackageFreelanceServicesUAE() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
       <Header />
-      <main className="min-h-screen bg-white">
-        <div className="max-w-3xl mx-auto px-4 py-12">
+      <main className="max-w-2xl mx-auto px-4 py-10">
           <nav className="text-sm text-gray-500 mb-8">
             <Link href="/" className="hover:text-gray-700">Home</Link>
             <span className="mx-2">/</span>
@@ -49,28 +48,17 @@ export default function HowToPackageFreelanceServicesUAE() {
             <span className="text-gray-900">Package Freelance Services UAE</span>
           </nav>
 
-          <div className="mb-10">
-            <span className="inline-block bg-blue-100 text-blue-700 text-xs font-semibold px-3 py-1 rounded-full mb-4">
-              Pricing & Rates
-            </span>
-            <h1 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4 leading-tight">
-              How to Package Your Freelance Services in the UAE (2026)
-            </h1>
-            <p className="text-lg text-gray-600 mb-4">
-              Most UAE freelancers price every project from scratch — a blank scope, a custom
-              quote, and a negotiation that often ends lower than it should. Packaging your
-              services — defining fixed tiers with clear inclusions, outcomes, and prices —
-              eliminates scope ambiguity, reduces the &quot;just a quick call&quot; dynamic, and anchors
-              client conversations at a higher price point. This guide covers how to build
-              service packages that are commercially compelling for UAE clients and
-              operationally sustainable for you.
-            </p>
-            <div className="flex items-center gap-4 text-sm text-gray-400">
-              <span>June 16, 2026</span>
-              <span>·</span>
-              <span>7 min read</span>
-            </div>
+          
+        {/* Dark hero */}
+        <div className="bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 text-white px-6 py-10 rounded-2xl mb-8">
+          <span className="text-xs font-bold text-emerald-400 uppercase tracking-widest mb-3 block">UAE FREELANCING</span>
+          <h1 className="text-3xl sm:text-4xl font-bold leading-tight mb-4">How to Package Your Freelance Services in the UAE (2026): Tiers & Bundles</h1>
+          <p className="text-gray-300 text-sm mb-5 leading-relaxed max-w-xl">How UAE freelancers package services into tiers and bundles to increase average project value, reduce scope negotiation, and attract better clients. Good, Better, Best pricing frameworks with UAE-specific examples.</p>
+          <div className="flex flex-wrap gap-4 text-xs text-gray-400">
+            <span>June 2026</span><span>·</span><span>7 min read</span>
           </div>
+        </div>
+
 
           <h2 className="text-2xl font-bold text-gray-900 mb-4">Why Packages Work in the UAE Market</h2>
           <p className="text-gray-600 mb-6">
@@ -182,7 +170,7 @@ export default function HowToPackageFreelanceServicesUAE() {
               ))}
             </div>
           </div>
-        </div>
+        
       </main>
       <Footer />
     </>

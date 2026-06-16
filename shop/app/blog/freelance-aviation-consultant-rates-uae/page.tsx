@@ -48,8 +48,7 @@ export default function FreelanceAviationConsultantRatesUAE() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
       <Header />
-      <main className="min-h-screen bg-white">
-        <div className="max-w-3xl mx-auto px-4 py-12">
+      <main className="max-w-2xl mx-auto px-4 py-10">
           <nav className="text-sm text-gray-500 mb-8">
             <Link href="/" className="hover:text-gray-700">Home</Link>
             <span className="mx-2">/</span>
@@ -58,34 +57,17 @@ export default function FreelanceAviationConsultantRatesUAE() {
             <span className="text-gray-900">Aviation Consultant Rates UAE</span>
           </nav>
 
-          <div className="mb-10">
-            <span className="inline-block bg-blue-100 text-blue-700 text-xs font-semibold px-3 py-1 rounded-full mb-4">
-              Pricing & Rates
-            </span>
-            <h1 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4 leading-tight">
-              Freelance Aviation Consultant Rates in the UAE (2026)
-            </h1>
-            <p className="text-lg text-gray-600 mb-4">
-              The UAE is one of the world&apos;s most important aviation hubs —
-              Dubai International Airport (DXB) consistently ranks among the world&apos;s
-              busiest by international passengers; Dubai World Central (Al Maktoum
-              International) is expanding toward its eventual capacity of 160 million
-              passengers; Abu Dhabi International is expanding under the Terminal A
-              development. Emirates, Etihad, and flydubai are three of the region&apos;s
-              most significant carriers, and the UAE is home to major MRO facilities
-              (Emirates Engineering, Etihad Aviation Services, Joramco). The UAE General
-              Civil Aviation Authority (GCAA) is an active regulator implementing ICAO
-              standards. Freelance aviation consultants serve airlines, airports, MROs,
-              ground handling companies, aviation training providers, and government
-              aviation authorities on project-specific advisory, regulatory compliance,
-              safety management, and strategic planning engagements.
-            </p>
-            <div className="flex items-center gap-4 text-sm text-gray-400">
-              <span>June 16, 2026</span>
-              <span>·</span>
-              <span>7 min read</span>
-            </div>
+          
+        {/* Dark hero */}
+        <div className="bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 text-white px-6 py-10 rounded-2xl mb-8">
+          <span className="text-xs font-bold text-emerald-400 uppercase tracking-widest mb-3 block">UAE RATES 2026</span>
+          <h1 className="text-3xl sm:text-4xl font-bold leading-tight mb-4">Freelance Aviation Consultant Rates in the UAE (2026)</h1>
+          <p className="text-gray-300 text-sm mb-5 leading-relaxed max-w-xl">Real AED day rates for freelance aviation consultants in Dubai and Abu Dhabi. Airline operations advisory, aviation regulatory compliance, MRO consulting, airport planning, UAE GCAA compliance, and aviation safety management fees for 2026.</p>
+          <div className="flex flex-wrap gap-4 text-xs text-gray-400">
+            <span>June 2026</span><span>·</span><span>7 min read</span>
           </div>
+        </div>
+
 
           <div className="bg-blue-50 border border-blue-200 rounded-xl p-6 mb-10">
             <h2 className="text-base font-semibold text-blue-900 mb-3">Quick Rate Benchmark</h2>
@@ -218,7 +200,7 @@ export default function FreelanceAviationConsultantRatesUAE() {
               ))}
             </div>
           </div>
-        </div>
+        
       </main>
       <Footer />
     </>

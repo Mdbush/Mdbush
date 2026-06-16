@@ -39,8 +39,7 @@ export default function HowToProtectIntellectualPropertyUAE() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
       <Header />
-      <main className="min-h-screen bg-white">
-        <div className="max-w-3xl mx-auto px-4 py-12">
+      <main className="max-w-2xl mx-auto px-4 py-10">
           <nav className="text-sm text-gray-500 mb-8">
             <Link href="/" className="hover:text-gray-700">Home</Link>
             <span className="mx-2">/</span>
@@ -49,30 +48,17 @@ export default function HowToProtectIntellectualPropertyUAE() {
             <span className="text-gray-900">IP Protection UAE</span>
           </nav>
 
-          <div className="mb-10">
-            <span className="inline-block bg-blue-100 text-blue-700 text-xs font-semibold px-3 py-1 rounded-full mb-4">
-              Client Work & Proposals
-            </span>
-            <h1 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4 leading-tight">
-              How UAE Freelancers Protect Their Intellectual Property (2026 Guide)
-            </h1>
-            <p className="text-lg text-gray-600 mb-4">
-              Intellectual property disputes are more common in freelancing than most people
-              expect — and more complex than simply &quot;I made it, so it&apos;s mine.&quot;
-              UAE freelancers who do not address IP ownership explicitly in their contracts
-              often find themselves in ambiguous situations: work used beyond the agreed scope,
-              designs repurposed without permission, methodologies replicated internally after
-              a consulting engagement, or creative work appearing under a client&apos;s brand
-              without any attribution agreement. The UAE has a modern intellectual property
-              legal framework — but it only protects you if your contracts are structured
-              correctly and you understand what protections exist.
-            </p>
-            <div className="flex items-center gap-4 text-sm text-gray-400">
-              <span>June 16, 2026</span>
-              <span>·</span>
-              <span>7 min read</span>
-            </div>
+          
+        {/* Dark hero */}
+        <div className="bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 text-white px-6 py-10 rounded-2xl mb-8">
+          <span className="text-xs font-bold text-emerald-400 uppercase tracking-widest mb-3 block">UAE FREELANCING</span>
+          <h1 className="text-3xl sm:text-4xl font-bold leading-tight mb-4">How UAE Freelancers Protect Their Intellectual Property (2026 Guide)</h1>
+          <p className="text-gray-300 text-sm mb-5 leading-relaxed max-w-xl">How UAE freelancers protect their work — copyright, trademark registration, contract IP clauses, creative brief ownership, and what to do when clients steal or misuse your work. Practical guide for Dubai and Abu Dhabi freelancers.</p>
+          <div className="flex flex-wrap gap-4 text-xs text-gray-400">
+            <span>June 2026</span><span>·</span><span>7 min read</span>
           </div>
+        </div>
+
 
           <h2 className="text-2xl font-bold text-gray-900 mb-4">UAE IP Law Basics for Freelancers</h2>
           <div className="space-y-4 mb-10">
@@ -194,7 +180,7 @@ export default function HowToProtectIntellectualPropertyUAE() {
               ))}
             </div>
           </div>
-        </div>
+        
       </main>
       <Footer />
     </>

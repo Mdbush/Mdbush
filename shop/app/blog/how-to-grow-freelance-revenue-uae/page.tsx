@@ -39,8 +39,7 @@ export default function HowToGrowFreelanceRevenueUAE() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
       <Header />
-      <main className="min-h-screen bg-white">
-        <div className="max-w-3xl mx-auto px-4 py-12">
+      <main className="max-w-2xl mx-auto px-4 py-10">
           <nav className="text-sm text-gray-500 mb-8">
             <Link href="/" className="hover:text-gray-700">Home</Link>
             <span className="mx-2">/</span>
@@ -49,29 +48,17 @@ export default function HowToGrowFreelanceRevenueUAE() {
             <span className="text-gray-900">Grow Freelance Revenue UAE</span>
           </nav>
 
-          <div className="mb-10">
-            <span className="inline-block bg-blue-100 text-blue-700 text-xs font-semibold px-3 py-1 rounded-full mb-4">
-              Business & Mindset
-            </span>
-            <h1 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4 leading-tight">
-              How to Grow Your Freelance Revenue in the UAE Without Working More Hours (2026)
-            </h1>
-            <p className="text-lg text-gray-600 mb-4">
-              Most freelancers trying to grow their income default to the same strategy:
-              take on more clients. This works until it doesn&apos;t — usually when you
-              hit the ceiling of how many hours you can sell in a week. Fortunately, working
-              more hours is not the only growth path. UAE freelancers who build significant
-              incomes typically do it through a combination of raising rates, moving upmarket,
-              adding leverage, and creating assets — not by grinding more hours at the same
-              rate. This guide covers the strategies that UAE freelancers actually use to
-              grow revenue without destroying their work-life balance.
-            </p>
-            <div className="flex items-center gap-4 text-sm text-gray-400">
-              <span>June 16, 2026</span>
-              <span>·</span>
-              <span>8 min read</span>
-            </div>
+          
+        {/* Dark hero */}
+        <div className="bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 text-white px-6 py-10 rounded-2xl mb-8">
+          <span className="text-xs font-bold text-emerald-400 uppercase tracking-widest mb-3 block">UAE FREELANCING</span>
+          <h1 className="text-3xl sm:text-4xl font-bold leading-tight mb-4">How to Grow Your Freelance Revenue in the UAE Without Working More Hours (2026)</h1>
+          <p className="text-gray-300 text-sm mb-5 leading-relaxed max-w-xl">How UAE freelancers grow income without adding more client hours — raising rates on existing clients, moving upmarket, adding leverage through productized services, and building assets that compound over time.</p>
+          <div className="flex flex-wrap gap-4 text-xs text-gray-400">
+            <span>June 2026</span><span>·</span><span>8 min read</span>
           </div>
+        </div>
+
 
           <h2 className="text-2xl font-bold text-gray-900 mb-4">Strategy 1: Raise Your Rates</h2>
           <p className="text-gray-600 mb-4">
@@ -203,7 +190,7 @@ export default function HowToGrowFreelanceRevenueUAE() {
               ))}
             </div>
           </div>
-        </div>
+        
       </main>
       <Footer />
     </>

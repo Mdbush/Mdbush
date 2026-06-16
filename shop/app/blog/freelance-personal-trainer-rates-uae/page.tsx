@@ -48,8 +48,7 @@ export default function FreelancePersonalTrainerRatesUAE() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
       <Header />
-      <main className="min-h-screen bg-white">
-        <div className="max-w-3xl mx-auto px-4 py-12">
+      <main className="max-w-2xl mx-auto px-4 py-10">
           <nav className="text-sm text-gray-500 mb-8">
             <Link href="/" className="hover:text-gray-700">Home</Link>
             <span className="mx-2">/</span>
@@ -58,35 +57,17 @@ export default function FreelancePersonalTrainerRatesUAE() {
             <span className="text-gray-900">Personal Trainer Rates UAE</span>
           </nav>
 
-          <div className="mb-10">
-            <span className="inline-block bg-blue-100 text-blue-700 text-xs font-semibold px-3 py-1 rounded-full mb-4">
-              Pricing & Rates
-            </span>
-            <h1 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4 leading-tight">
-              Freelance Personal Trainer Rates in the UAE (2026)
-            </h1>
-            <p className="text-lg text-gray-600 mb-4">
-              The UAE&apos;s fitness industry is one of the most commercially active in
-              the Middle East — driven by high disposable incomes, a young and
-              health-conscious expatriate population, a growing Emirati wellness
-              culture, and significant corporate investment in employee health and
-              wellbeing. Dubai alone has hundreds of gyms across luxury hotel
-              properties, purpose-built fitness clubs (GymNation, Fitness First,
-              Gold&apos;s Gym), and boutique studios, as well as a growing outdoor
-              fitness culture (Safa Park, JBR beach, Kite Beach). Freelance personal
-              trainers in the UAE operate in multiple channels simultaneously: gym
-              floor PT from a hired base, outdoor and home-visit training, online
-              coaching, and corporate wellness contracts. The UAE market rewards
-              specialisation and certification — trainers with niche expertise
-              (pre/postnatal, sports performance, senior fitness, bodybuilding
-              competition prep) consistently earn more than general-fitness practitioners.
-            </p>
-            <div className="flex items-center gap-4 text-sm text-gray-400">
-              <span>June 16, 2026</span>
-              <span>·</span>
-              <span>7 min read</span>
-            </div>
+          
+        {/* Dark hero */}
+        <div className="bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 text-white px-6 py-10 rounded-2xl mb-8">
+          <span className="text-xs font-bold text-emerald-400 uppercase tracking-widest mb-3 block">UAE RATES 2026</span>
+          <h1 className="text-3xl sm:text-4xl font-bold leading-tight mb-4">Freelance Personal Trainer Rates in the UAE (2026)</h1>
+          <p className="text-gray-300 text-sm mb-5 leading-relaxed max-w-xl">Real AED rates for freelance personal trainers in Dubai and Abu Dhabi. 1-on-1 PT sessions, group fitness, home training, gym-based sessions, online coaching packages, corporate wellness programs, and transformation package fees for 2026.</p>
+          <div className="flex flex-wrap gap-4 text-xs text-gray-400">
+            <span>June 2026</span><span>·</span><span>7 min read</span>
           </div>
+        </div>
+
 
           <div className="bg-blue-50 border border-blue-200 rounded-xl p-6 mb-10">
             <h2 className="text-base font-semibold text-blue-900 mb-3">Quick Rate Benchmark</h2>
@@ -217,7 +198,7 @@ export default function FreelancePersonalTrainerRatesUAE() {
               ))}
             </div>
           </div>
-        </div>
+        
       </main>
       <Footer />
     </>

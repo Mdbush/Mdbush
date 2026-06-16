@@ -48,8 +48,7 @@ export default function FreelanceDataEngineerRatesUAE() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
       <Header />
-      <main className="min-h-screen bg-white">
-        <div className="max-w-3xl mx-auto px-4 py-12">
+      <main className="max-w-2xl mx-auto px-4 py-10">
           <nav className="text-sm text-gray-500 mb-8">
             <Link href="/" className="hover:text-gray-700">Home</Link>
             <span className="mx-2">/</span>
@@ -58,35 +57,17 @@ export default function FreelanceDataEngineerRatesUAE() {
             <span className="text-gray-900">Data Engineer Rates UAE</span>
           </nav>
 
-          <div className="mb-10">
-            <span className="inline-block bg-blue-100 text-blue-700 text-xs font-semibold px-3 py-1 rounded-full mb-4">
-              Pricing & Rates
-            </span>
-            <h1 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4 leading-tight">
-              Freelance Data Engineer Rates in the UAE (2026)
-            </h1>
-            <p className="text-lg text-gray-600 mb-4">
-              Data engineering is one of the highest-demand and highest-paid technical
-              disciplines in the UAE — the combination of the UAE&apos;s ambitions as a
-              data economy, large-scale digital transformation projects across
-              government and enterprise, rapid growth of fintech and e-commerce,
-              and chronic shortage of experienced data engineers creates a market
-              where skilled freelancers command rates comparable to or above the
-              highest-paid software engineers. Freelance data engineers in the UAE
-              serve organisations that need to build or modernise their data
-              infrastructure — pipelines, warehouses, lakes, streaming platforms —
-              on a project or contract basis. The stack matters: engineers proficient
-              in cloud-native data platforms (Snowflake, BigQuery, Databricks, Azure
-              Synapse), modern orchestration tools (Apache Airflow, Prefect, Dagster),
-              streaming (Kafka, Flink), and transformation frameworks (dbt) are
-              in highest demand and command top-tier rates.
-            </p>
-            <div className="flex items-center gap-4 text-sm text-gray-400">
-              <span>June 16, 2026</span>
-              <span>·</span>
-              <span>7 min read</span>
-            </div>
+          
+        {/* Dark hero */}
+        <div className="bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 text-white px-6 py-10 rounded-2xl mb-8">
+          <span className="text-xs font-bold text-emerald-400 uppercase tracking-widest mb-3 block">UAE RATES 2026</span>
+          <h1 className="text-3xl sm:text-4xl font-bold leading-tight mb-4">Freelance Data Engineer Rates in the UAE (2026)</h1>
+          <p className="text-gray-300 text-sm mb-5 leading-relaxed max-w-xl">Real AED day rates for freelance data engineers in Dubai and Abu Dhabi. Data pipeline development, ETL/ELT architecture, data warehouse design, Spark, Kafka, Airflow, dbt, Databricks, and data platform engineering fees for 2026.</p>
+          <div className="flex flex-wrap gap-4 text-xs text-gray-400">
+            <span>June 2026</span><span>·</span><span>7 min read</span>
           </div>
+        </div>
+
 
           <div className="bg-blue-50 border border-blue-200 rounded-xl p-6 mb-10">
             <h2 className="text-base font-semibold text-blue-900 mb-3">Quick Rate Benchmark</h2>
@@ -225,7 +206,7 @@ export default function FreelanceDataEngineerRatesUAE() {
               ))}
             </div>
           </div>
-        </div>
+        
       </main>
       <Footer />
     </>

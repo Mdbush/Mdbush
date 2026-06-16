@@ -39,8 +39,7 @@ export default function HowToBuildFreelanceTeamUAE() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
       <Header />
-      <main className="min-h-screen bg-white">
-        <div className="max-w-3xl mx-auto px-4 py-12">
+      <main className="max-w-2xl mx-auto px-4 py-10">
           <nav className="text-sm text-gray-500 mb-8">
             <Link href="/" className="hover:text-gray-700">Home</Link>
             <span className="mx-2">/</span>
@@ -49,34 +48,17 @@ export default function HowToBuildFreelanceTeamUAE() {
             <span className="text-gray-900">Build Freelance Team UAE</span>
           </nav>
 
-          <div className="mb-10">
-            <span className="inline-block bg-blue-100 text-blue-700 text-xs font-semibold px-3 py-1 rounded-full mb-4">
-              Business & Mindset
-            </span>
-            <h1 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4 leading-tight">
-              How to Build a Freelance Team in the UAE (2026 Guide)
-            </h1>
-            <p className="text-lg text-gray-600 mb-4">
-              The moment a UAE freelancer starts turning down projects because
-              they are fully booked, or loses a client because they could not
-              cover a capability gap, is the moment to consider building a team.
-              A freelance team — a network of trusted subcontractors and specialists
-              who work under your direction on client projects — allows you to take
-              on larger projects, serve more clients simultaneously, offer a broader
-              service range, and move from selling your own time to selling a
-              team&apos;s capabilities. This shift is the most significant income
-              leverage opportunity available to a UAE freelancer: instead of
-              being capped at the hours you personally can sell, you manage
-              a team and capture the margin between what you charge the client
-              and what you pay subcontractors. This guide covers how to build,
-              manage, and profit from a freelance team in the UAE context.
-            </p>
-            <div className="flex items-center gap-4 text-sm text-gray-400">
-              <span>June 16, 2026</span>
-              <span>·</span>
-              <span>7 min read</span>
-            </div>
+          
+        {/* Dark hero */}
+        <div className="bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 text-white px-6 py-10 rounded-2xl mb-8">
+          <span className="text-xs font-bold text-emerald-400 uppercase tracking-widest mb-3 block">UAE FREELANCING</span>
+          <h1 className="text-3xl sm:text-4xl font-bold leading-tight mb-4">How to Build a Freelance Team in the UAE (2026 Guide)</h1>
+          <p className="text-gray-300 text-sm mb-5 leading-relaxed max-w-xl">How UAE freelancers build a team of subcontractors, virtual assistants, and specialists to scale beyond solo capacity. Finding reliable UAE-based and remote team members, structuring agreements, managing quality, and client communication for freelance teams in</p>
+          <div className="flex flex-wrap gap-4 text-xs text-gray-400">
+            <span>June 2026</span><span>·</span><span>7 min read</span>
           </div>
+        </div>
+
 
           <h2 className="text-2xl font-bold text-gray-900 mb-4">When to Build a Team</h2>
           <div className="space-y-4 mb-10">
@@ -217,7 +199,7 @@ export default function HowToBuildFreelanceTeamUAE() {
               ))}
             </div>
           </div>
-        </div>
+        
       </main>
       <Footer />
     </>

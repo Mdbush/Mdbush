@@ -39,8 +39,7 @@ export default function HowToCreateFreelancePackagesUAE() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
       <Header />
-      <main className="min-h-screen bg-white">
-        <div className="max-w-3xl mx-auto px-4 py-12">
+      <main className="max-w-2xl mx-auto px-4 py-10">
           <nav className="text-sm text-gray-500 mb-8">
             <Link href="/" className="hover:text-gray-700">Home</Link>
             <span className="mx-2">/</span>
@@ -49,32 +48,17 @@ export default function HowToCreateFreelancePackagesUAE() {
             <span className="text-gray-900">Create Freelance Packages UAE</span>
           </nav>
 
-          <div className="mb-10">
-            <span className="inline-block bg-blue-100 text-blue-700 text-xs font-semibold px-3 py-1 rounded-full mb-4">
-              Pricing & Rates
-            </span>
-            <h1 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4 leading-tight">
-              How to Create Freelance Service Packages in the UAE (2026 Guide)
-            </h1>
-            <p className="text-lg text-gray-600 mb-4">
-              Most UAE freelancers quote every project from scratch — writing custom
-              proposals, negotiating scope, and spending hours on sales conversations
-              before any work begins. Productised service packages flip this model:
-              you define specific, fixed-scope offerings with fixed prices, and clients
-              select what they need without a back-and-forth negotiation. This approach
-              is not only more efficient for you — it actually increases revenue per
-              client by making buying decisions simpler, signalling confidence in your
-              expertise, and anchoring client expectations to your defined scope rather
-              than an undefined brief. UAE corporate clients in particular respond well
-              to packaged services because they fit familiar procurement patterns: fixed
-              deliverable, fixed cost, clear timeline.
-            </p>
-            <div className="flex items-center gap-4 text-sm text-gray-400">
-              <span>June 16, 2026</span>
-              <span>·</span>
-              <span>7 min read</span>
-            </div>
+          
+        {/* Dark hero */}
+        <div className="bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 text-white px-6 py-10 rounded-2xl mb-8">
+          <span className="text-xs font-bold text-emerald-400 uppercase tracking-widest mb-3 block">UAE FREELANCING</span>
+          <h1 className="text-3xl sm:text-4xl font-bold leading-tight mb-4">How to Create Freelance Service Packages in the UAE (2026 Guide)</h1>
+          <p className="text-gray-300 text-sm mb-5 leading-relaxed max-w-xl">How UAE freelancers create productised service packages — moving from custom quotes to fixed-scope packages that attract better clients, reduce sales effort, command premium pricing, and make your income more predictable.</p>
+          <div className="flex flex-wrap gap-4 text-xs text-gray-400">
+            <span>June 2026</span><span>·</span><span>7 min read</span>
           </div>
+        </div>
+
 
           <h2 className="text-2xl font-bold text-gray-900 mb-4">Why Packages Work Better Than Custom Quotes</h2>
           <div className="space-y-4 mb-10">
@@ -182,7 +166,7 @@ export default function HowToCreateFreelancePackagesUAE() {
               ))}
             </div>
           </div>
-        </div>
+        
       </main>
       <Footer />
     </>

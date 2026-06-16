@@ -39,8 +39,7 @@ export default function HowToBuildFreelanceAuthorityUAE() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
       <Header />
-      <main className="min-h-screen bg-white">
-        <div className="max-w-3xl mx-auto px-4 py-12">
+      <main className="max-w-2xl mx-auto px-4 py-10">
           <nav className="text-sm text-gray-500 mb-8">
             <Link href="/" className="hover:text-gray-700">Home</Link>
             <span className="mx-2">/</span>
@@ -49,31 +48,17 @@ export default function HowToBuildFreelanceAuthorityUAE() {
             <span className="text-gray-900">Build Authority UAE</span>
           </nav>
 
-          <div className="mb-10">
-            <span className="inline-block bg-blue-100 text-blue-700 text-xs font-semibold px-3 py-1 rounded-full mb-4">
-              Getting Clients
-            </span>
-            <h1 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4 leading-tight">
-              How to Build Authority as a UAE Freelancer (2026 Guide)
-            </h1>
-            <p className="text-lg text-gray-600 mb-4">
-              Authority is the difference between being found through referrals and being
-              found by clients who already want to work with you before you&apos;ve spoken.
-              UAE freelancers who build genuine professional authority — through visible expertise,
-              published thinking, and strategic credibility signals — command 30–80% higher
-              rates than equally skilled competitors who remain invisible. The UAE professional
-              market in Dubai and Abu Dhabi is highly relationship-driven: reputation compounds
-              faster here than in larger markets because the senior decision-maker community
-              is relatively small and interconnected. Being known in your niche creates a flywheel
-              — speaking leads to articles, articles lead to podcasts, podcasts lead to referrals,
-              referrals lead to better speaking invitations.
-            </p>
-            <div className="flex items-center gap-4 text-sm text-gray-400">
-              <span>June 16, 2026</span>
-              <span>·</span>
-              <span>7 min read</span>
-            </div>
+          
+        {/* Dark hero */}
+        <div className="bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 text-white px-6 py-10 rounded-2xl mb-8">
+          <span className="text-xs font-bold text-emerald-400 uppercase tracking-widest mb-3 block">UAE FREELANCING</span>
+          <h1 className="text-3xl sm:text-4xl font-bold leading-tight mb-4">How to Build Authority as a UAE Freelancer (2026 Guide)</h1>
+          <p className="text-gray-300 text-sm mb-5 leading-relaxed max-w-xl">How UAE freelancers build professional authority — thought leadership content, speaking engagements, media coverage, LinkedIn publishing, and the credibility signals that make premium clients choose you. Dubai and Abu Dhabi freelancer guide.</p>
+          <div className="flex flex-wrap gap-4 text-xs text-gray-400">
+            <span>June 2026</span><span>·</span><span>7 min read</span>
           </div>
+        </div>
+
 
           <h2 className="text-2xl font-bold text-gray-900 mb-4">Why Authority Compounds in the UAE Market</h2>
           <div className="space-y-4 mb-10">
@@ -203,7 +188,7 @@ export default function HowToBuildFreelanceAuthorityUAE() {
               ))}
             </div>
           </div>
-        </div>
+        
       </main>
       <Footer />
     </>

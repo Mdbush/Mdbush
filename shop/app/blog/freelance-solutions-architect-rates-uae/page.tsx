@@ -48,8 +48,7 @@ export default function FreelanceSolutionsArchitectRatesUAE() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
       <Header />
-      <main className="min-h-screen bg-white">
-        <div className="max-w-3xl mx-auto px-4 py-12">
+      <main className="max-w-2xl mx-auto px-4 py-10">
           <nav className="text-sm text-gray-500 mb-8">
             <Link href="/" className="hover:text-gray-700">Home</Link>
             <span className="mx-2">/</span>
@@ -58,31 +57,17 @@ export default function FreelanceSolutionsArchitectRatesUAE() {
             <span className="text-gray-900">Solutions Architect Rates UAE</span>
           </nav>
 
-          <div className="mb-10">
-            <span className="inline-block bg-blue-100 text-blue-700 text-xs font-semibold px-3 py-1 rounded-full mb-4">
-              Pricing & Rates
-            </span>
-            <h1 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4 leading-tight">
-              Freelance Solutions Architect Rates in the UAE (2026)
-            </h1>
-            <p className="text-lg text-gray-600 mb-4">
-              Solutions architects — the technical professionals who design how systems,
-              applications, and infrastructure will work together to solve a business problem —
-              are among the most consistently in-demand and well-compensated freelance specialists
-              in the UAE technology market. UAE enterprises, government digital transformation
-              programmes, system integrators, and technology vendors all require solutions
-              architects for cloud migration projects, enterprise platform implementations,
-              digital transformation initiatives, and technical pre-sales support.
-              The combination of deep technical knowledge, communication skills, and business
-              acumen needed to function effectively as a solutions architect in the UAE market
-              commands day rates well above most technology specialists.
-            </p>
-            <div className="flex items-center gap-4 text-sm text-gray-400">
-              <span>June 16, 2026</span>
-              <span>·</span>
-              <span>7 min read</span>
-            </div>
+          
+        {/* Dark hero */}
+        <div className="bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 text-white px-6 py-10 rounded-2xl mb-8">
+          <span className="text-xs font-bold text-emerald-400 uppercase tracking-widest mb-3 block">UAE RATES 2026</span>
+          <h1 className="text-3xl sm:text-4xl font-bold leading-tight mb-4">Freelance Solutions Architect Rates in the UAE (2026)</h1>
+          <p className="text-gray-300 text-sm mb-5 leading-relaxed max-w-xl">Real AED day rates for freelance solutions architects in Dubai and Abu Dhabi. Cloud architecture, enterprise integration, solution design, and technical pre-sales fees for UAE technology and consulting projects in 2026.</p>
+          <div className="flex flex-wrap gap-4 text-xs text-gray-400">
+            <span>June 2026</span><span>·</span><span>7 min read</span>
           </div>
+        </div>
+
 
           <div className="bg-blue-50 border border-blue-200 rounded-xl p-6 mb-10">
             <h2 className="text-base font-semibold text-blue-900 mb-3">Quick Rate Benchmark</h2>
@@ -217,7 +202,7 @@ export default function FreelanceSolutionsArchitectRatesUAE() {
               ))}
             </div>
           </div>
-        </div>
+        
       </main>
       <Footer />
     </>

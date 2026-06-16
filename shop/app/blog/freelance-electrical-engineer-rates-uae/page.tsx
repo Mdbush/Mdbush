@@ -48,8 +48,7 @@ export default function FreelanceElectricalEngineerRatesUAE() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
       <Header />
-      <main className="min-h-screen bg-white">
-        <div className="max-w-3xl mx-auto px-4 py-12">
+      <main className="max-w-2xl mx-auto px-4 py-10">
           <nav className="text-sm text-gray-500 mb-8">
             <Link href="/" className="hover:text-gray-700">Home</Link>
             <span className="mx-2">/</span>
@@ -58,35 +57,17 @@ export default function FreelanceElectricalEngineerRatesUAE() {
             <span className="text-gray-900">Electrical Engineer Rates UAE</span>
           </nav>
 
-          <div className="mb-10">
-            <span className="inline-block bg-blue-100 text-blue-700 text-xs font-semibold px-3 py-1 rounded-full mb-4">
-              Pricing & Rates
-            </span>
-            <h1 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4 leading-tight">
-              Freelance Electrical Engineer Rates in the UAE (2026)
-            </h1>
-            <p className="text-lg text-gray-600 mb-4">
-              Electrical engineering is one of the most consistently demanded
-              engineering disciplines in the UAE — required across construction
-              (MEP electrical design for buildings), oil and gas (ADNOC facilities,
-              refineries, offshore platforms), utilities (DEWA, ADDC, FEWA power
-              networks), renewable energy (solar installations, Mohammed bin Rashid
-              Al Maktoum Solar Park, Barakah nuclear power), and the expanding
-              smart building and data centre sectors. Freelance electrical engineers
-              in the UAE serve engineering consultancies, EPC contractors, government
-              utilities, real estate developers, and industrial operators. The UAE&apos;s
-              aggressive renewable energy targets — UAE Net Zero 2050, Dubai Clean
-              Energy Strategy — create growing demand for solar PV, energy storage,
-              and power system integration specialists alongside the traditional MEP
-              and oil and gas market. Society of Engineers UAE registration is
-              mandatory for practicing electrical engineering in the UAE.
-            </p>
-            <div className="flex items-center gap-4 text-sm text-gray-400">
-              <span>June 16, 2026</span>
-              <span>·</span>
-              <span>7 min read</span>
-            </div>
+          
+        {/* Dark hero */}
+        <div className="bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 text-white px-6 py-10 rounded-2xl mb-8">
+          <span className="text-xs font-bold text-emerald-400 uppercase tracking-widest mb-3 block">UAE RATES 2026</span>
+          <h1 className="text-3xl sm:text-4xl font-bold leading-tight mb-4">Freelance Electrical Engineer Rates in the UAE (2026)</h1>
+          <p className="text-gray-300 text-sm mb-5 leading-relaxed max-w-xl">Real AED day rates for freelance electrical engineers in Dubai and Abu Dhabi. MEP electrical design, power systems, substation engineering, oil and gas electrical, building automation, and smart building consulting fees for 2026.</p>
+          <div className="flex flex-wrap gap-4 text-xs text-gray-400">
+            <span>June 2026</span><span>·</span><span>7 min read</span>
           </div>
+        </div>
+
 
           <div className="bg-blue-50 border border-blue-200 rounded-xl p-6 mb-10">
             <h2 className="text-base font-semibold text-blue-900 mb-3">Quick Rate Benchmark</h2>
@@ -221,7 +202,7 @@ export default function FreelanceElectricalEngineerRatesUAE() {
               ))}
             </div>
           </div>
-        </div>
+        
       </main>
       <Footer />
     </>

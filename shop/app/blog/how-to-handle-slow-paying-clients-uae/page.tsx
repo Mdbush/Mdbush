@@ -39,8 +39,7 @@ export default function HowToHandleSlowPayingClientsUAE() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
       <Header />
-      <main className="min-h-screen bg-white">
-        <div className="max-w-3xl mx-auto px-4 py-12">
+      <main className="max-w-2xl mx-auto px-4 py-10">
           <nav className="text-sm text-gray-500 mb-8">
             <Link href="/" className="hover:text-gray-700">Home</Link>
             <span className="mx-2">/</span>
@@ -49,33 +48,17 @@ export default function HowToHandleSlowPayingClientsUAE() {
             <span className="text-gray-900">Handle Slow-Paying Clients UAE</span>
           </nav>
 
-          <div className="mb-10">
-            <span className="inline-block bg-blue-100 text-blue-700 text-xs font-semibold px-3 py-1 rounded-full mb-4">
-              Client Work & Proposals
-            </span>
-            <h1 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4 leading-tight">
-              How to Handle Slow-Paying Clients as a UAE Freelancer (2026)
-            </h1>
-            <p className="text-lg text-gray-600 mb-4">
-              Slow payment is the most common financial problem UAE freelancers face.
-              A client who was enthusiastic during the project goes quiet when the
-              invoice arrives. Promised payment dates come and go. Follow-up emails
-              receive vague responses about &quot;approval processes&quot; and
-              &quot;accounting cycles.&quot; In Dubai&apos;s business culture — where
-              relationships are paramount and directness about money can feel culturally
-              uncomfortable — many freelancers let late payments slide for months rather
-              than risk damaging a client relationship. This is the wrong approach. A
-              client who doesn&apos;t pay is not a client — they are a creditor who has
-              taken your work without compensation. This guide gives you the exact
-              sequence to follow when payment is late, the scripts to use at each stage,
-              and when and how to use UAE legal mechanisms if necessary.
-            </p>
-            <div className="flex items-center gap-4 text-sm text-gray-400">
-              <span>June 16, 2026</span>
-              <span>·</span>
-              <span>7 min read</span>
-            </div>
+          
+        {/* Dark hero */}
+        <div className="bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 text-white px-6 py-10 rounded-2xl mb-8">
+          <span className="text-xs font-bold text-emerald-400 uppercase tracking-widest mb-3 block">CLIENT WORK</span>
+          <h1 className="text-3xl sm:text-4xl font-bold leading-tight mb-4">How to Handle Slow-Paying Clients as a UAE Freelancer (2026)</h1>
+          <p className="text-gray-300 text-sm mb-5 leading-relaxed max-w-xl">How UAE freelancers deal with slow-paying clients — follow-up scripts, escalation process, when to stop work, when to use UAE legal remedies, and how to prevent slow payment from happening again.</p>
+          <div className="flex flex-wrap gap-4 text-xs text-gray-400">
+            <span>June 2026</span><span>·</span><span>7 min read</span>
           </div>
+        </div>
+
 
           <h2 className="text-2xl font-bold text-gray-900 mb-4">The Follow-Up Sequence (Day by Day)</h2>
           <div className="space-y-4 mb-10">
@@ -195,7 +178,7 @@ export default function HowToHandleSlowPayingClientsUAE() {
               ))}
             </div>
           </div>
-        </div>
+        
       </main>
       <Footer />
     </>
