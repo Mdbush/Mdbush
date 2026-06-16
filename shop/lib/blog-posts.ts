@@ -2483,6 +2483,33 @@ export const posts: BlogPost[] = [
     readTime: "7 min read",
     category: "Pricing & Rates",
   },
+  {
+    slug: "freelance-packaging-designer-rates-uae",
+    title: "Freelance Packaging Designer Rates in the UAE (2026)",
+    description:
+      "Real AED project and day rates for freelance packaging designers in Dubai and Abu Dhabi. FMCG packaging, food and beverage, luxury goods, retail packaging, structural design, and UAE regulatory compliance fees for 2026.",
+    date: "June 16, 2026",
+    readTime: "7 min read",
+    category: "Pricing & Rates",
+  },
+  {
+    slug: "how-to-manage-freelance-subcontractors-uae",
+    title: "How to Manage Freelance Subcontractors in the UAE (2026 Guide)",
+    description:
+      "How UAE freelancers hire, manage, and pay subcontractors — finding the right people, subcontractor agreements, quality control, payment structures, client disclosure, and building a reliable freelance team for larger projects.",
+    date: "June 16, 2026",
+    readTime: "7 min read",
+    category: "Business & Mindset",
+  },
+  {
+    slug: "freelance-maritime-consultant-rates-uae",
+    title: "Freelance Maritime Consultant Rates in the UAE (2026)",
+    description:
+      "Real AED day rates for freelance maritime consultants in Dubai and Abu Dhabi. Port operations, ship management, maritime law advisory, vessel inspection, UAE maritime regulatory compliance, and offshore oil & gas consulting fees for 2026.",
+    date: "June 16, 2026",
+    readTime: "7 min read",
+    category: "Pricing & Rates",
+  },
 ];
 
 export function getPost(slug: string): BlogPost | undefined {
