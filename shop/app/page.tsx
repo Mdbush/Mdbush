@@ -75,7 +75,7 @@ export default function Home() {
       <main className="flex-1">
 
         {/* Hero — dark, punchy, direct */}
-        <section className="bg-gray-950 text-white py-20 px-4 sm:px-6">
+        <section className="bg-gradient-to-br from-gray-900 to-gray-800 text-white py-20 px-4 sm:px-6">
           <div className="max-w-3xl mx-auto text-center">
             <span className="inline-block bg-white/10 text-white text-xs font-semibold px-3 py-1 rounded-full mb-6 uppercase tracking-widest">
               🇦🇪 For UAE &amp; GCC Freelancers
@@ -196,7 +196,7 @@ export default function Home() {
         </section>
 
         {/* Complete Stack callout */}
-        <section className="bg-gray-950 text-white py-14 px-4 sm:px-6">
+        <section className="bg-gradient-to-br from-gray-900 to-gray-800 text-white py-14 px-4 sm:px-6">
           <div className="max-w-3xl mx-auto text-center">
             <span className="inline-block bg-white/10 text-white text-xs font-semibold px-3 py-1 rounded-full mb-4 uppercase tracking-widest">
               Complete Stack
@@ -324,7 +324,7 @@ export default function Home() {
         </section>
 
         {/* Guarantee */}
-        <section className="bg-gray-950 text-white py-14 px-4 sm:px-6">
+        <section className="bg-gradient-to-br from-gray-900 to-gray-800 text-white py-14 px-4 sm:px-6">
           <div className="max-w-xl mx-auto text-center">
             <div className="text-5xl mb-4">🛡️</div>
             <h2 className="text-2xl font-bold mb-3">30-Day Money-Back Guarantee</h2>

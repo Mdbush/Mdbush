@@ -75,7 +75,7 @@ export default async function BlogPage({ searchParams }: Props) {
             href="/blog"
             className={`text-xs font-semibold px-3 py-1.5 rounded-full border transition-colors ${
               !activeCategory
-                ? "bg-gray-900 text-white border-gray-900"
+                ? "bg-emerald-500 text-white border-emerald-500"
                 : "bg-white text-gray-600 border-gray-200 hover:border-gray-400"
             }`}
           >
@@ -89,7 +89,7 @@ export default async function BlogPage({ searchParams }: Props) {
                 href={`/blog?category=${encodeURIComponent(cat)}`}
                 className={`text-xs font-semibold px-3 py-1.5 rounded-full border transition-colors ${
                   activeCategory === cat
-                    ? "bg-gray-900 text-white border-gray-900"
+                    ? "bg-emerald-500 text-white border-emerald-500"
                     : "bg-white text-gray-600 border-gray-200 hover:border-gray-400"
                 }`}
               >

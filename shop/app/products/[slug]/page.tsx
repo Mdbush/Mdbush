@@ -338,7 +338,7 @@ export default async function ProductPage({ params }: Props) {
             <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
               {howItWorks.map((step) => (
                 <div key={step.step} className="bg-gray-50 border border-gray-200 rounded-2xl p-5">
-                  <div className="w-8 h-8 rounded-full bg-gray-900 text-white text-sm font-bold flex items-center justify-center mb-3">{step.step}</div>
+                  <div className="w-8 h-8 rounded-full bg-emerald-500 text-white text-sm font-bold flex items-center justify-center mb-3">{step.step}</div>
                   <p className="font-semibold text-gray-900 text-sm mb-1">{step.title}</p>
                   <p className="text-xs text-gray-500 leading-relaxed">{step.desc}</p>
                 </div>
