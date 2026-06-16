@@ -63,6 +63,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "freelance-marketing-rates-uae",
     "freelance-copywriter-rates-uae",
     "personal-brand-freelancer-uae",
+    "freelance-consultant-rates-uae",
+    "corporate-tax-uae-freelancers-2026",
+    "best-coworking-spaces-abu-dhabi",
   ].map((slug) => ({
     url: `${base}/blog/${slug}`,
     lastModified: new Date(),

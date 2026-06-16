@@ -467,6 +467,33 @@ export const posts: BlogPost[] = [
     readTime: "8 min read",
     category: "Client Acquisition",
   },
+  {
+    slug: "freelance-consultant-rates-uae",
+    title: "Freelance Consultant Rates in the UAE (2026): What to Charge",
+    description:
+      "Day rates for independent consultants in Dubai and Abu Dhabi — management, strategy, HR, finance, operations, tech, and legal. Plus how to set your rate when transitioning from employment.",
+    date: "June 16, 2026",
+    readTime: "8 min read",
+    category: "Pricing & Rates",
+  },
+  {
+    slug: "corporate-tax-uae-freelancers-2026",
+    title: "UAE Corporate Tax 2026 for Freelancers: What You Need to Know",
+    description:
+      "9% UAE corporate tax explained for freelancers — the AED 1M threshold for natural persons, Small Business Relief, free zone rules, and what you actually need to do in 2026.",
+    date: "June 16, 2026",
+    readTime: "8 min read",
+    category: "Tax & Finance",
+  },
+  {
+    slug: "best-coworking-spaces-abu-dhabi",
+    title: "Best Coworking Spaces in Abu Dhabi for Freelancers (2026)",
+    description:
+      "Reviewed: Hub71, WeWork, Regus, twofour54, The Bureau, and The Cribb — with day pass and monthly rates. Plus how to choose the right space and negotiate better deals.",
+    date: "June 16, 2026",
+    readTime: "7 min read",
+    category: "Visa & Legal",
+  },
 ];
 
 export function getPost(slug: string): BlogPost | undefined {

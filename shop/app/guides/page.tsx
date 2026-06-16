@@ -6,11 +6,11 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "UAE Freelancer Guides & Resources — SoloKit",
   description:
-    "51 practical guides for freelancers and solopreneurs in the UAE. Visa, tax, rates, clients, contracts, AI tools, and more. All free.",
+    "55 practical guides for freelancers and solopreneurs in the UAE. Visa, tax, rates, clients, contracts, AI tools, and more. All free.",
   alternates: { canonical: "/guides" },
   openGraph: {
     title: "UAE Freelancer Guides & Resources — SoloKit",
-    description: "51 free guides covering everything a UAE freelancer needs to know.",
+    description: "55 free guides covering everything a UAE freelancer needs to know.",
     type: "website",
     url: "/guides",
   },
@@ -48,6 +48,7 @@ const categories = [
       { slug: "freelance-rate-calculator-uae", title: "Freelance Rate Calculator: How Much Should You Charge?", time: "8 min" },
       { slug: "freelance-invoice-uae", title: "How to Invoice Clients in the UAE", time: "5 min" },
       { slug: "best-accounting-software-freelancers-uae", title: "Best Accounting Software for UAE Freelancers", time: "6 min" },
+      { slug: "corporate-tax-uae-freelancers-2026", title: "UAE Corporate Tax 2026 for Freelancers: What You Need to Know", time: "8 min" },
     ],
   },
   {
@@ -78,6 +79,7 @@ const categories = [
       { slug: "freelance-designer-rates-uae", title: "Freelance Designer Rates in the UAE (2026): What to Charge", time: "8 min" },
       { slug: "freelance-marketing-rates-uae", title: "Freelance Marketing Consultant Rates in the UAE (2026)", time: "7 min" },
       { slug: "freelance-copywriter-rates-uae", title: "Freelance Copywriter Rates in the UAE (2026): What to Charge", time: "7 min" },
+      { slug: "freelance-consultant-rates-uae", title: "Freelance Consultant Rates in the UAE (2026): What to Charge", time: "8 min" },
     ],
   },
   {
@@ -122,6 +124,7 @@ const categories = [
       { slug: "best-coworking-spaces-dubai", title: "Best Coworking Spaces in Dubai for Freelancers", time: "6 min" },
       { slug: "rakez-vs-ifza-freelance-license-uae", title: "RAKEZ vs IFZA vs Meydan: Best Free Zone for UAE Freelancers", time: "9 min" },
       { slug: "uae-golden-visa-freelancers", title: "UAE Golden Visa for Freelancers: Requirements & How to Apply", time: "8 min" },
+      { slug: "best-coworking-spaces-abu-dhabi", title: "Best Coworking Spaces in Abu Dhabi for Freelancers (2026)", time: "7 min" },
     ],
   },
   {
@@ -150,7 +153,7 @@ export default function GuidesPage() {
           <span className="text-xs font-semibold text-gray-400 uppercase tracking-widest">Free Resources</span>
           <h1 className="text-3xl sm:text-4xl font-bold text-gray-900 mt-2 mb-3">UAE Freelancer Guides</h1>
           <p className="text-gray-500 max-w-xl mx-auto leading-relaxed">
-            51 practical guides covering everything you need to know about freelancing in Dubai and Abu Dhabi.
+            55 practical guides covering everything you need to know about freelancing in Dubai and Abu Dhabi.
             Written specifically for the UAE market — AED pricing, local laws, free zone context.
           </p>
         </div>
