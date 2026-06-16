@@ -4,8 +4,15 @@ import Footer from "@/components/Footer";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Blog — SoloKit",
-  description: "Practical guides and resources for freelancers and solopreneurs in the UAE.",
+  title: "Blog — 36 Free Guides for UAE Freelancers — SoloKit",
+  description: "36 free guides for freelancers and solopreneurs in the UAE. Visa, tax, rates, proposals, AI tools, contracts, and more. No fluff.",
+  alternates: { canonical: "/blog" },
+  openGraph: {
+    title: "Free Guides for UAE Freelancers — SoloKit Blog",
+    description: "36 practical guides covering everything UAE freelancers need. No fluff.",
+    url: "/blog",
+    type: "website",
+  },
 };
 
 const posts = [

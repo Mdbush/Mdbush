@@ -13,9 +13,9 @@ export const metadata: Metadata = {
       ? process.env.NEXT_PUBLIC_SITE_URL
       : "https://solokit.cloud"
   ),
-  title: "SoloKit — Notion Templates, AI Prompts & SOPs for Solopreneurs",
+  title: "SoloKit — Notion Templates, AI Prompts & SOPs for UAE Freelancers",
   description:
-    "Ready-to-use Notion templates, AI prompt packs, and SOPs built for freelancers and solopreneurs. Stop building from scratch — plug in and go.",
+    "Ready-to-use Notion templates, AI prompt packs, and SOPs built for UAE freelancers. AED pricing. Instant download. 30-day guarantee.",
   openGraph: {
     title: "SoloKit",
     description: "Notion templates, AI prompts & SOPs for freelancers and solopreneurs.",
@@ -35,9 +35,13 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     <html lang="en" className={geist.variable}>
       <body className="min-h-screen flex flex-col bg-white text-gray-900 antialiased">
         <div className="bg-gray-900 text-white text-center text-xs font-medium py-2 px-4">
-          🔥 Launch Week — Save up to 30% off all products.{" "}
+          ✦ Limited launch pricing — save up to 30% on all products.{" "}
           <a href="/#products" className="underline underline-offset-2 hover:text-gray-300 transition-colors">
-            Shop now →
+            Browse products →
+          </a>
+          <span className="mx-2 text-gray-500">·</span>
+          <a href="/free" className="underline underline-offset-2 hover:text-gray-300 transition-colors">
+            10 free prompts
           </a>
         </div>
         {children}
