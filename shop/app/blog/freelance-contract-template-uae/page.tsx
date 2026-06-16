@@ -192,7 +192,7 @@ export default function FreelanceContractTemplateUAEPage() {
             ].map(({ n, title, why, include, example }) => (
               <div key={n} className="border border-gray-200 rounded-xl overflow-hidden">
                 <div className="bg-gray-50 px-5 py-4 flex items-start gap-3">
-                  <span className="bg-gray-950 text-white text-sm font-bold w-7 h-7 rounded-full flex items-center justify-center shrink-0 mt-0.5">{n}</span>
+                  <span className="bg-gradient-to-br from-gray-900 to-gray-800 text-white text-sm font-bold w-7 h-7 rounded-full flex items-center justify-center shrink-0 mt-0.5">{n}</span>
                   <div>
                     <h3 className="font-bold text-gray-900">{title}</h3>
                     <p className="text-sm text-gray-600 mt-0.5">{why}</p>
@@ -267,7 +267,7 @@ export default function FreelanceContractTemplateUAEPage() {
         </section>
 
         {/* Quick checklist */}
-        <div className="bg-gray-950 text-white rounded-xl p-8 mb-10">
+        <div className="bg-gradient-to-br from-gray-900 to-gray-800 text-white rounded-xl p-8 mb-10">
           <h2 className="text-xl font-bold mb-4">Before You Start Any Project — Checklist</h2>
           <ul className="space-y-2 text-gray-300 text-sm">
             {[

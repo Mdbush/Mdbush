@@ -110,7 +110,7 @@ export default function FreelanceRateCalculatorUAEPage() {
             The Minimum Rate Formula
           </h2>
 
-          <div className="bg-gray-950 text-white rounded-xl p-6 mb-6 font-mono text-sm">
+          <div className="bg-gradient-to-br from-gray-900 to-gray-800 text-white rounded-xl p-6 mb-6 font-mono text-sm">
             <p className="text-gray-400 mb-2">// Step 1: Annual target income</p>
             <p className="mb-4">Target Take-Home × 12 = Annual Target</p>
             <p className="text-gray-400 mb-2">// Step 2: Add overhead</p>
@@ -132,7 +132,7 @@ export default function FreelanceRateCalculatorUAEPage() {
           <div className="space-y-4 mb-8">
             <div className="border border-gray-200 rounded-xl p-5">
               <h3 className="font-semibold mb-3 flex items-center gap-2">
-                <span className="bg-gray-950 text-white text-xs w-6 h-6 rounded-full flex items-center justify-center font-mono">1</span>
+                <span className="bg-gradient-to-br from-gray-900 to-gray-800 text-white text-xs w-6 h-6 rounded-full flex items-center justify-center font-mono">1</span>
                 Monthly take-home breakdown
               </h3>
               <div className="space-y-2 text-sm text-gray-600">
@@ -146,7 +146,7 @@ export default function FreelanceRateCalculatorUAEPage() {
 
             <div className="border border-gray-200 rounded-xl p-5">
               <h3 className="font-semibold mb-3 flex items-center gap-2">
-                <span className="bg-gray-950 text-white text-xs w-6 h-6 rounded-full flex items-center justify-center font-mono">2</span>
+                <span className="bg-gradient-to-br from-gray-900 to-gray-800 text-white text-xs w-6 h-6 rounded-full flex items-center justify-center font-mono">2</span>
                 Annual business overhead
               </h3>
               <div className="space-y-2 text-sm text-gray-600">
@@ -161,7 +161,7 @@ export default function FreelanceRateCalculatorUAEPage() {
 
             <div className="border border-gray-200 rounded-xl p-5">
               <h3 className="font-semibold mb-3 flex items-center gap-2">
-                <span className="bg-gray-950 text-white text-xs w-6 h-6 rounded-full flex items-center justify-center font-mono">3</span>
+                <span className="bg-gradient-to-br from-gray-900 to-gray-800 text-white text-xs w-6 h-6 rounded-full flex items-center justify-center font-mono">3</span>
                 Gross revenue needed
               </h3>
               <div className="space-y-2 text-sm text-gray-600">
@@ -176,7 +176,7 @@ export default function FreelanceRateCalculatorUAEPage() {
 
             <div className="border border-gray-200 rounded-xl p-5">
               <h3 className="font-semibold mb-3 flex items-center gap-2">
-                <span className="bg-gray-950 text-white text-xs w-6 h-6 rounded-full flex items-center justify-center font-mono">4</span>
+                <span className="bg-gradient-to-br from-gray-900 to-gray-800 text-white text-xs w-6 h-6 rounded-full flex items-center justify-center font-mono">4</span>
                 Convert to hourly rate
               </h3>
               <div className="space-y-2 text-sm text-gray-600">

@@ -55,7 +55,7 @@ export default function Article() {
       <Header />
 
       <main className="flex-1 max-w-2xl mx-auto px-4 sm:px-6 py-14">
-        <Link href="/blog" className="text-sm text-gray-400 hover:text-gray-700 transition-colors mb-8 inline-block">
+        <Link href="/blog" className="text-sm text-emerald-700 hover:text-emerald-900 transition-colors mb-8 inline-block">
           ← Blog
         </Link>
 
@@ -150,7 +150,7 @@ export default function Article() {
             </p>
             <Link
               href="/free"
-              className="inline-block bg-gray-900 text-white text-sm font-semibold px-5 py-2 rounded-xl hover:bg-gray-700 transition-colors"
+              className="inline-block bg-emerald-500 text-white text-sm font-semibold px-5 py-2 rounded-xl hover:bg-emerald-400 transition-colors"
             >
               Get 10 free prompts →
             </Link>
@@ -210,7 +210,7 @@ export default function Article() {
             That's 20-40 extra hours a month you can spend on billable work — or just not working.
           </p>
 
-          <div className="bg-gray-900 text-white rounded-2xl p-6 mt-10">
+          <div className="bg-gradient-to-br from-gray-900 to-gray-800 text-white rounded-2xl p-6 mt-10">
             <p className="text-sm font-semibold text-gray-300 mb-1">Ready to move faster?</p>
             <p className="text-xl font-bold mb-3">200 tested prompts for freelancers</p>
             <p className="text-gray-400 text-sm mb-4">
@@ -218,7 +218,7 @@ export default function Article() {
             </p>
             <Link
               href="/products/ai-prompt-pack-pro"
-              className="inline-block bg-white text-gray-900 text-sm font-semibold px-6 py-2.5 rounded-xl hover:bg-gray-100 transition-colors"
+              className="inline-block bg-emerald-500 text-white font-bold hover:bg-emerald-400 transition-colors"
             >
               Get the AI Prompt Pack →
             </Link>
@@ -228,17 +228,17 @@ export default function Article() {
         <div className="mt-10 pt-6 border-t border-gray-100">
           <p className="text-sm font-semibold text-gray-900 mb-3">Further reading</p>
           <div className="flex flex-col gap-2">
-            <Link href="/blog/freelance-proposal-tips-uae" className="text-sm text-gray-500 hover:text-gray-900 transition-colors underline underline-offset-2">
+            <Link href="/blog/freelance-proposal-tips-uae" className="text-sm text-emerald-700 hover:text-emerald-900 transition-colors">
               How to Write a Freelance Proposal That Wins Clients →
             </Link>
-            <Link href="/blog/get-freelance-clients-uae" className="text-sm text-gray-500 hover:text-gray-900 transition-colors underline underline-offset-2">
+            <Link href="/blog/get-freelance-clients-uae" className="text-sm text-emerald-700 hover:text-emerald-900 transition-colors">
               How to Get Freelance Clients in the UAE (6 Strategies) →
             </Link>
           </div>
         </div>
 
         <div className="mt-8 pt-8 border-t border-gray-100">
-          <Link href="/blog" className="text-sm text-gray-400 hover:text-gray-700 transition-colors">
+          <Link href="/blog" className="text-sm text-emerald-700 hover:text-emerald-900 transition-colors">
             ← Back to Blog
           </Link>
         </div>

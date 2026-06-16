@@ -413,7 +413,7 @@ export default function FreelanceHRConsultantRatesUAEPage() {
         </section>
 
         {/* CTA */}
-        <div className="bg-gray-950 text-white rounded-xl p-8 mb-10">
+        <div className="bg-gradient-to-br from-gray-900 to-gray-800 text-white rounded-xl p-8 mb-10">
           <p className="text-sm text-gray-400 mb-2">Running your freelance HR practice?</p>
           <h2 className="text-xl font-bold mb-3">Solopreneur OS — Business OS for Independent Consultants</h2>
           <p className="text-gray-300 text-sm mb-3 leading-relaxed">
@@ -430,7 +430,7 @@ export default function FreelanceHRConsultantRatesUAEPage() {
           <div className="flex flex-wrap gap-3">
             <Link
               href="/products/solopreneur-os"
-              className="inline-block bg-white text-gray-900 font-semibold px-6 py-3 rounded-lg hover:bg-gray-100 transition-colors text-sm"
+              className="inline-block bg-emerald-500 text-white font-bold hover:bg-emerald-400 transition-colors text-sm"
             >
               Get Solopreneur OS — AED 249
             </Link>

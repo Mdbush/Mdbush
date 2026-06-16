@@ -132,7 +132,7 @@ export default function Article() {
       <Header />
 
       <main className="flex-1 max-w-2xl mx-auto px-4 sm:px-6 py-14">
-        <Link href="/blog" className="text-sm text-gray-400 hover:text-gray-700 transition-colors mb-8 inline-block">
+        <Link href="/blog" className="text-sm text-emerald-700 hover:text-emerald-900 transition-colors mb-8 inline-block">
           ← Blog
         </Link>
 
@@ -251,7 +251,7 @@ export default function Article() {
               { step: "3. Format", detail: "Tell it how to structure the output. 'Use short paragraphs. No bullet points. Formal but not stiff. End with a clear next step.'" },
             ].map((item) => (
               <div key={item.step} className="flex gap-4">
-                <div className="w-8 h-8 bg-gray-900 text-white rounded-full flex items-center justify-center text-sm font-bold shrink-0 mt-0.5">
+                <div className="w-8 h-8 bg-emerald-500 text-white rounded-full flex items-center justify-center text-sm font-bold shrink-0 mt-0.5">
                   {item.step.charAt(0)}
                 </div>
                 <div>
@@ -275,7 +275,7 @@ export default function Article() {
             </p>
             <Link
               href="/products/ai-prompt-pack-pro"
-              className="inline-block bg-gray-900 text-white text-sm font-semibold px-5 py-2 rounded-xl hover:bg-gray-700 transition-colors"
+              className="inline-block bg-emerald-500 text-white text-sm font-semibold px-5 py-2 rounded-xl hover:bg-emerald-400 transition-colors"
             >
               Get the AI Prompt Pack →
             </Link>
@@ -298,7 +298,7 @@ export default function Article() {
             workflows you have to build habits around.
           </p>
 
-          <div className="bg-gray-900 text-white rounded-2xl p-6 mt-10">
+          <div className="bg-gradient-to-br from-gray-900 to-gray-800 text-white rounded-2xl p-6 mt-10">
             <p className="text-sm font-semibold text-gray-300 mb-1">Get more out of every AI tool you use</p>
             <p className="text-xl font-bold mb-3">AI Prompt Pack Pro — AED 149</p>
             <p className="text-gray-400 text-sm mb-4">
@@ -307,7 +307,7 @@ export default function Article() {
             </p>
             <Link
               href="/products/ai-prompt-pack-pro"
-              className="inline-block bg-white text-gray-900 text-sm font-semibold px-6 py-2.5 rounded-xl hover:bg-gray-100 transition-colors"
+              className="inline-block bg-emerald-500 text-white font-bold hover:bg-emerald-400 transition-colors"
             >
               Get the Prompt Pack →
             </Link>
@@ -316,16 +316,16 @@ export default function Article() {
           <div className="mt-10 pt-6 border-t border-gray-100">
             <p className="text-sm font-semibold text-gray-900 mb-3">Further reading</p>
             <div className="flex flex-col gap-2">
-              <Link href="/blog/freelance-proposal-tips-uae" className="text-sm text-gray-500 hover:text-gray-900 transition-colors underline underline-offset-2">
+              <Link href="/blog/freelance-proposal-tips-uae" className="text-sm text-emerald-700 hover:text-emerald-900 transition-colors">
                 How to Write a Freelance Proposal That Wins Clients in the UAE →
               </Link>
-              <Link href="/blog/how-to-negotiate-freelance-rates-uae" className="text-sm text-gray-500 hover:text-gray-900 transition-colors underline underline-offset-2">
+              <Link href="/blog/how-to-negotiate-freelance-rates-uae" className="text-sm text-emerald-700 hover:text-emerald-900 transition-colors">
                 How to Negotiate Freelance Rates in the UAE (Without Losing the Client) →
               </Link>
-              <Link href="/blog/freelance-systems-uae" className="text-sm text-gray-500 hover:text-gray-900 transition-colors underline underline-offset-2">
+              <Link href="/blog/freelance-systems-uae" className="text-sm text-emerald-700 hover:text-emerald-900 transition-colors">
                 Why Most UAE Freelancers Stay Stuck at AED 10K/Month →
               </Link>
-              <Link href="/blog/get-freelance-clients-uae" className="text-sm text-gray-500 hover:text-gray-900 transition-colors underline underline-offset-2">
+              <Link href="/blog/get-freelance-clients-uae" className="text-sm text-emerald-700 hover:text-emerald-900 transition-colors">
                 How to Get Freelance Clients in the UAE (6 Strategies That Work) →
               </Link>
             </div>
@@ -333,7 +333,7 @@ export default function Article() {
         </div>
 
         <div className="mt-12 pt-8 border-t border-gray-100">
-          <Link href="/blog" className="text-sm text-gray-400 hover:text-gray-700 transition-colors">
+          <Link href="/blog" className="text-sm text-emerald-700 hover:text-emerald-900 transition-colors">
             ← Back to Blog
           </Link>
         </div>
