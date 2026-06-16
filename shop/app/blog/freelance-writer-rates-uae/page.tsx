@@ -32,15 +32,15 @@ const jsonLd = {
 const rateTable = [
   {
     type: "Blog articles / content marketing",
-    junior: "AED 0.40–0.70/word\n(~AED 400–700 per 1,000-word article)",
-    mid: "AED 0.80–1.40/word\n(~AED 800–1,400 per 1,000-word article)",
-    senior: "AED 1.50–3.00+/word\n(~AED 1,500–3,000+ per 1,000-word article)",
+    junior: "AED 0.40–0.70/word (~AED 400–700 per 1,000-word article)",
+    mid: "AED 0.80–1.40/word (~AED 800–1,400 per 1,000-word article)",
+    senior: "AED 1.50–3.00+/word (~AED 1,500–3,000+ per 1,000-word article)",
   },
   {
     type: "Social media captions",
-    junior: "AED 50–100 per caption\n(AED 500–1,000 for 10 captions)",
-    mid: "AED 120–200 per caption\n(AED 1,200–2,000 for 10 captions)",
-    senior: "AED 250–500+ per caption\n(AED 2,500–5,000+ for 10 captions)",
+    junior: "AED 50–100 per caption",
+    mid: "AED 120–200 per caption",
+    senior: "AED 250–500+ per caption",
   },
   {
     type: "Press releases",
@@ -74,41 +74,74 @@ const rateTable = [
   },
 ];
 
+const statsData = [
+  { value: "AED 15K–25K", label: "Mid-Level Monthly" },
+  { value: "AED 30K–50K+", label: "Senior Specialist" },
+  { value: "AED 2–5/word", label: "Finance/Legal Niche" },
+];
+
+const niches = [
+  { niche: "Financial and investment writing", rate: "AED 2–5/word", why: "High compliance sensitivity, requires financial knowledge, limited supply of qualified writers" },
+  { niche: "Real estate content (property listings, developer copy)", rate: "AED 1.50–4/word", why: "Dubai's property market is enormous — developers and agencies pay premium for conversion-focused copy" },
+  { niche: "B2B tech / SaaS content", rate: "AED 1.50–3.50/word", why: "Technical knowledge required, long-form expertise, international client base willing to pay global rates" },
+  { niche: "Legal and compliance writing", rate: "AED 2–5/word", why: "High accuracy requirements, UAE regulatory knowledge valuable, narrow talent pool" },
+  { niche: "Arabic-English bilingual content", rate: "AED 1.50–4/word (Arabic commands premium)", why: "Very limited supply of native-quality Arabic business writers; market demand far exceeds supply" },
+];
+
+const pricingModels = [
+  { model: "Per word", best: "When scope is uncertain, for one-off articles, when you are quoting for a client you have not worked with before", risk: "Incentivizes length over quality. Clients sometimes try to reduce word count after delivery." },
+  { model: "Per project", best: "When you can clearly define the deliverable. Allows you to earn more per hour as you get faster.", risk: "Scope creep — clients add rounds of revisions or expand the brief mid-project." },
+  { model: "Monthly retainer", best: "For ongoing content — 4–12 pieces per month. Most profitable model for experienced writers.", risk: "Requires careful scope definition. Vague retainers lead to exploitation." },
+];
+
 export default function FreelanceWriterRatesUAE() {
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
       <Header />
 
-      <main className="flex-1 max-w-2xl mx-auto px-4 sm:px-6 py-12">
+      <main className="min-h-screen bg-white">
+        <div className="max-w-3xl mx-auto px-4 py-10">
 
-        <nav className="text-xs text-gray-400 mb-6 flex gap-2 flex-wrap">
-          <Link href="/" className="hover:text-gray-600">Home</Link>
-          <span>›</span>
-          <Link href="/blog" className="hover:text-gray-600">Blog</Link>
-          <span>›</span>
-          <span className="text-gray-600">Freelance Writer Rates in the UAE</span>
-        </nav>
+          {/* Breadcrumb */}
+          <nav className="text-xs text-gray-400 mb-6 flex gap-2 flex-wrap">
+            <Link href="/" className="hover:text-gray-600">Home</Link>
+            <span>›</span>
+            <Link href="/blog" className="hover:text-gray-600">Blog</Link>
+            <span>›</span>
+            <span className="text-gray-600">Freelance Writer Rates in the UAE</span>
+          </nav>
 
-        <header className="mb-8">
-          <span className="text-xs font-semibold text-gray-400 uppercase tracking-widest">Pricing & Rates</span>
-          <h1 className="text-3xl font-bold text-gray-900 mt-2 mb-3 leading-tight">
-            Freelance Writer Rates in the UAE (2026): What to Charge
-          </h1>
-          <p className="text-gray-500 text-sm">7 min read</p>
-        </header>
+          {/* Hero */}
+          <div className="bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 text-white px-6 py-10 rounded-2xl mb-8">
+            <span className="text-xs font-bold text-emerald-400 uppercase tracking-widest mb-3 block">Pricing &amp; Rates</span>
+            <h1 className="text-3xl sm:text-4xl font-bold leading-tight mb-4">Freelance Writer Rates in the UAE (2026): What to Charge</h1>
+            <p className="text-gray-300 text-sm mb-5 leading-relaxed max-w-xl">
+              Real AED rates for freelance writers in Dubai and Abu Dhabi — per-word, per-article, per-project pricing for blog content, white papers, social media, press releases, and more.
+            </p>
+            <div className="flex flex-wrap gap-4 text-xs text-gray-400">
+              <span>June 16, 2026</span><span>·</span><span>7 min read</span>
+            </div>
+          </div>
 
-        <div className="prose prose-gray max-w-none text-gray-700 leading-relaxed space-y-6">
+          {/* Stats grid */}
+          <div className="grid grid-cols-3 gap-3 mb-8">
+            {statsData.map((s) => (
+              <div key={s.label} className="bg-gray-50 border border-gray-200 rounded-xl p-4 text-center">
+                <div className="text-lg font-bold text-gray-900">{s.value}</div>
+                <div className="text-xs text-gray-500 mt-1">{s.label}</div>
+              </div>
+            ))}
+          </div>
 
-          <p>
+          <p className="text-gray-700 text-sm leading-relaxed mb-4">
             Freelance writing rates in the UAE vary significantly based on content type,
             specialization, and client budget. The market ranges from commodity content
             mills paying AED 0.20/word to B2B clients paying AED 5/word for expert-level
-            technical or financial writing. This guide covers real market rates across the
-            most common content types — with junior, mid, and senior benchmarks.
+            technical or financial writing.
           </p>
 
-          <div className="bg-gray-50 border border-gray-200 rounded-xl p-4 text-sm">
+          <div className="bg-gray-50 border border-gray-200 rounded-xl p-4 text-sm mb-8">
             <p className="font-semibold text-gray-900 mb-1">Quick benchmark</p>
             <p className="text-gray-700">
               A mid-level freelance content writer in the UAE typically earns <strong>AED 15,000–25,000/month</strong> through
@@ -117,110 +150,102 @@ export default function FreelanceWriterRatesUAE() {
             </p>
           </div>
 
-          <section>
-            <h2 className="text-xl font-bold text-gray-900 mt-8 mb-4">Freelance Writer Rates in the UAE by Content Type (2026)</h2>
-            <p className="text-xs text-gray-400 mb-4">Junior: 0–2 years / Mid: 3–5 years / Senior: 6+ years or specialist niche</p>
-            <div className="overflow-x-auto">
-              <table className="w-full text-sm border-collapse">
-                <thead>
-                  <tr className="border-b border-gray-200">
-                    <th className="text-left py-2 pr-4 text-gray-500 font-semibold text-xs">Content type</th>
-                    <th className="text-left py-2 pr-4 text-gray-500 font-semibold text-xs">Junior</th>
-                    <th className="text-left py-2 pr-4 text-gray-500 font-semibold text-xs">Mid-level</th>
-                    <th className="text-left py-2 text-gray-500 font-semibold text-xs">Senior / specialist</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  {rateTable.map((row, i) => (
-                    <tr key={i} className="border-b border-gray-100">
-                      <td className="py-3 pr-4 font-medium text-gray-900 text-xs">{row.type}</td>
-                      <td className="py-3 pr-4 text-gray-600 text-xs whitespace-pre-line">{row.junior}</td>
-                      <td className="py-3 pr-4 text-gray-600 text-xs whitespace-pre-line">{row.mid}</td>
-                      <td className="py-3 text-gray-600 text-xs whitespace-pre-line">{row.senior}</td>
-                    </tr>
-                  ))}
-                </tbody>
-              </table>
-            </div>
-          </section>
+          {/* Rate table */}
+          <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2">
+            <span className="w-1 h-6 bg-emerald-500 rounded-full inline-block"></span>Freelance Writer Rates in the UAE by Content Type (2026)
+          </h2>
+          <p className="text-xs text-gray-400 mb-4">Junior: 0–2 years / Mid: 3–5 years / Senior: 6+ years or specialist niche</p>
 
-          <section>
-            <h2 className="text-xl font-bold text-gray-900 mt-8 mb-3">High-Value Writing Niches in the UAE</h2>
-            <p>
-              The biggest factor in freelance writing rates is not years of experience — it is
-              specialization. These niches consistently command premium rates in the UAE market:
-            </p>
-            <div className="space-y-3 mt-4">
-              {[
-                { niche: "Financial and investment writing", rate: "AED 2–5/word", why: "High compliance sensitivity, requires financial knowledge, limited supply of qualified writers" },
-                { niche: "Real estate content (property listings, developer copy)", rate: "AED 1.50–4/word", why: "Dubai's property market is enormous — developers and agencies pay premium for conversion-focused copy" },
-                { niche: "B2B tech / SaaS content", rate: "AED 1.50–3.50/word", why: "Technical knowledge required, long-form expertise, international client base willing to pay global rates" },
-                { niche: "Legal and compliance writing", rate: "AED 2–5/word", why: "High accuracy requirements, UAE regulatory knowledge valuable, narrow talent pool" },
-                { niche: "Arabic-English bilingual content", rate: "AED 1.50–4/word (Arabic content commands premium)", why: "Very limited supply of native-quality Arabic business writers; market demand far exceeds supply" },
-              ].map((item) => (
-                <div key={item.niche} className="border border-gray-200 rounded-xl p-4">
-                  <div className="flex items-start justify-between gap-2 mb-1">
-                    <p className="font-semibold text-gray-900 text-sm">{item.niche}</p>
-                    <span className="text-xs font-bold text-green-700 bg-green-50 px-2 py-0.5 rounded-full shrink-0">{item.rate}</span>
+          <div className="rounded-2xl border border-gray-200 overflow-hidden mb-8">
+            <div className="bg-gray-900 px-5 py-3"><h2 className="text-sm font-bold text-white">UAE Writing Rate Benchmarks 2026</h2></div>
+            <div className="divide-y divide-gray-100">
+              {rateTable.map((row, i) => (
+                <div key={i} className={`flex items-start justify-between gap-4 px-5 py-4 ${i % 2 === 0 ? "bg-white" : "bg-gray-50"}`}>
+                  <div className="flex-1">
+                    <p className="text-sm font-semibold text-gray-900">{row.type}</p>
+                    <p className="text-xs text-gray-500 mt-0.5">Junior: {row.junior}</p>
+                    <p className="text-xs text-gray-500">Mid: {row.mid}</p>
                   </div>
-                  <p className="text-xs text-gray-600">{item.why}</p>
+                  <span className="text-xs font-bold text-emerald-700 bg-emerald-50 border border-emerald-200 px-3 py-1 rounded-full whitespace-nowrap shrink-0">{row.senior}</span>
                 </div>
               ))}
             </div>
-          </section>
-
-          <section>
-            <h2 className="text-xl font-bold text-gray-900 mt-8 mb-3">Should You Charge Per Word or Per Project?</h2>
-            <div className="space-y-3 mt-3">
-              {[
-                { model: "Per word", best: "When scope is uncertain, for one-off articles, when you are quoting for a client you have not worked with before", risk: "Incentivizes length over quality. Clients sometimes try to reduce word count after delivery." },
-                { model: "Per project", best: "When you can clearly define the deliverable. Allows you to earn more per hour as you get faster.", risk: "Scope creep — clients add rounds of revisions or expand the brief mid-project." },
-                { model: "Monthly retainer", best: "For ongoing content — 4–12 pieces per month. Most profitable model for experienced writers.", risk: "Requires careful scope definition. Vague retainers lead to exploitation." },
-              ].map((item) => (
-                <div key={item.model} className="border border-gray-200 rounded-xl p-4">
-                  <p className="font-bold text-gray-900 text-sm mb-2">{item.model}</p>
-                  <div className="grid grid-cols-2 gap-2">
-                    <div>
-                      <p className="text-xs text-green-600 font-semibold mb-1">Best for</p>
-                      <p className="text-xs text-gray-600">{item.best}</p>
-                    </div>
-                    <div>
-                      <p className="text-xs text-red-500 font-semibold mb-1">Watch out for</p>
-                      <p className="text-xs text-gray-600">{item.risk}</p>
-                    </div>
-                  </div>
-                </div>
-              ))}
-            </div>
-          </section>
-
-          <section>
-            <h2 className="text-xl font-bold text-gray-900 mt-8 mb-3">How to Position for Higher Rates as a UAE Writer</h2>
-            <ul className="space-y-2 text-sm text-gray-600 mt-3">
-              <li><strong>Niche down:</strong> A generalist writer gets AED 0.50–0.80/word. A fintech writer gets AED 2–4/word. Same skill, completely different positioning.</li>
-              <li><strong>Build domain expertise:</strong> Read industry publications, attend sector events, build genuine knowledge about your niche. Clients can tell the difference between a writer who understands the industry and one who is winging it.</li>
-              <li><strong>Case-study your results:</strong> Instead of a portfolio of published articles, lead with outcomes: &ldquo;My client&apos;s organic traffic grew 240% in 6 months.&rdquo; Results command premiums.</li>
-              <li><strong>Raise rates for new clients first:</strong> Do not renegotiate with existing clients immediately. Test higher rates with new inquiries and calibrate based on conversion.</li>
-              <li><strong>Target direct clients, not agencies:</strong> Agency rates are typically 40–60% lower than direct client rates. If you write for agencies, treat it as volume work while building your direct client base.</li>
-            </ul>
-          </section>
-
-          {/* CTA */}
-          <div className="bg-gray-950 text-white rounded-2xl p-6 mt-10">
-            <p className="text-xs font-semibold text-gray-400 uppercase tracking-widest mb-2">Never negotiate your rate unprepared</p>
-            <h3 className="text-lg font-bold mb-2">How to Negotiate Rates Without Losing the Client</h3>
-            <p className="text-gray-400 text-sm mb-4">
-              Word-for-word scripts for UAE freelancers handling rate pushback, budget objections,
-              and the &ldquo;can you do it cheaper?&rdquo; conversation — without caving on your rate.
-            </p>
-            <Link
-              href="/blog/how-to-negotiate-freelance-rates-uae"
-              className="inline-block bg-white text-gray-900 font-bold px-5 py-2.5 rounded-xl hover:bg-gray-100 transition-colors text-sm"
-            >
-              Read the Negotiation Guide →
-            </Link>
           </div>
 
+          <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2">
+            <span className="w-1 h-6 bg-emerald-500 rounded-full inline-block"></span>High-Value Writing Niches in the UAE
+          </h2>
+
+          <div className="space-y-3 mb-8">
+            {niches.map((item) => (
+              <div key={item.niche} className="border border-gray-200 rounded-xl p-4">
+                <div className="flex items-start justify-between gap-2 mb-1">
+                  <p className="font-semibold text-gray-900 text-sm">{item.niche}</p>
+                  <span className="text-xs font-bold text-emerald-700 bg-emerald-50 border border-emerald-200 px-2 py-0.5 rounded-full shrink-0">{item.rate}</span>
+                </div>
+                <p className="text-xs text-gray-600">{item.why}</p>
+              </div>
+            ))}
+          </div>
+
+          <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2">
+            <span className="w-1 h-6 bg-emerald-500 rounded-full inline-block"></span>Should You Charge Per Word or Per Project?
+          </h2>
+
+          <div className="space-y-3 mb-8">
+            {pricingModels.map((item) => (
+              <div key={item.model} className="border border-gray-200 rounded-xl p-4">
+                <p className="font-bold text-gray-900 text-sm mb-2">{item.model}</p>
+                <div className="grid grid-cols-2 gap-2">
+                  <div>
+                    <p className="text-xs text-emerald-600 font-semibold mb-1">Best for</p>
+                    <p className="text-xs text-gray-600">{item.best}</p>
+                  </div>
+                  <div>
+                    <p className="text-xs text-red-500 font-semibold mb-1">Watch out for</p>
+                    <p className="text-xs text-gray-600">{item.risk}</p>
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
+
+          <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2">
+            <span className="w-1 h-6 bg-emerald-500 rounded-full inline-block"></span>How to Position for Higher Rates as a UAE Writer
+          </h2>
+
+          <ul className="space-y-3 mb-8">
+            <li className="flex gap-3 text-sm text-gray-700">
+              <span className="text-emerald-500 font-bold mt-0.5 shrink-0">→</span>
+              <span><strong className="text-gray-900">Niche down:</strong> A generalist writer gets AED 0.50–0.80/word. A fintech writer gets AED 2–4/word. Same skill, completely different positioning.</span>
+            </li>
+            <li className="flex gap-3 text-sm text-gray-700">
+              <span className="text-emerald-500 font-bold mt-0.5 shrink-0">→</span>
+              <span><strong className="text-gray-900">Build domain expertise:</strong> Read industry publications, attend sector events, build genuine knowledge about your niche. Clients can tell the difference between a writer who understands the industry and one who is winging it.</span>
+            </li>
+            <li className="flex gap-3 text-sm text-gray-700">
+              <span className="text-emerald-500 font-bold mt-0.5 shrink-0">→</span>
+              <span><strong className="text-gray-900">Case-study your results:</strong> Instead of a portfolio of published articles, lead with outcomes: &ldquo;My client&apos;s organic traffic grew 240% in 6 months.&rdquo; Results command premiums.</span>
+            </li>
+            <li className="flex gap-3 text-sm text-gray-700">
+              <span className="text-emerald-500 font-bold mt-0.5 shrink-0">→</span>
+              <span><strong className="text-gray-900">Raise rates for new clients first:</strong> Test higher rates with new inquiries and calibrate based on conversion. Do not renegotiate with existing clients immediately.</span>
+            </li>
+            <li className="flex gap-3 text-sm text-gray-700">
+              <span className="text-emerald-500 font-bold mt-0.5 shrink-0">→</span>
+              <span><strong className="text-gray-900">Target direct clients, not agencies:</strong> Agency rates are typically 40–60% lower than direct client rates. Treat agency work as volume work while building your direct client base.</span>
+            </li>
+          </ul>
+
+          {/* CTA */}
+          <div className="bg-gradient-to-br from-gray-900 to-gray-800 text-white rounded-2xl p-8 mt-12 text-center">
+            <span className="text-xs font-bold text-emerald-400 uppercase tracking-widest block mb-3">SoloKit</span>
+            <h3 className="text-2xl font-bold mb-3">Run Your UAE Freelance Business Like a Pro</h3>
+            <p className="text-gray-400 text-sm mb-6 max-w-sm mx-auto">Templates, SOPs, and systems built for UAE freelancers.</p>
+            <Link href="/products/solokit-freelance-os" className="inline-block bg-emerald-500 hover:bg-emerald-400 text-white font-bold px-8 py-3 rounded-xl transition-colors text-sm">Get SoloKit →</Link>
+          </div>
+
+          {/* Related */}
           <div className="border border-gray-200 rounded-2xl p-5 mt-6">
             <p className="text-xs font-semibold text-gray-400 uppercase tracking-widest mb-3">Related guides</p>
             <div className="space-y-2">
@@ -236,6 +261,7 @@ export default function FreelanceWriterRatesUAE() {
               ))}
             </div>
           </div>
+
         </div>
       </main>
 

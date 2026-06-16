@@ -38,41 +38,67 @@ const rateTable = [
   { sector: "General / Cross-functional PM", dayRate: "AED 1,200–2,200", monthlyRetainer: "AED 12,000–20,000", notes: "Generalist roles; lower than specialist sectors" },
 ];
 
+const statsData = [
+  { value: "AED 1,200–2,500", label: "Day Rate (Mid)" },
+  { value: "AED 18,000–35,000", label: "Monthly Retainer (IT PM)" },
+  { value: "AED 25,000–50,000", label: "Monthly Retainer (PMO)" },
+];
+
+const certs = [
+  { cert: "PMP (Project Management Professional)", impact: "The most globally recognized PM credential. Adds 20–40% to your negotiating position with UAE corporate and government clients." },
+  { cert: "PRINCE2 Practitioner", impact: "Preferred by government and public sector entities in the UAE. If your clients are government, PRINCE2 matters more than PMP." },
+  { cert: "PMI-ACP (Agile Certified Practitioner)", impact: "High value for IT, software, and startup clients using agile methodologies. Combined with PMP, commands top rates." },
+  { cert: "CIOB / APM / MSP", impact: "Valued in construction and infrastructure projects. MSP (Managing Successful Programmes) is particularly valued for large government programs." },
+];
+
 export default function FreelanceProjectManagerRatesUAE() {
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
       <Header />
 
-      <main className="flex-1 max-w-2xl mx-auto px-4 sm:px-6 py-12">
+      <main className="min-h-screen bg-white">
+        <div className="max-w-3xl mx-auto px-4 py-10">
 
-        <nav className="text-xs text-gray-400 mb-6 flex gap-2 flex-wrap">
-          <Link href="/" className="hover:text-gray-600">Home</Link>
-          <span>›</span>
-          <Link href="/blog" className="hover:text-gray-600">Blog</Link>
-          <span>›</span>
-          <span className="text-gray-600">Freelance Project Manager Rates UAE</span>
-        </nav>
+          {/* Breadcrumb */}
+          <nav className="text-xs text-gray-400 mb-6 flex gap-2 flex-wrap">
+            <Link href="/" className="hover:text-gray-600">Home</Link>
+            <span>›</span>
+            <Link href="/blog" className="hover:text-gray-600">Blog</Link>
+            <span>›</span>
+            <span className="text-gray-600">Freelance Project Manager Rates UAE</span>
+          </nav>
 
-        <header className="mb-8">
-          <span className="text-xs font-semibold text-gray-400 uppercase tracking-widest">Pricing & Rates</span>
-          <h1 className="text-3xl font-bold text-gray-900 mt-2 mb-3 leading-tight">
-            Freelance Project Manager Rates in the UAE (2026): What to Charge
-          </h1>
-          <p className="text-gray-500 text-sm">7 min read</p>
-        </header>
+          {/* Hero */}
+          <div className="bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 text-white px-6 py-10 rounded-2xl mb-8">
+            <span className="text-xs font-bold text-emerald-400 uppercase tracking-widest mb-3 block">Pricing &amp; Rates</span>
+            <h1 className="text-3xl sm:text-4xl font-bold leading-tight mb-4">Freelance Project Manager Rates in the UAE (2026): What to Charge</h1>
+            <p className="text-gray-300 text-sm mb-5 leading-relaxed max-w-xl">
+              Day rates, monthly retainers, and project fees for freelance PMs across construction, IT, marketing, and consulting in Dubai and Abu Dhabi.
+            </p>
+            <div className="flex flex-wrap gap-4 text-xs text-gray-400">
+              <span>June 16, 2026</span><span>·</span><span>7 min read</span>
+            </div>
+          </div>
 
-        <div className="prose prose-gray max-w-none text-gray-700 leading-relaxed space-y-6">
+          {/* Stats grid */}
+          <div className="grid grid-cols-3 gap-3 mb-8">
+            {statsData.map((s) => (
+              <div key={s.label} className="bg-gray-50 border border-gray-200 rounded-xl p-4 text-center">
+                <div className="text-lg font-bold text-gray-900">{s.value}</div>
+                <div className="text-xs text-gray-500 mt-1">{s.label}</div>
+              </div>
+            ))}
+          </div>
 
-          <p>
+          <p className="text-gray-700 text-sm leading-relaxed mb-4">
             Project management is one of the most in-demand freelance skills in the UAE.
             The construction boom, digital transformation programs at government entities,
             and the proliferation of tech startups have all increased demand for experienced
-            PMs who can work on a contract or project basis. This guide covers what freelance
-            project managers are charging across different sectors in 2026.
+            PMs who can work on a contract or project basis.
           </p>
 
-          <div className="bg-amber-50 border border-amber-200 rounded-xl p-4 text-sm">
+          <div className="bg-amber-50 border border-amber-200 rounded-xl p-4 text-sm mb-8">
             <p className="font-semibold text-amber-900 mb-1">Rates vary significantly by specialization</p>
             <p className="text-amber-800">
               Project management spans a huge range of industries, complexity levels, and
@@ -81,132 +107,86 @@ export default function FreelanceProjectManagerRatesUAE() {
             </p>
           </div>
 
-          <section>
-            <h2 className="text-xl font-bold text-gray-900 mt-8 mb-4">UAE Freelance Project Manager Rates by Sector (2026)</h2>
+          {/* Rate table */}
+          <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2">
+            <span className="w-1 h-6 bg-emerald-500 rounded-full inline-block"></span>UAE Freelance Project Manager Rates by Sector (2026)
+          </h2>
 
-            <div className="overflow-x-auto -mx-4 sm:mx-0">
-              <table className="w-full text-sm border-collapse min-w-[550px]">
-                <thead>
-                  <tr className="bg-gray-50">
-                    <th className="text-left p-3 border border-gray-200 font-semibold text-gray-900">Sector</th>
-                    <th className="text-left p-3 border border-gray-200 font-semibold text-gray-900">Day Rate</th>
-                    <th className="text-left p-3 border border-gray-200 font-semibold text-gray-900">Monthly Retainer</th>
-                    <th className="text-left p-3 border border-gray-200 font-semibold text-gray-900">Notes</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  {rateTable.map((row, i) => (
-                    <tr key={i} className={i % 2 === 0 ? "bg-white" : "bg-gray-50"}>
-                      <td className="p-3 border border-gray-200 font-medium text-gray-900">{row.sector}</td>
-                      <td className="p-3 border border-gray-200 text-gray-700">{row.dayRate}</td>
-                      <td className="p-3 border border-gray-200 text-gray-700">{row.monthlyRetainer}</td>
-                      <td className="p-3 border border-gray-200 text-gray-500 text-xs">{row.notes}</td>
-                    </tr>
-                  ))}
-                </tbody>
-              </table>
-            </div>
-          </section>
-
-          <section>
-            <h2 className="text-xl font-bold text-gray-900 mt-8 mb-3">How to Price Your PM Services</h2>
-
-            <h3 className="text-base font-semibold text-gray-900 mt-4 mb-2">Day rate vs monthly retainer</h3>
-            <p>
-              Day rates work best for short, clearly scoped engagements (a 2-week project kickoff
-              or a specific deliverable like a PMO framework). Monthly retainers work better for
-              ongoing oversight, where you are managing one or more projects throughout the month.
-            </p>
-            <p className="mt-3">
-              A practical approach: quote a day rate for initial scoping and discovery (typically
-              2–5 days), then propose a monthly retainer once you understand the scope. This lets
-              you price the engagement properly without committing to a fixed fee based on incomplete
-              information.
-            </p>
-
-            <h3 className="text-base font-semibold text-gray-900 mt-4 mb-2">Project-based pricing</h3>
-            <p>
-              For clearly defined projects with a fixed end date, project-based pricing is sometimes
-              preferred by clients (they know their total spend). Calculate your expected day count,
-              add a buffer (PM projects routinely extend 20–30%), and quote a total that covers the
-              full realistic engagement — not the optimistic scenario.
-            </p>
-
-            <div className="bg-gray-50 border border-gray-200 rounded-xl p-4 my-4 text-sm">
-              <p className="font-semibold text-gray-900 mb-2">Sample project fee calculation</p>
-              <p className="text-gray-700">
-                A 3-month digital transformation project for a government entity:
-                60 working days × AED 2,500/day = AED 150,000 base.
-                Add 20% contingency for scope changes = AED 180,000 total project fee.
-                Break into 3 monthly payments: AED 60,000/month.
-              </p>
-            </div>
-          </section>
-
-          <section>
-            <h2 className="text-xl font-bold text-gray-900 mt-8 mb-3">Certifications That Increase Your Rate</h2>
-            <p>
-              In the UAE, certain credentials are actively valued by clients — particularly
-              government entities and large corporates who require certified PMs:
-            </p>
-            <div className="space-y-3 mt-4">
-              {[
-                { cert: "PMP (Project Management Professional)", impact: "The most globally recognized PM credential. Adds 20–40% to your negotiating position with UAE corporate and government clients." },
-                { cert: "PRINCE2 Practitioner", impact: "Preferred by government and public sector entities in the UAE. If your clients are government, PRINCE2 matters more than PMP." },
-                { cert: "PMI-ACP (Agile Certified Practitioner)", impact: "High value for IT, software, and startup clients using agile methodologies. Combined with PMP, commands top rates." },
-                { cert: "CIOB / APM / MSP", impact: "Valued in construction and infrastructure projects. MSP (Managing Successful Programmes) is particularly valued for large government programs." },
-              ].map((item) => (
-                <div key={item.cert} className="border border-gray-200 rounded-xl p-4">
-                  <p className="font-semibold text-gray-900 text-sm mb-1">{item.cert}</p>
-                  <p className="text-sm text-gray-600">{item.impact}</p>
+          <div className="rounded-2xl border border-gray-200 overflow-hidden mb-8">
+            <div className="bg-gray-900 px-5 py-3"><h2 className="text-sm font-bold text-white">UAE PM Rate Benchmarks 2026</h2></div>
+            <div className="divide-y divide-gray-100">
+              {rateTable.map((row, i) => (
+                <div key={i} className={`flex items-start justify-between gap-4 px-5 py-4 ${i % 2 === 0 ? "bg-white" : "bg-gray-50"}`}>
+                  <div className="flex-1">
+                    <p className="text-sm font-semibold text-gray-900">{row.sector}</p>
+                    <p className="text-xs text-gray-500 mt-0.5">{row.notes}</p>
+                  </div>
+                  <span className="text-xs font-bold text-emerald-700 bg-emerald-50 border border-emerald-200 px-3 py-1 rounded-full whitespace-nowrap shrink-0">{row.monthlyRetainer}</span>
                 </div>
               ))}
             </div>
-          </section>
-
-          <section>
-            <h2 className="text-xl font-bold text-gray-900 mt-8 mb-3">Finding Freelance PM Work in the UAE</h2>
-            <p>
-              Most high-value freelance PM engagements in the UAE come through one of three channels:
-            </p>
-            <ul className="space-y-2 text-sm text-gray-600 mt-3">
-              <li><strong>LinkedIn:</strong> The dominant channel. Government and corporate buyers in the UAE actively post contract PM roles — and respond well to direct outreach from credentialed PMs with relevant sector experience. Post content about PM frameworks, case studies, or lessons learned to build your profile.</li>
-              <li><strong>Consulting firms and PMC companies:</strong> Many large projects in the UAE are managed through Project Management Consultancies (PMCs) who subcontract freelance PMs. Build relationships with BD teams at PMC firms like Hill International, Turner & Townsend, and Faithful+Gould.</li>
-              <li><strong>Previous employers and clients:</strong> The UAE PM market is relationship-driven. Former colleagues who have moved to new roles, or clients from previous engagements, are the highest-conversion referral source.</li>
-            </ul>
-          </section>
-
-          <section>
-            <h2 className="text-xl font-bold text-gray-900 mt-8 mb-3">Government vs Private Sector PM Rates</h2>
-            <p>
-              Government and semi-government entities (ADNOC, RTA, DEWA, Abu Dhabi government)
-              often have procurement processes with pre-set rate cards. These rate cards frequently
-              cap freelance PM rates — sometimes below market rate for experienced professionals.
-            </p>
-            <p className="mt-3">
-              Private sector clients (real estate developers, tech companies, banks) typically
-              have more flexibility and may pay above published benchmarks for the right experience.
-              Startups and SMEs often have lower budgets but more interesting projects and faster
-              decision-making.
-            </p>
-          </section>
-
-          {/* CTA */}
-          <div className="bg-gray-950 text-white rounded-2xl p-6 mt-10">
-            <p className="text-xs font-semibold text-gray-400 uppercase tracking-widest mb-2">Manage your engagements professionally</p>
-            <h3 className="text-lg font-bold mb-2">The Freelancer Client CRM tracks every engagement and invoice</h3>
-            <p className="text-gray-400 text-sm mb-4">
-              Project milestones, client contacts, invoice status, and follow-up reminders — all in
-              one Notion workspace. Set up in 20 minutes, runs your business for years.
-            </p>
-            <Link
-              href="/products/freelancer-client-crm"
-              className="inline-block bg-white text-gray-900 font-bold px-5 py-2.5 rounded-xl hover:bg-gray-100 transition-colors text-sm"
-            >
-              See the Client CRM →
-            </Link>
           </div>
 
+          <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2">
+            <span className="w-1 h-6 bg-emerald-500 rounded-full inline-block"></span>How to Price Your PM Services
+          </h2>
+
+          <ul className="space-y-3 mb-8">
+            <li className="flex gap-3 text-sm text-gray-700">
+              <span className="text-emerald-500 font-bold mt-0.5 shrink-0">→</span>
+              <span><strong className="text-gray-900">Day rate vs monthly retainer:</strong> Day rates work best for short, clearly scoped engagements (a 2-week project kickoff or a specific deliverable). Monthly retainers work better for ongoing oversight, where you are managing one or more projects throughout the month.</span>
+            </li>
+            <li className="flex gap-3 text-sm text-gray-700">
+              <span className="text-emerald-500 font-bold mt-0.5 shrink-0">→</span>
+              <span><strong className="text-gray-900">Project-based pricing:</strong> For clearly defined projects with a fixed end date, calculate your expected day count, add a 20–30% buffer (PM projects routinely extend), and quote a total that covers the full realistic engagement — not the optimistic scenario.</span>
+            </li>
+            <li className="flex gap-3 text-sm text-gray-700">
+              <span className="text-emerald-500 font-bold mt-0.5 shrink-0">→</span>
+              <span><strong className="text-gray-900">Sample project fee:</strong> A 3-month digital transformation project: 60 working days × AED 2,500/day = AED 150,000 base. Add 20% contingency = AED 180,000 total. Break into 3 monthly payments of AED 60,000.</span>
+            </li>
+          </ul>
+
+          <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2">
+            <span className="w-1 h-6 bg-emerald-500 rounded-full inline-block"></span>Certifications That Increase Your Rate
+          </h2>
+
+          <div className="space-y-3 mb-8">
+            {certs.map((item) => (
+              <div key={item.cert} className="border border-gray-200 rounded-xl p-4">
+                <p className="font-semibold text-gray-900 text-sm mb-1">{item.cert}</p>
+                <p className="text-sm text-gray-600">{item.impact}</p>
+              </div>
+            ))}
+          </div>
+
+          <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2">
+            <span className="w-1 h-6 bg-emerald-500 rounded-full inline-block"></span>Finding Freelance PM Work in the UAE
+          </h2>
+
+          <ul className="space-y-3 mb-8">
+            <li className="flex gap-3 text-sm text-gray-700">
+              <span className="text-emerald-500 font-bold mt-0.5 shrink-0">→</span>
+              <span><strong className="text-gray-900">LinkedIn:</strong> The dominant channel. Government and corporate buyers actively post contract PM roles and respond well to direct outreach from credentialed PMs with relevant sector experience.</span>
+            </li>
+            <li className="flex gap-3 text-sm text-gray-700">
+              <span className="text-emerald-500 font-bold mt-0.5 shrink-0">→</span>
+              <span><strong className="text-gray-900">Consulting firms and PMC companies:</strong> Many large projects are managed through Project Management Consultancies (PMCs) who subcontract freelance PMs. Build relationships with BD teams at firms like Hill International, Turner &amp; Townsend, and Faithful+Gould.</span>
+            </li>
+            <li className="flex gap-3 text-sm text-gray-700">
+              <span className="text-emerald-500 font-bold mt-0.5 shrink-0">→</span>
+              <span><strong className="text-gray-900">Previous employers and clients:</strong> The UAE PM market is relationship-driven. Former colleagues who have moved to new roles are the highest-conversion referral source.</span>
+            </li>
+          </ul>
+
+          {/* CTA */}
+          <div className="bg-gradient-to-br from-gray-900 to-gray-800 text-white rounded-2xl p-8 mt-12 text-center">
+            <span className="text-xs font-bold text-emerald-400 uppercase tracking-widest block mb-3">SoloKit</span>
+            <h3 className="text-2xl font-bold mb-3">Run Your UAE Freelance Business Like a Pro</h3>
+            <p className="text-gray-400 text-sm mb-6 max-w-sm mx-auto">Templates, SOPs, and systems built for UAE freelancers.</p>
+            <Link href="/products/solokit-freelance-os" className="inline-block bg-emerald-500 hover:bg-emerald-400 text-white font-bold px-8 py-3 rounded-xl transition-colors text-sm">Get SoloKit →</Link>
+          </div>
+
+          {/* Related */}
           <div className="border border-gray-200 rounded-2xl p-5 mt-6">
             <p className="text-xs font-semibold text-gray-400 uppercase tracking-widest mb-3">Related guides</p>
             <div className="space-y-2">
@@ -222,6 +202,7 @@ export default function FreelanceProjectManagerRatesUAE() {
               ))}
             </div>
           </div>
+
         </div>
       </main>
 
