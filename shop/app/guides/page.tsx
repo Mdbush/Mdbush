@@ -6,11 +6,11 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "UAE Freelancer Guides & Resources — SoloKit",
   description:
-    "86 practical guides for freelancers and solopreneurs in the UAE. Visa, tax, rates, clients, contracts, AI tools, and more. All free.",
+    "89 practical guides for freelancers and solopreneurs in the UAE. Visa, tax, rates, clients, contracts, AI tools, and more. All free.",
   alternates: { canonical: "/guides" },
   openGraph: {
     title: "UAE Freelancer Guides & Resources — SoloKit",
-    description: "86 free guides covering everything a UAE freelancer needs to know.",
+    description: "89 free guides covering everything a UAE freelancer needs to know.",
     type: "website",
     url: "/guides",
   },
@@ -99,6 +99,8 @@ const categories = [
       { slug: "freelance-seo-consultant-rates-uae", title: "Freelance SEO Consultant Rates in the UAE (2026): What to Charge", time: "7 min" },
       { slug: "freelance-pr-consultant-rates-uae", title: "Freelance PR Consultant Rates in the UAE (2026): What to Charge", time: "7 min" },
       { slug: "freelance-data-analyst-rates-uae", title: "Freelance Data Analyst Rates in the UAE (2026): What to Charge", time: "7 min" },
+      { slug: "freelance-ux-designer-rates-uae", title: "Freelance UX/UI Designer Rates in the UAE (2026): What to Charge", time: "7 min" },
+      { slug: "virtual-assistant-rates-uae", title: "Virtual Assistant Rates in the UAE (2026): What to Charge", time: "7 min" },
     ],
   },
   {
@@ -130,6 +132,7 @@ const categories = [
       { slug: "freelance-morning-routine-uae", title: "The Freelancer Morning Routine That Works in the UAE", time: "6 min" },
       { slug: "best-project-management-tools-freelancers", title: "Best Project Management Tools for Freelancers in the UAE (2026)", time: "6 min" },
       { slug: "how-to-manage-multiple-clients-uae", title: "How to Manage Multiple Clients as a UAE Freelancer (Without Burning Out)", time: "7 min" },
+      { slug: "how-to-get-government-contracts-uae", title: "How to Win Government Contracts as a UAE Freelancer (2026 Guide)", time: "9 min" },
     ],
   },
   {
@@ -184,7 +187,7 @@ export default function GuidesPage() {
           <span className="text-xs font-semibold text-gray-400 uppercase tracking-widest">Free Resources</span>
           <h1 className="text-3xl sm:text-4xl font-bold text-gray-900 mt-2 mb-3">UAE Freelancer Guides</h1>
           <p className="text-gray-500 max-w-xl mx-auto leading-relaxed">
-            86 practical guides covering everything you need to know about freelancing in Dubai and Abu Dhabi.
+            89 practical guides covering everything you need to know about freelancing in Dubai and Abu Dhabi.
             Written specifically for the UAE market — AED pricing, local laws, free zone context.
           </p>
         </div>

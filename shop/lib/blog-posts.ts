@@ -782,6 +782,33 @@ export const posts: BlogPost[] = [
     readTime: "7 min read",
     category: "Pricing & Rates",
   },
+  {
+    slug: "freelance-ux-designer-rates-uae",
+    title: "Freelance UX/UI Designer Rates in the UAE (2026): What to Charge",
+    description:
+      "Real AED rates for freelance UX and UI designers in Dubai and Abu Dhabi — hourly, project, and retainer pricing by specialization. App design, web UX, design systems, and Figma rates.",
+    date: "June 16, 2026",
+    readTime: "7 min read",
+    category: "Pricing & Rates",
+  },
+  {
+    slug: "how-to-get-government-contracts-uae",
+    title: "How to Win Government Contracts as a UAE Freelancer (2026 Guide)",
+    description:
+      "How freelancers and consultants in the UAE win government and quasi-government contracts — procurement portals, vendor registration, proposal formats, and the insider realities of working with UAE government entities.",
+    date: "June 16, 2026",
+    readTime: "9 min read",
+    category: "Getting Clients",
+  },
+  {
+    slug: "virtual-assistant-rates-uae",
+    title: "Virtual Assistant Rates in the UAE (2026): What to Charge",
+    description:
+      "Real AED rates for virtual assistants and executive assistants in the UAE — hourly, package, and retainer pricing for admin VA, executive VA, social media VA, and specialist VA services in Dubai and Abu Dhabi.",
+    date: "June 16, 2026",
+    readTime: "7 min read",
+    category: "Pricing & Rates",
+  },
 ];
 
 export function getPost(slug: string): BlogPost | undefined {
