@@ -197,6 +197,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "freelance-ios-developer-rates-uae",
     "freelance-android-developer-rates-uae",
     "how-to-deal-with-difficult-clients-uae",
+    "freelance-fullstack-developer-rates-uae",
+    "freelance-machine-learning-engineer-rates-uae",
+    "how-to-use-notion-as-crm-uae",
   ].map((slug) => ({
     url: `${base}/blog/${slug}`,
     lastModified: new Date(),

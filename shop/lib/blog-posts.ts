@@ -1673,6 +1673,33 @@ export const posts: BlogPost[] = [
     readTime: "9 min read",
     category: "Client Work & Proposals",
   },
+  {
+    slug: "freelance-fullstack-developer-rates-uae",
+    title: "Freelance Full-Stack Developer Rates in the UAE (2026): What to Charge",
+    description:
+      "Real AED day rates for freelance full-stack developers in Dubai and Abu Dhabi. React, Next.js, Node.js, Python, Django, Laravel — front-end to back-end to DevOps. 2026 UAE market rates.",
+    date: "June 16, 2026",
+    readTime: "8 min read",
+    category: "Pricing & Rates",
+  },
+  {
+    slug: "freelance-machine-learning-engineer-rates-uae",
+    title: "Freelance Machine Learning Engineer Rates in the UAE (2026): ML & AI Development Fees",
+    description:
+      "Real AED day rates for freelance machine learning engineers in Dubai and Abu Dhabi. LLM fine-tuning, computer vision, NLP, MLOps, recommendation systems, and ML consulting rates for 2026.",
+    date: "June 16, 2026",
+    readTime: "8 min read",
+    category: "Pricing & Rates",
+  },
+  {
+    slug: "how-to-use-notion-as-crm-uae",
+    title: "How to Use Notion as a CRM for UAE Freelancers (2026): Client Tracking System",
+    description:
+      "Set up Notion as a lightweight CRM for your UAE freelance business. Track leads, proposals, active clients, invoices, and follow-ups — without paying for expensive CRM software. Step-by-step Notion setup.",
+    date: "June 16, 2026",
+    readTime: "8 min read",
+    category: "Systems & Productivity",
+  },
 ];
 
 export function getPost(slug: string): BlogPost | undefined {
