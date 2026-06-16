@@ -4,12 +4,12 @@ import Footer from "@/components/Footer";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Blog — 36 Free Guides for UAE Freelancers — SoloKit",
-  description: "36 free guides for freelancers and solopreneurs in the UAE. Visa, tax, rates, proposals, AI tools, contracts, and more. No fluff.",
+  title: "Blog — 38 Free Guides for UAE Freelancers — SoloKit",
+  description: "38 free guides for freelancers and solopreneurs in the UAE. Visa, tax, rates, proposals, AI tools, contracts, and more. No fluff.",
   alternates: { canonical: "/blog" },
   openGraph: {
     title: "Free Guides for UAE Freelancers — SoloKit Blog",
-    description: "36 practical guides covering everything UAE freelancers need. No fluff.",
+    description: "38 practical guides covering everything UAE freelancers need. No fluff.",
     url: "/blog",
     type: "website",
   },
@@ -338,6 +338,24 @@ const posts = [
       "5 realistic passive income streams for UAE-based freelancers — digital products, templates, affiliate programs, cohort courses, and productized retainers. AED numbers included.",
     date: "June 16, 2026",
     readTime: "8 min read",
+    category: "Business",
+  },
+  {
+    slug: "freelance-linkedin-profile-uae",
+    title: "How to Optimize Your LinkedIn Profile as a UAE Freelancer (2026 Guide)",
+    description:
+      "7 profile elements that drive inbound clients, before/after headline examples, Services page strategy, and the exact settings that make UAE clients find you.",
+    date: "June 16, 2026",
+    readTime: "8 min read",
+    category: "Client Acquisition",
+  },
+  {
+    slug: "how-to-fire-a-client-uae",
+    title: "How to Fire a Client as a UAE Freelancer (Without Burning Bridges)",
+    description:
+      "5 signs it's time to end a client relationship, 3 word-for-word exit email templates, and the collect-first-fire-second payment sequence that protects your income.",
+    date: "June 16, 2026",
+    readTime: "6 min read",
     category: "Business",
   },
 ];
