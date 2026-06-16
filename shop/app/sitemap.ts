@@ -50,6 +50,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "freelance-passive-income-uae",
     "freelance-linkedin-profile-uae",
     "how-to-fire-a-client-uae",
+    "how-to-raise-rates-existing-clients-uae",
+    "freelance-work-life-balance-uae",
   ].map((slug) => ({
     url: `${base}/blog/${slug}`,
     lastModified: new Date(),
