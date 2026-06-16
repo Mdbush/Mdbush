@@ -2321,6 +2321,33 @@ export const posts: BlogPost[] = [
     readTime: "7 min read",
     category: "Pricing & Rates",
   },
+  {
+    slug: "freelance-media-buying-consultant-rates-uae",
+    title: "Freelance Media Buying Consultant Rates in the UAE (2026)",
+    description:
+      "Real AED day rates for freelance media buying consultants in Dubai and Abu Dhabi. Programmatic advertising, DSP/DMP, OOH media buying, TV and radio media planning, and integrated media strategy fees for UAE advertisers in 2026.",
+    date: "June 16, 2026",
+    readTime: "7 min read",
+    category: "Pricing & Rates",
+  },
+  {
+    slug: "how-to-manage-cash-flow-freelance-uae",
+    title: "How to Manage Cash Flow as a UAE Freelancer (2026 Guide)",
+    description:
+      "Practical cash flow management for UAE freelancers — how to handle feast-and-famine income cycles, build a financial buffer in AED, invoice for faster payment, and maintain stable finances as a Dubai or Abu Dhabi freelancer.",
+    date: "June 16, 2026",
+    readTime: "7 min read",
+    category: "Tax & Finance",
+  },
+  {
+    slug: "freelance-clinical-research-consultant-rates-uae",
+    title: "Freelance Clinical Research Consultant Rates in the UAE (2026)",
+    description:
+      "Real AED day rates for freelance clinical research consultants in Dubai and Abu Dhabi. Clinical trial management, pharmacovigilance, regulatory submissions (MOHAP/DHA), medical writing, and GCP advisory fees for UAE pharmaceutical and biotech companies in 2026.",
+    date: "June 16, 2026",
+    readTime: "7 min read",
+    category: "Pricing & Rates",
+  },
 ];
 
 export function getPost(slug: string): BlogPost | undefined {
