@@ -6,13 +6,20 @@ import MidPageCapture from "@/components/MidPageCapture";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "10 Free AI Prompts for Freelancers — SoloKit",
+  title: "10 Free AI Prompts for UAE Freelancers — SoloKit",
   description:
-    "Get 10 battle-tested AI prompts for writing proposals, following up with clients, and creating content faster. Free download — no credit card needed.",
+    "10 battle-tested AI prompts for writing proposals, following up with clients, and creating content faster. Free — no credit card needed.",
+  alternates: { canonical: "/free" },
   openGraph: {
-    title: "10 Free AI Prompts for Freelancers",
-    description: "Get 10 battle-tested AI prompts — free from SoloKit.",
+    title: "10 Free AI Prompts for UAE Freelancers",
+    description: "Copy-paste prompts for proposals, follow-ups, and client emails. Free from SoloKit.",
     type: "website",
+    url: "/free",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "10 Free AI Prompts for UAE Freelancers",
+    description: "Copy-paste prompts for proposals, follow-ups, and client emails. Free from SoloKit.",
   },
 };
 
