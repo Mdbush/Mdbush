@@ -77,6 +77,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "freelance-hr-consultant-uae",
     "how-to-get-uae-clients-from-abroad",
     "freelance-work-permit-vs-trade-license-uae",
+    "how-to-price-yourself-as-freelancer-uae",
+    "best-time-tracking-apps-freelancers-uae",
+    "freelance-email-templates-uae",
   ].map((slug) => ({
     url: `${base}/blog/${slug}`,
     lastModified: new Date(),

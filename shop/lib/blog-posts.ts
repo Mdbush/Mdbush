@@ -593,6 +593,33 @@ export const posts: BlogPost[] = [
     readTime: "8 min read",
     category: "Visa & Legal",
   },
+  {
+    slug: "how-to-price-yourself-as-freelancer-uae",
+    title: "How to Price Yourself as a Freelancer in the UAE: The Complete System",
+    description:
+      "Stop guessing. The complete system for setting freelance rates in the UAE — floor rate formula, 5 pricing models compared, value-based pricing, and how to present your rate with confidence.",
+    date: "June 16, 2026",
+    readTime: "9 min read",
+    category: "Pricing & Rates",
+  },
+  {
+    slug: "best-time-tracking-apps-freelancers-uae",
+    title: "Best Time Tracking Apps for UAE Freelancers (2026)",
+    description:
+      "The best time tracking apps for freelancers in Dubai and Abu Dhabi — Toggl, Clockify, Harvest, and more. With UAE-specific pricing, invoicing integration, and AED support.",
+    date: "June 16, 2026",
+    readTime: "6 min read",
+    category: "Systems & Productivity",
+  },
+  {
+    slug: "freelance-email-templates-uae",
+    title: "Freelance Email Templates for UAE Clients (Copy-Paste)",
+    description:
+      "10 copy-paste email templates for UAE freelancers — proposals, follow-ups, late payments, project kickoffs, scope changes, and client onboarding. Ready to use.",
+    date: "June 16, 2026",
+    readTime: "7 min read",
+    category: "Client Work & Proposals",
+  },
 ];
 
 export function getPost(slug: string): BlogPost | undefined {
