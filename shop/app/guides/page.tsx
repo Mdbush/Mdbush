@@ -6,11 +6,11 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "UAE Freelancer Guides & Resources — SoloKit",
   description:
-    "342 practical guides for freelancers and solopreneurs in the UAE. Visa, tax, rates, clients, contracts, AI tools, and more. All free.",
+    "343 practical guides for freelancers and solopreneurs in the UAE. Visa, tax, rates, clients, contracts, AI tools, and more. All free.",
   alternates: { canonical: "/guides" },
   openGraph: {
     title: "UAE Freelancer Guides & Resources — SoloKit",
-    description: "342 free guides covering everything a UAE freelancer needs to know.",
+    description: "343 free guides covering everything a UAE freelancer needs to know.",
     type: "website",
     url: "/guides",
   },
@@ -339,6 +339,7 @@ const categories = [
       { slug: "how-to-handle-slow-paying-clients-uae", title: "How to Handle Slow-Paying Clients as a UAE Freelancer (2026)", time: "7 min" },
       { slug: "how-to-get-paid-upfront-uae", title: "How to Get Paid Upfront as a UAE Freelancer (2026 Guide)", time: "7 min" },
       { slug: "how-to-fire-a-freelance-client-uae", title: "How to Fire a Client as a UAE Freelancer (2026 Guide)", time: "7 min" },
+      { slug: "how-to-handle-late-payments-uae", title: "How to Handle Late Payments as a UAE Freelancer (2026 Guide)", time: "8 min" },
     ],
   },
   {
@@ -436,7 +437,7 @@ export default function GuidesPage() {
           <span className="text-xs font-semibold text-gray-400 uppercase tracking-widest">Free Resources</span>
           <h1 className="text-3xl sm:text-4xl font-bold text-gray-900 mt-2 mb-3">UAE Freelancer Guides</h1>
           <p className="text-gray-500 max-w-xl mx-auto leading-relaxed">
-            342 practical guides covering everything you need to know about freelancing in Dubai and Abu Dhabi.
+            343 practical guides covering everything you need to know about freelancing in Dubai and Abu Dhabi.
             Written specifically for the UAE market — AED pricing, local laws, free zone context.
           </p>
         </div>

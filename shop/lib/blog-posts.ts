@@ -3050,6 +3050,15 @@ export const posts: BlogPost[] = [
     readTime: "7 min read",
     category: "Getting Clients",
   },
+  {
+    slug: "how-to-handle-late-payments-uae",
+    title: "How to Handle Late Payments as a UAE Freelancer (2026 Guide)",
+    description:
+      "Practical steps UAE freelancers use to chase, recover, and prevent late invoice payments — reminder sequences, legal options, small claims, and contract clauses that protect you.",
+    date: "June 16, 2026",
+    readTime: "8 min read",
+    category: "Contracts & Legal",
+  },
 ];
 
 export function getPost(slug: string): BlogPost | undefined {
