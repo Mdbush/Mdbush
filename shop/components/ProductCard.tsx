@@ -11,7 +11,7 @@ export default function ProductCard({ product }: { product: Product }) {
     <div className="group relative bg-white border border-gray-200 rounded-2xl p-6 flex flex-col gap-4 hover:border-gray-900 hover:shadow-lg transition-all duration-200">
       {/* Badge */}
       {(product.badge || discount) && (
-        <span className="absolute top-4 right-4 bg-gray-900 text-white text-xs font-bold px-2.5 py-1 rounded-full">
+        <span className="absolute top-4 right-4 bg-emerald-500 text-white text-xs font-bold px-2.5 py-1 rounded-full">
           {product.badge ?? `-${discount}% OFF`}
         </span>
       )}
@@ -60,7 +60,7 @@ export default function ProductCard({ product }: { product: Product }) {
           </div>
           <Link
             href={`/products/${product.slug}`}
-            className="bg-gray-900 text-white text-sm font-bold px-6 py-3 rounded-xl hover:bg-gray-700 transition-colors whitespace-nowrap"
+            className="bg-emerald-500 text-white text-sm font-bold px-6 py-3 rounded-xl hover:bg-emerald-400 transition-colors whitespace-nowrap"
           >
             Get it →
           </Link>

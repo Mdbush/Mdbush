@@ -38,7 +38,7 @@ export default function MidPageCapture() {
 
   return (
     <div className="max-w-3xl mx-auto px-4 sm:px-6 py-6">
-      <div className="bg-gray-950 rounded-2xl p-6 sm:p-8">
+      <div className="bg-gradient-to-br from-gray-900 to-gray-800 rounded-2xl p-6 sm:p-8">
         <div className="flex flex-col sm:flex-row sm:items-center gap-6">
           <div className="flex-1">
             <p className="text-xs font-semibold text-gray-400 uppercase tracking-widest mb-2">5 more prompts — free</p>

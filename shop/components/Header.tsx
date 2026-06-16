@@ -31,7 +31,7 @@ export default function Header() {
             </Link>
             <Link
               href="/#products"
-              className="bg-gray-900 text-white text-sm font-semibold px-4 py-1.5 rounded-lg hover:bg-gray-700 transition-colors"
+              className="bg-emerald-500 text-white text-sm font-semibold px-4 py-1.5 rounded-lg hover:bg-emerald-400 transition-colors"
             >
               Shop →
             </Link>

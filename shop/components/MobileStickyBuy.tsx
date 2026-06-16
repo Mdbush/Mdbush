@@ -54,7 +54,7 @@ export default function MobileStickyBuy({
             <button
               type="submit"
               disabled={loading}
-              className="bg-gray-900 text-white font-semibold px-5 py-2.5 rounded-xl hover:bg-gray-700 transition-colors text-sm disabled:opacity-70 whitespace-nowrap"
+              className="bg-emerald-500 text-white font-semibold px-5 py-2.5 rounded-xl hover:bg-emerald-400 transition-colors text-sm disabled:opacity-70 whitespace-nowrap"
             >
               {loading ? "Loading…" : "Buy Now →"}
             </button>

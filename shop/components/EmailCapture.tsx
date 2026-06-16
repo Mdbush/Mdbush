@@ -27,7 +27,7 @@ export default function EmailCapture() {
   }
 
   return (
-    <section className="bg-gray-900 py-14">
+    <section className="bg-gradient-to-br from-gray-900 to-gray-800 py-14">
       <div className="max-w-xl mx-auto px-4 sm:px-6 text-center">
         <p className="text-xs font-semibold text-gray-400 uppercase tracking-widest mb-3">Free · No credit card</p>
         <h2 className="text-2xl sm:text-3xl font-bold text-white mb-3">

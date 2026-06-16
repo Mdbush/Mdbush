@@ -29,7 +29,7 @@ export default function CheckoutButton({
       <button
         type="submit"
         disabled={loading}
-        className="w-full bg-gray-900 text-white font-semibold py-3.5 rounded-xl hover:bg-gray-700 transition-colors text-sm disabled:opacity-70 disabled:cursor-not-allowed flex items-center justify-center gap-2"
+        className="w-full bg-emerald-500 text-white font-semibold py-3.5 rounded-xl hover:bg-emerald-400 transition-colors text-sm disabled:opacity-70 disabled:cursor-not-allowed flex items-center justify-center gap-2"
       >
         {loading ? (
           <>
