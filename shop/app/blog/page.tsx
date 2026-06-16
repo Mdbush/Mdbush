@@ -279,6 +279,24 @@ const posts = [
     readTime: "6 min read",
     category: "Business",
   },
+  {
+    slug: "best-tools-freelancers-uae-2026",
+    title: "Best Tools for Freelancers in the UAE (2026): The Complete Stack",
+    description:
+      "The exact tool stack UAE freelancers need in 2026 — for client management, invoicing, contracts, AI, project tracking, and payments. Honest picks with AED costs.",
+    date: "June 16, 2026",
+    readTime: "8 min read",
+    category: "Tools & Productivity",
+  },
+  {
+    slug: "how-to-build-freelance-portfolio-uae",
+    title: "How to Build a Freelance Portfolio in the UAE (With No Clients Yet)",
+    description:
+      "Step-by-step guide to building a freelance portfolio that attracts clients in Dubai and Abu Dhabi — even if you're starting from zero. Includes portfolio formats, spec work, and pricing anchors.",
+    date: "June 16, 2026",
+    readTime: "7 min read",
+    category: "Client Acquisition",
+  },
 ];
 
 const featured = [

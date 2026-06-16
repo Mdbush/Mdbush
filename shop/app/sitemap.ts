@@ -42,6 +42,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "how-much-do-uae-freelancers-earn",
     "how-to-scale-freelance-business-uae",
     "freelance-proposal-template-uae",
+    "best-tools-freelancers-uae-2026",
+    "how-to-build-freelance-portfolio-uae",
   ].map((slug) => ({
     url: `${base}/blog/${slug}`,
     lastModified: new Date(),
@@ -56,6 +58,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${base}/about`, lastModified: new Date(), changeFrequency: "monthly", priority: 0.5 },
     { url: `${base}/start`, lastModified: new Date(), changeFrequency: "monthly", priority: 0.7 },
     { url: `${base}/affiliates`, lastModified: new Date(), changeFrequency: "monthly", priority: 0.6 },
+    { url: `${base}/bundle`, lastModified: new Date(), changeFrequency: "monthly", priority: 0.7 },
     ...productUrls,
     ...blogUrls,
   ];
