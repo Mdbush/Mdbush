@@ -2780,6 +2780,33 @@ export const posts: BlogPost[] = [
     readTime: "7 min read",
     category: "Pricing & Rates",
   },
+  {
+    slug: "freelance-drone-pilot-rates-uae",
+    title: "Freelance Drone Pilot Rates in the UAE (2026)",
+    description:
+      "Real AED rates for freelance drone pilots in Dubai and Abu Dhabi. Real estate aerial photography, construction site monitoring, event coverage, infrastructure inspection, photogrammetry and mapping, and cinematic corporate content fees for 2026.",
+    date: "June 16, 2026",
+    readTime: "7 min read",
+    category: "Pricing & Rates",
+  },
+  {
+    slug: "freelance-public-relations-consultant-rates-uae",
+    title: "Freelance PR Consultant Rates in the UAE (2026)",
+    description:
+      "Real AED day rates for freelance public relations consultants in Dubai and Abu Dhabi. Media relations, crisis communications, corporate PR, reputation management, thought leadership, executive profiling, and PR retainer fees for 2026.",
+    date: "June 16, 2026",
+    readTime: "7 min read",
+    category: "Pricing & Rates",
+  },
+  {
+    slug: "how-to-get-clients-without-social-media-uae",
+    title: "How to Get Freelance Clients Without Social Media in the UAE (2026)",
+    description:
+      "How UAE freelancers get clients without Instagram, LinkedIn, or TikTok. Cold outreach, referral systems, professional events, directory listings, trade publication writing, strategic partnerships, and WhatsApp business channels for Dubai and Abu Dhabi freelancers.",
+    date: "June 16, 2026",
+    readTime: "7 min read",
+    category: "Getting Clients",
+  },
 ];
 
 export function getPost(slug: string): BlogPost | undefined {
