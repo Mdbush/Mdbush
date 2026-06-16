@@ -6,7 +6,7 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "UAE Freelancer Guides & Resources — SoloKit",
   description:
-    "34 practical guides for freelancers and solopreneurs in the UAE. Visa, tax, rates, clients, contracts, AI tools, and more. All free.",
+    "36 practical guides for freelancers and solopreneurs in the UAE. Visa, tax, rates, clients, contracts, AI tools, and more. All free.",
   alternates: { canonical: "/guides" },
   openGraph: {
     title: "UAE Freelancer Guides & Resources — SoloKit",
@@ -99,6 +99,7 @@ const categories = [
     guides: [
       { slug: "best-ai-tools-uae-freelancers", title: "Best AI Tools for UAE Freelancers in 2026", time: "5 min" },
       { slug: "ai-prompts-for-freelancers", title: "How to Use AI to Do More Freelance Work in Less Time", time: "7 min" },
+      { slug: "how-to-use-chatgpt-freelancers-uae", title: "How to Use ChatGPT as a UAE Freelancer (Practical Guide)", time: "7 min" },
     ],
   },
   {
@@ -116,6 +117,7 @@ const categories = [
     guides: [
       { slug: "freelancer-burnout-uae", title: "Freelancer Burnout in Dubai: How to Recognize and Fix It", time: "6 min" },
       { slug: "freelance-vs-salary-uae", title: "Freelance vs Salary in the UAE: The Real Numbers", time: "7 min" },
+      { slug: "freelance-passive-income-uae", title: "How UAE Freelancers Build Passive Income", time: "8 min" },
     ],
   },
 ];
@@ -133,7 +135,7 @@ export default function GuidesPage() {
           <span className="text-xs font-semibold text-gray-400 uppercase tracking-widest">Free Resources</span>
           <h1 className="text-3xl sm:text-4xl font-bold text-gray-900 mt-2 mb-3">UAE Freelancer Guides</h1>
           <p className="text-gray-500 max-w-xl mx-auto leading-relaxed">
-            34 practical guides covering everything you need to know about freelancing in Dubai and Abu Dhabi.
+            36 practical guides covering everything you need to know about freelancing in Dubai and Abu Dhabi.
             Written specifically for the UAE market — AED pricing, local laws, free zone context.
           </p>
         </div>

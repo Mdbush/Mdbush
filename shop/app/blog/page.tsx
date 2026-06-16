@@ -315,6 +315,24 @@ const posts = [
     readTime: "6 min read",
     category: "Finance",
   },
+  {
+    slug: "how-to-use-chatgpt-freelancers-uae",
+    title: "How to Use ChatGPT as a UAE Freelancer (Practical Guide for 2026)",
+    description:
+      "The exact ways UAE freelancers are using ChatGPT and Claude to write proposals, handle client emails, create content, and cut admin time in half — with real prompt examples.",
+    date: "June 16, 2026",
+    readTime: "7 min read",
+    category: "AI Tools",
+  },
+  {
+    slug: "freelance-passive-income-uae",
+    title: "How UAE Freelancers Build Passive Income (Without Going Full Influencer)",
+    description:
+      "5 realistic passive income streams for UAE-based freelancers — digital products, templates, affiliate programs, cohort courses, and productized retainers. AED numbers included.",
+    date: "June 16, 2026",
+    readTime: "8 min read",
+    category: "Business",
+  },
 ];
 
 const featured = [
