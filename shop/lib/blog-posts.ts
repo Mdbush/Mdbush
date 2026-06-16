@@ -1350,6 +1350,33 @@ export const posts: BlogPost[] = [
     category: "Pricing & Rates",
   },
   {
+    slug: "freelance-network-engineer-rates-uae",
+    title: "Freelance Network Engineer Rates in the UAE (2026): What to Charge",
+    description:
+      "Real AED rates for freelance network engineers in Dubai and Abu Dhabi — network design, LAN/WAN setup, firewall configuration, SD-WAN deployment, network security audits, wireless infrastructure, and managed network support retainer rates for 2026.",
+    date: "June 16, 2026",
+    readTime: "7 min read",
+    category: "Pricing & Rates",
+  },
+  {
+    slug: "freelance-salesforce-consultant-rates-uae",
+    title: "Freelance Salesforce Consultant Rates in the UAE (2026): What to Charge",
+    description:
+      "Real AED rates for freelance Salesforce consultants in Dubai and Abu Dhabi — Salesforce implementation, Sales Cloud, Service Cloud, Marketing Cloud, custom development, admin support, and Salesforce training rates for 2026.",
+    date: "June 16, 2026",
+    readTime: "7 min read",
+    category: "Pricing & Rates",
+  },
+  {
+    slug: "how-to-build-passive-income-freelancer-uae",
+    title: "How to Build Passive Income as a UAE Freelancer (2026 Guide)",
+    description:
+      "How UAE freelancers build income streams beyond client work — digital products, online courses, templates, affiliate income, licensing your expertise, and productizing your services for recurring revenue without more hours.",
+    date: "June 16, 2026",
+    readTime: "8 min read",
+    category: "Business & Mindset",
+  },
+  {
     slug: "freelance-cloud-architect-rates-uae",
     title: "Freelance Cloud Architect Rates in the UAE (2026): What to Charge",
     description:
