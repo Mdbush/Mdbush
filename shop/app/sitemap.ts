@@ -363,6 +363,10 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "freelance-visa-saudi-arabia",
     "freelance-rates-saudi-arabia",
     "how-to-set-up-freelance-business-saudi-arabia",
+    "freelance-rates-qatar",
+    "freelance-visa-qatar",
+    "freelance-rates-kuwait",
+    "freelance-visa-kuwait",
   ].map((slug) => ({
     url: `${base}/blog/${slug}`,
     lastModified: new Date(),

@@ -3158,6 +3158,42 @@ export const posts: BlogPost[] = [
     readTime: "9 min read",
     category: "Getting Started",
   },
+  {
+    slug: "freelance-rates-qatar",
+    title: "Freelance Rates in Qatar (2026): What to Charge in QAR",
+    description:
+      "QAR day rates for consultants, IT, marketing, finance, and engineering freelancers in Doha — post-FIFA economy, QFC, QatarEnergy sector premiums.",
+    date: "June 16, 2026",
+    readTime: "8 min read",
+    category: "Pricing & Rates",
+  },
+  {
+    slug: "freelance-visa-qatar",
+    title: "How to Work as a Freelancer in Qatar (2026): Visa, QFC & Legal Guide",
+    description:
+      "Legal pathways to freelance in Qatar — Qatar Financial Centre (QFC) licence, kafala system, business visit visa strategy, and how to invoice Qatari clients from UAE.",
+    date: "June 16, 2026",
+    readTime: "8 min read",
+    category: "Getting Started",
+  },
+  {
+    slug: "freelance-rates-kuwait",
+    title: "Freelance Rates in Kuwait (2026): What to Charge in KWD",
+    description:
+      "KWD day rates for consultants, IT, finance, legal, and oil & gas freelancers in Kuwait City — the world's highest-valued currency and what it means for GCC freelancers.",
+    date: "June 16, 2026",
+    readTime: "8 min read",
+    category: "Pricing & Rates",
+  },
+  {
+    slug: "freelance-visa-kuwait",
+    title: "How to Work as a Freelancer in Kuwait (2026): Work Permits & Legal Options",
+    description:
+      "How to legally freelance for Kuwaiti clients — work permit routes, the Gulf Shuttle strategy, UAE base + Kuwait engagement model, and sectors with highest demand.",
+    date: "June 16, 2026",
+    readTime: "8 min read",
+    category: "Getting Started",
+  },
 ];
 
 export function getPost(slug: string): BlogPost | undefined {
