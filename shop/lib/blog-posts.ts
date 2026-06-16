@@ -1835,6 +1835,33 @@ export const posts: BlogPost[] = [
     readTime: "7 min read",
     category: "Pricing & Rates",
   },
+  {
+    slug: "freelance-azure-developer-rates-uae",
+    title: "Freelance Azure Developer Rates in the UAE (2026): Cloud Engineering Fees",
+    description:
+      "Real AED day rates for freelance Azure developers and cloud engineers in Dubai and Abu Dhabi. Azure infrastructure, app development, serverless, DevOps, data engineering, and Microsoft cloud consulting fees for 2026.",
+    date: "June 16, 2026",
+    readTime: "7 min read",
+    category: "Pricing & Rates",
+  },
+  {
+    slug: "freelance-it-support-rates-uae",
+    title: "Freelance IT Support Rates in the UAE (2026): Helpdesk & Systems Admin Fees",
+    description:
+      "Real AED day rates for freelance IT support technicians and systems administrators in Dubai and Abu Dhabi. Helpdesk, desktop support, network admin, server management, and IT managed services fees for 2026.",
+    date: "June 16, 2026",
+    readTime: "7 min read",
+    category: "Pricing & Rates",
+  },
+  {
+    slug: "how-to-upsell-freelance-clients-uae",
+    title: "How to Upsell Existing Freelance Clients in the UAE (2026): Expand Your Revenue",
+    description:
+      "How UAE freelancers can upsell existing clients to higher-value services. When to upsell, what to offer, how to present expanded scope, and how to move one-off clients onto retainers in Dubai and Abu Dhabi.",
+    date: "June 16, 2026",
+    readTime: "7 min read",
+    category: "Getting Clients",
+  },
 ];
 
 export function getPost(slug: string): BlogPost | undefined {

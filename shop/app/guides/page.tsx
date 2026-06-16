@@ -6,11 +6,11 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "UAE Freelancer Guides & Resources — SoloKit",
   description:
-    "207 practical guides for freelancers and solopreneurs in the UAE. Visa, tax, rates, clients, contracts, AI tools, and more. All free.",
+    "210 practical guides for freelancers and solopreneurs in the UAE. Visa, tax, rates, clients, contracts, AI tools, and more. All free.",
   alternates: { canonical: "/guides" },
   openGraph: {
     title: "UAE Freelancer Guides & Resources — SoloKit",
-    description: "207 free guides covering everything a UAE freelancer needs to know.",
+    description: "210 free guides covering everything a UAE freelancer needs to know.",
     type: "website",
     url: "/guides",
   },
@@ -88,6 +88,7 @@ const categories = [
       { slug: "how-to-negotiate-contracts-freelance-uae", title: "How to Negotiate Contracts as a UAE Freelancer (2026): Scripts & Tactics", time: "9 min" },
       { slug: "how-to-build-email-list-freelancers-uae", title: "How to Build an Email List as a UAE Freelancer (2026): From Zero to Warm Leads", time: "8 min" },
       { slug: "how-to-ask-for-referrals-uae", title: "How to Ask for Referrals as a UAE Freelancer (2026): Scripts That Work", time: "7 min" },
+      { slug: "how-to-upsell-freelance-clients-uae", title: "How to Upsell Existing Freelance Clients in the UAE (2026): Expand Your Revenue", time: "7 min" },
     ],
   },
   {
@@ -198,6 +199,8 @@ const categories = [
       { slug: "freelance-dynamics-365-consultant-rates-uae", title: "Freelance Dynamics 365 Consultant Rates in the UAE (2026): CRM & ERP Fees", time: "7 min" },
       { slug: "freelance-power-bi-developer-rates-uae", title: "Freelance Power BI Developer Rates in the UAE (2026): Data Analytics & BI Fees", time: "7 min" },
       { slug: "freelance-business-analyst-rates-uae", title: "Freelance Business Analyst Rates in the UAE (2026): BA & Requirements Fees", time: "7 min" },
+      { slug: "freelance-azure-developer-rates-uae", title: "Freelance Azure Developer Rates in the UAE (2026): Cloud Engineering Fees", time: "7 min" },
+      { slug: "freelance-it-support-rates-uae", title: "Freelance IT Support Rates in the UAE (2026): Helpdesk & Systems Admin Fees", time: "7 min" },
     ],
   },
   {
@@ -301,7 +304,7 @@ export default function GuidesPage() {
           <span className="text-xs font-semibold text-gray-400 uppercase tracking-widest">Free Resources</span>
           <h1 className="text-3xl sm:text-4xl font-bold text-gray-900 mt-2 mb-3">UAE Freelancer Guides</h1>
           <p className="text-gray-500 max-w-xl mx-auto leading-relaxed">
-            207 practical guides covering everything you need to know about freelancing in Dubai and Abu Dhabi.
+            210 practical guides covering everything you need to know about freelancing in Dubai and Abu Dhabi.
             Written specifically for the UAE market — AED pricing, local laws, free zone context.
           </p>
         </div>
