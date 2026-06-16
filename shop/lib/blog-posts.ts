@@ -647,6 +647,33 @@ export const posts: BlogPost[] = [
     readTime: "8 min read",
     category: "Pricing & Rates",
   },
+  {
+    slug: "freelance-dry-spells-uae",
+    title: "How to Handle Dry Spells as a UAE Freelancer (When Work Goes Quiet)",
+    description:
+      "Every UAE freelancer hits periods of no work. Here is how to handle dry spells without panic — the 30-day recovery plan, cash flow protection, and what to do in the first 72 hours.",
+    date: "June 16, 2026",
+    readTime: "7 min read",
+    category: "Business & Mindset",
+  },
+  {
+    slug: "uae-freelance-community-groups",
+    title: "UAE Freelance Communities & Groups (Where to Find Your Network in Dubai)",
+    description:
+      "The best freelancer communities in the UAE — WhatsApp groups, Facebook groups, Slack workspaces, LinkedIn communities, and in-person networks in Dubai and Abu Dhabi.",
+    date: "June 16, 2026",
+    readTime: "5 min read",
+    category: "Getting Clients",
+  },
+  {
+    slug: "freelance-morning-routine-uae",
+    title: "The Freelancer Morning Routine That Works in the UAE (Practical Guide)",
+    description:
+      "How UAE freelancers structure their mornings to protect deep work, avoid reactive days, and stay productive without rigid 9-to-5 hours. With a 90-minute routine template.",
+    date: "June 16, 2026",
+    readTime: "6 min read",
+    category: "Systems & Productivity",
+  },
 ];
 
 export function getPost(slug: string): BlogPost | undefined {

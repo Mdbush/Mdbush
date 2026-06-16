@@ -83,6 +83,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "freelance-niche-uae",
     "client-red-flags-uae",
     "freelance-rates-increase-strategy-uae",
+    "freelance-dry-spells-uae",
+    "uae-freelance-community-groups",
+    "freelance-morning-routine-uae",
   ].map((slug) => ({
     url: `${base}/blog/${slug}`,
     lastModified: new Date(),
