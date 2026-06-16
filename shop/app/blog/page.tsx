@@ -297,6 +297,24 @@ const posts = [
     readTime: "7 min read",
     category: "Client Acquisition",
   },
+  {
+    slug: "freelance-health-insurance-uae",
+    title: "Health Insurance for Freelancers in the UAE (2026 Guide)",
+    description:
+      "UAE freelancers must get their own health insurance — here's how. Compare Dubai vs Abu Dhabi requirements, AED costs, best plans, and what happens if you skip it.",
+    date: "June 16, 2026",
+    readTime: "7 min read",
+    category: "Tax & Finance",
+  },
+  {
+    slug: "best-accounting-software-freelancers-uae",
+    title: "Best Accounting Software for Freelancers in the UAE (2026)",
+    description:
+      "Wave, FreshBooks, QuickBooks, and Zoho Books compared for UAE freelancers. AED pricing, VAT compliance, what each does, and which one to use at each stage of your business.",
+    date: "June 16, 2026",
+    readTime: "6 min read",
+    category: "Finance",
+  },
 ];
 
 const featured = [
