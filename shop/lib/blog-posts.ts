@@ -2618,6 +2618,33 @@ export const posts: BlogPost[] = [
     readTime: "7 min read",
     category: "Pricing & Rates",
   },
+  {
+    slug: "freelance-energy-consultant-rates-uae",
+    title: "Freelance Energy Consultant Rates in the UAE (2026)",
+    description:
+      "Real AED day rates for freelance energy consultants in Dubai and Abu Dhabi. Oil and gas advisory, renewable energy strategy, ADNOC sector consulting, energy transition advisory, power sector regulation, and energy efficiency consulting fees for 2026.",
+    date: "June 16, 2026",
+    readTime: "7 min read",
+    category: "Pricing & Rates",
+  },
+  {
+    slug: "how-to-handle-slow-paying-clients-uae",
+    title: "How to Handle Slow-Paying Clients as a UAE Freelancer (2026)",
+    description:
+      "How UAE freelancers deal with slow-paying clients — follow-up scripts, escalation process, when to stop work, when to use UAE legal remedies, and how to prevent slow payment from happening again.",
+    date: "June 16, 2026",
+    readTime: "7 min read",
+    category: "Client Work & Proposals",
+  },
+  {
+    slug: "freelance-healthcare-it-consultant-rates-uae",
+    title: "Freelance Healthcare IT Consultant Rates in the UAE (2026)",
+    description:
+      "Real AED day rates for freelance healthcare IT consultants in Dubai and Abu Dhabi. EMR/EHR implementation, hospital information systems, telemedicine platforms, UAE DOH and DHA compliance, clinical data management, and health informatics fees for 2026.",
+    date: "June 16, 2026",
+    readTime: "7 min read",
+    category: "Pricing & Rates",
+  },
 ];
 
 export function getPost(slug: string): BlogPost | undefined {

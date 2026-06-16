@@ -6,11 +6,11 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "UAE Freelancer Guides & Resources — SoloKit",
   description:
-    "294 practical guides for freelancers and solopreneurs in the UAE. Visa, tax, rates, clients, contracts, AI tools, and more. All free.",
+    "297 practical guides for freelancers and solopreneurs in the UAE. Visa, tax, rates, clients, contracts, AI tools, and more. All free.",
   alternates: { canonical: "/guides" },
   openGraph: {
     title: "UAE Freelancer Guides & Resources — SoloKit",
-    description: "294 free guides covering everything a UAE freelancer needs to know.",
+    description: "297 free guides covering everything a UAE freelancer needs to know.",
     type: "website",
     url: "/guides",
   },
@@ -271,6 +271,8 @@ const categories = [
       { slug: "freelance-interior-stylist-rates-uae", title: "Freelance Interior Stylist Rates in the UAE (2026)", time: "7 min" },
       { slug: "freelance-procurement-consultant-rates-uae", title: "Freelance Procurement Consultant Rates in the UAE (2026)", time: "7 min" },
       { slug: "freelance-esg-consultant-rates-uae", title: "Freelance ESG Consultant Rates in the UAE (2026)", time: "7 min" },
+      { slug: "freelance-energy-consultant-rates-uae", title: "Freelance Energy Consultant Rates in the UAE (2026)", time: "7 min" },
+      { slug: "freelance-healthcare-it-consultant-rates-uae", title: "Freelance Healthcare IT Consultant Rates in the UAE (2026)", time: "7 min" },
     ],
   },
   {
@@ -295,6 +297,7 @@ const categories = [
       { slug: "how-to-run-discovery-workshops-uae", title: "How to Run Discovery Workshops with UAE Clients (2026 Guide)", time: "7 min" },
       { slug: "how-to-protect-intellectual-property-uae", title: "How UAE Freelancers Protect Their Intellectual Property (2026 Guide)", time: "7 min" },
       { slug: "how-to-manage-client-feedback-rounds-uae", title: "How UAE Freelancers Manage Client Feedback Rounds (2026)", time: "7 min" },
+      { slug: "how-to-handle-slow-paying-clients-uae", title: "How to Handle Slow-Paying Clients as a UAE Freelancer (2026)", time: "7 min" },
     ],
   },
   {
@@ -388,7 +391,7 @@ export default function GuidesPage() {
           <span className="text-xs font-semibold text-gray-400 uppercase tracking-widest">Free Resources</span>
           <h1 className="text-3xl sm:text-4xl font-bold text-gray-900 mt-2 mb-3">UAE Freelancer Guides</h1>
           <p className="text-gray-500 max-w-xl mx-auto leading-relaxed">
-            294 practical guides covering everything you need to know about freelancing in Dubai and Abu Dhabi.
+            297 practical guides covering everything you need to know about freelancing in Dubai and Abu Dhabi.
             Written specifically for the UAE market — AED pricing, local laws, free zone context.
           </p>
         </div>
