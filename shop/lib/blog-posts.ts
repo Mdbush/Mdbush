@@ -1511,6 +1511,33 @@ export const posts: BlogPost[] = [
     readTime: "7 min read",
     category: "Pricing & Rates",
   },
+  {
+    slug: "freelance-sustainability-consultant-rates-uae",
+    title: "Freelance Sustainability Consultant Rates in the UAE (2026): ESG & Green Business Fees",
+    description:
+      "Real AED day rates and project fees for freelance sustainability consultants in Dubai and Abu Dhabi. ESG reporting (GRI / IFRS S1–S2), carbon footprint, net-zero strategy, LEED / Estidama green building, and supply chain sustainability audit rates.",
+    date: "June 16, 2026",
+    readTime: "8 min read",
+    category: "Pricing & Rates",
+  },
+  {
+    slug: "how-to-build-a-freelance-team-uae",
+    title: "How to Build a Freelance Team in the UAE (2026): Subcontracting & Scaling Guide",
+    description:
+      "Step-by-step guide to building a virtual freelance team in Dubai and Abu Dhabi. How to hire subcontractors, structure contracts, set margins, manage projects remotely, and scale from solo to agency in the UAE — without a trade license.",
+    date: "June 16, 2026",
+    readTime: "9 min read",
+    category: "Business & Mindset",
+  },
+  {
+    slug: "freelance-tax-advisor-rates-uae",
+    title: "Freelance Tax Advisor Rates in the UAE (2026): Corporate Tax & VAT Consulting Fees",
+    description:
+      "Real AED day rates and project fees for freelance tax advisors in Dubai and Abu Dhabi. VAT compliance, UAE Corporate Tax, EmaraTax registration, transfer pricing, free zone qualifying income, and FTA dispute resolution rates.",
+    date: "June 16, 2026",
+    readTime: "8 min read",
+    category: "Pricing & Rates",
+  },
 ];
 
 export function getPost(slug: string): BlogPost | undefined {
