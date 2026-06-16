@@ -3023,6 +3023,33 @@ export const posts: BlogPost[] = [
     readTime: "7 min read",
     category: "Getting Clients",
   },
+  {
+    slug: "freelance-dental-hygienist-rates-uae",
+    title: "Freelance Dental Hygienist Rates in the UAE (2026)",
+    description:
+      "Real AED rates for freelance and locum dental hygienists in Dubai and Abu Dhabi. General dental hygiene, periodontist-support hygienist, dental clinic locum, and corporate dental wellness screening fees for 2026.",
+    date: "June 16, 2026",
+    readTime: "7 min read",
+    category: "Pricing & Rates",
+  },
+  {
+    slug: "freelance-medical-laboratory-scientist-rates-uae",
+    title: "Freelance Medical Laboratory Scientist Rates in the UAE (2026)",
+    description:
+      "Real AED rates for freelance and locum medical laboratory scientists in Dubai and Abu Dhabi. Biochemistry, haematology, microbiology, histopathology, blood bank, and molecular diagnostics locum fees for 2026.",
+    date: "June 16, 2026",
+    readTime: "7 min read",
+    category: "Pricing & Rates",
+  },
+  {
+    slug: "how-to-get-freelance-clients-without-portfolio-uae",
+    title: "How to Get Freelance Clients Without a Portfolio in the UAE (2026 Guide)",
+    description:
+      "How UAE freelancers win first clients without a portfolio — spec work, discovery offers, warm outreach, and credibility signals that replace case studies in Dubai and Abu Dhabi.",
+    date: "June 16, 2026",
+    readTime: "7 min read",
+    category: "Getting Clients",
+  },
 ];
 
 export function getPost(slug: string): BlogPost | undefined {
