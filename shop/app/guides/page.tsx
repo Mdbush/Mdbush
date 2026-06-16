@@ -6,11 +6,11 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "UAE Freelancer Guides & Resources — SoloKit",
   description:
-    "116 practical guides for freelancers and solopreneurs in the UAE. Visa, tax, rates, clients, contracts, AI tools, and more. All free.",
+    "119 practical guides for freelancers and solopreneurs in the UAE. Visa, tax, rates, clients, contracts, AI tools, and more. All free.",
   alternates: { canonical: "/guides" },
   openGraph: {
     title: "UAE Freelancer Guides & Resources — SoloKit",
-    description: "116 free guides covering everything a UAE freelancer needs to know.",
+    description: "119 free guides covering everything a UAE freelancer needs to know.",
     type: "website",
     url: "/guides",
   },
@@ -121,6 +121,8 @@ const categories = [
       { slug: "freelance-management-consultant-uae", title: "Freelance Management Consultant Rates in the UAE (2026): What to Charge", time: "8 min" },
       { slug: "how-to-price-retainer-clients-uae", title: "How to Price Retainer Clients as a UAE Freelancer (The Complete System)", time: "8 min" },
       { slug: "freelance-graphic-designer-rates-uae", title: "Freelance Graphic Designer Rates in the UAE (2026): What to Charge", time: "7 min" },
+      { slug: "freelance-digital-marketing-manager-uae", title: "Freelance Digital Marketing Manager Rates in the UAE (2026): What to Charge", time: "7 min" },
+      { slug: "freelance-interior-design-rates-uae", title: "Freelance Interior Designer Rates in the UAE (2026): What to Charge", time: "7 min" },
     ],
   },
   {
@@ -137,6 +139,7 @@ const categories = [
       { slug: "freelance-email-templates-uae", title: "Freelance Email Templates for UAE Clients (Copy-Paste)", time: "7 min" },
       { slug: "client-red-flags-uae", title: "10 Client Red Flags for UAE Freelancers (How to Spot Them Before You Sign)", time: "7 min" },
       { slug: "how-to-get-paid-faster-uae", title: "How to Get Paid Faster as a UAE Freelancer (7 Practical Strategies)", time: "6 min" },
+      { slug: "how-to-handle-scope-creep-uae", title: "How to Handle Scope Creep as a UAE Freelancer (Scripts & Systems)", time: "7 min" },
     ],
   },
   {
@@ -214,7 +217,7 @@ export default function GuidesPage() {
           <span className="text-xs font-semibold text-gray-400 uppercase tracking-widest">Free Resources</span>
           <h1 className="text-3xl sm:text-4xl font-bold text-gray-900 mt-2 mb-3">UAE Freelancer Guides</h1>
           <p className="text-gray-500 max-w-xl mx-auto leading-relaxed">
-            116 practical guides covering everything you need to know about freelancing in Dubai and Abu Dhabi.
+            119 practical guides covering everything you need to know about freelancing in Dubai and Abu Dhabi.
             Written specifically for the UAE market — AED pricing, local laws, free zone context.
           </p>
         </div>

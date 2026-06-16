@@ -1052,6 +1052,33 @@ export const posts: BlogPost[] = [
     readTime: "7 min read",
     category: "Pricing & Rates",
   },
+  {
+    slug: "freelance-digital-marketing-manager-uae",
+    title: "Freelance Digital Marketing Manager Rates in the UAE (2026): What to Charge",
+    description:
+      "Real AED rates for freelance digital marketing managers in Dubai and Abu Dhabi — paid ads, performance marketing, Google Ads, Meta Ads, email marketing, and full-stack digital marketing retainers in 2026.",
+    date: "June 16, 2026",
+    readTime: "7 min read",
+    category: "Pricing & Rates",
+  },
+  {
+    slug: "how-to-handle-scope-creep-uae",
+    title: "How to Handle Scope Creep as a UAE Freelancer (Scripts & Systems)",
+    description:
+      "How UAE freelancers prevent and handle scope creep — defining scope in contracts, spotting scope creep early, how to say no professionally, change order process, and word-for-word scripts for UAE clients.",
+    date: "June 16, 2026",
+    readTime: "7 min read",
+    category: "Client Work & Proposals",
+  },
+  {
+    slug: "freelance-interior-design-rates-uae",
+    title: "Freelance Interior Designer Rates in the UAE (2026): What to Charge",
+    description:
+      "Real AED rates for freelance interior designers in Dubai and Abu Dhabi — residential design, commercial fit-out, hospitality interiors, and per-sqm fees for 2026.",
+    date: "June 16, 2026",
+    readTime: "7 min read",
+    category: "Pricing & Rates",
+  },
 ];
 
 export function getPost(slug: string): BlogPost | undefined {
