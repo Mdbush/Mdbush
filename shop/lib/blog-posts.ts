@@ -1160,6 +1160,33 @@ export const posts: BlogPost[] = [
     readTime: "7 min read",
     category: "Pricing & Rates",
   },
+  {
+    slug: "freelance-makeup-artist-rates-uae",
+    title: "Freelance Makeup Artist Rates in the UAE (2026): What to Charge",
+    description:
+      "Real AED rates for freelance makeup artists in Dubai and Abu Dhabi — bridal makeup, editorial, film and TV, fashion shoots, events, airbrush, and SFX makeup rates for 2026.",
+    date: "June 16, 2026",
+    readTime: "7 min read",
+    category: "Pricing & Rates",
+  },
+  {
+    slug: "how-to-get-testimonials-uae",
+    title: "How to Get Client Testimonials as a UAE Freelancer (Scripts & System)",
+    description:
+      "How UAE freelancers collect, write, and use client testimonials to win more clients — when to ask, word-for-word scripts, how to make it easy for UAE clients, and where to deploy testimonials for maximum effect.",
+    date: "June 16, 2026",
+    readTime: "6 min read",
+    category: "Getting Clients",
+  },
+  {
+    slug: "freelance-animation-rates-uae",
+    title: "Freelance Animation Rates in the UAE (2026): What to Charge",
+    description:
+      "Real AED rates for freelance animators in Dubai and Abu Dhabi — 2D character animation, explainer videos, whiteboard animation, frame-by-frame, animated ads, and Arabic animated content rates for 2026.",
+    date: "June 16, 2026",
+    readTime: "7 min read",
+    category: "Pricing & Rates",
+  },
 ];
 
 export function getPost(slug: string): BlogPost | undefined {
