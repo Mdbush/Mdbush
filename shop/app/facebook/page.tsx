@@ -381,39 +381,34 @@ export default function FacebookPage() {
             <span className="text-gray-600">Facebook Content</span>
           </nav>
 
-          {/* Dark hero — Facebook identity */}
-          <div className="bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 text-white px-6 py-10 rounded-2xl mb-8">
-            <div className="flex items-center gap-3 mb-4">
-              {/* Facebook blue platform badge */}
-              <span className="inline-flex items-center gap-1.5 bg-[#1877F2]/20 border border-[#1877F2]/40 text-[#74a9f7] text-xs font-bold px-3 py-1 rounded-full uppercase tracking-widest">
-                <svg viewBox="0 0 24 24" className="w-3.5 h-3.5 shrink-0" fill="currentColor">
+          {/* Hero — Facebook branded */}
+          <div className="rounded-2xl mb-8 overflow-hidden">
+            <div className="bg-[#1877F2] px-6 py-8">
+              <div className="flex items-start gap-4 mb-4">
+                <svg viewBox="0 0 24 24" className="w-10 h-10 text-white shrink-0 mt-1" fill="currentColor">
                   <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z" />
                 </svg>
-                Facebook
-              </span>
-              <span className="text-xs font-bold text-emerald-400 uppercase tracking-widest">Community · Conversational · Groups</span>
+                <div>
+                  <p className="text-blue-100 text-xs font-bold uppercase tracking-widest mb-1">Community · Conversational · Groups</p>
+                  <h1 className="text-3xl sm:text-4xl font-bold text-white leading-tight">Facebook Content Library</h1>
+                </div>
+              </div>
+              <p className="text-blue-100 text-sm leading-relaxed max-w-xl">
+                12 ready-to-post conversational posts. Native text wins on Facebook. Links always go in the FIRST COMMENT — never in the body.
+              </p>
             </div>
-            <h1 className="text-3xl sm:text-4xl font-bold leading-tight mb-4">Facebook Content Library</h1>
-            <p className="text-gray-300 text-sm mb-5 leading-relaxed max-w-xl">
-              12 ready-to-post conversational posts. Native text wins on Facebook. Links always go in the FIRST COMMENT — never in the body.
-            </p>
-            <div className="flex flex-wrap gap-3">
-              <div className="bg-white/10 backdrop-blur rounded-xl px-4 py-2.5 text-sm">
-                <span className="text-gray-400">Page</span>
-                <span className="ml-2 font-semibold text-white">SoloKit (@solokitco)</span>
-              </div>
-              <div className="bg-white/10 backdrop-blur rounded-xl px-4 py-2.5 text-sm">
-                <span className="text-gray-400">Page ID</span>
-                <span className="ml-2 font-semibold text-white">1098756576664555</span>
-              </div>
-              <div className="bg-white/10 backdrop-blur rounded-xl px-4 py-2.5 text-sm">
-                <span className="text-gray-400">Frequency</span>
-                <span className="ml-2 font-semibold text-white">1× per day</span>
-              </div>
-              <div className="bg-white/10 backdrop-blur rounded-xl px-4 py-2.5 text-sm">
-                <span className="text-gray-400">Best times (UAE)</span>
-                <span className="ml-2 font-semibold text-white">7–9 AM · 12–2 PM · 7–9 PM</span>
-              </div>
+            <div className="grid grid-cols-2 sm:grid-cols-4 bg-[#166FE5]">
+              {[
+                { value: "12 posts", label: "ready to use" },
+                { value: "1×", label: "per day" },
+                { value: "7–9 AM", label: "best time UAE" },
+                { value: "Groups", label: "10× rule first" },
+              ].map(({ value, label }) => (
+                <div key={label} className="px-4 py-4 text-center border-r border-blue-600 last:border-0">
+                  <p className="text-base font-bold text-white">{value}</p>
+                  <p className="text-xs text-blue-100 mt-0.5 leading-tight">{label}</p>
+                </div>
+              ))}
             </div>
           </div>
 
@@ -541,7 +536,7 @@ export default function FacebookPage() {
             {posts.map((p) => (
               <div key={p.id} className="bg-white border border-gray-200 rounded-2xl overflow-hidden">
                 <div className="px-5 py-4 border-b border-gray-100 flex items-start gap-3">
-                  <span className="w-8 h-8 bg-emerald-500 text-white rounded-full flex items-center justify-center shrink-0 font-bold text-sm">
+                  <span className="w-8 h-8 bg-[#1877F2] text-white rounded-full flex items-center justify-center shrink-0 font-bold text-sm">
                     {p.id}
                   </span>
                   <div className="flex-1 min-w-0">

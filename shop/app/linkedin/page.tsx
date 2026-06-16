@@ -469,39 +469,34 @@ export default function LinkedInPage() {
             <span className="text-gray-600">LinkedIn Content</span>
           </nav>
 
-          {/* Dark hero — LinkedIn identity */}
-          <div className="bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 text-white px-6 py-10 rounded-2xl mb-8">
-            <div className="flex items-center gap-3 mb-4">
-              {/* LinkedIn blue platform badge */}
-              <span className="inline-flex items-center gap-1.5 bg-[#0A66C2]/20 border border-[#0A66C2]/40 text-[#5ba4f5] text-xs font-bold px-3 py-1 rounded-full uppercase tracking-widest">
-                <svg viewBox="0 0 24 24" className="w-3.5 h-3.5 shrink-0" fill="currentColor">
+          {/* Hero — LinkedIn branded */}
+          <div className="rounded-2xl mb-8 overflow-hidden">
+            <div className="bg-[#0A66C2] px-6 py-8">
+              <div className="flex items-start gap-4 mb-4">
+                <svg viewBox="0 0 24 24" className="w-10 h-10 text-white shrink-0 mt-1" fill="currentColor">
                   <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
                 </svg>
-                LinkedIn
-              </span>
-              <span className="text-xs font-bold text-emerald-400 uppercase tracking-widest">Professional · B2B · Thought Leadership</span>
+                <div>
+                  <p className="text-blue-200 text-xs font-bold uppercase tracking-widest mb-1">Professional · B2B · Thought Leadership</p>
+                  <h1 className="text-3xl sm:text-4xl font-bold text-white leading-tight">LinkedIn Content Library</h1>
+                </div>
+              </div>
+              <p className="text-blue-100 text-sm leading-relaxed max-w-xl">
+                12 ready-to-post text posts built for the LinkedIn algorithm. Story-driven, educational, each ending with a question. No links in the body — ever.
+              </p>
             </div>
-            <h1 className="text-3xl sm:text-4xl font-bold leading-tight mb-4">LinkedIn Content Library</h1>
-            <p className="text-gray-300 text-sm mb-5 leading-relaxed max-w-xl">
-              12 ready-to-post text posts built for the LinkedIn algorithm. Story-driven, educational, each ending with a question. No links in the body — ever.
-            </p>
-            <div className="flex flex-wrap gap-3">
-              <div className="bg-white/10 backdrop-blur rounded-xl px-4 py-2.5 text-sm">
-                <span className="text-gray-400">Format</span>
-                <span className="ml-2 font-semibold text-white">Text posts — no images needed</span>
-              </div>
-              <div className="bg-white/10 backdrop-blur rounded-xl px-4 py-2.5 text-sm">
-                <span className="text-gray-400">Frequency</span>
-                <span className="ml-2 font-semibold text-white">3–5× per week</span>
-              </div>
-              <div className="bg-white/10 backdrop-blur rounded-xl px-4 py-2.5 text-sm">
-                <span className="text-gray-400">Best times (UAE)</span>
-                <span className="ml-2 font-semibold text-white">7–9 AM · 12–1 PM · 6–8 PM</span>
-              </div>
-              <div className="bg-white/10 backdrop-blur rounded-xl px-4 py-2.5 text-sm">
-                <span className="text-gray-400">Post from</span>
-                <span className="ml-2 font-semibold text-white">Personal profile (3–5× more reach)</span>
-              </div>
+            <div className="grid grid-cols-2 sm:grid-cols-4 bg-[#004182]">
+              {[
+                { value: "12 posts", label: "ready to use" },
+                { value: "3–5×", label: "per week" },
+                { value: "7–9 AM", label: "best time UAE" },
+                { value: "Personal", label: "profile beats company" },
+              ].map(({ value, label }) => (
+                <div key={label} className="px-4 py-4 text-center border-r border-blue-900 last:border-0">
+                  <p className="text-base font-bold text-white">{value}</p>
+                  <p className="text-xs text-blue-200 mt-0.5 leading-tight">{label}</p>
+                </div>
+              ))}
             </div>
           </div>
 
@@ -603,7 +598,7 @@ export default function LinkedInPage() {
             {posts.map((p) => (
               <div key={p.id} className="bg-white border border-gray-200 rounded-2xl overflow-hidden">
                 <div className="px-5 py-4 border-b border-gray-100 flex items-start gap-3">
-                  <span className="w-8 h-8 bg-emerald-500 text-white rounded-full flex items-center justify-center shrink-0 font-bold text-sm">
+                  <span className="w-8 h-8 bg-[#0A66C2] text-white rounded-full flex items-center justify-center shrink-0 font-bold text-sm">
                     {p.id}
                   </span>
                   <div className="flex-1 min-w-0">
