@@ -2024,6 +2024,33 @@ export const posts: BlogPost[] = [
     readTime: "7 min read",
     category: "Pricing & Rates",
   },
+  {
+    slug: "freelance-cto-rates-uae",
+    title: "Freelance & Fractional CTO Rates in the UAE (2026): Chief Technology Officer Fees",
+    description:
+      "Real AED rates for freelance and fractional CTOs in Dubai and Abu Dhabi. Technology strategy, architecture review, CTO advisory, startup technical leadership, and interim CTO fees for UAE companies in 2026.",
+    date: "June 16, 2026",
+    readTime: "8 min read",
+    category: "Pricing & Rates",
+  },
+  {
+    slug: "how-to-package-freelance-services-uae",
+    title: "How to Package Your Freelance Services in the UAE (2026): Tiers & Bundles",
+    description:
+      "How UAE freelancers package services into tiers and bundles to increase average project value, reduce scope negotiation, and attract better clients. Good, Better, Best pricing frameworks with UAE-specific examples.",
+    date: "June 16, 2026",
+    readTime: "7 min read",
+    category: "Pricing & Rates",
+  },
+  {
+    slug: "freelance-diversity-inclusion-consultant-rates-uae",
+    title: "Freelance Diversity & Inclusion Consultant Rates in the UAE (2026)",
+    description:
+      "Real AED day rates for freelance D&I consultants in Dubai and Abu Dhabi. Emiratisation strategy, gender diversity, inclusive hiring, cultural sensitivity training, and D&I programme design fees for UAE companies in 2026.",
+    date: "June 16, 2026",
+    readTime: "7 min read",
+    category: "Pricing & Rates",
+  },
 ];
 
 export function getPost(slug: string): BlogPost | undefined {
