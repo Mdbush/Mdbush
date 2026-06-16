@@ -836,6 +836,33 @@ export const posts: BlogPost[] = [
     readTime: "7 min read",
     category: "Pricing & Rates",
   },
+  {
+    slug: "freelance-architect-rates-uae",
+    title: "Freelance Architect & Interior Designer Rates in the UAE (2026)",
+    description:
+      "Real AED rates for freelance architects and interior designers in Dubai and Abu Dhabi — per-sqm, per-project, and hourly fees for residential, commercial, and fit-out design in 2026.",
+    date: "June 16, 2026",
+    readTime: "8 min read",
+    category: "Pricing & Rates",
+  },
+  {
+    slug: "how-to-sell-digital-products-uae",
+    title: "How to Create and Sell Digital Products as a UAE Freelancer (2026 Guide)",
+    description:
+      "How UAE freelancers create and sell digital products — Notion templates, e-books, courses, prompts, and toolkits — to build passive income alongside client work. Platforms, pricing, and what sells.",
+    date: "June 16, 2026",
+    readTime: "8 min read",
+    category: "Business & Mindset",
+  },
+  {
+    slug: "freelance-legal-consultant-rates-uae",
+    title: "Freelance Legal Consultant Rates in the UAE (2026): What to Charge",
+    description:
+      "Real AED rates for freelance lawyers and legal consultants in Dubai and Abu Dhabi — hourly, retainer, and project fees for corporate law, contract review, compliance, and DIFC/ADGM legal work in 2026.",
+    date: "June 16, 2026",
+    readTime: "8 min read",
+    category: "Pricing & Rates",
+  },
 ];
 
 export function getPost(slug: string): BlogPost | undefined {
