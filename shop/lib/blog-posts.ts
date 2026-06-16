@@ -2510,6 +2510,33 @@ export const posts: BlogPost[] = [
     readTime: "7 min read",
     category: "Pricing & Rates",
   },
+  {
+    slug: "freelance-aviation-consultant-rates-uae",
+    title: "Freelance Aviation Consultant Rates in the UAE (2026)",
+    description:
+      "Real AED day rates for freelance aviation consultants in Dubai and Abu Dhabi. Airline operations advisory, aviation regulatory compliance, MRO consulting, airport planning, UAE GCAA compliance, and aviation safety management fees for 2026.",
+    date: "June 16, 2026",
+    readTime: "7 min read",
+    category: "Pricing & Rates",
+  },
+  {
+    slug: "how-to-track-freelance-time-uae",
+    title: "How UAE Freelancers Track Time Efficiently (2026 Guide)",
+    description:
+      "How UAE freelancers track time accurately for billing and project management — best time tracking tools, manual vs automated tracking, day rate vs hourly billing, time reporting for UAE clients, and how to use time data to raise rates.",
+    date: "June 16, 2026",
+    readTime: "7 min read",
+    category: "Systems & Productivity",
+  },
+  {
+    slug: "freelance-luxury-brand-consultant-rates-uae",
+    title: "Freelance Luxury Brand Consultant Rates in the UAE (2026)",
+    description:
+      "Real AED day rates for freelance luxury brand consultants in Dubai and Abu Dhabi. Luxury brand strategy, high-net-worth client experience, prestige retail advisory, luxury product development, and UAE luxury market entry fees for 2026.",
+    date: "June 16, 2026",
+    readTime: "7 min read",
+    category: "Pricing & Rates",
+  },
 ];
 
 export function getPost(slug: string): BlogPost | undefined {
