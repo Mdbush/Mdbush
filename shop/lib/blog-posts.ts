@@ -2861,6 +2861,33 @@ export const posts: BlogPost[] = [
     readTime: "7 min read",
     category: "Business & Mindset",
   },
+  {
+    slug: "freelance-investment-banker-rates-uae",
+    title: "Freelance Investment Banker & M&A Advisor Rates in the UAE (2026)",
+    description:
+      "Real AED rates for freelance investment bankers and M&A advisors in Dubai and Abu Dhabi. Buy-side and sell-side M&A advisory, capital raising, financial modelling, pitch deck preparation, due diligence support, and success fee structures for 2026.",
+    date: "June 16, 2026",
+    readTime: "7 min read",
+    category: "Pricing & Rates",
+  },
+  {
+    slug: "freelance-clinical-psychologist-rates-uae",
+    title: "Freelance Clinical Psychologist Rates in the UAE (2026)",
+    description:
+      "Real AED rates for freelance clinical psychologists in Dubai and Abu Dhabi. Individual therapy sessions, psychological assessments (ADHD, neuropsychology), corporate EAP programmes, clinical supervision, school psychology, and forensic psychology fees for 2026.",
+    date: "June 16, 2026",
+    readTime: "7 min read",
+    category: "Pricing & Rates",
+  },
+  {
+    slug: "how-to-build-freelance-team-uae",
+    title: "How to Build a Freelance Team in the UAE (2026 Guide)",
+    description:
+      "How UAE freelancers build a team of subcontractors and specialists to scale beyond solo capacity. Finding reliable UAE team members, structuring subcontractor agreements, managing quality, pricing for margin, and client communication for freelance teams in Dubai and Abu Dhabi.",
+    date: "June 16, 2026",
+    readTime: "7 min read",
+    category: "Business & Mindset",
+  },
 ];
 
 export function getPost(slug: string): BlogPost | undefined {
