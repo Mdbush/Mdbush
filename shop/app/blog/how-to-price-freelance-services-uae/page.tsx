@@ -44,219 +44,164 @@ export default function Article() {
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
       <Header />
+      <main className="min-h-screen bg-white">
+        <div className="max-w-3xl mx-auto px-4 py-10">
 
-      <main className="flex-1 max-w-2xl mx-auto px-4 sm:px-6 py-14">
-        <Link href="/blog" className="text-sm text-gray-400 hover:text-gray-700 transition-colors mb-8 inline-block">
-          ← Blog
-        </Link>
+          {/* Breadcrumb */}
+          <nav className="text-xs text-gray-400 mb-6 flex items-center gap-1.5">
+            <Link href="/" className="hover:text-gray-600">Home</Link>
+            <span>/</span>
+            <Link href="/blog" className="hover:text-gray-600">Blog</Link>
+            <span>/</span>
+            <span className="text-gray-600">How to Price Freelance Services UAE</span>
+          </nav>
 
-        <div className="mb-8">
-          <div className="flex items-center gap-3 mb-4">
-            <span className="text-xs font-semibold text-gray-400 uppercase tracking-widest">Business</span>
-            <span className="text-gray-200">·</span>
-            <span className="text-xs text-gray-400">June 15, 2026</span>
-            <span className="text-gray-200">·</span>
-            <span className="text-xs text-gray-400">6 min read</span>
-          </div>
-          <h1 className="text-3xl sm:text-4xl font-bold text-gray-900 leading-tight mb-4">
-            How to Price Your Freelance Services in the UAE (2026 Guide)
-          </h1>
-          <p className="text-lg text-gray-500 leading-relaxed">
-            Most UAE freelancers are leaving significant money on the table — not because of their skills,
-            but because they don't know how to price them. Here's how to fix that.
-          </p>
-        </div>
-
-        <div className="text-gray-700 leading-relaxed space-y-6">
-
-          <p>
-            Pricing is the single highest-leverage decision in your freelance business.
-            A 20% rate increase on a AED 15,000/month workload means AED 3,000 more per month —
-            AED 36,000 per year — for the same amount of work.
-          </p>
-
-          <p>
-            Yet most freelancers either guess their rates, copy what they see others charging,
-            or default to the lowest number they think clients will accept.
-          </p>
-
-          <p>Here's a more systematic approach.</p>
-
-          <h2 className="text-xl font-bold text-gray-900 mt-10 mb-3">UAE Freelance Rate Benchmarks (2026)</h2>
-
-          <p>These are approximate market rates based on Dubai and Abu Dhabi market research:</p>
-
-          <div className="overflow-x-auto my-6">
-            <table className="w-full text-sm border-collapse">
-              <thead>
-                <tr className="bg-gray-50 border-b border-gray-200">
-                  <th className="text-left p-3 font-semibold text-gray-700">Role</th>
-                  <th className="text-left p-3 font-semibold text-gray-700">Junior</th>
-                  <th className="text-left p-3 font-semibold text-gray-700">Mid</th>
-                  <th className="text-left p-3 font-semibold text-gray-700">Senior</th>
-                </tr>
-              </thead>
-              <tbody>
-                {benchmarks.map((b, i) => (
-                  <tr key={b.role} className={`border-b border-gray-100 ${i % 2 === 0 ? "" : "bg-gray-50"}`}>
-                    <td className="p-3 font-medium text-gray-900">{b.role}</td>
-                    <td className="p-3 text-gray-600">{b.junior}</td>
-                    <td className="p-3 text-gray-600">{b.mid}</td>
-                    <td className="p-3 text-gray-600">{b.senior}</td>
-                  </tr>
-                ))}
-              </tbody>
-            </table>
-          </div>
-
-          <p>
-            These are hourly rates for direct client work. Rates through agencies or platforms
-            like Upwork are typically 30-50% lower.
-          </p>
-
-          <h2 className="text-xl font-bold text-gray-900 mt-10 mb-3">3 Pricing Strategies That Actually Work</h2>
-
-          <h3 className="text-lg font-semibold text-gray-900 mt-6 mb-2">1. Value-Based Pricing (Best for high-impact work)</h3>
-
-          <p>
-            Instead of charging by the hour, charge based on the value you deliver to the client.
-          </p>
-
-          <p>
-            Example: A landing page redesign that increases a client&apos;s revenue by AED 100,000/month is
-            worth far more than 20 hours × AED 200/hr = AED 4,000.
-            The client would happily pay AED 15,000–25,000 for that outcome.
-          </p>
-
-          <p>
-            To use value-based pricing, you need to ask the right questions:
-          </p>
-
-          <ul className="list-disc pl-5 space-y-2 text-gray-600">
-            <li>What's the cost to the client if this problem isn't solved?</li>
-            <li>What's the expected revenue or cost savings from the solution?</li>
-            <li>What's the timeline — is speed a factor in the value?</li>
-          </ul>
-
-          <h3 className="text-lg font-semibold text-gray-900 mt-6 mb-2">2. Retainer Pricing (Best for recurring work)</h3>
-
-          <p>
-            A fixed monthly fee for a defined scope of work. Provides income predictability for you
-            and budget clarity for the client.
-          </p>
-
-          <p>
-            Start by calculating how many hours the work requires per month.
-            Add 20-30% buffer for admin, revisions, and communication.
-            Price the retainer slightly above your hourly equivalent to reflect the predictability benefit.
-          </p>
-
-          <p>
-            A well-structured retainer at AED 5,000-15,000/month from 2-3 clients
-            is a very solid foundation.
-          </p>
-
-          <h3 className="text-lg font-semibold text-gray-900 mt-6 mb-2">3. Project-Based Pricing (Most common)</h3>
-
-          <p>
-            A flat fee for a defined deliverable. Clients prefer this because they know the total cost upfront.
-            You benefit if you work faster than estimated.
-          </p>
-
-          <p>
-            The key: always have a clear scope and a change order process.
-            Scope creep is the #1 enemy of project profitability.
-          </p>
-
-          <div className="bg-gray-50 border border-gray-200 rounded-2xl p-5 my-6">
-            <p className="text-sm font-semibold text-gray-900 mb-1">🛡️ SOP Starter Pack — AED 175</p>
-            <p className="text-sm text-gray-500 mb-3">
-              Includes a scope creep reply SOP and a complete client onboarding process —
-              both essential for protecting your pricing.
+          {/* Dark gradient hero */}
+          <div className="bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 text-white px-6 py-10 rounded-2xl mb-8">
+            <span className="text-xs font-bold text-emerald-400 uppercase tracking-widest mb-3 block">BUSINESS</span>
+            <h1 className="text-3xl sm:text-4xl font-bold leading-tight mb-4">How to Price Your Freelance Services in the UAE (2026 Guide)</h1>
+            <p className="text-gray-300 text-sm mb-5 leading-relaxed max-w-xl">
+              Most UAE freelancers are leaving significant money on the table — not because of their skills, but because they don&apos;t know how to price them. Here&apos;s how to fix that.
             </p>
-            <Link
-              href="/products/sop-starter-pack"
-              className="inline-block bg-gray-900 text-white text-sm font-semibold px-5 py-2 rounded-xl hover:bg-gray-700 transition-colors"
-            >
-              Get the SOP Pack →
-            </Link>
-          </div>
-
-          <h2 className="text-xl font-bold text-gray-900 mt-10 mb-3">Common Pricing Mistakes UAE Freelancers Make</h2>
-
-          <ol className="list-decimal pl-5 space-y-4 text-gray-600">
-            <li>
-              <strong className="text-gray-900">Lowering rates to win clients.</strong>{" "}
-              Low rates attract low-quality clients. The clients who push hardest on price are usually
-              the most difficult to work with. Price for who you want to work with, not who you can get.
-            </li>
-            <li>
-              <strong className="text-gray-900">Not reviewing rates annually.</strong>{" "}
-              Inflation, skill growth, and market demand all go up. Your rates should too.
-              Build a "rate review" into your calendar every January.
-            </li>
-            <li>
-              <strong className="text-gray-900">Charging hourly for everything.</strong>{" "}
-              Hourly pricing punishes you for getting faster. As you improve, your hourly rate effectively
-              goes down. Switch to project or retainer pricing as soon as possible.
-            </li>
-            <li>
-              <strong className="text-gray-900">Not including admin time in project quotes.</strong>{" "}
-              Emails, revisions, calls, and file organization can add 20-30% to any project.
-              Always build this into your quote.
-            </li>
-          </ol>
-
-          <h2 className="text-xl font-bold text-gray-900 mt-10 mb-3">How to Raise Your Rates Without Losing Clients</h2>
-
-          <p>
-            Give existing clients 30-60 days notice. Frame it as a business decision, not an apology.
-            Something like: &quot;I&apos;m updating my rates for new projects starting in [month]. I wanted to give
-            you early notice. Our current projects won&apos;t be affected.&quot;
-          </p>
-
-          <p>
-            Most good clients will accept this. The ones who don&apos;t weren&apos;t paying you fairly anyway.
-          </p>
-
-          <div className="bg-gray-900 text-white rounded-2xl p-6 mt-10">
-            <p className="text-sm font-semibold text-gray-300 mb-1">Need a system to track this?</p>
-            <p className="text-xl font-bold mb-3">Freelancer Client CRM — AED 175</p>
-            <p className="text-gray-400 text-sm mb-4">
-              Track client rates, project revenue, and invoice status. Know exactly how much
-              you&apos;re earning from each client relationship.
-            </p>
-            <Link
-              href="/products/freelancer-client-crm"
-              className="inline-block bg-white text-gray-900 text-sm font-semibold px-6 py-2.5 rounded-xl hover:bg-gray-100 transition-colors"
-            >
-              Get the CRM →
-            </Link>
-          </div>
-        </div>
-
-          <div className="mt-10 pt-6 border-t border-gray-100">
-            <p className="text-sm font-semibold text-gray-900 mb-3">Further reading</p>
-            <div className="flex flex-col gap-2">
-              <Link href="/blog/freelance-proposal-tips-uae" className="text-sm text-gray-500 hover:text-gray-900 transition-colors underline underline-offset-2">
-                How to Write a Freelance Proposal That Wins Clients →
-              </Link>
-              <Link href="/blog/get-freelance-clients-uae" className="text-sm text-gray-500 hover:text-gray-900 transition-colors underline underline-offset-2">
-                How to Get Freelance Clients in the UAE (6 Strategies) →
-              </Link>
-              <Link href="/blog/late-payment-freelance-uae" className="text-sm text-gray-500 hover:text-gray-900 transition-colors underline underline-offset-2">
-                How to Chase Late Payments as a Freelancer in the UAE →
-              </Link>
+            <div className="flex flex-wrap gap-4 text-xs text-gray-400">
+              <span>June 15, 2026</span><span>·</span><span>6 min read</span>
             </div>
           </div>
 
-        <div className="mt-12 pt-8 border-t border-gray-100">
-          <Link href="/blog" className="text-sm text-gray-400 hover:text-gray-700 transition-colors">
-            ← Back to Blog
-          </Link>
+          {/* Key stats grid */}
+          <div className="grid grid-cols-3 gap-3 mb-8">
+            {[
+              { value: "+AED 36K", label: "Extra income from 20% raise" },
+              { value: "AED 5–15K", label: "Typical monthly retainer" },
+              { value: "30–50%", label: "Platform rate discount" },
+            ].map((s) => (
+              <div key={s.label} className="bg-gray-50 border border-gray-200 rounded-xl p-4 text-center">
+                <div className="text-lg font-bold text-gray-900">{s.value}</div>
+                <div className="text-xs text-gray-500 mt-1">{s.label}</div>
+              </div>
+            ))}
+          </div>
+
+          <p className="text-gray-700 leading-relaxed mb-4">
+            Pricing is the single highest-leverage decision in your freelance business. A 20% rate increase on a AED 15,000/month workload means AED 3,000 more per month — AED 36,000 per year — for the same amount of work.
+          </p>
+
+          <p className="text-gray-700 leading-relaxed mb-6">
+            Yet most freelancers either guess their rates, copy what they see others charging, or default to the lowest number they think clients will accept. Here&apos;s a more systematic approach.
+          </p>
+
+          <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2">
+            <span className="w-1 h-6 bg-emerald-500 rounded-full inline-block"></span>
+            UAE Freelance Rate Benchmarks (2026)
+          </h2>
+
+          <div className="rounded-2xl border border-gray-200 overflow-hidden mb-8">
+            <div className="bg-gray-900 px-5 py-3">
+              <h2 className="text-sm font-bold text-white">UAE Rate Benchmarks 2026</h2>
+            </div>
+            <div className="divide-y divide-gray-100">
+              {benchmarks.map((row, i) => (
+                <div key={i} className={`flex items-start justify-between gap-4 px-5 py-4 ${i % 2 === 0 ? "bg-white" : "bg-gray-50"}`}>
+                  <div className="flex-1">
+                    <p className="text-sm font-semibold text-gray-900">{row.role}</p>
+                    <p className="text-xs text-gray-500 mt-0.5">Junior · Mid · Senior</p>
+                  </div>
+                  <div className="text-right text-xs text-gray-500 space-y-0.5 shrink-0">
+                    <div>{row.junior}</div>
+                    <div className="font-bold text-emerald-700">{row.mid}</div>
+                    <div>{row.senior}</div>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+
+          <p className="text-gray-600 text-sm mb-8">
+            These are hourly rates for direct client work. Rates through agencies or platforms like Upwork are typically 30–50% lower.
+          </p>
+
+          <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2">
+            <span className="w-1 h-6 bg-emerald-500 rounded-full inline-block"></span>
+            3 Pricing Strategies That Actually Work
+          </h2>
+
+          <div className="grid sm:grid-cols-3 gap-4 mb-8">
+            <div className="border border-gray-200 rounded-xl p-5">
+              <h3 className="font-semibold text-gray-900 mb-2">Value-Based Pricing</h3>
+              <p className="text-sm text-gray-600">Charge based on the value you deliver. A landing page that increases revenue by AED 100K/month is worth AED 15,000–25,000, not AED 4,000 (20hrs × AED 200/hr).</p>
+            </div>
+            <div className="border border-gray-200 rounded-xl p-5">
+              <h3 className="font-semibold text-gray-900 mb-2">Retainer Pricing</h3>
+              <p className="text-sm text-gray-600">A fixed monthly fee for a defined scope. Provides income predictability for you and budget clarity for the client. AED 5,000–15,000/month from 2–3 clients is a solid foundation.</p>
+            </div>
+            <div className="border border-gray-200 rounded-xl p-5">
+              <h3 className="font-semibold text-gray-900 mb-2">Project-Based Pricing</h3>
+              <p className="text-sm text-gray-600">A flat fee for a defined deliverable. Clients prefer this because they know the total cost upfront. You benefit if you work faster than estimated. Always have a clear scope.</p>
+            </div>
+          </div>
+
+          <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2">
+            <span className="w-1 h-6 bg-emerald-500 rounded-full inline-block"></span>
+            Common Pricing Mistakes UAE Freelancers Make
+          </h2>
+
+          <ul className="space-y-3 mb-8">
+            {[
+              { mistake: "Lowering rates to win clients.", detail: "Low rates attract low-quality clients. The clients who push hardest on price are usually the most difficult to work with. Price for who you want to work with, not who you can get." },
+              { mistake: "Not reviewing rates annually.", detail: "Inflation, skill growth, and market demand all go up. Your rates should too. Build a 'rate review' into your calendar every January." },
+              { mistake: "Charging hourly for everything.", detail: "Hourly pricing punishes you for getting faster. As you improve, your hourly rate effectively goes down. Switch to project or retainer pricing as soon as possible." },
+              { mistake: "Not including admin time in project quotes.", detail: "Emails, revisions, calls, and file organization can add 20–30% to any project. Always build this into your quote." },
+            ].map((row) => (
+              <li key={row.mistake} className="flex gap-3 text-sm text-gray-700">
+                <span className="text-emerald-500 font-bold mt-0.5 shrink-0">→</span>
+                <span><strong className="text-gray-900">{row.mistake}</strong> {row.detail}</span>
+              </li>
+            ))}
+          </ul>
+
+          <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2">
+            <span className="w-1 h-6 bg-emerald-500 rounded-full inline-block"></span>
+            How to Raise Your Rates Without Losing Clients
+          </h2>
+
+          <p className="text-gray-700 leading-relaxed mb-4">
+            Give existing clients 30–60 days notice. Frame it as a business decision, not an apology. Something like: &quot;I&apos;m updating my rates for new projects starting in [month]. I wanted to give you early notice. Our current projects won&apos;t be affected.&quot;
+          </p>
+
+          <div className="bg-emerald-50 border border-emerald-200 rounded-xl p-5 mb-6">
+            <p className="text-sm font-semibold text-emerald-900 mb-1">💡 Key Insight</p>
+            <p className="text-sm text-emerald-800">Most good clients will accept a rate increase. The ones who don&apos;t weren&apos;t paying you fairly anyway. New clients should always be quoted the higher rate — you&apos;ll be surprised how rarely they push back.</p>
+          </div>
+
+          {/* CTA */}
+          <div className="bg-gradient-to-br from-gray-900 to-gray-800 text-white rounded-2xl p-8 mt-12 text-center">
+            <span className="text-xs font-bold text-emerald-400 uppercase tracking-widest block mb-3">SoloKit</span>
+            <h3 className="text-2xl font-bold mb-3">Track Client Rates and Revenue in One Place</h3>
+            <p className="text-gray-400 text-sm mb-6 max-w-sm mx-auto">Track client rates, project revenue, and invoice status. Know exactly how much you&apos;re earning from each client relationship.</p>
+            <Link href="/products/freelancer-client-crm" className="inline-block bg-emerald-500 hover:bg-emerald-400 text-white font-bold px-8 py-3 rounded-xl transition-colors text-sm">
+              Get the Freelancer CRM →
+            </Link>
+          </div>
+
+          {/* Related links */}
+          <div className="mt-10">
+            <h3 className="text-sm font-semibold text-gray-900 mb-3">Related Guides</h3>
+            <div className="space-y-1.5">
+              {[
+                { href: "/blog/freelance-rate-calculator-uae", label: "Freelance Rate Calculator UAE — What Should You Charge?" },
+                { href: "/blog/get-freelance-clients-uae", label: "How to Get Freelance Clients in the UAE (6 Strategies)" },
+                { href: "/blog/freelance-developer-rates-uae", label: "Freelance Developer Rates in the UAE (2026)" },
+                { href: "/blog/freelance-consultant-rates-uae", label: "Freelance Consultant Rates in the UAE (2026)" },
+              ].map((link) => (
+                <Link key={link.href} href={link.href} className="block text-blue-600 hover:text-blue-800 text-sm">
+                  → {link.label}
+                </Link>
+              ))}
+            </div>
+          </div>
+
         </div>
       </main>
-
       <Footer />
     </>
   );

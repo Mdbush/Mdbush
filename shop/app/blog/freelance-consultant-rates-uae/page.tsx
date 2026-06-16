@@ -39,203 +39,188 @@ const rates = [
   { specialization: "Legal / Compliance Consultant", junior: "AED 1,000–1,800/day", mid: "AED 2,000–4,000/day", senior: "AED 4,500–10,000+/day" },
 ];
 
+const projectPricing = [
+  { type: "Market entry strategy", range: "AED 35,000–120,000", note: "Depends on market complexity and deliverable depth" },
+  { type: "Organizational restructure", range: "AED 50,000–200,000+", note: "Larger engagements for enterprise clients" },
+  { type: "Process audit and redesign", range: "AED 25,000–80,000", note: "2–8 week engagement" },
+  { type: "Board advisory (part-time)", range: "AED 8,000–25,000/month", note: "1–2 days/month, often equity or cash" },
+  { type: "Interim CFO/COO (fractional)", range: "AED 20,000–50,000/month", note: "2–3 days/week of dedicated time" },
+  { type: "Keynote / expert speaking", range: "AED 5,000–30,000/session", note: "Highly variable based on profile and event size" },
+];
+
 export default function FreelanceConsultantRatesUAE() {
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
       <Header />
+      <main className="min-h-screen bg-white">
+        <div className="max-w-3xl mx-auto px-4 py-10">
 
-      <main className="flex-1 max-w-2xl mx-auto px-4 sm:px-6 py-12">
+          {/* Breadcrumb */}
+          <nav className="text-xs text-gray-400 mb-6 flex items-center gap-1.5">
+            <Link href="/" className="hover:text-gray-600">Home</Link>
+            <span>/</span>
+            <Link href="/blog" className="hover:text-gray-600">Blog</Link>
+            <span>/</span>
+            <span className="text-gray-600">Freelance Consultant Rates UAE</span>
+          </nav>
 
-        <nav className="text-xs text-gray-400 mb-6 flex gap-2 flex-wrap">
-          <Link href="/" className="hover:text-gray-600">Home</Link>
-          <span>›</span>
-          <Link href="/blog" className="hover:text-gray-600">Blog</Link>
-          <span>›</span>
-          <span className="text-gray-600">Freelance Consultant Rates UAE</span>
-        </nav>
-
-        <header className="mb-8">
-          <span className="text-xs font-semibold text-gray-400 uppercase tracking-widest">Pricing & Rates</span>
-          <h1 className="text-3xl font-bold text-gray-900 mt-2 mb-3 leading-tight">
-            Freelance Consultant Rates in the UAE (2026): What to Charge
-          </h1>
-          <p className="text-gray-500 text-sm">8 min read</p>
-        </header>
-
-        <div className="prose prose-gray max-w-none text-gray-700 leading-relaxed space-y-6">
-
-          <p>
-            Consulting is one of the highest-earning freelance categories in the UAE. Independent
-            consultants with 10+ years of experience regularly bill AED 5,000–10,000 per day to
-            corporate and government clients. But knowing what the market will pay — and how to
-            position yourself to access those rates — requires understanding how UAE clients think
-            about consulting fees.
-          </p>
-          <p>
-            This guide breaks down day rates, hourly fees, and project pricing for independent
-            consultants across the main specializations in the UAE market.
-          </p>
-
-          <section>
-            <h2 className="text-xl font-bold text-gray-900 mt-8 mb-4">UAE Freelance Consultant Day Rates (2026)</h2>
-            <div className="overflow-x-auto -mx-4 sm:mx-0">
-              <table className="w-full text-sm border-collapse min-w-[560px]">
-                <thead>
-                  <tr className="bg-gray-50">
-                    <th className="text-left p-3 border border-gray-200 font-semibold text-gray-900">Specialization</th>
-                    <th className="text-left p-3 border border-gray-200 font-semibold text-gray-900">Junior</th>
-                    <th className="text-left p-3 border border-gray-200 font-semibold text-gray-900">Mid-Level</th>
-                    <th className="text-left p-3 border border-gray-200 font-semibold text-gray-900">Senior</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  {rates.map((row, i) => (
-                    <tr key={i} className={i % 2 === 0 ? "bg-white" : "bg-gray-50"}>
-                      <td className="p-3 border border-gray-200 font-medium text-gray-900">{row.specialization}</td>
-                      <td className="p-3 border border-gray-200 text-gray-600">{row.junior}</td>
-                      <td className="p-3 border border-gray-200 text-gray-600">{row.mid}</td>
-                      <td className="p-3 border border-gray-200 text-gray-600">{row.senior}</td>
-                    </tr>
-                  ))}
-                </tbody>
-              </table>
+          {/* Dark gradient hero */}
+          <div className="bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 text-white px-6 py-10 rounded-2xl mb-8">
+            <span className="text-xs font-bold text-emerald-400 uppercase tracking-widest mb-3 block">PRICING &amp; RATES</span>
+            <h1 className="text-3xl sm:text-4xl font-bold leading-tight mb-4">Freelance Consultant Rates in the UAE (2026): What to Charge</h1>
+            <p className="text-gray-300 text-sm mb-5 leading-relaxed max-w-xl">
+              Consulting is one of the highest-earning freelance categories in the UAE. Independent consultants with 10+ years of experience regularly bill AED 5,000–10,000 per day to corporate and government clients. Here&apos;s how the market is priced.
+            </p>
+            <div className="flex flex-wrap gap-4 text-xs text-gray-400">
+              <span>June 2026</span><span>·</span><span>8 min read</span>
             </div>
-            <p className="text-xs text-gray-400 mt-2">
-              Day rates assume an 8-hour working day. Convert to hourly by dividing by 6 (not 8 — to account for non-billable meeting preparation and admin). International clients typically pay 30–60% above these figures.
-            </p>
-          </section>
+          </div>
 
-          <section>
-            <h2 className="text-xl font-bold text-gray-900 mt-8 mb-3">How UAE Consulting Fees Are Structured</h2>
+          {/* Key stats grid */}
+          <div className="grid grid-cols-3 gap-3 mb-8">
+            {[
+              { value: "AED 600–1,800", label: "Junior / day" },
+              { value: "AED 1,200–3,200", label: "Mid / day" },
+              { value: "AED 2,500–10K+", label: "Senior / day" },
+            ].map((s) => (
+              <div key={s.label} className="bg-gray-50 border border-gray-200 rounded-xl p-4 text-center">
+                <div className="text-lg font-bold text-gray-900">{s.value}</div>
+                <div className="text-xs text-gray-500 mt-1">{s.label}</div>
+              </div>
+            ))}
+          </div>
 
-            <h3 className="text-base font-semibold text-gray-900 mt-4 mb-2">Daily rate (most common for short engagements)</h3>
-            <p>
-              Day rates are standard for consulting engagements in the UAE. They are transparent,
-              easy for clients to budget, and widely understood by procurement teams. Most UAE
-              consultants quote a daily rate and then negotiate the number of days per month or
-              per project.
-            </p>
+          <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2">
+            <span className="w-1 h-6 bg-emerald-500 rounded-full inline-block"></span>
+            UAE Freelance Consultant Day Rates (2026)
+          </h2>
 
-            <h3 className="text-base font-semibold text-gray-900 mt-4 mb-2">Monthly retainer (best for ongoing advisory)</h3>
-            <p>
-              Many UAE consultants convert their best client relationships into monthly retainer
-              agreements — typically 2–4 days of access per month for a fixed fee. A typical
-              mid-level strategy consultant might charge AED 12,000–20,000/month for a 3-day
-              retainer. Retainers provide income predictability and deeper client relationships.
-            </p>
-
-            <h3 className="text-base font-semibold text-gray-900 mt-4 mb-2">Project-based pricing (for defined deliverables)</h3>
-            <p>
-              For clearly scoped projects — a market entry strategy, an organizational design,
-              a process audit — project pricing is often better for both parties. A 6-week
-              market entry strategy for a mid-level consultant might be priced at AED 45,000–80,000
-              regardless of actual days spent. This rewards efficient delivery.
-            </p>
-          </section>
-
-          <section>
-            <h2 className="text-xl font-bold text-gray-900 mt-8 mb-3">What Clients in the UAE Pay For Consulting</h2>
-
-            <div className="space-y-3 mt-3">
-              {[
-                { type: "Market entry strategy", range: "AED 35,000–120,000", note: "Depends on market complexity and deliverable depth" },
-                { type: "Organizational restructure", range: "AED 50,000–200,000+", note: "Larger engagements for enterprise clients" },
-                { type: "Process audit and redesign", range: "AED 25,000–80,000", note: "2–8 week engagement" },
-                { type: "Board advisory (part-time)", range: "AED 8,000–25,000/month", note: "1–2 days/month, often equity or cash" },
-                { type: "Interim CFO/COO (fractional)", range: "AED 20,000–50,000/month", note: "2–3 days/week of dedicated time" },
-                { type: "Keynote / expert speaking", range: "AED 5,000–30,000/session", note: "Highly variable based on profile and event size" },
-              ].map((item, i) => (
-                <div key={i} className="flex flex-col sm:flex-row sm:items-center gap-2 py-2.5 border-b border-gray-100 last:border-0">
-                  <span className="text-sm text-gray-700 sm:flex-1">{item.type}</span>
-                  <span className="font-semibold text-gray-900 text-sm shrink-0">{item.range}</span>
-                  <span className="text-xs text-gray-400 sm:w-44 shrink-0">{item.note}</span>
+          <div className="rounded-2xl border border-gray-200 overflow-hidden mb-6">
+            <div className="bg-gray-900 px-5 py-3">
+              <h2 className="text-sm font-bold text-white">UAE Consultant Day Rate Benchmarks 2026</h2>
+            </div>
+            <div className="divide-y divide-gray-100">
+              {rates.map((row, i) => (
+                <div key={i} className={`px-5 py-4 ${i % 2 === 0 ? "bg-white" : "bg-gray-50"}`}>
+                  <div className="flex items-start justify-between gap-4">
+                    <p className="text-sm font-semibold text-gray-900">{row.specialization}</p>
+                    <span className="text-xs font-bold text-emerald-700 bg-emerald-50 border border-emerald-200 px-3 py-1 rounded-full whitespace-nowrap shrink-0">{row.mid}</span>
+                  </div>
+                  <div className="flex gap-4 mt-1 text-xs text-gray-400">
+                    <span>Jr: {row.junior}</span>
+                    <span>Sr: {row.senior}</span>
+                  </div>
                 </div>
               ))}
             </div>
-          </section>
+          </div>
 
-          <section>
-            <h2 className="text-xl font-bold text-gray-900 mt-8 mb-3">Why UAE Consulting Rates Vary So Widely</h2>
+          <p className="text-xs text-gray-400 mb-8">Day rates assume an 8-hour working day. Convert to hourly by dividing by 6 (not 8 — to account for non-billable meeting preparation and admin). International clients typically pay 30–60% above these figures.</p>
 
-            <h3 className="text-base font-semibold text-gray-900 mt-4 mb-2">Sector background matters more than years of experience</h3>
-            <p>
-              A consultant with 5 years in Dubai real estate development commands significantly
-              more than a generalist with 10 years. UAE clients pay heavily for sector-specific
-              knowledge — the regulatory environment, the key players, the unwritten rules. The
-              more specific your background, the more you can charge.
-            </p>
+          <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2">
+            <span className="w-1 h-6 bg-emerald-500 rounded-full inline-block"></span>
+            How UAE Consulting Fees Are Structured
+          </h2>
 
-            <h3 className="text-base font-semibold text-gray-900 mt-4 mb-2">Government and semi-government clients pay the most</h3>
-            <p>
-              UAE government entities (federal and emirate-level) and semi-government organizations
-              (ADNOC, Etisalat, DEWA, etc.) have the largest consulting budgets and the longest
-              procurement cycles. A single government consulting engagement can pay more than an
-              entire year of SME work. The trade-off: 60–120 day payment terms, procurement
-              paperwork, and committee approvals.
-            </p>
+          <div className="grid sm:grid-cols-3 gap-4 mb-8">
+            <div className="border border-gray-200 rounded-xl p-5">
+              <h3 className="font-semibold text-gray-900 mb-2">Daily Rate</h3>
+              <p className="text-sm text-gray-600">Most common for short engagements. Day rates are transparent, easy for clients to budget, and widely understood by procurement teams. Quote a daily rate and negotiate the number of days per month or per project.</p>
+            </div>
+            <div className="border border-gray-200 rounded-xl p-5">
+              <h3 className="font-semibold text-gray-900 mb-2">Monthly Retainer</h3>
+              <p className="text-sm text-gray-600">Best for ongoing advisory. Typically 2–4 days of access per month for a fixed fee. A mid-level strategy consultant might charge AED 12,000–20,000/month for a 3-day retainer. Provides income predictability and deeper client relationships.</p>
+            </div>
+            <div className="border border-gray-200 rounded-xl p-5">
+              <h3 className="font-semibold text-gray-900 mb-2">Project-Based</h3>
+              <p className="text-sm text-gray-600">For clearly scoped projects — a market entry strategy, an organizational design, a process audit. A 6-week market entry strategy might be priced at AED 45,000–80,000 regardless of actual days spent. Rewards efficient delivery.</p>
+            </div>
+          </div>
 
-            <h3 className="text-base font-semibold text-gray-900 mt-4 mb-2">Your credential and network in the UAE</h3>
-            <p>
-              UAE consulting clients are risk-averse about who they bring in. A consultant who
-              has worked at McKinsey, BCG, PwC, Deloitte, or a major UAE conglomerate carries
-              a credibility premium. If you do not have a big-firm background, compensate with
-              specific case studies, client references, and UAE-focused thought leadership.
-            </p>
-          </section>
+          <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2">
+            <span className="w-1 h-6 bg-emerald-500 rounded-full inline-block"></span>
+            What Clients Pay for UAE Consulting Projects
+          </h2>
 
-          <section>
-            <h2 className="text-xl font-bold text-gray-900 mt-8 mb-3">How to Set Your Rate as a New Independent Consultant</h2>
-            <p>
-              If you are transitioning from employment to independent consulting in the UAE,
-              the most common mistake is anchoring on your salary. Your consulting rate needs
-              to account for:
-            </p>
-            <ul className="space-y-2 text-sm text-gray-600 mt-3">
-              <li>• No employer benefits (health insurance, pension, annual leave, sick pay)</li>
-              <li>• Non-billable time (business development, admin, CPD) — typically 30–40% of your time</li>
-              <li>• License and visa costs (AED 10,000–20,000/year)</li>
-              <li>• Months with lower utilization, especially in the first year</li>
-            </ul>
-            <p className="mt-3">
-              A common formula: take your annual salary equivalent, add 40% for benefits and non-billable time, add 15% for a profit margin, and divide by 200 (billable days at 80% utilization). The result is your minimum viable daily rate.
-            </p>
-          </section>
+          <div className="rounded-2xl border border-gray-200 overflow-hidden mb-8">
+            <div className="bg-gray-900 px-5 py-3">
+              <h2 className="text-sm font-bold text-white">Typical Project Budgets</h2>
+            </div>
+            <div className="divide-y divide-gray-100">
+              {projectPricing.map((row, i) => (
+                <div key={i} className={`flex items-start justify-between gap-4 px-5 py-4 ${i % 2 === 0 ? "bg-white" : "bg-gray-50"}`}>
+                  <div className="flex-1">
+                    <p className="text-sm font-semibold text-gray-900">{row.type}</p>
+                    <p className="text-xs text-gray-500 mt-0.5">{row.note}</p>
+                  </div>
+                  <span className="text-xs font-bold text-emerald-700 bg-emerald-50 border border-emerald-200 px-3 py-1 rounded-full whitespace-nowrap shrink-0">{row.range}</span>
+                </div>
+              ))}
+            </div>
+          </div>
+
+          <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2">
+            <span className="w-1 h-6 bg-emerald-500 rounded-full inline-block"></span>
+            Why UAE Consulting Rates Vary So Widely
+          </h2>
+
+          <ul className="space-y-3 mb-8">
+            {[
+              { point: "Sector background matters more than years of experience", detail: "A consultant with 5 years in Dubai real estate development commands significantly more than a generalist with 10 years. UAE clients pay heavily for sector-specific knowledge." },
+              { point: "Government and semi-government clients pay the most", detail: "UAE government entities have the largest consulting budgets. A single government engagement can pay more than an entire year of SME work. The trade-off: 60–120 day payment terms and procurement paperwork." },
+              { point: "Your credential and network in the UAE", detail: "UAE consulting clients are risk-averse. A consultant who has worked at McKinsey, BCG, PwC, or a major UAE conglomerate carries a credibility premium. Without a big-firm background, compensate with specific case studies and UAE-focused thought leadership." },
+            ].map((row) => (
+              <li key={row.point} className="flex gap-3 text-sm text-gray-700">
+                <span className="text-emerald-500 font-bold mt-0.5 shrink-0">→</span>
+                <span><strong className="text-gray-900">{row.point}:</strong> {row.detail}</span>
+              </li>
+            ))}
+          </ul>
+
+          <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2">
+            <span className="w-1 h-6 bg-emerald-500 rounded-full inline-block"></span>
+            Setting Your Rate as a New Independent Consultant
+          </h2>
+
+          <p className="text-gray-700 leading-relaxed mb-4">
+            If you are transitioning from employment to independent consulting in the UAE, the most common mistake is anchoring on your salary. Your consulting rate needs to account for: no employer benefits (health insurance, pension, annual leave), non-billable time (business development, admin, CPD — typically 30–40% of your time), license and visa costs (AED 10,000–20,000/year), and months with lower utilization, especially in the first year.
+          </p>
+
+          <div className="bg-emerald-50 border border-emerald-200 rounded-xl p-5 mb-6">
+            <p className="text-sm font-semibold text-emerald-900 mb-1">💡 The Consulting Rate Formula</p>
+            <p className="text-sm text-emerald-800">Take your annual salary equivalent. Add 40% for benefits and non-billable time. Add 15% for a profit margin. Divide by 200 (billable days at 80% utilization). The result is your minimum viable daily rate.</p>
+          </div>
 
           {/* CTA */}
-          <div className="bg-gray-950 text-white rounded-2xl p-6 mt-10">
-            <p className="text-xs font-semibold text-gray-400 uppercase tracking-widest mb-2">Run your consulting business properly</p>
-            <h3 className="text-lg font-bold mb-2">The Solopreneur OS — built for independent consultants</h3>
-            <p className="text-gray-400 text-sm mb-4">
-              Client pipeline, project tracking, revenue dashboard, and 90-day goal planning
-              — everything an independent consultant needs to run a professional practice from Notion.
-            </p>
-            <Link
-              href="/products/solopreneur-os"
-              className="inline-block bg-white text-gray-900 font-bold px-5 py-2.5 rounded-xl hover:bg-gray-100 transition-colors text-sm"
-            >
-              See the Solopreneur OS →
+          <div className="bg-gradient-to-br from-gray-900 to-gray-800 text-white rounded-2xl p-8 mt-12 text-center">
+            <span className="text-xs font-bold text-emerald-400 uppercase tracking-widest block mb-3">SoloKit</span>
+            <h3 className="text-2xl font-bold mb-3">Run Your Consulting Practice Like a Pro</h3>
+            <p className="text-gray-400 text-sm mb-6 max-w-sm mx-auto">Client pipeline, project tracking, revenue dashboard, and 90-day goal planning — everything an independent consultant needs to run a professional practice.</p>
+            <Link href="/products/solokit-freelance-os" className="inline-block bg-emerald-500 hover:bg-emerald-400 text-white font-bold px-8 py-3 rounded-xl transition-colors text-sm">
+              Get SoloKit →
             </Link>
           </div>
 
-          <div className="border border-gray-200 rounded-2xl p-5 mt-6">
-            <p className="text-xs font-semibold text-gray-400 uppercase tracking-widest mb-3">Related guides</p>
-            <div className="space-y-2">
+          {/* Related links */}
+          <div className="mt-10">
+            <h3 className="text-sm font-semibold text-gray-900 mb-3">Related Guides</h3>
+            <div className="space-y-1.5">
               {[
-                { href: "/blog/freelance-rate-calculator-uae", title: "Freelance Rate Calculator: How Much Should You Charge?" },
-                { href: "/blog/how-to-negotiate-freelance-rates-uae", title: "How to Negotiate Rates Without Losing the Client" },
-                { href: "/blog/freelance-vs-salary-uae", title: "Freelance vs Salary in the UAE: The Real Numbers" },
-                { href: "/blog/get-referrals-freelance-uae", title: "How to Get Referrals as a UAE Freelancer" },
+                { href: "/blog/freelance-rate-calculator-uae", label: "Freelance Rate Calculator: How Much Should You Charge?" },
+                { href: "/blog/freelance-developer-rates-uae", label: "Freelance Developer Rates in the UAE (2026)" },
+                { href: "/blog/freelance-designer-rates-uae", label: "Freelance Designer Rates in the UAE (2026)" },
+                { href: "/blog/get-freelance-clients-uae", label: "How to Get Freelance Clients in the UAE" },
               ].map((link) => (
-                <Link key={link.href} href={link.href} className="block text-sm text-gray-700 hover:text-gray-900 hover:underline">
-                  → {link.title}
+                <Link key={link.href} href={link.href} className="block text-blue-600 hover:text-blue-800 text-sm">
+                  → {link.label}
                 </Link>
               ))}
             </div>
           </div>
+
         </div>
       </main>
-
       <Footer />
     </>
   );

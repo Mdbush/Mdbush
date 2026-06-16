@@ -16,6 +16,8 @@ export const metadata: Metadata = {
   },
 };
 
+const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? "https://solokit.cloud";
+
 const jsonLd = {
   "@context": "https://schema.org",
   "@type": "Article",
@@ -74,49 +76,58 @@ export default function Article() {
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
       <Header />
+      <main className="min-h-screen bg-white">
+        <div className="max-w-3xl mx-auto px-4 py-10">
 
-      <main className="flex-1 max-w-2xl mx-auto px-4 sm:px-6 py-14">
-        <Link href="/blog" className="text-sm text-gray-400 hover:text-gray-700 transition-colors mb-8 inline-block">
-          ← Blog
-        </Link>
+          {/* Breadcrumb */}
+          <nav className="text-xs text-gray-400 mb-6 flex items-center gap-1.5">
+            <Link href="/" className="hover:text-gray-600">Home</Link>
+            <span>/</span>
+            <Link href="/blog" className="hover:text-gray-600">Blog</Link>
+            <span>/</span>
+            <span className="text-gray-600">Freelance Visa UAE</span>
+          </nav>
 
-        <div className="mb-8">
-          <div className="flex items-center gap-3 mb-4">
-            <span className="text-xs font-semibold text-gray-400 uppercase tracking-widest">Business</span>
-            <span className="text-gray-200">·</span>
-            <span className="text-xs text-gray-400">June 15, 2026</span>
-            <span className="text-gray-200">·</span>
-            <span className="text-xs text-gray-400">8 min read</span>
+          {/* Dark gradient hero */}
+          <div className="bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 text-white px-6 py-10 rounded-2xl mb-8">
+            <span className="text-xs font-bold text-emerald-400 uppercase tracking-widest mb-3 block">BUSINESS &amp; LEGAL</span>
+            <h1 className="text-3xl sm:text-4xl font-bold leading-tight mb-4">How to Get a Freelance Visa in the UAE (2026 Guide)</h1>
+            <p className="text-gray-300 text-sm mb-5 leading-relaxed max-w-xl">
+              A complete breakdown of UAE freelance permits — which free zone to choose, what it actually costs, and the step-by-step process to get legal and start working.
+            </p>
+            <div className="flex flex-wrap gap-4 text-xs text-gray-400">
+              <span>June 15, 2026</span><span>·</span><span>8 min read</span>
+            </div>
           </div>
-          <h1 className="text-3xl sm:text-4xl font-bold text-gray-900 leading-tight mb-4">
-            How to Get a Freelance Visa in the UAE (2026 Guide)
-          </h1>
-          <p className="text-lg text-gray-500 leading-relaxed">
-            A complete breakdown of UAE freelance permits — which free zone to choose,
-            what it actually costs, and the step-by-step process to get legal and start working.
-          </p>
-        </div>
 
-        <div className="text-gray-700 leading-relaxed space-y-6">
+          {/* Key stats grid */}
+          <div className="grid grid-cols-3 gap-3 mb-8">
+            {[
+              { value: "AED 5,750+", label: "Lowest permit cost" },
+              { value: "3–7 days", label: "Setup time" },
+              { value: "AED 10–16K", label: "First-year total" },
+            ].map((s) => (
+              <div key={s.label} className="bg-gray-50 border border-gray-200 rounded-xl p-4 text-center">
+                <div className="text-lg font-bold text-gray-900">{s.value}</div>
+                <div className="text-xs text-gray-500 mt-1">{s.label}</div>
+              </div>
+            ))}
+          </div>
 
-          <p>
-            Going freelance in the UAE without the right visa is one of the most common and costly
-            mistakes new solopreneurs make. Working under a company visa while freelancing independently
-            violates your visa terms — and the consequences range from visa cancellation to fines.
-          </p>
-
-          <p>
-            The good news: getting a legitimate freelance permit in the UAE is simpler than most people think,
-            and often cheaper than a full company license. Here&apos;s the full picture.
+          <p className="text-gray-700 leading-relaxed mb-4">
+            Going freelance in the UAE without the right visa is one of the most common and costly mistakes new solopreneurs make. Working under a company visa while freelancing independently violates your visa terms — and the consequences range from visa cancellation to fines.
           </p>
 
-          <h2 className="text-xl font-bold text-gray-900 mt-10 mb-3">Freelance Permit vs Freelance Visa: What&apos;s the Difference?</h2>
-
-          <p>
-            These terms are often used interchangeably but they&apos;re technically different:
+          <p className="text-gray-700 leading-relaxed mb-6">
+            The good news: getting a legitimate freelance permit in the UAE is simpler than most people think, and often cheaper than a full company license. Here&apos;s the full picture.
           </p>
 
-          <div className="flex flex-col gap-3 my-4">
+          <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2">
+            <span className="w-1 h-6 bg-emerald-500 rounded-full inline-block"></span>
+            Freelance Permit vs Freelance Visa: What&apos;s the Difference?
+          </h2>
+
+          <div className="grid sm:grid-cols-3 gap-4 mb-8">
             {[
               {
                 term: "Freelance Permit",
@@ -138,47 +149,38 @@ export default function Article() {
             ))}
           </div>
 
-          <p>
-            Most UAE freelancers need both: a freelance permit (to operate legally) and a residency visa
-            (to live here). Some free zones bundle both together; others price them separately.
+          <p className="text-gray-700 leading-relaxed mb-6">
+            Most UAE freelancers need both: a freelance permit (to operate legally) and a residency visa (to live here). Some free zones bundle both together; others price them separately.
           </p>
 
-          <h2 className="text-xl font-bold text-gray-900 mt-10 mb-3">The Main Free Zones for Freelancers (2026 Costs)</h2>
+          <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2">
+            <span className="w-1 h-6 bg-emerald-500 rounded-full inline-block"></span>
+            The Main Free Zones for Freelancers (2026 Costs)
+          </h2>
 
-          <p>
-            Free zones are the primary route for freelance permits in the UAE. Each has its own focus,
-            pricing, and requirements. Here&apos;s a comparison of the most popular options:
-          </p>
-
-          <div className="overflow-x-auto my-6">
-            <table className="w-full text-sm border-collapse">
-              <thead>
-                <tr className="bg-gray-50 border-b border-gray-200">
-                  <th className="text-left p-3 font-semibold text-gray-700">Free Zone</th>
-                  <th className="text-left p-3 font-semibold text-gray-700">Annual Cost</th>
-                  <th className="text-left p-3 font-semibold text-gray-700">Best For</th>
-                </tr>
-              </thead>
-              <tbody>
-                {freeZones.map((zone, i) => (
-                  <tr key={zone.name} className={`border-b border-gray-100 ${i % 2 === 0 ? "" : "bg-gray-50"}`}>
-                    <td className="p-3 text-gray-700 font-medium">{zone.name}</td>
-                    <td className="p-3 text-gray-600">{zone.cost}</td>
-                    <td className="p-3 text-gray-500">{zone.bestFor}</td>
-                  </tr>
-                ))}
-              </tbody>
-            </table>
+          <div className="rounded-2xl border border-gray-200 overflow-hidden mb-8">
+            <div className="bg-gray-900 px-5 py-3">
+              <h2 className="text-sm font-bold text-white">Free Zone Comparison 2026</h2>
+            </div>
+            <div className="divide-y divide-gray-100">
+              {freeZones.map((zone, i) => (
+                <div key={i} className={`flex items-start justify-between gap-4 px-5 py-4 ${i % 2 === 0 ? "bg-white" : "bg-gray-50"}`}>
+                  <div className="flex-1">
+                    <p className="text-sm font-semibold text-gray-900">{zone.name}</p>
+                    <p className="text-xs text-gray-500 mt-0.5">{zone.bestFor} · {zone.notes}</p>
+                  </div>
+                  <span className="text-xs font-bold text-emerald-700 bg-emerald-50 border border-emerald-200 px-3 py-1 rounded-full whitespace-nowrap shrink-0">{zone.cost}</span>
+                </div>
+              ))}
+            </div>
           </div>
 
-          <p className="text-sm text-gray-500 -mt-2">
-            Note: Costs above are for the permit only. Residency visa typically adds AED 3,000–6,000.
-            Prices change — always verify directly with the free zone.
-          </p>
+          <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2">
+            <span className="w-1 h-6 bg-emerald-500 rounded-full inline-block"></span>
+            Step-by-Step: How to Get Your Freelance Permit
+          </h2>
 
-          <h2 className="text-xl font-bold text-gray-900 mt-10 mb-3">Step-by-Step: How to Get Your Freelance Permit</h2>
-
-          <div className="space-y-4 my-6">
+          <div className="space-y-4 mb-8">
             {[
               {
                 num: "1",
@@ -223,9 +225,12 @@ export default function Article() {
             ))}
           </div>
 
-          <h2 className="text-xl font-bold text-gray-900 mt-10 mb-3">Total Cost Breakdown (Realistic Numbers)</h2>
+          <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2">
+            <span className="w-1 h-6 bg-emerald-500 rounded-full inline-block"></span>
+            Total Cost Breakdown (Realistic Numbers)
+          </h2>
 
-          <div className="bg-gray-50 border border-gray-200 rounded-2xl p-5 my-6 text-sm">
+          <div className="bg-gray-50 border border-gray-200 rounded-2xl p-5 mb-8 text-sm">
             <p className="font-semibold text-gray-900 mb-3">Example: Mid-range setup (Shams or RAKEZ)</p>
             <div className="space-y-2 text-gray-600">
               <div className="flex justify-between"><span>Freelance permit (annual)</span><span className="font-medium text-gray-900">AED 6,000 – 8,000</span></div>
@@ -240,37 +245,26 @@ export default function Article() {
             <p className="text-xs text-gray-400 mt-3">Renewal in subsequent years is just the permit fee (AED 6,000–8,000). Visa renewal every 2–3 years.</p>
           </div>
 
-          <h2 className="text-xl font-bold text-gray-900 mt-10 mb-3">Can You Freelance on a Tourist Visa?</h2>
+          <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2">
+            <span className="w-1 h-6 bg-emerald-500 rounded-full inline-block"></span>
+            Can You Freelance on a Tourist Visa?
+          </h2>
 
-          <p>
-            Technically, no. Tourist visas do not permit you to work or earn income in the UAE.
-            Many people do it informally, but the risks are real: visa ban, fines, and inability to
-            open a bank account or sign contracts.
+          <p className="text-gray-700 leading-relaxed mb-4">
+            Technically, no. Tourist visas do not permit you to work or earn income in the UAE. Many people do it informally, but the risks are real: visa ban, fines, and inability to open a bank account or sign contracts.
           </p>
 
-          <p>
-            If you&apos;re testing the market before committing to a permit, some freelancers operate
-            while on a tourist visa for a few months as a proof-of-concept period. But this is a risk —
-            not a recommendation.
-          </p>
+          <div className="bg-emerald-50 border border-emerald-200 rounded-xl p-5 mb-6">
+            <p className="text-sm font-semibold text-emerald-900 mb-1">💡 Key Insight</p>
+            <p className="text-sm text-emerald-800">If you&apos;re testing the market before committing to a permit, some freelancers operate while on a tourist visa for a few months as a proof-of-concept period. But this is a risk — not a recommendation. Get the permit: at AED 7,500–12,000/year it pays for itself with a single client.</p>
+          </div>
 
-          <h2 className="text-xl font-bold text-gray-900 mt-10 mb-3">The Golden Visa: Is It Worth It for Freelancers?</h2>
+          <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2">
+            <span className="w-1 h-6 bg-emerald-500 rounded-full inline-block"></span>
+            Which Free Zone Should You Choose?
+          </h2>
 
-          <p>
-            The UAE Golden Visa offers 10-year residency and is available to freelancers who meet
-            certain criteria — typically a monthly income of AED 30,000+ or a proven track record
-            in your field. It&apos;s not a replacement for a freelance permit but can be a long-term
-            goal once you&apos;re established.
-          </p>
-
-          <p>
-            Most new freelancers should focus on a standard 2–3 year permit/visa first and upgrade
-            to Golden Visa once they meet the income threshold.
-          </p>
-
-          <h2 className="text-xl font-bold text-gray-900 mt-10 mb-3">Which Free Zone Should You Choose?</h2>
-
-          <div className="flex flex-col gap-3 my-4">
+          <ul className="space-y-3 mb-8">
             {[
               { condition: "Budget is the priority", rec: "RAKEZ or Shams — lowest permit costs, fully remote-friendly" },
               { condition: "You work in media, content, or marketing", rec: "Dubai Media City or Shams — better client access and networking" },
@@ -278,56 +272,55 @@ export default function Article() {
               { condition: "You want Abu Dhabi clients", rec: "Twofour54 or a mainland license — better credibility with government and enterprise" },
               { condition: "You want the fastest setup", rec: "Shams or RAKEZ — often approve in 3–5 working days online" },
             ].map((item) => (
-              <div key={item.condition} className="flex items-start gap-3 text-sm border-b border-gray-100 pb-3">
-                <span className="text-gray-400 shrink-0">→</span>
-                <div>
-                  <strong className="text-gray-900">If {item.condition}:</strong>{" "}
-                  <span className="text-gray-500">{item.rec}</span>
-                </div>
-              </div>
+              <li key={item.condition} className="flex gap-3 text-sm text-gray-700">
+                <span className="text-emerald-500 font-bold mt-0.5 shrink-0">→</span>
+                <span><strong className="text-gray-900">If {item.condition}:</strong> {item.rec}</span>
+              </li>
             ))}
-          </div>
+          </ul>
 
-          <div className="bg-gray-50 border border-gray-200 rounded-2xl p-5 my-6">
-            <p className="text-sm font-semibold text-gray-900 mb-1">📋 Once you&apos;re legal, systems matter</p>
-            <p className="text-sm text-gray-500 mb-3">
-              A freelance permit gets you legal. But the Freelancer Client CRM, SOP Pack, and AI Prompt Pack
-              give you the systems to actually run a professional business — from client management to proposals to invoicing.
-            </p>
-            <Link
-              href="/"
-              className="inline-block bg-gray-900 text-white text-sm font-semibold px-5 py-2 rounded-xl hover:bg-gray-700 transition-colors"
-            >
-              Browse SoloKit products →
+          <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2">
+            <span className="w-1 h-6 bg-emerald-500 rounded-full inline-block"></span>
+            The Golden Visa: Is It Worth It for Freelancers?
+          </h2>
+
+          <p className="text-gray-700 leading-relaxed mb-4">
+            The UAE Golden Visa offers 10-year residency and is available to freelancers who meet certain criteria — typically a monthly income of AED 30,000+ or a proven track record in your field. It&apos;s not a replacement for a freelance permit but can be a long-term goal once you&apos;re established.
+          </p>
+
+          <p className="text-gray-700 leading-relaxed mb-8">
+            Most new freelancers should focus on a standard 2–3 year permit/visa first and upgrade to Golden Visa once they meet the income threshold.
+          </p>
+
+          {/* CTA */}
+          <div className="bg-gradient-to-br from-gray-900 to-gray-800 text-white rounded-2xl p-8 mt-12 text-center">
+            <span className="text-xs font-bold text-emerald-400 uppercase tracking-widest block mb-3">SoloKit</span>
+            <h3 className="text-2xl font-bold mb-3">Run Your UAE Freelance Business Like a Pro</h3>
+            <p className="text-gray-400 text-sm mb-6 max-w-sm mx-auto">Templates, SOPs, and systems built for UAE freelancers. Stop starting from scratch.</p>
+            <Link href="/products/solokit-freelance-os" className="inline-block bg-emerald-500 hover:bg-emerald-400 text-white font-bold px-8 py-3 rounded-xl transition-colors text-sm">
+              Get SoloKit →
             </Link>
           </div>
 
-          <div className="mt-10 pt-6 border-t border-gray-100">
-            <p className="text-sm font-semibold text-gray-900 mb-3">Further reading</p>
-            <div className="flex flex-col gap-2">
-              <Link href="/blog/freelance-vs-salary-uae" className="text-sm text-gray-500 hover:text-gray-900 transition-colors underline underline-offset-2">
-                Freelance vs Salary in the UAE: The Real Numbers →
-              </Link>
-              <Link href="/blog/how-to-price-freelance-services-uae" className="text-sm text-gray-500 hover:text-gray-900 transition-colors underline underline-offset-2">
-                How to Price Your Freelance Services in the UAE →
-              </Link>
-              <Link href="/blog/get-freelance-clients-uae" className="text-sm text-gray-500 hover:text-gray-900 transition-colors underline underline-offset-2">
-                How to Get Freelance Clients in the UAE (6 Strategies) →
-              </Link>
-              <Link href="/blog/freelance-systems-uae" className="text-sm text-gray-500 hover:text-gray-900 transition-colors underline underline-offset-2">
-                Why Most UAE Freelancers Stay Stuck at AED 10K/Month →
-              </Link>
+          {/* Related links */}
+          <div className="mt-10">
+            <h3 className="text-sm font-semibold text-gray-900 mb-3">Related Guides</h3>
+            <div className="space-y-1.5">
+              {[
+                { href: "/blog/how-to-price-freelance-services-uae", label: "How to Price Your Freelance Services in the UAE" },
+                { href: "/blog/get-freelance-clients-uae", label: "How to Get Freelance Clients in the UAE (6 Strategies)" },
+                { href: "/blog/rakez-vs-ifza-freelance-license-uae", label: "RAKEZ vs IFZA vs Meydan: Best Free Zone for UAE Freelancers" },
+                { href: "/blog/freelance-tax-uae", label: "Do Freelancers Pay Tax in the UAE?" },
+              ].map((link) => (
+                <Link key={link.href} href={link.href} className="block text-blue-600 hover:text-blue-800 text-sm">
+                  → {link.label}
+                </Link>
+              ))}
             </div>
           </div>
-        </div>
 
-        <div className="mt-12 pt-8 border-t border-gray-100">
-          <Link href="/blog" className="text-sm text-gray-400 hover:text-gray-700 transition-colors">
-            ← Back to Blog
-          </Link>
         </div>
       </main>
-
       <Footer />
     </>
   );

@@ -30,237 +30,167 @@ const jsonLd = {
   mainEntityOfPage: "https://solokit.cloud/blog/get-freelance-clients-uae",
 };
 
+const strategies = [
+  {
+    num: "1",
+    title: "LinkedIn Outreach (Highest Quality Leads)",
+    body: "LinkedIn is the #1 source of high-quality B2B clients in the UAE. Decision-makers in Dubai and Abu Dhabi are active on LinkedIn — more so than in many other markets. Optimize your headline to say what you do and who you help, find your target clients, send a connection request with a short human message (not a pitch), then follow up with value. Aim for 10–20 new connections per week. Expect 1–3 conversations per week, and 1–2 leads per month.",
+  },
+  {
+    num: "2",
+    title: "Referrals (Highest Conversion Rate)",
+    body: "A referral from a trusted source converts at 50–70%, vs 1–5% for cold outreach. Yet most freelancers never actively ask for referrals. At the end of every successful project, ask: 'Do you know anyone who might need similar help?' Send a check-in message to past clients every 3–6 months. Build relationships with complementary freelancers who can send overflow work.",
+  },
+  {
+    num: "3",
+    title: "Content Marketing on LinkedIn (Long-Term Compounding)",
+    body: "Posting consistently on LinkedIn builds inbound leads over time. UAE professionals check LinkedIn daily. What works: case studies and results, unpopular opinions in your industry, practical tips your target clients can use immediately, behind-the-scenes of your work process. Posting 3x/week consistently for 6 months will build a meaningful audience. It's not a short-term play.",
+  },
+  {
+    num: "4",
+    title: "Freelance Platforms (Volume, Lower Rates)",
+    body: "UAE-specific platforms worth trying: Nabbesh (UAE-focused), Ureed (Arabic and English content), Toptal (premium, highly selective but high-paying), PeoplePerHour (solid for design, development, and writing). Platforms are a starting point, not a destination. Build reviews and portfolio, then transition clients to direct relationships.",
+  },
+  {
+    num: "5",
+    title: "Local Business Networking (Underrated)",
+    body: "Dubai and Abu Dhabi have an active business networking scene. AstroLabs (Dubai startup hub), STEP Conference (annual tech conference), industry-specific groups on Meetup.com, and business councils (British Business Group, American Business Council, etc.). One warm connection at a networking event is worth 100 cold LinkedIn messages. Go to 2–4 events per month if you're actively building your pipeline.",
+  },
+  {
+    num: "6",
+    title: "Direct Outreach to Target Companies",
+    body: "Make a list of 50 companies in the UAE that you'd like to work with. Find the right contact — usually Marketing Director, CEO for smaller companies, or Head of the relevant department. Send a short, specific email or LinkedIn message that shows you've done your research. This works better in the UAE than most markets because decision-making chains are shorter.",
+  },
+];
+
 export default function Article() {
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
       <Header />
+      <main className="min-h-screen bg-white">
+        <div className="max-w-3xl mx-auto px-4 py-10">
 
-      <main className="flex-1 max-w-2xl mx-auto px-4 sm:px-6 py-14">
-        <Link href="/blog" className="text-sm text-gray-400 hover:text-gray-700 transition-colors mb-8 inline-block">
-          ← Blog
-        </Link>
+          {/* Breadcrumb */}
+          <nav className="text-xs text-gray-400 mb-6 flex items-center gap-1.5">
+            <Link href="/" className="hover:text-gray-600">Home</Link>
+            <span>/</span>
+            <Link href="/blog" className="hover:text-gray-600">Blog</Link>
+            <span>/</span>
+            <span className="text-gray-600">Get Freelance Clients UAE</span>
+          </nav>
 
-        <div className="mb-8">
-          <div className="flex items-center gap-3 mb-4">
-            <span className="text-xs font-semibold text-gray-400 uppercase tracking-widest">Business</span>
-            <span className="text-gray-200">·</span>
-            <span className="text-xs text-gray-400">June 15, 2026</span>
-            <span className="text-gray-200">·</span>
-            <span className="text-xs text-gray-400">7 min read</span>
-          </div>
-          <h1 className="text-3xl sm:text-4xl font-bold text-gray-900 leading-tight mb-4">
-            How to Get Freelance Clients in the UAE (6 Strategies That Work)
-          </h1>
-          <p className="text-lg text-gray-500 leading-relaxed">
-            The UAE is one of the highest-paying markets for freelance work in the world.
-            But most freelancers rely on one or two unpredictable channels. Here&apos;s how to build
-            a more reliable pipeline.
-          </p>
-        </div>
-
-        <div className="text-gray-700 leading-relaxed space-y-6">
-
-          <p>
-            The freelancers who consistently earn AED 20K-50K+ per month in the UAE all have
-            one thing in common: they don&apos;t rely on luck. They have systems that generate
-            leads predictably.
-          </p>
-
-          <p>Here are the 6 strategies that actually work in the UAE market.</p>
-
-          <h2 className="text-xl font-bold text-gray-900 mt-10 mb-3">1. LinkedIn Outreach (Highest Quality Leads)</h2>
-
-          <p>
-            LinkedIn is the #1 source of high-quality B2B clients in the UAE. Decision-makers
-            in Dubai and Abu Dhabi are active on LinkedIn — more so than in many other markets.
-          </p>
-
-          <p>Here&apos;s a simple outreach framework that works:</p>
-
-          <ol className="list-decimal pl-5 space-y-3 text-gray-600">
-            <li>
-              <strong className="text-gray-900">Optimize your LinkedIn profile first.</strong>{" "}
-              Your headline should say what you do and who you help, not your job title.
-              &ldquo;Freelance Web Developer helping UAE startups launch faster&rdquo; is far better than
-              &ldquo;Freelance Developer.&rdquo;
-            </li>
-            <li>
-              <strong className="text-gray-900">Find your target clients.</strong>{" "}
-              Search for &ldquo;Marketing Manager UAE,&rdquo; &ldquo;CEO Dubai,&rdquo; or whatever fits your niche.
-              Filter by 2nd connections and recent activity.
-            </li>
-            <li>
-              <strong className="text-gray-900">Send a connection request with a short message.</strong>{" "}
-              Not a pitch. Just something human: &ldquo;I saw your post about [X] — I work with
-              similar companies on [your service]. Worth connecting.&rdquo;
-            </li>
-            <li>
-              <strong className="text-gray-900">Follow up with value.</strong>{" "}
-              After they connect, send something useful: an insight, a relevant article, or a
-              question about their business. Build the relationship before you pitch.
-            </li>
-          </ol>
-
-          <p>Aim for 10-20 new connections per week. Expect 1-3 conversations per week, and 1-2 leads per month.</p>
-
-          <h2 className="text-xl font-bold text-gray-900 mt-10 mb-3">2. Referrals (Highest Conversion Rate)</h2>
-
-          <p>
-            A referral from a trusted source converts at 50-70%, vs 1-5% for cold outreach.
-            Yet most freelancers never actively ask for referrals.
-          </p>
-
-          <p>The simplest referral system:</p>
-
-          <ul className="list-disc pl-5 space-y-2 text-gray-600">
-            <li>At the end of every successful project, ask: &ldquo;Do you know anyone who might need similar help?&rdquo;</li>
-            <li>Send a check-in message to past clients every 3-6 months</li>
-            <li>Build relationships with complementary freelancers (e.g., designers and developers) who can send overflow work</li>
-          </ul>
-
-          <div className="bg-gray-50 border border-gray-200 rounded-2xl p-5 my-6">
-            <p className="text-sm font-semibold text-gray-900 mb-1">📋 Freelancer Client CRM — AED 175</p>
-            <p className="text-sm text-gray-500 mb-3">
-              Track every client relationship with a built-in follow-up system.
-              Never forget to check in on a past client — the CRM flags who to contact and when.
+          {/* Dark gradient hero */}
+          <div className="bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 text-white px-6 py-10 rounded-2xl mb-8">
+            <span className="text-xs font-bold text-emerald-400 uppercase tracking-widest mb-3 block">BUSINESS DEVELOPMENT</span>
+            <h1 className="text-3xl sm:text-4xl font-bold leading-tight mb-4">How to Get Freelance Clients in the UAE (6 Strategies That Work)</h1>
+            <p className="text-gray-300 text-sm mb-5 leading-relaxed max-w-xl">
+              The UAE is one of the highest-paying markets for freelance work in the world. But most freelancers rely on one or two unpredictable channels. Here&apos;s how to build a more reliable pipeline.
             </p>
-            <Link
-              href="/products/freelancer-client-crm"
-              className="inline-block bg-gray-900 text-white text-sm font-semibold px-5 py-2 rounded-xl hover:bg-gray-700 transition-colors"
-            >
-              Get the CRM →
-            </Link>
-          </div>
-
-          <h2 className="text-xl font-bold text-gray-900 mt-10 mb-3">3. Content Marketing on LinkedIn (Long-Term Compounding)</h2>
-
-          <p>
-            Posting consistently on LinkedIn builds inbound leads over time. UAE professionals
-            check LinkedIn daily. One post that goes somewhat viral can generate 10+ inquiries.
-          </p>
-
-          <p>What works on LinkedIn in the UAE:</p>
-
-          <ul className="list-disc pl-5 space-y-2 text-gray-600">
-            <li>Case studies and results (&ldquo;I helped a Dubai startup increase revenue by X doing Y&rdquo;)</li>
-            <li>Unpopular opinions in your industry</li>
-            <li>Practical tips your target clients can use immediately</li>
-            <li>Behind-the-scenes of your work process</li>
-          </ul>
-
-          <p>
-            Posting 3x/week consistently for 6 months will build a meaningful audience. It&apos;s not a short-term play.
-          </p>
-
-          <h2 className="text-xl font-bold text-gray-900 mt-10 mb-3">4. Freelance Platforms (Volume, Lower Rates)</h2>
-
-          <p>
-            Platforms like Upwork, Fiverr, and Freelancer.com are competitive globally,
-            but they can work for building initial portfolio and reviews.
-          </p>
-
-          <p>UAE-specific platforms worth trying:</p>
-
-          <ul className="list-disc pl-5 space-y-2 text-gray-600">
-            <li><strong>Nabbesh</strong> — UAE-focused freelance platform</li>
-            <li><strong>Ureed</strong> — Arabic and English content and creative work</li>
-            <li><strong>Toptal</strong> — Premium platform for developers and designers (highly selective but high-paying)</li>
-            <li><strong>PeoplePerHour</strong> — Solid for design, development, and writing</li>
-          </ul>
-
-          <p>
-            Platforms are a starting point, not a destination. The goal is to build reviews and portfolio,
-            then transition clients off-platform to direct relationships.
-          </p>
-
-          <h2 className="text-xl font-bold text-gray-900 mt-10 mb-3">5. Local Business Networking (Underrated)</h2>
-
-          <p>
-            Dubai and Abu Dhabi have an active business networking scene. Events, co-working spaces,
-            and industry meetups are where relationships are built that lead to clients.
-          </p>
-
-          <ul className="list-disc pl-5 space-y-2 text-gray-600">
-            <li>AstroLabs (Dubai startup hub) — regular events and workshops</li>
-            <li>Intelak (travel and aviation startup hub)</li>
-            <li>STEP Conference (annual tech and startup conference)</li>
-            <li>Industry-specific groups on Meetup.com</li>
-            <li>Business councils (British Business Group, American Business Council, etc.)</li>
-          </ul>
-
-          <p>
-            One warm connection at a networking event is worth 100 cold LinkedIn messages.
-            Go to 2-4 events per month if you&apos;re actively building your pipeline.
-          </p>
-
-          <h2 className="text-xl font-bold text-gray-900 mt-10 mb-3">6. Direct Outreach to Your Target Companies</h2>
-
-          <p>
-            Make a list of 50 companies in the UAE that you&apos;d like to work with.
-            Find the right contact (usually Marketing Director, CEO for smaller companies, or Head of the relevant department).
-          </p>
-
-          <p>
-            Send a short, specific email or LinkedIn message that shows you&apos;ve done your research:
-            &ldquo;I noticed you recently launched [X]. I work with similar companies to [specific result].
-            Would it make sense to have a 15-minute call?&rdquo;
-          </p>
-
-          <p>
-            This works better in the UAE than most markets because the decision-making chains are shorter
-            and executives are often more directly reachable.
-          </p>
-
-          <h2 className="text-xl font-bold text-gray-900 mt-10 mb-3">The Key: Track Everything</h2>
-
-          <p>
-            Whatever channels you use, you need to track them. Where do your leads come from?
-            Which ones convert? What&apos;s your average deal size per channel?
-          </p>
-
-          <p>
-            Without tracking, you&apos;re just guessing where to spend your time.
-          </p>
-
-          <div className="bg-gray-900 text-white rounded-2xl p-6 mt-10">
-            <p className="text-sm font-semibold text-gray-300 mb-1">Start tracking your leads today</p>
-            <p className="text-xl font-bold mb-3">Freelancer Client CRM — AED 175</p>
-            <p className="text-gray-400 text-sm mb-4">
-              Track where every lead comes from, follow up automatically, and see which
-              channels actually generate revenue. Instant Notion access.
-            </p>
-            <Link
-              href="/products/freelancer-client-crm"
-              className="inline-block bg-white text-gray-900 text-sm font-semibold px-6 py-2.5 rounded-xl hover:bg-gray-100 transition-colors"
-            >
-              Get the CRM →
-            </Link>
-          </div>
-        </div>
-
-          <div className="mt-10 pt-6 border-t border-gray-100">
-            <p className="text-sm font-semibold text-gray-900 mb-3">Further reading</p>
-            <div className="flex flex-col gap-2">
-              <Link href="/blog/freelance-proposal-tips-uae" className="text-sm text-gray-500 hover:text-gray-900 transition-colors underline underline-offset-2">
-                How to Write a Freelance Proposal That Wins Clients →
-              </Link>
-              <Link href="/blog/how-to-price-freelance-services-uae" className="text-sm text-gray-500 hover:text-gray-900 transition-colors underline underline-offset-2">
-                How to Price Your Freelance Services in the UAE →
-              </Link>
-              <Link href="/blog/freelance-systems-uae" className="text-sm text-gray-500 hover:text-gray-900 transition-colors underline underline-offset-2">
-                Why Most UAE Freelancers Stay Stuck at AED 10K/Month →
-              </Link>
+            <div className="flex flex-wrap gap-4 text-xs text-gray-400">
+              <span>June 15, 2026</span><span>·</span><span>7 min read</span>
             </div>
           </div>
 
-        <div className="mt-12 pt-8 border-t border-gray-100">
-          <Link href="/blog" className="text-sm text-gray-400 hover:text-gray-700 transition-colors">
-            ← Back to Blog
-          </Link>
+          {/* Key stats grid */}
+          <div className="grid grid-cols-3 gap-3 mb-8">
+            {[
+              { value: "50–70%", label: "Referral conversion rate" },
+              { value: "1–5%", label: "Cold outreach conversion" },
+              { value: "AED 20–50K", label: "Top freelancer monthly" },
+            ].map((s) => (
+              <div key={s.label} className="bg-gray-50 border border-gray-200 rounded-xl p-4 text-center">
+                <div className="text-lg font-bold text-gray-900">{s.value}</div>
+                <div className="text-xs text-gray-500 mt-1">{s.label}</div>
+              </div>
+            ))}
+          </div>
+
+          <p className="text-gray-700 leading-relaxed mb-6">
+            The freelancers who consistently earn AED 20K–50K+ per month in the UAE all have one thing in common: they don&apos;t rely on luck. They have systems that generate leads predictably. Here are the 6 strategies that actually work.
+          </p>
+
+          <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2">
+            <span className="w-1 h-6 bg-emerald-500 rounded-full inline-block"></span>
+            The 6 Strategies
+          </h2>
+
+          <div className="space-y-4 mb-8">
+            {strategies.map((strategy) => (
+              <div key={strategy.num} className="flex gap-4">
+                <div className="w-8 h-8 bg-gray-900 text-white rounded-full flex items-center justify-center text-sm font-bold shrink-0 mt-0.5">
+                  {strategy.num}
+                </div>
+                <div>
+                  <h3 className="font-semibold text-gray-900 mb-1">{strategy.title}</h3>
+                  <p className="text-sm text-gray-600 leading-relaxed">{strategy.body}</p>
+                </div>
+              </div>
+            ))}
+          </div>
+
+          <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2">
+            <span className="w-1 h-6 bg-emerald-500 rounded-full inline-block"></span>
+            The Key: Track Everything
+          </h2>
+
+          <p className="text-gray-700 leading-relaxed mb-4">
+            Whatever channels you use, you need to track them. Where do your leads come from? Which ones convert? What&apos;s your average deal size per channel? Without tracking, you&apos;re just guessing where to spend your time.
+          </p>
+
+          <div className="bg-emerald-50 border border-emerald-200 rounded-xl p-5 mb-8">
+            <p className="text-sm font-semibold text-emerald-900 mb-1">💡 Key Insight</p>
+            <p className="text-sm text-emerald-800">The freelancers who earn AED 40K+/month don&apos;t work more — they have better systems. A client CRM that tracks where every lead comes from, when to follow up, and which channels convert, is worth more than any single strategy.</p>
+          </div>
+
+          <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2">
+            <span className="w-1 h-6 bg-emerald-500 rounded-full inline-block"></span>
+            LinkedIn Outreach Step-by-Step
+          </h2>
+
+          <div className="space-y-3 mb-8">
+            {[
+              { step: "Optimize your profile headline", detail: "Say what you do and who you help. 'Freelance Web Developer helping UAE startups launch faster' beats 'Freelance Developer'." },
+              { step: "Find your target clients", detail: "Search for 'Marketing Manager UAE', 'CEO Dubai', or whatever fits your niche. Filter by 2nd connections and recent activity." },
+              { step: "Send a connection request with a short message", detail: "Not a pitch. Just something human: 'I saw your post about X — I work with similar companies on [your service]. Worth connecting.'" },
+              { step: "Follow up with value", detail: "After they connect, send something useful: an insight, a relevant article, or a question about their business. Build the relationship before you pitch." },
+            ].map((row, i) => (
+              <div key={i} className="flex gap-3 text-sm text-gray-700">
+                <span className="text-emerald-500 font-bold mt-0.5 shrink-0">→</span>
+                <span><strong className="text-gray-900">{row.step}:</strong> {row.detail}</span>
+              </div>
+            ))}
+          </div>
+
+          {/* CTA */}
+          <div className="bg-gradient-to-br from-gray-900 to-gray-800 text-white rounded-2xl p-8 mt-12 text-center">
+            <span className="text-xs font-bold text-emerald-400 uppercase tracking-widest block mb-3">SoloKit</span>
+            <h3 className="text-2xl font-bold mb-3">Start Tracking Your Leads Today</h3>
+            <p className="text-gray-400 text-sm mb-6 max-w-sm mx-auto">Track where every lead comes from, follow up automatically, and see which channels actually generate revenue.</p>
+            <Link href="/products/freelancer-client-crm" className="inline-block bg-emerald-500 hover:bg-emerald-400 text-white font-bold px-8 py-3 rounded-xl transition-colors text-sm">
+              Get the Freelancer CRM →
+            </Link>
+          </div>
+
+          {/* Related links */}
+          <div className="mt-10">
+            <h3 className="text-sm font-semibold text-gray-900 mb-3">Related Guides</h3>
+            <div className="space-y-1.5">
+              {[
+                { href: "/blog/how-to-price-freelance-services-uae", label: "How to Price Your Freelance Services in the UAE" },
+                { href: "/blog/freelance-rate-calculator-uae", label: "Freelance Rate Calculator: How Much Should You Charge?" },
+                { href: "/blog/how-to-become-freelancer-uae", label: "How to Become a Freelancer in the UAE — Complete Guide" },
+                { href: "/blog/freelance-visa-uae", label: "How to Get a Freelance Visa in the UAE" },
+              ].map((link) => (
+                <Link key={link.href} href={link.href} className="block text-blue-600 hover:text-blue-800 text-sm">
+                  → {link.label}
+                </Link>
+              ))}
+            </div>
+          </div>
+
         </div>
       </main>
-
       <Footer />
     </>
   );
