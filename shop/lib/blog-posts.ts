@@ -1350,6 +1350,33 @@ export const posts: BlogPost[] = [
     category: "Pricing & Rates",
   },
   {
+    slug: "freelance-scrum-master-rates-uae",
+    title: "Freelance Scrum Master & Agile Coach Rates in the UAE (2026)",
+    description:
+      "Real AED rates for freelance Scrum Masters and Agile coaches in Dubai and Abu Dhabi — sprint facilitation, agile transformation, team coaching, SAFe implementation, retrospectives, and fractional Agile Lead retainer rates for 2026.",
+    date: "June 16, 2026",
+    readTime: "7 min read",
+    category: "Pricing & Rates",
+  },
+  {
+    slug: "how-to-write-freelance-proposal-uae",
+    title: "How to Write a Freelance Proposal That Wins Clients in the UAE (2026)",
+    description:
+      "A step-by-step guide to writing freelance proposals that convert UAE clients — the 7-section proposal structure, how to present your rate with confidence, what UAE clients look for, and copy-paste proposal templates for different service types.",
+    date: "June 16, 2026",
+    readTime: "9 min read",
+    category: "Client Work & Proposals",
+  },
+  {
+    slug: "freelance-excel-consultant-rates-uae",
+    title: "Freelance Excel & Data Consultant Rates in the UAE (2026)",
+    description:
+      "Real AED rates for freelance Excel and data consultants in Dubai and Abu Dhabi — Excel automation, financial modelling, dashboard development, Power BI, data analysis, VBA scripting, and reporting automation rates for 2026.",
+    date: "June 16, 2026",
+    readTime: "7 min read",
+    category: "Pricing & Rates",
+  },
+  {
     slug: "freelance-blockchain-developer-rates-uae",
     title: "Freelance Blockchain Developer Rates in the UAE (2026): What to Charge",
     description:
