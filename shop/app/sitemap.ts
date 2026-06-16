@@ -60,6 +60,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "how-to-use-claude-ai-freelancers-uae",
     "get-referrals-freelance-uae",
     "freelance-financial-planning-uae",
+    "freelance-marketing-rates-uae",
+    "freelance-copywriter-rates-uae",
+    "personal-brand-freelancer-uae",
   ].map((slug) => ({
     url: `${base}/blog/${slug}`,
     lastModified: new Date(),

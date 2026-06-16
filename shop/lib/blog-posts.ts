@@ -440,6 +440,33 @@ export const posts: BlogPost[] = [
     readTime: "8 min read",
     category: "Business & Mindset",
   },
+  {
+    slug: "freelance-marketing-rates-uae",
+    title: "Freelance Marketing Consultant Rates in the UAE (2026)",
+    description:
+      "Real AED rates for freelance marketers in Dubai — digital marketing, social media, SEO, paid ads, email, content. Hourly and retainer pricing by specialization and seniority.",
+    date: "June 16, 2026",
+    readTime: "7 min read",
+    category: "Pricing & Rates",
+  },
+  {
+    slug: "freelance-copywriter-rates-uae",
+    title: "Freelance Copywriter Rates in the UAE (2026): What to Charge",
+    description:
+      "Real AED project, hourly, and retainer rates for UAE freelance copywriters. Per-project pricing for websites, landing pages, email sequences, ads, and content. Plus high-value niches.",
+    date: "June 16, 2026",
+    readTime: "7 min read",
+    category: "Pricing & Rates",
+  },
+  {
+    slug: "personal-brand-freelancer-uae",
+    title: "How to Build a Personal Brand as a UAE Freelancer (2026 Guide)",
+    description:
+      "Stop competing on price. Build positioning, pick one platform, create the four trust-building content types, network in person, and systematize your UAE personal brand in under 3 hours a week.",
+    date: "June 16, 2026",
+    readTime: "8 min read",
+    category: "Client Acquisition",
+  },
 ];
 
 export function getPost(slug: string): BlogPost | undefined {
