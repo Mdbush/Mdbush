@@ -755,6 +755,33 @@ export const posts: BlogPost[] = [
     readTime: "7 min read",
     category: "Business & Mindset",
   },
+  {
+    slug: "freelance-pr-consultant-rates-uae",
+    title: "Freelance PR Consultant Rates in the UAE (2026): What to Charge",
+    description:
+      "Real AED rates for freelance PR consultants in Dubai and Abu Dhabi — monthly retainers, project fees, and what UAE brands actually pay for public relations services in 2026.",
+    date: "June 16, 2026",
+    readTime: "7 min read",
+    category: "Pricing & Rates",
+  },
+  {
+    slug: "how-to-manage-multiple-clients-uae",
+    title: "How to Manage Multiple Clients as a UAE Freelancer (Without Burning Out)",
+    description:
+      "The system for managing 3–6 simultaneous clients as a UAE freelancer — capacity planning, context switching, client boundaries, and how to avoid the quality collapse that kills freelance businesses.",
+    date: "June 16, 2026",
+    readTime: "7 min read",
+    category: "Systems & Productivity",
+  },
+  {
+    slug: "freelance-data-analyst-rates-uae",
+    title: "Freelance Data Analyst Rates in the UAE (2026): What to Charge",
+    description:
+      "Real AED rates for freelance data analysts in Dubai and Abu Dhabi — hourly, project, and retainer pricing by specialization. BI dashboards, SQL, Python, Power BI, and Tableau rates.",
+    date: "June 16, 2026",
+    readTime: "7 min read",
+    category: "Pricing & Rates",
+  },
 ];
 
 export function getPost(slug: string): BlogPost | undefined {
