@@ -1538,6 +1538,33 @@ export const posts: BlogPost[] = [
     readTime: "8 min read",
     category: "Pricing & Rates",
   },
+  {
+    slug: "freelance-immigration-consultant-rates-uae",
+    title: "Freelance Immigration Consultant Rates in the UAE (2026): PRO & Visa Advisory Fees",
+    description:
+      "Real AED rates for freelance immigration consultants and PRO services in Dubai and Abu Dhabi. Employment visa, Golden Visa, investor visa, company formation, corporate PRO retainers, and immigration advisory fees.",
+    date: "June 16, 2026",
+    readTime: "7 min read",
+    category: "Pricing & Rates",
+  },
+  {
+    slug: "how-to-negotiate-contracts-freelance-uae",
+    title: "How to Negotiate Contracts as a UAE Freelancer (2026): Scripts & Tactics",
+    description:
+      "Practical contract negotiation guide for freelancers in Dubai and Abu Dhabi. How to push back on payment terms, IP ownership, kill fees, non-compete clauses, and scope creep — with real negotiation scripts for UAE clients.",
+    date: "June 16, 2026",
+    readTime: "9 min read",
+    category: "Client Work & Proposals",
+  },
+  {
+    slug: "freelance-wealth-manager-rates-uae",
+    title: "Freelance Wealth Manager & Private Banker Rates in the UAE (2026)",
+    description:
+      "Real AED rates and fee structures for freelance wealth managers and independent financial advisors in Dubai and Abu Dhabi. Portfolio management, financial planning, family office advisory, and AUM-based fee structures.",
+    date: "June 16, 2026",
+    readTime: "8 min read",
+    category: "Pricing & Rates",
+  },
 ];
 
 export function getPost(slug: string): BlogPost | undefined {
