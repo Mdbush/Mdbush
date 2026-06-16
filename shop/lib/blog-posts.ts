@@ -998,6 +998,33 @@ export const posts: BlogPost[] = [
     readTime: "7 min read",
     category: "Pricing & Rates",
   },
+  {
+    slug: "freelance-real-estate-consultant-uae",
+    title: "Freelance Real Estate Consultant Rates in the UAE (2026): What to Charge",
+    description:
+      "Real AED commission rates and consulting fees for freelance real estate consultants and independent property advisors in Dubai and Abu Dhabi — residential, commercial, off-plan, and investment advisory in 2026.",
+    date: "June 16, 2026",
+    readTime: "8 min read",
+    category: "Pricing & Rates",
+  },
+  {
+    slug: "how-to-get-speaking-engagements-uae",
+    title: "How to Get Speaking Engagements as a UAE Freelancer (2026 Guide)",
+    description:
+      "How UAE freelancers and consultants land paid speaking gigs — conferences, corporate events, and panels. Speaker fees, how to pitch event organizers, building a speaker profile, and the UAE events that pay.",
+    date: "June 16, 2026",
+    readTime: "8 min read",
+    category: "Getting Clients",
+  },
+  {
+    slug: "freelance-elearning-developer-rates-uae",
+    title: "Freelance eLearning Developer & Instructional Designer Rates in the UAE (2026)",
+    description:
+      "Real AED rates for freelance eLearning developers and instructional designers in Dubai and Abu Dhabi — course development, LMS management, SCORM content, video-based learning, and L&D consulting fees in 2026.",
+    date: "June 16, 2026",
+    readTime: "7 min read",
+    category: "Pricing & Rates",
+  },
 ];
 
 export function getPost(slug: string): BlogPost | undefined {
