@@ -1025,6 +1025,33 @@ export const posts: BlogPost[] = [
     readTime: "7 min read",
     category: "Pricing & Rates",
   },
+  {
+    slug: "freelance-management-consultant-uae",
+    title: "Freelance Management Consultant Rates in the UAE (2026): What to Charge",
+    description:
+      "Real AED day rates and project fees for freelance management consultants in Dubai and Abu Dhabi — strategy, organizational design, change management, and independent advisory in 2026.",
+    date: "June 16, 2026",
+    readTime: "8 min read",
+    category: "Pricing & Rates",
+  },
+  {
+    slug: "how-to-price-retainer-clients-uae",
+    title: "How to Price Retainer Clients as a UAE Freelancer (The Complete System)",
+    description:
+      "How UAE freelancers price, structure, and sell monthly retainers — what to include, what to exclude, how to avoid scope creep, AED pricing benchmarks, and the retainer conversation script.",
+    date: "June 16, 2026",
+    readTime: "8 min read",
+    category: "Pricing & Rates",
+  },
+  {
+    slug: "freelance-graphic-designer-rates-uae",
+    title: "Freelance Graphic Designer Rates in the UAE (2026): What to Charge",
+    description:
+      "Real AED rates for freelance graphic designers in Dubai and Abu Dhabi — logo design, brand identity, social media graphics, print, packaging, and monthly retainer pricing in 2026.",
+    date: "June 16, 2026",
+    readTime: "7 min read",
+    category: "Pricing & Rates",
+  },
 ];
 
 export function getPost(slug: string): BlogPost | undefined {
