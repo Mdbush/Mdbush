@@ -20,10 +20,13 @@ export default function Header() {
             <Link href="/#products" className="hidden sm:block text-sm text-gray-600 hover:text-gray-900 transition-colors">
               Products
             </Link>
+            <Link href="/guides" className="hidden sm:block text-sm text-gray-600 hover:text-gray-900 transition-colors">
+              Guides
+            </Link>
             <Link href="/free" className="hidden sm:block text-sm text-gray-600 hover:text-gray-900 transition-colors">
               Free Prompts
             </Link>
-            <Link href="/blog" className="text-sm text-gray-600 hover:text-gray-900 transition-colors">
+            <Link href="/blog" className="hidden md:block text-sm text-gray-600 hover:text-gray-900 transition-colors">
               Blog
             </Link>
             <Link
