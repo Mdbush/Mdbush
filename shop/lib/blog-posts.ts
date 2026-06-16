@@ -2753,6 +2753,33 @@ export const posts: BlogPost[] = [
     readTime: "7 min read",
     category: "Pricing & Rates",
   },
+  {
+    slug: "freelance-facilities-management-consultant-rates-uae",
+    title: "Freelance Facilities Management Consultant Rates in the UAE (2026)",
+    description:
+      "Real AED day rates for freelance facilities management consultants in Dubai and Abu Dhabi. FM strategy, CAFM implementation, soft services management, hard services technical advisory, Total FM outsourcing advisory, and sustainability (Estidama, LEED) fees for 2026.",
+    date: "June 16, 2026",
+    readTime: "7 min read",
+    category: "Pricing & Rates",
+  },
+  {
+    slug: "freelance-yoga-instructor-rates-uae",
+    title: "Freelance Yoga Instructor Rates in the UAE (2026)",
+    description:
+      "Real AED rates for freelance yoga instructors in Dubai and Abu Dhabi. Group classes, private 1:1 sessions, corporate wellness programmes, yoga retreats, online yoga, and Yoga Teacher Training (YTT) fees for 2026.",
+    date: "June 16, 2026",
+    readTime: "7 min read",
+    category: "Pricing & Rates",
+  },
+  {
+    slug: "freelance-geotechnical-engineer-rates-uae",
+    title: "Freelance Geotechnical Engineer Rates in the UAE (2026)",
+    description:
+      "Real AED day rates for freelance geotechnical engineers in Dubai and Abu Dhabi. Soil investigation, foundation and pile design, slope stability, ground improvement, sabkha advisory, retaining wall design, geotechnical report review, and expert witness fees for 2026.",
+    date: "June 16, 2026",
+    readTime: "7 min read",
+    category: "Pricing & Rates",
+  },
 ];
 
 export function getPost(slug: string): BlogPost | undefined {
