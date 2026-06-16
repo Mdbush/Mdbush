@@ -2915,6 +2915,33 @@ export const posts: BlogPost[] = [
     readTime: "7 min read",
     category: "AI Tools",
   },
+  {
+    slug: "freelance-occupational-therapist-rates-uae",
+    title: "Freelance Occupational Therapist Rates in the UAE (2026)",
+    description:
+      "Real AED rates for freelance occupational therapists in Dubai and Abu Dhabi. Paediatric OT, sensory integration, autism OT, adult neurological OT, ergonomic assessment, and school-based OT contract fees for 2026.",
+    date: "June 16, 2026",
+    readTime: "7 min read",
+    category: "Pricing & Rates",
+  },
+  {
+    slug: "freelance-physiotherapist-rates-uae",
+    title: "Freelance Physiotherapist Rates in the UAE (2026)",
+    description:
+      "Real AED rates for freelance physiotherapists in Dubai and Abu Dhabi. Musculoskeletal, sports physio, neurological rehabilitation, post-surgical, home visit, and corporate wellness physiotherapy fees for 2026.",
+    date: "June 16, 2026",
+    readTime: "7 min read",
+    category: "Pricing & Rates",
+  },
+  {
+    slug: "how-to-win-without-being-cheapest-uae",
+    title: "How to Win Freelance Clients Without Being the Cheapest in the UAE (2026)",
+    description:
+      "Why UAE freelancers lose clients by competing on price — and how to win consistently on value, specialisation, trust, and positioning. Practical strategies for Dubai and Abu Dhabi freelancers who want to stop competing on rate.",
+    date: "June 16, 2026",
+    readTime: "7 min read",
+    category: "Business & Mindset",
+  },
 ];
 
 export function getPost(slug: string): BlogPost | undefined {

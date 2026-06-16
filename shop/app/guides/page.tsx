@@ -6,11 +6,11 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "UAE Freelancer Guides & Resources — SoloKit",
   description:
-    "327 practical guides for freelancers and solopreneurs in the UAE. Visa, tax, rates, clients, contracts, AI tools, and more. All free.",
+    "330 practical guides for freelancers and solopreneurs in the UAE. Visa, tax, rates, clients, contracts, AI tools, and more. All free.",
   alternates: { canonical: "/guides" },
   openGraph: {
     title: "UAE Freelancer Guides & Resources — SoloKit",
-    description: "327 free guides covering everything a UAE freelancer needs to know.",
+    description: "330 free guides covering everything a UAE freelancer needs to know.",
     type: "website",
     url: "/guides",
   },
@@ -300,6 +300,8 @@ const categories = [
       { slug: "freelance-clinical-psychologist-rates-uae", title: "Freelance Clinical Psychologist Rates in the UAE (2026)", time: "7 min" },
       { slug: "freelance-speech-therapist-rates-uae", title: "Freelance Speech Therapist Rates in the UAE (2026)", time: "7 min" },
       { slug: "freelance-structural-engineer-rates-uae", title: "Freelance Structural Engineer Rates in the UAE (2026)", time: "7 min" },
+      { slug: "freelance-occupational-therapist-rates-uae", title: "Freelance Occupational Therapist Rates in the UAE (2026)", time: "7 min" },
+      { slug: "freelance-physiotherapist-rates-uae", title: "Freelance Physiotherapist Rates in the UAE (2026)", time: "7 min" },
     ],
   },
   {
@@ -404,6 +406,7 @@ const categories = [
       { slug: "how-to-create-a-freelance-niche-uae", title: "How to Create a Freelance Niche in the UAE (2026 Guide)", time: "7 min" },
       { slug: "how-to-productize-freelance-services-uae", title: "How to Productize Your Freelance Services in the UAE (2026 Guide)", time: "7 min" },
       { slug: "how-to-build-freelance-team-uae", title: "How to Build a Freelance Team in the UAE (2026 Guide)", time: "7 min" },
+      { slug: "how-to-win-without-being-cheapest-uae", title: "How to Win Freelance Clients Without Being the Cheapest in the UAE (2026)", time: "7 min" },
     ],
   },
 ];
@@ -421,7 +424,7 @@ export default function GuidesPage() {
           <span className="text-xs font-semibold text-gray-400 uppercase tracking-widest">Free Resources</span>
           <h1 className="text-3xl sm:text-4xl font-bold text-gray-900 mt-2 mb-3">UAE Freelancer Guides</h1>
           <p className="text-gray-500 max-w-xl mx-auto leading-relaxed">
-            327 practical guides covering everything you need to know about freelancing in Dubai and Abu Dhabi.
+            330 practical guides covering everything you need to know about freelancing in Dubai and Abu Dhabi.
             Written specifically for the UAE market — AED pricing, local laws, free zone context.
           </p>
         </div>
