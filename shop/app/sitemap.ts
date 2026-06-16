@@ -314,6 +314,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "freelance-electrical-engineer-rates-uae",
     "freelance-food-photographer-rates-uae",
     "freelance-game-developer-rates-uae",
+    "freelance-organizational-development-consultant-rates-uae",
+    "freelance-payroll-consultant-rates-uae",
+    "how-to-negotiate-freelance-rates-uae",
   ].map((slug) => ({
     url: `${base}/blog/${slug}`,
     lastModified: new Date(),

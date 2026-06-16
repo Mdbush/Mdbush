@@ -4,303 +4,212 @@ import Footer from "@/components/Footer";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "How to Negotiate Freelance Rates in the UAE (Without Losing the Client) — SoloKit",
+  title: "How to Negotiate Freelance Rates as a UAE Freelancer (2026 Guide)",
   description:
-    "Practical negotiation scripts and strategies for UAE freelancers to push back on lowball offers, anchor high, and land rates that reflect your actual value.",
+    "How UAE freelancers negotiate higher rates with clients — the anchor strategy, value framing, pushback responses, negotiating with UAE corporates vs SMEs, and how to close at a premium rate without losing the deal.",
   alternates: { canonical: "/blog/how-to-negotiate-freelance-rates-uae" },
   openGraph: {
-    title: "How to Negotiate Freelance Rates in the UAE (Without Losing the Client)",
+    title: "How to Negotiate Freelance Rates as a UAE Freelancer (2026 Guide)",
     description:
-      "Practical negotiation scripts and strategies for UAE freelancers to push back on lowball offers, anchor high, and land rates that reflect your actual value.",
+      "Negotiate higher freelance rates in the UAE — anchoring, value framing, pushback scripts, and how to close at premium prices.",
     type: "article",
     url: "/blog/how-to-negotiate-freelance-rates-uae",
   },
 };
 
+const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? "https://solokit.cloud";
+
 const jsonLd = {
   "@context": "https://schema.org",
   "@type": "Article",
-  headline: "How to Negotiate Freelance Rates in the UAE (Without Losing the Client)",
+  headline: "How to Negotiate Freelance Rates as a UAE Freelancer (2026 Guide)",
   description:
-    "Practical negotiation scripts and strategies for UAE freelancers to push back on lowball offers, anchor high, and land rates that reflect your actual value.",
-  datePublished: "2026-06-15",
-  dateModified: "2026-06-15",
-  author: { "@type": "Organization", name: "SoloKit" },
-  publisher: { "@type": "Organization", name: "SoloKit", url: "https://solokit.cloud" },
-  url: "https://solokit.cloud/blog/how-to-negotiate-freelance-rates-uae",
-  mainEntityOfPage: "https://solokit.cloud/blog/how-to-negotiate-freelance-rates-uae",
+    "How UAE freelancers negotiate higher rates with clients.",
+  url: `${siteUrl}/blog/how-to-negotiate-freelance-rates-uae`,
+  publisher: { "@type": "Organization", name: "SoloKit", url: siteUrl },
+  datePublished: "2026-01-01",
+  dateModified: "2026-06-16",
 };
 
-const scripts = [
-  {
-    situation: "When client says: \"Your rate is too high\"",
-    response:
-      "\"I understand budget is a concern. What I can do is adjust the scope to fit your budget — here's what AED X would cover vs what AED Y would cover.\" Then list specifically what gets included and excluded at each level. You're not lowering your rate. You're lowering the scope.",
-  },
-  {
-    situation: "When client says: \"The last freelancer charged AED 80/hr\"",
-    response:
-      "\"I understand. My rate reflects [specific outcome — e.g. 6 years building landing pages that convert]. Can I show you a project with similar scope and what it delivered?\" You're not arguing about the number. You're reframing what the number buys.",
-  },
-  {
-    situation: "When client says: \"Can you do it cheaper if we give you more work?\"",
-    response:
-      "\"If we commit to a 3-month retainer today, I can offer AED X per month at a 10% reduced rate, paid monthly upfront.\" You get recurring revenue. They get a discount. Specify the retainer terms before they say yes.",
-  },
-  {
-    situation: "When client disappears after seeing your rate",
-    response:
-      "Wait 48 hours, then follow up once: \"Happy to discuss scope options if the budget doesn't fit the full project.\" One follow-up. That's it. If they don't reply, move on.",
-  },
-];
-
-export default function Article() {
+export default function HowToNegotiateFreelanceRatesUAE() {
   return (
     <>
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
       <Header />
+      <main className="min-h-screen bg-white">
+        <div className="max-w-3xl mx-auto px-4 py-12">
+          <nav className="text-sm text-gray-500 mb-8">
+            <Link href="/" className="hover:text-gray-700">Home</Link>
+            <span className="mx-2">/</span>
+            <Link href="/blog" className="hover:text-gray-700">Blog</Link>
+            <span className="mx-2">/</span>
+            <span className="text-gray-900">Negotiate Freelance Rates UAE</span>
+          </nav>
 
-      <main className="flex-1 max-w-2xl mx-auto px-4 sm:px-6 py-14">
-        <Link href="/blog" className="text-sm text-gray-400 hover:text-gray-700 transition-colors mb-8 inline-block">
-          ← Blog
-        </Link>
-
-        <div className="mb-8">
-          <div className="flex items-center gap-3 mb-4">
-            <span className="text-xs font-semibold text-gray-400 uppercase tracking-widest">Business</span>
-            <span className="text-gray-200">·</span>
-            <span className="text-xs text-gray-400">June 15, 2026</span>
-            <span className="text-gray-200">·</span>
-            <span className="text-xs text-gray-400">5 min read</span>
+          <div className="mb-10">
+            <span className="inline-block bg-blue-100 text-blue-700 text-xs font-semibold px-3 py-1 rounded-full mb-4">
+              Pricing & Rates
+            </span>
+            <h1 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4 leading-tight">
+              How to Negotiate Freelance Rates as a UAE Freelancer (2026 Guide)
+            </h1>
+            <p className="text-lg text-gray-600 mb-4">
+              Rate negotiation is one of the highest-leverage skills for UAE
+              freelancers — a single successful negotiation can earn you AED 5,000–
+              20,000 more per engagement with the same amount of work. Most UAE
+              freelancers undercharge not because they lack skills, but because they
+              accept the first number a client offers without negotiating, present
+              their rate apologetically rather than confidently, and do not understand
+              the client-side dynamics that make negotiation possible and expected.
+              UAE business culture — particularly in corporate and government
+              procurement contexts — often expects some negotiation as part of the
+              buying process. A client who does not push back on your rate may even
+              feel slightly uncertain about whether they are getting the best deal.
+              This guide covers the full negotiation playbook for UAE freelancers:
+              how to anchor your rate, frame value, respond to pushback, and close
+              at a premium.
+            </p>
+            <div className="flex items-center gap-4 text-sm text-gray-400">
+              <span>June 16, 2026</span>
+              <span>·</span>
+              <span>7 min read</span>
+            </div>
           </div>
-          <h1 className="text-3xl sm:text-4xl font-bold text-gray-900 leading-tight mb-4">
-            How to Negotiate Freelance Rates in the UAE (Without Losing the Client)
-          </h1>
-          <p className="text-lg text-gray-500 leading-relaxed">
-            Most freelancers cave on rates the moment a client pushes back. Here&apos;s how to hold your number —
-            or trade scope, not price — using word-for-word scripts for the situations you actually face.
-          </p>
-        </div>
 
-        <div className="text-gray-700 leading-relaxed space-y-6">
+          <h2 className="text-2xl font-bold text-gray-900 mb-4">The Core Principles of Rate Negotiation</h2>
+          <div className="space-y-4 mb-10">
+            <div className="border border-gray-200 rounded-lg p-5">
+              <h3 className="font-semibold text-gray-900 mb-2">Go High First — Always</h3>
+              <p className="text-gray-600 text-sm">
+                The anchor principle of negotiation: whoever states the first number
+                sets the reference point around which all negotiation happens. If you
+                quote AED 15,000 for a project and the client pushes back to AED 12,000,
+                you settle somewhere in between — likely AED 13,000–14,000. If you had
+                quoted AED 12,000 first, you would have settled at AED 10,000–11,000.
+                The anchor matters enormously. Always quote your actual rate (or
+                slightly above it) first — never ask the client what budget they have
+                or underquote hoping they will add more. State your rate with confidence
+                and silence: &quot;My fee for this project is AED 18,000.&quot; Then
+                stop talking. Do not immediately justify or offer a discount. Let
+                the client respond.
+              </p>
+            </div>
+            <div className="border border-gray-200 rounded-lg p-5">
+              <h3 className="font-semibold text-gray-900 mb-2">Frame Value, Not Time</h3>
+              <p className="text-gray-600 text-sm">
+                When presenting your rate, frame it around what the client receives
+                and what that outcome is worth — not around how long you will spend.
+                &quot;My fee for this project is AED 18,000 — this covers the full
+                website redesign, 2 rounds of revision, and launch support. Based on
+                your target of increasing online leads by 30%, the return on this
+                investment should be significant in the first quarter.&quot; This
+                framing positions your fee as an investment decision rather than a
+                cost comparison. Clients negotiating a cost ask whether they can get
+                it cheaper — clients evaluating an investment ask whether it is the
+                right investment. The latter conversation favours your rate.
+              </p>
+            </div>
+          </div>
 
-          <p>
-            A client loves your proposal. Then they see the price. &ldquo;That&apos;s a bit more than we expected —
-            can you do anything on the rate?&rdquo;
-          </p>
-
-          <p>
-            Most freelancers immediately drop 20%. They&apos;re afraid the client will walk. Sometimes they do.
-            More often, they were testing you — and the moment you fold, you&apos;ve signalled that your rate
-            was flexible from the start.
-          </p>
-
-          <p>
-            Negotiating rates is a skill. Here&apos;s how to do it without losing deals or self-respect.
-          </p>
-
-          <h2 className="text-xl font-bold text-gray-900 mt-10 mb-3">Why Freelancers Cave on Rates</h2>
-
-          <p>
-            Three reasons, and they&apos;re all fixable:
-          </p>
-
-          <ul className="list-disc pl-5 space-y-2 text-gray-600">
-            <li><strong>No pipeline.</strong> When this is your only lead, losing them feels catastrophic. The fix is a full pipeline — then any single client becomes optional.</li>
-            <li><strong>Fear of the awkward pause.</strong> Client pushes back. Silence. Freelancer fills it by lowering the number. Learn to sit in the silence. It works in your favour.</li>
-            <li><strong>Imposter syndrome.</strong> You feel your rate is too high even when it isn&apos;t. The market doesn&apos;t know your self-doubt — only what you quote.</li>
+          <h2 className="text-2xl font-bold text-gray-900 mb-4">How to Handle Rate Pushback</h2>
+          <ul className="space-y-2 mb-10 text-gray-700">
+            <li className="flex gap-2"><span className="text-blue-500 font-bold">✓</span> <strong>The Silence Response</strong> — When a client says &quot;that&apos;s a bit high&quot; or &quot;we were thinking more like X,&quot; the most powerful first response is silence. Nod, maintain eye contact (or on a call, simply pause), and let the silence sit for 3–5 seconds. Most freelancers immediately backfill silence with justification or a discount. Silence signals that you expected the response, are comfortable with your rate, and are giving the client space to reconsider. Often the client fills the silence by accepting or moderating their own pushback without you conceding anything.</li>
+            <li className="flex gap-2"><span className="text-blue-500 font-bold">✓</span> <strong>The Scope Reduction Response</strong> — When a client has a lower budget than your rate, offer to reduce scope rather than reduce price: &quot;I can work within AED 14,000 — at that investment, I&apos;d suggest we scope this to the 5 core pages rather than 8, with 1 revision round instead of 2. Would that work, or would you like to stick with the full scope at AED 18,000?&quot; This response respects your rate, gives the client a choice, and avoids the price-only framing. Many clients, presented with this choice, choose the full scope at the full price.</li>
+            <li className="flex gap-2"><span className="text-blue-500 font-bold">✓</span> <strong>The Payment Structure Response</strong> — &quot;I understand — rather than reducing the project rate, I could offer you a phased payment: 30% now, 30% on delivery of the first milestone, and 40% on final delivery. Would that structure help?&quot; This preserves your total fee while giving the client the cashflow benefit they may actually need. Many UAE clients who negotiate on price are actually managing budget timing — a payment structure that spreads the investment is often enough to close the deal at your full rate.</li>
+            <li className="flex gap-2"><span className="text-blue-500 font-bold">✓</span> <strong>The Walk-Away Response</strong> — &quot;I understand this is outside your current budget. My rate reflects the level of quality and expertise I bring to this project, and I&apos;m not able to deliver to that standard at a lower investment. If the budget changes, I&apos;d be happy to revisit.&quot; Walking away from a project that does not meet your rate floor is the most powerful long-term negotiation move — it builds a reputation for non-negotiability on quality and prevents you from accepting under-market work.</li>
           </ul>
 
-          <h2 className="text-xl font-bold text-gray-900 mt-10 mb-3">The Anchor Technique</h2>
-
-          <p>
-            Always quote 20–30% higher than your actual target rate.
-          </p>
-
-          <p>
-            If your target is AED 8,000 for a project, open at AED 10,000–11,000. If the client accepts
-            without negotiating — great, you got a premium rate. If they push back, you have room to move
-            to your real number while appearing to compromise. The client feels like they negotiated a win.
-            You got exactly what you wanted.
-          </p>
-
-          <p>
-            Anchoring high also signals confidence. A freelancer who opens at their lowest rate suggests
-            they don&apos;t believe they&apos;re worth more.
-          </p>
-
-          <h2 className="text-xl font-bold text-gray-900 mt-10 mb-3">&ldquo;What&apos;s Your Budget?&rdquo; — When to Ask</h2>
-
-          <p>
-            Asking the client&apos;s budget before quoting is a powerful move — but only in specific situations.
-          </p>
-
-          <p>
-            <strong>Ask before quoting</strong> when: the project scope is ambiguous, there are multiple
-            possible approaches with very different price points, or it&apos;s a large/ongoing engagement where
-            scope could balloon.
-          </p>
-
-          <p>
-            <strong>Don&apos;t ask</strong> when: the project scope is clearly defined and you know the market
-            rate. Asking for the budget on a fixed-scope request (e.g. &ldquo;design a one-page flyer&rdquo;) makes
-            you look like you&apos;re going to match whatever they say.
-          </p>
-
-          <h2 className="text-xl font-bold text-gray-900 mt-10 mb-3">4 Negotiation Scripts (Word-for-Word)</h2>
-
-          <p>
-            These are the four situations that come up most often — with exact responses you can adapt
-            and use immediately.
-          </p>
-
-          <div className="flex flex-col gap-5 my-6">
-            {scripts.map((item, i) => (
-              <div key={i} className="border border-gray-200 rounded-2xl p-5">
-                <p className="text-sm font-semibold text-gray-500 mb-2">{item.situation}</p>
-                <div className="bg-gray-50 rounded-xl p-4 text-sm text-gray-700 italic leading-relaxed">
-                  {item.response}
-                </div>
-              </div>
-            ))}
+          <h2 className="text-2xl font-bold text-gray-900 mb-4">Negotiating with UAE Corporate vs SME Clients</h2>
+          <div className="space-y-4 mb-10">
+            <div className="border border-gray-200 rounded-lg p-5">
+              <h3 className="font-semibold text-gray-900 mb-2">UAE Corporate Clients</h3>
+              <p className="text-gray-600 text-sm">
+                UAE corporate procurement negotiates systematically — they may request
+                a discount as a standard step in their vendor process regardless of
+                whether they actually need one. Be prepared with a clear statement of
+                value (not a justification), have a scope reduction alternative ready
+                if needed, and understand that corporate budget cycles mean a &quot;not
+                now&quot; is often a &quot;not this quarter.&quot; If asked to agree
+                to a vendor rate card below your standard rate, offer a time-limited
+                rate card (valid for 12 months) rather than an indefinite discount.
+                This protects your future rate while closing the current engagement.
+              </p>
+            </div>
+            <div className="border border-gray-200 rounded-lg p-5">
+              <h3 className="font-semibold text-gray-900 mb-2">UAE SME Clients</h3>
+              <p className="text-gray-600 text-sm">
+                UAE SME clients often negotiate from genuine budget constraints rather
+                than procurement process. The most effective approach: understand their
+                business model and what the outcome of your work is worth to them
+                commercially, then anchor your rate to that value. A UAE SME that has
+                been burned by cheaper freelancers who delivered poor work is receptive
+                to a value conversation: &quot;The last time you went with a lower-cost
+                option, what happened?&quot; This reframes the conversation from price
+                comparison to risk management — and UAE SME owners who have paid twice
+                for the same work (once cheap, once to fix it) are very receptive to
+                investing properly the first time.
+              </p>
+            </div>
           </div>
 
-          <h2 className="text-xl font-bold text-gray-900 mt-10 mb-3">The Package Pricing Trick</h2>
-
-          <p>
-            Instead of quoting a single rate, offer three tiers. Clients almost never pick the cheapest.
-          </p>
-
-          <div className="grid grid-cols-3 gap-3 my-6">
-            {[
-              { name: "Essential", price: "AED 6,000", detail: "Core deliverables only. One revision round." },
-              { name: "Standard", price: "AED 9,500", detail: "Full scope + strategy session + two revision rounds.", highlight: true },
-              { name: "Premium", price: "AED 14,000", detail: "Everything in Standard + 30-day post-launch support." },
-            ].map((tier) => (
-              <div
-                key={tier.name}
-                className={`border rounded-xl p-4 text-center ${tier.highlight ? "border-gray-900 bg-gray-900 text-white" : "border-gray-200"}`}
-              >
-                <p className={`text-xs font-semibold uppercase tracking-widest mb-1 ${tier.highlight ? "text-gray-300" : "text-gray-400"}`}>{tier.name}</p>
-                <p className={`text-lg font-bold mb-2 ${tier.highlight ? "text-white" : "text-gray-900"}`}>{tier.price}</p>
-                <p className={`text-xs leading-relaxed ${tier.highlight ? "text-gray-300" : "text-gray-500"}`}>{tier.detail}</p>
-              </div>
-            ))}
+          <h2 className="text-2xl font-bold text-gray-900 mb-4">Rate Negotiation Scripts for UAE Freelancers</h2>
+          <div className="space-y-4 mb-10">
+            <div className="border border-gray-200 rounded-lg p-5">
+              <h3 className="font-semibold text-gray-900 mb-2">When client states a budget below your rate</h3>
+              <p className="text-gray-600 text-sm italic">
+                &quot;I appreciate you sharing the budget. My standard rate for this project is AED 15,000 based on the scope we&apos;ve discussed. I can work within AED 10,000 — though at that investment level, I&apos;d need to reduce the scope to [specific reduced deliverables]. Would you like to explore that, or would the full scope at AED 15,000 be more useful for what you&apos;re trying to achieve?&quot;
+              </p>
+            </div>
+            <div className="border border-gray-200 rounded-lg p-5">
+              <h3 className="font-semibold text-gray-900 mb-2">When client asks for a percentage discount</h3>
+              <p className="text-gray-600 text-sm italic">
+                &quot;I don&apos;t typically discount my rate — the fee reflects the quality of the work and the outcome you&apos;re investing in. What I can do is structure the payments to help with cashflow: 30% upfront, 40% at the midpoint, and 30% on completion. Would that work for you?&quot;
+              </p>
+            </div>
+            <div className="border border-gray-200 rounded-lg p-5">
+              <h3 className="font-semibold text-gray-900 mb-2">When asked for your rate before you know their budget</h3>
+              <p className="text-gray-600 text-sm italic">
+                &quot;My rate for projects like this typically starts from AED [upper end] depending on scope and timeline. Before I give you a specific figure, can you tell me a bit more about what you&apos;re trying to achieve? That helps me make sure I&apos;m quoting for exactly what you need.&quot; This gives a high anchor and creates space for discovery before committing to a price.
+              </p>
+            </div>
           </div>
 
-          <p>
-            The Standard tier is your real target. The Essential tier makes it look affordable by comparison.
-            The Premium tier makes Standard look like the sensible middle ground. Research consistently shows
-            clients pick the middle option at disproportionate rates.
-          </p>
-
-          <h2 className="text-xl font-bold text-gray-900 mt-10 mb-3">When to Walk Away</h2>
-
-          <p>
-            Not every client is worth winning. Walk away when:
-          </p>
-
-          <ul className="list-disc pl-5 space-y-2 text-gray-600">
-            <li>They ask for scope reductions before the project has started</li>
-            <li>They use &ldquo;we&apos;ll see how it goes&rdquo; language instead of committing to clear deliverables</li>
-            <li>The negotiation is about your rate, not the value you deliver</li>
-            <li>They reference previous freelancers who &ldquo;did it for less&rdquo; more than once</li>
-            <li>Your gut says this will be a difficult client — it&apos;s usually right</li>
-          </ul>
-
-          <p>
-            The opportunity cost of a bad-fit client is high: they consume time, energy, and focus that
-            could go to clients who value your work.
-          </p>
-
-          <h2 className="text-xl font-bold text-gray-900 mt-10 mb-3">The Retainer Close</h2>
-
-          <p>
-            The best outcome of any project negotiation isn&apos;t closing the project — it&apos;s converting
-            it into monthly recurring revenue.
-          </p>
-
-          <p>
-            At the end of the proposal or negotiation, add one line: &ldquo;If ongoing support would be useful
-            after we wrap up, I offer a monthly retainer starting at AED X — covers [specific services].
-            Happy to factor that in if it&apos;s something you&apos;d want.&rdquo;
-          </p>
-
-          <p>
-            Many clients will say yes — especially if the project goes well. Retainers are easier to sell
-            to existing clients than new ones. One retainer client can stabilise your entire monthly revenue.
-          </p>
-
-          <div className="bg-gray-50 border border-gray-200 rounded-2xl p-5 my-6">
-            <p className="text-sm font-semibold text-gray-900 mb-1">Want these scripts ready to copy-paste?</p>
-            <p className="text-sm text-gray-500 mb-3">
-              The SoloKit AI Prompt Pack includes rate negotiation scripts, client objection responses,
-              retainer pitch templates, and 50+ prompts built for UAE freelancers.
+          <div className="bg-gray-900 rounded-2xl p-8 text-center">
+            <h2 className="text-2xl font-bold text-white mb-3">
+              Rate Card & Proposal Templates for UAE Freelancers
+            </h2>
+            <p className="text-gray-300 mb-6">
+              SoloKit includes rate card templates, negotiation scripts, proposal
+              documents, and pricing frameworks for UAE freelancers.
             </p>
             <Link
-              href="/products/ai-prompt-pack-pro"
-              className="inline-block bg-gray-900 text-white text-sm font-semibold px-5 py-2 rounded-xl hover:bg-gray-700 transition-colors"
+              href="/products/solokit-freelance-os"
+              className="inline-block bg-white text-gray-900 font-semibold px-6 py-3 rounded-xl hover:bg-gray-100 transition-colors"
             >
-              Get the AI Prompt Pack →
+              Get SoloKit
             </Link>
           </div>
 
-          <h2 className="text-xl font-bold text-gray-900 mt-10 mb-3">UAE Market Context</h2>
-
-          <p>
-            Rates in the UAE vary significantly by discipline, client type, and experience level. Before you
-            negotiate, know where your rate sits relative to the market — otherwise you&apos;re negotiating blind.
-          </p>
-
-          <p>
-            See our{" "}
-            <Link href="/blog/how-to-price-freelance-services-uae" className="underline underline-offset-2 text-gray-900 hover:text-gray-600 transition-colors">
-              UAE freelance rate calculator and pricing guide →
-            </Link>{" "}
-            for benchmarks by discipline and experience level.
-          </p>
-
-          <div className="bg-gray-900 text-white rounded-2xl p-6 mt-10">
-            <p className="text-sm font-semibold text-gray-300 mb-1">Stop writing scripts from scratch</p>
-            <p className="text-xl font-bold mb-3">AI Prompt Pack Pro — AED 149</p>
-            <p className="text-gray-400 text-sm mb-4">
-              50+ prompts for UAE freelancers: negotiation scripts, proposal drafts, rate justification
-              frameworks, client objection responses, and more. Plug into Claude or ChatGPT and go.
-            </p>
-            <Link
-              href="/products/ai-prompt-pack-pro"
-              className="inline-block bg-white text-gray-900 text-sm font-semibold px-6 py-2.5 rounded-xl hover:bg-gray-100 transition-colors"
-            >
-              Get the Prompt Pack →
-            </Link>
-          </div>
-
-          <div className="mt-10 pt-6 border-t border-gray-100">
-            <p className="text-sm font-semibold text-gray-900 mb-3">Further reading</p>
-            <div className="flex flex-col gap-2">
-              <Link href="/blog/how-to-price-freelance-services-uae" className="text-sm text-gray-500 hover:text-gray-900 transition-colors underline underline-offset-2">
-                How to Price Your Freelance Services in the UAE →
-              </Link>
-              <Link href="/blog/freelance-proposal-tips-uae" className="text-sm text-gray-500 hover:text-gray-900 transition-colors underline underline-offset-2">
-                How to Write a Freelance Proposal That Wins Clients in the UAE →
-              </Link>
-              <Link href="/blog/freelance-invoice-uae" className="text-sm text-gray-500 hover:text-gray-900 transition-colors underline underline-offset-2">
-                How to Invoice Clients in the UAE (AED Invoicing Guide) →
-              </Link>
-              <Link href="/blog/freelance-systems-uae" className="text-sm text-gray-500 hover:text-gray-900 transition-colors underline underline-offset-2">
-                Why Most UAE Freelancers Stay Stuck at AED 10K/Month →
-              </Link>
+          <div className="mt-12">
+            <h3 className="text-lg font-semibold text-gray-900 mb-4">Related Guides</h3>
+            <div className="space-y-2">
+              {[
+                { href: "/blog/how-to-raise-your-rates-uae", label: "How to Raise Your Freelance Rates in the UAE" },
+                { href: "/blog/how-to-price-yourself-as-freelancer-uae", label: "How to Price Yourself as a Freelancer in the UAE" },
+                { href: "/blog/value-based-pricing-uae-freelancers", label: "Value-Based Pricing for UAE Freelancers" },
+                { href: "/blog/how-to-create-freelance-packages-uae", label: "How to Create Freelance Service Packages in the UAE" },
+              ].map((link) => (
+                <Link key={link.href} href={link.href} className="block text-blue-600 hover:text-blue-800 text-sm">
+                  → {link.label}
+                </Link>
+              ))}
             </div>
           </div>
         </div>
-
-        <div className="mt-12 pt-8 border-t border-gray-100">
-          <Link href="/blog" className="text-sm text-gray-400 hover:text-gray-700 transition-colors">
-            ← Back to Blog
-          </Link>
-        </div>
       </main>
-
       <Footer />
     </>
   );

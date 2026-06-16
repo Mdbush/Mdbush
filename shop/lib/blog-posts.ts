@@ -2726,6 +2726,33 @@ export const posts: BlogPost[] = [
     readTime: "7 min read",
     category: "Pricing & Rates",
   },
+  {
+    slug: "freelance-organizational-development-consultant-rates-uae",
+    title: "Freelance Organizational Development Consultant Rates in the UAE (2026)",
+    description:
+      "Real AED day rates for freelance OD consultants in Dubai and Abu Dhabi. Culture assessment, organisational design, leadership development facilitation, employee engagement, Emiratisation OD programs, and HR transformation advisory fees for 2026.",
+    date: "June 16, 2026",
+    readTime: "7 min read",
+    category: "Pricing & Rates",
+  },
+  {
+    slug: "freelance-payroll-consultant-rates-uae",
+    title: "Freelance Payroll Consultant Rates in the UAE (2026)",
+    description:
+      "Real AED day rates for freelance payroll consultants in Dubai and Abu Dhabi. UAE WPS compliance, GPSSA pension advisory, payroll system implementation (SAP, Oracle HCM), end-of-service gratuity audits, and payroll transformation fees for 2026.",
+    date: "June 16, 2026",
+    readTime: "7 min read",
+    category: "Pricing & Rates",
+  },
+  {
+    slug: "how-to-negotiate-freelance-rates-uae",
+    title: "How to Negotiate Freelance Rates as a UAE Freelancer (2026 Guide)",
+    description:
+      "How UAE freelancers negotiate higher rates with clients — the anchor strategy, value framing, pushback responses, scope reduction technique, negotiating with UAE corporates vs SMEs, and copy-paste negotiation scripts for Dubai and Abu Dhabi freelancers.",
+    date: "June 16, 2026",
+    readTime: "7 min read",
+    category: "Pricing & Rates",
+  },
 ];
 
 export function getPost(slug: string): BlogPost | undefined {
