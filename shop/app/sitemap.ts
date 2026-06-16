@@ -80,6 +80,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "how-to-price-yourself-as-freelancer-uae",
     "best-time-tracking-apps-freelancers-uae",
     "freelance-email-templates-uae",
+    "freelance-niche-uae",
+    "client-red-flags-uae",
+    "freelance-rates-increase-strategy-uae",
   ].map((slug) => ({
     url: `${base}/blog/${slug}`,
     lastModified: new Date(),

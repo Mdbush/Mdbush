@@ -620,6 +620,33 @@ export const posts: BlogPost[] = [
     readTime: "7 min read",
     category: "Client Work & Proposals",
   },
+  {
+    slug: "freelance-niche-uae",
+    title: "How to Find Your Freelance Niche in the UAE (And Charge More for It)",
+    description:
+      "Stop being a generalist. How UAE freelancers find a profitable niche, command higher rates, and attract better clients — with 20 high-demand UAE freelance niches listed.",
+    date: "June 16, 2026",
+    readTime: "8 min read",
+    category: "Pricing & Rates",
+  },
+  {
+    slug: "client-red-flags-uae",
+    title: "10 Client Red Flags for UAE Freelancers (How to Spot Them Before You Sign)",
+    description:
+      "The 10 client red flags UAE freelancers need to recognize before taking a project — late payments, scope creep, and the warning signs you can spot before the contract is signed.",
+    date: "June 16, 2026",
+    readTime: "7 min read",
+    category: "Client Work & Proposals",
+  },
+  {
+    slug: "freelance-rates-increase-strategy-uae",
+    title: "How to Increase Your Freelance Revenue Without More Clients (UAE Guide)",
+    description:
+      "5 strategies UAE freelancers use to increase revenue from existing clients — retainers, service tiers, add-ons, referral systems, and rate increases. No new client acquisition required.",
+    date: "June 16, 2026",
+    readTime: "8 min read",
+    category: "Pricing & Rates",
+  },
 ];
 
 export function getPost(slug: string): BlogPost | undefined {
