@@ -2132,6 +2132,33 @@ export const posts: BlogPost[] = [
     readTime: "7 min read",
     category: "Pricing & Rates",
   },
+  {
+    slug: "freelance-product-designer-rates-uae",
+    title: "Freelance Product Designer Rates in the UAE (2026)",
+    description:
+      "Real AED day rates for freelance product designers in Dubai and Abu Dhabi. End-to-end product design, design systems, mobile and web product design, and UX-to-UI delivery rates for UAE tech companies in 2026.",
+    date: "June 16, 2026",
+    readTime: "7 min read",
+    category: "Pricing & Rates",
+  },
+  {
+    slug: "how-to-price-equity-over-cash-uae",
+    title: "Should UAE Freelancers Accept Equity Instead of Cash? (2026 Guide)",
+    description:
+      "When UAE startups offer equity in lieu of cash payment — how to evaluate equity offers, what percentage to negotiate, vesting schedules, UAE legal considerations, and whether to accept reduced rates for shares.",
+    date: "June 16, 2026",
+    readTime: "7 min read",
+    category: "Pricing & Rates",
+  },
+  {
+    slug: "freelance-business-development-consultant-rates-uae",
+    title: "Freelance Business Development Consultant Rates in the UAE (2026)",
+    description:
+      "Real AED day rates for freelance business development consultants in Dubai and Abu Dhabi. Market entry strategy, partnership development, sales strategy, B2B pipeline development, and BD retainer fees for UAE companies in 2026.",
+    date: "June 16, 2026",
+    readTime: "7 min read",
+    category: "Pricing & Rates",
+  },
 ];
 
 export function getPost(slug: string): BlogPost | undefined {
