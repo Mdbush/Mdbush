@@ -1592,6 +1592,33 @@ export const posts: BlogPost[] = [
     readTime: "8 min read",
     category: "Getting Clients",
   },
+  {
+    slug: "freelance-compliance-consultant-rates-uae",
+    title: "Freelance Compliance Consultant Rates in the UAE (2026): AML, Regulatory & Risk Fees",
+    description:
+      "Real AED day rates for freelance compliance consultants in Dubai and Abu Dhabi. AML/CFT framework, CBUAE regulatory compliance, DFSA/ADGM regulatory work, data protection (PDPL), financial crime risk, and crypto VASP compliance rates.",
+    date: "June 16, 2026",
+    readTime: "8 min read",
+    category: "Pricing & Rates",
+  },
+  {
+    slug: "how-to-use-ai-for-freelance-proposals-uae",
+    title: "How to Use AI to Write Better Freelance Proposals in the UAE (2026)",
+    description:
+      "Practical guide to using ChatGPT and Claude to write winning freelance proposals in Dubai and Abu Dhabi. Research prompts, proposal structure, first draft generation, specific prompt templates for UAE clients, and what to avoid.",
+    date: "June 16, 2026",
+    readTime: "8 min read",
+    category: "AI Tools",
+  },
+  {
+    slug: "freelance-learning-development-consultant-rates-uae",
+    title: "Freelance Learning & Development Consultant Rates in the UAE (2026)",
+    description:
+      "Real AED day rates for freelance L&D consultants and corporate trainers in Dubai and Abu Dhabi. Instructional design, leadership development, Emiratisation training, e-learning development, and corporate workshop rates.",
+    date: "June 16, 2026",
+    readTime: "8 min read",
+    category: "Pricing & Rates",
+  },
 ];
 
 export function getPost(slug: string): BlogPost | undefined {
