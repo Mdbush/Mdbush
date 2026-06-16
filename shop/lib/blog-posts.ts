@@ -1862,6 +1862,33 @@ export const posts: BlogPost[] = [
     readTime: "7 min read",
     category: "Getting Clients",
   },
+  {
+    slug: "freelance-aws-developer-rates-uae",
+    title: "Freelance AWS Developer Rates in the UAE (2026): Cloud Engineering Fees",
+    description:
+      "Real AED day rates for freelance AWS developers and cloud engineers in Dubai and Abu Dhabi. AWS infrastructure, Lambda, EC2, EKS, data engineering, solutions architect, and Amazon cloud consulting fees for 2026.",
+    date: "June 16, 2026",
+    readTime: "7 min read",
+    category: "Pricing & Rates",
+  },
+  {
+    slug: "how-to-productize-freelance-services-uae",
+    title: "How to Productize Your Freelance Services in the UAE (2026): Package & Scale",
+    description:
+      "How UAE freelancers can turn custom services into scalable products. Productized services, fixed-price packages, what to productize, how to price it, and examples from Dubai freelancers in design, tech, and consulting.",
+    date: "June 16, 2026",
+    readTime: "7 min read",
+    category: "Pricing & Rates",
+  },
+  {
+    slug: "freelance-google-cloud-engineer-rates-uae",
+    title: "Freelance Google Cloud Engineer Rates in the UAE (2026): GCP Consulting Fees",
+    description:
+      "Real AED day rates for freelance Google Cloud Platform engineers in Dubai and Abu Dhabi. GCP infrastructure, BigQuery, Kubernetes, data engineering, Vertex AI, and Google Cloud consulting fees for 2026.",
+    date: "June 16, 2026",
+    readTime: "7 min read",
+    category: "Pricing & Rates",
+  },
 ];
 
 export function getPost(slug: string): BlogPost | undefined {
