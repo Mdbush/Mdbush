@@ -1241,6 +1241,33 @@ export const posts: BlogPost[] = [
     readTime: "7 min read",
     category: "Pricing & Rates",
   },
+  {
+    slug: "freelance-business-coach-rates-uae",
+    title: "Freelance Business Coach Rates in the UAE (2026): What to Charge",
+    description:
+      "Real AED rates for freelance business coaches in Dubai and Abu Dhabi — 1-on-1 sessions, monthly retainers, founder coaching programs, group masterminds, and CEO intensives; startup and family business niches; credentials and trust-building in the UAE market for 2026.",
+    date: "June 16, 2026",
+    readTime: "7 min read",
+    category: "Pricing & Rates",
+  },
+  {
+    slug: "how-to-find-cofounder-uae",
+    title: "How to Find a Co-Founder in the UAE (2026): A Practical Guide",
+    description:
+      "How to find the right co-founder for your UAE startup — where to look in Dubai and Abu Dhabi, what to look for, how to structure the equity split and vesting schedule, and the co-founder agreement you need before building together.",
+    date: "June 16, 2026",
+    readTime: "9 min read",
+    category: "Business & Mindset",
+  },
+  {
+    slug: "freelance-photographer-videographer-package-uae",
+    title: "Freelance Photography & Videography Package Rates in the UAE (2026)",
+    description:
+      "Real AED rates for combined photo + video packages in Dubai and Abu Dhabi — brand content days, social media content shoots, corporate events, real estate, product campaigns, monthly retainers, and corporate film productions for 2026.",
+    date: "June 16, 2026",
+    readTime: "7 min read",
+    category: "Pricing & Rates",
+  },
 ];
 
 export function getPost(slug: string): BlogPost | undefined {
