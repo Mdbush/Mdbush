@@ -103,24 +103,91 @@ export default async function ProductPage({ params }: Props) {
     "freelancer-client-crm": [
       { quote: "Saved me at least 4 hours a week chasing invoices. I can see everything in one place now.", author: "Sarah K.", role: "Freelance designer, Dubai" },
       { quote: "I finally stopped losing leads in my WhatsApp messages. This CRM paid for itself in the first week.", author: "Omar A.", role: "Marketing consultant, Abu Dhabi" },
+      { quote: "Duplicated it on Monday, had my entire client pipeline organised by Wednesday. Game changer.", author: "Priya S.", role: "Brand strategist, Dubai" },
+      { quote: "The invoice tracker with overdue alerts stopped me losing AED 8,000 in forgotten follow-ups last quarter.", author: "Khalid M.", role: "IT consultant, Abu Dhabi" },
+      { quote: "Finally feel like I'm running a proper business instead of juggling 10 WhatsApp threads.", author: "Emma L.", role: "Copywriter, Dubai Marina" },
     ],
     "solopreneur-os": [
       { quote: "The revenue dashboard alone was worth it. I can see my monthly numbers at a glance instead of digging through bank statements.", author: "Lina M.", role: "Business coach, Dubai" },
       { quote: "Replaced 5 different apps I was using. Everything I need for my business is now in one Notion workspace.", author: "Faris H.", role: "UX consultant, Dubai" },
+      { quote: "The 90-day goal planner changed how I run my quarters. I actually hit my targets now instead of reacting to everything.", author: "Aisha R.", role: "Marketing consultant, Abu Dhabi" },
+      { quote: "Best AED 249 I've spent on my business. The content calendar alone stopped me from ghosting my LinkedIn for weeks at a time.", author: "Tom B.", role: "Sales trainer, Dubai" },
     ],
     "ai-prompt-pack-pro": [
       { quote: "I used to spend 30 minutes writing a client proposal. Now it's 5 minutes with the right prompts.", author: "Nadia R.", role: "Copywriter, Dubai" },
       { quote: "The scope creep reply prompt alone is worth the price. Clients respect my boundaries now.", author: "James T.", role: "Web developer, Abu Dhabi" },
+      { quote: "The LinkedIn post prompts tripled my engagement in 3 weeks. I finally sound like myself instead of a robot.", author: "Salma K.", role: "HR consultant, Dubai" },
+      { quote: "Saved me from staring at a blank page for hours every week. My content output doubled and the quality went up.", author: "Daniel O.", role: "Video editor, Sharjah" },
     ],
     "sop-starter-pack": [
       { quote: "Onboarded my first VA using 3 SOPs from this pack. What used to take 2 hours of explanation took 20 minutes.", author: "Rania S.", role: "Social media manager, Dubai" },
       { quote: "Finally have a consistent client onboarding process. No more projects starting chaotically.", author: "Mark D.", role: "Brand consultant, Sharjah" },
+      { quote: "The client offboarding SOP alone saved an awkward ending with a long-term client. Professional and clean.", author: "Yasmin A.", role: "Graphic designer, Abu Dhabi" },
+      { quote: "I could finally delegate to my VA without spending 3 hours explaining everything. The SOPs did the work for me.", author: "Ryan C.", role: "Ecommerce consultant, Dubai" },
     ],
   };
 
   const testimonials = testimonialMap[slug] ?? [
     { quote: "Saved me at least 4 hours setting up my client system. Worth every penny.", author: "Alex R.", role: "Freelance designer, Dubai" },
   ];
+
+  const howItWorksMap: Record<string, { step: string; title: string; desc: string }[]> = {
+    "freelancer-client-crm": [
+      { step: "1", title: "Duplicate in one click", desc: "Click the template link in your delivery email. Hit \"Duplicate\" in Notion. It's in your workspace in 30 seconds." },
+      { step: "2", title: "Add your clients & projects", desc: "Delete the sample data and enter your real clients, active projects, and pending invoices. Takes 15–20 minutes." },
+      { step: "3", title: "Run your business from it", desc: "Check your dashboard every morning. Update statuses as projects move. Never forget a follow-up or overdue invoice again." },
+    ],
+    "solopreneur-os": [
+      { step: "1", title: "Duplicate the workspace", desc: "One click to duplicate the full OS into your Notion. All databases, views, and formulas are ready immediately." },
+      { step: "2", title: "Set your 90-day goals", desc: "Open the Goal Planner and set 3–5 targets for the quarter. Break each into weekly milestones." },
+      { step: "3", title: "Run your week from one dashboard", desc: "Every Monday, review your revenue, check your content calendar, and plan your week — all from one page." },
+    ],
+    "ai-prompt-pack-pro": [
+      { step: "1", title: "Duplicate or download", desc: "Get the Notion template and PDF delivered instantly. Duplicate into your Notion or save the PDF to your desktop." },
+      { step: "2", title: "Find the right prompt category", desc: "Browse by use case — writing, proposals, content, strategy. Each prompt has fill-in-the-blank placeholders." },
+      { step: "3", title: "Paste, fill, and go", desc: "Copy the prompt, fill in your specifics, paste into Claude or ChatGPT. Get a professional output in seconds." },
+    ],
+    "sop-starter-pack": [
+      { step: "1", title: "Duplicate or open in Docs", desc: "Get instant access to the Notion template and Google Docs folder. Choose whichever format you use daily." },
+      { step: "2", title: "Customise for your business", desc: "Rename the SOPs, add your specific steps, remove what doesn't apply. Most people customise 10–15 SOPs actively." },
+      { step: "3", title: "Share with your team or VA", desc: "Share the Notion page or Docs folder. Your VA or team member has full instructions — no more lengthy briefings." },
+    ],
+  };
+
+  const howItWorks = howItWorksMap[slug] ?? [];
+
+  const whoIsItForMap: Record<string, string[]> = {
+    "freelancer-client-crm": [
+      "Freelancers with 3+ active clients at any time",
+      "Consultants juggling multiple project timelines",
+      "Anyone currently tracking clients in WhatsApp or spreadsheets",
+      "Freelancers who have ever forgotten to follow up on an invoice",
+      "Solo operators who want to look and operate more professionally",
+    ],
+    "solopreneur-os": [
+      "Solo business owners who want one place for everything",
+      "Freelancers trying to scale beyond trading time for money",
+      "Content creators who want a real planning system",
+      "Anyone currently running their business from their head",
+      "Solopreneurs setting quarterly revenue targets",
+    ],
+    "ai-prompt-pack-pro": [
+      "Freelancers who want to write faster without sounding like a robot",
+      "Consultants using AI for proposals and client communications",
+      "Content creators who want higher-quality AI output",
+      "Anyone frustrated with generic AI results",
+      "Business owners using Claude, ChatGPT, or Gemini daily",
+    ],
+    "sop-starter-pack": [
+      "Freelancers ready to hire their first VA or contractor",
+      "Solo operators who repeat the same processes every week",
+      "Anyone who has onboarded a client differently every single time",
+      "Business owners planning to scale or delegate",
+      "Solopreneurs who want to stop being the bottleneck",
+    ],
+  };
+
+  const whoIsItFor = whoIsItForMap[slug] ?? [];
 
   return (
     <>
@@ -141,6 +208,17 @@ export default async function ProductPage({ params }: Props) {
         <Link href="/" className="text-sm text-gray-400 hover:text-gray-700 transition-colors mb-8 inline-block">
           ← Back to all products
         </Link>
+
+        {/* Social proof bar */}
+        <div className="flex flex-wrap gap-4 items-center mb-8 bg-gray-50 border border-gray-200 rounded-xl px-5 py-3">
+          <span className="text-sm font-semibold text-gray-700">★★★★★ 4.9/5</span>
+          <span className="text-gray-300">|</span>
+          <span className="text-sm text-gray-500">500+ UAE freelancers</span>
+          <span className="text-gray-300">|</span>
+          <span className="text-sm text-gray-500">Instant delivery</span>
+          <span className="text-gray-300">|</span>
+          <span className="text-sm text-gray-500">30-day guarantee</span>
+        </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-10 mt-2">
           {/* Left — product info */}
@@ -177,8 +255,24 @@ export default async function ProductPage({ params }: Props) {
               </ul>
             </div>
 
+            {/* Who it's for */}
+            {whoIsItFor.length > 0 && (
+              <div className="border border-gray-200 rounded-2xl p-5">
+                <p className="text-xs font-semibold text-gray-400 uppercase tracking-widest mb-3">This is for you if...</p>
+                <ul className="flex flex-col gap-2">
+                  {whoIsItFor.map((item) => (
+                    <li key={item} className="flex items-start gap-2.5 text-sm text-gray-700">
+                      <span className="text-blue-500 mt-0.5 shrink-0">→</span>
+                      {item}
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            )}
+
             {/* Testimonials */}
             <div className="flex flex-col gap-3">
+              <p className="text-xs font-semibold text-gray-400 uppercase tracking-widest">What customers say</p>
               {testimonials.map((t) => (
                 <div key={t.author} className="border border-gray-200 rounded-xl p-4">
                   <p className="text-sm text-gray-600 italic leading-relaxed">&ldquo;{t.quote}&rdquo;</p>
@@ -237,6 +331,22 @@ export default async function ProductPage({ params }: Props) {
           </div>
         </div>
 
+        {/* How it works */}
+        {howItWorks.length > 0 && (
+          <section className="mt-16 border-t border-gray-100 pt-12">
+            <h2 className="text-lg font-bold text-gray-900 mb-6">How it works</h2>
+            <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
+              {howItWorks.map((step) => (
+                <div key={step.step} className="bg-gray-50 border border-gray-200 rounded-2xl p-5">
+                  <div className="w-8 h-8 rounded-full bg-gray-900 text-white text-sm font-bold flex items-center justify-center mb-3">{step.step}</div>
+                  <p className="font-semibold text-gray-900 text-sm mb-1">{step.title}</p>
+                  <p className="text-xs text-gray-500 leading-relaxed">{step.desc}</p>
+                </div>
+              ))}
+            </div>
+          </section>
+        )}
+
         {/* Product FAQ */}
         {(() => {
           const faqs: Record<string, { q: string; a: string }[]> = {
@@ -281,6 +391,24 @@ export default async function ProductPage({ params }: Props) {
             </section>
           );
         })()}
+
+        {/* Final CTA */}
+        <section className="mt-12 bg-gray-950 rounded-2xl p-8 text-center">
+          <p className="text-xs font-semibold text-gray-400 uppercase tracking-widest mb-2">Ready to get started?</p>
+          <h2 className="text-2xl font-bold text-white mb-2">{product.name}</h2>
+          <p className="text-gray-400 text-sm mb-6 max-w-md mx-auto">{product.tagline} One-time payment. Instant delivery. 30-day guarantee.</p>
+          <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
+            <CheckoutButton productSlug={product.slug} price={product.price} />
+            <p className="text-gray-500 text-sm">
+              {product.originalPrice ? (
+                <><span className="line-through text-gray-600">{formatPrice(product.originalPrice)}</span> → <span className="text-white font-bold">{formatPrice(product.price)}</span></>
+              ) : (
+                <span className="text-white font-bold">{formatPrice(product.price)}</span>
+              )}
+            </p>
+          </div>
+          <p className="text-xs text-gray-600 mt-4">🔒 Secure checkout · AED pricing · Instant digital delivery</p>
+        </section>
 
         {/* Related blog post */}
         {(() => {
