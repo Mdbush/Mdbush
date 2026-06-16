@@ -368,6 +368,24 @@ export const posts: BlogPost[] = [
     readTime: "6 min read",
     category: "Business",
   },
+  {
+    slug: "freelance-developer-rates-uae",
+    title: "Freelance Developer Rates in the UAE (2026): How Much Should You Charge?",
+    description:
+      "Rate table for 6 specializations (frontend, backend, full stack, mobile, DevOps, AI/ML) × 3 seniority levels, plus the formula to calculate your exact minimum rate.",
+    date: "June 16, 2026",
+    readTime: "8 min read",
+    category: "Pricing & Rates",
+  },
+  {
+    slug: "how-to-write-freelance-bio-uae",
+    title: "How to Write a Freelance Bio That Gets You Hired in the UAE",
+    description:
+      "The 3 deadly bio mistakes, the 5-part structure that works, before/after examples for 4 freelance types, and an AI prompt to write yours in 5 minutes.",
+    date: "June 16, 2026",
+    readTime: "6 min read",
+    category: "Client Acquisition",
+  },
 ];
 
 export function getPost(slug: string): BlogPost | undefined {

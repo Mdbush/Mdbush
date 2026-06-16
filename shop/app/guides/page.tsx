@@ -6,11 +6,11 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "UAE Freelancer Guides & Resources — SoloKit",
   description:
-    "40 practical guides for freelancers and solopreneurs in the UAE. Visa, tax, rates, clients, contracts, AI tools, and more. All free.",
+    "42 practical guides for freelancers and solopreneurs in the UAE. Visa, tax, rates, clients, contracts, AI tools, and more. All free.",
   alternates: { canonical: "/guides" },
   openGraph: {
     title: "UAE Freelancer Guides & Resources — SoloKit",
-    description: "40 free guides covering everything a UAE freelancer needs to know.",
+    description: "42 free guides covering everything a UAE freelancer needs to know.",
     type: "website",
     url: "/guides",
   },
@@ -60,6 +60,7 @@ const categories = [
       { slug: "how-to-get-international-clients-uae", title: "How to Get International Clients as a UAE Freelancer", time: "7 min" },
       { slug: "best-freelance-platforms-uae", title: "Best Freelance Platforms in the UAE", time: "8 min" },
       { slug: "how-to-build-freelance-portfolio-uae", title: "How to Build a Freelance Portfolio in the UAE", time: "7 min" },
+      { slug: "how-to-write-freelance-bio-uae", title: "How to Write a Freelance Bio That Gets You Hired in the UAE", time: "6 min" },
     ],
   },
   {
@@ -71,6 +72,7 @@ const categories = [
       { slug: "how-much-do-uae-freelancers-earn", title: "How Much Do Freelancers Earn in the UAE?", time: "7 min" },
       { slug: "how-to-scale-freelance-business-uae", title: "How to Scale Your Freelance Business to AED 100K/Month", time: "9 min" },
       { slug: "how-to-raise-rates-existing-clients-uae", title: "How to Raise Your Freelance Rates With Existing Clients", time: "7 min" },
+      { slug: "freelance-developer-rates-uae", title: "Freelance Developer Rates in the UAE (2026): How Much Should You Charge?", time: "8 min" },
     ],
   },
   {
@@ -139,7 +141,7 @@ export default function GuidesPage() {
           <span className="text-xs font-semibold text-gray-400 uppercase tracking-widest">Free Resources</span>
           <h1 className="text-3xl sm:text-4xl font-bold text-gray-900 mt-2 mb-3">UAE Freelancer Guides</h1>
           <p className="text-gray-500 max-w-xl mx-auto leading-relaxed">
-            40 practical guides covering everything you need to know about freelancing in Dubai and Abu Dhabi.
+            42 practical guides covering everything you need to know about freelancing in Dubai and Abu Dhabi.
             Written specifically for the UAE market — AED pricing, local laws, free zone context.
           </p>
         </div>

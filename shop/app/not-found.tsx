@@ -6,20 +6,42 @@ export default function NotFound() {
   return (
     <>
       <Header />
-      <main className="flex-1 flex items-center justify-center px-4 py-20">
-        <div className="max-w-md w-full text-center flex flex-col gap-6">
-          <div className="text-6xl">🔍</div>
-          <div>
-            <h1 className="text-2xl font-bold text-gray-900">Page not found</h1>
-            <p className="mt-2 text-gray-500">
-              The page you&apos;re looking for doesn&apos;t exist or has moved.
-            </p>
-          </div>
+      <main className="flex-1 max-w-2xl mx-auto px-4 sm:px-6 py-20">
+        <div className="text-center mb-12">
+          <p className="text-6xl mb-6">🔍</p>
+          <h1 className="text-2xl font-bold text-gray-900 mb-2">Page not found</h1>
+          <p className="text-gray-500">
+            This page doesn&apos;t exist or has moved. Here&apos;s where you can go instead:
+          </p>
+        </div>
+
+        <div className="grid sm:grid-cols-2 gap-4 mb-10">
+          {[
+            { href: "/#products", label: "Browse all products", desc: "Notion templates, AI prompts, SOPs", emoji: "🛍️" },
+            { href: "/free", label: "10 free AI prompts", desc: "No email required", emoji: "🎁" },
+            { href: "/blog", label: "Free guides", desc: "42 articles for UAE freelancers", emoji: "📚" },
+            { href: "/start", label: "Product quiz", desc: "Find what's right for you in 30 sec", emoji: "🎯" },
+          ].map((item) => (
+            <Link
+              key={item.href}
+              href={item.href}
+              className="border border-gray-200 rounded-xl p-5 hover:border-gray-400 hover:shadow-sm transition-all flex items-start gap-4"
+            >
+              <span className="text-2xl shrink-0">{item.emoji}</span>
+              <div>
+                <p className="font-semibold text-gray-900 text-sm">{item.label}</p>
+                <p className="text-xs text-gray-500 mt-0.5">{item.desc}</p>
+              </div>
+            </Link>
+          ))}
+        </div>
+
+        <div className="text-center">
           <Link
             href="/"
-            className="bg-gray-900 text-white font-semibold px-6 py-3 rounded-xl hover:bg-gray-700 transition-colors text-sm"
+            className="text-sm text-gray-400 hover:text-gray-700 transition-colors"
           >
-            ← Back to store
+            ← Back to homepage
           </Link>
         </div>
       </main>
