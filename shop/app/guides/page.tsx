@@ -6,11 +6,11 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "UAE Freelancer Guides & Resources — SoloKit",
   description:
-    "104 practical guides for freelancers and solopreneurs in the UAE. Visa, tax, rates, clients, contracts, AI tools, and more. All free.",
+    "107 practical guides for freelancers and solopreneurs in the UAE. Visa, tax, rates, clients, contracts, AI tools, and more. All free.",
   alternates: { canonical: "/guides" },
   openGraph: {
     title: "UAE Freelancer Guides & Resources — SoloKit",
-    description: "104 free guides covering everything a UAE freelancer needs to know.",
+    description: "107 free guides covering everything a UAE freelancer needs to know.",
     type: "website",
     url: "/guides",
   },
@@ -111,6 +111,8 @@ const categories = [
       { slug: "freelance-motion-designer-rates-uae", title: "Freelance Motion Designer & Animator Rates in the UAE (2026)", time: "7 min" },
       { slug: "freelance-event-planner-rates-uae", title: "Freelance Event Planner Rates in the UAE (2026): What to Charge", time: "7 min" },
       { slug: "freelance-brand-strategist-rates-uae", title: "Freelance Brand Strategist Rates in the UAE (2026): What to Charge", time: "7 min" },
+      { slug: "freelance-it-consultant-rates-uae", title: "Freelance IT Consultant Rates in the UAE (2026): What to Charge", time: "7 min" },
+      { slug: "freelance-recruitment-consultant-uae", title: "Freelance Recruitment Consultant Rates in the UAE (2026): What to Charge", time: "7 min" },
     ],
   },
   {
@@ -158,6 +160,7 @@ const categories = [
       { slug: "how-to-use-chatgpt-freelancers-uae", title: "How to Use ChatGPT as a UAE Freelancer (Practical Guide)", time: "7 min" },
       { slug: "how-to-use-claude-ai-freelancers-uae", title: "How to Use Claude AI as a UAE Freelancer: 15 Practical Use Cases", time: "8 min" },
       { slug: "how-to-use-notion-ai-freelancers-uae", title: "How to Use Notion AI as a UAE Freelancer: 12 Practical Use Cases", time: "7 min" },
+      { slug: "how-to-use-gemini-ai-freelancers-uae", title: "How to Use Google Gemini as a UAE Freelancer: 12 Practical Use Cases", time: "7 min" },
     ],
   },
   {
@@ -202,7 +205,7 @@ export default function GuidesPage() {
           <span className="text-xs font-semibold text-gray-400 uppercase tracking-widest">Free Resources</span>
           <h1 className="text-3xl sm:text-4xl font-bold text-gray-900 mt-2 mb-3">UAE Freelancer Guides</h1>
           <p className="text-gray-500 max-w-xl mx-auto leading-relaxed">
-            104 practical guides covering everything you need to know about freelancing in Dubai and Abu Dhabi.
+            107 practical guides covering everything you need to know about freelancing in Dubai and Abu Dhabi.
             Written specifically for the UAE market — AED pricing, local laws, free zone context.
           </p>
         </div>

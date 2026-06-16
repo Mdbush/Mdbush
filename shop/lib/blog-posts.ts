@@ -944,6 +944,33 @@ export const posts: BlogPost[] = [
     readTime: "7 min read",
     category: "Pricing & Rates",
   },
+  {
+    slug: "freelance-it-consultant-rates-uae",
+    title: "Freelance IT Consultant Rates in the UAE (2026): What to Charge",
+    description:
+      "Real AED rates for freelance IT consultants in Dubai and Abu Dhabi — infrastructure, cloud, ERP, cybersecurity, digital transformation, and CTO-as-a-service fees in 2026.",
+    date: "June 16, 2026",
+    readTime: "7 min read",
+    category: "Pricing & Rates",
+  },
+  {
+    slug: "how-to-use-gemini-ai-freelancers-uae",
+    title: "How to Use Google Gemini as a UAE Freelancer: 12 Practical Use Cases",
+    description:
+      "12 practical ways UAE freelancers use Google Gemini to save time and win more clients — research, proposals, client emails, Gmail drafts, Google Workspace integration, and productivity prompts.",
+    date: "June 16, 2026",
+    readTime: "7 min read",
+    category: "AI Tools",
+  },
+  {
+    slug: "freelance-recruitment-consultant-uae",
+    title: "Freelance Recruitment Consultant Rates in the UAE (2026): What to Charge",
+    description:
+      "Real AED rates and fee structures for freelance recruiters and talent acquisition consultants in Dubai and Abu Dhabi — retained search, contingency fees, RPO, and specialist headhunter pricing in 2026.",
+    date: "June 16, 2026",
+    readTime: "7 min read",
+    category: "Pricing & Rates",
+  },
 ];
 
 export function getPost(slug: string): BlogPost | undefined {

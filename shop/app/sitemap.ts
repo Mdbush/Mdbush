@@ -116,6 +116,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "freelance-event-planner-rates-uae",
     "how-to-use-notion-ai-freelancers-uae",
     "freelance-brand-strategist-rates-uae",
+    "freelance-it-consultant-rates-uae",
+    "how-to-use-gemini-ai-freelancers-uae",
+    "freelance-recruitment-consultant-uae",
   ].map((slug) => ({
     url: `${base}/blog/${slug}`,
     lastModified: new Date(),
