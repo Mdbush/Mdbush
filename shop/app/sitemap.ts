@@ -209,6 +209,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "freelance-sap-consultant-rates-uae",
     "how-to-work-from-home-uae",
     "freelance-penetration-tester-rates-uae",
+    "freelance-microsoft-365-consultant-rates-uae",
+    "how-to-create-freelance-rate-card-uae",
+    "freelance-sharepoint-developer-rates-uae",
   ].map((slug) => ({
     url: `${base}/blog/${slug}`,
     lastModified: new Date(),

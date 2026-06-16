@@ -1781,6 +1781,33 @@ export const posts: BlogPost[] = [
     readTime: "8 min read",
     category: "Pricing & Rates",
   },
+  {
+    slug: "freelance-microsoft-365-consultant-rates-uae",
+    title: "Freelance Microsoft 365 Consultant Rates in the UAE (2026): M365, Teams & Azure AD Fees",
+    description:
+      "Real AED day rates for freelance Microsoft 365 consultants in Dubai and Abu Dhabi. M365 deployment, Teams setup, SharePoint, Exchange Online, Azure AD, Intune, Power Platform, and Microsoft licensing consulting fees for 2026.",
+    date: "June 16, 2026",
+    readTime: "7 min read",
+    category: "Pricing & Rates",
+  },
+  {
+    slug: "how-to-create-freelance-rate-card-uae",
+    title: "How to Create a Freelance Rate Card in the UAE (2026): Templates & Pricing Strategy",
+    description:
+      "How to create a professional rate card for your UAE freelance services. What to include, pricing structures, how to present rates to clients, when to share your rate card, and rate card templates for Dubai freelancers.",
+    date: "June 16, 2026",
+    readTime: "7 min read",
+    category: "Pricing & Rates",
+  },
+  {
+    slug: "freelance-sharepoint-developer-rates-uae",
+    title: "Freelance SharePoint Developer Rates in the UAE (2026): SPFx & Intranet Fees",
+    description:
+      "Real AED day rates for freelance SharePoint developers in Dubai and Abu Dhabi. SharePoint Online, SPFx, intranet development, migration from SharePoint on-prem, Power Apps integration, and SharePoint consulting fees for 2026.",
+    date: "June 16, 2026",
+    readTime: "7 min read",
+    category: "Pricing & Rates",
+  },
 ];
 
 export function getPost(slug: string): BlogPost | undefined {
