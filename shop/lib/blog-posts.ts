@@ -1565,6 +1565,33 @@ export const posts: BlogPost[] = [
     readTime: "8 min read",
     category: "Pricing & Rates",
   },
+  {
+    slug: "freelance-change-management-consultant-rates-uae",
+    title: "Freelance Change Management Consultant Rates in the UAE (2026)",
+    description:
+      "Real AED day rates and project fees for freelance change management consultants in Dubai and Abu Dhabi. Organizational transformation, digital change, Prosci ADKAR, Emiratisation programs, post-merger integration, and culture change rates.",
+    date: "June 16, 2026",
+    readTime: "8 min read",
+    category: "Pricing & Rates",
+  },
+  {
+    slug: "freelance-strategy-consultant-rates-uae",
+    title: "Freelance Strategy Consultant Rates in the UAE (2026): Corporate & Business Strategy Fees",
+    description:
+      "Real AED day rates and project fees for freelance strategy consultants in Dubai and Abu Dhabi. Market entry strategy, corporate strategy, competitive analysis, business model design, M&A advisory, and strategic planning facilitation rates.",
+    date: "June 16, 2026",
+    readTime: "8 min read",
+    category: "Pricing & Rates",
+  },
+  {
+    slug: "how-to-build-email-list-freelancers-uae",
+    title: "How to Build an Email List as a UAE Freelancer (2026): From Zero to Warm Leads",
+    description:
+      "Step-by-step guide to building an email list as a freelancer in Dubai and Abu Dhabi. Lead magnets that work in the UAE market, email tools comparison (Brevo, Kit, MailerLite), subscriber nurture sequences, and how to convert subscribers into paying clients.",
+    date: "June 16, 2026",
+    readTime: "8 min read",
+    category: "Getting Clients",
+  },
 ];
 
 export function getPost(slug: string): BlogPost | undefined {
