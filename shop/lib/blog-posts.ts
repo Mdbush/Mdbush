@@ -1889,6 +1889,33 @@ export const posts: BlogPost[] = [
     readTime: "7 min read",
     category: "Pricing & Rates",
   },
+  {
+    slug: "freelance-servicenow-developer-rates-uae",
+    title: "Freelance ServiceNow Developer Rates in the UAE (2026): ITSM & Platform Fees",
+    description:
+      "Real AED day rates for freelance ServiceNow developers and consultants in Dubai and Abu Dhabi. ServiceNow ITSM, ITOM, CSM, HR Service Delivery, GRC, platform development, and implementation fees for 2026.",
+    date: "June 16, 2026",
+    readTime: "7 min read",
+    category: "Pricing & Rates",
+  },
+  {
+    slug: "freelance-tableau-developer-rates-uae",
+    title: "Freelance Tableau Developer Rates in the UAE (2026): Data Viz & BI Fees",
+    description:
+      "Real AED day rates for freelance Tableau developers and data visualization specialists in Dubai and Abu Dhabi. Tableau dashboard development, Tableau Server, Salesforce Analytics, and data visualization consulting fees for 2026.",
+    date: "June 16, 2026",
+    readTime: "7 min read",
+    category: "Pricing & Rates",
+  },
+  {
+    slug: "how-to-transition-employee-to-freelancer-uae",
+    title: "How to Transition from Employee to Freelancer in the UAE (2026 Guide)",
+    description:
+      "Step-by-step guide for UAE employees going freelance. When to quit, how to prepare financially, getting your first client before leaving, UAE freelance visa vs trade license, and what to expect in the first 6 months.",
+    date: "June 16, 2026",
+    readTime: "7 min read",
+    category: "Getting Started",
+  },
 ];
 
 export function getPost(slug: string): BlogPost | undefined {
