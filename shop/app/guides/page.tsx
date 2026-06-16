@@ -6,11 +6,11 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "UAE Freelancer Guides & Resources — SoloKit",
   description:
-    "246 practical guides for freelancers and solopreneurs in the UAE. Visa, tax, rates, clients, contracts, AI tools, and more. All free.",
+    "249 practical guides for freelancers and solopreneurs in the UAE. Visa, tax, rates, clients, contracts, AI tools, and more. All free.",
   alternates: { canonical: "/guides" },
   openGraph: {
     title: "UAE Freelancer Guides & Resources — SoloKit",
-    description: "246 free guides covering everything a UAE freelancer needs to know.",
+    description: "249 free guides covering everything a UAE freelancer needs to know.",
     type: "website",
     url: "/guides",
   },
@@ -232,6 +232,8 @@ const categories = [
       { slug: "freelance-business-development-consultant-rates-uae", title: "Freelance Business Development Consultant Rates in the UAE (2026)", time: "7 min" },
       { slug: "freelance-data-engineer-rates-uae", title: "Freelance Data Engineer Rates in the UAE (2026)", time: "7 min" },
       { slug: "freelance-procurement-consultant-rates-uae", title: "Freelance Procurement Consultant Rates in the UAE (2026)", time: "7 min" },
+      { slug: "freelance-salesforce-developer-rates-uae", title: "Freelance Salesforce Developer Rates in the UAE (2026)", time: "7 min" },
+      { slug: "freelance-healthcare-consultant-rates-uae", title: "Freelance Healthcare Consultant Rates in the UAE (2026)", time: "7 min" },
     ],
   },
   {
@@ -323,6 +325,7 @@ const categories = [
       { slug: "how-to-work-from-home-uae", title: "How to Work From Home as a UAE Freelancer (2026): Setup, Productivity & Legal Guide", time: "8 min" },
       { slug: "how-to-subcontract-freelance-work-uae", title: "How to Subcontract Freelance Work in the UAE (2026 Guide)", time: "7 min" },
       { slug: "how-to-build-recurring-revenue-uae", title: "How UAE Freelancers Build Recurring Revenue (2026 Guide)", time: "8 min" },
+      { slug: "how-to-grow-freelance-revenue-uae", title: "How to Grow Your Freelance Revenue in the UAE Without Working More Hours (2026)", time: "8 min" },
     ],
   },
 ];
@@ -340,7 +343,7 @@ export default function GuidesPage() {
           <span className="text-xs font-semibold text-gray-400 uppercase tracking-widest">Free Resources</span>
           <h1 className="text-3xl sm:text-4xl font-bold text-gray-900 mt-2 mb-3">UAE Freelancer Guides</h1>
           <p className="text-gray-500 max-w-xl mx-auto leading-relaxed">
-            246 practical guides covering everything you need to know about freelancing in Dubai and Abu Dhabi.
+            249 practical guides covering everything you need to know about freelancing in Dubai and Abu Dhabi.
             Written specifically for the UAE market — AED pricing, local laws, free zone context.
           </p>
         </div>

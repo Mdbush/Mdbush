@@ -2186,6 +2186,33 @@ export const posts: BlogPost[] = [
     readTime: "7 min read",
     category: "Pricing & Rates",
   },
+  {
+    slug: "freelance-salesforce-developer-rates-uae",
+    title: "Freelance Salesforce Developer Rates in the UAE (2026)",
+    description:
+      "Real AED day rates for freelance Salesforce developers in Dubai and Abu Dhabi. Apex, Lightning Web Components, Visualforce, custom integrations, and Salesforce platform development fees for UAE companies in 2026.",
+    date: "June 16, 2026",
+    readTime: "7 min read",
+    category: "Pricing & Rates",
+  },
+  {
+    slug: "how-to-grow-freelance-revenue-uae",
+    title: "How to Grow Your Freelance Revenue in the UAE Without Working More Hours (2026)",
+    description:
+      "How UAE freelancers grow income without adding more client hours — raising rates on existing clients, moving upmarket, adding leverage through productized services, and building assets that compound over time.",
+    date: "June 16, 2026",
+    readTime: "8 min read",
+    category: "Business & Mindset",
+  },
+  {
+    slug: "freelance-healthcare-consultant-rates-uae",
+    title: "Freelance Healthcare Consultant Rates in the UAE (2026)",
+    description:
+      "Real AED day rates for freelance healthcare consultants in Dubai and Abu Dhabi. Hospital management consulting, JCI accreditation, HAAD/DHA compliance, healthcare strategy, clinical operations, and health system advisory fees for UAE healthcare providers in 2026.",
+    date: "June 16, 2026",
+    readTime: "7 min read",
+    category: "Pricing & Rates",
+  },
 ];
 
 export function getPost(slug: string): BlogPost | undefined {
