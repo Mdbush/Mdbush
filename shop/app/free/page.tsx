@@ -102,119 +102,130 @@ export default function FreePage() {
       <Header />
 
       <main className="flex-1">
-        {/* Hero */}
-        <section className="max-w-3xl mx-auto px-4 sm:px-6 pt-14 pb-10 text-center">
-          <span className="inline-block bg-gray-100 text-gray-700 text-xs font-semibold px-3 py-1 rounded-full mb-5 uppercase tracking-widest">
-            Free Resource
-          </span>
-          <h1 className="text-4xl sm:text-5xl font-bold text-gray-900 leading-tight mb-4">
-            10 AI Prompts Every Freelancer Needs
-          </h1>
-          <p className="text-lg text-gray-500 max-w-xl mx-auto leading-relaxed mb-8">
-            Copy-paste prompts for proposals, follow-ups, client emails, content, and more.
-            Tested on real freelance work. Works with ChatGPT, Claude, and Gemini.
-          </p>
-          <div className="inline-flex items-center gap-2 bg-green-50 border border-green-200 text-green-700 text-sm font-medium px-4 py-2 rounded-full">
-            <span>✓</span> 100% free — no credit card required
+        <div className="max-w-3xl mx-auto px-4 sm:px-6 pt-10 pb-16">
+          {/* Dark gradient hero */}
+          <div className="bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 text-white px-6 py-10 rounded-2xl mb-8">
+            <span className="text-xs font-bold text-emerald-400 uppercase tracking-widest mb-3 block">Free Resources</span>
+            <h1 className="text-3xl sm:text-4xl font-bold leading-tight mb-4">
+              10 Free AI Prompts for UAE Freelancers
+            </h1>
+            <p className="text-gray-300 text-sm mb-5 leading-relaxed max-w-xl">
+              Copy-paste prompts for proposals, follow-ups, client emails, content, and more.
+              Tested on real freelance work. Works with ChatGPT, Claude, and Gemini.
+            </p>
+            <div className="inline-flex items-center gap-2 bg-emerald-500/20 border border-emerald-500/40 text-emerald-300 text-xs font-semibold px-4 py-2 rounded-full">
+              <span>✓</span> 100% free — no credit card required
+            </div>
           </div>
-        </section>
 
-        {/* Prompts — first 5 */}
-        <section className="max-w-3xl mx-auto px-4 sm:px-6 pb-8">
+          {/* Section header */}
+          <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2">
+            <span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>
+            Prompts 1–5
+          </h2>
+
+          {/* Prompts — first 5 */}
           <div className="flex flex-col gap-5">
             {prompts.slice(0, 5).map((p, i) => (
               <div
                 key={p.category}
-                className="border border-gray-200 rounded-2xl p-5 sm:p-6 hover:border-gray-300 transition-colors"
+                className="border-l-4 border-emerald-500 border border-gray-200 rounded-2xl p-5 sm:p-6 hover:shadow-md transition-shadow bg-white"
               >
                 <div className="flex items-center gap-2 mb-3">
                   <span className="text-xl">{p.emoji}</span>
-                  <span className="text-xs font-semibold text-gray-400 uppercase tracking-widest">
+                  <span className="text-xs font-bold text-emerald-600 uppercase tracking-widest">
                     Prompt #{i + 1} · {p.category}
                   </span>
                 </div>
-                <p className="text-sm text-gray-700 bg-gray-50 border border-gray-200 rounded-xl p-4 font-mono leading-relaxed mb-3">
+                <p className="text-sm font-semibold text-gray-800 bg-gray-50 border border-gray-200 rounded-xl p-4 font-mono leading-relaxed mb-3">
                   {p.prompt}
                 </p>
-                <p className="text-xs text-gray-500">
-                  <strong className="text-gray-700">Why it works:</strong> {p.use}
+                <p className="text-xs text-gray-500 italic">
+                  <strong className="text-gray-700 not-italic">Why it works:</strong> {p.use}
                 </p>
               </div>
             ))}
           </div>
-        </section>
 
-        {/* Mid-page email capture */}
-        <MidPageCapture />
+          {/* Mid-page email capture */}
+          <div className="my-8">
+            <MidPageCapture />
+          </div>
 
-        {/* Prompts — last 5 */}
-        <section className="max-w-3xl mx-auto px-4 sm:px-6 pb-16">
-          <div className="flex flex-col gap-5">
+          {/* Section header */}
+          <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2">
+            <span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>
+            Prompts 6–10
+          </h2>
+
+          {/* Prompts — last 5 */}
+          <div className="flex flex-col gap-5 mb-12">
             {prompts.slice(5).map((p, i) => (
               <div
                 key={p.category}
-                className="border border-gray-200 rounded-2xl p-5 sm:p-6 hover:border-gray-300 transition-colors"
+                className="border-l-4 border-emerald-500 border border-gray-200 rounded-2xl p-5 sm:p-6 hover:shadow-md transition-shadow bg-white"
               >
                 <div className="flex items-center gap-2 mb-3">
                   <span className="text-xl">{p.emoji}</span>
-                  <span className="text-xs font-semibold text-gray-400 uppercase tracking-widest">
+                  <span className="text-xs font-bold text-emerald-600 uppercase tracking-widest">
                     Prompt #{i + 6} · {p.category}
                   </span>
                 </div>
-                <p className="text-sm text-gray-700 bg-gray-50 border border-gray-200 rounded-xl p-4 font-mono leading-relaxed mb-3">
+                <p className="text-sm font-semibold text-gray-800 bg-gray-50 border border-gray-200 rounded-xl p-4 font-mono leading-relaxed mb-3">
                   {p.prompt}
                 </p>
-                <p className="text-xs text-gray-500">
-                  <strong className="text-gray-700">Why it works:</strong> {p.use}
+                <p className="text-xs text-gray-500 italic">
+                  <strong className="text-gray-700 not-italic">Why it works:</strong> {p.use}
                 </p>
               </div>
             ))}
           </div>
-        </section>
 
-        {/* CTA to full pack */}
-        <section className="bg-gray-900 text-white py-14 px-4">
-          <div className="max-w-2xl mx-auto text-center">
-            <div className="text-4xl mb-4">🤖</div>
-            <h2 className="text-2xl sm:text-3xl font-bold mb-3">Want 190 more?</h2>
-            <p className="text-gray-400 mb-8 max-w-md mx-auto">
+          {/* Bottom CTA */}
+          <div className="bg-gradient-to-br from-gray-900 to-gray-800 text-white rounded-2xl p-8 mt-12 text-center">
+            <span className="text-xs font-bold text-emerald-400 uppercase tracking-widest block mb-3">SoloKit</span>
+            <h3 className="text-2xl font-bold mb-3">Want 190 more prompts?</h3>
+            <p className="text-gray-400 text-sm mb-6 max-w-md mx-auto">
               The AI Prompt Pack Pro includes 200 tested prompts organized by use case —
               writing, marketing, client work, and content. AED 109, instant download.
             </p>
             <Link
               href="/products/ai-prompt-pack-pro"
-              className="inline-block bg-white text-gray-900 font-semibold px-7 py-3.5 rounded-xl hover:bg-gray-100 transition-colors text-sm"
+              className="inline-block bg-emerald-500 hover:bg-emerald-400 text-white font-bold px-8 py-3 rounded-xl transition-colors text-sm"
             >
               Get the full pack — AED 109 →
             </Link>
             <p className="mt-4 text-xs text-gray-500">30-day money-back guarantee. Instant delivery.</p>
           </div>
-        </section>
 
-        {/* Email capture */}
-        <EmailCapture />
+          {/* Email capture */}
+          <EmailCapture />
 
-        {/* Other products */}
-        <section className="max-w-3xl mx-auto px-4 sm:px-6 py-14">
-          <h2 className="text-lg font-bold text-gray-900 mb-6 text-center">Also from SoloKit</h2>
-          <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
-            {[
-              { emoji: "📋", name: "Freelancer Client CRM", slug: "freelancer-client-crm", price: "AED 175" },
-              { emoji: "🚀", name: "Solopreneur OS", slug: "solopreneur-os", price: "AED 249" },
-              { emoji: "📝", name: "SOP Starter Pack", slug: "sop-starter-pack", price: "AED 175" },
-            ].map((item) => (
-              <Link
-                key={item.slug}
-                href={`/products/${item.slug}`}
-                className="border border-gray-200 rounded-xl p-4 hover:border-gray-400 hover:shadow-sm transition-all text-center"
-              >
-                <div className="text-2xl mb-2">{item.emoji}</div>
-                <p className="text-sm font-semibold text-gray-900">{item.name}</p>
-                <p className="text-xs text-gray-500 mt-1">{item.price}</p>
-              </Link>
-            ))}
+          {/* Other products */}
+          <div className="py-10">
+            <h2 className="text-xl font-bold text-gray-900 mb-6 flex items-center gap-2">
+              <span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>
+              Also from SoloKit
+            </h2>
+            <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
+              {[
+                { emoji: "📋", name: "Freelancer Client CRM", slug: "freelancer-client-crm", price: "AED 175" },
+                { emoji: "🚀", name: "Solopreneur OS", slug: "solopreneur-os", price: "AED 249" },
+                { emoji: "📝", name: "SOP Starter Pack", slug: "sop-starter-pack", price: "AED 175" },
+              ].map((item) => (
+                <Link
+                  key={item.slug}
+                  href={`/products/${item.slug}`}
+                  className="border border-gray-200 rounded-xl p-4 hover:border-emerald-400 hover:shadow-sm transition-all text-center"
+                >
+                  <div className="text-2xl mb-2">{item.emoji}</div>
+                  <p className="text-sm font-semibold text-gray-900">{item.name}</p>
+                  <p className="text-xs text-gray-500 mt-1">{item.price}</p>
+                </Link>
+              ))}
+            </div>
           </div>
-        </section>
+        </div>
       </main>
 
       <Footer />

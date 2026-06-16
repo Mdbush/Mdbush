@@ -452,29 +452,27 @@ export default function GuidesPage() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
       <Header />
 
-      <main className="flex-1 max-w-4xl mx-auto px-4 sm:px-6 py-14">
+      <main className="flex-1 max-w-4xl mx-auto px-4 sm:px-6 py-10">
 
-        {/* Hero */}
-        <div className="text-center mb-14">
-          <span className="text-xs font-semibold text-gray-400 uppercase tracking-widest">Free Resources</span>
-          <h1 className="text-3xl sm:text-4xl font-bold text-gray-900 mt-2 mb-3">UAE &amp; GCC Freelancer Guides</h1>
-          <p className="text-gray-500 max-w-xl mx-auto leading-relaxed">
+        {/* Dark gradient hero */}
+        <div className="bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 text-white px-6 py-10 rounded-2xl mb-8">
+          <span className="text-xs font-bold text-emerald-400 uppercase tracking-widest mb-3 block">Guides &amp; Resources</span>
+          <h1 className="text-3xl sm:text-4xl font-bold leading-tight mb-4">The UAE Freelancer Playbook</h1>
+          <p className="text-gray-300 text-sm mb-5 leading-relaxed max-w-xl">
             353 practical guides covering everything you need to know about freelancing in the UAE, Saudi Arabia, and across the GCC.
             Written for the Gulf market — AED pricing, local laws, free zone and KSA context.
           </p>
-        </div>
-
-        {/* Quick links */}
-        <div className="flex flex-wrap gap-2 justify-center mb-12">
-          {categories.map((cat) => (
-            <a
-              key={cat.name}
-              href={`#${cat.name.toLowerCase().replace(/\s+/g, "-").replace(/[&]/g, "and")}`}
-              className="text-xs font-semibold bg-gray-100 text-gray-600 hover:bg-gray-200 px-3 py-1.5 rounded-full transition-colors"
-            >
-              {cat.name}
-            </a>
-          ))}
+          <div className="flex flex-wrap gap-2">
+            {categories.map((cat) => (
+              <a
+                key={cat.name}
+                href={`#${cat.name.toLowerCase().replace(/\s+/g, "-").replace(/[&]/g, "and")}`}
+                className="text-xs font-semibold bg-white/10 hover:bg-emerald-500/30 border border-white/20 hover:border-emerald-400/50 text-gray-200 hover:text-white px-3 py-1.5 rounded-full transition-colors"
+              >
+                {cat.name}
+              </a>
+            ))}
+          </div>
         </div>
 
         {/* Categories */}
@@ -484,21 +482,22 @@ export default function GuidesPage() {
               key={cat.name}
               id={cat.name.toLowerCase().replace(/\s+/g, "-").replace(/[&]/g, "and")}
             >
-              <div className="mb-5">
-                <h2 className="text-xl font-bold text-gray-900">{cat.name}</h2>
-                <p className="text-sm text-gray-500 mt-1">{cat.description}</p>
-              </div>
+              <h2 className="text-xl font-bold text-gray-900 mt-10 mb-1 flex items-center gap-2">
+                <span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>
+                {cat.name}
+              </h2>
+              <p className="text-sm text-gray-500 mb-4 ml-3">{cat.description}</p>
               <div className="grid gap-3 sm:grid-cols-2">
                 {cat.guides.map((guide) => (
                   <Link
                     key={guide.slug}
                     href={`/blog/${guide.slug}`}
-                    className="group flex items-start justify-between gap-3 border border-gray-200 rounded-xl p-4 hover:border-gray-400 hover:shadow-sm transition-all"
+                    className="group flex items-start justify-between gap-3 bg-white border border-gray-200 rounded-xl p-4 hover:border-emerald-400 hover:shadow-sm transition-all"
                   >
-                    <p className="text-sm font-semibold text-gray-900 group-hover:text-gray-700 leading-snug">
+                    <p className="text-sm font-semibold text-gray-900 group-hover:text-emerald-700 leading-snug">
                       {guide.title}
                     </p>
-                    <span className="text-xs text-gray-400 shrink-0 whitespace-nowrap mt-0.5">{guide.time}</span>
+                    <span className="text-xs text-emerald-600 font-semibold shrink-0 whitespace-nowrap mt-0.5">Read →</span>
                   </Link>
                 ))}
               </div>
@@ -506,50 +505,32 @@ export default function GuidesPage() {
           ))}
         </div>
 
-        {/* Products CTA */}
-        <section className="mt-16 bg-gray-950 text-white rounded-2xl p-8 text-center">
-          <p className="text-xs font-semibold text-gray-400 uppercase tracking-widest mb-3">Ready to take action?</p>
-          <h2 className="text-2xl font-bold mb-3">Turn knowledge into systems</h2>
+        {/* Bottom CTA */}
+        <div className="bg-gradient-to-br from-gray-900 to-gray-800 text-white rounded-2xl p-8 mt-12 text-center">
+          <span className="text-xs font-bold text-emerald-400 uppercase tracking-widest block mb-3">SoloKit</span>
+          <h3 className="text-2xl font-bold mb-3">Turn knowledge into systems</h3>
           <p className="text-gray-400 text-sm mb-6 max-w-md mx-auto">
             The guides tell you what to do. SoloKit products give you the tools to do it in minutes — not hours.
           </p>
-          <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 mb-6 text-sm max-w-2xl mx-auto">
-            {[
-              { emoji: "📋", name: "Client CRM", slug: "freelancer-client-crm", price: "AED 175" },
-              { emoji: "🚀", name: "Solopreneur OS", slug: "solopreneur-os", price: "AED 249" },
-              { emoji: "🤖", name: "AI Prompts", slug: "ai-prompt-pack-pro", price: "AED 109" },
-              { emoji: "📝", name: "SOP Pack", slug: "sop-starter-pack", price: "AED 175" },
-            ].map((p) => (
-              <Link
-                key={p.slug}
-                href={`/products/${p.slug}`}
-                className="bg-white/10 border border-white/20 rounded-xl p-3 hover:bg-white/20 transition-colors text-center"
-              >
-                <div className="text-2xl mb-1">{p.emoji}</div>
-                <p className="text-xs text-gray-300">{p.name}</p>
-                <p className="font-bold text-white">{p.price}</p>
-              </Link>
-            ))}
-          </div>
           <Link
-            href="/#products"
-            className="inline-block bg-white text-gray-900 font-bold px-7 py-3 rounded-xl hover:bg-gray-100 transition-colors text-sm"
+            href="/"
+            className="inline-block bg-emerald-500 hover:bg-emerald-400 text-white font-bold px-8 py-3 rounded-xl transition-colors text-sm"
           >
             Browse all products →
           </Link>
-        </section>
+        </div>
 
-        {/* Email capture */}
-        <section className="mt-12 border border-gray-200 rounded-2xl p-6 text-center">
+        {/* Free prompts nudge */}
+        <div className="mt-8 border border-gray-200 rounded-2xl p-6 text-center">
           <h3 className="font-bold text-gray-900 mb-1">Get 10 free AI prompts</h3>
           <p className="text-sm text-gray-500 mb-4">Copy-paste prompts for proposals, follow-ups, and client emails. No credit card needed.</p>
           <Link
             href="/free"
-            className="inline-block bg-gray-900 text-white font-semibold px-6 py-2.5 rounded-xl hover:bg-gray-700 transition-colors text-sm"
+            className="inline-block bg-emerald-500 hover:bg-emerald-400 text-white font-semibold px-6 py-2.5 rounded-xl transition-colors text-sm"
           >
             Get free prompts →
           </Link>
-        </section>
+        </div>
       </main>
 
       <Footer />

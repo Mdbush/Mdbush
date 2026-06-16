@@ -1,3 +1,6 @@
+import Link from "next/link";
+import Header from "@/components/Header";
+import Footer from "@/components/Footer";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -7,7 +10,7 @@ export const metadata: Metadata = {
 
 const sections = [
   {
-    heading: "Content creation",
+    heading: "Content Creation",
     items: [
       {
         href: "/tiktok",
@@ -36,7 +39,7 @@ const sections = [
     ],
   },
   {
-    heading: "Brand & setup",
+    heading: "Brand & Setup",
     items: [
       {
         href: "/brand",
@@ -82,48 +85,86 @@ const envVars = [
 
 export default function ResourcesPage() {
   return (
-    <main className="max-w-3xl mx-auto px-4 py-12 text-gray-900">
-      <div className="mb-10">
-        <h1 className="text-2xl font-bold mb-2">Resources Hub</h1>
-        <p className="text-gray-500 text-sm">All internal pages, content libraries, and setup guides in one place.</p>
-      </div>
+    <>
+      <Header />
 
-      {sections.map((section) => (
-        <section key={section.heading} className="mb-10">
-          <h2 className="text-xs font-semibold text-gray-400 uppercase tracking-widest mb-4">{section.heading}</h2>
-          <div className="grid gap-3 sm:grid-cols-2">
-            {section.items.map(({ href, title, desc, badge }) => (
-              <a
-                key={href}
-                href={href}
-                className="border border-gray-200 rounded-xl p-5 hover:border-gray-400 hover:shadow-sm transition-all"
-              >
-                <div className="flex items-start justify-between gap-2 mb-2">
-                  <p className="font-semibold text-gray-900 text-sm">{title}</p>
-                  <span className="bg-gray-100 text-gray-500 text-xs px-2 py-0.5 rounded-full shrink-0">{badge}</span>
-                </div>
-                <p className="text-xs text-gray-500 leading-relaxed">{desc}</p>
-              </a>
-            ))}
+      <main className="flex-1">
+        <div className="max-w-3xl mx-auto px-4 sm:px-6 pt-10 pb-16">
+          {/* Dark gradient hero */}
+          <div className="bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 text-white px-6 py-10 rounded-2xl mb-8">
+            <span className="text-xs font-bold text-emerald-400 uppercase tracking-widest mb-3 block">Internal</span>
+            <h1 className="text-3xl sm:text-4xl font-bold leading-tight mb-4">Content Operations Dashboard</h1>
+            <p className="text-gray-300 text-sm leading-relaxed max-w-xl">
+              All internal pages, content libraries, and setup guides in one place. Not indexed by search engines.
+            </p>
           </div>
-        </section>
-      ))}
 
-      {/* Env vars */}
-      <section className="bg-gray-950 text-white rounded-xl p-6">
-        <h2 className="font-bold text-sm mb-4">Vercel environment variables checklist</h2>
-        <div className="space-y-2">
-          {envVars.map(({ key, value, status }) => (
-            <div key={key} className="flex items-start gap-3 text-xs">
-              <code className="text-green-400 shrink-0 font-mono">{key}</code>
-              <span className="text-gray-500">→</span>
-              <span className="text-gray-300">{value}</span>
-              <span className="text-gray-600 ml-auto shrink-0">({status})</span>
+          {/* Sections */}
+          {sections.map((section) => (
+            <div key={section.heading} className="mb-10">
+              <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2">
+                <span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>
+                {section.heading}
+              </h2>
+              <div className="grid gap-3 sm:grid-cols-2">
+                {section.items.map(({ href, title, desc, badge }) => (
+                  <a
+                    key={href}
+                    href={href}
+                    className="border border-gray-200 rounded-xl p-5 hover:border-emerald-400 hover:shadow-sm transition-all bg-white"
+                  >
+                    <div className="flex items-start justify-between gap-2 mb-2">
+                      <p className="font-semibold text-gray-900 text-sm">{title}</p>
+                      <span className="bg-emerald-50 text-emerald-700 text-xs px-2 py-0.5 rounded-full shrink-0 font-medium">{badge}</span>
+                    </div>
+                    <p className="text-xs text-gray-500 leading-relaxed">{desc}</p>
+                    <p className="text-xs text-emerald-600 font-semibold mt-2">Open →</p>
+                  </a>
+                ))}
+              </div>
             </div>
           ))}
+
+          {/* Env vars checklist */}
+          <div className="mt-10">
+            <h2 className="text-xl font-bold text-gray-900 mb-4 flex items-center gap-2">
+              <span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>
+              Vercel Environment Variables
+            </h2>
+            <div className="bg-gradient-to-br from-gray-900 to-gray-800 rounded-xl p-6">
+              <p className="text-xs text-gray-400 mb-4">Set all env vars in: Vercel dashboard → Project → Settings → Environment Variables</p>
+              <div className="space-y-3">
+                {envVars.map(({ key, value, status }) => (
+                  <div key={key} className="flex items-start gap-3 text-xs">
+                    <span className="text-emerald-400 shrink-0">✅</span>
+                    <code className="text-emerald-300 shrink-0 font-mono">{key}</code>
+                    <span className="text-gray-500">→</span>
+                    <span className="text-gray-300">{value}</span>
+                    <span className="text-gray-600 ml-auto shrink-0 whitespace-nowrap">({status})</span>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </div>
+
+          {/* Bottom CTA */}
+          <div className="bg-gradient-to-br from-gray-900 to-gray-800 text-white rounded-2xl p-8 mt-12 text-center">
+            <span className="text-xs font-bold text-emerald-400 uppercase tracking-widest block mb-3">SoloKit</span>
+            <h3 className="text-2xl font-bold mb-3">Go to the public site</h3>
+            <p className="text-gray-400 text-sm mb-6 max-w-md mx-auto">
+              Visit the public storefront to see products, guides, and free resources for UAE freelancers.
+            </p>
+            <Link
+              href="/"
+              className="inline-block bg-emerald-500 hover:bg-emerald-400 text-white font-bold px-8 py-3 rounded-xl transition-colors text-sm"
+            >
+              Go to SoloKit →
+            </Link>
+          </div>
         </div>
-        <p className="text-xs text-gray-500 mt-4">Set all env vars in: Vercel dashboard → Project → Settings → Environment Variables</p>
-      </section>
-    </main>
+      </main>
+
+      <Footer />
+    </>
   );
 }
