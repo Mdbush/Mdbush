@@ -2402,6 +2402,33 @@ export const posts: BlogPost[] = [
     readTime: "7 min read",
     category: "Pricing & Rates",
   },
+  {
+    slug: "freelance-hospitality-consultant-rates-uae",
+    title: "Freelance Hospitality Consultant Rates in the UAE (2026)",
+    description:
+      "Real AED day rates for freelance hospitality consultants in Dubai and Abu Dhabi. Hotel operations advisory, F&B consulting, revenue management, pre-opening hotel projects, and UAE tourism strategy fees for hospitality businesses in 2026.",
+    date: "June 16, 2026",
+    readTime: "7 min read",
+    category: "Pricing & Rates",
+  },
+  {
+    slug: "how-to-set-up-whatsapp-business-uae",
+    title: "How UAE Freelancers Use WhatsApp Business for Client Communication (2026)",
+    description:
+      "How UAE freelancers set up and use WhatsApp Business to manage client communication professionally — business profile setup, catalogue, quick replies, labels, WhatsApp Business API, and UAE-specific client communication best practices.",
+    date: "June 16, 2026",
+    readTime: "7 min read",
+    category: "Systems & Productivity",
+  },
+  {
+    slug: "freelance-education-consultant-rates-uae",
+    title: "Freelance Education Consultant Rates in the UAE (2026)",
+    description:
+      "Real AED day rates for freelance education consultants in Dubai and Abu Dhabi. Curriculum design, KHDA/ADEK school improvement, teacher training, edtech advisory, and international school development fees for UAE education institutions in 2026.",
+    date: "June 16, 2026",
+    readTime: "7 min read",
+    category: "Pricing & Rates",
+  },
 ];
 
 export function getPost(slug: string): BlogPost | undefined {
