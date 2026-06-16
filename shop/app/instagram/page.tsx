@@ -1,9 +1,28 @@
 import type { Metadata } from "next";
+import Link from "next/link";
+import Header from "@/components/Header";
+import Footer from "@/components/Footer";
 
 export const metadata: Metadata = {
   title: "Instagram Content — SoloKit",
   robots: { index: false, follow: false },
 };
+
+const setupItems = [
+  { label: "Username", value: "@solokitco (or @solokit.ae)" },
+  { label: "Name", value: "SoloKit — Tools for UAE Freelancers" },
+  { label: "Category", value: "Software Company" },
+  { label: "Link in bio", value: "solokit.cloud" },
+  { label: "Post frequency", value: "1× per day (reels + carousels)" },
+  { label: "Best times (UAE)", value: "7-9 AM, 12-2 PM, 7-9 PM" },
+];
+
+const contentMix = [
+  "3× Reels (talking head or text animation) — highest reach",
+  "2× Carousels — highest saves, great for discovery",
+  "2× Static posts — quotes, stats, quick tips",
+  "Daily Stories: behind-the-scenes, polls, Q&A",
+];
 
 const reels = [
   {
@@ -25,6 +44,7 @@ Calculate your actual minimum rate at the link in bio. It's free.
 
 #DubaiFreelancer #FreelanceUAE #FreelanceRates #UAE #Dubai`,
     viral: true,
+    slides: null as string[] | null,
   },
   {
     id: 2,
@@ -46,6 +66,7 @@ Your pipeline is your protection.
 
 #FreelanceUAE #DubaiFreelancer #ClientTips #UAE #Freelancing`,
     viral: true,
+    slides: null as string[] | null,
   },
   {
     id: 3,
@@ -95,6 +116,7 @@ Full breakdown at the link in bio.
 
 #FreelanceVisaUAE #DubaiVisa #UAE #DubaiFreelancer #FreelanceUAE`,
     viral: true,
+    slides: null as string[] | null,
   },
   {
     id: 5,
@@ -142,6 +164,7 @@ Templates for all 3 are in my bio.
 
 #GetPaid #LatePayment #FreelanceUAE #DubaiFreelancer #Invoice`,
     viral: true,
+    slides: null as string[] | null,
   },
   {
     id: 7,
@@ -188,6 +211,7 @@ Full breakdown at link in bio.
 
 #UAETax #DubaiTax #TaxFree #UAE #DubaiFreelancer #FreelanceUAE`,
     viral: true,
+    slides: null as string[] | null,
   },
   {
     id: 9,
@@ -208,6 +232,7 @@ Free guide for new UAE freelancers at the link in bio.
 
 #DubaiFreelancer #FreelanceUAE #NewFreelancer #UAE #Dubai #Freelancing`,
     viral: true,
+    slides: null as string[] | null,
   },
   {
     id: 10,
@@ -300,119 +325,186 @@ If a client refuses a deposit — that tells you something important.
   },
 ];
 
+const strategyPoints = [
+  {
+    title: "Reels first",
+    desc: "Instagram pushes Reels to non-followers. Do 1 Reel per day for the first 30 days.",
+  },
+  {
+    title: "Carousels for saves",
+    desc: "Saves are a strong ranking signal. Educational carousels (5-8 slides) get saved most.",
+  },
+  {
+    title: "CTA on every post",
+    desc: 'End every caption with "link in bio → solokit.cloud" or "save this for later."',
+  },
+  {
+    title: "Hashtags",
+    desc: "Use 5-8 per post. Mix: 2 large (#FreelanceUAE), 3 medium (#DubaiFreelancer), 3 small (#FreelanceToolsDubai).",
+  },
+  {
+    title: "Stories daily",
+    desc: "Post 3-5 stories per day — polls, questions, behind the scenes. Stories keep you in the algorithm.",
+  },
+  {
+    title: "Don't post and ghost",
+    desc: "Reply to every comment in the first hour — this signals engagement to the algorithm.",
+  },
+];
+
 export default function InstagramPage() {
   return (
-    <main className="max-w-3xl mx-auto px-4 py-12 text-gray-900">
-      <div className="mb-10">
-        <h1 className="text-2xl font-bold mb-2">Instagram Content</h1>
-        <p className="text-gray-500 text-sm mb-4">
-          Reels, carousels, and static posts for @solokitco. Each piece is ready to use or adapt.
-        </p>
+    <>
+      <Header />
+      <main className="min-h-screen bg-gray-50">
 
-        <div className="bg-gray-950 text-white rounded-xl p-5 text-sm mb-6">
-          <p className="font-bold mb-3">Instagram account setup</p>
-          <div className="grid sm:grid-cols-2 gap-3">
-            {[
-              { label: "Username", value: "@solokitco (or @solokit.ae)" },
-              { label: "Name", value: "SoloKit — Tools for UAE Freelancers" },
-              { label: "Category", value: "Software Company" },
-              { label: "Link in bio", value: "solokit.cloud" },
-              { label: "Post frequency", value: "1× per day (reels + carousels)" },
-              { label: "Best times (UAE)", value: "7-9 AM, 12-2 PM, 7-9 PM" },
-            ].map(({ label, value }) => (
-              <div key={label} className="bg-white/5 rounded-lg p-3">
-                <p className="text-xs text-gray-400 mb-0.5">{label}</p>
-                <p className="text-sm text-white font-medium">{value}</p>
+        {/* Hero */}
+        <div className="bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 text-white px-4 py-14">
+          <div className="max-w-4xl mx-auto">
+            <div className="flex items-center gap-3 mb-4">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                <rect x="2" y="2" width="20" height="20" rx="5" stroke="#E1306C" strokeWidth="2"/>
+                <circle cx="12" cy="12" r="4" stroke="#E1306C" strokeWidth="2"/>
+                <circle cx="17.5" cy="6.5" r="1" fill="#E1306C"/>
+              </svg>
+              <span className="text-xs font-bold text-emerald-400 uppercase tracking-widest">SoloKit Content Hub</span>
+            </div>
+            <h1 className="text-3xl sm:text-4xl font-bold mb-3">Instagram Content Library</h1>
+            <p className="text-gray-300 text-lg mb-6">
+              Ready-to-post reels, carousels &amp; static posts for @solokitco. Copy, paste, post.
+            </p>
+            <div className="flex flex-wrap gap-3">
+              <div className="bg-white/10 backdrop-blur rounded-xl px-5 py-2.5 text-sm font-medium">📅 Post 1× daily</div>
+              <div className="bg-white/10 backdrop-blur rounded-xl px-5 py-2.5 text-sm font-medium">⏰ Best: 7-9 AM UAE</div>
+              <div className="bg-emerald-500 rounded-xl px-5 py-2.5 text-sm font-bold">{reels.length + staticPosts.length} posts ready</div>
+            </div>
+          </div>
+        </div>
+
+        <div className="max-w-4xl mx-auto px-4 py-10">
+
+          {/* Account setup */}
+          <div className="bg-white border border-gray-200 rounded-2xl p-6 mb-8 shadow-sm">
+            <h2 className="text-base font-bold text-gray-900 mb-4 flex items-center gap-2">
+              <span className="w-1 h-5 bg-emerald-500 rounded-full inline-block"></span>
+              Account Setup
+            </h2>
+            <div className="grid grid-cols-2 sm:grid-cols-3 gap-3">
+              {setupItems.map(({ label, value }) => (
+                <div key={label} className="bg-gray-50 border border-gray-100 rounded-xl p-4">
+                  <p className="text-xs text-gray-400 font-medium mb-1">{label}</p>
+                  <p className="text-sm font-bold text-gray-900">{value}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+
+          {/* Content mix */}
+          <div className="bg-white border border-gray-200 rounded-2xl p-6 mb-8 shadow-sm">
+            <h2 className="text-base font-bold text-gray-900 mb-4 flex items-center gap-2">
+              <span className="w-1 h-5 bg-emerald-500 rounded-full inline-block"></span>
+              Weekly Content Mix
+            </h2>
+            <ul className="space-y-2">
+              {contentMix.map((item) => (
+                <li key={item} className="flex items-start gap-3 text-sm text-gray-700">
+                  <span className="text-emerald-500 font-bold shrink-0 mt-0.5">→</span>
+                  {item}
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          {/* Reels section */}
+          <div className="mb-3 flex items-center justify-between">
+            <h2 className="text-xl font-bold text-gray-900">Reels &amp; Carousels</h2>
+            <span className="text-xs text-emerald-600 font-bold bg-emerald-50 border border-emerald-200 px-3 py-1 rounded-full">{reels.length} posts ready</span>
+          </div>
+          <div className="space-y-4 mb-10">
+            {reels.map((r, i) => (
+              <div key={r.id} className="bg-white border border-gray-200 rounded-2xl overflow-hidden shadow-sm hover:border-emerald-300 hover:shadow-md transition-all">
+                <div className="px-6 py-4 border-b border-gray-100 flex items-start gap-4">
+                  <div className="flex items-center gap-3 flex-1 min-w-0">
+                    <div className="w-8 h-8 bg-emerald-100 text-emerald-700 rounded-full flex items-center justify-center text-sm font-bold shrink-0">{i + 1}</div>
+                    <div className="min-w-0">
+                      <div className="flex items-center gap-2 flex-wrap mb-1">
+                        <span className="text-xs font-medium text-gray-500 bg-gray-100 px-2.5 py-0.5 rounded-full">{r.format}</span>
+                        <span className="text-xs font-medium text-gray-400 bg-gray-50 border border-gray-200 px-2.5 py-0.5 rounded-full">{r.duration}</span>
+                        {r.viral && (
+                          <span className="text-xs font-bold text-red-600 bg-red-50 border border-red-200 px-2.5 py-0.5 rounded-full">🔥 High reach</span>
+                        )}
+                      </div>
+                      <p className="font-bold text-gray-900 text-sm">{r.hook}</p>
+                    </div>
+                  </div>
+                </div>
+                <div className="px-6 py-4 space-y-4">
+                  {r.slides && (
+                    <div>
+                      <p className="text-xs font-bold text-gray-400 uppercase tracking-widest mb-2">Slide outline</p>
+                      <ul className="space-y-1">
+                        {r.slides.map((slide) => (
+                          <li key={slide} className="flex gap-2 text-xs text-gray-600">
+                            <span className="text-emerald-400 shrink-0 font-bold">→</span>
+                            {slide}
+                          </li>
+                        ))}
+                      </ul>
+                    </div>
+                  )}
+                  <div>
+                    <p className="text-xs font-bold text-gray-400 uppercase tracking-widest mb-2">Caption — copy &amp; paste</p>
+                    <pre className="text-sm text-gray-700 bg-gray-50 rounded-xl p-4 whitespace-pre-wrap leading-relaxed font-sans overflow-x-auto border border-gray-100 select-all">{r.caption}</pre>
+                  </div>
+                </div>
               </div>
             ))}
           </div>
-        </div>
 
-        <div className="bg-blue-50 border border-blue-200 rounded-xl p-4 text-sm">
-          <p className="font-semibold text-blue-900 mb-1">Content mix (per week)</p>
-          <ul className="text-blue-800 space-y-1">
-            <li>• 3× Reels (talking head or text animation) — highest reach</li>
-            <li>• 2× Carousels — highest saves, great for discovery</li>
-            <li>• 2× Static posts — quotes, stats, quick tips</li>
-            <li>• Daily Stories: behind-the-scenes, polls, Q&A</li>
-          </ul>
-        </div>
-      </div>
-
-      {/* Reels */}
-      <h2 className="text-lg font-bold mb-4">Reels &amp; Talking Head Videos</h2>
-      <div className="space-y-6 mb-12">
-        {reels.map((r) => (
-          <div key={r.id} className="border border-gray-200 rounded-xl overflow-hidden">
-            <div className="bg-gray-50 px-5 py-4">
-              <div className="flex items-center gap-2 mb-1">
-                <span className="text-xs font-bold text-gray-400">#{r.id}</span>
-                {r.viral && (
-                  <span className="bg-red-100 text-red-700 text-xs font-semibold px-2 py-0.5 rounded-full">High reach potential</span>
-                )}
-                <span className="bg-gray-200 text-gray-600 text-xs px-2 py-0.5 rounded-full">{r.format}</span>
-                <span className="bg-gray-200 text-gray-600 text-xs px-2 py-0.5 rounded-full">{r.duration}</span>
-              </div>
-              <p className="font-semibold text-gray-900 text-sm">{r.hook}</p>
-            </div>
-            <div className="px-5 py-4 space-y-4">
-              {r.slides && (
-                <div>
-                  <p className="text-xs font-semibold text-gray-400 uppercase tracking-widest mb-2">Slide outline</p>
-                  <ul className="text-xs text-gray-600 space-y-1">
-                    {r.slides.map((slide) => (
-                      <li key={slide} className="flex gap-2">
-                        <span className="text-gray-300 shrink-0">→</span>
-                        {slide}
-                      </li>
-                    ))}
-                  </ul>
+          {/* Static posts section */}
+          <div className="mb-3 flex items-center justify-between">
+            <h2 className="text-xl font-bold text-gray-900">Static Posts &amp; Quote Cards</h2>
+            <span className="text-xs text-emerald-600 font-bold bg-emerald-50 border border-emerald-200 px-3 py-1 rounded-full">{staticPosts.length} posts ready</span>
+          </div>
+          <div className="space-y-4 mb-12">
+            {staticPosts.map((p, i) => (
+              <div key={p.id} className="bg-white border border-gray-200 rounded-2xl overflow-hidden shadow-sm hover:border-emerald-300 hover:shadow-md transition-all">
+                <div className="px-6 py-4 border-b border-gray-100 flex items-start gap-3">
+                  <div className="w-8 h-8 bg-purple-100 text-purple-700 rounded-full flex items-center justify-center text-sm font-bold shrink-0">{i + 1}</div>
+                  <div>
+                    <div className="flex items-center gap-2 flex-wrap mb-1">
+                      <span className="text-xs font-medium text-gray-500 bg-gray-100 px-2.5 py-0.5 rounded-full">{p.format}</span>
+                    </div>
+                    <p className="font-bold text-gray-900 text-sm">{p.hook}</p>
+                  </div>
                 </div>
-              )}
-              <div>
-                <p className="text-xs font-semibold text-gray-400 uppercase tracking-widest mb-2">Caption (copy-paste)</p>
-                <pre className="text-xs text-gray-700 bg-gray-50 rounded-lg p-4 whitespace-pre-wrap leading-relaxed font-sans overflow-x-auto select-all">
-                  {r.caption}
-                </pre>
+                <div className="px-6 py-4">
+                  <p className="text-xs font-bold text-gray-400 uppercase tracking-widest mb-2">Caption — copy &amp; paste</p>
+                  <pre className="text-sm text-gray-700 bg-gray-50 rounded-xl p-4 whitespace-pre-wrap leading-relaxed font-sans overflow-x-auto border border-gray-100 select-all">{p.caption}</pre>
+                </div>
               </div>
+            ))}
+          </div>
+
+          {/* Strategy */}
+          <div className="bg-gradient-to-br from-gray-900 to-gray-800 text-white rounded-2xl p-8">
+            <h2 className="text-xl font-bold mb-6 flex items-center gap-2">
+              <span className="w-1 h-6 bg-emerald-500 rounded-full inline-block"></span>
+              Instagram Strategy
+            </h2>
+            <div className="space-y-4">
+              {strategyPoints.map(({ title, desc }) => (
+                <div key={title} className="border-l-2 border-emerald-500 pl-4">
+                  <p className="text-sm font-bold text-emerald-400 mb-1">{title}</p>
+                  <p className="text-sm text-gray-300 leading-relaxed">{desc}</p>
+                </div>
+              ))}
             </div>
           </div>
-        ))}
-      </div>
 
-      {/* Static posts */}
-      <h2 className="text-lg font-bold mb-4">Static Posts &amp; Quote Cards</h2>
-      <div className="space-y-6 mb-12">
-        {staticPosts.map((p) => (
-          <div key={p.id} className="border border-gray-200 rounded-xl overflow-hidden">
-            <div className="bg-gray-50 px-5 py-4">
-              <div className="flex items-center gap-2 mb-1">
-                <span className="text-xs font-bold text-gray-400">#{p.id}</span>
-                <span className="bg-gray-200 text-gray-600 text-xs px-2 py-0.5 rounded-full">{p.format}</span>
-              </div>
-              <p className="font-semibold text-gray-900 text-sm">{p.hook}</p>
-            </div>
-            <div className="px-5 py-4">
-              <p className="text-xs font-semibold text-gray-400 uppercase tracking-widest mb-2">Caption (copy-paste)</p>
-              <pre className="text-xs text-gray-700 bg-gray-50 rounded-lg p-4 whitespace-pre-wrap leading-relaxed font-sans overflow-x-auto select-all">
-                {p.caption}
-              </pre>
-            </div>
-          </div>
-        ))}
-      </div>
-
-      <div className="bg-gray-950 text-white rounded-xl p-8">
-        <h2 className="font-bold text-lg mb-3">Instagram strategy</h2>
-        <div className="space-y-3 text-sm text-gray-300">
-          <p><strong className="text-white">Reels first:</strong> Instagram pushes Reels to non-followers. Do 1 Reel per day for the first 30 days.</p>
-          <p><strong className="text-white">Carousels for saves:</strong> Saves are a strong ranking signal. Educational carousels (5-8 slides) get saved most.</p>
-          <p><strong className="text-white">CTA on every post:</strong> End every caption with "link in bio → solokit.cloud" or "save this for later."</p>
-          <p><strong className="text-white">Hashtags:</strong> Use 5-8 per post. Mix: 2 large (#FreelanceUAE), 3 medium (#DubaiFreelancer), 3 small (#FreelanceToolsDubai).</p>
-          <p><strong className="text-white">Stories daily:</strong> Post 3-5 stories per day — polls, questions, behind the scenes. Stories keep you in the algorithm.</p>
-          <p><strong className="text-white">Don&apos;t:</strong> Post and ghost. Reply to every comment in the first hour — this signals engagement to the algorithm.</p>
         </div>
-      </div>
-    </main>
+      </main>
+      <Footer />
+    </>
   );
 }

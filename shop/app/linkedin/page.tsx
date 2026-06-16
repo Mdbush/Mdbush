@@ -1,9 +1,21 @@
 import type { Metadata } from "next";
+import Link from "next/link";
+import Header from "@/components/Header";
+import Footer from "@/components/Footer";
 
 export const metadata: Metadata = {
   title: "LinkedIn Content — SoloKit",
   robots: { index: false, follow: false },
 };
+
+const setupItems = [
+  { label: "Page name", value: "SoloKit" },
+  { label: "Tagline", value: "Notion templates, AI prompts & SOPs for UAE freelancers" },
+  { label: "Website", value: "solokit.cloud" },
+  { label: "Post frequency", value: "3-5× per week" },
+  { label: "Best times (UAE)", value: "7-9 AM, 12-1 PM, 6-8 PM" },
+  { label: "Industry", value: "Software / Professional Services" },
+];
 
 const posts = [
   {
@@ -355,99 +367,158 @@ const profileOptimization = [
   },
 ];
 
+const strategyPoints = [
+  {
+    title: "Format mix",
+    desc: "40% story posts (personal experience), 40% educational (tips/data), 20% controversial opinions. This mix maximizes reach + trust.",
+  },
+  {
+    title: "Hook is everything",
+    desc: "The first line determines if anyone reads the rest. Test different hooks on the same content — different hooks on the same post can get 10× different reach.",
+  },
+  {
+    title: "End with a question",
+    desc: 'Every post ends with "What\'s your experience?" or a question. Comments signal relevance to the algorithm.',
+  },
+  {
+    title: "Post at 7-9 AM UAE",
+    desc: "This is when Dubai professionals are commuting or starting their day. Highest engagement window.",
+  },
+  {
+    title: "Reply to every comment in the first hour",
+    desc: "This dramatically boosts reach. Set a reminder when you post.",
+  },
+  {
+    title: "Personal account first",
+    desc: "Post from your personal LinkedIn, not the company page. Personal profiles get 3-5× more organic reach.",
+  },
+  {
+    title: "Don't add links in the post body",
+    desc: "LinkedIn suppresses external links. Put the link in the first comment instead.",
+  },
+];
+
 export default function LinkedInPage() {
   return (
-    <main className="max-w-3xl mx-auto px-4 py-12 text-gray-900">
-      <div className="mb-10">
-        <h1 className="text-2xl font-bold mb-2">LinkedIn Content</h1>
-        <p className="text-gray-500 text-sm mb-4">
-          12 ready-to-post text posts for LinkedIn. Each is written in a native LinkedIn voice — story-driven, educational, and built to drive engagement.
-        </p>
+    <>
+      <Header />
+      <main className="min-h-screen bg-gray-50">
 
-        <div className="bg-gray-950 text-white rounded-xl p-5 text-sm mb-6">
-          <p className="font-bold mb-3">LinkedIn company page setup</p>
-          <div className="grid sm:grid-cols-2 gap-3">
-            {[
-              { label: "Page name", value: "SoloKit" },
-              { label: "Tagline", value: "Notion templates, AI prompts & SOPs for UAE freelancers" },
-              { label: "Website", value: "solokit.cloud" },
-              { label: "Post frequency", value: "3-5× per week" },
-              { label: "Best times (UAE)", value: "7-9 AM, 12-1 PM, 6-8 PM" },
-              { label: "Industry", value: "Software / Professional Services" },
-            ].map(({ label, value }) => (
-              <div key={label} className="bg-white/5 rounded-lg p-3">
-                <p className="text-xs text-gray-400 mb-0.5">{label}</p>
-                <p className="text-sm text-white font-medium">{value}</p>
+        {/* Hero */}
+        <div className="bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 text-white px-4 py-14">
+          <div className="max-w-4xl mx-auto">
+            <div className="flex items-center gap-3 mb-4">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                <rect x="2" y="2" width="20" height="20" rx="3" fill="#0A66C2"/>
+                <path d="M7 10v7M7 7v.5" stroke="white" strokeWidth="1.8" strokeLinecap="round"/>
+                <path d="M11 17v-4c0-1.1.9-2 2-2s2 .9 2 2v4M11 10v7" stroke="white" strokeWidth="1.8" strokeLinecap="round"/>
+              </svg>
+              <span className="text-xs font-bold text-emerald-400 uppercase tracking-widest">SoloKit Content Hub</span>
+            </div>
+            <h1 className="text-3xl sm:text-4xl font-bold mb-3">LinkedIn Content Library</h1>
+            <p className="text-gray-300 text-lg mb-6">
+              12 ready-to-post text posts for Company page: SoloKit. Story-driven, educational, built to drive engagement.
+            </p>
+            <div className="flex flex-wrap gap-3">
+              <div className="bg-white/10 backdrop-blur rounded-xl px-5 py-2.5 text-sm font-medium">📅 Post 3-5×/week</div>
+              <div className="bg-white/10 backdrop-blur rounded-xl px-5 py-2.5 text-sm font-medium">⏰ Best: 7-9 AM UAE</div>
+              <div className="bg-emerald-500 rounded-xl px-5 py-2.5 text-sm font-bold">12 posts ready</div>
+            </div>
+          </div>
+        </div>
+
+        <div className="max-w-4xl mx-auto px-4 py-10">
+
+          {/* Account setup */}
+          <div className="bg-white border border-gray-200 rounded-2xl p-6 mb-8 shadow-sm">
+            <h2 className="text-base font-bold text-gray-900 mb-4 flex items-center gap-2">
+              <span className="w-1 h-5 bg-emerald-500 rounded-full inline-block"></span>
+              Page Setup
+            </h2>
+            <div className="grid grid-cols-2 sm:grid-cols-3 gap-3">
+              {setupItems.map(({ label, value }) => (
+                <div key={label} className="bg-gray-50 border border-gray-100 rounded-xl p-4">
+                  <p className="text-xs text-gray-400 font-medium mb-1">{label}</p>
+                  <p className="text-sm font-bold text-gray-900">{value}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+
+          {/* Profile optimization */}
+          <div className="bg-white border border-gray-200 rounded-2xl p-6 mb-8 shadow-sm">
+            <h2 className="text-base font-bold text-gray-900 mb-2 flex items-center gap-2">
+              <span className="w-1 h-5 bg-emerald-500 rounded-full inline-block"></span>
+              Profile Optimization — Do This First
+            </h2>
+            <p className="text-xs text-gray-400 mb-4">Before you post anything, make these profile changes.</p>
+            <div className="space-y-3">
+              {profileOptimization.map(({ field, bad, good }) => (
+                <div key={field} className="border border-gray-200 rounded-xl overflow-hidden">
+                  <div className="bg-gray-50 px-4 py-2 text-xs font-bold text-gray-500 uppercase tracking-widest">{field}</div>
+                  <div className="grid sm:grid-cols-2 divide-y sm:divide-y-0 sm:divide-x divide-gray-100">
+                    <div className="p-4">
+                      <p className="text-xs text-red-500 font-bold mb-1">❌ Before</p>
+                      <p className="text-sm text-gray-600 italic">&ldquo;{bad}&rdquo;</p>
+                    </div>
+                    <div className="p-4 bg-emerald-50/30">
+                      <p className="text-xs text-emerald-600 font-bold mb-1">✅ After</p>
+                      <p className="text-sm text-gray-800">&ldquo;{good}&rdquo;</p>
+                    </div>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+
+          {/* Post library */}
+          <div className="mb-3 flex items-center justify-between">
+            <h2 className="text-xl font-bold text-gray-900">Post Library</h2>
+            <span className="text-xs text-emerald-600 font-bold bg-emerald-50 border border-emerald-200 px-3 py-1 rounded-full">12 posts ready</span>
+          </div>
+          <p className="text-xs text-gray-500 mb-4">Post 3-5 per week, vary formats. Viral potential marked in red.</p>
+          <div className="space-y-4 mb-12">
+            {posts.map((p, i) => (
+              <div key={p.id} className="bg-white border border-gray-200 rounded-2xl overflow-hidden shadow-sm hover:border-emerald-300 hover:shadow-md transition-all">
+                <div className="px-6 py-4 border-b border-gray-100 flex items-start gap-3">
+                  <div className="w-8 h-8 bg-emerald-100 text-emerald-700 rounded-full flex items-center justify-center text-sm font-bold shrink-0">{i + 1}</div>
+                  <div>
+                    <div className="flex items-center gap-2 flex-wrap mb-1">
+                      <span className="text-xs font-medium text-gray-500 bg-gray-100 px-2.5 py-0.5 rounded-full">{p.format}</span>
+                      {p.viral && (
+                        <span className="text-xs font-bold text-red-600 bg-red-50 border border-red-200 px-2.5 py-0.5 rounded-full">🔥 High viral potential</span>
+                      )}
+                    </div>
+                    <p className="font-bold text-gray-900 text-sm">{p.hook}</p>
+                  </div>
+                </div>
+                <div className="px-6 py-4">
+                  <p className="text-xs font-bold text-gray-400 uppercase tracking-widest mb-2">Post text — copy &amp; paste</p>
+                  <pre className="text-sm text-gray-700 bg-gray-50 rounded-xl p-4 whitespace-pre-wrap leading-relaxed font-sans overflow-x-auto border border-gray-100 select-all">{p.content}</pre>
+                </div>
               </div>
             ))}
           </div>
-        </div>
-      </div>
 
-      {/* Profile optimization table */}
-      <div className="mb-12">
-        <h2 className="text-lg font-bold mb-4">Profile optimization (do this first)</h2>
-        <div className="space-y-3">
-          {profileOptimization.map(({ field, bad, good }) => (
-            <div key={field} className="border border-gray-200 rounded-xl overflow-hidden">
-              <div className="bg-gray-50 px-4 py-2 text-xs font-bold text-gray-500 uppercase tracking-widest">{field}</div>
-              <div className="grid sm:grid-cols-2 divide-y sm:divide-y-0 sm:divide-x divide-gray-100">
-                <div className="p-4">
-                  <p className="text-xs text-red-500 font-semibold mb-1">❌ Before</p>
-                  <p className="text-sm text-gray-600 italic">"{bad}"</p>
+          {/* Strategy */}
+          <div className="bg-gradient-to-br from-gray-900 to-gray-800 text-white rounded-2xl p-8">
+            <h2 className="text-xl font-bold mb-6 flex items-center gap-2">
+              <span className="w-1 h-6 bg-emerald-500 rounded-full inline-block"></span>
+              LinkedIn Posting Strategy
+            </h2>
+            <div className="space-y-4">
+              {strategyPoints.map(({ title, desc }) => (
+                <div key={title} className="border-l-2 border-emerald-500 pl-4">
+                  <p className="text-sm font-bold text-emerald-400 mb-1">{title}</p>
+                  <p className="text-sm text-gray-300 leading-relaxed">{desc}</p>
                 </div>
-                <div className="p-4">
-                  <p className="text-xs text-green-600 font-semibold mb-1">✅ After</p>
-                  <p className="text-sm text-gray-800">"{good}"</p>
-                </div>
-              </div>
-            </div>
-          ))}
-        </div>
-      </div>
-
-      {/* Posts */}
-      <h2 className="text-lg font-bold mb-4">Post library</h2>
-      <div className="mb-4 flex items-center gap-3">
-        <span className="bg-red-100 text-red-800 text-xs font-semibold px-2.5 py-1 rounded-full">🔥 Viral potential marked</span>
-        <span className="text-xs text-gray-400">Post 3-5 per week, vary formats</span>
-      </div>
-
-      <div className="space-y-6">
-        {posts.map((p) => (
-          <div key={p.id} className="border border-gray-200 rounded-xl overflow-hidden">
-            <div className="bg-gray-50 px-5 py-4">
-              <div className="flex items-center gap-2 mb-1">
-                <span className="text-xs font-bold text-gray-400">#{p.id}</span>
-                {p.viral && (
-                  <span className="bg-red-100 text-red-700 text-xs font-semibold px-2 py-0.5 rounded-full">High viral potential</span>
-                )}
-                <span className="bg-gray-200 text-gray-600 text-xs px-2 py-0.5 rounded-full">{p.format}</span>
-              </div>
-              <p className="font-semibold text-gray-900 text-sm">{p.hook}</p>
-            </div>
-            <div className="px-5 py-4">
-              <p className="text-xs font-semibold text-gray-400 uppercase tracking-widest mb-2">Post text (copy-paste)</p>
-              <pre className="text-sm text-gray-700 bg-gray-50 rounded-lg p-4 whitespace-pre-wrap leading-relaxed font-sans overflow-x-auto select-all">
-                {p.content}
-              </pre>
+              ))}
             </div>
           </div>
-        ))}
-      </div>
 
-      <div className="mt-10 bg-gray-950 text-white rounded-xl p-8">
-        <h2 className="font-bold text-lg mb-3">LinkedIn posting strategy</h2>
-        <div className="space-y-3 text-sm text-gray-300">
-          <p><strong className="text-white">Format mix:</strong> 40% story posts (personal experience), 40% educational (tips/data), 20% controversial opinions. This mix maximizes reach + trust.</p>
-          <p><strong className="text-white">Hook is everything:</strong> The first line determines if anyone reads the rest. Test different hooks on the same content — different hooks on the same post can get 10× different reach.</p>
-          <p><strong className="text-white">End with a question:</strong> Every post ends with "What's your experience?" or a question. Comments signal relevance to the algorithm.</p>
-          <p><strong className="text-white">Post at 7-9 AM UAE:</strong> This is when Dubai professionals are commuting or starting their day. Highest engagement window.</p>
-          <p><strong className="text-white">Reply to every comment in the first hour:</strong> This dramatically boosts reach. Set a reminder when you post.</p>
-          <p><strong className="text-white">Personal account first:</strong> Post from your personal LinkedIn, not the company page. Personal profiles get 3-5× more organic reach.</p>
-          <p><strong className="text-white">Don&apos;t:</strong> Add the link in the post body (LinkedIn suppresses external links). Put it in the first comment instead.</p>
         </div>
-      </div>
-    </main>
+      </main>
+      <Footer />
+    </>
   );
 }

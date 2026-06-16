@@ -1,9 +1,22 @@
 import type { Metadata } from "next";
+import Link from "next/link";
+import Header from "@/components/Header";
+import Footer from "@/components/Footer";
 
 export const metadata: Metadata = {
   title: "TikTok Content Scripts — SoloKit",
   robots: { index: false, follow: false },
 };
+
+const setupChecklist = [
+  "Switch to a Business account (Settings → Account → Switch to Business)",
+  "Category: Software / Digital Content / Business Services",
+  "Bio: 'Notion templates & AI tools for UAE freelancers 🇦🇪 | solokit.cloud'",
+  "Username: @solokitco (or @solokit.ae / @solokithq)",
+  "Profile photo: download from solokit.cloud/brand",
+  "Link in bio: https://solokit.cloud",
+  "Post 1 video per day for first 30 days — consistency beats production quality",
+];
 
 const scripts = [
   {
@@ -662,79 +675,138 @@ HASHTAGS: #DubaiFreelancer #FreelanceUAE #Notion #Productivity #ClientWork #UAE 
   },
 ];
 
+const strategyPoints = [
+  {
+    title: "Week 1-2",
+    desc: "Post scripts #1, #3, #6, #7, #9 (highest viral potential). One per day.",
+  },
+  {
+    title: "Week 3-4",
+    desc: "Post scripts #11, #13, #14, #15, #16, #18, #20. Still one per day.",
+  },
+  {
+    title: "Week 5-6",
+    desc: "Post remaining scripts. Repost the best performing video from week 1-2 with a different hook.",
+  },
+  {
+    title: "Ongoing",
+    desc: "Every time you post a blog article on SoloKit, record a 45-second TikTok version of the key insight.",
+  },
+  {
+    title: "Best posting times (UAE)",
+    desc: "7-9 AM, 12-2 PM, 7-9 PM",
+  },
+  {
+    title: "CTA on every video",
+    desc: '"Link in bio → solokit.cloud"',
+  },
+  {
+    title: "Don't over-edit",
+    desc: "Don't edit heavily, use complex transitions, or wait for perfect lighting. Just record and post.",
+  },
+];
+
 export default function TikTokPage() {
   return (
-    <main className="max-w-3xl mx-auto px-4 py-12 text-gray-900">
-      <div className="mb-10">
-        <h1 className="text-2xl font-bold mb-2">TikTok Content Scripts</h1>
-        <p className="text-gray-500 text-sm mb-4">
-          20 ready-to-record scripts targeting UAE freelancer searches. Each video takes 5-10 minutes to record on your phone.
-        </p>
-        <div className="bg-gray-950 text-white rounded-xl p-5 text-sm">
-          <p className="font-bold mb-2">TikTok account setup checklist</p>
-          <ul className="space-y-1.5 text-gray-300">
-            {[
-              "Switch to a Business account (Settings → Account → Switch to Business)",
-              "Category: Software / Digital Content / Business Services",
-              "Bio: 'Notion templates & AI tools for UAE freelancers 🇦🇪 | solokit.cloud'",
-              "Username: @solokitco (or @solokit.ae / @solokithq)",
-              "Profile photo: download from solokit.cloud/brand",
-              "Link in bio: https://solokit.cloud",
-              "Post 1 video per day for first 30 days — consistency beats production quality",
-            ].map((item) => (
-              <li key={item} className="flex gap-2">
-                <span className="text-gray-600 shrink-0">□</span>
-                {item}
-              </li>
-            ))}
-          </ul>
-        </div>
-      </div>
+    <>
+      <Header />
+      <main className="min-h-screen bg-gray-50">
 
-      <div className="mb-6 flex items-center gap-3">
-        <span className="bg-red-100 text-red-800 text-xs font-semibold px-2.5 py-1 rounded-full">🔥 Highest viral potential first</span>
-        <span className="text-xs text-gray-400">Record on phone, vertical 9:16, no editing needed at start</span>
-      </div>
-
-      <div className="space-y-6">
-        {scripts.map((s) => (
-          <div key={s.id} className="border border-gray-200 rounded-xl overflow-hidden">
-            <div className="bg-gray-50 px-5 py-4 flex items-start justify-between gap-3">
-              <div>
-                <div className="flex items-center gap-2 mb-1">
-                  <span className="text-xs font-bold text-gray-400">#{s.id}</span>
-                  {s.viral && (
-                    <span className="bg-red-100 text-red-700 text-xs font-semibold px-2 py-0.5 rounded-full">High viral potential</span>
-                  )}
-                  <span className="bg-gray-200 text-gray-600 text-xs px-2 py-0.5 rounded-full">{s.duration}</span>
-                </div>
-                <h2 className="font-bold text-gray-900 text-sm leading-tight">{s.title}</h2>
-              </div>
+        {/* Hero */}
+        <div className="bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 text-white px-4 py-14">
+          <div className="max-w-4xl mx-auto">
+            <div className="flex items-center gap-3 mb-4">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                <path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-2.88 2.5 2.89 2.89 0 0 1-2.89-2.89 2.89 2.89 0 0 1 2.89-2.89c.28 0 .54.04.79.1V9.01a6.33 6.33 0 0 0-.79-.05 6.34 6.34 0 0 0-6.34 6.34 6.34 6.34 0 0 0 6.34 6.34 6.34 6.34 0 0 0 6.33-6.34V9.16a8.18 8.18 0 0 0 4.78 1.52V7.24a4.85 4.85 0 0 1-1.01-.55z" fill="white"/>
+              </svg>
+              <span className="text-xs font-bold text-emerald-400 uppercase tracking-widest">SoloKit Content Hub</span>
             </div>
-            <div className="px-5 py-4">
-              <p className="text-xs font-semibold text-gray-400 uppercase tracking-widest mb-2">Opening hook (say this in first 2-3 seconds)</p>
-              <p className="text-sm text-gray-900 font-medium italic mb-4">&ldquo;{s.hook}&rdquo;</p>
-              <p className="text-xs font-semibold text-gray-400 uppercase tracking-widest mb-2">Full script</p>
-              <pre className="text-xs text-gray-700 bg-gray-50 rounded-lg p-4 whitespace-pre-wrap leading-relaxed font-sans overflow-x-auto select-all">
-                {s.script}
-              </pre>
+            <h1 className="text-3xl sm:text-4xl font-bold mb-3">TikTok Content Scripts</h1>
+            <p className="text-gray-300 text-lg mb-6">
+              20 ready-to-record scripts targeting UAE freelancer searches. Each video takes 5-10 minutes to record.
+            </p>
+            <div className="flex flex-wrap gap-3">
+              <div className="bg-white/10 backdrop-blur rounded-xl px-5 py-2.5 text-sm font-medium">📅 Post 1× daily</div>
+              <div className="bg-white/10 backdrop-blur rounded-xl px-5 py-2.5 text-sm font-medium">⏰ Best: 7-9 AM UAE</div>
+              <div className="bg-emerald-500 rounded-xl px-5 py-2.5 text-sm font-bold">20 scripts ready</div>
             </div>
           </div>
-        ))}
-      </div>
-
-      <div className="mt-10 bg-gray-950 text-white rounded-xl p-8">
-        <h2 className="font-bold text-lg mb-3">TikTok posting strategy</h2>
-        <div className="space-y-3 text-sm text-gray-300">
-          <p><strong className="text-white">Week 1-2:</strong> Post scripts #1, #3, #6, #7, #9 (highest viral potential). One per day.</p>
-          <p><strong className="text-white">Week 3-4:</strong> Post scripts #11, #13, #14, #15, #16, #18, #20. Still one per day.</p>
-          <p><strong className="text-white">Week 5-6:</strong> Post remaining scripts. Repost the best performing video from week 1-2 with a different hook.</p>
-          <p><strong className="text-white">Ongoing:</strong> Every time you post a blog article on SoloKit, record a 45-second TikTok version of the key insight.</p>
-          <p><strong className="text-white">Best posting times (UAE):</strong> 7-9 AM, 12-2 PM, 7-9 PM</p>
-          <p><strong className="text-white">CTA on every video:</strong> &ldquo;Link in bio → solokit.cloud&rdquo;</p>
-          <p><strong className="text-white">Don&apos;t:</strong> Edit heavily, use complex transitions, wait for perfect lighting. Just record and post.</p>
         </div>
-      </div>
-    </main>
+
+        <div className="max-w-4xl mx-auto px-4 py-10">
+
+          {/* Account setup checklist */}
+          <div className="bg-white border border-gray-200 rounded-2xl p-6 mb-8 shadow-sm">
+            <h2 className="text-base font-bold text-gray-900 mb-4 flex items-center gap-2">
+              <span className="w-1 h-5 bg-emerald-500 rounded-full inline-block"></span>
+              Account Setup Checklist
+            </h2>
+            <ul className="space-y-2">
+              {setupChecklist.map((item) => (
+                <li key={item} className="flex items-start gap-3 text-sm text-gray-700">
+                  <span className="w-4 h-4 border-2 border-gray-300 rounded shrink-0 mt-0.5 flex items-center justify-center">
+                    <span className="sr-only">checkbox</span>
+                  </span>
+                  {item}
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          {/* Scripts */}
+          <div className="mb-3 flex items-center justify-between">
+            <h2 className="text-xl font-bold text-gray-900">Script Library</h2>
+            <span className="text-xs text-emerald-600 font-bold bg-emerald-50 border border-emerald-200 px-3 py-1 rounded-full">20 scripts ready</span>
+          </div>
+          <p className="text-xs text-gray-500 mb-4">Record on phone, vertical 9:16. No editing needed at start — consistency beats production quality.</p>
+          <div className="space-y-4 mb-12">
+            {scripts.map((s, i) => (
+              <div key={s.id} className="bg-white border border-gray-200 rounded-2xl overflow-hidden shadow-sm hover:border-emerald-300 hover:shadow-md transition-all">
+                <div className="px-6 py-4 border-b border-gray-100 flex items-start gap-3">
+                  <div className="w-8 h-8 bg-emerald-100 text-emerald-700 rounded-full flex items-center justify-center text-sm font-bold shrink-0">{i + 1}</div>
+                  <div>
+                    <div className="flex items-center gap-2 flex-wrap mb-1">
+                      <span className="text-xs font-medium text-gray-400 bg-gray-50 border border-gray-200 px-2.5 py-0.5 rounded-full">{s.duration}</span>
+                      {s.viral && (
+                        <span className="text-xs font-bold text-red-600 bg-red-50 border border-red-200 px-2.5 py-0.5 rounded-full">🔥 High viral potential</span>
+                      )}
+                    </div>
+                    <p className="font-bold text-gray-900 text-sm">{s.title}</p>
+                  </div>
+                </div>
+                <div className="px-6 py-4 space-y-3">
+                  <div>
+                    <p className="text-xs font-bold text-gray-400 uppercase tracking-widest mb-1.5">Opening hook — say this in first 2-3 seconds</p>
+                    <p className="text-sm text-gray-900 font-semibold italic bg-emerald-50 border border-emerald-100 rounded-xl px-4 py-2.5">&ldquo;{s.hook}&rdquo;</p>
+                  </div>
+                  <div>
+                    <p className="text-xs font-bold text-gray-400 uppercase tracking-widest mb-2">Full script — copy &amp; paste</p>
+                    <pre className="text-sm text-gray-700 bg-gray-50 rounded-xl p-4 whitespace-pre-wrap leading-relaxed font-sans overflow-x-auto border border-gray-100 select-all">{s.script}</pre>
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
+
+          {/* Strategy */}
+          <div className="bg-gradient-to-br from-gray-900 to-gray-800 text-white rounded-2xl p-8">
+            <h2 className="text-xl font-bold mb-6 flex items-center gap-2">
+              <span className="w-1 h-6 bg-emerald-500 rounded-full inline-block"></span>
+              TikTok Posting Strategy
+            </h2>
+            <div className="space-y-4">
+              {strategyPoints.map(({ title, desc }) => (
+                <div key={title} className="border-l-2 border-emerald-500 pl-4">
+                  <p className="text-sm font-bold text-emerald-400 mb-1">{title}</p>
+                  <p className="text-sm text-gray-300 leading-relaxed">{desc}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+
+        </div>
+      </main>
+      <Footer />
+    </>
   );
 }
