@@ -1,4 +1,7 @@
 import type { Metadata } from "next";
+import Link from "next/link";
+import Header from "@/components/Header";
+import Footer from "@/components/Footer";
 
 export const metadata: Metadata = {
   title: "Facebook Content — SoloKit",
@@ -286,79 +289,136 @@ Have a follow-up approach that's worked for you? Share it 👇`,
 
 export default function FacebookPage() {
   return (
-    <main className="max-w-3xl mx-auto px-4 py-12 text-gray-900">
-      <div className="mb-10">
-        <h1 className="text-2xl font-bold mb-2">Facebook Page Content</h1>
-        <p className="text-gray-500 text-sm mb-4">
-          12 ready-to-post Facebook posts. Written for Facebook&apos;s format — slightly longer, more conversational, ends with a question to drive comments.
-        </p>
+    <>
+      <Header />
+      <main className="min-h-screen bg-gray-50">
 
-        <div className="bg-gray-950 text-white rounded-xl p-5 text-sm mb-6">
-          <p className="font-bold mb-3">Facebook page setup</p>
-          <div className="grid sm:grid-cols-2 gap-3">
+        {/* Hero */}
+        <div className="bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 text-white px-4 py-14">
+          <div className="max-w-4xl mx-auto">
+            <div className="flex items-center gap-3 mb-5">
+              <svg viewBox="0 0 24 24" className="w-7 h-7 text-blue-400 shrink-0" fill="currentColor">
+                <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z" />
+              </svg>
+              <span className="text-xs font-bold text-emerald-400 uppercase tracking-widest">SoloKit Content Hub</span>
+            </div>
+            <h1 className="text-3xl sm:text-4xl font-bold mb-3">Facebook Content Library</h1>
+            <p className="text-gray-300 text-lg mb-6 max-w-xl">12 ready-to-post Facebook posts. Conversational, ends with a question — optimised for comments and reach.</p>
+            <div className="flex flex-wrap gap-3">
+              <div className="bg-white/10 backdrop-blur rounded-xl px-4 py-2.5 text-sm">
+                <span className="text-gray-400">Page</span>
+                <span className="ml-2 font-semibold text-white">SoloKit (@solokitco)</span>
+              </div>
+              <div className="bg-white/10 backdrop-blur rounded-xl px-4 py-2.5 text-sm">
+                <span className="text-gray-400">Frequency</span>
+                <span className="ml-2 font-semibold text-white">1× per day</span>
+              </div>
+              <div className="bg-white/10 backdrop-blur rounded-xl px-4 py-2.5 text-sm">
+                <span className="text-gray-400">Best times (UAE)</span>
+                <span className="ml-2 font-semibold text-white">7–9 AM · 12–2 PM · 7–9 PM</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div className="max-w-4xl mx-auto px-4 py-10">
+
+          {/* Page setup */}
+          <div className="grid sm:grid-cols-4 gap-4 mb-8">
             {[
               { label: "Page name", value: "SoloKit" },
-              { label: "Category", value: "Software Company · Digital Products" },
               { label: "Username", value: "@solokitco" },
               { label: "Website", value: "solokit.cloud" },
+              { label: "CTA button", value: "Shop Now → solokit.cloud" },
+              { label: "Page ID", value: "1098756576664555" },
+              { label: "Category", value: "Software Company · Digital Products" },
               { label: "Post frequency", value: "1× per day" },
               { label: "Best times (UAE)", value: "7-9 AM, 12-2 PM, 7-9 PM" },
-              { label: "Page ID", value: "1098756576664555" },
-              { label: "CTA button", value: "Shop Now → solokit.cloud" },
             ].map(({ label, value }) => (
-              <div key={label} className="bg-white/5 rounded-lg p-3">
-                <p className="text-xs text-gray-400 mb-0.5">{label}</p>
-                <p className="text-sm text-white font-medium">{value}</p>
+              <div key={label} className="bg-white border border-gray-200 rounded-xl p-4">
+                <p className="text-xs font-semibold text-gray-400 uppercase tracking-widest mb-1">{label}</p>
+                <p className="text-sm font-semibold text-gray-900">{value}</p>
               </div>
             ))}
           </div>
-        </div>
 
-        <div className="bg-blue-50 border border-blue-200 rounded-xl p-4 text-sm mb-6">
-          <p className="font-semibold text-blue-900 mb-1">Automated posting</p>
-          <p className="text-blue-800">The cron job at <code className="bg-blue-100 px-1 rounded">/api/cron/social-post</code> auto-posts to this Facebook page Sunday–Friday at 7am UAE time (3am UTC) — once <code className="bg-blue-100 px-1 rounded">FACEBOOK_PAGE_ACCESS_TOKEN</code> is set in Vercel env vars. These posts below are for <strong>manual posting</strong> to supplement the automation.</p>
-        </div>
-      </div>
+          {/* Automation notice */}
+          <div className="bg-emerald-50 border border-emerald-200 rounded-xl p-5 mb-10">
+            <p className="text-sm font-bold text-emerald-800 mb-1">Automated posting</p>
+            <p className="text-sm text-emerald-700">The cron job at <code className="bg-emerald-100 px-1.5 py-0.5 rounded text-xs font-mono">/api/cron/social-post</code> auto-posts to this Facebook page Sunday–Friday at 7am UAE time — once <code className="bg-emerald-100 px-1.5 py-0.5 rounded text-xs font-mono">FACEBOOK_PAGE_ACCESS_TOKEN</code> is set in Vercel env vars. Posts below are for <strong>manual supplemental posting</strong>.</p>
+          </div>
 
-      <div className="mb-6 flex items-center gap-3">
-        <span className="bg-red-100 text-red-800 text-xs font-semibold px-2.5 py-1 rounded-full">🔥 Highest engagement potential first</span>
-        <span className="text-xs text-gray-400">End every post with a question to drive comments</span>
-      </div>
+          {/* Posts */}
+          <div className="flex items-center justify-between mb-5">
+            <h2 className="text-xl font-bold text-gray-900 flex items-center gap-2">
+              <span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>
+              Post library
+            </h2>
+            <span className="bg-red-100 text-red-700 text-xs font-semibold px-3 py-1 rounded-full">🔥 Highest engagement first</span>
+          </div>
 
-      <div className="space-y-6">
-        {posts.map((p) => (
-          <div key={p.id} className="border border-gray-200 rounded-xl overflow-hidden">
-            <div className="bg-gray-50 px-5 py-4">
-              <div className="flex items-center gap-2 mb-1">
-                <span className="text-xs font-bold text-gray-400">#{p.id}</span>
-                {p.viral && (
-                  <span className="bg-red-100 text-red-700 text-xs font-semibold px-2 py-0.5 rounded-full">High engagement</span>
-                )}
-                <span className="bg-gray-200 text-gray-600 text-xs px-2 py-0.5 rounded-full">{p.type}</span>
+          <div className="space-y-5 mb-12">
+            {posts.map((p) => (
+              <div key={p.id} className="bg-white border border-gray-200 rounded-2xl overflow-hidden shadow-sm">
+                <div className="px-5 py-4 border-b border-gray-100 flex items-start gap-3">
+                  <span className="w-7 h-7 rounded-full bg-gray-100 text-gray-500 text-xs font-bold flex items-center justify-center shrink-0">
+                    {p.id}
+                  </span>
+                  <div className="flex-1 min-w-0">
+                    <div className="flex flex-wrap items-center gap-2 mb-2">
+                      {p.viral && (
+                        <span className="bg-red-100 text-red-700 text-xs font-semibold px-2.5 py-0.5 rounded-full">High engagement</span>
+                      )}
+                      <span className="bg-gray-100 text-gray-600 text-xs font-medium px-2.5 py-0.5 rounded-full">{p.type}</span>
+                    </div>
+                    <p className="font-semibold text-gray-900 text-sm leading-snug">{p.hook}</p>
+                  </div>
+                </div>
+                <div className="px-5 py-4">
+                  <p className="text-xs font-bold text-gray-400 uppercase tracking-widest mb-2">Post text — copy &amp; paste</p>
+                  <pre className="text-sm text-gray-700 bg-gray-50 border border-gray-100 rounded-xl p-4 whitespace-pre-wrap leading-relaxed font-sans overflow-x-auto select-all">
+                    {p.content}
+                  </pre>
+                </div>
               </div>
-              <p className="font-semibold text-gray-900 text-sm">{p.hook}</p>
+            ))}
+          </div>
+
+          {/* Strategy */}
+          <div className="bg-gradient-to-br from-gray-900 to-gray-800 text-white rounded-2xl p-8">
+            <span className="text-xs font-bold text-emerald-400 uppercase tracking-widest block mb-3">Posting strategy</span>
+            <h2 className="text-xl font-bold mb-5">Facebook growth playbook</h2>
+            <div className="space-y-4 text-sm text-gray-300">
+              <div className="border-l-2 border-emerald-500 pl-4">
+                <p className="font-semibold text-white mb-0.5">Native text posts win</p>
+                <p>Facebook rewards native text posts + image posts. Avoid adding links in the post body — it kills reach. Put links in the first comment instead.</p>
+              </div>
+              <div className="border-l-2 border-emerald-500 pl-4">
+                <p className="font-semibold text-white mb-0.5">Engagement is the signal</p>
+                <p>Facebook shows posts to more people when they have comments. Every post should end with a direct question. Reply to every comment within 1 hour.</p>
+              </div>
+              <div className="border-l-2 border-emerald-500 pl-4">
+                <p className="font-semibold text-white mb-0.5">Image posts</p>
+                <p>Post a simple quote card or stat graphic with an educational caption. Create in Canva using the brand colors (dark background, white text).</p>
+              </div>
+              <div className="border-l-2 border-emerald-500 pl-4">
+                <p className="font-semibold text-white mb-0.5">Groups</p>
+                <p>Join UAE freelancer Facebook groups and post value there too. Don&apos;t spam — contribute, then mention SoloKit when relevant.</p>
+              </div>
+              <div className="border-l-2 border-emerald-500 pl-4">
+                <p className="font-semibold text-white mb-0.5">Boost high performers</p>
+                <p>Any post that gets 20+ organic comments — boost it with AED 50-100 ad spend to UAE freelancer audience. High ROI.</p>
+              </div>
             </div>
-            <div className="px-5 py-4">
-              <p className="text-xs font-semibold text-gray-400 uppercase tracking-widest mb-2">Post text (copy-paste)</p>
-              <pre className="text-sm text-gray-700 bg-gray-50 rounded-lg p-4 whitespace-pre-wrap leading-relaxed font-sans overflow-x-auto select-all">
-                {p.content}
-              </pre>
+            <div className="mt-6 pt-6 border-t border-white/10">
+              <Link href="/blog" className="inline-block bg-emerald-500 hover:bg-emerald-400 text-white font-bold px-6 py-2.5 rounded-xl transition-colors text-sm">
+                Browse blog articles to adapt into posts →
+              </Link>
             </div>
           </div>
-        ))}
-      </div>
-
-      <div className="mt-10 bg-gray-950 text-white rounded-xl p-8">
-        <h2 className="font-bold text-lg mb-3">Facebook strategy</h2>
-        <div className="space-y-3 text-sm text-gray-300">
-          <p><strong className="text-white">Format:</strong> Facebook rewards native text posts + image posts. Avoid adding links in the post body — it kills reach. Put links in the first comment instead.</p>
-          <p><strong className="text-white">Engagement is the signal:</strong> Facebook shows posts to more people when they have comments. Every post should end with a direct question. Reply to every comment within 1 hour of posting.</p>
-          <p><strong className="text-white">Image posts:</strong> Post a simple quote card or stat graphic with an educational caption. Create these in Canva using the brand colors (dark background, white text).</p>
-          <p><strong className="text-white">Groups:</strong> Join UAE freelancer Facebook groups and post value there too. Don&apos;t spam — contribute, then mention SoloKit when relevant.</p>
-          <p><strong className="text-white">Automated vs manual:</strong> The cron job handles daily automated posts. These 12 posts are for manual scheduling using Meta Business Suite at specific high-engagement times.</p>
-          <p><strong className="text-white">Boost high performers:</strong> Any post that gets 20+ organic comments — boost it with AED 50-100 ad spend to UAE freelancer audience. High ROI.</p>
         </div>
-      </div>
-    </main>
+      </main>
+      <Footer />
+    </>
   );
 }

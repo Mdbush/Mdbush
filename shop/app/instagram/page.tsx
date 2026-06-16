@@ -1,4 +1,7 @@
 import type { Metadata } from "next";
+import Link from "next/link";
+import Header from "@/components/Header";
+import Footer from "@/components/Footer";
 
 export const metadata: Metadata = {
   title: "Instagram Content — SoloKit",
@@ -302,16 +305,42 @@ If a client refuses a deposit — that tells you something important.
 
 export default function InstagramPage() {
   return (
-    <main className="max-w-3xl mx-auto px-4 py-12 text-gray-900">
-      <div className="mb-10">
-        <h1 className="text-2xl font-bold mb-2">Instagram Content</h1>
-        <p className="text-gray-500 text-sm mb-4">
-          Reels, carousels, and static posts for @solokitco. Each piece is ready to use or adapt.
-        </p>
+    <>
+      <Header />
+      <main className="min-h-screen bg-gray-50">
 
-        <div className="bg-gray-950 text-white rounded-xl p-5 text-sm mb-6">
-          <p className="font-bold mb-3">Instagram account setup</p>
-          <div className="grid sm:grid-cols-2 gap-3">
+        {/* Hero */}
+        <div className="bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 text-white px-4 py-14">
+          <div className="max-w-4xl mx-auto">
+            <div className="flex items-center gap-3 mb-5">
+              <svg viewBox="0 0 24 24" className="w-7 h-7 text-pink-400 shrink-0" fill="currentColor">
+                <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" />
+              </svg>
+              <span className="text-xs font-bold text-emerald-400 uppercase tracking-widest">SoloKit Content Hub</span>
+            </div>
+            <h1 className="text-3xl sm:text-4xl font-bold mb-3">Instagram Content Library</h1>
+            <p className="text-gray-300 text-lg mb-6 max-w-xl">10 reels, carousels &amp; static posts for @solokitco. Ready to copy, customise, and post.</p>
+            <div className="flex flex-wrap gap-3">
+              <div className="bg-white/10 backdrop-blur rounded-xl px-4 py-2.5 text-sm">
+                <span className="text-gray-400">Account</span>
+                <span className="ml-2 font-semibold text-white">@solokitco</span>
+              </div>
+              <div className="bg-white/10 backdrop-blur rounded-xl px-4 py-2.5 text-sm">
+                <span className="text-gray-400">Frequency</span>
+                <span className="ml-2 font-semibold text-white">1× per day</span>
+              </div>
+              <div className="bg-white/10 backdrop-blur rounded-xl px-4 py-2.5 text-sm">
+                <span className="text-gray-400">Best times (UAE)</span>
+                <span className="ml-2 font-semibold text-white">7–9 AM · 12–2 PM · 7–9 PM</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div className="max-w-4xl mx-auto px-4 py-10">
+
+          {/* Account setup */}
+          <div className="grid sm:grid-cols-3 gap-4 mb-10">
             {[
               { label: "Username", value: "@solokitco (or @solokit.ae)" },
               { label: "Name", value: "SoloKit — Tools for UAE Freelancers" },
@@ -320,99 +349,142 @@ export default function InstagramPage() {
               { label: "Post frequency", value: "1× per day (reels + carousels)" },
               { label: "Best times (UAE)", value: "7-9 AM, 12-2 PM, 7-9 PM" },
             ].map(({ label, value }) => (
-              <div key={label} className="bg-white/5 rounded-lg p-3">
-                <p className="text-xs text-gray-400 mb-0.5">{label}</p>
-                <p className="text-sm text-white font-medium">{value}</p>
+              <div key={label} className="bg-white border border-gray-200 rounded-xl p-4">
+                <p className="text-xs font-semibold text-gray-400 uppercase tracking-widest mb-1">{label}</p>
+                <p className="text-sm font-semibold text-gray-900">{value}</p>
               </div>
             ))}
           </div>
-        </div>
 
-        <div className="bg-blue-50 border border-blue-200 rounded-xl p-4 text-sm">
-          <p className="font-semibold text-blue-900 mb-1">Content mix (per week)</p>
-          <ul className="text-blue-800 space-y-1">
-            <li>• 3× Reels (talking head or text animation) — highest reach</li>
-            <li>• 2× Carousels — highest saves, great for discovery</li>
-            <li>• 2× Static posts — quotes, stats, quick tips</li>
-            <li>• Daily Stories: behind-the-scenes, polls, Q&A</li>
-          </ul>
-        </div>
-      </div>
-
-      {/* Reels */}
-      <h2 className="text-lg font-bold mb-4">Reels &amp; Talking Head Videos</h2>
-      <div className="space-y-6 mb-12">
-        {reels.map((r) => (
-          <div key={r.id} className="border border-gray-200 rounded-xl overflow-hidden">
-            <div className="bg-gray-50 px-5 py-4">
-              <div className="flex items-center gap-2 mb-1">
-                <span className="text-xs font-bold text-gray-400">#{r.id}</span>
-                {r.viral && (
-                  <span className="bg-red-100 text-red-700 text-xs font-semibold px-2 py-0.5 rounded-full">High reach potential</span>
-                )}
-                <span className="bg-gray-200 text-gray-600 text-xs px-2 py-0.5 rounded-full">{r.format}</span>
-                <span className="bg-gray-200 text-gray-600 text-xs px-2 py-0.5 rounded-full">{r.duration}</span>
-              </div>
-              <p className="font-semibold text-gray-900 text-sm">{r.hook}</p>
+          {/* Content mix */}
+          <div className="bg-emerald-50 border border-emerald-200 rounded-xl p-5 mb-10">
+            <p className="text-sm font-bold text-emerald-800 mb-3">Content mix (per week)</p>
+            <div className="grid sm:grid-cols-2 gap-2 text-sm text-emerald-700">
+              <div className="flex gap-2"><span className="text-emerald-400">→</span> 3× Reels (talking head or text animation) — highest reach</div>
+              <div className="flex gap-2"><span className="text-emerald-400">→</span> 2× Carousels — highest saves, great for discovery</div>
+              <div className="flex gap-2"><span className="text-emerald-400">→</span> 2× Static posts — quotes, stats, quick tips</div>
+              <div className="flex gap-2"><span className="text-emerald-400">→</span> Daily Stories: behind-the-scenes, polls, Q&amp;A</div>
             </div>
-            <div className="px-5 py-4 space-y-4">
-              {r.slides && (
-                <div>
-                  <p className="text-xs font-semibold text-gray-400 uppercase tracking-widest mb-2">Slide outline</p>
-                  <ul className="text-xs text-gray-600 space-y-1">
-                    {r.slides.map((slide) => (
-                      <li key={slide} className="flex gap-2">
-                        <span className="text-gray-300 shrink-0">→</span>
-                        {slide}
-                      </li>
-                    ))}
-                  </ul>
+          </div>
+
+          {/* Reels */}
+          <div className="flex items-center justify-between mb-5">
+            <h2 className="text-xl font-bold text-gray-900 flex items-center gap-2">
+              <span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>
+              Reels &amp; Talking Head Videos
+            </h2>
+            <span className="bg-red-100 text-red-700 text-xs font-semibold px-3 py-1 rounded-full">🔥 High reach = marked</span>
+          </div>
+
+          <div className="space-y-5 mb-12">
+            {reels.map((r) => (
+              <div key={r.id} className="bg-white border border-gray-200 rounded-2xl overflow-hidden shadow-sm">
+                <div className="px-5 py-4 border-b border-gray-100 flex items-start gap-3">
+                  <span className="w-7 h-7 rounded-full bg-gray-100 text-gray-500 text-xs font-bold flex items-center justify-center shrink-0">
+                    {r.id}
+                  </span>
+                  <div className="flex-1 min-w-0">
+                    <div className="flex flex-wrap items-center gap-2 mb-2">
+                      {r.viral && (
+                        <span className="bg-red-100 text-red-700 text-xs font-semibold px-2.5 py-0.5 rounded-full">High reach potential</span>
+                      )}
+                      <span className="bg-gray-100 text-gray-600 text-xs font-medium px-2.5 py-0.5 rounded-full">{r.format}</span>
+                      <span className="bg-gray-100 text-gray-600 text-xs font-medium px-2.5 py-0.5 rounded-full">{r.duration}</span>
+                    </div>
+                    <p className="font-semibold text-gray-900 text-sm leading-snug">{r.hook}</p>
+                  </div>
                 </div>
-              )}
-              <div>
-                <p className="text-xs font-semibold text-gray-400 uppercase tracking-widest mb-2">Caption (copy-paste)</p>
-                <pre className="text-xs text-gray-700 bg-gray-50 rounded-lg p-4 whitespace-pre-wrap leading-relaxed font-sans overflow-x-auto select-all">
-                  {r.caption}
-                </pre>
+                <div className="px-5 py-4 space-y-4">
+                  {r.slides && (
+                    <div>
+                      <p className="text-xs font-bold text-gray-400 uppercase tracking-widest mb-2">Slide outline</p>
+                      <ul className="space-y-1.5">
+                        {r.slides.map((slide) => (
+                          <li key={slide} className="flex gap-2 text-xs text-gray-600">
+                            <span className="text-emerald-400 shrink-0">→</span>
+                            {slide}
+                          </li>
+                        ))}
+                      </ul>
+                    </div>
+                  )}
+                  <div>
+                    <p className="text-xs font-bold text-gray-400 uppercase tracking-widest mb-2">Caption — copy &amp; paste</p>
+                    <pre className="text-xs text-gray-700 bg-gray-50 border border-gray-100 rounded-xl p-4 whitespace-pre-wrap leading-relaxed font-sans overflow-x-auto select-all">
+                      {r.caption}
+                    </pre>
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
+
+          {/* Static posts */}
+          <h2 className="text-xl font-bold text-gray-900 flex items-center gap-2 mb-5">
+            <span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>
+            Static Posts &amp; Quote Cards
+          </h2>
+          <div className="space-y-5 mb-12">
+            {staticPosts.map((p) => (
+              <div key={p.id} className="bg-white border border-gray-200 rounded-2xl overflow-hidden shadow-sm">
+                <div className="px-5 py-4 border-b border-gray-100 flex items-start gap-3">
+                  <span className="w-7 h-7 rounded-full bg-gray-100 text-gray-500 text-xs font-bold flex items-center justify-center shrink-0">
+                    {p.id}
+                  </span>
+                  <div>
+                    <span className="bg-gray-100 text-gray-600 text-xs font-medium px-2.5 py-0.5 rounded-full mb-2 inline-block">{p.format}</span>
+                    <p className="font-semibold text-gray-900 text-sm leading-snug">{p.hook}</p>
+                  </div>
+                </div>
+                <div className="px-5 py-4">
+                  <p className="text-xs font-bold text-gray-400 uppercase tracking-widest mb-2">Caption — copy &amp; paste</p>
+                  <pre className="text-xs text-gray-700 bg-gray-50 border border-gray-100 rounded-xl p-4 whitespace-pre-wrap leading-relaxed font-sans overflow-x-auto select-all">
+                    {p.caption}
+                  </pre>
+                </div>
+              </div>
+            ))}
+          </div>
+
+          {/* Strategy */}
+          <div className="bg-gradient-to-br from-gray-900 to-gray-800 text-white rounded-2xl p-8 mt-4">
+            <span className="text-xs font-bold text-emerald-400 uppercase tracking-widest block mb-3">Posting strategy</span>
+            <h2 className="text-xl font-bold mb-5">Instagram growth playbook</h2>
+            <div className="space-y-4 text-sm text-gray-300">
+              <div className="border-l-2 border-emerald-500 pl-4">
+                <p className="font-semibold text-white mb-0.5">Reels first</p>
+                <p>Instagram pushes Reels to non-followers. Do 1 Reel per day for the first 30 days.</p>
+              </div>
+              <div className="border-l-2 border-emerald-500 pl-4">
+                <p className="font-semibold text-white mb-0.5">Carousels for saves</p>
+                <p>Saves are a strong ranking signal. Educational carousels (5-8 slides) get saved most.</p>
+              </div>
+              <div className="border-l-2 border-emerald-500 pl-4">
+                <p className="font-semibold text-white mb-0.5">CTA on every post</p>
+                <p>End every caption with &ldquo;link in bio → solokit.cloud&rdquo; or &ldquo;save this for later.&rdquo;</p>
+              </div>
+              <div className="border-l-2 border-emerald-500 pl-4">
+                <p className="font-semibold text-white mb-0.5">Hashtags</p>
+                <p>Use 5-8 per post. Mix: 2 large (#FreelanceUAE), 3 medium (#DubaiFreelancer), 3 small (#FreelanceToolsDubai).</p>
+              </div>
+              <div className="border-l-2 border-emerald-500 pl-4">
+                <p className="font-semibold text-white mb-0.5">Stories daily</p>
+                <p>Post 3-5 stories per day — polls, questions, behind the scenes. Stories keep you in the algorithm.</p>
+              </div>
+              <div className="border-l-2 border-gray-600 pl-4">
+                <p className="font-semibold text-gray-400 mb-0.5">Don&apos;t</p>
+                <p>Post and ghost. Reply to every comment in the first hour — this signals engagement to the algorithm.</p>
               </div>
             </div>
-          </div>
-        ))}
-      </div>
-
-      {/* Static posts */}
-      <h2 className="text-lg font-bold mb-4">Static Posts &amp; Quote Cards</h2>
-      <div className="space-y-6 mb-12">
-        {staticPosts.map((p) => (
-          <div key={p.id} className="border border-gray-200 rounded-xl overflow-hidden">
-            <div className="bg-gray-50 px-5 py-4">
-              <div className="flex items-center gap-2 mb-1">
-                <span className="text-xs font-bold text-gray-400">#{p.id}</span>
-                <span className="bg-gray-200 text-gray-600 text-xs px-2 py-0.5 rounded-full">{p.format}</span>
-              </div>
-              <p className="font-semibold text-gray-900 text-sm">{p.hook}</p>
-            </div>
-            <div className="px-5 py-4">
-              <p className="text-xs font-semibold text-gray-400 uppercase tracking-widest mb-2">Caption (copy-paste)</p>
-              <pre className="text-xs text-gray-700 bg-gray-50 rounded-lg p-4 whitespace-pre-wrap leading-relaxed font-sans overflow-x-auto select-all">
-                {p.caption}
-              </pre>
+            <div className="mt-6 pt-6 border-t border-white/10">
+              <Link href="/blog" className="inline-block bg-emerald-500 hover:bg-emerald-400 text-white font-bold px-6 py-2.5 rounded-xl transition-colors text-sm">
+                Browse blog articles to turn into Reels →
+              </Link>
             </div>
           </div>
-        ))}
-      </div>
-
-      <div className="bg-gray-950 text-white rounded-xl p-8">
-        <h2 className="font-bold text-lg mb-3">Instagram strategy</h2>
-        <div className="space-y-3 text-sm text-gray-300">
-          <p><strong className="text-white">Reels first:</strong> Instagram pushes Reels to non-followers. Do 1 Reel per day for the first 30 days.</p>
-          <p><strong className="text-white">Carousels for saves:</strong> Saves are a strong ranking signal. Educational carousels (5-8 slides) get saved most.</p>
-          <p><strong className="text-white">CTA on every post:</strong> End every caption with "link in bio → solokit.cloud" or "save this for later."</p>
-          <p><strong className="text-white">Hashtags:</strong> Use 5-8 per post. Mix: 2 large (#FreelanceUAE), 3 medium (#DubaiFreelancer), 3 small (#FreelanceToolsDubai).</p>
-          <p><strong className="text-white">Stories daily:</strong> Post 3-5 stories per day — polls, questions, behind the scenes. Stories keep you in the algorithm.</p>
-          <p><strong className="text-white">Don&apos;t:</strong> Post and ghost. Reply to every comment in the first hour — this signals engagement to the algorithm.</p>
         </div>
-      </div>
-    </main>
+      </main>
+      <Footer />
+    </>
   );
 }
