@@ -192,7 +192,7 @@ export default function HowToWorkFromHomeUAE() {
                 { href: "/blog/freelance-morning-routine-uae", label: "The Freelancer Morning Routine That Works in the UAE" },
                 { href: "/blog/freelance-work-life-balance-uae", label: "Work-Life Balance for UAE Freelancers" },
               ].map((link) => (
-                <Link key={link.href} href={link.href} className="block text-blue-600 hover:text-blue-800 text-sm">
+                <Link key={link.href} href={link.href} className="block text-emerald-700 hover:text-emerald-900 text-sm">
                   → {link.label}
                 </Link>
               ))}

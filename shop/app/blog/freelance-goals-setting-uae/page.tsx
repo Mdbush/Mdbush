@@ -58,7 +58,7 @@ export default function FreelanceGoalsSettingUAE() {
         </div>
 
 
-        <div className="prose prose-gray max-w-none text-gray-700 leading-relaxed space-y-6">
+        <div className="space-y-6 leading-relaxed">
 
           <p>
             Most freelancers do not set goals — they respond to whatever comes in. That approach
@@ -68,7 +68,7 @@ export default function FreelanceGoalsSettingUAE() {
           </p>
 
           <section>
-            <h2 className="text-xl font-bold text-gray-900 mt-8 mb-3">Step 1: Set Your Annual Revenue Target</h2>
+            <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2"><span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>Step 1: Set Your Annual Revenue Target</h2>
             <p>
               Start with the number you want to earn this year in take-home AED. Not gross
               revenue — what you actually want in your account after all business costs.
@@ -92,7 +92,7 @@ export default function FreelanceGoalsSettingUAE() {
           </section>
 
           <section>
-            <h2 className="text-xl font-bold text-gray-900 mt-8 mb-3">Step 2: Reverse-Engineer into Monthly Targets</h2>
+            <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2"><span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>Step 2: Reverse-Engineer into Monthly Targets</h2>
             <p>
               Divide your annual gross revenue target by your active working months. In the UAE,
               most freelancers effectively have 10–10.5 productive months — Ramadan slows down
@@ -112,7 +112,7 @@ export default function FreelanceGoalsSettingUAE() {
           </section>
 
           <section>
-            <h2 className="text-xl font-bold text-gray-900 mt-8 mb-3">Step 3: Set Non-Revenue Goals</h2>
+            <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2"><span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>Step 3: Set Non-Revenue Goals</h2>
             <p>
               Revenue is the result, not the method. Set goals for the inputs that drive revenue:
             </p>
@@ -134,7 +134,7 @@ export default function FreelanceGoalsSettingUAE() {
           </section>
 
           <section>
-            <h2 className="text-xl font-bold text-gray-900 mt-8 mb-3">Step 4: Weekly Review (5 Minutes Every Sunday)</h2>
+            <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2"><span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>Step 4: Weekly Review (5 Minutes Every Sunday)</h2>
             <p>
               A weekly review turns goals from aspirations into actions. Every Sunday (start of
               UAE business week):
@@ -152,7 +152,7 @@ export default function FreelanceGoalsSettingUAE() {
           </section>
 
           <section>
-            <h2 className="text-xl font-bold text-gray-900 mt-8 mb-3">Step 5: Quarterly Reset</h2>
+            <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2"><span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>Step 5: Quarterly Reset</h2>
             <p>
               Goals set in January often do not survive contact with reality. Every quarter,
               assess what happened vs what you planned and adjust:
@@ -172,7 +172,7 @@ export default function FreelanceGoalsSettingUAE() {
           </section>
 
           <section>
-            <h2 className="text-xl font-bold text-gray-900 mt-8 mb-3">UAE Calendar Considerations for Freelance Planning</h2>
+            <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2"><span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>UAE Calendar Considerations for Freelance Planning</h2>
             <div className="space-y-3 mt-3">
               {[
                 { period: "January–March (Q1)", note: "Strongest client acquisition window. New budgets approved. High decision-maker availability. Push hard on business development." },
@@ -191,8 +191,8 @@ export default function FreelanceGoalsSettingUAE() {
           </section>
 
           {/* CTA */}
-          <div className="bg-gray-950 text-white rounded-2xl p-6 mt-10">
-            <p className="text-xs font-semibold text-gray-400 uppercase tracking-widest mb-2">Build the financial foundation</p>
+          <div className="bg-gradient-to-br from-gray-900 to-gray-800 text-white rounded-2xl p-8 mt-12 text-center">
+            <p className="text-xs font-bold text-emerald-400 uppercase tracking-widest block mb-3">Build the financial foundation</p>
             <h3 className="text-lg font-bold mb-2">Financial Planning for UAE Freelancers</h3>
             <p className="text-gray-400 text-sm mb-4">
               Goal setting is the strategy — financial planning is the infrastructure. The
@@ -201,7 +201,7 @@ export default function FreelanceGoalsSettingUAE() {
             </p>
             <Link
               href="/blog/freelance-financial-planning-uae"
-              className="inline-block bg-white text-gray-900 font-bold px-5 py-2.5 rounded-xl hover:bg-gray-100 transition-colors text-sm"
+              className="inline-block bg-emerald-500 hover:bg-emerald-400 text-white font-bold px-8 py-3 rounded-xl transition-colors text-sm"
             >
               Read the Financial Planning Guide →
             </Link>

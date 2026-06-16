@@ -66,7 +66,7 @@ export default function HowToSetFreelanceBoundariesUAE() {
         </div>
 
 
-        <div className="prose prose-gray max-w-none text-gray-700 leading-relaxed space-y-6">
+        <div className="space-y-6 leading-relaxed">
 
           <p>
             Setting boundaries with clients is harder in the UAE than in most markets.
@@ -79,8 +79,8 @@ export default function HowToSetFreelanceBoundariesUAE() {
             rather than defensive. Here is the system.
           </p>
 
-          <div className="bg-gray-50 border border-gray-200 rounded-xl p-4 text-sm">
-            <p className="font-semibold text-gray-900 mb-1">The key reframe for UAE freelancers</p>
+          <div className="bg-emerald-50 border border-emerald-200 rounded-xl p-5">
+            <p className="text-sm font-bold text-emerald-800 mb-2">The key reframe for UAE freelancers</p>
             <p className="text-gray-700">
               Boundaries are not about saying no to clients — they are about setting
               expectations that protect the quality of your work. A well-rested freelancer
@@ -91,7 +91,7 @@ export default function HowToSetFreelanceBoundariesUAE() {
           </div>
 
           <section>
-            <h2 className="text-xl font-bold text-gray-900 mt-8 mb-3">The 5 Boundaries UAE Freelancers Must Set (With Scripts)</h2>
+            <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2"><span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>The 5 Boundaries UAE Freelancers Must Set (With Scripts)</h2>
             <div className="space-y-4 mt-4">
               {boundaryTypes.map((item, i) => (
                 <div key={i} className="border border-gray-200 rounded-xl p-4">
@@ -107,7 +107,7 @@ export default function HowToSetFreelanceBoundariesUAE() {
           </section>
 
           <section>
-            <h2 className="text-xl font-bold text-gray-900 mt-8 mb-3">When to Set Boundaries: Before the Project Starts</h2>
+            <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2"><span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>When to Set Boundaries: Before the Project Starts</h2>
             <p>
               The most effective boundary-setting happens during onboarding — before
               any friction has occurred. Three moments to establish boundaries:
@@ -115,7 +115,7 @@ export default function HowToSetFreelanceBoundariesUAE() {
             <div className="space-y-3 mt-4">
               <div className="border border-gray-200 rounded-xl p-4">
                 <p className="font-bold text-gray-900 text-sm mb-2">In your proposal</p>
-                <p className="text-sm text-gray-700">
+                <p className="text-sm text-emerald-800">
                   Include a &quot;How I work&quot; or &quot;Working together&quot; section in every proposal.
                   List: revision rounds included, communication channels, response time,
                   and payment terms. Clients who accept the proposal have implicitly
@@ -124,7 +124,7 @@ export default function HowToSetFreelanceBoundariesUAE() {
               </div>
               <div className="border border-gray-200 rounded-xl p-4">
                 <p className="font-bold text-gray-900 text-sm mb-2">In your contract</p>
-                <p className="text-sm text-gray-700">
+                <p className="text-sm text-emerald-800">
                   Revisions, scope change process, payment terms, and communication
                   protocols should all be in the contract. Not because you plan to
                   enforce them litigiously, but because the act of signing creates
@@ -135,7 +135,7 @@ export default function HowToSetFreelanceBoundariesUAE() {
               </div>
               <div className="border border-gray-200 rounded-xl p-4">
                 <p className="font-bold text-gray-900 text-sm mb-2">In your onboarding call / kickoff</p>
-                <p className="text-sm text-gray-700">
+                <p className="text-sm text-emerald-800">
                   Verbally walk through the working process at the start of every
                   project. &quot;Just so we&apos;re aligned on how this works: I&apos;ll be in touch
                   via email for all project communication, you&apos;ll receive the first
@@ -148,14 +148,14 @@ export default function HowToSetFreelanceBoundariesUAE() {
           </section>
 
           <section>
-            <h2 className="text-xl font-bold text-gray-900 mt-8 mb-3">Handling Boundary Violations After They Happen</h2>
+            <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2"><span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>Handling Boundary Violations After They Happen</h2>
             <p>
               Even with good upfront communication, clients will sometimes cross boundaries.
               The key is to respond calmly, without accusation, and reinforce the boundary
               clearly:
             </p>
             <div className="space-y-3 mt-4">
-              <div className="bg-gray-50 border border-gray-200 rounded-xl p-4 text-sm">
+              <div className="bg-emerald-50 border border-emerald-200 rounded-xl p-5">
                 <p className="font-semibold text-gray-900 mb-2">Situation: Client messages at 11pm expecting a same-night response</p>
                 <p className="text-gray-700 italic">
                   &quot;Thanks for this — I saw it come through. I&apos;ll look at it properly first
@@ -164,7 +164,7 @@ export default function HowToSetFreelanceBoundariesUAE() {
                 </p>
                 <p className="text-xs text-gray-500 mt-2">You replied — but set the actual response time for business hours. The client learns the pattern without feeling rejected.</p>
               </div>
-              <div className="bg-gray-50 border border-gray-200 rounded-xl p-4 text-sm">
+              <div className="bg-emerald-50 border border-emerald-200 rounded-xl p-5">
                 <p className="font-semibold text-gray-900 mb-2">Situation: Client asks for a 4th revision round after you&apos;ve delivered 2</p>
                 <p className="text-gray-700 italic">
                   &quot;We&apos;ve now completed the 2 rounds of revisions included in the original
@@ -174,7 +174,7 @@ export default function HowToSetFreelanceBoundariesUAE() {
                 </p>
                 <p className="text-xs text-gray-500 mt-2">Matter-of-fact, no blame. The contract supports you. Most UAE clients pay without dispute once reminded of the terms they agreed to.</p>
               </div>
-              <div className="bg-gray-50 border border-gray-200 rounded-xl p-4 text-sm">
+              <div className="bg-emerald-50 border border-emerald-200 rounded-xl p-5">
                 <p className="font-semibold text-gray-900 mb-2">Situation: Client wants to expand the scope significantly mid-project</p>
                 <p className="text-gray-700 italic">
                   &quot;I love where this is going — the new direction is stronger. To be
@@ -189,7 +189,7 @@ export default function HowToSetFreelanceBoundariesUAE() {
           </section>
 
           <section>
-            <h2 className="text-xl font-bold text-gray-900 mt-8 mb-3">The UAE-Specific Context: Why This Is Harder Here</h2>
+            <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2"><span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>The UAE-Specific Context: Why This Is Harder Here</h2>
             <ul className="space-y-1 text-sm text-gray-600 mt-3">
               <li>• <strong>WhatsApp replaces email</strong> — In UAE business culture, WhatsApp is a professional communication tool. The lack of &quot;office hours&quot; built into WhatsApp (vs email) makes boundaries invisible. You must state them explicitly</li>
               <li>• <strong>Relationship investment is real</strong> — UAE clients genuinely expect the relationship to absorb some flexibility. The best approach: be extremely generous in the relationship (remember Ramadan, follow up after meetings, celebrate milestones) while being firm on the professional terms. Separate the relationship generosity from the work terms</li>
@@ -199,8 +199,8 @@ export default function HowToSetFreelanceBoundariesUAE() {
           </section>
 
           {/* CTA */}
-          <div className="bg-gray-950 text-white rounded-2xl p-6 mt-10">
-            <p className="text-xs font-semibold text-gray-400 uppercase tracking-widest mb-2">Build boundaries into every contract</p>
+          <div className="bg-gradient-to-br from-gray-900 to-gray-800 text-white rounded-2xl p-8 mt-12 text-center">
+            <p className="text-xs font-bold text-emerald-400 uppercase tracking-widest block mb-3">Build boundaries into every contract</p>
             <h3 className="text-lg font-bold mb-2">Freelance Contract: 9 Clauses You Must Include</h3>
             <p className="text-gray-400 text-sm mb-4">
               The specific contract clauses that prevent scope creep, enforce revision limits,
@@ -208,7 +208,7 @@ export default function HowToSetFreelanceBoundariesUAE() {
             </p>
             <Link
               href="/blog/freelance-contract-template-uae"
-              className="inline-block bg-white text-gray-900 font-bold px-5 py-2.5 rounded-xl hover:bg-gray-100 transition-colors text-sm"
+              className="inline-block bg-emerald-500 hover:bg-emerald-400 text-white font-bold px-8 py-3 rounded-xl transition-colors text-sm"
             >
               Read the Contract Guide →
             </Link>

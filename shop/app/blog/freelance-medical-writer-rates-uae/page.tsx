@@ -70,7 +70,7 @@ export default function FreelanceMedicalWriterRatesUAE() {
         </div>
 
 
-        <div className="prose prose-gray max-w-none text-gray-700 leading-relaxed space-y-6">
+        <div className="space-y-6 leading-relaxed">
 
           <p>
             The UAE is one of the fastest-growing healthcare markets globally. Dubai Health
@@ -81,8 +81,8 @@ export default function FreelanceMedicalWriterRatesUAE() {
             and clear communication. Here are the 2026 rate benchmarks.
           </p>
 
-          <div className="bg-gray-50 border border-gray-200 rounded-xl p-4 text-sm">
-            <p className="font-semibold text-gray-900 mb-1">Quick benchmark</p>
+          <div className="bg-emerald-50 border border-emerald-200 rounded-xl p-5">
+            <p className="text-sm font-bold text-emerald-800 mb-2">Quick benchmark</p>
             <p className="text-gray-700">
               A mid-level freelance medical writer in the UAE with 4–7 years of experience
               (clinical or regulatory background) typically charges <strong>AED 500–850/hour</strong>
@@ -93,7 +93,7 @@ export default function FreelanceMedicalWriterRatesUAE() {
           </div>
 
           <section>
-            <h2 className="text-xl font-bold text-gray-900 mt-8 mb-4">Freelance Medical Writer Rates in the UAE by Content Type (2026)</h2>
+            <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2"><span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>Freelance Medical Writer Rates in the UAE by Content Type (2026)</h2>
             <p className="text-xs text-gray-400 mb-4">Junior: 0–3 years / Mid: 4–7 years / Senior: 8+ years or regulatory/clinical specialist</p>
             <div className="overflow-x-auto">
               <table className="w-full text-sm border-collapse">
@@ -120,7 +120,7 @@ export default function FreelanceMedicalWriterRatesUAE() {
           </section>
 
           <section>
-            <h2 className="text-xl font-bold text-gray-900 mt-8 mb-3">High-Value Medical Writing Niches in the UAE</h2>
+            <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2"><span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>High-Value Medical Writing Niches in the UAE</h2>
             <div className="space-y-3 mt-4">
               {[
                 { niche: "UAE MOH / DHA product registration dossiers", rate: "AED 30,000–150,000+ per dossier", why: "Pharmaceutical companies registering drugs and devices in the UAE require regulatory writers who understand the UAE Ministry of Health & Prevention (MOHAP) and DHA submission formats. These are complex, high-stakes documents — errors cause registration delays that cost companies millions." },
@@ -132,7 +132,7 @@ export default function FreelanceMedicalWriterRatesUAE() {
                 <div key={item.niche} className="border border-gray-200 rounded-xl p-4">
                   <div className="flex items-start justify-between gap-2 mb-1">
                     <p className="font-semibold text-gray-900 text-sm">{item.niche}</p>
-                    <span className="text-xs font-bold text-green-700 bg-green-50 px-2 py-0.5 rounded-full shrink-0">{item.rate}</span>
+                    <span className="text-xs font-bold text-emerald-700 bg-emerald-50 border border-emerald-200 px-2 py-0.5 rounded-full shrink-0">{item.rate}</span>
                   </div>
                   <p className="text-xs text-gray-600">{item.why}</p>
                 </div>
@@ -141,7 +141,7 @@ export default function FreelanceMedicalWriterRatesUAE() {
           </section>
 
           <section>
-            <h2 className="text-xl font-bold text-gray-900 mt-8 mb-3">Medical Writer vs General Copywriter: Why the Rates Differ</h2>
+            <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2"><span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>Medical Writer vs General Copywriter: Why the Rates Differ</h2>
             <p>
               Medical writing commands 2–4x the rates of general copywriting for three reasons:
             </p>
@@ -158,7 +158,7 @@ export default function FreelanceMedicalWriterRatesUAE() {
           </section>
 
           <section>
-            <h2 className="text-xl font-bold text-gray-900 mt-8 mb-3">Credentials That Raise Your Medical Writing Rates</h2>
+            <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2"><span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>Credentials That Raise Your Medical Writing Rates</h2>
             <ul className="space-y-1 text-sm text-gray-600 mt-3">
               <li>• <strong>AMWA (American Medical Writers Association) certification</strong> — AMWA Essential Skills Certificate or Board of Editors in the Life Sciences (BELS) credential signals professional-grade regulatory writing capability</li>
               <li>• <strong>Regulatory affairs training</strong> — RAC (Regulatory Affairs Certification) from the Regulatory Affairs Professionals Society (RAPS) opens pharmaceutical regulatory writing opportunities</li>
@@ -169,8 +169,8 @@ export default function FreelanceMedicalWriterRatesUAE() {
           </section>
 
           {/* CTA */}
-          <div className="bg-gray-950 text-white rounded-2xl p-6 mt-10">
-            <p className="text-xs font-semibold text-gray-400 uppercase tracking-widest mb-2">Manage your medical writing clients</p>
+          <div className="bg-gradient-to-br from-gray-900 to-gray-800 text-white rounded-2xl p-8 mt-12 text-center">
+            <p className="text-xs font-bold text-emerald-400 uppercase tracking-widest block mb-3">Manage your medical writing clients</p>
             <h3 className="text-lg font-bold mb-2">Freelancer Client CRM — Track Every Client & Project</h3>
             <p className="text-gray-400 text-sm mb-4">
               Manage medical writing projects, track document revisions, log client communications,
@@ -178,7 +178,7 @@ export default function FreelanceMedicalWriterRatesUAE() {
             </p>
             <Link
               href="/products/freelancer-client-crm"
-              className="inline-block bg-white text-gray-900 font-bold px-5 py-2.5 rounded-xl hover:bg-gray-100 transition-colors text-sm"
+              className="inline-block bg-emerald-500 hover:bg-emerald-400 text-white font-bold px-8 py-3 rounded-xl transition-colors text-sm"
             >
               Get the Client CRM →
             </Link>

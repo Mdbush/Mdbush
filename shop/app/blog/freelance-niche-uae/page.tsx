@@ -115,7 +115,7 @@ export default function FreelanceNicheUAE() {
         </div>
 
 
-        <div className="prose prose-gray max-w-none text-gray-700 leading-relaxed space-y-6">
+        <div className="space-y-6 leading-relaxed">
 
           <p>
             The most common complaint from UAE freelancers is that clients always push back on price.
@@ -129,7 +129,7 @@ export default function FreelanceNicheUAE() {
           </p>
 
           <section>
-            <h2 className="text-xl font-bold text-gray-900 mt-8 mb-3">Why Generalists Undercharge</h2>
+            <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2"><span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>Why Generalists Undercharge</h2>
             <p>
               When you can do everything, clients treat you as a commodity. Commodities are compared
               on price. The moment a potential client can substitute you with any other designer,
@@ -144,7 +144,7 @@ export default function FreelanceNicheUAE() {
           </section>
 
           <section>
-            <h2 className="text-xl font-bold text-gray-900 mt-8 mb-3">The Three-Part Niche Formula</h2>
+            <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2"><span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>The Three-Part Niche Formula</h2>
             <div className="bg-gray-50 border border-gray-200 rounded-xl p-5 my-4">
               <p className="font-semibold text-gray-900 mb-3">Niche = Skill × Industry × Outcome</p>
               <div className="space-y-2 text-sm text-gray-700">
@@ -153,7 +153,7 @@ export default function FreelanceNicheUAE() {
                 <p><strong>Outcome:</strong> What changes because of your work (leads generated, revenue increased, costs reduced, compliance achieved)</p>
               </div>
               <div className="border-t border-gray-200 pt-3 mt-3">
-                <p className="text-sm text-gray-700">
+                <p className="text-sm text-emerald-800">
                   Example: &ldquo;I write property listing copy that sells Dubai off-plan units faster&rdquo; (Copywriting × Real Estate × Sales velocity).
                   That is a position — not just a service.
                 </p>
@@ -162,7 +162,7 @@ export default function FreelanceNicheUAE() {
           </section>
 
           <section>
-            <h2 className="text-xl font-bold text-gray-900 mt-8 mb-3">How to Choose Your Niche</h2>
+            <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2"><span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>How to Choose Your Niche</h2>
 
             <h3 className="text-base font-semibold text-gray-900 mt-4 mb-2">Step 1: Audit your best past work</h3>
             <p>
@@ -197,7 +197,7 @@ export default function FreelanceNicheUAE() {
           </section>
 
           <section>
-            <h2 className="text-xl font-bold text-gray-900 mt-8 mb-3">20 High-Demand Freelance Niches in the UAE</h2>
+            <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2"><span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>20 High-Demand Freelance Niches in the UAE</h2>
             <p className="text-sm text-gray-500 mb-5">Based on UAE market activity, client budget indicators, and undersupply signals (2026).</p>
             <div className="space-y-5">
               {niches.map((group) => (
@@ -217,7 +217,7 @@ export default function FreelanceNicheUAE() {
           </section>
 
           <section>
-            <h2 className="text-xl font-bold text-gray-900 mt-8 mb-3">How Long Does Niching Down Take?</h2>
+            <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2"><span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>How Long Does Niching Down Take?</h2>
             <p>
               Expect 3–6 months before your niche positioning starts generating consistent
               inbound interest. In the first 90 days, you are building: updating your LinkedIn,
@@ -242,7 +242,7 @@ export default function FreelanceNicheUAE() {
           </section>
 
           <section>
-            <h2 className="text-xl font-bold text-gray-900 mt-8 mb-3">Common Objections to Niching Down</h2>
+            <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2"><span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>Common Objections to Niching Down</h2>
             <div className="space-y-3 mt-3">
               {[
                 { q: "\"Won't I lose clients by narrowing my focus?\"", a: "You will lose low-value generalist work and replace it with higher-value niche work. Your total income almost always increases within 6–12 months of genuine niche positioning." },
@@ -258,8 +258,8 @@ export default function FreelanceNicheUAE() {
           </section>
 
           {/* CTA */}
-          <div className="bg-gray-950 text-white rounded-2xl p-6 mt-10">
-            <p className="text-xs font-semibold text-gray-400 uppercase tracking-widest mb-2">Once you have your niche — price it right</p>
+          <div className="bg-gradient-to-br from-gray-900 to-gray-800 text-white rounded-2xl p-8 mt-12 text-center">
+            <p className="text-xs font-bold text-emerald-400 uppercase tracking-widest block mb-3">Once you have your niche — price it right</p>
             <h3 className="text-lg font-bold mb-2">The complete UAE freelance pricing system</h3>
             <p className="text-gray-400 text-sm mb-4">
               Floor rate formula, 5 pricing models, and how to present your rate to premium
@@ -267,7 +267,7 @@ export default function FreelanceNicheUAE() {
             </p>
             <Link
               href="/blog/how-to-price-yourself-as-freelancer-uae"
-              className="inline-block bg-white text-gray-900 font-bold px-5 py-2.5 rounded-xl hover:bg-gray-100 transition-colors text-sm"
+              className="inline-block bg-emerald-500 hover:bg-emerald-400 text-white font-bold px-8 py-3 rounded-xl transition-colors text-sm"
             >
               Read the Pricing System →
             </Link>

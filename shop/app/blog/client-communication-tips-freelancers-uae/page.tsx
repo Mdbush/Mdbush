@@ -58,7 +58,7 @@ export default function ClientCommunicationUAE() {
         </div>
 
 
-        <div className="prose prose-gray max-w-none text-gray-700 leading-relaxed space-y-6">
+        <div className="space-y-6 leading-relaxed">
 
           <p>
             Most freelance problems are communication problems. Late payments, scope creep,
@@ -68,7 +68,7 @@ export default function ClientCommunicationUAE() {
           </p>
 
           <section>
-            <h2 className="text-xl font-bold text-gray-900 mt-8 mb-3">The UAE Communication Context</h2>
+            <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2"><span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>The UAE Communication Context</h2>
             <p>
               Client communication in the UAE has a few unique characteristics that differ
               from what you might expect if you have worked in other markets:
@@ -82,7 +82,7 @@ export default function ClientCommunicationUAE() {
           </section>
 
           <section>
-            <h2 className="text-xl font-bold text-gray-900 mt-8 mb-3">Setting Boundaries: WhatsApp and Response Times</h2>
+            <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2"><span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>Setting Boundaries: WhatsApp and Response Times</h2>
             <p>
               WhatsApp is inevitable in the UAE. Do not fight it — just manage it. Set your
               communication expectations at the start of every engagement:
@@ -107,7 +107,7 @@ export default function ClientCommunicationUAE() {
           </section>
 
           <section>
-            <h2 className="text-xl font-bold text-gray-900 mt-8 mb-3">Handling Scope Creep</h2>
+            <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2"><span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>Handling Scope Creep</h2>
             <p>
               Scope creep is rampant in the UAE market — partially because contracts are less
               common, partially because client-side approvers change, and partially because
@@ -135,7 +135,7 @@ export default function ClientCommunicationUAE() {
           </section>
 
           <section>
-            <h2 className="text-xl font-bold text-gray-900 mt-8 mb-3">Chasing Late Payments</h2>
+            <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2"><span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>Chasing Late Payments</h2>
             <p>
               Late payment is extremely common in the UAE, particularly from larger companies
               with slow internal finance processes. Here is a three-step escalation sequence:
@@ -171,7 +171,7 @@ export default function ClientCommunicationUAE() {
           </section>
 
           <section>
-            <h2 className="text-xl font-bold text-gray-900 mt-8 mb-3">Delivering Bad News</h2>
+            <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2"><span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>Delivering Bad News</h2>
             <p>
               Missed deadlines, unexpected technical problems, or budget overruns all need to
               be communicated before clients notice them — not after. Early delivery of bad news
@@ -191,7 +191,7 @@ export default function ClientCommunicationUAE() {
           </section>
 
           <section>
-            <h2 className="text-xl font-bold text-gray-900 mt-8 mb-3">Managing Difficult Feedback</h2>
+            <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2"><span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>Managing Difficult Feedback</h2>
             <p>
               Vague or contradictory feedback is one of the most frustrating experiences in client
               work. When a client says &ldquo;I don&apos;t love it&rdquo; or &ldquo;it&apos;s not quite right&rdquo; without
@@ -215,7 +215,7 @@ export default function ClientCommunicationUAE() {
           </section>
 
           <section>
-            <h2 className="text-xl font-bold text-gray-900 mt-8 mb-3">Ending Client Relationships</h2>
+            <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2"><span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>Ending Client Relationships</h2>
             <p>
               Sometimes a client relationship needs to end. Whether it is because of payment issues,
               culture mismatch, or a change in your business direction — how you exit matters for
@@ -228,8 +228,8 @@ export default function ClientCommunicationUAE() {
           </section>
 
           {/* CTA */}
-          <div className="bg-gray-950 text-white rounded-2xl p-6 mt-10">
-            <p className="text-xs font-semibold text-gray-400 uppercase tracking-widest mb-2">Copy-paste email templates included</p>
+          <div className="bg-gradient-to-br from-gray-900 to-gray-800 text-white rounded-2xl p-8 mt-12 text-center">
+            <p className="text-xs font-bold text-emerald-400 uppercase tracking-widest block mb-3">Copy-paste email templates included</p>
             <h3 className="text-lg font-bold mb-2">The SOP Starter Pack includes a client communication workflow</h3>
             <p className="text-gray-400 text-sm mb-4">
               10 email templates for every client situation — proposal follow-up, overdue invoices,
@@ -237,7 +237,7 @@ export default function ClientCommunicationUAE() {
             </p>
             <Link
               href="/products/sop-starter-pack"
-              className="inline-block bg-white text-gray-900 font-bold px-5 py-2.5 rounded-xl hover:bg-gray-100 transition-colors text-sm"
+              className="inline-block bg-emerald-500 hover:bg-emerald-400 text-white font-bold px-8 py-3 rounded-xl transition-colors text-sm"
             >
               See the SOP Pack →
             </Link>

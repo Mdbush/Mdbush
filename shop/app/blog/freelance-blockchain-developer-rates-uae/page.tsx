@@ -69,7 +69,7 @@ export default function FreelanceBlockchainDeveloperRatesUAE() {
         </div>
 
 
-        <div className="prose prose-gray max-w-none text-gray-700 leading-relaxed space-y-6">
+        <div className="space-y-6 leading-relaxed">
 
           <p>
             The UAE has positioned itself as a global hub for blockchain and Web3 activity.
@@ -83,8 +83,8 @@ export default function FreelanceBlockchainDeveloperRatesUAE() {
             genuine scarcity of qualified practitioners.
           </p>
 
-          <div className="bg-gray-50 border border-gray-200 rounded-xl p-4 text-sm">
-            <p className="font-semibold text-gray-900 mb-1">Quick benchmark</p>
+          <div className="bg-emerald-50 border border-emerald-200 rounded-xl p-5">
+            <p className="text-sm font-bold text-emerald-800 mb-2">Quick benchmark</p>
             <p className="text-gray-700">
               A mid-level freelance blockchain developer in Dubai (3–6 years, Solidity
               proficient, DeFi and NFT deployment experience) typically charges
@@ -97,7 +97,7 @@ export default function FreelanceBlockchainDeveloperRatesUAE() {
           </div>
 
           <section>
-            <h2 className="text-xl font-bold text-gray-900 mt-8 mb-4">Freelance Blockchain Developer Rates in the UAE by Service (2026)</h2>
+            <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2"><span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>Freelance Blockchain Developer Rates in the UAE by Service (2026)</h2>
             <p className="text-xs text-gray-400 mb-4">Junior: 0–3 years / Mid: 4–7 years, mainnet deployment experience / Senior: 8+ years, protocol architecture, audit background</p>
             <div className="overflow-x-auto">
               <table className="w-full text-sm border-collapse">
@@ -124,7 +124,7 @@ export default function FreelanceBlockchainDeveloperRatesUAE() {
           </section>
 
           <section>
-            <h2 className="text-xl font-bold text-gray-900 mt-8 mb-3">High-Value Blockchain Niches in the UAE</h2>
+            <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2"><span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>High-Value Blockchain Niches in the UAE</h2>
             <div className="space-y-3 mt-4">
               {[
                 { niche: "UAE VARA-compliant virtual asset platforms (exchanges, wallets, custody)", rate: "AED 60,000–400,000+ per engagement", why: "VARA (Virtual Assets Regulatory Authority) is the world&apos;s first dedicated virtual asset regulator. Companies operating virtual asset services in Dubai must obtain a VARA license, which has specific technology requirements. Blockchain developers who understand VARA&apos;s technology compliance frameworks — including AML/KYC integration, transaction monitoring, and virtual asset custody standards — occupy a rare premium niche. Major exchanges (Binance Dubai, OKX Dubai, Bybit Dubai) have paid premium rates for compliant platform development." },
@@ -135,7 +135,7 @@ export default function FreelanceBlockchainDeveloperRatesUAE() {
                 <div key={item.niche} className="border border-gray-200 rounded-xl p-4">
                   <div className="flex items-start justify-between gap-2 mb-1">
                     <p className="font-semibold text-gray-900 text-sm">{item.niche}</p>
-                    <span className="text-xs font-bold text-green-700 bg-green-50 px-2 py-0.5 rounded-full shrink-0">{item.rate}</span>
+                    <span className="text-xs font-bold text-emerald-700 bg-emerald-50 border border-emerald-200 px-2 py-0.5 rounded-full shrink-0">{item.rate}</span>
                   </div>
                   <p className="text-xs text-gray-600">{item.why}</p>
                 </div>
@@ -144,7 +144,7 @@ export default function FreelanceBlockchainDeveloperRatesUAE() {
           </section>
 
           <section>
-            <h2 className="text-xl font-bold text-gray-900 mt-8 mb-3">UAE Blockchain Regulatory Context</h2>
+            <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2"><span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>UAE Blockchain Regulatory Context</h2>
             <ul className="space-y-1 text-sm text-gray-600 mt-3">
               <li>• <strong>VARA (Virtual Assets Regulatory Authority, Dubai)</strong> — Regulates virtual asset services in Dubai (excluding DIFC). VARA licensing is required for exchanges, custody services, broker-dealers, and virtual asset advisory services. Freelance blockchain developers building platforms for VARA-licensed entities need to understand VARA technology risk requirements</li>
               <li>• <strong>ADGM (Abu Dhabi Global Market) virtual asset framework</strong> — ADGM has its own Financial Services Regulatory Authority (FSRA) virtual asset framework, separate from VARA. Abu Dhabi-based blockchain platforms operate under FSRA. Each framework has different compliance requirements — developers should clarify which emirate&apos;s regulations apply before project scoping</li>
@@ -154,8 +154,8 @@ export default function FreelanceBlockchainDeveloperRatesUAE() {
           </section>
 
           {/* CTA */}
-          <div className="bg-gray-950 text-white rounded-2xl p-6 mt-10">
-            <p className="text-xs font-semibold text-gray-400 uppercase tracking-widest mb-2">Manage your blockchain development clients</p>
+          <div className="bg-gradient-to-br from-gray-900 to-gray-800 text-white rounded-2xl p-8 mt-12 text-center">
+            <p className="text-xs font-bold text-emerald-400 uppercase tracking-widest block mb-3">Manage your blockchain development clients</p>
             <h3 className="text-lg font-bold mb-2">Freelancer Client CRM — Track Every Smart Contract Project</h3>
             <p className="text-gray-400 text-sm mb-4">
               Track blockchain engagements from scoping through deployment, manage
@@ -164,7 +164,7 @@ export default function FreelanceBlockchainDeveloperRatesUAE() {
             </p>
             <Link
               href="/products/freelancer-client-crm"
-              className="inline-block bg-white text-gray-900 font-bold px-5 py-2.5 rounded-xl hover:bg-gray-100 transition-colors text-sm"
+              className="inline-block bg-emerald-500 hover:bg-emerald-400 text-white font-bold px-8 py-3 rounded-xl transition-colors text-sm"
             >
               Get the Client CRM →
             </Link>

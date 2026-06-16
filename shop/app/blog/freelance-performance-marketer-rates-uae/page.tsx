@@ -69,8 +69,8 @@ export default function FreelancePerformanceMarketerRatesUAE() {
         </div>
 
 
-          <div className="bg-blue-50 border border-blue-200 rounded-xl p-6 mb-10">
-            <h2 className="text-base font-semibold text-blue-900 mb-3">Quick Rate Benchmark</h2>
+          <div className="bg-emerald-50 border border-emerald-200 rounded-xl p-6 mb-10">
+            <h2 className="text-base font-semibold text-emerald-900 mb-3">Quick Rate Benchmark</h2>
             <div className="grid grid-cols-3 gap-4 text-center">
               <div>
                 <div className="text-2xl font-bold text-blue-700">AED 600–1,000</div>
@@ -186,7 +186,7 @@ export default function FreelancePerformanceMarketerRatesUAE() {
                 { href: "/blog/freelance-seo-consultant-rates-uae", label: "Freelance SEO Consultant Rates UAE" },
                 { href: "/blog/freelance-social-media-manager-rates-uae", label: "Freelance Social Media Manager Rates UAE" },
               ].map((link) => (
-                <Link key={link.href} href={link.href} className="block text-blue-600 hover:text-blue-800 text-sm">
+                <Link key={link.href} href={link.href} className="block text-emerald-700 hover:text-emerald-900 text-sm">
                   → {link.label}
                 </Link>
               ))}

@@ -58,7 +58,7 @@ export default function HowToBuildPersonalBrandLinkedInUAE() {
         </div>
 
 
-        <div className="prose prose-gray max-w-none text-gray-700 leading-relaxed space-y-6">
+        <div className="space-y-6 leading-relaxed">
 
           <p>
             LinkedIn is the most powerful client acquisition channel for UAE freelancers
@@ -71,8 +71,8 @@ export default function HowToBuildPersonalBrandLinkedInUAE() {
             activities for any UAE professional service freelancer. Here is how to do it.
           </p>
 
-          <div className="bg-gray-50 border border-gray-200 rounded-xl p-4 text-sm">
-            <p className="font-semibold text-gray-900 mb-1">The UAE LinkedIn opportunity</p>
+          <div className="bg-emerald-50 border border-emerald-200 rounded-xl p-5">
+            <p className="text-sm font-bold text-emerald-800 mb-2">The UAE LinkedIn opportunity</p>
             <p className="text-gray-700">
               UAE LinkedIn users engage with content at higher rates than most markets.
               The professional community is small enough that consistent visible presence
@@ -84,7 +84,7 @@ export default function HowToBuildPersonalBrandLinkedInUAE() {
           </div>
 
           <section>
-            <h2 className="text-xl font-bold text-gray-900 mt-8 mb-3">Step 1: Profile Optimization for the UAE Market</h2>
+            <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2"><span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>Step 1: Profile Optimization for the UAE Market</h2>
             <p className="text-sm text-gray-600 mb-3">
               Your profile is your digital first impression. UAE decision-makers who see
               your content will click your profile before they respond to or share it.
@@ -107,7 +107,7 @@ export default function HowToBuildPersonalBrandLinkedInUAE() {
           </section>
 
           <section>
-            <h2 className="text-xl font-bold text-gray-900 mt-8 mb-3">Step 2: What Content Works on UAE LinkedIn</h2>
+            <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2"><span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>Step 2: What Content Works on UAE LinkedIn</h2>
             <p className="text-sm text-gray-600 mb-3">
               Not all LinkedIn content works in the UAE professional context. What
               performs well in Dubai and Abu Dhabi:
@@ -124,7 +124,7 @@ export default function HowToBuildPersonalBrandLinkedInUAE() {
                 <div key={item.format} className="border border-gray-200 rounded-xl p-4">
                   <div className="flex items-start justify-between gap-2 mb-1">
                     <p className="font-semibold text-gray-900 text-sm">{item.format}</p>
-                    <span className="text-xs font-bold text-green-700 bg-green-50 px-2 py-0.5 rounded-full shrink-0">{item.performance}</span>
+                    <span className="text-xs font-bold text-emerald-700 bg-emerald-50 border border-emerald-200 px-2 py-0.5 rounded-full shrink-0">{item.performance}</span>
                   </div>
                   <p className="text-xs text-gray-600">{item.desc}</p>
                 </div>
@@ -133,7 +133,7 @@ export default function HowToBuildPersonalBrandLinkedInUAE() {
           </section>
 
           <section>
-            <h2 className="text-xl font-bold text-gray-900 mt-8 mb-3">Step 3: Posting Cadence and Consistency</h2>
+            <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2"><span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>Step 3: Posting Cadence and Consistency</h2>
             <ul className="space-y-2 text-sm text-gray-600 mt-3">
               <li>• <strong>2–3 posts per week is optimal for UAE LinkedIn</strong> — Enough to stay visible without oversaturation. Daily posting on LinkedIn typically decreases per-post engagement as the algorithm distributes reach across more content. 2–3 high-quality posts per week outperforms 7 average ones</li>
               <li>• <strong>Best posting times for UAE audience</strong> — Sunday 8–10am (UAE work week starts Sunday), Monday–Wednesday 7–9am and 12–1pm, Thursday 8–10am. Avoid Friday afternoon and Saturday (UAE weekend). Test your own audience with 4–6 weeks of varied timing</li>
@@ -143,7 +143,7 @@ export default function HowToBuildPersonalBrandLinkedInUAE() {
           </section>
 
           <section>
-            <h2 className="text-xl font-bold text-gray-900 mt-8 mb-3">Step 4: Converting LinkedIn Visibility to Client Enquiries</h2>
+            <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2"><span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>Step 4: Converting LinkedIn Visibility to Client Enquiries</h2>
             <p className="text-sm text-gray-600 mb-3">
               Visibility on LinkedIn is not automatically client acquisition. Specific actions
               convert visibility to enquiries:
@@ -164,7 +164,7 @@ export default function HowToBuildPersonalBrandLinkedInUAE() {
           </section>
 
           <section>
-            <h2 className="text-xl font-bold text-gray-900 mt-8 mb-3">UAE LinkedIn Specifics to Keep in Mind</h2>
+            <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2"><span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>UAE LinkedIn Specifics to Keep in Mind</h2>
             <ul className="space-y-1 text-sm text-gray-600 mt-3">
               <li>• <strong>Ramadan posting</strong> — During Ramadan, post timing shifts later (people are awake later). Professionally-oriented Ramadan content performs well — reflections on purpose, gratitude, and professional growth. Avoid purely commercial content during the first two weeks of Ramadan</li>
               <li>• <strong>National Day and UAE milestone posts</strong> — UAE National Day (December 2) content performs extremely well. Authentic posts (not generic template images) that reflect on the UAE opportunity, living here, or business insights specific to the UAE context drive significant engagement from both Emiratis and expats</li>
@@ -174,8 +174,8 @@ export default function HowToBuildPersonalBrandLinkedInUAE() {
           </section>
 
           {/* CTA */}
-          <div className="bg-gray-950 text-white rounded-2xl p-6 mt-10">
-            <p className="text-xs font-semibold text-gray-400 uppercase tracking-widest mb-2">Build your LinkedIn content system</p>
+          <div className="bg-gradient-to-br from-gray-900 to-gray-800 text-white rounded-2xl p-8 mt-12 text-center">
+            <p className="text-xs font-bold text-emerald-400 uppercase tracking-widest block mb-3">Build your LinkedIn content system</p>
             <h3 className="text-lg font-bold mb-2">Solopreneur OS — Content Calendar, Client Pipeline & More</h3>
             <p className="text-gray-400 text-sm mb-4">
               Plan and batch your LinkedIn content, track which posts generate client
@@ -184,7 +184,7 @@ export default function HowToBuildPersonalBrandLinkedInUAE() {
             </p>
             <Link
               href="/products/solopreneur-os"
-              className="inline-block bg-white text-gray-900 font-bold px-5 py-2.5 rounded-xl hover:bg-gray-100 transition-colors text-sm"
+              className="inline-block bg-emerald-500 hover:bg-emerald-400 text-white font-bold px-8 py-3 rounded-xl transition-colors text-sm"
             >
               Get the Solopreneur OS →
             </Link>

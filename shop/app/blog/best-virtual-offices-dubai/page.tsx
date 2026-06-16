@@ -101,7 +101,7 @@ export default function BestVirtualOfficesDubai() {
         </div>
 
 
-        <div className="prose prose-gray max-w-none text-gray-700 leading-relaxed space-y-6">
+        <div className="space-y-6 leading-relaxed">
 
           <p>
             A virtual office gives you a professional Dubai business address, mail handling,
@@ -120,7 +120,7 @@ export default function BestVirtualOfficesDubai() {
           </div>
 
           <section>
-            <h2 className="text-xl font-bold text-gray-900 mt-8 mb-3">What Does a Virtual Office Include?</h2>
+            <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2"><span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>What Does a Virtual Office Include?</h2>
             <p>Standard virtual office packages in Dubai typically include:</p>
             <ul className="space-y-1 text-sm text-gray-600 mt-3">
               <li>• A professional street address (not a P.O. box) to use on invoices, business cards, and your website</li>
@@ -136,7 +136,7 @@ export default function BestVirtualOfficesDubai() {
           </section>
 
           <section>
-            <h2 className="text-xl font-bold text-gray-900 mt-8 mb-4">Best Virtual Office Providers in Dubai (2026)</h2>
+            <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2"><span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>Best Virtual Office Providers in Dubai (2026)</h2>
 
             <div className="space-y-6">
               {providers.map((p, i) => (
@@ -164,7 +164,7 @@ export default function BestVirtualOfficesDubai() {
           </section>
 
           <section>
-            <h2 className="text-xl font-bold text-gray-900 mt-8 mb-3">How to Choose the Right Virtual Office</h2>
+            <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2"><span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>How to Choose the Right Virtual Office</h2>
 
             <h3 className="text-base font-semibold text-gray-900 mt-4 mb-2">Address prestige matters for certain clients</h3>
             <p>
@@ -192,7 +192,7 @@ export default function BestVirtualOfficesDubai() {
           </section>
 
           <section>
-            <h2 className="text-xl font-bold text-gray-900 mt-8 mb-3">Virtual Office vs Physical Coworking</h2>
+            <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2"><span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>Virtual Office vs Physical Coworking</h2>
             <div className="overflow-x-auto -mx-4 sm:mx-0">
               <table className="w-full text-sm border-collapse min-w-[400px]">
                 <thead>
@@ -228,8 +228,8 @@ export default function BestVirtualOfficesDubai() {
           </section>
 
           {/* CTA */}
-          <div className="bg-gray-950 text-white rounded-2xl p-6 mt-10">
-            <p className="text-xs font-semibold text-gray-400 uppercase tracking-widest mb-2">Run your business from anywhere</p>
+          <div className="bg-gradient-to-br from-gray-900 to-gray-800 text-white rounded-2xl p-8 mt-12 text-center">
+            <p className="text-xs font-bold text-emerald-400 uppercase tracking-widest block mb-3">Run your business from anywhere</p>
             <h3 className="text-lg font-bold mb-2">The Solopreneur OS works from home, coworking, or your virtual office</h3>
             <p className="text-gray-400 text-sm mb-4">
               Goals, revenue, clients, and projects — all in one Notion workspace.
@@ -237,7 +237,7 @@ export default function BestVirtualOfficesDubai() {
             </p>
             <Link
               href="/products/solopreneur-os"
-              className="inline-block bg-white text-gray-900 font-bold px-5 py-2.5 rounded-xl hover:bg-gray-100 transition-colors text-sm"
+              className="inline-block bg-emerald-500 hover:bg-emerald-400 text-white font-bold px-8 py-3 rounded-xl transition-colors text-sm"
             >
               See the Solopreneur OS →
             </Link>

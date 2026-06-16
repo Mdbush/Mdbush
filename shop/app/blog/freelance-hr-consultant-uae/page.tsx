@@ -58,7 +58,7 @@ export default function FreelanceHRConsultantUAE() {
         </div>
 
 
-        <div className="prose prose-gray max-w-none text-gray-700 leading-relaxed space-y-6">
+        <div className="space-y-6 leading-relaxed">
 
           <p>
             Independent HR consulting is a growing niche in the UAE. SMEs, family businesses,
@@ -68,7 +68,7 @@ export default function FreelanceHRConsultantUAE() {
           </p>
 
           <section>
-            <h2 className="text-xl font-bold text-gray-900 mt-8 mb-3">What Do Freelance HR Consultants Do?</h2>
+            <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2"><span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>What Do Freelance HR Consultants Do?</h2>
             <p>Services commonly offered by independent HR consultants in the UAE:</p>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-4">
               {[
@@ -93,7 +93,7 @@ export default function FreelanceHRConsultantUAE() {
           </section>
 
           <section>
-            <h2 className="text-xl font-bold text-gray-900 mt-8 mb-3">Freelance HR Consultant Rates in the UAE (2026)</h2>
+            <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2"><span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>Freelance HR Consultant Rates in the UAE (2026)</h2>
 
             <div className="overflow-x-auto -mx-4 sm:mx-0">
               <table className="w-full text-sm border-collapse min-w-[400px]">
@@ -124,7 +124,7 @@ export default function FreelanceHRConsultantUAE() {
           </section>
 
           <section>
-            <h2 className="text-xl font-bold text-gray-900 mt-8 mb-3">The UAE Labour Law Advantage</h2>
+            <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2"><span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>The UAE Labour Law Advantage</h2>
             <p>
               Knowing UAE Labour Law in detail is a genuine differentiator. Many SME owners
               in the UAE are expat founders who are unfamiliar with local employment law —
@@ -141,7 +141,7 @@ export default function FreelanceHRConsultantUAE() {
           </section>
 
           <section>
-            <h2 className="text-xl font-bold text-gray-900 mt-8 mb-3">Who Hires Freelance HR Consultants in the UAE?</h2>
+            <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2"><span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>Who Hires Freelance HR Consultants in the UAE?</h2>
             <div className="space-y-3 mt-4">
               {[
                 { client: "SMEs (10–100 employees)", desc: "The largest market. These businesses have HR needs but cannot justify a full-time HR Director at AED 35,000–50,000/month. A fractional HR consultant at AED 7,000–12,000/month fills the gap." },
@@ -158,7 +158,7 @@ export default function FreelanceHRConsultantUAE() {
           </section>
 
           <section>
-            <h2 className="text-xl font-bold text-gray-900 mt-8 mb-3">How to Build a Freelance HR Practice in the UAE</h2>
+            <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2"><span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>How to Build a Freelance HR Practice in the UAE</h2>
 
             <h3 className="text-base font-semibold text-gray-900 mt-4 mb-2">Credentials that matter</h3>
             <p>
@@ -188,8 +188,8 @@ export default function FreelanceHRConsultantUAE() {
           </section>
 
           {/* CTA */}
-          <div className="bg-gray-950 text-white rounded-2xl p-6 mt-10">
-            <p className="text-xs font-semibold text-gray-400 uppercase tracking-widest mb-2">Manage your consulting engagements professionally</p>
+          <div className="bg-gradient-to-br from-gray-900 to-gray-800 text-white rounded-2xl p-8 mt-12 text-center">
+            <p className="text-xs font-bold text-emerald-400 uppercase tracking-widest block mb-3">Manage your consulting engagements professionally</p>
             <h3 className="text-lg font-bold mb-2">The Freelancer Client CRM tracks every client, proposal, and invoice</h3>
             <p className="text-gray-400 text-sm mb-4">
               Pipeline view, retainer tracking, invoice log, and follow-up reminders — all in
@@ -197,7 +197,7 @@ export default function FreelanceHRConsultantUAE() {
             </p>
             <Link
               href="/products/freelancer-client-crm"
-              className="inline-block bg-white text-gray-900 font-bold px-5 py-2.5 rounded-xl hover:bg-gray-100 transition-colors text-sm"
+              className="inline-block bg-emerald-500 hover:bg-emerald-400 text-white font-bold px-8 py-3 rounded-xl transition-colors text-sm"
             >
               See the Client CRM →
             </Link>

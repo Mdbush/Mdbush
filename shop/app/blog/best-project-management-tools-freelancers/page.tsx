@@ -106,7 +106,7 @@ export default function BestProjectManagementToolsFreelancers() {
         </div>
 
 
-        <div className="prose prose-gray max-w-none text-gray-700 leading-relaxed space-y-6">
+        <div className="space-y-6 leading-relaxed">
 
           <p>
             Most project management tools are designed for teams, not solo operators. As a
@@ -116,8 +116,8 @@ export default function BestProjectManagementToolsFreelancers() {
             with honest assessments of where each one falls short.
           </p>
 
-          <div className="bg-gray-50 border border-gray-200 rounded-xl p-4 text-sm">
-            <p className="font-semibold text-gray-900 mb-1">Quick recommendation</p>
+          <div className="bg-emerald-50 border border-emerald-200 rounded-xl p-5">
+            <p className="text-sm font-bold text-emerald-800 mb-2">Quick recommendation</p>
             <p className="text-gray-700">
               For most UAE freelancers: <strong>Notion</strong> free plan is the best starting point.
               It handles projects, client notes, invoicing, and knowledge management in one place.
@@ -128,7 +128,7 @@ export default function BestProjectManagementToolsFreelancers() {
           </div>
 
           <section>
-            <h2 className="text-xl font-bold text-gray-900 mt-8 mb-5">Best Project Management Tools for UAE Freelancers</h2>
+            <h2 className="text-xl font-bold text-gray-900 mt-10 mb-5 flex items-center gap-2"><span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>Best Project Management Tools for UAE Freelancers</h2>
             <div className="space-y-6">
               {tools.map((tool) => (
                 <div key={tool.name} className="border border-gray-200 rounded-2xl p-5">
@@ -148,7 +148,7 @@ export default function BestProjectManagementToolsFreelancers() {
                   </div>
                   <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 mb-3">
                     <div>
-                      <p className="text-xs font-semibold text-green-600 mb-1">Strengths</p>
+                      <p className="text-xs font-semibold text-emerald-600 mb-1">Strengths</p>
                       <ul className="space-y-0.5">
                         {tool.strengths.map((s) => <li key={s} className="text-xs text-gray-600">✓ {s}</li>)}
                       </ul>
@@ -167,7 +167,7 @@ export default function BestProjectManagementToolsFreelancers() {
           </section>
 
           <section>
-            <h2 className="text-xl font-bold text-gray-900 mt-8 mb-3">What to Look for as a UAE Freelancer</h2>
+            <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2"><span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>What to Look for as a UAE Freelancer</h2>
             <ul className="space-y-2 text-sm text-gray-600 mt-3">
               <li><strong>Multi-client tracking:</strong> You need to track projects across 3–8 clients simultaneously. Make sure the tool gives you a clear overview, not just individual project views.</li>
               <li><strong>Client-sharing options:</strong> Can you share a project view with a client without giving them full access to your workspace? This matters for professional status updates.</li>
@@ -178,7 +178,7 @@ export default function BestProjectManagementToolsFreelancers() {
           </section>
 
           <section>
-            <h2 className="text-xl font-bold text-gray-900 mt-8 mb-3">The Minimum Viable System for Freelancers</h2>
+            <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2"><span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>The Minimum Viable System for Freelancers</h2>
             <p>
               If you are not using any project management tool currently and do not want to spend
               time building a complex system, here is the minimum you need:
@@ -195,8 +195,8 @@ export default function BestProjectManagementToolsFreelancers() {
           </section>
 
           {/* CTA */}
-          <div className="bg-gray-950 text-white rounded-2xl p-6 mt-10">
-            <p className="text-xs font-semibold text-gray-400 uppercase tracking-widest mb-2">Build your Notion workspace</p>
+          <div className="bg-gradient-to-br from-gray-900 to-gray-800 text-white rounded-2xl p-8 mt-12 text-center">
+            <p className="text-xs font-bold text-emerald-400 uppercase tracking-widest block mb-3">Build your Notion workspace</p>
             <h3 className="text-lg font-bold mb-2">Notion Setup Guide for UAE Freelancers</h3>
             <p className="text-gray-400 text-sm mb-4">
               The exact Notion setup for UAE freelancers — client dashboard, project tracker,
@@ -204,7 +204,7 @@ export default function BestProjectManagementToolsFreelancers() {
             </p>
             <Link
               href="/blog/notion-setup-guide-freelancers"
-              className="inline-block bg-white text-gray-900 font-bold px-5 py-2.5 rounded-xl hover:bg-gray-100 transition-colors text-sm"
+              className="inline-block bg-emerald-500 hover:bg-emerald-400 text-white font-bold px-8 py-3 rounded-xl transition-colors text-sm"
             >
               Read the Notion Guide →
             </Link>

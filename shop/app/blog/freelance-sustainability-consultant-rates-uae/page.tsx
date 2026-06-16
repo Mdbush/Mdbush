@@ -77,15 +77,15 @@ export default function FreelanceSustainabilityConsultantRatesUAE() {
             <div className="grid grid-cols-3 gap-4 text-center">
               <div>
                 <div className="text-2xl font-bold text-green-700">AED 600–1,100</div>
-                <div className="text-xs text-green-600 mt-1">Junior / &lt;3 yrs</div>
+                <div className="text-xs text-emerald-600 mt-1">Junior / &lt;3 yrs</div>
               </div>
               <div>
                 <div className="text-2xl font-bold text-green-700">AED 1,200–2,200</div>
-                <div className="text-xs text-green-600 mt-1">Mid / 3–7 yrs</div>
+                <div className="text-xs text-emerald-600 mt-1">Mid / 3–7 yrs</div>
               </div>
               <div>
                 <div className="text-2xl font-bold text-green-700">AED 2,200–4,500</div>
-                <div className="text-xs text-green-600 mt-1">Senior / 7+ yrs</div>
+                <div className="text-xs text-emerald-600 mt-1">Senior / 7+ yrs</div>
               </div>
             </div>
             <p className="text-xs text-green-700 mt-3">Day rates. Project fees vary by scope, data complexity, and stakeholder engagement required.</p>
@@ -258,7 +258,7 @@ export default function FreelanceSustainabilityConsultantRatesUAE() {
                 { href: "/blog/corporate-tax-uae-freelancers-2026", label: "Corporate Tax for UAE Freelancers 2026" },
                 { href: "/blog/freelance-legal-consultant-rates-uae", label: "Freelance Legal Consultant Rates UAE" },
               ].map((link) => (
-                <Link key={link.href} href={link.href} className="block text-blue-600 hover:text-blue-800 text-sm">
+                <Link key={link.href} href={link.href} className="block text-emerald-700 hover:text-emerald-900 text-sm">
                   → {link.label}
                 </Link>
               ))}

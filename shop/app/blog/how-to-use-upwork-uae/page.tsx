@@ -58,7 +58,7 @@ export default function HowToUseUpworkUAE() {
         </div>
 
 
-        <div className="prose prose-gray max-w-none text-gray-700 leading-relaxed space-y-6">
+        <div className="space-y-6 leading-relaxed">
 
           <p>
             Upwork is the world&apos;s largest freelance marketplace and one of the most
@@ -70,8 +70,8 @@ export default function HowToUseUpworkUAE() {
             to use it effectively from the UAE in 2026.
           </p>
 
-          <div className="bg-gray-50 border border-gray-200 rounded-xl p-4 text-sm">
-            <p className="font-semibold text-gray-900 mb-1">Upwork reality check</p>
+          <div className="bg-emerald-50 border border-emerald-200 rounded-xl p-5">
+            <p className="text-sm font-bold text-emerald-800 mb-2">Upwork reality check</p>
             <p className="text-gray-700">
               Upwork is competitive and favours established profiles. <strong>New accounts
               without reviews take 3–6 months of active effort to gain momentum.</strong>
@@ -83,7 +83,7 @@ export default function HowToUseUpworkUAE() {
           </div>
 
           <section>
-            <h2 className="text-xl font-bold text-gray-900 mt-8 mb-3">Step 1: Build a Profile That Converts</h2>
+            <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2"><span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>Step 1: Build a Profile That Converts</h2>
             <p className="text-sm text-gray-600 mb-3">
               Your Upwork profile is a sales page, not a CV. Every element should serve
               one purpose: making a client click &quot;Invite to Job.&quot;
@@ -105,7 +105,7 @@ export default function HowToUseUpworkUAE() {
           </section>
 
           <section>
-            <h2 className="text-xl font-bold text-gray-900 mt-8 mb-3">Step 2: Proposal Strategy That Gets Responses</h2>
+            <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2"><span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>Step 2: Proposal Strategy That Gets Responses</h2>
             <p className="text-sm text-gray-600 mb-3">
               Most Upwork proposals are ignored because they are generic. Here is what works:
             </p>
@@ -120,7 +120,7 @@ export default function HowToUseUpworkUAE() {
           </section>
 
           <section>
-            <h2 className="text-xl font-bold text-gray-900 mt-8 mb-3">Step 3: Managing Your Job Success Score (JSS)</h2>
+            <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2"><span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>Step 3: Managing Your Job Success Score (JSS)</h2>
             <p className="text-sm text-gray-600 mb-3">
               Your Job Success Score (JSS) is the single most visible indicator of your
               reputation on Upwork. It heavily influences your ranking in search results.
@@ -135,7 +135,7 @@ export default function HowToUseUpworkUAE() {
           </section>
 
           <section>
-            <h2 className="text-xl font-bold text-gray-900 mt-8 mb-3">UAE-Specific Upwork Considerations</h2>
+            <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2"><span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>UAE-Specific Upwork Considerations</h2>
             <ul className="space-y-1 text-sm text-gray-600 mt-3">
               <li>• <strong>Withdrawing payments</strong> — Upwork pays to UAE bank accounts via SWIFT or to Payoneer. Payoneer is recommended for UAE freelancers — lower fees and faster processing than SWIFT bank transfers. Payments clear every Monday for earnings completed 10 days prior</li>
               <li>• <strong>Upwork fees</strong> — 20% on first $500 with each client, 10% from $500.01 to $10,000, 5% above $10,000 lifetime billings per client. Long-term client relationships become highly fee-efficient. This is one reason why retaining and expanding client relationships on Upwork is more economical than constant new client acquisition</li>
@@ -145,7 +145,7 @@ export default function HowToUseUpworkUAE() {
           </section>
 
           <section>
-            <h2 className="text-xl font-bold text-gray-900 mt-8 mb-3">Moving Upwork Clients to Direct Retainers (Legally)</h2>
+            <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2"><span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>Moving Upwork Clients to Direct Retainers (Legally)</h2>
             <p>
               Upwork&apos;s terms of service prohibit taking clients off-platform for 2 years
               after first contact on Upwork — unless you pay an opt-out fee (typically
@@ -160,8 +160,8 @@ export default function HowToUseUpworkUAE() {
           </section>
 
           {/* CTA */}
-          <div className="bg-gray-950 text-white rounded-2xl p-6 mt-10">
-            <p className="text-xs font-semibold text-gray-400 uppercase tracking-widest mb-2">Manage your Upwork clients</p>
+          <div className="bg-gradient-to-br from-gray-900 to-gray-800 text-white rounded-2xl p-8 mt-12 text-center">
+            <p className="text-xs font-bold text-emerald-400 uppercase tracking-widest block mb-3">Manage your Upwork clients</p>
             <h3 className="text-lg font-bold mb-2">Freelancer Client CRM — Track Every Project & Proposal</h3>
             <p className="text-gray-400 text-sm mb-4">
               Track Upwork leads and active projects, log proposal outcomes, manage
@@ -170,7 +170,7 @@ export default function HowToUseUpworkUAE() {
             </p>
             <Link
               href="/products/freelancer-client-crm"
-              className="inline-block bg-white text-gray-900 font-bold px-5 py-2.5 rounded-xl hover:bg-gray-100 transition-colors text-sm"
+              className="inline-block bg-emerald-500 hover:bg-emerald-400 text-white font-bold px-8 py-3 rounded-xl transition-colors text-sm"
             >
               Get the Client CRM →
             </Link>

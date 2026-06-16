@@ -69,7 +69,7 @@ export default function FreelanceProductManagerRatesUAE() {
         </div>
 
 
-        <div className="prose prose-gray max-w-none text-gray-700 leading-relaxed space-y-6">
+        <div className="space-y-6 leading-relaxed">
 
           <p>
             Product management is one of the fastest-growing freelance disciplines in the UAE.
@@ -81,8 +81,8 @@ export default function FreelanceProductManagerRatesUAE() {
             undergoing platform transformation. Here are the 2026 rate benchmarks.
           </p>
 
-          <div className="bg-gray-50 border border-gray-200 rounded-xl p-4 text-sm">
-            <p className="font-semibold text-gray-900 mb-1">Quick benchmark</p>
+          <div className="bg-emerald-50 border border-emerald-200 rounded-xl p-5">
+            <p className="text-sm font-bold text-emerald-800 mb-2">Quick benchmark</p>
             <p className="text-gray-700">
               A mid-level freelance product manager in Dubai (5–8 years, B2B or fintech
               product background, PSPO or CSPO certified) typically charges
@@ -95,7 +95,7 @@ export default function FreelanceProductManagerRatesUAE() {
           </div>
 
           <section>
-            <h2 className="text-xl font-bold text-gray-900 mt-8 mb-4">Freelance Product Manager Rates in the UAE by Service (2026)</h2>
+            <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2"><span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>Freelance Product Manager Rates in the UAE by Service (2026)</h2>
             <p className="text-xs text-gray-400 mb-4">Junior: 0–3 years / Mid: 4–8 years, B2B or consumer digital product background / Senior: 9+ years, CPO or VP Product at scale-up or enterprise</p>
             <div className="overflow-x-auto">
               <table className="w-full text-sm border-collapse">
@@ -122,7 +122,7 @@ export default function FreelanceProductManagerRatesUAE() {
           </section>
 
           <section>
-            <h2 className="text-xl font-bold text-gray-900 mt-8 mb-3">High-Value Product Management Niches in the UAE</h2>
+            <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2"><span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>High-Value Product Management Niches in the UAE</h2>
             <div className="space-y-3 mt-4">
               {[
                 { niche: "Fintech product management (payments, lending, BNPL, digital banking)", rate: "AED 30,000–180,000+/month fractional", why: "UAE fintech product management is one of the highest-paying niches in the regional market. DIFC Innovation Hub, UAE Central Bank open banking mandates, and the surge in licensed UAE fintech companies (remittance, BNPL, neobanking) create demand for experienced product leaders who understand both financial services and digital product development. A PM who can navigate CBUAE licensing requirements alongside sprint ceremonies and OKR frameworks commands premium rates from Series A+ fintech companies." },
@@ -133,7 +133,7 @@ export default function FreelanceProductManagerRatesUAE() {
                 <div key={item.niche} className="border border-gray-200 rounded-xl p-4">
                   <div className="flex items-start justify-between gap-2 mb-1">
                     <p className="font-semibold text-gray-900 text-sm">{item.niche}</p>
-                    <span className="text-xs font-bold text-green-700 bg-green-50 px-2 py-0.5 rounded-full shrink-0">{item.rate}</span>
+                    <span className="text-xs font-bold text-emerald-700 bg-emerald-50 border border-emerald-200 px-2 py-0.5 rounded-full shrink-0">{item.rate}</span>
                   </div>
                   <p className="text-xs text-gray-600">{item.why}</p>
                 </div>
@@ -142,7 +142,7 @@ export default function FreelanceProductManagerRatesUAE() {
           </section>
 
           <section>
-            <h2 className="text-xl font-bold text-gray-900 mt-8 mb-3">Freelance PM Engagement Models: What Works in the UAE</h2>
+            <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2"><span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>Freelance PM Engagement Models: What Works in the UAE</h2>
             <ul className="space-y-2 text-sm text-gray-600 mt-3">
               <li>• <strong>Fractional CPO retainer (2–3 days/week)</strong> — The most common engagement model for senior freelance PMs in the UAE. Companies get executive-level product leadership without the full-time CTO/CPO cost. Define scope clearly: strategy vs execution, what you own vs advise on, board involvement, and whether you manage the product team directly or in an advisory capacity</li>
               <li>• <strong>Discovery and roadmap sprint (4–8 week engagement)</strong> — A defined deliverable-based engagement: user interviews, competitive analysis, opportunity sizing, roadmap prioritized by impact and effort. Popular entry point for clients new to freelance PMs — lower commitment, clear output. Often converts to ongoing retainer</li>
@@ -152,7 +152,7 @@ export default function FreelanceProductManagerRatesUAE() {
           </section>
 
           <section>
-            <h2 className="text-xl font-bold text-gray-900 mt-8 mb-3">Credentials for UAE Freelance Product Managers</h2>
+            <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2"><span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>Credentials for UAE Freelance Product Managers</h2>
             <ul className="space-y-1 text-sm text-gray-600 mt-3">
               <li>• <strong>PSPO (Professional Scrum Product Owner)</strong> — Scrum.org credential demonstrating agile product ownership practice. Widely recognized in UAE tech companies</li>
               <li>• <strong>CSPO (Certified Scrum Product Owner)</strong> — Scrum Alliance credential. Equivalent recognition to PSPO in UAE hiring and client markets</li>
@@ -163,8 +163,8 @@ export default function FreelanceProductManagerRatesUAE() {
           </section>
 
           {/* CTA */}
-          <div className="bg-gray-950 text-white rounded-2xl p-6 mt-10">
-            <p className="text-xs font-semibold text-gray-400 uppercase tracking-widest mb-2">Manage your product consulting clients</p>
+          <div className="bg-gradient-to-br from-gray-900 to-gray-800 text-white rounded-2xl p-8 mt-12 text-center">
+            <p className="text-xs font-bold text-emerald-400 uppercase tracking-widest block mb-3">Manage your product consulting clients</p>
             <h3 className="text-lg font-bold mb-2">Freelancer Client CRM — Track Every Product Engagement</h3>
             <p className="text-gray-400 text-sm mb-4">
               Track product management engagements from discovery through roadmap delivery,
@@ -173,7 +173,7 @@ export default function FreelanceProductManagerRatesUAE() {
             </p>
             <Link
               href="/products/freelancer-client-crm"
-              className="inline-block bg-white text-gray-900 font-bold px-5 py-2.5 rounded-xl hover:bg-gray-100 transition-colors text-sm"
+              className="inline-block bg-emerald-500 hover:bg-emerald-400 text-white font-bold px-8 py-3 rounded-xl transition-colors text-sm"
             >
               Get the Client CRM →
             </Link>

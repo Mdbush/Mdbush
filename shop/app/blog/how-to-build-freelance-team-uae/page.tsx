@@ -193,7 +193,7 @@ export default function HowToBuildFreelanceTeamUAE() {
                 { href: "/blog/how-to-scale-freelance-business-uae", label: "How to Scale Your Freelance Business to AED 100K/Month" },
                 { href: "/blog/freelance-contract-template-uae", label: "Freelance Contract: 9 Clauses You Must Include" },
               ].map((link) => (
-                <Link key={link.href} href={link.href} className="block text-blue-600 hover:text-blue-800 text-sm">
+                <Link key={link.href} href={link.href} className="block text-emerald-700 hover:text-emerald-900 text-sm">
                   → {link.label}
                 </Link>
               ))}

@@ -58,7 +58,7 @@ export default function HowToBuildFreelanceWaitlistUAE() {
         </div>
 
 
-        <div className="prose prose-gray max-w-none text-gray-700 leading-relaxed space-y-6">
+        <div className="space-y-6 leading-relaxed">
 
           <p>
             The best-positioned UAE freelancers are not chasing clients — clients are
@@ -70,8 +70,8 @@ export default function HowToBuildFreelanceWaitlistUAE() {
             Here is how to build one in the UAE market.
           </p>
 
-          <div className="bg-gray-50 border border-gray-200 rounded-xl p-4 text-sm">
-            <p className="font-semibold text-gray-900 mb-1">What a waitlist actually signals</p>
+          <div className="bg-emerald-50 border border-emerald-200 rounded-xl p-5">
+            <p className="text-sm font-bold text-emerald-800 mb-2">What a waitlist actually signals</p>
             <p className="text-gray-700">
               A waitlist tells prospects: &quot;Other people who are smart enough to hire
               this person are already ahead of you.&quot; In the UAE B2B market — where
@@ -83,7 +83,7 @@ export default function HowToBuildFreelanceWaitlistUAE() {
           </div>
 
           <section>
-            <h2 className="text-xl font-bold text-gray-900 mt-8 mb-3">Step 1: Define Your Capacity (Before You Can Be &quot;Full&quot;)</h2>
+            <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2"><span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>Step 1: Define Your Capacity (Before You Can Be &quot;Full&quot;)</h2>
             <p>
               You cannot be booked out unless you know what &quot;booked out&quot; means for you.
               Define your maximum sustainable client load:
@@ -91,7 +91,7 @@ export default function HowToBuildFreelanceWaitlistUAE() {
             <div className="space-y-3 mt-4">
               <div className="border border-gray-200 rounded-xl p-4">
                 <p className="font-bold text-gray-900 text-sm mb-2">Calculate your project capacity</p>
-                <p className="text-sm text-gray-700">
+                <p className="text-sm text-emerald-800">
                   If you work 5 days/week and a typical project takes 3 days of focused
                   work per week, you have capacity for 1.5 projects simultaneously.
                   Round down to 1 to maintain quality. That is your limit: 1 active
@@ -101,7 +101,7 @@ export default function HowToBuildFreelanceWaitlistUAE() {
               </div>
               <div className="border border-gray-200 rounded-xl p-4">
                 <p className="font-bold text-gray-900 text-sm mb-2">Set your next availability date</p>
-                <p className="text-sm text-gray-700">
+                <p className="text-sm text-emerald-800">
                   When you take on a new project, calculate when you can realistically
                   start the next one. If today is June 16 and your current project runs
                   until July 15, your next start date is July 22 (with a week transition).
@@ -114,7 +114,7 @@ export default function HowToBuildFreelanceWaitlistUAE() {
           </section>
 
           <section>
-            <h2 className="text-xl font-bold text-gray-900 mt-8 mb-3">Step 2: Create Consistent Visibility (The Feed That Fills the Pipeline)</h2>
+            <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2"><span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>Step 2: Create Consistent Visibility (The Feed That Fills the Pipeline)</h2>
             <p>
               A waitlist is the result of more inbound demand than your current capacity.
               That demand comes from visibility. In the UAE, these visibility channels
@@ -136,14 +136,14 @@ export default function HowToBuildFreelanceWaitlistUAE() {
           </section>
 
           <section>
-            <h2 className="text-xl font-bold text-gray-900 mt-8 mb-3">Step 3: Communicate Scarcity Honestly</h2>
+            <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2"><span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>Step 3: Communicate Scarcity Honestly</h2>
             <p>
               Once you have a pipeline that regularly generates inquiries, start
               communicating your availability status proactively. This is not
               manipulation — it is operational transparency:
             </p>
             <div className="space-y-3 mt-4">
-              <div className="bg-gray-50 border border-gray-200 rounded-xl p-4 text-sm">
+              <div className="bg-emerald-50 border border-emerald-200 rounded-xl p-5">
                 <p className="font-semibold text-gray-900 mb-2">On LinkedIn (when genuinely booked)</p>
                 <p className="text-gray-700 italic">
                   &quot;Quick update: I&apos;m currently booked through [month] for new [service]
@@ -152,7 +152,7 @@ export default function HowToBuildFreelanceWaitlistUAE() {
                   Drop me a message or check the link in bio.&quot;
                 </p>
               </div>
-              <div className="bg-gray-50 border border-gray-200 rounded-xl p-4 text-sm">
+              <div className="bg-emerald-50 border border-emerald-200 rounded-xl p-5">
                 <p className="font-semibold text-gray-900 mb-2">In inquiry responses (when you have a waitlist)</p>
                 <p className="text-gray-700 italic">
                   &quot;Thanks for reaching out — I&apos;d love to work with you on this. To be
@@ -166,7 +166,7 @@ export default function HowToBuildFreelanceWaitlistUAE() {
           </section>
 
           <section>
-            <h2 className="text-xl font-bold text-gray-900 mt-8 mb-3">Step 4: Use the Waitlist to Raise Your Rates</h2>
+            <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2"><span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>Step 4: Use the Waitlist to Raise Your Rates</h2>
             <p>
               A genuine waitlist is the most powerful justification for a rate increase.
               When demand exceeds supply, the market is telling you your rate is too low.
@@ -182,7 +182,7 @@ export default function HowToBuildFreelanceWaitlistUAE() {
           </section>
 
           <section>
-            <h2 className="text-xl font-bold text-gray-900 mt-8 mb-3">The UAE-Specific Waitlist Context</h2>
+            <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2"><span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>The UAE-Specific Waitlist Context</h2>
             <ul className="space-y-1 text-sm text-gray-600 mt-3">
               <li>• <strong>Ramadan timing</strong> — Communicating a Q4 booking push before Ramadan (March/April) is smart in UAE. Many businesses plan major projects for post-Ramadan and want their service providers locked in early</li>
               <li>• <strong>Year-end push (November–December)</strong> — UAE corporate budgets often have a year-end spending window. Post your availability messaging in October to catch this</li>
@@ -192,8 +192,8 @@ export default function HowToBuildFreelanceWaitlistUAE() {
           </section>
 
           {/* CTA */}
-          <div className="bg-gray-950 text-white rounded-2xl p-6 mt-10">
-            <p className="text-xs font-semibold text-gray-400 uppercase tracking-widest mb-2">Track your pipeline</p>
+          <div className="bg-gradient-to-br from-gray-900 to-gray-800 text-white rounded-2xl p-8 mt-12 text-center">
+            <p className="text-xs font-bold text-emerald-400 uppercase tracking-widest block mb-3">Track your pipeline</p>
             <h3 className="text-lg font-bold mb-2">Freelancer Client CRM — Manage Your Pipeline & Availability</h3>
             <p className="text-gray-400 text-sm mb-4">
               Track active clients, pipeline prospects, and your next availability date —
@@ -201,7 +201,7 @@ export default function HowToBuildFreelanceWaitlistUAE() {
             </p>
             <Link
               href="/products/freelancer-client-crm"
-              className="inline-block bg-white text-gray-900 font-bold px-5 py-2.5 rounded-xl hover:bg-gray-100 transition-colors text-sm"
+              className="inline-block bg-emerald-500 hover:bg-emerald-400 text-white font-bold px-8 py-3 rounded-xl transition-colors text-sm"
             >
               Get the Client CRM →
             </Link>

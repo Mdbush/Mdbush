@@ -121,7 +121,7 @@ export default function Article() {
           </p>
         </div>
 
-        <div className="text-gray-700 leading-relaxed space-y-6">
+        <div className="space-y-6 leading-relaxed">
 
           <p>
             Dubai&apos;s professional culture has an unspoken rule: you are always on. WhatsApp messages at
@@ -137,7 +137,7 @@ export default function Article() {
             what actually happens, and how to stop it before it costs you clients — or your health.
           </p>
 
-          <h2 className="text-xl font-bold text-gray-900 mt-10 mb-3">Why Freelancers Burn Out Faster Than Employees</h2>
+          <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2"><span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>Why Freelancers Burn Out Faster Than Employees</h2>
 
           <p>
             A salaried employee has a manager who (theoretically) monitors their workload, sick days they
@@ -152,7 +152,7 @@ export default function Article() {
             The conditions for burnout are structural, not personal.
           </p>
 
-          <h2 className="text-xl font-bold text-gray-900 mt-10 mb-3">The 3 Stages of Freelance Burnout</h2>
+          <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2"><span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>The 3 Stages of Freelance Burnout</h2>
 
           <div className="space-y-4 my-6">
             {stages.map((stage) => (
@@ -169,7 +169,7 @@ export default function Article() {
             ))}
           </div>
 
-          <h2 className="text-xl font-bold text-gray-900 mt-10 mb-3">Early Warning Signs Specific to UAE Freelancers</h2>
+          <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2"><span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>Early Warning Signs Specific to UAE Freelancers</h2>
 
           <p>
             Most burnout builds gradually. By the time it&apos;s obvious, it&apos;s already expensive to fix.
@@ -189,7 +189,7 @@ export default function Article() {
             If you ticked 3 or more of those, you&apos;re in Stage 1 Overload. The next section is for you.
           </p>
 
-          <h2 className="text-xl font-bold text-gray-900 mt-10 mb-3">The 5 Systems That Prevent Burnout</h2>
+          <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2"><span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>The 5 Systems That Prevent Burnout</h2>
 
           <p>
             Burnout isn&apos;t solved by motivation, discipline, or working harder. It&apos;s solved by
@@ -211,7 +211,7 @@ export default function Article() {
             ))}
           </div>
 
-          <h2 className="text-xl font-bold text-gray-900 mt-10 mb-3">The AED 50K Freelancer Insight</h2>
+          <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2"><span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>The AED 50K Freelancer Insight</h2>
 
           <p>
             The highest-earning freelancers in Dubai — the ones consistently billing AED 40,000–80,000 per
@@ -235,7 +235,7 @@ export default function Article() {
             </p>
           </div>
 
-          <h2 className="text-xl font-bold text-gray-900 mt-10 mb-3">If You&apos;re Already Burned Out: Recovery</h2>
+          <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2"><span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>If You&apos;re Already Burned Out: Recovery</h2>
 
           <p>
             If you&apos;re reading this from Stage 2 or Stage 3, here&apos;s the honest path forward:
@@ -254,7 +254,7 @@ export default function Article() {
             ))}
           </div>
 
-          <h2 className="text-xl font-bold text-gray-900 mt-10 mb-3">The Long-Term Solution: Build Systems, Not Willpower</h2>
+          <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2"><span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>The Long-Term Solution: Build Systems, Not Willpower</h2>
 
           <p>
             The deepest cause of freelancer burnout is a business that depends entirely on your constant

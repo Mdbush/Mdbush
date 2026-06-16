@@ -73,7 +73,7 @@ export default function Article() {
           </p>
         </div>
 
-        <div className="text-gray-700 leading-relaxed space-y-6">
+        <div className="space-y-6 leading-relaxed">
 
           <p>
             While you sleep, your bio is talking to potential clients. It lives on your LinkedIn profile,
@@ -90,9 +90,7 @@ export default function Article() {
             fix that, with real examples across four freelance categories.
           </p>
 
-          <h2 className="text-xl font-bold text-gray-900 mt-10 mb-3">
-            Section 1: The 3 Deadly Mistakes in Most UAE Freelancer Bios
-          </h2>
+          <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2"><span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>Section 1: The 3 Deadly Mistakes in Most UAE Freelancer Bios</h2>
 
           <div className="space-y-5 my-6">
             <div className="flex gap-4">
@@ -142,9 +140,7 @@ export default function Article() {
             </div>
           </div>
 
-          <h2 className="text-xl font-bold text-gray-900 mt-10 mb-3">
-            Section 2: The 5-Part Bio Structure That Works
-          </h2>
+          <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2"><span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>Section 2: The 5-Part Bio Structure That Works</h2>
 
           <p>
             A bio that converts has five parts, in this order. Each part does a specific job.
@@ -195,9 +191,7 @@ export default function Article() {
             ))}
           </div>
 
-          <h2 className="text-xl font-bold text-gray-900 mt-10 mb-3">
-            Section 3: Before/After Examples for 4 Freelance Types
-          </h2>
+          <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2"><span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>Section 3: Before/After Examples for 4 Freelance Types</h2>
 
           <p>
             The structure above is easier to understand with real examples. Here are four transformations
@@ -220,7 +214,7 @@ export default function Article() {
                   </p>
                 </div>
                 <div>
-                  <p className="text-xs font-semibold text-green-600 uppercase tracking-widest mb-2">After</p>
+                  <p className="text-xs font-semibold text-emerald-600 uppercase tracking-widest mb-2">After</p>
                   <p className="text-sm text-gray-600 leading-relaxed italic">
                     &quot;I help Dubai hospitality brands look premium before they open their doors — brand
                     identity, menus, signage, and social assets that match the quality of the experience
@@ -246,7 +240,7 @@ export default function Article() {
                   </p>
                 </div>
                 <div>
-                  <p className="text-xs font-semibold text-green-600 uppercase tracking-widest mb-2">After</p>
+                  <p className="text-xs font-semibold text-emerald-600 uppercase tracking-widest mb-2">After</p>
                   <p className="text-sm text-gray-600 leading-relaxed italic">
                     &quot;I build MVPs for Gulf-based SaaS founders who need to ship fast without accumulating
                     technical debt they will spend years undoing. In the past two years I have taken 4
@@ -271,7 +265,7 @@ export default function Article() {
                   </p>
                 </div>
                 <div>
-                  <p className="text-xs font-semibold text-green-600 uppercase tracking-widest mb-2">After</p>
+                  <p className="text-xs font-semibold text-emerald-600 uppercase tracking-widest mb-2">After</p>
                   <p className="text-sm text-gray-600 leading-relaxed italic">
                     &quot;I help UAE e-commerce brands reduce their dependency on paid ads — building organic
                     SEO and email revenue that compounds month over month. One client went from 80% paid
@@ -296,7 +290,7 @@ export default function Article() {
                   </p>
                 </div>
                 <div>
-                  <p className="text-xs font-semibold text-green-600 uppercase tracking-widest mb-2">After</p>
+                  <p className="text-xs font-semibold text-emerald-600 uppercase tracking-widest mb-2">After</p>
                   <p className="text-sm text-gray-600 leading-relaxed italic">
                     &quot;I work with UAE founders who are stuck between AED 50K and AED 200K/month — doing
                     everything themselves, growing slowly, and not sure what to fix first. In 6 months
@@ -309,9 +303,7 @@ export default function Article() {
 
           </div>
 
-          <h2 className="text-xl font-bold text-gray-900 mt-10 mb-3">
-            Section 4: Adapting Your Bio for Different Platforms
-          </h2>
+          <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2"><span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>Section 4: Adapting Your Bio for Different Platforms</h2>
 
           <p>
             One bio does not fit everywhere. The same core message needs to be reformatted depending
@@ -366,9 +358,7 @@ export default function Article() {
             .
           </p>
 
-          <h2 className="text-xl font-bold text-gray-900 mt-10 mb-3">
-            Section 5: The AI Prompt to Write Your Bio in 5 Minutes
-          </h2>
+          <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2"><span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>Section 5: The AI Prompt to Write Your Bio in 5 Minutes</h2>
 
           <p>
             If you know what you want to say but cannot get the words right, this prompt will do the
@@ -429,7 +419,7 @@ export default function Article() {
             .
           </p>
 
-          <h2 className="text-xl font-bold text-gray-900 mt-10 mb-3">Closing: Your Bio Is Not About You</h2>
+          <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2"><span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>Closing: Your Bio Is Not About You</h2>
 
           <p>
             The most important reframe: your bio is not a self-description. It is a sales document

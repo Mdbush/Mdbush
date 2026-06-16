@@ -60,7 +60,7 @@ export default function GetReferralsFreelanceUAE() {
         </div>
 
 
-        <div className="prose prose-gray max-w-none text-gray-700 leading-relaxed space-y-6">
+        <div className="space-y-6 leading-relaxed">
 
           <p>
             Referrals are the best source of freelance clients in the UAE — they come pre-sold on
@@ -74,7 +74,7 @@ export default function GetReferralsFreelanceUAE() {
           </p>
 
           <section>
-            <h2 className="text-xl font-bold text-gray-900 mt-8 mb-3">Why UAE Freelancers Struggle to Get Referrals</h2>
+            <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2"><span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>Why UAE Freelancers Struggle to Get Referrals</h2>
             <p>
               The UAE business culture is relationship-driven and community-oriented — which means
               referrals are incredibly common here. But there are two reasons freelancers do not
@@ -90,7 +90,7 @@ export default function GetReferralsFreelanceUAE() {
           </section>
 
           <section>
-            <h2 className="text-xl font-bold text-gray-900 mt-8 mb-3">Step 1: Identify Your Referral Moments</h2>
+            <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2"><span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>Step 1: Identify Your Referral Moments</h2>
             <p>
               The best time to ask for a referral is immediately after a client peak experience —
               a moment when they feel genuinely good about working with you. In a typical project,
@@ -121,7 +121,7 @@ export default function GetReferralsFreelanceUAE() {
           </section>
 
           <section>
-            <h2 className="text-xl font-bold text-gray-900 mt-8 mb-3">Step 2: The Ask (Word-for-Word)</h2>
+            <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2"><span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>Step 2: The Ask (Word-for-Word)</h2>
             <p>
               The way you ask matters. Here are three versions — use whichever matches your
               relationship with the client:
@@ -129,7 +129,7 @@ export default function GetReferralsFreelanceUAE() {
 
             <div className="space-y-4 mt-4">
               <div className="border border-gray-200 rounded-xl p-4">
-                <p className="text-xs font-semibold text-gray-400 uppercase tracking-widest mb-2">Version 1 — Direct (for close relationships)</p>
+                <p className="text-xs font-bold text-emerald-400 uppercase tracking-widest block mb-3">Version 1 — Direct (for close relationships)</p>
                 <p className="text-sm text-gray-700 italic">
                   &ldquo;I&apos;m glad the project went well. I&apos;m building my client base in Dubai right now —
                   if you know anyone who needs [what you do], I&apos;d love an introduction. Even just
@@ -138,7 +138,7 @@ export default function GetReferralsFreelanceUAE() {
               </div>
 
               <div className="border border-gray-200 rounded-xl p-4">
-                <p className="text-xs font-semibold text-gray-400 uppercase tracking-widest mb-2">Version 2 — Soft (for newer clients)</p>
+                <p className="text-xs font-bold text-emerald-400 uppercase tracking-widest block mb-3">Version 2 — Soft (for newer clients)</p>
                 <p className="text-sm text-gray-700 italic">
                   &ldquo;If you find yourself talking to someone who could benefit from [what you do],
                   I&apos;d really appreciate you mentioning my name. I work best with clients like you —
@@ -147,7 +147,7 @@ export default function GetReferralsFreelanceUAE() {
               </div>
 
               <div className="border border-gray-200 rounded-xl p-4">
-                <p className="text-xs font-semibold text-gray-400 uppercase tracking-widest mb-2">Version 3 — With incentive (for high-value clients)</p>
+                <p className="text-xs font-bold text-emerald-400 uppercase tracking-widest block mb-3">Version 3 — With incentive (for high-value clients)</p>
                 <p className="text-sm text-gray-700 italic">
                   &ldquo;I have a referral arrangement for good clients — if someone you introduce to me
                   goes ahead with a project, I give you [AED X credit / X% of the project / a gift].
@@ -158,7 +158,7 @@ export default function GetReferralsFreelanceUAE() {
           </section>
 
           <section>
-            <h2 className="text-xl font-bold text-gray-900 mt-8 mb-3">Step 3: Make It Easy to Refer You</h2>
+            <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2"><span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>Step 3: Make It Easy to Refer You</h2>
             <p>
               One reason referrals die before they happen: the person who wants to refer you does
               not know what to say. Give them the words.
@@ -184,7 +184,7 @@ export default function GetReferralsFreelanceUAE() {
           </section>
 
           <section>
-            <h2 className="text-xl font-bold text-gray-900 mt-8 mb-3">Step 4: Build a Referral Network Beyond Clients</h2>
+            <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2"><span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>Step 4: Build a Referral Network Beyond Clients</h2>
             <p>
               Clients are not your only referral source. In the UAE, these relationships often
               produce even more referrals:
@@ -222,7 +222,7 @@ export default function GetReferralsFreelanceUAE() {
           </section>
 
           <section>
-            <h2 className="text-xl font-bold text-gray-900 mt-8 mb-3">Step 5: Track Your Referrals</h2>
+            <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2"><span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>Step 5: Track Your Referrals</h2>
             <p>
               Once you have more than a handful of active referral sources, you need to track who is
               referring you, how often, and what happened with each referral. Without a system, you
@@ -237,7 +237,7 @@ export default function GetReferralsFreelanceUAE() {
           </section>
 
           <section>
-            <h2 className="text-xl font-bold text-gray-900 mt-8 mb-3">Should You Pay for Referrals?</h2>
+            <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2"><span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>Should You Pay for Referrals?</h2>
             <p>
               Paying referral fees is common and accepted in the UAE. A standard referral fee
               is 10–15% of the first project value, or a flat amount (e.g. AED 500–1,000 for
@@ -252,7 +252,7 @@ export default function GetReferralsFreelanceUAE() {
           </section>
 
           <section>
-            <h2 className="text-xl font-bold text-gray-900 mt-8 mb-3">The 30-Day Referral Sprint</h2>
+            <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2"><span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>The 30-Day Referral Sprint</h2>
             <p>
               If you want to jumpstart your referral pipeline, do this over the next 30 days:
             </p>
@@ -270,8 +270,8 @@ export default function GetReferralsFreelanceUAE() {
           </section>
 
           {/* CTA */}
-          <div className="bg-gray-950 text-white rounded-2xl p-6 mt-10">
-            <p className="text-xs font-semibold text-gray-400 uppercase tracking-widest mb-2">Track every client and referral</p>
+          <div className="bg-gradient-to-br from-gray-900 to-gray-800 text-white rounded-2xl p-8 mt-12 text-center">
+            <p className="text-xs font-bold text-emerald-400 uppercase tracking-widest block mb-3">Track every client and referral</p>
             <h3 className="text-lg font-bold mb-2">The Freelancer Client CRM</h3>
             <p className="text-gray-400 text-sm mb-4">
               Log who referred each client, track follow-ups, see which relationships are producing
@@ -279,7 +279,7 @@ export default function GetReferralsFreelanceUAE() {
             </p>
             <Link
               href="/products/freelancer-client-crm"
-              className="inline-block bg-white text-gray-900 font-bold px-5 py-2.5 rounded-xl hover:bg-gray-100 transition-colors text-sm"
+              className="inline-block bg-emerald-500 hover:bg-emerald-400 text-white font-bold px-8 py-3 rounded-xl transition-colors text-sm"
             >
               See the CRM →
             </Link>

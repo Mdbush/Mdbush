@@ -66,7 +66,7 @@ export default function HowToUseLinkedInAdsFreelancersUAE() {
         </div>
 
 
-        <div className="prose prose-gray max-w-none text-gray-700 leading-relaxed space-y-6">
+        <div className="space-y-6 leading-relaxed">
 
           <p>
             LinkedIn Ads are underused by UAE freelancers — most assume they are only for
@@ -79,8 +79,8 @@ export default function HowToUseLinkedInAdsFreelancersUAE() {
             wasting your budget.
           </p>
 
-          <div className="bg-gray-50 border border-gray-200 rounded-xl p-4 text-sm">
-            <p className="font-semibold text-gray-900 mb-1">When LinkedIn Ads make sense for freelancers</p>
+          <div className="bg-emerald-50 border border-emerald-200 rounded-xl p-5">
+            <p className="text-sm font-bold text-emerald-800 mb-2">When LinkedIn Ads make sense for freelancers</p>
             <p className="text-gray-700">
               LinkedIn Ads work when: (1) your average client LTV is AED 15,000+, making
               a AED 2,000–5,000/month ad spend justifiable; (2) you sell a service to a
@@ -92,7 +92,7 @@ export default function HowToUseLinkedInAdsFreelancersUAE() {
           </div>
 
           <section>
-            <h2 className="text-xl font-bold text-gray-900 mt-8 mb-3">Targeting UAE Decision-Makers on LinkedIn</h2>
+            <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2"><span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>Targeting UAE Decision-Makers on LinkedIn</h2>
             <p>
               LinkedIn&apos;s targeting is more precise than any other B2B platform. For UAE
               freelancers, these are the targeting combinations that work:
@@ -114,7 +114,7 @@ export default function HowToUseLinkedInAdsFreelancersUAE() {
           </section>
 
           <section>
-            <h2 className="text-xl font-bold text-gray-900 mt-8 mb-4">LinkedIn Ad Formats & UAE Cost Benchmarks (2026)</h2>
+            <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2"><span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>LinkedIn Ad Formats & UAE Cost Benchmarks (2026)</h2>
             <div className="overflow-x-auto">
               <table className="w-full text-sm border-collapse">
                 <thead>
@@ -140,11 +140,11 @@ export default function HowToUseLinkedInAdsFreelancersUAE() {
           </section>
 
           <section>
-            <h2 className="text-xl font-bold text-gray-900 mt-8 mb-3">Minimum Budget & What to Expect</h2>
+            <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2"><span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>Minimum Budget & What to Expect</h2>
             <div className="space-y-3 mt-4">
               <div className="border border-gray-200 rounded-xl p-4">
                 <p className="font-bold text-gray-900 text-sm mb-2">Starting budget: AED 2,000–4,000/month</p>
-                <p className="text-sm text-gray-700">
+                <p className="text-sm text-emerald-800">
                   LinkedIn&apos;s minimum daily budget is around USD 10 (~AED 37). At AED
                   2,000/month you can run a focused Sponsored Content campaign with Lead
                   Gen Forms. Expect 10–20 leads per month at this level with good targeting
@@ -154,7 +154,7 @@ export default function HowToUseLinkedInAdsFreelancersUAE() {
               </div>
               <div className="border border-gray-200 rounded-xl p-4">
                 <p className="font-bold text-gray-900 text-sm mb-2">Scaling budget: AED 5,000–15,000/month</p>
-                <p className="text-sm text-gray-700">
+                <p className="text-sm text-emerald-800">
                   At this level you can run multiple ad formats simultaneously: awareness
                   (Sponsored Content), conversion (Lead Gen Forms), and retargeting. Expect
                   30–60 leads per month with disciplined targeting. For high-ticket
@@ -166,7 +166,7 @@ export default function HowToUseLinkedInAdsFreelancersUAE() {
           </section>
 
           <section>
-            <h2 className="text-xl font-bold text-gray-900 mt-8 mb-3">Ad Creative That Works for UAE Freelancers</h2>
+            <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2"><span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>Ad Creative That Works for UAE Freelancers</h2>
             <ul className="space-y-1 text-sm text-gray-600 mt-3">
               <li>• <strong>Lead with a specific result</strong> — "I helped a Dubai fintech reduce their onboarding time by 40%" outperforms "I&apos;m a freelance UX designer". Specificity earns clicks from decision-makers who need that result</li>
               <li>• <strong>Use social proof</strong> — Logo clusters of recognizable UAE clients (even if you only did one project each) signal credibility instantly. Get permission before using logos</li>
@@ -177,7 +177,7 @@ export default function HowToUseLinkedInAdsFreelancersUAE() {
           </section>
 
           <section>
-            <h2 className="text-xl font-bold text-gray-900 mt-8 mb-3">Measuring LinkedIn Ad ROI as a Freelancer</h2>
+            <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2"><span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>Measuring LinkedIn Ad ROI as a Freelancer</h2>
             <p>
               Track these metrics to know if your LinkedIn campaigns are working:
             </p>
@@ -191,8 +191,8 @@ export default function HowToUseLinkedInAdsFreelancersUAE() {
           </section>
 
           {/* CTA */}
-          <div className="bg-gray-950 text-white rounded-2xl p-6 mt-10">
-            <p className="text-xs font-semibold text-gray-400 uppercase tracking-widest mb-2">Track every lead to client</p>
+          <div className="bg-gradient-to-br from-gray-900 to-gray-800 text-white rounded-2xl p-8 mt-12 text-center">
+            <p className="text-xs font-bold text-emerald-400 uppercase tracking-widest block mb-3">Track every lead to client</p>
             <h3 className="text-lg font-bold mb-2">Freelancer Client CRM — Manage Your Pipeline in Notion</h3>
             <p className="text-gray-400 text-sm mb-4">
               Track leads from LinkedIn Ads through discovery call to signed contract,
@@ -200,7 +200,7 @@ export default function HowToUseLinkedInAdsFreelancersUAE() {
             </p>
             <Link
               href="/products/freelancer-client-crm"
-              className="inline-block bg-white text-gray-900 font-bold px-5 py-2.5 rounded-xl hover:bg-gray-100 transition-colors text-sm"
+              className="inline-block bg-emerald-500 hover:bg-emerald-400 text-white font-bold px-8 py-3 rounded-xl transition-colors text-sm"
             >
               Get the Client CRM →
             </Link>

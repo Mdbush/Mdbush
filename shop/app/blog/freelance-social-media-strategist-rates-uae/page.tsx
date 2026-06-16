@@ -69,7 +69,7 @@ export default function FreelanceSocialMediaStrategistRatesUAE() {
         </div>
 
 
-        <div className="prose prose-gray max-w-none text-gray-700 leading-relaxed space-y-6">
+        <div className="space-y-6 leading-relaxed">
 
           <p>
             The UAE social media landscape is distinct from the West in ways that matter
@@ -83,8 +83,8 @@ export default function FreelanceSocialMediaStrategistRatesUAE() {
             — command premium rates. Here are the 2026 benchmarks.
           </p>
 
-          <div className="bg-gray-50 border border-gray-200 rounded-xl p-4 text-sm">
-            <p className="font-semibold text-gray-900 mb-1">Quick benchmark</p>
+          <div className="bg-emerald-50 border border-emerald-200 rounded-xl p-5">
+            <p className="text-sm font-bold text-emerald-800 mb-2">Quick benchmark</p>
             <p className="text-gray-700">
               A mid-level freelance social media strategist in Dubai (4–7 years experience,
               proven brand track record) typically charges <strong>AED 5,500–12,000 for a full
@@ -96,7 +96,7 @@ export default function FreelanceSocialMediaStrategistRatesUAE() {
           </div>
 
           <section>
-            <h2 className="text-xl font-bold text-gray-900 mt-8 mb-4">Freelance Social Media Strategist Rates in the UAE by Service (2026)</h2>
+            <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2"><span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>Freelance Social Media Strategist Rates in the UAE by Service (2026)</h2>
             <p className="text-xs text-gray-400 mb-4">Junior: 0–3 years / Mid: 4–7 years / Senior: 8+ years, major brand portfolio, or specialist platform</p>
             <div className="overflow-x-auto">
               <table className="w-full text-sm border-collapse">
@@ -123,7 +123,7 @@ export default function FreelanceSocialMediaStrategistRatesUAE() {
           </section>
 
           <section>
-            <h2 className="text-xl font-bold text-gray-900 mt-8 mb-3">High-Value Social Media Strategy Niches in the UAE</h2>
+            <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2"><span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>High-Value Social Media Strategy Niches in the UAE</h2>
             <div className="space-y-3 mt-4">
               {[
                 { niche: "Ramadan campaign strategy (all major brands)", rate: "AED 15,000–60,000+ per campaign", why: "Ramadan is the highest-spend social media season in the Arab world. Brands across sectors (telecoms, FMCG, retail, banking, automotive) commission Ramadan-specific social media strategies that balance emotional resonance with cultural authenticity. A strategist who understands Ramadan consumer behaviour — the shift to late-night browsing, the spike in video content consumption, the role of family and community themes — can command campaign rates far above standard monthly fees." },
@@ -134,7 +134,7 @@ export default function FreelanceSocialMediaStrategistRatesUAE() {
                 <div key={item.niche} className="border border-gray-200 rounded-xl p-4">
                   <div className="flex items-start justify-between gap-2 mb-1">
                     <p className="font-semibold text-gray-900 text-sm">{item.niche}</p>
-                    <span className="text-xs font-bold text-green-700 bg-green-50 px-2 py-0.5 rounded-full shrink-0">{item.rate}</span>
+                    <span className="text-xs font-bold text-emerald-700 bg-emerald-50 border border-emerald-200 px-2 py-0.5 rounded-full shrink-0">{item.rate}</span>
                   </div>
                   <p className="text-xs text-gray-600">{item.why}</p>
                 </div>
@@ -143,7 +143,7 @@ export default function FreelanceSocialMediaStrategistRatesUAE() {
           </section>
 
           <section>
-            <h2 className="text-xl font-bold text-gray-900 mt-8 mb-3">The UAE Social Media Landscape: What You Need to Know</h2>
+            <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2"><span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>The UAE Social Media Landscape: What You Need to Know</h2>
             <ul className="space-y-1 text-sm text-gray-600 mt-3">
               <li>• <strong>Snapchat</strong> — 93% of UAE 18–34 year olds use Snapchat daily. Higher penetration than any Western market. Brands targeting Emirati youth audiences must be on Snapchat. Snap Ads, AR Lenses, and Snapchat Spotlight are viable brand channels that most Western social strategists don&apos;t have experience with</li>
               <li>• <strong>Instagram</strong> — The dominant visual lifestyle platform for UAE audiences. Instagram Stories and Reels drive the highest engagement. Arabic captions often outperform English captions for Emirati and Arab expat audiences even when the visual content is in English</li>
@@ -154,7 +154,7 @@ export default function FreelanceSocialMediaStrategistRatesUAE() {
           </section>
 
           <section>
-            <h2 className="text-xl font-bold text-gray-900 mt-8 mb-3">Strategy vs Management vs Execution: Pricing Each Correctly</h2>
+            <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2"><span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>Strategy vs Management vs Execution: Pricing Each Correctly</h2>
             <p className="text-sm text-gray-600 mb-3">
               Conflating these three levels is the most common pricing mistake in social media services:
             </p>
@@ -167,7 +167,7 @@ export default function FreelanceSocialMediaStrategistRatesUAE() {
                 <div key={item.level} className="border border-gray-200 rounded-xl p-4">
                   <div className="flex items-start justify-between gap-2 mb-1">
                     <p className="font-semibold text-gray-900 text-sm">{item.level}</p>
-                    <span className="text-xs font-bold text-green-700 bg-green-50 px-2 py-0.5 rounded-full shrink-0">{item.rate}</span>
+                    <span className="text-xs font-bold text-emerald-700 bg-emerald-50 border border-emerald-200 px-2 py-0.5 rounded-full shrink-0">{item.rate}</span>
                   </div>
                   <p className="text-xs text-gray-600">{item.desc}</p>
                 </div>
@@ -176,8 +176,8 @@ export default function FreelanceSocialMediaStrategistRatesUAE() {
           </section>
 
           {/* CTA */}
-          <div className="bg-gray-950 text-white rounded-2xl p-6 mt-10">
-            <p className="text-xs font-semibold text-gray-400 uppercase tracking-widest mb-2">Manage your social media clients</p>
+          <div className="bg-gradient-to-br from-gray-900 to-gray-800 text-white rounded-2xl p-8 mt-12 text-center">
+            <p className="text-xs font-bold text-emerald-400 uppercase tracking-widest block mb-3">Manage your social media clients</p>
             <h3 className="text-lg font-bold mb-2">Freelancer Client CRM — Track Every Client & Retainer</h3>
             <p className="text-gray-400 text-sm mb-4">
               Track social media strategy clients, log monthly reporting deliverables,
@@ -185,7 +185,7 @@ export default function FreelanceSocialMediaStrategistRatesUAE() {
             </p>
             <Link
               href="/products/freelancer-client-crm"
-              className="inline-block bg-white text-gray-900 font-bold px-5 py-2.5 rounded-xl hover:bg-gray-100 transition-colors text-sm"
+              className="inline-block bg-emerald-500 hover:bg-emerald-400 text-white font-bold px-8 py-3 rounded-xl transition-colors text-sm"
             >
               Get the Client CRM →
             </Link>

@@ -215,7 +215,7 @@ export default function HowToAskForReferralsUAE() {
                 { href: "/blog/client-communication-tips-freelancers-uae", label: "Client Communication for UAE Freelancers: Scripts That Work" },
                 { href: "/blog/how-to-win-retainer-clients-uae", label: "How to Win Retainer Clients as a UAE Freelancer" },
               ].map((link) => (
-                <Link key={link.href} href={link.href} className="block text-blue-600 hover:text-blue-800 text-sm">
+                <Link key={link.href} href={link.href} className="block text-emerald-700 hover:text-emerald-900 text-sm">
                   → {link.label}
                 </Link>
               ))}

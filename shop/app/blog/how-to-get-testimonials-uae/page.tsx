@@ -58,7 +58,7 @@ export default function HowToGetTestimonialsUAE() {
         </div>
 
 
-        <div className="prose prose-gray max-w-none text-gray-700 leading-relaxed space-y-6">
+        <div className="space-y-6 leading-relaxed">
 
           <p>
             Testimonials are the most underused sales asset in UAE freelancing. Most
@@ -68,8 +68,8 @@ export default function HowToGetTestimonialsUAE() {
             business. Here is the complete system.
           </p>
 
-          <div className="bg-gray-50 border border-gray-200 rounded-xl p-4 text-sm">
-            <p className="font-semibold text-gray-900 mb-1">Why testimonials matter more in the UAE</p>
+          <div className="bg-emerald-50 border border-emerald-200 rounded-xl p-5">
+            <p className="text-sm font-bold text-emerald-800 mb-2">Why testimonials matter more in the UAE</p>
             <p className="text-gray-700">
               The UAE B2B market runs on trust and referrals. Prospective clients
               are much more likely to hire you if they can see evidence that someone
@@ -81,11 +81,11 @@ export default function HowToGetTestimonialsUAE() {
           </div>
 
           <section>
-            <h2 className="text-xl font-bold text-gray-900 mt-8 mb-3">When to Ask (Timing Is Everything)</h2>
+            <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2"><span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>When to Ask (Timing Is Everything)</h2>
             <div className="space-y-3 mt-4">
               <div className="border border-gray-200 rounded-xl p-4">
                 <p className="font-bold text-gray-900 text-sm mb-2">The best moment: right after delivery, when the client is happiest</p>
-                <p className="text-sm text-gray-700">
+                <p className="text-sm text-emerald-800">
                   The optimal window for asking is within 48 hours of delivering a
                   successful project — when client enthusiasm is highest and the
                   results are fresh in their mind. If you wait a week, the positive
@@ -96,7 +96,7 @@ export default function HowToGetTestimonialsUAE() {
               </div>
               <div className="border border-gray-200 rounded-xl p-4">
                 <p className="font-bold text-gray-900 text-sm mb-2">Second-best moment: at the positive milestone (not the end)</p>
-                <p className="text-sm text-gray-700">
+                <p className="text-sm text-emerald-800">
                   If a client says something like &quot;this is exactly what we needed&quot;
                   or &quot;the feedback has been amazing&quot; during a project — that is your
                   moment. Ask immediately: &quot;I&apos;m really glad. Would you be willing
@@ -106,7 +106,7 @@ export default function HowToGetTestimonialsUAE() {
               </div>
               <div className="border border-gray-200 rounded-xl p-4">
                 <p className="font-bold text-gray-900 text-sm mb-2">Never ask when there is an unresolved issue</p>
-                <p className="text-sm text-gray-700">
+                <p className="text-sm text-emerald-800">
                   Do not ask for a testimonial while there is an outstanding invoice,
                   a pending revision, or any friction in the relationship. Asking for
                   a favor when there is a unresolved obligation creates awkwardness.
@@ -117,9 +117,9 @@ export default function HowToGetTestimonialsUAE() {
           </section>
 
           <section>
-            <h2 className="text-xl font-bold text-gray-900 mt-8 mb-3">How to Ask: Word-for-Word Scripts</h2>
+            <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2"><span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>How to Ask: Word-for-Word Scripts</h2>
             <div className="space-y-4 mt-4">
-              <div className="bg-gray-50 border border-gray-200 rounded-xl p-4 text-sm">
+              <div className="bg-emerald-50 border border-emerald-200 rounded-xl p-5">
                 <p className="font-semibold text-gray-900 mb-2">The easy ask (WhatsApp, at project completion)</p>
                 <p className="text-gray-700 italic">
                   &quot;[Name], really glad we got to work on this together — the outcome
@@ -131,7 +131,7 @@ export default function HowToGetTestimonialsUAE() {
                 </p>
                 <p className="text-xs text-gray-500 mt-2">This works in the UAE because: it is personal, low-pressure, and specific about what you need (2–3 sentences).</p>
               </div>
-              <div className="bg-gray-50 border border-gray-200 rounded-xl p-4 text-sm">
+              <div className="bg-emerald-50 border border-emerald-200 rounded-xl p-5">
                 <p className="font-semibold text-gray-900 mb-2">The guided ask (when you want a specific testimonial)</p>
                 <p className="text-gray-700 italic">
                   &quot;[Name], if you were happy with what we produced together, I&apos;d love
@@ -143,7 +143,7 @@ export default function HowToGetTestimonialsUAE() {
                 </p>
                 <p className="text-xs text-gray-500 mt-2">This works because: it structures the client&apos;s thinking and offers to do the work for them (drafting). UAE professionals are often busy — reducing effort increases response rate.</p>
               </div>
-              <div className="bg-gray-50 border border-gray-200 rounded-xl p-4 text-sm">
+              <div className="bg-emerald-50 border border-emerald-200 rounded-xl p-5">
                 <p className="font-semibold text-gray-900 mb-2">The LinkedIn recommendation ask</p>
                 <p className="text-gray-700 italic">
                   &quot;[Name], I&apos;d love to connect on LinkedIn if we are not already.
@@ -158,7 +158,7 @@ export default function HowToGetTestimonialsUAE() {
           </section>
 
           <section>
-            <h2 className="text-xl font-bold text-gray-900 mt-8 mb-3">What Makes a Good vs. Bad Testimonial</h2>
+            <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2"><span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>What Makes a Good vs. Bad Testimonial</h2>
             <div className="space-y-3 mt-4">
               <div className="border border-gray-200 rounded-xl p-4">
                 <p className="font-bold text-red-600 text-sm mb-1">✗ Weak testimonial (vague, general)</p>
@@ -180,7 +180,7 @@ export default function HowToGetTestimonialsUAE() {
           </section>
 
           <section>
-            <h2 className="text-xl font-bold text-gray-900 mt-8 mb-3">Where to Use Testimonials in the UAE</h2>
+            <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2"><span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>Where to Use Testimonials in the UAE</h2>
             <ul className="space-y-1 text-sm text-gray-600 mt-3">
               <li>• <strong>Website</strong> — Dedicated testimonials or social proof section. Name, role, company (or industry if anonymous), and the quote. Add a headshot if possible</li>
               <li>• <strong>Proposals</strong> — Include 2–3 testimonials from clients in similar industries to the prospect. Seeing social proof from a peer company is the highest-converting placement</li>
@@ -192,7 +192,7 @@ export default function HowToGetTestimonialsUAE() {
           </section>
 
           <section>
-            <h2 className="text-xl font-bold text-gray-900 mt-8 mb-3">Dealing with the UAE Privacy Culture</h2>
+            <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2"><span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>Dealing with the UAE Privacy Culture</h2>
             <p>
               Some UAE clients — particularly in financial services, government-adjacent
               industries, and family businesses — are reluctant to allow use of their
@@ -207,8 +207,8 @@ export default function HowToGetTestimonialsUAE() {
           </section>
 
           {/* CTA */}
-          <div className="bg-gray-950 text-white rounded-2xl p-6 mt-10">
-            <p className="text-xs font-semibold text-gray-400 uppercase tracking-widest mb-2">Build your client portfolio</p>
+          <div className="bg-gradient-to-br from-gray-900 to-gray-800 text-white rounded-2xl p-8 mt-12 text-center">
+            <p className="text-xs font-bold text-emerald-400 uppercase tracking-widest block mb-3">Build your client portfolio</p>
             <h3 className="text-lg font-bold mb-2">How to Write Case Studies That Win UAE Clients</h3>
             <p className="text-gray-400 text-sm mb-4">
               Turn your best testimonials into structured case studies — with the exact
@@ -216,7 +216,7 @@ export default function HowToGetTestimonialsUAE() {
             </p>
             <Link
               href="/blog/how-to-write-case-studies-uae"
-              className="inline-block bg-white text-gray-900 font-bold px-5 py-2.5 rounded-xl hover:bg-gray-100 transition-colors text-sm"
+              className="inline-block bg-emerald-500 hover:bg-emerald-400 text-white font-bold px-8 py-3 rounded-xl transition-colors text-sm"
             >
               Read the Case Study Guide →
             </Link>

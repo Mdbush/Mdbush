@@ -280,10 +280,10 @@ export default function Article() {
           <div className="mt-10">
             <h3 className="text-sm font-semibold text-gray-900 mb-3">Related Guides</h3>
             <div className="space-y-1.5">
-              <Link href="/blog/how-to-price-freelance-services-uae" className="block text-blue-600 hover:text-blue-800 text-sm">→ How to Price Your Freelance Services in the UAE</Link>
-              <Link href="/blog/emaratax-registration-freelancers-uae" className="block text-blue-600 hover:text-blue-800 text-sm">→ How to Register on EmaraTax as a UAE Freelancer</Link>
-              <Link href="/blog/freelance-proposal-tips-uae" className="block text-blue-600 hover:text-blue-800 text-sm">→ How to Write a Freelance Proposal That Wins Clients in the UAE</Link>
-              <Link href="/blog/client-onboarding-freelance-uae" className="block text-blue-600 hover:text-blue-800 text-sm">→ Client Onboarding Process for UAE Freelancers</Link>
+              <Link href="/blog/how-to-price-freelance-services-uae" className="block text-emerald-700 hover:text-emerald-900 text-sm">→ How to Price Your Freelance Services in the UAE</Link>
+              <Link href="/blog/emaratax-registration-freelancers-uae" className="block text-emerald-700 hover:text-emerald-900 text-sm">→ How to Register on EmaraTax as a UAE Freelancer</Link>
+              <Link href="/blog/freelance-proposal-tips-uae" className="block text-emerald-700 hover:text-emerald-900 text-sm">→ How to Write a Freelance Proposal That Wins Clients in the UAE</Link>
+              <Link href="/blog/client-onboarding-freelance-uae" className="block text-emerald-700 hover:text-emerald-900 text-sm">→ Client Onboarding Process for UAE Freelancers</Link>
             </div>
           </div>
         </div>

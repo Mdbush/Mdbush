@@ -58,7 +58,7 @@ export default function HowToPriceRetainerClientsUAE() {
         </div>
 
 
-        <div className="prose prose-gray max-w-none text-gray-700 leading-relaxed space-y-6">
+        <div className="space-y-6 leading-relaxed">
 
           <p>
             A monthly retainer is the single most powerful income structure for UAE freelancers.
@@ -68,8 +68,8 @@ export default function HowToPriceRetainerClientsUAE() {
             UAE freelancers underprice retainers badly. Here is the complete system.
           </p>
 
-          <div className="bg-gray-50 border border-gray-200 rounded-xl p-4 text-sm">
-            <p className="font-semibold text-gray-900 mb-1">The retainer income target</p>
+          <div className="bg-emerald-50 border border-emerald-200 rounded-xl p-5">
+            <p className="text-sm font-bold text-emerald-800 mb-2">The retainer income target</p>
             <p className="text-gray-700">
               Aim to have 60–70% of your monthly income target covered by retainer clients.
               The remaining 30–40% comes from project work. This gives you stability without
@@ -80,11 +80,11 @@ export default function HowToPriceRetainerClientsUAE() {
           </div>
 
           <section>
-            <h2 className="text-xl font-bold text-gray-900 mt-8 mb-3">The 3 Types of Retainer (And Which to Offer)</h2>
+            <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2"><span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>The 3 Types of Retainer (And Which to Offer)</h2>
             <div className="space-y-3 mt-4">
               <div className="border border-gray-200 rounded-xl p-4">
                 <p className="font-bold text-gray-900 text-sm mb-2">1. Hours-based retainer (avoid this)</p>
-                <p className="text-sm text-gray-700">
+                <p className="text-sm text-emerald-800">
                   Client pays for X hours per month. The problem: you are still trading time
                   for money. Clients watch the clock. Unused hours create awkward conversations.
                   You are incentivized to work slowly. Hours-based retainers are the lowest
@@ -93,7 +93,7 @@ export default function HowToPriceRetainerClientsUAE() {
               </div>
               <div className="border border-gray-200 rounded-xl p-4">
                 <p className="font-bold text-gray-900 text-sm mb-2">2. Deliverables-based retainer (recommended for most)</p>
-                <p className="text-sm text-gray-700">
+                <p className="text-sm text-emerald-800">
                   Client pays a fixed monthly fee for a defined set of deliverables. Example:
                   &quot;AED 12,000/month for: 8 LinkedIn posts, 2 email newsletters, and one strategy
                   call.&quot; Clear scope. No hourly tracking. You can systematize and streamline
@@ -103,7 +103,7 @@ export default function HowToPriceRetainerClientsUAE() {
               </div>
               <div className="border border-gray-200 rounded-xl p-4">
                 <p className="font-bold text-gray-900 text-sm mb-2">3. Access/advisory retainer (highest value)</p>
-                <p className="text-sm text-gray-700">
+                <p className="text-sm text-emerald-800">
                   Client pays for access to your expertise — not a fixed number of hours or
                   deliverables. Example: &quot;AED 18,000/month for strategic advisory: unlimited
                   WhatsApp/email access during business hours, one 60-minute strategy call,
@@ -116,7 +116,7 @@ export default function HowToPriceRetainerClientsUAE() {
           </section>
 
           <section>
-            <h2 className="text-xl font-bold text-gray-900 mt-8 mb-3">How to Price a Retainer: The Formula</h2>
+            <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2"><span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>How to Price a Retainer: The Formula</h2>
             <p>
               The most common retainer pricing mistake is underpricing because you assume
               the client will only use a fraction of what they pay for. Price retainers on
@@ -125,7 +125,7 @@ export default function HowToPriceRetainerClientsUAE() {
             <div className="space-y-3 mt-4">
               <div className="border border-gray-200 rounded-xl p-4">
                 <p className="font-bold text-gray-900 text-sm mb-2">Step 1: Calculate the floor (what you need minimum)</p>
-                <p className="text-sm text-gray-700">
+                <p className="text-sm text-emerald-800">
                   Take your target monthly income and divide by the maximum number of retainer
                   clients you can serve well. If you want AED 60,000/month and can manage 4
                   retainer clients well, your floor is AED 15,000/client/month. Never price
@@ -134,7 +134,7 @@ export default function HowToPriceRetainerClientsUAE() {
               </div>
               <div className="border border-gray-200 rounded-xl p-4">
                 <p className="font-bold text-gray-900 text-sm mb-2">Step 2: Calculate value delivered</p>
-                <p className="text-sm text-gray-700">
+                <p className="text-sm text-emerald-800">
                   What is the monthly value of your work to this client? If your SEO retainer
                   is expected to generate AED 200,000 in additional revenue per year, your
                   AED 12,000/month fee is 72% gross margin for the client. If your PR retainer
@@ -144,7 +144,7 @@ export default function HowToPriceRetainerClientsUAE() {
               </div>
               <div className="border border-gray-200 rounded-xl p-4">
                 <p className="font-bold text-gray-900 text-sm mb-2">Step 3: Add a premium for predictability</p>
-                <p className="text-sm text-gray-700">
+                <p className="text-sm text-emerald-800">
                   You are giving the client priority access and guaranteed capacity. You are
                   also taking on the risk of slow months when the same work takes less time.
                   Add 15–25% to your project-equivalent pricing to account for this. A client
@@ -156,7 +156,7 @@ export default function HowToPriceRetainerClientsUAE() {
           </section>
 
           <section>
-            <h2 className="text-xl font-bold text-gray-900 mt-8 mb-3">UAE Freelancer Retainer Benchmarks by Discipline</h2>
+            <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2"><span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>UAE Freelancer Retainer Benchmarks by Discipline</h2>
             <div className="overflow-x-auto">
               <table className="w-full text-sm border-collapse">
                 <thead>
@@ -189,7 +189,7 @@ export default function HowToPriceRetainerClientsUAE() {
           </section>
 
           <section>
-            <h2 className="text-xl font-bold text-gray-900 mt-8 mb-3">The Retainer Contract: 5 Things to Define</h2>
+            <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2"><span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>The Retainer Contract: 5 Things to Define</h2>
             <ul className="space-y-1 text-sm text-gray-600 mt-3">
               <li>• <strong>Scope of work</strong> — Exactly what is included in the monthly fee. List deliverables or access terms explicitly. &quot;Unlimited revisions&quot; or &quot;all related work&quot; will destroy your economics.</li>
               <li>• <strong>What is not included</strong> — Equally important. &quot;Additional deliverables beyond the scope above will be quoted separately.&quot; UAE clients will push scope if this is unclear.</li>
@@ -200,7 +200,7 @@ export default function HowToPriceRetainerClientsUAE() {
           </section>
 
           <section>
-            <h2 className="text-xl font-bold text-gray-900 mt-8 mb-3">The Retainer Conversation (Word-for-Word Script)</h2>
+            <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2"><span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>The Retainer Conversation (Word-for-Word Script)</h2>
             <p>
               The easiest time to convert a project client to a retainer is immediately
               after a successful project delivery. Here is what to say:
@@ -223,8 +223,8 @@ export default function HowToPriceRetainerClientsUAE() {
           </section>
 
           {/* CTA */}
-          <div className="bg-gray-950 text-white rounded-2xl p-6 mt-10">
-            <p className="text-xs font-semibold text-gray-400 uppercase tracking-widest mb-2">Track your retainer clients</p>
+          <div className="bg-gradient-to-br from-gray-900 to-gray-800 text-white rounded-2xl p-8 mt-12 text-center">
+            <p className="text-xs font-bold text-emerald-400 uppercase tracking-widest block mb-3">Track your retainer clients</p>
             <h3 className="text-lg font-bold mb-2">Freelancer Client CRM — Manage Every Retainer & Project</h3>
             <p className="text-gray-400 text-sm mb-4">
               Track retainer deliverables, invoice dates, scope changes, and client
@@ -233,7 +233,7 @@ export default function HowToPriceRetainerClientsUAE() {
             </p>
             <Link
               href="/products/freelancer-client-crm"
-              className="inline-block bg-white text-gray-900 font-bold px-5 py-2.5 rounded-xl hover:bg-gray-100 transition-colors text-sm"
+              className="inline-block bg-emerald-500 hover:bg-emerald-400 text-white font-bold px-8 py-3 rounded-xl transition-colors text-sm"
             >
               Get the Client CRM →
             </Link>

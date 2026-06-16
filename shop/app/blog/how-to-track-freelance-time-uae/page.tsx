@@ -173,7 +173,7 @@ export default function HowToTrackFreelanceTimeUAE() {
                 { href: "/blog/how-to-handle-scope-creep-uae", label: "How to Handle Scope Creep as a UAE Freelancer" },
                 { href: "/blog/freelance-systems-uae", label: "Why UAE Freelancers Stay Stuck at AED 10K/Month" },
               ].map((link) => (
-                <Link key={link.href} href={link.href} className="block text-blue-600 hover:text-blue-800 text-sm">
+                <Link key={link.href} href={link.href} className="block text-emerald-700 hover:text-emerald-900 text-sm">
                   → {link.label}
                 </Link>
               ))}

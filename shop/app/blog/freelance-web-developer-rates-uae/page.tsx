@@ -69,7 +69,7 @@ export default function FreelanceWebDeveloperRatesUAE() {
         </div>
 
 
-        <div className="prose prose-gray max-w-none text-gray-700 leading-relaxed space-y-6">
+        <div className="space-y-6 leading-relaxed">
 
           <p>
             Web development remains one of the most in-demand freelance skills in the UAE.
@@ -81,8 +81,8 @@ export default function FreelanceWebDeveloperRatesUAE() {
             are the 2026 benchmarks.
           </p>
 
-          <div className="bg-gray-50 border border-gray-200 rounded-xl p-4 text-sm">
-            <p className="font-semibold text-gray-900 mb-1">Quick benchmark</p>
+          <div className="bg-emerald-50 border border-emerald-200 rounded-xl p-5">
+            <p className="text-sm font-bold text-emerald-800 mb-2">Quick benchmark</p>
             <p className="text-gray-700">
               A mid-level freelance web developer in Dubai with 4–7 years of experience
               in React/Next.js or Shopify customization typically charges
@@ -96,7 +96,7 @@ export default function FreelanceWebDeveloperRatesUAE() {
           </div>
 
           <section>
-            <h2 className="text-xl font-bold text-gray-900 mt-8 mb-4">Freelance Web Developer Rates in the UAE by Project Type (2026)</h2>
+            <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2"><span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>Freelance Web Developer Rates in the UAE by Project Type (2026)</h2>
             <p className="text-xs text-gray-400 mb-4">Junior: 0–3 years / Mid: 4–7 years / Senior: 8+ years or specialist</p>
             <div className="overflow-x-auto">
               <table className="w-full text-sm border-collapse">
@@ -123,7 +123,7 @@ export default function FreelanceWebDeveloperRatesUAE() {
           </section>
 
           <section>
-            <h2 className="text-xl font-bold text-gray-900 mt-8 mb-3">High-Value Web Development Niches in the UAE</h2>
+            <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2"><span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>High-Value Web Development Niches in the UAE</h2>
             <div className="space-y-3 mt-4">
               {[
                 { niche: "Fintech & DIFC-licensed platform development", rate: "AED 150,000–500,000+ per project", why: "DIFC and ADGM host a growing concentration of fintech, payments, and financial services startups. These clients require security-first development, compliance with financial authority requirements (DFSA, FSRA), and developers with understanding of financial product requirements. Hourly rates for fintech web development start at AED 500–800+/hour for senior developers." },
@@ -134,7 +134,7 @@ export default function FreelanceWebDeveloperRatesUAE() {
                 <div key={item.niche} className="border border-gray-200 rounded-xl p-4">
                   <div className="flex items-start justify-between gap-2 mb-1">
                     <p className="font-semibold text-gray-900 text-sm">{item.niche}</p>
-                    <span className="text-xs font-bold text-green-700 bg-green-50 px-2 py-0.5 rounded-full shrink-0">{item.rate}</span>
+                    <span className="text-xs font-bold text-emerald-700 bg-emerald-50 border border-emerald-200 px-2 py-0.5 rounded-full shrink-0">{item.rate}</span>
                   </div>
                   <p className="text-xs text-gray-600">{item.why}</p>
                 </div>
@@ -143,11 +143,11 @@ export default function FreelanceWebDeveloperRatesUAE() {
           </section>
 
           <section>
-            <h2 className="text-xl font-bold text-gray-900 mt-8 mb-3">How to Price Web Development Projects in the UAE</h2>
+            <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2"><span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>How to Price Web Development Projects in the UAE</h2>
             <div className="space-y-3 mt-4">
               <div className="border border-gray-200 rounded-xl p-4">
                 <p className="font-bold text-gray-900 text-sm mb-2">Fixed project fee (preferred for most web builds)</p>
-                <p className="text-sm text-gray-700">
+                <p className="text-sm text-emerald-800">
                   UAE clients prefer fixed quotes — they want to know the total cost
                   upfront. Itemize your quote by phase: Discovery & wireframing, Design,
                   Development, Testing, and Launch. Split payment across milestones:
@@ -158,7 +158,7 @@ export default function FreelanceWebDeveloperRatesUAE() {
               </div>
               <div className="border border-gray-200 rounded-xl p-4">
                 <p className="font-bold text-gray-900 text-sm mb-2">Hourly rate (troubleshooting and consultation)</p>
-                <p className="text-sm text-gray-700">
+                <p className="text-sm text-emerald-800">
                   For existing site work, bug fixes, and advisory work, an hourly rate
                   is appropriate. Track time meticulously — UAE clients sometimes dispute
                   hourly invoices if they do not understand what was worked on. Time-tracking
@@ -168,7 +168,7 @@ export default function FreelanceWebDeveloperRatesUAE() {
               </div>
               <div className="border border-gray-200 rounded-xl p-4">
                 <p className="font-bold text-gray-900 text-sm mb-2">Monthly retainer (maintenance + ongoing development)</p>
-                <p className="text-sm text-gray-700">
+                <p className="text-sm text-emerald-800">
                   The most sustainable model for web developers. After a site launch,
                   most businesses need ongoing security updates, content changes, feature
                   additions, and performance monitoring. A AED 3,000–8,000/month
@@ -180,7 +180,7 @@ export default function FreelanceWebDeveloperRatesUAE() {
           </section>
 
           <section>
-            <h2 className="text-xl font-bold text-gray-900 mt-8 mb-3">UAE-Specific Technical Considerations</h2>
+            <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2"><span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>UAE-Specific Technical Considerations</h2>
             <ul className="space-y-1 text-sm text-gray-600 mt-3">
               <li>• <strong>Arabic/RTL support</strong> — Any UAE website with Arabic content needs genuine RTL layout (not just text direction). Tailwind CSS has RTL utilities; WordPress requires RTL-compatible themes. Testing with Arabic content is mandatory before delivery</li>
               <li>• <strong>UAE payment gateway integration</strong> — Stripe UAE, Telr, PayTabs, Network International, and PayFort (Amazon Payment Services) are the primary UAE gateways. Different from Western markets — factor integration time into your quote</li>
@@ -191,8 +191,8 @@ export default function FreelanceWebDeveloperRatesUAE() {
           </section>
 
           {/* CTA */}
-          <div className="bg-gray-950 text-white rounded-2xl p-6 mt-10">
-            <p className="text-xs font-semibold text-gray-400 uppercase tracking-widest mb-2">Manage your web projects</p>
+          <div className="bg-gradient-to-br from-gray-900 to-gray-800 text-white rounded-2xl p-8 mt-12 text-center">
+            <p className="text-xs font-bold text-emerald-400 uppercase tracking-widest block mb-3">Manage your web projects</p>
             <h3 className="text-lg font-bold mb-2">Freelancer Client CRM — Track Every Project & Invoice</h3>
             <p className="text-gray-400 text-sm mb-4">
               Track web development projects from brief to launch, manage milestones and
@@ -201,7 +201,7 @@ export default function FreelanceWebDeveloperRatesUAE() {
             </p>
             <Link
               href="/products/freelancer-client-crm"
-              className="inline-block bg-white text-gray-900 font-bold px-5 py-2.5 rounded-xl hover:bg-gray-100 transition-colors text-sm"
+              className="inline-block bg-emerald-500 hover:bg-emerald-400 text-white font-bold px-8 py-3 rounded-xl transition-colors text-sm"
             >
               Get the Client CRM →
             </Link>

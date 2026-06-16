@@ -182,7 +182,7 @@ export default function HowToBuildFreelanceAuthorityUAE() {
                 { href: "/blog/how-to-get-speaking-engagements-uae", label: "How to Get Speaking Engagements as a UAE Freelancer" },
                 { href: "/blog/how-to-write-linkedin-content-uae", label: "How to Write LinkedIn Content That Gets Results" },
               ].map((link) => (
-                <Link key={link.href} href={link.href} className="block text-blue-600 hover:text-blue-800 text-sm">
+                <Link key={link.href} href={link.href} className="block text-emerald-700 hover:text-emerald-900 text-sm">
                   → {link.label}
                 </Link>
               ))}

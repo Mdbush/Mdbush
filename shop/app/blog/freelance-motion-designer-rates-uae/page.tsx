@@ -69,7 +69,7 @@ export default function FreelanceMotionDesignerRatesUAE() {
         </div>
 
 
-        <div className="prose prose-gray max-w-none text-gray-700 leading-relaxed space-y-6">
+        <div className="space-y-6 leading-relaxed">
 
           <p>
             Motion design is one of the most in-demand creative specializations in the UAE.
@@ -80,8 +80,8 @@ export default function FreelanceMotionDesignerRatesUAE() {
             communications, and broadcast. Here are the 2026 benchmarks.
           </p>
 
-          <div className="bg-gray-50 border border-gray-200 rounded-xl p-4 text-sm">
-            <p className="font-semibold text-gray-900 mb-1">Quick benchmark</p>
+          <div className="bg-emerald-50 border border-emerald-200 rounded-xl p-5">
+            <p className="text-sm font-bold text-emerald-800 mb-2">Quick benchmark</p>
             <p className="text-gray-700">
               A mid-level freelance motion designer in the UAE with 3–6 years of experience
               typically earns <strong>AED 20,000–40,000/month</strong>. Senior motion designers
@@ -91,7 +91,7 @@ export default function FreelanceMotionDesignerRatesUAE() {
           </div>
 
           <section>
-            <h2 className="text-xl font-bold text-gray-900 mt-8 mb-4">Freelance Motion Design Rates in the UAE by Service Type (2026)</h2>
+            <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2"><span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>Freelance Motion Design Rates in the UAE by Service Type (2026)</h2>
             <p className="text-xs text-gray-400 mb-4">Junior: 0–2 years / Mid: 3–6 years / Senior: 7+ years or specialist (3D/broadcast/luxury)</p>
             <div className="overflow-x-auto">
               <table className="w-full text-sm border-collapse">
@@ -118,7 +118,7 @@ export default function FreelanceMotionDesignerRatesUAE() {
           </section>
 
           <section>
-            <h2 className="text-xl font-bold text-gray-900 mt-8 mb-3">High-Value Motion Design Niches in the UAE</h2>
+            <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2"><span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>High-Value Motion Design Niches in the UAE</h2>
             <div className="space-y-3 mt-4">
               {[
                 { niche: "Luxury brand & hospitality animation", rate: "AED 20,000–55,000+ per project", why: "Dubai's luxury market — hotels, watches, jewelry, real estate — has high visual standards and substantial production budgets. Stunning motion work for premium brands commands premium rates." },
@@ -130,7 +130,7 @@ export default function FreelanceMotionDesignerRatesUAE() {
                 <div key={item.niche} className="border border-gray-200 rounded-xl p-4">
                   <div className="flex items-start justify-between gap-2 mb-1">
                     <p className="font-semibold text-gray-900 text-sm">{item.niche}</p>
-                    <span className="text-xs font-bold text-green-700 bg-green-50 px-2 py-0.5 rounded-full shrink-0">{item.rate}</span>
+                    <span className="text-xs font-bold text-emerald-700 bg-emerald-50 border border-emerald-200 px-2 py-0.5 rounded-full shrink-0">{item.rate}</span>
                   </div>
                   <p className="text-xs text-gray-600">{item.why}</p>
                 </div>
@@ -139,7 +139,7 @@ export default function FreelanceMotionDesignerRatesUAE() {
           </section>
 
           <section>
-            <h2 className="text-xl font-bold text-gray-900 mt-8 mb-3">Tools UAE Motion Design Clients Expect</h2>
+            <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2"><span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>Tools UAE Motion Design Clients Expect</h2>
             <ul className="space-y-1 text-sm text-gray-600 mt-3">
               <li><strong>Adobe After Effects:</strong> Industry standard — non-negotiable for professional motion design work</li>
               <li><strong>Cinema 4D / Blender:</strong> 3D animation and product visualization — C4D is industry standard for broadcast, Blender increasingly accepted for product/arch viz</li>
@@ -152,7 +152,7 @@ export default function FreelanceMotionDesignerRatesUAE() {
           </section>
 
           <section>
-            <h2 className="text-xl font-bold text-gray-900 mt-8 mb-3">Project vs Retainer: Which Earns More?</h2>
+            <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2"><span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>Project vs Retainer: Which Earns More?</h2>
             <p>
               For motion designers, retainers are significantly more valuable than project
               work over time. A monthly retainer of AED 12,000 for 4 reels/month locks in
@@ -169,8 +169,8 @@ export default function FreelanceMotionDesignerRatesUAE() {
           </section>
 
           {/* CTA */}
-          <div className="bg-gray-950 text-white rounded-2xl p-6 mt-10">
-            <p className="text-xs font-semibold text-gray-400 uppercase tracking-widest mb-2">Price your creative work correctly</p>
+          <div className="bg-gradient-to-br from-gray-900 to-gray-800 text-white rounded-2xl p-8 mt-12 text-center">
+            <p className="text-xs font-bold text-emerald-400 uppercase tracking-widest block mb-3">Price your creative work correctly</p>
             <h3 className="text-lg font-bold mb-2">How to Price Yourself as a Freelancer in the UAE: The Complete System</h3>
             <p className="text-gray-400 text-sm mb-4">
               Floor rate formula, project vs retainer pricing models, and how to present
@@ -178,7 +178,7 @@ export default function FreelanceMotionDesignerRatesUAE() {
             </p>
             <Link
               href="/blog/how-to-price-yourself-as-freelancer-uae"
-              className="inline-block bg-white text-gray-900 font-bold px-5 py-2.5 rounded-xl hover:bg-gray-100 transition-colors text-sm"
+              className="inline-block bg-emerald-500 hover:bg-emerald-400 text-white font-bold px-8 py-3 rounded-xl transition-colors text-sm"
             >
               Read the Pricing System →
             </Link>

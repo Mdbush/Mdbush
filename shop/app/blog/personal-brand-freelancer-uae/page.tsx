@@ -110,7 +110,7 @@ export default function PersonalBrandFreelancerUAE() {
             </div>
             <div className="border border-emerald-200 rounded-xl p-5">
               <h3 className="font-semibold text-emerald-700 mb-2 text-sm">Strong positioning</h3>
-              <p className="text-sm text-gray-700">&ldquo;I help UAE real estate developers create pitch decks and marketing materials that close investors.&rdquo;</p>
+              <p className="text-sm text-emerald-800">&ldquo;I help UAE real estate developers create pitch decks and marketing materials that close investors.&rdquo;</p>
               <p className="text-sm text-gray-700 mt-2">&ldquo;I run paid social campaigns for UAE F&B brands, specializing in getting their first 10,000 followers and first AED 100K in online revenue.&rdquo;</p>
             </div>
           </div>
@@ -265,10 +265,10 @@ export default function PersonalBrandFreelancerUAE() {
           <div className="mt-10">
             <h3 className="text-sm font-semibold text-gray-900 mb-3">Related Guides</h3>
             <div className="space-y-1.5">
-              <Link href="/blog/freelance-linkedin-profile-uae" className="block text-blue-600 hover:text-blue-800 text-sm">→ How to Optimize Your LinkedIn Profile as a UAE Freelancer</Link>
-              <Link href="/blog/how-to-get-clients-linkedin-uae" className="block text-blue-600 hover:text-blue-800 text-sm">→ How to Get Clients on LinkedIn in the UAE</Link>
-              <Link href="/blog/get-freelance-clients-uae" className="block text-blue-600 hover:text-blue-800 text-sm">→ How to Get Freelance Clients in the UAE (6 Strategies)</Link>
-              <Link href="/blog/how-to-get-international-clients-uae" className="block text-blue-600 hover:text-blue-800 text-sm">→ How to Get International Clients as a UAE Freelancer</Link>
+              <Link href="/blog/freelance-linkedin-profile-uae" className="block text-emerald-700 hover:text-emerald-900 text-sm">→ How to Optimize Your LinkedIn Profile as a UAE Freelancer</Link>
+              <Link href="/blog/how-to-get-clients-linkedin-uae" className="block text-emerald-700 hover:text-emerald-900 text-sm">→ How to Get Clients on LinkedIn in the UAE</Link>
+              <Link href="/blog/get-freelance-clients-uae" className="block text-emerald-700 hover:text-emerald-900 text-sm">→ How to Get Freelance Clients in the UAE (6 Strategies)</Link>
+              <Link href="/blog/how-to-get-international-clients-uae" className="block text-emerald-700 hover:text-emerald-900 text-sm">→ How to Get International Clients as a UAE Freelancer</Link>
             </div>
           </div>
         </div>

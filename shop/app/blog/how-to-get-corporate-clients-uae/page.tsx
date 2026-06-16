@@ -58,7 +58,7 @@ export default function HowToGetCorporateClientsUAE() {
         </div>
 
 
-        <div className="prose prose-gray max-w-none text-gray-700 leading-relaxed space-y-6">
+        <div className="space-y-6 leading-relaxed">
 
           <p>
             A single corporate client in the UAE — a bank, a government entity, a multinational
@@ -69,8 +69,8 @@ export default function HowToGetCorporateClientsUAE() {
             help freelancers get in. Here&apos;s how to navigate that firewall in the UAE market.
           </p>
 
-          <div className="bg-gray-50 border border-gray-200 rounded-xl p-4 text-sm">
-            <p className="font-semibold text-gray-900 mb-1">Corporate client reality check</p>
+          <div className="bg-emerald-50 border border-emerald-200 rounded-xl p-5">
+            <p className="text-sm font-bold text-emerald-800 mb-2">Corporate client reality check</p>
             <p className="text-gray-700">
               Corporate procurement cycles in the UAE run 30–180 days from first contact
               to first invoice. Enterprise clients do not make fast decisions.
@@ -82,7 +82,7 @@ export default function HowToGetCorporateClientsUAE() {
           </div>
 
           <section>
-            <h2 className="text-xl font-bold text-gray-900 mt-8 mb-3">Which Corporate Clients to Target in the UAE</h2>
+            <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2"><span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>Which Corporate Clients to Target in the UAE</h2>
             <div className="space-y-3 mt-4">
               {[
                 { type: "DIFC-licensed financial services firms", why: "DIFC is home to 5,800+ registered companies including major global banks, investment firms, and fintech companies. These firms operate on international budgets and quality standards. Key buyers: Marketing Directors, Head of Communications, CMOs. Best for: creative services, copywriting, PR, digital marketing, compliance training content, video production.", budget: "AED 20,000–500,000+ per project" },
@@ -94,7 +94,7 @@ export default function HowToGetCorporateClientsUAE() {
                 <div key={item.type} className="border border-gray-200 rounded-xl p-4">
                   <div className="flex items-start justify-between gap-2 mb-1">
                     <p className="font-semibold text-gray-900 text-sm">{item.type}</p>
-                    <span className="text-xs font-bold text-green-700 bg-green-50 px-2 py-0.5 rounded-full shrink-0">{item.budget}</span>
+                    <span className="text-xs font-bold text-emerald-700 bg-emerald-50 border border-emerald-200 px-2 py-0.5 rounded-full shrink-0">{item.budget}</span>
                   </div>
                   <p className="text-xs text-gray-600">{item.why}</p>
                 </div>
@@ -103,7 +103,7 @@ export default function HowToGetCorporateClientsUAE() {
           </section>
 
           <section>
-            <h2 className="text-xl font-bold text-gray-900 mt-8 mb-3">How to Get in Front of Corporate Decision-Makers</h2>
+            <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2"><span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>How to Get in Front of Corporate Decision-Makers</h2>
             <ul className="space-y-2 text-sm text-gray-600 mt-3">
               <li>• <strong>LinkedIn is your primary channel</strong> — Most UAE corporate marketing and communications heads are on LinkedIn. Connect with relevant decision-makers at target organisations, comment thoughtfully on their posts, and share content that demonstrates your expertise in their specific industry. Do not send generic LinkedIn InMail pitches — they are ignored. Build presence over weeks before any direct outreach</li>
               <li>• <strong>Agency partnerships (the fastest path in)</strong> — Creative, PR, and marketing agencies already have existing corporate client relationships. Positioning yourself as a specialist partner to agencies means you get access to their client roster. Agencies often need specialist freelancers they trust for overflow work, language capability (Arabic), or niche expertise. Be easy to work with and turn briefs around fast — agencies pay faster than corporates and refer you onwards</li>
@@ -114,7 +114,7 @@ export default function HowToGetCorporateClientsUAE() {
           </section>
 
           <section>
-            <h2 className="text-xl font-bold text-gray-900 mt-8 mb-3">What Corporate Clients Need Before They Can Hire You</h2>
+            <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2"><span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>What Corporate Clients Need Before They Can Hire You</h2>
             <p className="text-sm text-gray-600 mb-3">
               Corporate procurement requires documentation that most freelancers don&apos;t have ready.
               Prepare these before you start pursuing enterprise clients:
@@ -129,7 +129,7 @@ export default function HowToGetCorporateClientsUAE() {
           </section>
 
           <section>
-            <h2 className="text-xl font-bold text-gray-900 mt-8 mb-3">Structuring Corporate Proposals</h2>
+            <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2"><span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>Structuring Corporate Proposals</h2>
             <p className="text-sm text-gray-600 mb-3">
               Corporate proposals differ from SME proposals. They need:
             </p>
@@ -144,8 +144,8 @@ export default function HowToGetCorporateClientsUAE() {
           </section>
 
           {/* CTA */}
-          <div className="bg-gray-950 text-white rounded-2xl p-6 mt-10">
-            <p className="text-xs font-semibold text-gray-400 uppercase tracking-widest mb-2">Win more corporate clients</p>
+          <div className="bg-gradient-to-br from-gray-900 to-gray-800 text-white rounded-2xl p-8 mt-12 text-center">
+            <p className="text-xs font-bold text-emerald-400 uppercase tracking-widest block mb-3">Win more corporate clients</p>
             <h3 className="text-lg font-bold mb-2">Freelancer Client CRM — Track Every Lead & Proposal</h3>
             <p className="text-gray-400 text-sm mb-4">
               Track your corporate pipeline, log every touchpoint, manage proposal
@@ -154,7 +154,7 @@ export default function HowToGetCorporateClientsUAE() {
             </p>
             <Link
               href="/products/freelancer-client-crm"
-              className="inline-block bg-white text-gray-900 font-bold px-5 py-2.5 rounded-xl hover:bg-gray-100 transition-colors text-sm"
+              className="inline-block bg-emerald-500 hover:bg-emerald-400 text-white font-bold px-8 py-3 rounded-xl transition-colors text-sm"
             >
               Get the Client CRM →
             </Link>

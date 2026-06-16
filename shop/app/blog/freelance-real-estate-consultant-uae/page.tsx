@@ -69,7 +69,7 @@ export default function FreelanceRealEstateConsultantUAE() {
         </div>
 
 
-        <div className="prose prose-gray max-w-none text-gray-700 leading-relaxed space-y-6">
+        <div className="space-y-6 leading-relaxed">
 
           <p>
             Dubai is one of the world&apos;s most active real estate markets. Record transaction
@@ -80,8 +80,8 @@ export default function FreelanceRealEstateConsultantUAE() {
             commission rates and fee benchmarks for freelance property consultants in the UAE.
           </p>
 
-          <div className="bg-gray-50 border border-gray-200 rounded-xl p-4 text-sm">
-            <p className="font-semibold text-gray-900 mb-1">Quick benchmark</p>
+          <div className="bg-emerald-50 border border-emerald-200 rounded-xl p-5">
+            <p className="text-sm font-bold text-emerald-800 mb-2">Quick benchmark</p>
             <p className="text-gray-700">
               A mid-level independent real estate consultant in Dubai specializing in
               off-plan sales typically earns <strong>3–5% commission per transaction</strong>.
@@ -92,7 +92,7 @@ export default function FreelanceRealEstateConsultantUAE() {
           </div>
 
           <section>
-            <h2 className="text-xl font-bold text-gray-900 mt-8 mb-4">Real Estate Commission & Fee Structure in the UAE (2026)</h2>
+            <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2"><span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>Real Estate Commission & Fee Structure in the UAE (2026)</h2>
             <div className="overflow-x-auto">
               <table className="w-full text-sm border-collapse">
                 <thead>
@@ -116,7 +116,7 @@ export default function FreelanceRealEstateConsultantUAE() {
           </section>
 
           <section>
-            <h2 className="text-xl font-bold text-gray-900 mt-8 mb-3">Operating as an Independent Real Estate Consultant in the UAE</h2>
+            <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2"><span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>Operating as an Independent Real Estate Consultant in the UAE</h2>
             <p>
               Independent real estate consultants in the UAE typically operate in one of
               two ways:
@@ -124,7 +124,7 @@ export default function FreelanceRealEstateConsultantUAE() {
             <div className="space-y-3 mt-4">
               <div className="border border-gray-200 rounded-xl p-4">
                 <p className="font-bold text-gray-900 text-sm mb-2">Registered under a brokerage (most common)</p>
-                <p className="text-sm text-gray-700">
+                <p className="text-sm text-emerald-800">
                   RERA (Real Estate Regulatory Agency in Dubai) requires all real estate brokers
                   to be registered under a licensed brokerage firm. As an independent, you register
                   as a broker under a parent brokerage and operate on a commission split — typically
@@ -135,7 +135,7 @@ export default function FreelanceRealEstateConsultantUAE() {
               </div>
               <div className="border border-gray-200 rounded-xl p-4">
                 <p className="font-bold text-gray-900 text-sm mb-2">Own real estate brokerage license</p>
-                <p className="text-sm text-gray-700">
+                <p className="text-sm text-emerald-800">
                   Establishing your own DLD-licensed brokerage requires a real estate company trade
                   license (DED), RERA brokerage registration, a physical office in Dubai, and a
                   minimum share capital. Setup costs: AED 15,000–30,000 in government fees plus
@@ -146,7 +146,7 @@ export default function FreelanceRealEstateConsultantUAE() {
               </div>
               <div className="border border-gray-200 rounded-xl p-4">
                 <p className="font-bold text-gray-900 text-sm mb-2">Property investment advisor (consulting model)</p>
-                <p className="text-sm text-gray-700">
+                <p className="text-sm text-emerald-800">
                   Some independent real estate professionals position themselves as investment
                   advisors rather than agents — charging a fixed advisory fee for research,
                   shortlisting, and recommendation, regardless of whether a transaction occurs.
@@ -159,7 +159,7 @@ export default function FreelanceRealEstateConsultantUAE() {
           </section>
 
           <section>
-            <h2 className="text-xl font-bold text-gray-900 mt-8 mb-3">High-Value Real Estate Niches for Independents</h2>
+            <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2"><span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>High-Value Real Estate Niches for Independents</h2>
             <div className="space-y-3 mt-4">
               {[
                 { niche: "Ultra-luxury residential (Palm Jumeirah, Emirates Hills, DIFC)", rate: "2–3% on transactions of AED 10M–200M+", why: "A single ultra-luxury villa sale at AED 30M at 2.5% generates AED 750,000 in commission. Requires strong UHNW buyer relationships, extreme discretion, and often Arabic or Russian language ability. Very high barrier to entry — very high reward." },
@@ -170,7 +170,7 @@ export default function FreelanceRealEstateConsultantUAE() {
                 <div key={item.niche} className="border border-gray-200 rounded-xl p-4">
                   <div className="flex items-start justify-between gap-2 mb-1">
                     <p className="font-semibold text-gray-900 text-sm">{item.niche}</p>
-                    <span className="text-xs font-bold text-green-700 bg-green-50 px-2 py-0.5 rounded-full shrink-0">{item.rate}</span>
+                    <span className="text-xs font-bold text-emerald-700 bg-emerald-50 border border-emerald-200 px-2 py-0.5 rounded-full shrink-0">{item.rate}</span>
                   </div>
                   <p className="text-xs text-gray-600">{item.why}</p>
                 </div>
@@ -179,7 +179,7 @@ export default function FreelanceRealEstateConsultantUAE() {
           </section>
 
           <section>
-            <h2 className="text-xl font-bold text-gray-900 mt-8 mb-3">RERA Registration & Compliance Requirements</h2>
+            <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2"><span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>RERA Registration & Compliance Requirements</h2>
             <ul className="space-y-1 text-sm text-gray-600 mt-3">
               <li>• <strong>RERA Certified Training Course</strong> — 4-day mandatory training for all new real estate brokers in Dubai. Covers Dubai property laws, broker ethics, transaction processes</li>
               <li>• <strong>RERA Broker Registration Card</strong> — Annual renewal at approximately AED 5,100. Required to transact Dubai real estate legally</li>
@@ -190,8 +190,8 @@ export default function FreelanceRealEstateConsultantUAE() {
           </section>
 
           {/* CTA */}
-          <div className="bg-gray-950 text-white rounded-2xl p-6 mt-10">
-            <p className="text-xs font-semibold text-gray-400 uppercase tracking-widest mb-2">Manage your real estate clients</p>
+          <div className="bg-gradient-to-br from-gray-900 to-gray-800 text-white rounded-2xl p-8 mt-12 text-center">
+            <p className="text-xs font-bold text-emerald-400 uppercase tracking-widest block mb-3">Manage your real estate clients</p>
             <h3 className="text-lg font-bold mb-2">Freelancer Client CRM — Track Every Client, Lead & Deal</h3>
             <p className="text-gray-400 text-sm mb-4">
               Manage property leads, track transaction pipelines, log client communications,
@@ -199,7 +199,7 @@ export default function FreelanceRealEstateConsultantUAE() {
             </p>
             <Link
               href="/products/freelancer-client-crm"
-              className="inline-block bg-white text-gray-900 font-bold px-5 py-2.5 rounded-xl hover:bg-gray-100 transition-colors text-sm"
+              className="inline-block bg-emerald-500 hover:bg-emerald-400 text-white font-bold px-8 py-3 rounded-xl transition-colors text-sm"
             >
               Get the Client CRM →
             </Link>

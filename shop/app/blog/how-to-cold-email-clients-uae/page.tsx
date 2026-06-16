@@ -117,7 +117,7 @@ export default function HowToColdEmailClientsUAE() {
         </div>
 
 
-        <div className="prose prose-gray max-w-none text-gray-700 leading-relaxed space-y-6">
+        <div className="space-y-6 leading-relaxed">
 
           <p>
             Cold email is the most scalable client acquisition method available to UAE freelancers.
@@ -140,7 +140,7 @@ export default function HowToColdEmailClientsUAE() {
           </div>
 
           <section>
-            <h2 className="text-xl font-bold text-gray-900 mt-8 mb-3">What Makes UAE Cold Emails Different</h2>
+            <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2"><span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>What Makes UAE Cold Emails Different</h2>
             <ul className="space-y-2 text-sm text-gray-600 mt-3">
               <li>• <strong>WhatsApp is often preferred over email:</strong> After your email generates interest, many UAE executives prefer to switch to WhatsApp. Include your number in the email signature — it signals local presence.</li>
               <li>• <strong>Decision-makers are more accessible:</strong> UAE companies tend to be flatter than their Western counterparts. The CEO of a 50-person company is reachable by direct email in a way that would be unusual in the UK or US.</li>
@@ -151,7 +151,7 @@ export default function HowToColdEmailClientsUAE() {
           </section>
 
           <section>
-            <h2 className="text-xl font-bold text-gray-900 mt-8 mb-3">The Anatomy of a High-Converting UAE Cold Email</h2>
+            <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2"><span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>The Anatomy of a High-Converting UAE Cold Email</h2>
             <div className="space-y-3 mt-4">
               {[
                 { element: "Subject line", rule: "Specific, not clever. Reference their company name, industry, or a specific situation. Avoid: 'Partnership opportunity' or 'Quick question'. Use: 'Re: [Company]'s [specific thing]' or '[Industry problem] — solution that worked for [similar company]'" },
@@ -169,7 +169,7 @@ export default function HowToColdEmailClientsUAE() {
           </section>
 
           <section>
-            <h2 className="text-xl font-bold text-gray-900 mt-8 mb-3">4 Cold Email Templates (Copy-Paste)</h2>
+            <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2"><span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>4 Cold Email Templates (Copy-Paste)</h2>
             <div className="space-y-5 mt-4">
               {templates.map((t) => (
                 <div key={t.label} className="border border-gray-200 rounded-2xl p-5">
@@ -185,7 +185,7 @@ export default function HowToColdEmailClientsUAE() {
           </section>
 
           <section>
-            <h2 className="text-xl font-bold text-gray-900 mt-8 mb-3">The Follow-Up Sequence</h2>
+            <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2"><span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>The Follow-Up Sequence</h2>
             <p>
               80% of positive replies come after the first follow-up. Most freelancers give
               up after one email. Here is a 3-touch sequence that is assertive without being
@@ -199,15 +199,15 @@ export default function HowToColdEmailClientsUAE() {
                 { day: "Day 21", action: "Break-up email: 'I'll stop following up after this. If the timing is ever right for [outcome you provide], I'm [your name] at [email].' This generates more replies than any other follow-up in the sequence." },
               ].map((step) => (
                 <div key={step.day} className="flex gap-4 border border-gray-200 rounded-xl p-4">
-                  <span className="text-xs font-bold text-blue-700 bg-blue-50 px-2 py-1 rounded-lg shrink-0 h-fit">{step.day}</span>
-                  <p className="text-sm text-gray-700">{step.action}</p>
+                  <span className="text-xs font-bold text-blue-700 bg-emerald-50 px-2 py-1 rounded-lg shrink-0 h-fit">{step.day}</span>
+                  <p className="text-sm text-emerald-800">{step.action}</p>
                 </div>
               ))}
             </div>
           </section>
 
           <section>
-            <h2 className="text-xl font-bold text-gray-900 mt-8 mb-3">Where to Find UAE Decision-Maker Emails</h2>
+            <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2"><span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>Where to Find UAE Decision-Maker Emails</h2>
             <ul className="space-y-2 text-sm text-gray-600 mt-3">
               <li>• <strong>LinkedIn Sales Navigator:</strong> Paid but the most accurate source for UAE decision-maker profiles and company intelligence</li>
               <li>• <strong>Apollo.io / Hunter.io:</strong> Email finding tools. Verify all emails before sending — bounce rates above 5% hurt your domain reputation</li>
@@ -218,8 +218,8 @@ export default function HowToColdEmailClientsUAE() {
           </section>
 
           {/* CTA */}
-          <div className="bg-gray-950 text-white rounded-2xl p-6 mt-10">
-            <p className="text-xs font-semibold text-gray-400 uppercase tracking-widest mb-2">Get copy-paste email templates</p>
+          <div className="bg-gradient-to-br from-gray-900 to-gray-800 text-white rounded-2xl p-8 mt-12 text-center">
+            <p className="text-xs font-bold text-emerald-400 uppercase tracking-widest block mb-3">Get copy-paste email templates</p>
             <h3 className="text-lg font-bold mb-2">Freelance Email Templates for UAE Clients (Copy-Paste)</h3>
             <p className="text-gray-400 text-sm mb-4">
               10 done-for-you email templates — follow-ups, proposals, invoices, and client
@@ -227,7 +227,7 @@ export default function HowToColdEmailClientsUAE() {
             </p>
             <Link
               href="/blog/freelance-email-templates-uae"
-              className="inline-block bg-white text-gray-900 font-bold px-5 py-2.5 rounded-xl hover:bg-gray-100 transition-colors text-sm"
+              className="inline-block bg-emerald-500 hover:bg-emerald-400 text-white font-bold px-8 py-3 rounded-xl transition-colors text-sm"
             >
               Get the Email Templates →
             </Link>

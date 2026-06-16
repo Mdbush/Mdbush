@@ -167,7 +167,7 @@ export default function HowToManageClientFeedbackRoundsUAE() {
                 { href: "/blog/how-to-manage-client-expectations-uae", label: "How to Manage Client Expectations as a UAE Freelancer" },
                 { href: "/blog/freelance-contract-template-uae", label: "Freelance Contract: 9 Clauses You Must Include" },
               ].map((link) => (
-                <Link key={link.href} href={link.href} className="block text-blue-600 hover:text-blue-800 text-sm">
+                <Link key={link.href} href={link.href} className="block text-emerald-700 hover:text-emerald-900 text-sm">
                   → {link.label}
                 </Link>
               ))}

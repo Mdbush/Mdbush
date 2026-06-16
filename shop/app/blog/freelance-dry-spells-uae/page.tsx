@@ -101,7 +101,7 @@ export default function FreelanceDrySpellsUAE() {
         </div>
 
 
-        <div className="prose prose-gray max-w-none text-gray-700 leading-relaxed space-y-6">
+        <div className="space-y-6 leading-relaxed">
 
           <p>
             Every freelancer hits periods of quiet. Projects end, clients pause, seasons shift.
@@ -116,7 +116,7 @@ export default function FreelanceDrySpellsUAE() {
           </p>
 
           <section>
-            <h2 className="text-xl font-bold text-gray-900 mt-8 mb-3">Why UAE Freelancers Hit Dry Spells</h2>
+            <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2"><span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>Why UAE Freelancers Hit Dry Spells</h2>
             <ul className="space-y-2 text-sm text-gray-600 mt-3">
               <li><strong>Ramadan slowdown:</strong> Decision-making slows significantly. Projects that would normally take 2 weeks to approve take 6.</li>
               <li><strong>Summer exodus:</strong> Many UAE clients and decision-makers travel for 4–8 weeks in July–August. New projects pause.</li>
@@ -127,7 +127,7 @@ export default function FreelanceDrySpellsUAE() {
           </section>
 
           <section>
-            <h2 className="text-xl font-bold text-gray-900 mt-8 mb-3">The First Thing to Do: Check Your Runway</h2>
+            <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2"><span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>The First Thing to Do: Check Your Runway</h2>
             <p>
               Before doing anything else, calculate your cash runway — how many months you can cover
               your fixed costs at zero income. This number determines your response mode.
@@ -148,7 +148,7 @@ export default function FreelanceDrySpellsUAE() {
           </section>
 
           <section>
-            <h2 className="text-xl font-bold text-gray-900 mt-8 mb-3">The 30-Day Dry Spell Recovery Plan</h2>
+            <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2"><span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>The 30-Day Dry Spell Recovery Plan</h2>
             <div className="space-y-5 mt-4">
               {actions.map((phase) => (
                 <div key={phase.day} className="border border-gray-200 rounded-2xl p-5">
@@ -170,7 +170,7 @@ export default function FreelanceDrySpellsUAE() {
           </section>
 
           <section>
-            <h2 className="text-xl font-bold text-gray-900 mt-8 mb-3">Scripts for Reactivating Past Clients</h2>
+            <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2"><span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>Scripts for Reactivating Past Clients</h2>
             <p className="text-sm text-gray-500 mb-4">These work because they are genuine — not sales messages.</p>
 
             <div className="space-y-4">
@@ -194,7 +194,7 @@ export default function FreelanceDrySpellsUAE() {
           </section>
 
           <section>
-            <h2 className="text-xl font-bold text-gray-900 mt-8 mb-3">What Not to Do During a Dry Spell</h2>
+            <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2"><span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>What Not to Do During a Dry Spell</h2>
             <ul className="space-y-2 text-sm text-gray-600 mt-3">
               <li><strong>Do not slash your rates:</strong> Desperation pricing attracts the wrong clients and devalues your work. A limited-time availability offer is different from a permanent rate cut.</li>
               <li><strong>Do not go quiet on social media:</strong> The dry spell is precisely when you need visibility. Stay active even when you have nothing to announce.</li>
@@ -204,7 +204,7 @@ export default function FreelanceDrySpellsUAE() {
           </section>
 
           <section>
-            <h2 className="text-xl font-bold text-gray-900 mt-8 mb-3">How to Prevent the Next Dry Spell</h2>
+            <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2"><span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>How to Prevent the Next Dry Spell</h2>
             <p>
               The best dry spell strategy is prevention. That means:
             </p>
@@ -218,8 +218,8 @@ export default function FreelanceDrySpellsUAE() {
           </section>
 
           {/* CTA */}
-          <div className="bg-gray-950 text-white rounded-2xl p-6 mt-10">
-            <p className="text-xs font-semibold text-gray-400 uppercase tracking-widest mb-2">Build the financial buffer that changes everything</p>
+          <div className="bg-gradient-to-br from-gray-900 to-gray-800 text-white rounded-2xl p-8 mt-12 text-center">
+            <p className="text-xs font-bold text-emerald-400 uppercase tracking-widest block mb-3">Build the financial buffer that changes everything</p>
             <h3 className="text-lg font-bold mb-2">Financial Planning for UAE Freelancers</h3>
             <p className="text-gray-400 text-sm mb-4">
               No pension, no employer safety net. Here is how UAE freelancers build the
@@ -228,7 +228,7 @@ export default function FreelanceDrySpellsUAE() {
             </p>
             <Link
               href="/blog/freelance-financial-planning-uae"
-              className="inline-block bg-white text-gray-900 font-bold px-5 py-2.5 rounded-xl hover:bg-gray-100 transition-colors text-sm"
+              className="inline-block bg-emerald-500 hover:bg-emerald-400 text-white font-bold px-8 py-3 rounded-xl transition-colors text-sm"
             >
               Read the Financial Planning Guide →
             </Link>

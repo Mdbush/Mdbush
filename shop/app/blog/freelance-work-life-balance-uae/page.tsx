@@ -72,7 +72,7 @@ export default function Article() {
           </p>
         </div>
 
-        <div className="text-gray-700 leading-relaxed space-y-6">
+        <div className="space-y-6 leading-relaxed">
 
           <p>
             There is a specific paradox that catches most UAE freelancers within the first year. You
@@ -107,9 +107,7 @@ export default function Article() {
             covers how to build something more sustainable.
           </p>
 
-          <h2 className="text-xl font-bold text-gray-900 mt-10 mb-3">
-            Section 1: Why Work-Life Balance Is Harder for UAE Freelancers Specifically
-          </h2>
+          <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2"><span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>Section 1: Why Work-Life Balance Is Harder for UAE Freelancers Specifically</h2>
 
           <p>
             Freelancers in other markets face the same general challenges, but the UAE adds a few
@@ -138,9 +136,7 @@ export default function Article() {
             ))}
           </div>
 
-          <h2 className="text-xl font-bold text-gray-900 mt-10 mb-3">
-            Section 2: The 3 Boundaries That Matter Most
-          </h2>
+          <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2"><span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>Section 2: The 3 Boundaries That Matter Most</h2>
 
           <p>
             Freelancers who successfully protect their time do not try to enforce dozens of small
@@ -197,9 +193,7 @@ export default function Article() {
             </div>
           </div>
 
-          <h2 className="text-xl font-bold text-gray-900 mt-10 mb-3">
-            Section 3: Setting Communication Hours — And Actually Enforcing Them
-          </h2>
+          <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2"><span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>Section 3: Setting Communication Hours — And Actually Enforcing Them</h2>
 
           <p>
             Communication hours are only useful if clients know about them and if you have a system
@@ -237,9 +231,7 @@ export default function Article() {
             </div>
           </div>
 
-          <h2 className="text-xl font-bold text-gray-900 mt-10 mb-3">
-            Section 4: The 3-Hour Deep Work Block
-          </h2>
+          <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2"><span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>Section 4: The 3-Hour Deep Work Block</h2>
 
           <p>
             Most of the best work you do — the creative work, the strategic work, the work that
@@ -277,9 +269,7 @@ export default function Article() {
             work-life balance.
           </p>
 
-          <h2 className="text-xl font-bold text-gray-900 mt-10 mb-3">
-            Section 5: The Shutdown Ritual
-          </h2>
+          <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2"><span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>Section 5: The Shutdown Ritual</h2>
 
           <p>
             Employed workers have a commute that acts as a decompression buffer between work and home.
@@ -315,9 +305,7 @@ export default function Article() {
             you mentally at work until you fall asleep.
           </p>
 
-          <h2 className="text-xl font-bold text-gray-900 mt-10 mb-3">
-            Section 6: Friday as Your Strategy Day
-          </h2>
+          <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2"><span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>Section 6: Friday as Your Strategy Day</h2>
 
           <p>
             The UAE working week runs Sunday to Thursday, with Friday and Saturday as the weekend.
@@ -338,7 +326,7 @@ export default function Article() {
             ].map((item) => (
               <div key={item.time} className="border border-gray-200 rounded-xl p-4">
                 <p className="text-xs font-semibold text-gray-400 uppercase tracking-widest mb-1">{item.time}</p>
-                <p className="text-sm text-gray-700">{item.activity}</p>
+                <p className="text-sm text-emerald-800">{item.activity}</p>
               </div>
             ))}
           </div>
@@ -356,9 +344,7 @@ export default function Article() {
             for a fuller framework on what building the business actually looks like.
           </p>
 
-          <h2 className="text-xl font-bold text-gray-900 mt-10 mb-3">
-            Section 7: How to Handle Clients Who Do Not Respect Boundaries
-          </h2>
+          <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2"><span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>Section 7: How to Handle Clients Who Do Not Respect Boundaries</h2>
 
           <p>
             Some clients will ignore your communication hours. They will WhatsApp at 11pm and send
@@ -397,9 +383,7 @@ export default function Article() {
             </div>
           </div>
 
-          <h2 className="text-xl font-bold text-gray-900 mt-10 mb-3">
-            Section 8: Physical Boundaries for Home-Office Workers
-          </h2>
+          <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2"><span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>Section 8: Physical Boundaries for Home-Office Workers</h2>
 
           <p>
             When your home is your office, the environment works against separation. A few structural
@@ -460,7 +444,7 @@ export default function Article() {
             </div>
           </div>
 
-          <h2 className="text-xl font-bold text-gray-900 mt-10 mb-3">Balance Is Not a Reward</h2>
+          <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2"><span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>Balance Is Not a Reward</h2>
 
           <p>
             There is a belief that runs through a lot of freelance culture — and through Dubai culture

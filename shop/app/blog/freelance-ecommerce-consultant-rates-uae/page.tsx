@@ -69,7 +69,7 @@ export default function FreelanceEcommerceConsultantRatesUAE() {
         </div>
 
 
-        <div className="prose prose-gray max-w-none text-gray-700 leading-relaxed space-y-6">
+        <div className="space-y-6 leading-relaxed">
 
           <p>
             The UAE is the most advanced ecommerce market in the Arab world — with Amazon.ae,
@@ -80,8 +80,8 @@ export default function FreelanceEcommerceConsultantRatesUAE() {
             benchmarks for freelance ecommerce consultants in the UAE.
           </p>
 
-          <div className="bg-gray-50 border border-gray-200 rounded-xl p-4 text-sm">
-            <p className="font-semibold text-gray-900 mb-1">Quick benchmark</p>
+          <div className="bg-emerald-50 border border-emerald-200 rounded-xl p-5">
+            <p className="text-sm font-bold text-emerald-800 mb-2">Quick benchmark</p>
             <p className="text-gray-700">
               A mid-level freelance ecommerce consultant in Dubai with 4–8 years of marketplace
               and D2C experience typically charges <strong>AED 450–700/hr</strong> for strategy
@@ -92,7 +92,7 @@ export default function FreelanceEcommerceConsultantRatesUAE() {
           </div>
 
           <section>
-            <h2 className="text-xl font-bold text-gray-900 mt-8 mb-4">UAE Ecommerce Consultant Rates (2026)</h2>
+            <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2"><span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>UAE Ecommerce Consultant Rates (2026)</h2>
             <div className="overflow-x-auto">
               <table className="w-full text-sm border-collapse">
                 <thead>
@@ -116,7 +116,7 @@ export default function FreelanceEcommerceConsultantRatesUAE() {
           </section>
 
           <section>
-            <h2 className="text-xl font-bold text-gray-900 mt-8 mb-3">UAE Marketplace Landscape for Ecommerce Consultants</h2>
+            <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2"><span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>UAE Marketplace Landscape for Ecommerce Consultants</h2>
             <div className="space-y-3 mt-4">
               {[
                 { platform: "Amazon.ae (the dominant marketplace)", rate: "AED 400–800/hr specialist rate", detail: "Amazon.ae is the UAE&apos;s largest online marketplace by traffic and transaction volume. Sellers on Amazon.ae need expertise in: product listing optimisation (titles, bullets, A+ content in English and Arabic), Sponsored Products PPC management, FBA (Fulfilment by Amazon) logistics through Amazon&apos;s UAE fulfilment centres, Buy Box strategy, and Brand Registry. Amazon-specific consultants who can demonstrate sales uplift with data command premium rates." },
@@ -126,7 +126,7 @@ export default function FreelanceEcommerceConsultantRatesUAE() {
                 <div key={item.platform} className="border border-gray-200 rounded-xl p-4">
                   <div className="flex items-start justify-between gap-2 mb-1">
                     <p className="font-semibold text-gray-900 text-sm">{item.platform}</p>
-                    <span className="text-xs font-bold text-green-700 bg-green-50 px-2 py-0.5 rounded-full shrink-0">{item.rate}</span>
+                    <span className="text-xs font-bold text-emerald-700 bg-emerald-50 border border-emerald-200 px-2 py-0.5 rounded-full shrink-0">{item.rate}</span>
                   </div>
                   <p className="text-xs text-gray-600">{item.detail}</p>
                 </div>
@@ -135,7 +135,7 @@ export default function FreelanceEcommerceConsultantRatesUAE() {
           </section>
 
           <section>
-            <h2 className="text-xl font-bold text-gray-900 mt-8 mb-3">Highest-Value Ecommerce Consulting Niches</h2>
+            <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2"><span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>Highest-Value Ecommerce Consulting Niches</h2>
             <ul className="space-y-2 text-sm text-gray-700 mt-3">
               <li className="flex gap-2"><span className="text-blue-500 font-bold">✓</span> <strong>GCC cross-border expansion</strong> — UAE brands expanding to Saudi Arabia (the largest Arab ecommerce market) need Saudi marketplace registration (Amazon.sa, Noon.sa), Arabic content localisation, KSA payment gateways, and Saudi VAT compliance. This full-service expansion consulting is priced at AED 15,000–50,000/project.</li>
               <li className="flex gap-2"><span className="text-blue-500 font-bold">✓</span> <strong>Amazon PPC and advertising management</strong> — Ongoing Amazon Sponsored Products management for established sellers is a recurring revenue stream. Charge a monthly retainer (AED 3,000–8,000/month) plus percentage of ad spend managed (typically 10–15%). Sellers spending AED 30,000/month on ads generate AED 3,000–4,500/month in consultant fees from that client alone.</li>
@@ -145,7 +145,7 @@ export default function FreelanceEcommerceConsultantRatesUAE() {
           </section>
 
           <section>
-            <h2 className="text-xl font-bold text-gray-900 mt-8 mb-3">Licensing for Freelance Ecommerce Consultants</h2>
+            <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2"><span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>Licensing for Freelance Ecommerce Consultants</h2>
             <ul className="space-y-1 text-sm text-gray-600 mt-3">
               <li>• <strong>Freelance permit (IFZA, Meydan, Shuraa, Fujairah Creative City)</strong> — Most ecommerce consultants operate under a UAE free zone freelance permit. Cost: AED 7,500–15,000/year. Allows you to invoice clients directly under your personal brand</li>
               <li>• <strong>Activity: Management Consultancy or E-commerce Consultancy</strong> — Most free zones allow &quot;management consultancy&quot; as the licensed activity, which covers ecommerce advisory services broadly. Some free zones offer specific &quot;e-commerce&quot; or &quot;digital marketing&quot; activities</li>
@@ -153,8 +153,8 @@ export default function FreelanceEcommerceConsultantRatesUAE() {
             </ul>
           </section>
 
-          <div className="bg-gray-950 text-white rounded-2xl p-6 mt-10">
-            <p className="text-xs font-semibold text-gray-400 uppercase tracking-widest mb-2">Manage your consulting clients</p>
+          <div className="bg-gradient-to-br from-gray-900 to-gray-800 text-white rounded-2xl p-8 mt-12 text-center">
+            <p className="text-xs font-bold text-emerald-400 uppercase tracking-widest block mb-3">Manage your consulting clients</p>
             <h3 className="text-lg font-bold mb-2">Freelancer Client CRM — Track Every Client &amp; Project</h3>
             <p className="text-gray-400 text-sm mb-4">
               Track ecommerce consulting clients, retainer renewals, project milestones, and invoices.
@@ -162,7 +162,7 @@ export default function FreelanceEcommerceConsultantRatesUAE() {
             </p>
             <Link
               href="/products/freelancer-client-crm"
-              className="inline-block bg-white text-gray-900 font-bold px-5 py-2.5 rounded-xl hover:bg-gray-100 transition-colors text-sm"
+              className="inline-block bg-emerald-500 hover:bg-emerald-400 text-white font-bold px-8 py-3 rounded-xl transition-colors text-sm"
             >
               Get the Client CRM →
             </Link>

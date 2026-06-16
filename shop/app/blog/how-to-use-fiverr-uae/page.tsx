@@ -58,7 +58,7 @@ export default function HowToUseFiverrUAE() {
         </div>
 
 
-        <div className="prose prose-gray max-w-none text-gray-700 leading-relaxed space-y-6">
+        <div className="space-y-6 leading-relaxed">
 
           <p>
             Fiverr is a viable client acquisition channel for UAE freelancers, particularly
@@ -70,8 +70,8 @@ export default function HowToUseFiverrUAE() {
             buyers without the proposal-writing overhead. Here is how to make it work.
           </p>
 
-          <div className="bg-gray-50 border border-gray-200 rounded-xl p-4 text-sm">
-            <p className="font-semibold text-gray-900 mb-1">Fiverr vs Upwork for UAE freelancers</p>
+          <div className="bg-emerald-50 border border-emerald-200 rounded-xl p-5">
+            <p className="text-sm font-bold text-emerald-800 mb-2">Fiverr vs Upwork for UAE freelancers</p>
             <p className="text-gray-700">
               <strong>Fiverr</strong> works best for productized services with clear scope:
               logo design, 1,000-word article, SEO audit, 30-second video edit. Lower barrier
@@ -82,7 +82,7 @@ export default function HowToUseFiverrUAE() {
           </div>
 
           <section>
-            <h2 className="text-xl font-bold text-gray-900 mt-8 mb-3">Step 1: Gig Optimization That Actually Ranks</h2>
+            <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2"><span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>Step 1: Gig Optimization That Actually Ranks</h2>
             <p className="text-sm text-gray-600 mb-3">
               Fiverr&apos;s search algorithm ranks gigs based on conversion rate, order volume,
               review score, and relevance. Before you get orders, you need to rank. Here
@@ -105,7 +105,7 @@ export default function HowToUseFiverrUAE() {
           </section>
 
           <section>
-            <h2 className="text-xl font-bold text-gray-900 mt-8 mb-3">Step 2: Pricing Strategy on Fiverr</h2>
+            <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2"><span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>Step 2: Pricing Strategy on Fiverr</h2>
             <ul className="space-y-2 text-sm text-gray-600 mt-3">
               <li>• <strong>Start lower than your target rate to build reviews</strong> — A new Fiverr account with zero reviews is invisible. Your first 10–20 orders are about building review velocity, not maximizing per-order income. Price your entry-level gig at 30–50% below your ultimate target. Raise prices after 20+ 5-star reviews</li>
               <li>• <strong>Never start at AED 18 (the Fiverr $5 equivalent)</strong> — The &quot;Fiverr&quot; name is a historical artifact. Starting at minimum pricing signals low quality and attracts the most difficult buyers. Start your Basic tier at USD 30–100 (AED 110–370) minimum, depending on your service. This positions you above bottom-tier competition while still being accessible</li>
@@ -115,7 +115,7 @@ export default function HowToUseFiverrUAE() {
           </section>
 
           <section>
-            <h2 className="text-xl font-bold text-gray-900 mt-8 mb-3">Step 3: UAE-Specific Fiverr Considerations</h2>
+            <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2"><span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>Step 3: UAE-Specific Fiverr Considerations</h2>
             <div className="space-y-3 mt-4">
               {[
                 { topic: "Payment withdrawal from Fiverr in the UAE", desc: "Fiverr supports multiple withdrawal methods available to UAE-based freelancers. Payoneer (most popular — links to UAE bank account, low fees), direct bank transfer via SWIFT (higher fees, better for large withdrawals), PayPal (limited for UAE bank accounts, most UAE banks don't support PayPal withdrawal directly). Payoneer is the recommended option for UAE-based Fiverr freelancers. Allow 3-5 business days for USD → AED conversion." },
@@ -132,7 +132,7 @@ export default function HowToUseFiverrUAE() {
           </section>
 
           <section>
-            <h2 className="text-xl font-bold text-gray-900 mt-8 mb-3">Step 4: Growing from Fiverr to Direct Clients</h2>
+            <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2"><span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>Step 4: Growing from Fiverr to Direct Clients</h2>
             <ul className="space-y-2 text-sm text-gray-600 mt-3">
               <li>• <strong>Fiverr prohibits moving clients off-platform</strong> — Fiverr&apos;s Terms of Service prohibit taking clients off-platform within 2 years of the first contact. Violating this risks account suspension. However: clients who find you through other channels (LinkedIn, your website) after initially discovering you on Fiverr can legitimately engage you directly</li>
               <li>• <strong>Use your Fiverr portfolio to attract direct inbound</strong> — Display your Fiverr work on your own website and LinkedIn portfolio. Clients who contact you through your website are not bound by Fiverr ToS. Many UAE direct clients discover freelancers initially through Fiverr, then find their website and reach out directly</li>
@@ -142,8 +142,8 @@ export default function HowToUseFiverrUAE() {
           </section>
 
           {/* CTA */}
-          <div className="bg-gray-950 text-white rounded-2xl p-6 mt-10">
-            <p className="text-xs font-semibold text-gray-400 uppercase tracking-widest mb-2">Manage your Fiverr and direct clients</p>
+          <div className="bg-gradient-to-br from-gray-900 to-gray-800 text-white rounded-2xl p-8 mt-12 text-center">
+            <p className="text-xs font-bold text-emerald-400 uppercase tracking-widest block mb-3">Manage your Fiverr and direct clients</p>
             <h3 className="text-lg font-bold mb-2">Freelancer Client CRM — One System for All Your Clients</h3>
             <p className="text-gray-400 text-sm mb-4">
               Track Fiverr orders, direct clients, and retainer relationships in one
@@ -152,7 +152,7 @@ export default function HowToUseFiverrUAE() {
             </p>
             <Link
               href="/products/freelancer-client-crm"
-              className="inline-block bg-white text-gray-900 font-bold px-5 py-2.5 rounded-xl hover:bg-gray-100 transition-colors text-sm"
+              className="inline-block bg-emerald-500 hover:bg-emerald-400 text-white font-bold px-8 py-3 rounded-xl transition-colors text-sm"
             >
               Get the Client CRM →
             </Link>

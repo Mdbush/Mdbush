@@ -121,7 +121,7 @@ export default function DubaiFreeZoneComparisonFreelancers() {
         </div>
 
 
-        <div className="prose prose-gray max-w-none text-gray-700 leading-relaxed space-y-6">
+        <div className="space-y-6 leading-relaxed">
 
           <p>
             Choosing the right free zone as a UAE freelancer is one of the most consequential
@@ -131,8 +131,8 @@ export default function DubaiFreeZoneComparisonFreelancers() {
             free zones for freelancers in 2026.
           </p>
 
-          <div className="bg-gray-50 border border-gray-200 rounded-xl p-4 text-sm">
-            <p className="font-semibold text-gray-900 mb-1">Quick decision guide</p>
+          <div className="bg-emerald-50 border border-emerald-200 rounded-xl p-5">
+            <p className="text-sm font-bold text-emerald-800 mb-2">Quick decision guide</p>
             <p className="text-gray-700">
               <strong>Lowest cost:</strong> SHAMS or Fujairah Creative City (from AED 5,750)<br />
               <strong>Best value + visa:</strong> RAKEZ (from AED 7,500, includes visa allocation)<br />
@@ -165,7 +165,7 @@ export default function DubaiFreeZoneComparisonFreelancers() {
 
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 mb-3">
                   <div>
-                    <p className="text-xs font-semibold text-green-600 mb-1">Pros</p>
+                    <p className="text-xs font-semibold text-emerald-600 mb-1">Pros</p>
                     <ul className="space-y-0.5">
                       {zone.pros.map((p) => <li key={p} className="text-xs text-gray-600">✓ {p}</li>)}
                     </ul>
@@ -183,7 +183,7 @@ export default function DubaiFreeZoneComparisonFreelancers() {
           </div>
 
           <section>
-            <h2 className="text-xl font-bold text-gray-900 mt-8 mb-3">Free Zone vs Freelance Permit vs Mainland</h2>
+            <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2"><span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>Free Zone vs Freelance Permit vs Mainland</h2>
             <div className="space-y-3 mt-3">
               {[
                 { option: "Free zone license", summary: "Full company in a free zone. Own activities, own visa eligibility, 100% foreign ownership, 0% free zone corporate tax. Best for most freelancers who want full legal status." },
@@ -199,7 +199,7 @@ export default function DubaiFreeZoneComparisonFreelancers() {
           </section>
 
           <section>
-            <h2 className="text-xl font-bold text-gray-900 mt-8 mb-3">Hidden Costs to Account For</h2>
+            <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2"><span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>Hidden Costs to Account For</h2>
             <ul className="space-y-2 text-sm text-gray-600 mt-3">
               <li><strong>Visa fees:</strong> AED 3,500–6,000 for a 2-year residence visa (medical + Emirates ID + visa stamping). This is often separate from the license cost even when packages advertise &ldquo;visa included.&rdquo;</li>
               <li><strong>Health insurance:</strong> Mandatory in Dubai and Abu Dhabi — basic plans start at AED 600–1,500/year for a single person.</li>
@@ -210,8 +210,8 @@ export default function DubaiFreeZoneComparisonFreelancers() {
           </section>
 
           {/* CTA */}
-          <div className="bg-gray-950 text-white rounded-2xl p-6 mt-10">
-            <p className="text-xs font-semibold text-gray-400 uppercase tracking-widest mb-2">Already decided? Get the deep dive</p>
+          <div className="bg-gradient-to-br from-gray-900 to-gray-800 text-white rounded-2xl p-8 mt-12 text-center">
+            <p className="text-xs font-bold text-emerald-400 uppercase tracking-widest block mb-3">Already decided? Get the deep dive</p>
             <h3 className="text-lg font-bold mb-2">RAKEZ vs IFZA vs Meydan: The Full Comparison</h3>
             <p className="text-gray-400 text-sm mb-4">
               A more detailed side-by-side of the three most popular UAE free zones — including
@@ -220,7 +220,7 @@ export default function DubaiFreeZoneComparisonFreelancers() {
             </p>
             <Link
               href="/blog/rakez-vs-ifza-freelance-license-uae"
-              className="inline-block bg-white text-gray-900 font-bold px-5 py-2.5 rounded-xl hover:bg-gray-100 transition-colors text-sm"
+              className="inline-block bg-emerald-500 hover:bg-emerald-400 text-white font-bold px-8 py-3 rounded-xl transition-colors text-sm"
             >
               Read the Full Comparison →
             </Link>

@@ -69,7 +69,7 @@ export default function FreelanceCybersecurityRatesUAE() {
         </div>
 
 
-        <div className="prose prose-gray max-w-none text-gray-700 leading-relaxed space-y-6">
+        <div className="space-y-6 leading-relaxed">
 
           <p>
             Cybersecurity is one of the highest-demand and highest-rate professional
@@ -82,8 +82,8 @@ export default function FreelanceCybersecurityRatesUAE() {
             in the world for qualified practitioners. Here are the 2026 rate benchmarks.
           </p>
 
-          <div className="bg-gray-50 border border-gray-200 rounded-xl p-4 text-sm">
-            <p className="font-semibold text-gray-900 mb-1">Quick benchmark</p>
+          <div className="bg-emerald-50 border border-emerald-200 rounded-xl p-5">
+            <p className="text-sm font-bold text-emerald-800 mb-2">Quick benchmark</p>
             <p className="text-gray-700">
               A mid-level freelance cybersecurity consultant in Dubai (CISSP or CEH
               certified, 5–8 years UAE/international experience) typically charges
@@ -96,7 +96,7 @@ export default function FreelanceCybersecurityRatesUAE() {
           </div>
 
           <section>
-            <h2 className="text-xl font-bold text-gray-900 mt-8 mb-4">Freelance Cybersecurity Consultant Rates in the UAE by Service (2026)</h2>
+            <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2"><span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>Freelance Cybersecurity Consultant Rates in the UAE by Service (2026)</h2>
             <p className="text-xs text-gray-400 mb-4">Junior: 0–3 years / Mid: 4–8 years, CISSP/CEH certified / Senior: 9+ years, Big 4 or enterprise security leadership background</p>
             <div className="overflow-x-auto">
               <table className="w-full text-sm border-collapse">
@@ -123,7 +123,7 @@ export default function FreelanceCybersecurityRatesUAE() {
           </section>
 
           <section>
-            <h2 className="text-xl font-bold text-gray-900 mt-8 mb-3">High-Value Cybersecurity Niches in the UAE</h2>
+            <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2"><span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>High-Value Cybersecurity Niches in the UAE</h2>
             <div className="space-y-3 mt-4">
               {[
                 { niche: "UAE banking and financial services cybersecurity (CBUAE, DFSA, FSRA compliance)", rate: "AED 40,000–200,000+ per engagement", why: "UAE banks, investment firms, and insurance companies face mandatory cybersecurity requirements from CBUAE (Central Bank UAE), DFSA (Dubai Financial Services Authority in DIFC), and FSRA (Abu Dhabi ADGM). Annual penetration testing, SWIFT CSP compliance, and cybersecurity framework assessments are mandated, not optional. A qualified consultant with both technical skills and financial services regulatory knowledge occupies a premium niche that most generalist cybersecurity consultants cannot access." },
@@ -134,7 +134,7 @@ export default function FreelanceCybersecurityRatesUAE() {
                 <div key={item.niche} className="border border-gray-200 rounded-xl p-4">
                   <div className="flex items-start justify-between gap-2 mb-1">
                     <p className="font-semibold text-gray-900 text-sm">{item.niche}</p>
-                    <span className="text-xs font-bold text-green-700 bg-green-50 px-2 py-0.5 rounded-full shrink-0">{item.rate}</span>
+                    <span className="text-xs font-bold text-emerald-700 bg-emerald-50 border border-emerald-200 px-2 py-0.5 rounded-full shrink-0">{item.rate}</span>
                   </div>
                   <p className="text-xs text-gray-600">{item.why}</p>
                 </div>
@@ -143,7 +143,7 @@ export default function FreelanceCybersecurityRatesUAE() {
           </section>
 
           <section>
-            <h2 className="text-xl font-bold text-gray-900 mt-8 mb-3">Professional Certifications for UAE Cybersecurity Consultants</h2>
+            <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2"><span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>Professional Certifications for UAE Cybersecurity Consultants</h2>
             <ul className="space-y-1 text-sm text-gray-600 mt-3">
               <li>• <strong>CISSP (Certified Information Systems Security Professional)</strong> — The gold-standard enterprise security credential. Required or strongly preferred by UAE government and large corporate clients. 5 years of experience required to earn the credential</li>
               <li>• <strong>CISM (Certified Information Security Manager)</strong> — ISACA credential focused on security management and governance. Highly valued by UAE banking and financial services sector for management-level and vCISO roles</li>
@@ -155,8 +155,8 @@ export default function FreelanceCybersecurityRatesUAE() {
           </section>
 
           {/* CTA */}
-          <div className="bg-gray-950 text-white rounded-2xl p-6 mt-10">
-            <p className="text-xs font-semibold text-gray-400 uppercase tracking-widest mb-2">Manage your security consulting clients</p>
+          <div className="bg-gradient-to-br from-gray-900 to-gray-800 text-white rounded-2xl p-8 mt-12 text-center">
+            <p className="text-xs font-bold text-emerald-400 uppercase tracking-widest block mb-3">Manage your security consulting clients</p>
             <h3 className="text-lg font-bold mb-2">Freelancer Client CRM — Track Every Engagement & Deliverable</h3>
             <p className="text-gray-400 text-sm mb-4">
               Track cybersecurity engagements from scope to report delivery, manage
@@ -165,7 +165,7 @@ export default function FreelanceCybersecurityRatesUAE() {
             </p>
             <Link
               href="/products/freelancer-client-crm"
-              className="inline-block bg-white text-gray-900 font-bold px-5 py-2.5 rounded-xl hover:bg-gray-100 transition-colors text-sm"
+              className="inline-block bg-emerald-500 hover:bg-emerald-400 text-white font-bold px-8 py-3 rounded-xl transition-colors text-sm"
             >
               Get the Client CRM →
             </Link>

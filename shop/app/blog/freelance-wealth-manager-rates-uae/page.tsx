@@ -72,8 +72,8 @@ export default function FreelanceWealthManagerRatesUAE() {
 
 
           {/* Quick Benchmark */}
-          <div className="bg-blue-50 border border-blue-200 rounded-xl p-6 mb-10">
-            <h2 className="text-base font-semibold text-blue-900 mb-3">Fee Structure Overview</h2>
+          <div className="bg-emerald-50 border border-emerald-200 rounded-xl p-6 mb-10">
+            <h2 className="text-base font-semibold text-emerald-900 mb-3">Fee Structure Overview</h2>
             <div className="grid grid-cols-3 gap-4 text-center">
               <div>
                 <div className="text-xl font-bold text-blue-700">Hourly</div>
@@ -222,7 +222,7 @@ export default function FreelanceWealthManagerRatesUAE() {
                 { href: "/blog/freelance-tax-advisor-rates-uae", label: "Freelance Tax Advisor Rates UAE" },
                 { href: "/blog/freelance-accountant-rates-uae", label: "Freelance Accountant Rates UAE" },
               ].map((link) => (
-                <Link key={link.href} href={link.href} className="block text-blue-600 hover:text-blue-800 text-sm">
+                <Link key={link.href} href={link.href} className="block text-emerald-700 hover:text-emerald-900 text-sm">
                   → {link.label}
                 </Link>
               ))}

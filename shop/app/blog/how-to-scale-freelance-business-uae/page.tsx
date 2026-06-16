@@ -268,10 +268,10 @@ export default function Article() {
           <div className="mt-10">
             <h3 className="text-sm font-semibold text-gray-900 mb-3">Related Guides</h3>
             <div className="space-y-1.5">
-              <Link href="/blog/how-to-price-freelance-services-uae" className="block text-blue-600 hover:text-blue-800 text-sm">→ How to Price Your Freelance Services in the UAE</Link>
-              <Link href="/blog/how-much-do-uae-freelancers-earn" className="block text-blue-600 hover:text-blue-800 text-sm">→ How Much Do Freelancers Earn in UAE? (2026 Income Guide)</Link>
-              <Link href="/blog/get-freelance-clients-uae" className="block text-blue-600 hover:text-blue-800 text-sm">→ How to Get Freelance Clients in the UAE (6 Strategies)</Link>
-              <Link href="/blog/freelance-vs-salary-uae" className="block text-blue-600 hover:text-blue-800 text-sm">→ Freelance vs Salary in the UAE: The Real Numbers</Link>
+              <Link href="/blog/how-to-price-freelance-services-uae" className="block text-emerald-700 hover:text-emerald-900 text-sm">→ How to Price Your Freelance Services in the UAE</Link>
+              <Link href="/blog/how-much-do-uae-freelancers-earn" className="block text-emerald-700 hover:text-emerald-900 text-sm">→ How Much Do Freelancers Earn in UAE? (2026 Income Guide)</Link>
+              <Link href="/blog/get-freelance-clients-uae" className="block text-emerald-700 hover:text-emerald-900 text-sm">→ How to Get Freelance Clients in the UAE (6 Strategies)</Link>
+              <Link href="/blog/freelance-vs-salary-uae" className="block text-emerald-700 hover:text-emerald-900 text-sm">→ Freelance vs Salary in the UAE: The Real Numbers</Link>
             </div>
           </div>
         </div>

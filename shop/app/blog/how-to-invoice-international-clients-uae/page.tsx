@@ -96,7 +96,7 @@ export default function HowToInvoiceInternationalClientsUAE() {
         </div>
 
 
-        <div className="prose prose-gray max-w-none text-gray-700 leading-relaxed space-y-6">
+        <div className="space-y-6 leading-relaxed">
 
           <p>
             The UAE&apos;s geographic position between Europe, Asia, and Africa makes it a natural
@@ -107,8 +107,8 @@ export default function HowToInvoiceInternationalClientsUAE() {
             set up efficient cross-border payment systems in 2026.
           </p>
 
-          <div className="bg-gray-50 border border-gray-200 rounded-xl p-4 text-sm">
-            <p className="font-semibold text-gray-900 mb-1">The core principle</p>
+          <div className="bg-emerald-50 border border-emerald-200 rounded-xl p-5">
+            <p className="text-sm font-bold text-emerald-800 mb-2">The core principle</p>
             <p className="text-gray-700">
               Your goal is to minimize the gap between what the client pays and what lands
               in your UAE bank account. SWIFT wire + UAE bank FX = you lose 3–5% on every
@@ -119,13 +119,13 @@ export default function HowToInvoiceInternationalClientsUAE() {
           </div>
 
           <section>
-            <h2 className="text-xl font-bold text-gray-900 mt-8 mb-4">Payment Methods Compared</h2>
+            <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2"><span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>Payment Methods Compared</h2>
             <div className="space-y-3">
               {paymentMethods.map((m) => (
                 <div key={m.method} className="border border-gray-200 rounded-xl p-4">
                   <div className="flex items-start justify-between gap-2 mb-2">
                     <p className="font-semibold text-gray-900 text-sm">{m.method}</p>
-                    <span className="text-xs font-bold text-blue-700 bg-blue-50 px-2 py-0.5 rounded-full shrink-0">{m.speed}</span>
+                    <span className="text-xs font-bold text-blue-700 bg-emerald-50 px-2 py-0.5 rounded-full shrink-0">{m.speed}</span>
                   </div>
                   <p className="text-xs text-gray-500 mb-1"><strong>Cost:</strong> {m.cost}</p>
                   <p className="text-xs text-gray-500 mb-2"><strong>Best for:</strong> {m.bestFor}</p>
@@ -136,7 +136,7 @@ export default function HowToInvoiceInternationalClientsUAE() {
           </section>
 
           <section>
-            <h2 className="text-xl font-bold text-gray-900 mt-8 mb-3">What Your International Invoice Must Include</h2>
+            <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2"><span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>What Your International Invoice Must Include</h2>
             <p className="text-sm text-gray-600 mb-3">
               International invoices need more detail than domestic AED invoices — your client&apos;s
               accounts payable team and banking system need complete information to process payment.
@@ -153,7 +153,7 @@ export default function HowToInvoiceInternationalClientsUAE() {
           </section>
 
           <section>
-            <h2 className="text-xl font-bold text-gray-900 mt-8 mb-3">Currency Clauses: Protecting Yourself from FX Risk</h2>
+            <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2"><span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>Currency Clauses: Protecting Yourself from FX Risk</h2>
             <p className="text-sm text-gray-600 mb-3">
               The AED is pegged to the USD at 3.6725 — fixed since 1997. This means USD invoices
               carry zero FX risk for UAE freelancers. EUR, GBP, and other currencies do fluctuate
@@ -187,7 +187,7 @@ export default function HowToInvoiceInternationalClientsUAE() {
           </section>
 
           <section>
-            <h2 className="text-xl font-bold text-gray-900 mt-8 mb-3">UAE Tax and Compliance Considerations</h2>
+            <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2"><span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>UAE Tax and Compliance Considerations</h2>
             <ul className="space-y-1 text-sm text-gray-600 mt-3">
               <li>• <strong>VAT registration</strong> — If your annual turnover exceeds AED 375,000, you must register for UAE VAT. Services exported outside the UAE are zero-rated (0% VAT), so they count towards the AED 375,000 threshold but you charge 0% VAT</li>
               <li>• <strong>Corporate tax</strong> — UAE corporate tax (9% above AED 375,000 profit) applies from 2023 onwards. International income is subject to UAE corporate tax if you are registered in the UAE. Freelancers using the Small Business Relief (under AED 3M turnover) may be exempt through 2026 — confirm with a UAE tax professional</li>
@@ -198,7 +198,7 @@ export default function HowToInvoiceInternationalClientsUAE() {
           </section>
 
           <section>
-            <h2 className="text-xl font-bold text-gray-900 mt-8 mb-3">Recommended Setup for UAE Freelancers with International Clients</h2>
+            <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2"><span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>Recommended Setup for UAE Freelancers with International Clients</h2>
             <div className="space-y-3 mt-4">
               {[
                 { step: "1. Open a Wise Business account", detail: "Get USD, EUR, and GBP virtual account numbers. Send these to clients instead of your UAE IBAN — they pay domestically, Wise converts to AED. No international wire fees on the client side." },
@@ -216,8 +216,8 @@ export default function HowToInvoiceInternationalClientsUAE() {
           </section>
 
           {/* CTA */}
-          <div className="bg-gray-950 text-white rounded-2xl p-6 mt-10">
-            <p className="text-xs font-semibold text-gray-400 uppercase tracking-widest mb-2">Manage international invoicing</p>
+          <div className="bg-gradient-to-br from-gray-900 to-gray-800 text-white rounded-2xl p-8 mt-12 text-center">
+            <p className="text-xs font-bold text-emerald-400 uppercase tracking-widest block mb-3">Manage international invoicing</p>
             <h3 className="text-lg font-bold mb-2">Freelancer Invoice Templates — International & Local</h3>
             <p className="text-gray-400 text-sm mb-4">
               Ready-to-send invoice templates for UAE freelancers — USD international
@@ -226,7 +226,7 @@ export default function HowToInvoiceInternationalClientsUAE() {
             </p>
             <Link
               href="/products/freelancer-client-crm"
-              className="inline-block bg-white text-gray-900 font-bold px-5 py-2.5 rounded-xl hover:bg-gray-100 transition-colors text-sm"
+              className="inline-block bg-emerald-500 hover:bg-emerald-400 text-white font-bold px-8 py-3 rounded-xl transition-colors text-sm"
             >
               Get the Invoice Templates →
             </Link>

@@ -66,7 +66,7 @@ export default function HowToHandleScopeCreepUAE() {
         </div>
 
 
-        <div className="prose prose-gray max-w-none text-gray-700 leading-relaxed space-y-6">
+        <div className="space-y-6 leading-relaxed">
 
           <p>
             Scope creep is the silent income killer for UAE freelancers. A project starts
@@ -78,8 +78,8 @@ export default function HowToHandleScopeCreepUAE() {
             it is especially common. Here is the system to prevent and handle it.
           </p>
 
-          <div className="bg-gray-50 border border-gray-200 rounded-xl p-4 text-sm">
-            <p className="font-semibold text-gray-900 mb-1">The honest truth about UAE scope creep</p>
+          <div className="bg-emerald-50 border border-emerald-200 rounded-xl p-5">
+            <p className="text-sm font-bold text-emerald-800 mb-2">The honest truth about UAE scope creep</p>
             <p className="text-gray-700">
               Scope creep in the UAE is almost never malicious. Most clients genuinely
               do not track what they have asked for versus what was originally agreed.
@@ -90,7 +90,7 @@ export default function HowToHandleScopeCreepUAE() {
           </div>
 
           <section>
-            <h2 className="text-xl font-bold text-gray-900 mt-8 mb-3">Prevention: Define Scope Before You Start</h2>
+            <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2"><span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>Prevention: Define Scope Before You Start</h2>
             <p>
               The most effective scope creep management happens before the project begins.
               The three things your proposal and contract must define clearly:
@@ -98,7 +98,7 @@ export default function HowToHandleScopeCreepUAE() {
             <div className="space-y-3 mt-4">
               <div className="border border-gray-200 rounded-xl p-4">
                 <p className="font-bold text-gray-900 text-sm mb-2">1. Deliverables (exactly what is included)</p>
-                <p className="text-sm text-gray-700">
+                <p className="text-sm text-emerald-800">
                   List every deliverable specifically. Not &quot;website design&quot; — but &quot;design of
                   5 page types (Home, About, Services, Blog listing, Contact) as desktop and
                   mobile Figma mockups.&quot; Not &quot;social media content&quot; — but &quot;12 Instagram posts
@@ -108,7 +108,7 @@ export default function HowToHandleScopeCreepUAE() {
               </div>
               <div className="border border-gray-200 rounded-xl p-4">
                 <p className="font-bold text-gray-900 text-sm mb-2">2. What is explicitly NOT included</p>
-                <p className="text-sm text-gray-700">
+                <p className="text-sm text-emerald-800">
                   Add a &quot;Not included in this scope&quot; section to your proposal. Example: &quot;This
                   proposal does not include: copywriting, translation into Arabic, website
                   development, photography, or stock image licensing.&quot; UAE clients frequently
@@ -117,7 +117,7 @@ export default function HowToHandleScopeCreepUAE() {
               </div>
               <div className="border border-gray-200 rounded-xl p-4">
                 <p className="font-bold text-gray-900 text-sm mb-2">3. Revision rounds</p>
-                <p className="text-sm text-gray-700">
+                <p className="text-sm text-emerald-800">
                   State the number of revision rounds explicitly. &quot;This proposal includes
                   2 rounds of revisions. Additional revision rounds are available at AED [X]
                   per round.&quot; UAE clients who expect unlimited revisions are not unusual.
@@ -129,7 +129,7 @@ export default function HowToHandleScopeCreepUAE() {
           </section>
 
           <section>
-            <h2 className="text-xl font-bold text-gray-900 mt-8 mb-3">Early Warning Signals of Scope Creep</h2>
+            <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2"><span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>Early Warning Signals of Scope Creep</h2>
             <div className="space-y-3 mt-4">
               {warningSignals.map((item, i) => (
                 <div key={i} className="border border-gray-200 rounded-xl p-4">
@@ -141,14 +141,14 @@ export default function HowToHandleScopeCreepUAE() {
           </section>
 
           <section>
-            <h2 className="text-xl font-bold text-gray-900 mt-8 mb-3">The Change Order Process (Word-for-Word)</h2>
+            <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2"><span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>The Change Order Process (Word-for-Word)</h2>
             <p>
               When scope creep appears, you need a clear, professional process to acknowledge
               the request, price it, and get approval before doing the work. Here are the
               exact messages to use (WhatsApp or email):
             </p>
             <div className="space-y-4 mt-4">
-              <div className="bg-gray-50 border border-gray-200 rounded-xl p-4 text-sm">
+              <div className="bg-emerald-50 border border-emerald-200 rounded-xl p-5">
                 <p className="font-semibold text-gray-900 mb-2">Situation: Client asks for something outside scope</p>
                 <p className="text-gray-700 italic">
                   &quot;Happy to include this. Just to keep us aligned: this [task] sits outside the
@@ -157,7 +157,7 @@ export default function HowToHandleScopeCreepUAE() {
                 </p>
                 <p className="text-xs text-gray-500 mt-2">Why this works: You are not saying no. You are creating process. The tone is helpful, not defensive.</p>
               </div>
-              <div className="bg-gray-50 border border-gray-200 rounded-xl p-4 text-sm">
+              <div className="bg-emerald-50 border border-emerald-200 rounded-xl p-5">
                 <p className="font-semibold text-gray-900 mb-2">Situation: Small request that feels awkward to charge for</p>
                 <p className="text-gray-700 italic">
                   &quot;This is a small one — AED [amount]. I&apos;ll add it to the project invoice at the
@@ -165,7 +165,7 @@ export default function HowToHandleScopeCreepUAE() {
                 </p>
                 <p className="text-xs text-gray-500 mt-2">Why this works: Normalizes charging for additions without creating friction over a small amount. Client is informed and comfortable.</p>
               </div>
-              <div className="bg-gray-50 border border-gray-200 rounded-xl p-4 text-sm">
+              <div className="bg-emerald-50 border border-emerald-200 rounded-xl p-5">
                 <p className="font-semibold text-gray-900 mb-2">Situation: Client wants a major direction change after work is delivered</p>
                 <p className="text-gray-700 italic">
                   &quot;Understood — direction changes happen and I want to make sure we get this
@@ -180,7 +180,7 @@ export default function HowToHandleScopeCreepUAE() {
           </section>
 
           <section>
-            <h2 className="text-xl font-bold text-gray-900 mt-8 mb-3">Writing a Change Order (Template)</h2>
+            <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2"><span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>Writing a Change Order (Template)</h2>
             <p>
               A change order does not need to be elaborate. It needs to be written, specific,
               and signed off by the client before work begins:
@@ -203,7 +203,7 @@ export default function HowToHandleScopeCreepUAE() {
           </section>
 
           <section>
-            <h2 className="text-xl font-bold text-gray-900 mt-8 mb-3">When to Do the Work First, Invoice Later</h2>
+            <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2"><span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>When to Do the Work First, Invoice Later</h2>
             <p>
               There are situations where sending a formal change order will damage the
               client relationship more than absorbing a small addition. Use judgment:
@@ -216,8 +216,8 @@ export default function HowToHandleScopeCreepUAE() {
           </section>
 
           {/* CTA */}
-          <div className="bg-gray-950 text-white rounded-2xl p-6 mt-10">
-            <p className="text-xs font-semibold text-gray-400 uppercase tracking-widest mb-2">Protect your projects from the start</p>
+          <div className="bg-gradient-to-br from-gray-900 to-gray-800 text-white rounded-2xl p-8 mt-12 text-center">
+            <p className="text-xs font-bold text-emerald-400 uppercase tracking-widest block mb-3">Protect your projects from the start</p>
             <h3 className="text-lg font-bold mb-2">Freelance Contract: 9 Clauses You Must Include</h3>
             <p className="text-gray-400 text-sm mb-4">
               The specific contract clauses that prevent scope creep, protect against non-payment,
@@ -225,7 +225,7 @@ export default function HowToHandleScopeCreepUAE() {
             </p>
             <Link
               href="/blog/freelance-contract-template-uae"
-              className="inline-block bg-white text-gray-900 font-bold px-5 py-2.5 rounded-xl hover:bg-gray-100 transition-colors text-sm"
+              className="inline-block bg-emerald-500 hover:bg-emerald-400 text-white font-bold px-8 py-3 rounded-xl transition-colors text-sm"
             >
               Read the Contract Guide →
             </Link>

@@ -166,7 +166,7 @@ export default function HowToCreateOnlineCourseUAE() {
                 { href: "/blog/how-to-build-recurring-revenue-uae", label: "How to Build Recurring Revenue as a UAE Freelancer" },
                 { href: "/blog/freelance-elearning-developer-rates-uae", label: "Freelance eLearning Developer Rates UAE" },
               ].map((link) => (
-                <Link key={link.href} href={link.href} className="block text-blue-600 hover:text-blue-800 text-sm">
+                <Link key={link.href} href={link.href} className="block text-emerald-700 hover:text-emerald-900 text-sm">
                   → {link.label}
                 </Link>
               ))}

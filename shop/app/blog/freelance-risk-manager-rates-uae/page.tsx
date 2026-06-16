@@ -106,7 +106,7 @@ export default function FreelanceRiskManagerRatesUAE() {
         </div>
 
 
-        <div className="prose prose-gray max-w-none text-gray-700 leading-relaxed space-y-6">
+        <div className="space-y-6 leading-relaxed">
 
           <p>
             Risk management consulting is a high-value, relationship-driven market in the UAE.
@@ -123,8 +123,8 @@ export default function FreelanceRiskManagerRatesUAE() {
             functions that fluctuate in intensity. Here are the 2026 benchmarks.
           </p>
 
-          <div className="bg-gray-50 border border-gray-200 rounded-xl p-4 text-sm">
-            <p className="font-semibold text-gray-900 mb-1">Quick benchmark</p>
+          <div className="bg-emerald-50 border border-emerald-200 rounded-xl p-5">
+            <p className="text-sm font-bold text-emerald-800 mb-2">Quick benchmark</p>
             <p className="text-gray-700">
               A mid-level freelance risk manager in the UAE with 5–8 years of experience in
               banking or corporate risk typically earns <strong>AED 35,000–75,000/month</strong> on
@@ -134,9 +134,7 @@ export default function FreelanceRiskManagerRatesUAE() {
           </div>
 
           <section>
-            <h2 className="text-xl font-bold text-gray-900 mt-8 mb-4">
-              Freelance Risk Manager Rates in the UAE (2026)
-            </h2>
+            <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2"><span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>Freelance Risk Manager Rates in the UAE (2026)</h2>
             <p className="text-xs text-gray-400 mb-4">
               Rates reflect direct client engagements in the UAE market as of mid-2026.
               Rates through consulting firms and staffing agencies typically run 20–30% lower.
@@ -164,9 +162,7 @@ export default function FreelanceRiskManagerRatesUAE() {
           </section>
 
           <section>
-            <h2 className="text-xl font-bold text-gray-900 mt-8 mb-3">
-              Which Sectors Hire Freelance Risk Managers in the UAE?
-            </h2>
+            <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2"><span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>Which Sectors Hire Freelance Risk Managers in the UAE?</h2>
             <p>
               Risk management consulting demand in the UAE is concentrated in four sectors,
               each with distinct characteristics and rate expectations:
@@ -176,7 +172,7 @@ export default function FreelanceRiskManagerRatesUAE() {
               <div className="border border-gray-200 rounded-xl p-4">
                 <div className="flex items-start justify-between gap-2 mb-2">
                   <p className="font-semibold text-gray-900 text-sm">Banking and financial services</p>
-                  <span className="text-xs font-bold text-blue-700 bg-blue-50 px-2 py-0.5 rounded-full shrink-0">Highest rates</span>
+                  <span className="text-xs font-bold text-blue-700 bg-emerald-50 px-2 py-0.5 rounded-full shrink-0">Highest rates</span>
                 </div>
                 <p className="text-xs text-gray-600 leading-relaxed">
                   The UAE banking sector — regulated by the Central Bank of the UAE (CBUAE) for
@@ -195,7 +191,7 @@ export default function FreelanceRiskManagerRatesUAE() {
               <div className="border border-gray-200 rounded-xl p-4">
                 <div className="flex items-start justify-between gap-2 mb-2">
                   <p className="font-semibold text-gray-900 text-sm">Construction and real estate development</p>
-                  <span className="text-xs font-bold text-blue-700 bg-blue-50 px-2 py-0.5 rounded-full shrink-0">High project fees</span>
+                  <span className="text-xs font-bold text-blue-700 bg-emerald-50 px-2 py-0.5 rounded-full shrink-0">High project fees</span>
                 </div>
                 <p className="text-xs text-gray-600 leading-relaxed">
                   UAE construction remains one of the world&apos;s most active markets. Major project
@@ -213,7 +209,7 @@ export default function FreelanceRiskManagerRatesUAE() {
               <div className="border border-gray-200 rounded-xl p-4">
                 <div className="flex items-start justify-between gap-2 mb-2">
                   <p className="font-semibold text-gray-900 text-sm">Oil, gas, and energy</p>
-                  <span className="text-xs font-bold text-blue-700 bg-blue-50 px-2 py-0.5 rounded-full shrink-0">Strong Abu Dhabi market</span>
+                  <span className="text-xs font-bold text-blue-700 bg-emerald-50 px-2 py-0.5 rounded-full shrink-0">Strong Abu Dhabi market</span>
                 </div>
                 <p className="text-xs text-gray-600 leading-relaxed">
                   ADNOC and its downstream and upstream subsidiaries, along with international
@@ -230,7 +226,7 @@ export default function FreelanceRiskManagerRatesUAE() {
               <div className="border border-gray-200 rounded-xl p-4">
                 <div className="flex items-start justify-between gap-2 mb-2">
                   <p className="font-semibold text-gray-900 text-sm">Corporate and family businesses</p>
-                  <span className="text-xs font-bold text-blue-700 bg-blue-50 px-2 py-0.5 rounded-full shrink-0">Growing demand</span>
+                  <span className="text-xs font-bold text-blue-700 bg-emerald-50 px-2 py-0.5 rounded-full shrink-0">Growing demand</span>
                 </div>
                 <p className="text-xs text-gray-600 leading-relaxed">
                   UAE family businesses — many of which operate large, diversified conglomerates
@@ -246,9 +242,7 @@ export default function FreelanceRiskManagerRatesUAE() {
           </section>
 
           <section>
-            <h2 className="text-xl font-bold text-gray-900 mt-8 mb-3">
-              Key Qualifications That Increase Risk Consulting Rates in the UAE
-            </h2>
+            <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2"><span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>Key Qualifications That Increase Risk Consulting Rates in the UAE</h2>
             <p>
               Risk management is a credentialled profession. These qualifications are recognised
               by UAE clients and directly impact what rate the market will accept:
@@ -290,7 +284,7 @@ export default function FreelanceRiskManagerRatesUAE() {
                 <div key={item.qual} className="border border-gray-200 rounded-xl p-4">
                   <div className="flex items-start justify-between gap-2 mb-1">
                     <p className="font-semibold text-gray-900 text-sm">{item.qual}</p>
-                    <span className="text-xs text-green-700 bg-green-50 px-2 py-0.5 rounded-full shrink-0 font-medium">{item.impact}</span>
+                    <span className="text-xs text-emerald-700 bg-emerald-50 border border-emerald-200 px-2 py-0.5 rounded-full shrink-0 font-medium">{item.impact}</span>
                   </div>
                   <p className="text-xs text-gray-600 leading-relaxed">{item.detail}</p>
                 </div>
@@ -299,9 +293,7 @@ export default function FreelanceRiskManagerRatesUAE() {
           </section>
 
           <section>
-            <h2 className="text-xl font-bold text-gray-900 mt-8 mb-3">
-              Retainer vs Project Pricing for Risk Management Consulting
-            </h2>
+            <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2"><span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>Retainer vs Project Pricing for Risk Management Consulting</h2>
             <p>
               Risk management engagements naturally lend themselves to both models, and the
               right structure depends on the nature of the client relationship and the work
@@ -361,9 +353,7 @@ export default function FreelanceRiskManagerRatesUAE() {
           </section>
 
           <section>
-            <h2 className="text-xl font-bold text-gray-900 mt-8 mb-3">
-              How to Build a Freelance Risk Management Practice in the UAE
-            </h2>
+            <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2"><span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>How to Build a Freelance Risk Management Practice in the UAE</h2>
             <p>
               Risk management consulting is a credibility-first market. Clients are entrusting
               you with their most sensitive vulnerabilities — and they need to trust you before
@@ -413,9 +403,7 @@ export default function FreelanceRiskManagerRatesUAE() {
           </section>
 
           <section>
-            <h2 className="text-xl font-bold text-gray-900 mt-8 mb-3">
-              Rate Anchoring: What to Say When Clients Push Back
-            </h2>
+            <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2"><span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>Rate Anchoring: What to Say When Clients Push Back</h2>
             <p>
               Risk management clients — particularly finance professionals — will sometimes
               benchmark your rate against an employed risk manager&apos;s salary. Here is how to
@@ -455,8 +443,8 @@ export default function FreelanceRiskManagerRatesUAE() {
           </section>
 
           {/* CTA */}
-          <div className="bg-gray-950 text-white rounded-2xl p-6 mt-10">
-            <p className="text-xs font-semibold text-gray-400 uppercase tracking-widest mb-2">
+          <div className="bg-gradient-to-br from-gray-900 to-gray-800 text-white rounded-2xl p-8 mt-12 text-center">
+            <p className="text-xs font-bold text-emerald-400 uppercase tracking-widest block mb-3">
               Run your risk consultancy like a business
             </p>
             <h3 className="text-lg font-bold mb-2">Freelancer Client CRM for UAE Consultants</h3>
@@ -468,7 +456,7 @@ export default function FreelanceRiskManagerRatesUAE() {
             </p>
             <Link
               href="/products/freelancer-client-crm"
-              className="inline-block bg-white text-gray-900 font-bold px-5 py-2.5 rounded-xl hover:bg-gray-100 transition-colors text-sm"
+              className="inline-block bg-emerald-500 hover:bg-emerald-400 text-white font-bold px-8 py-3 rounded-xl transition-colors text-sm"
             >
               Get Freelancer Client CRM →
             </Link>

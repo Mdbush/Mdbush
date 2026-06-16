@@ -69,7 +69,7 @@ export default function FreelanceDevOpsEngineerRatesUAE() {
         </div>
 
 
-        <div className="prose prose-gray max-w-none text-gray-700 leading-relaxed space-y-6">
+        <div className="space-y-6 leading-relaxed">
 
           <p>
             DevOps engineering is one of the highest-demand technical specialisms in the UAE.
@@ -81,8 +81,8 @@ export default function FreelanceDevOpsEngineerRatesUAE() {
             model. Here are the 2026 rate benchmarks.
           </p>
 
-          <div className="bg-gray-50 border border-gray-200 rounded-xl p-4 text-sm">
-            <p className="font-semibold text-gray-900 mb-1">Quick benchmark</p>
+          <div className="bg-emerald-50 border border-emerald-200 rounded-xl p-5">
+            <p className="text-sm font-bold text-emerald-800 mb-2">Quick benchmark</p>
             <p className="text-gray-700">
               A mid-level freelance DevOps engineer in Dubai (AWS/Azure certified, 4–7 years,
               Kubernetes production experience) typically charges <strong>AED 15,000–40,000
@@ -94,7 +94,7 @@ export default function FreelanceDevOpsEngineerRatesUAE() {
           </div>
 
           <section>
-            <h2 className="text-xl font-bold text-gray-900 mt-8 mb-4">Freelance DevOps Engineer Rates in the UAE by Service (2026)</h2>
+            <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2"><span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>Freelance DevOps Engineer Rates in the UAE by Service (2026)</h2>
             <p className="text-xs text-gray-400 mb-4">Junior: 0–3 years / Mid: 4–7 years, cloud certified, production Kubernetes / Senior: 8+ years, multi-cloud, enterprise architecture</p>
             <div className="overflow-x-auto">
               <table className="w-full text-sm border-collapse">
@@ -121,7 +121,7 @@ export default function FreelanceDevOpsEngineerRatesUAE() {
           </section>
 
           <section>
-            <h2 className="text-xl font-bold text-gray-900 mt-8 mb-3">High-Value DevOps Niches in the UAE</h2>
+            <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2"><span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>High-Value DevOps Niches in the UAE</h2>
             <div className="space-y-3 mt-4">
               {[
                 { niche: "UAE banking and fintech cloud migration (Azure UAE North)", rate: "AED 40,000–200,000+ per engagement", why: "UAE banks and licensed financial institutions (both CBUAE-licensed and DIFC DFSA-licensed) are under pressure to migrate legacy systems to cloud while meeting stringent data sovereignty and regulatory requirements. Azure UAE North is the preferred platform for UAE banking cloud due to data residency compliance. Engineers with UAE banking domain knowledge, Azure expertise, and CBUAE/DFSA compliance awareness are extraordinarily rare and command the top rates in the UAE DevOps market." },
@@ -132,7 +132,7 @@ export default function FreelanceDevOpsEngineerRatesUAE() {
                 <div key={item.niche} className="border border-gray-200 rounded-xl p-4">
                   <div className="flex items-start justify-between gap-2 mb-1">
                     <p className="font-semibold text-gray-900 text-sm">{item.niche}</p>
-                    <span className="text-xs font-bold text-green-700 bg-green-50 px-2 py-0.5 rounded-full shrink-0">{item.rate}</span>
+                    <span className="text-xs font-bold text-emerald-700 bg-emerald-50 border border-emerald-200 px-2 py-0.5 rounded-full shrink-0">{item.rate}</span>
                   </div>
                   <p className="text-xs text-gray-600">{item.why}</p>
                 </div>
@@ -141,7 +141,7 @@ export default function FreelanceDevOpsEngineerRatesUAE() {
           </section>
 
           <section>
-            <h2 className="text-xl font-bold text-gray-900 mt-8 mb-3">UAE Cloud Platform Context</h2>
+            <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2"><span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>UAE Cloud Platform Context</h2>
             <ul className="space-y-1 text-sm text-gray-600 mt-3">
               <li>• <strong>Microsoft Azure UAE North (Dubai)</strong> — The dominant cloud platform for regulated UAE industries (banking, government, healthcare) due to data sovereignty. Opened in 2019. Azure Stack Hub deployments are used for air-gapped government environments. Azure certifications (AZ-900 through AZ-305 and AZ-400 DevOps Engineer) are highly valued in the UAE market</li>
               <li>• <strong>AWS Middle East (Bahrain) — me-south-1</strong> — The primary AWS region for UAE workloads. No UAE-specific AWS region as of 2026. AWS certifications (Solutions Architect, DevOps Engineer Professional) are widely recognized. AWS WAF (Well-Architected Framework) engagements are a standard consulting entry point with SME clients</li>
@@ -151,7 +151,7 @@ export default function FreelanceDevOpsEngineerRatesUAE() {
           </section>
 
           <section>
-            <h2 className="text-xl font-bold text-gray-900 mt-8 mb-3">Certifications and Credentials</h2>
+            <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2"><span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>Certifications and Credentials</h2>
             <ul className="space-y-1 text-sm text-gray-600 mt-3">
               <li>• <strong>AWS DevOps Engineer Professional</strong> — Demonstrates production-level AWS automation, CI/CD, and monitoring expertise. Required or strongly preferred for AWS-heavy UAE client work</li>
               <li>• <strong>Azure DevOps Engineer Expert (AZ-400)</strong> — The most valuable single certification for UAE DevOps freelancers given Azure&apos;s dominant position in UAE regulated industries</li>
@@ -162,8 +162,8 @@ export default function FreelanceDevOpsEngineerRatesUAE() {
           </section>
 
           {/* CTA */}
-          <div className="bg-gray-950 text-white rounded-2xl p-6 mt-10">
-            <p className="text-xs font-semibold text-gray-400 uppercase tracking-widest mb-2">Manage your DevOps engagements</p>
+          <div className="bg-gradient-to-br from-gray-900 to-gray-800 text-white rounded-2xl p-8 mt-12 text-center">
+            <p className="text-xs font-bold text-emerald-400 uppercase tracking-widest block mb-3">Manage your DevOps engagements</p>
             <h3 className="text-lg font-bold mb-2">Freelancer Client CRM — Track Every Project & Retainer</h3>
             <p className="text-gray-400 text-sm mb-4">
               Track DevOps projects from scoping through handover, manage milestone billing,
@@ -172,7 +172,7 @@ export default function FreelanceDevOpsEngineerRatesUAE() {
             </p>
             <Link
               href="/products/freelancer-client-crm"
-              className="inline-block bg-white text-gray-900 font-bold px-5 py-2.5 rounded-xl hover:bg-gray-100 transition-colors text-sm"
+              className="inline-block bg-emerald-500 hover:bg-emerald-400 text-white font-bold px-8 py-3 rounded-xl transition-colors text-sm"
             >
               Get the Client CRM →
             </Link>

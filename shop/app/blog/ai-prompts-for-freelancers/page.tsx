@@ -80,7 +80,7 @@ export default function Article() {
           </p>
         </div>
 
-        <div className="text-gray-700 leading-relaxed space-y-6">
+        <div className="space-y-6 leading-relaxed">
 
           <p>
             I've been using Claude and ChatGPT daily in my work for over a year. These tools can genuinely
@@ -91,7 +91,7 @@ export default function Article() {
             Here's what actually works, what doesn't, and the prompts I use most often.
           </p>
 
-          <h2 className="text-xl font-bold text-gray-900 mt-10 mb-3">The #1 Mistake Freelancers Make With AI</h2>
+          <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2"><span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>The #1 Mistake Freelancers Make With AI</h2>
 
           <p>
             They ask vague questions and get vague answers.
@@ -109,7 +109,7 @@ export default function Article() {
             AI is a thinking partner, not a mind reader.
           </p>
 
-          <h2 className="text-xl font-bold text-gray-900 mt-10 mb-3">The 3 Things AI Is Actually Good At for Freelancers</h2>
+          <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2"><span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>The 3 Things AI Is Actually Good At for Freelancers</h2>
 
           <ol className="list-decimal pl-5 space-y-4 text-gray-600">
             <li>
@@ -129,14 +129,14 @@ export default function Article() {
             </li>
           </ol>
 
-          <h2 className="text-xl font-bold text-gray-900 mt-10 mb-3">Copy-Paste Prompts That Work</h2>
+          <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2"><span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>Copy-Paste Prompts That Work</h2>
 
           <p>These are real prompts — not theoretical ones. Paste them in, fill in the brackets.</p>
 
           <div className="flex flex-col gap-4 my-6">
             {prompts.map((p) => (
               <div key={p.label} className="border border-gray-200 rounded-2xl p-4">
-                <p className="text-xs font-semibold text-gray-400 uppercase tracking-widest mb-2">{p.label}</p>
+                <p className="text-xs font-bold text-emerald-400 uppercase tracking-widest block mb-3">{p.label}</p>
                 <p className="text-sm text-gray-700 bg-gray-50 border border-gray-200 rounded-xl p-3 font-mono leading-relaxed">
                   {p.prompt}
                 </p>
@@ -156,7 +156,7 @@ export default function Article() {
             </Link>
           </div>
 
-          <h2 className="text-xl font-bold text-gray-900 mt-10 mb-3">When AI Wastes Your Time</h2>
+          <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2"><span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>When AI Wastes Your Time</h2>
 
           <p>There are situations where AI slows you down rather than speeds you up:</p>
 
@@ -178,7 +178,7 @@ export default function Article() {
             </li>
           </ul>
 
-          <h2 className="text-xl font-bold text-gray-900 mt-10 mb-3">Which AI Tool Is Best for Freelancers?</h2>
+          <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2"><span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>Which AI Tool Is Best for Freelancers?</h2>
 
           <p>
             For writing and client work: <strong>Claude</strong> (by Anthropic) is consistently better
@@ -199,7 +199,7 @@ export default function Article() {
             All three work with every prompt on this site.
           </p>
 
-          <h2 className="text-xl font-bold text-gray-900 mt-10 mb-3">The Bottom Line</h2>
+          <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2"><span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>The Bottom Line</h2>
 
           <p>
             AI won't make you a better freelancer by itself. But it will save you 5-10 hours a week

@@ -58,7 +58,7 @@ export default function HowToSetUpFreelanceBusinessUAE() {
         </div>
 
 
-        <div className="prose prose-gray max-w-none text-gray-700 leading-relaxed space-y-6">
+        <div className="space-y-6 leading-relaxed">
 
           <p>
             Setting up a freelance business in the UAE legally is one of the most important
@@ -69,8 +69,8 @@ export default function HowToSetUpFreelanceBusinessUAE() {
             every step — from choosing your licence type to getting your first client invoice paid.
           </p>
 
-          <div className="bg-blue-50 border border-blue-200 rounded-xl p-4 text-sm">
-            <p className="font-semibold text-blue-900 mb-1">Key numbers for 2026</p>
+          <div className="bg-emerald-50 border border-emerald-200 rounded-xl p-4 text-sm">
+            <p className="font-semibold text-emerald-900 mb-1">Key numbers for 2026</p>
             <p className="text-blue-800">
               Free zone freelance permit: <strong>AED 7,500–15,000/year</strong> all-in.
               Mainland sole establishment: <strong>AED 15,000–25,000/year</strong> including DED licence.
@@ -79,12 +79,12 @@ export default function HowToSetUpFreelanceBusinessUAE() {
           </div>
 
           <section>
-            <h2 className="text-xl font-bold text-gray-900 mt-8 mb-3">Step 1: Choose Your Licence Type</h2>
+            <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2"><span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>Step 1: Choose Your Licence Type</h2>
             <div className="space-y-3 mt-4">
               <div className="border border-gray-200 rounded-xl p-4">
                 <div className="flex items-center justify-between mb-2">
                   <p className="font-bold text-gray-900 text-sm">Free Zone Freelance Permit</p>
-                  <span className="text-xs font-bold text-green-700 bg-green-50 px-2 py-0.5 rounded-full">AED 7,500–15,000/yr</span>
+                  <span className="text-xs font-bold text-emerald-700 bg-emerald-50 border border-emerald-200 px-2 py-0.5 rounded-full">AED 7,500–15,000/yr</span>
                 </div>
                 <p className="text-sm text-gray-700 mb-2">
                   The most popular option for UAE freelancers. Key free zones offering freelance permits:
@@ -101,9 +101,9 @@ export default function HowToSetUpFreelanceBusinessUAE() {
               <div className="border border-gray-200 rounded-xl p-4">
                 <div className="flex items-center justify-between mb-2">
                   <p className="font-bold text-gray-900 text-sm">Mainland Sole Establishment (DED)</p>
-                  <span className="text-xs font-bold text-blue-700 bg-blue-50 px-2 py-0.5 rounded-full">AED 15,000–25,000/yr</span>
+                  <span className="text-xs font-bold text-blue-700 bg-emerald-50 px-2 py-0.5 rounded-full">AED 15,000–25,000/yr</span>
                 </div>
-                <p className="text-sm text-gray-700">
+                <p className="text-sm text-emerald-800">
                   A UAE mainland licence (Dubai Economic Department for Dubai, ADDED for Abu Dhabi)
                   allows you to work with UAE government clients and mainland companies without any
                   restrictions. More expensive and complex to set up than a free zone permit, but
@@ -117,7 +117,7 @@ export default function HowToSetUpFreelanceBusinessUAE() {
           </section>
 
           <section>
-            <h2 className="text-xl font-bold text-gray-900 mt-8 mb-3">Step 2: Register Your Licence</h2>
+            <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2"><span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>Step 2: Register Your Licence</h2>
             <ul className="space-y-2 text-sm text-gray-700 mt-3">
               <li className="flex gap-2"><span className="font-bold text-gray-500">1.</span> Choose your free zone and contact them directly (most have online applications)</li>
               <li className="flex gap-2"><span className="font-bold text-gray-500">2.</span> Select your business activity (e.g. &quot;Management Consultancy&quot;, &quot;Marketing Consultancy&quot;, &quot;IT Consultancy&quot;, &quot;Design Services&quot;) — pick activities that cover your services broadly</li>
@@ -129,7 +129,7 @@ export default function HowToSetUpFreelanceBusinessUAE() {
           </section>
 
           <section>
-            <h2 className="text-xl font-bold text-gray-900 mt-8 mb-3">Step 3: Open a Business Bank Account</h2>
+            <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2"><span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>Step 3: Open a Business Bank Account</h2>
             <p>
               A business bank account separates your personal and business finances, is required
               by many UAE corporate clients on invoices, and enables proper bookkeeping.
@@ -154,7 +154,7 @@ export default function HowToSetUpFreelanceBusinessUAE() {
           </section>
 
           <section>
-            <h2 className="text-xl font-bold text-gray-900 mt-8 mb-3">Step 4: Tax Registration</h2>
+            <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2"><span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>Step 4: Tax Registration</h2>
             <ul className="space-y-1 text-sm text-gray-600 mt-3">
               <li>• <strong>VAT registration</strong> — Mandatory if your taxable supplies exceed AED 375,000/year. Optional (voluntary) above AED 187,500/year. Register via EmaraTax (tax.gov.ae). Being VAT-registered allows you to reclaim input VAT on business expenses</li>
               <li>• <strong>Corporate tax</strong> — UAE corporate tax at 9% applies on annual taxable income above AED 375,000. As a freelance business, you will be subject to corporate tax once your net profit exceeds this threshold. Register and file via EmaraTax. Small business relief (zero tax rate) applies to businesses with revenue below AED 3,000,000</li>
@@ -163,7 +163,7 @@ export default function HowToSetUpFreelanceBusinessUAE() {
           </section>
 
           <section>
-            <h2 className="text-xl font-bold text-gray-900 mt-8 mb-3">Step 5: Set Up Your Invoicing System</h2>
+            <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2"><span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>Step 5: Set Up Your Invoicing System</h2>
             <ul className="space-y-2 text-sm text-gray-700 mt-3">
               <li className="flex gap-2"><span className="text-blue-500 font-bold">✓</span> <strong>Include on every invoice:</strong> Your trading name, trade licence number, TRN (Tax Registration Number if VAT registered), your bank account IBAN, invoice number and date, payment terms (Net 14 or Net 30), and clear description of services</li>
               <li className="flex gap-2"><span className="text-blue-500 font-bold">✓</span> <strong>Accounting software:</strong> Zoho Books (AED 45–90/month) or QuickBooks Online (AED 80–160/month) both handle UAE VAT returns and are widely used by UAE freelancers. Worth the subscription from day one</li>
@@ -172,8 +172,8 @@ export default function HowToSetUpFreelanceBusinessUAE() {
             </ul>
           </section>
 
-          <div className="bg-gray-950 text-white rounded-2xl p-6 mt-10">
-            <p className="text-xs font-semibold text-gray-400 uppercase tracking-widest mb-2">Run your freelance business like a pro</p>
+          <div className="bg-gradient-to-br from-gray-900 to-gray-800 text-white rounded-2xl p-8 mt-12 text-center">
+            <p className="text-xs font-bold text-emerald-400 uppercase tracking-widest block mb-3">Run your freelance business like a pro</p>
             <h3 className="text-lg font-bold mb-2">SoloKit Freelance OS — Systems for UAE Freelancers</h3>
             <p className="text-gray-400 text-sm mb-4">
               Client CRM, invoice tracker, goal planner, and business systems — everything
@@ -181,7 +181,7 @@ export default function HowToSetUpFreelanceBusinessUAE() {
             </p>
             <Link
               href="/products/solokit-freelance-os"
-              className="inline-block bg-white text-gray-900 font-bold px-5 py-2.5 rounded-xl hover:bg-gray-100 transition-colors text-sm"
+              className="inline-block bg-emerald-500 hover:bg-emerald-400 text-white font-bold px-8 py-3 rounded-xl transition-colors text-sm"
             >
               Get SoloKit →
             </Link>

@@ -58,7 +58,7 @@ export default function HowToManageClientExpectationsUAE() {
         </div>
 
 
-        <div className="prose prose-gray max-w-none text-gray-700 leading-relaxed space-y-6">
+        <div className="space-y-6 leading-relaxed">
 
           <p>
             Expectation mismatches are the most common reason UAE freelance relationships
@@ -72,8 +72,8 @@ export default function HowToManageClientExpectationsUAE() {
             whether you get referrals or refund requests.
           </p>
 
-          <div className="bg-gray-50 border border-gray-200 rounded-xl p-4 text-sm">
-            <p className="font-semibold text-gray-900 mb-1">The root cause of most UAE client problems</p>
+          <div className="bg-emerald-50 border border-emerald-200 rounded-xl p-5">
+            <p className="text-sm font-bold text-emerald-800 mb-2">The root cause of most UAE client problems</p>
             <p className="text-gray-700">
               Most client expectation problems are created at the start of the engagement,
               not in the middle. <strong>Vague scope + verbal agreement + no milestone
@@ -85,7 +85,7 @@ export default function HowToManageClientExpectationsUAE() {
           </div>
 
           <section>
-            <h2 className="text-xl font-bold text-gray-900 mt-8 mb-3">Before the Project: Expectation Infrastructure</h2>
+            <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2"><span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>Before the Project: Expectation Infrastructure</h2>
             <div className="space-y-3 mt-4">
               {[
                 { step: "The scoping call: ask the uncomfortable questions", desc: "Most freelancers rush through scoping to get to the proposal. The questions you avoid asking now become the disputes you have later. Ask: Who has final sign-off authority? What does success look like in measurable terms? Have you worked with a freelancer on this before — what worked, what didn&apos;t? What is the one thing that would make this project a failure? These questions are uncomfortable because they surface real constraints and past frustrations. They are exactly what you need to know." },
@@ -102,7 +102,7 @@ export default function HowToManageClientExpectationsUAE() {
           </section>
 
           <section>
-            <h2 className="text-xl font-bold text-gray-900 mt-8 mb-3">During the Project: Proactive Communication</h2>
+            <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2"><span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>During the Project: Proactive Communication</h2>
             <ul className="space-y-2 text-sm text-gray-600 mt-3">
               <li>• <strong>Send a weekly status update, unprompted</strong> — Even if nothing has changed, a brief Friday update (&apos;Week 2 update: completed X, working on Y, on track for the milestone on [date]&apos;) keeps the client in the loop and prevents the anxiety that generates micro-management. Clients who feel informed don&apos;t send &apos;quick check-in&apos; messages every day</li>
               <li>• <strong>Flag problems 24 hours before they become crises</strong> — If you discover a dependency that will delay delivery, tell the client immediately — not when the deadline passes. &apos;I&apos;m flagging early that the API documentation you shared doesn&apos;t match the live environment. This will likely push the integration milestone by 3 days unless we can get the updated specs by tomorrow.&apos; Early warning is professional. Silent lateness is a breach of trust</li>
@@ -112,7 +112,7 @@ export default function HowToManageClientExpectationsUAE() {
           </section>
 
           <section>
-            <h2 className="text-xl font-bold text-gray-900 mt-8 mb-3">UAE-Specific Client Dynamics to Navigate</h2>
+            <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2"><span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>UAE-Specific Client Dynamics to Navigate</h2>
             <div className="space-y-3 mt-4">
               {[
                 { dynamic: "Senior stakeholders who change direction without chain-of-command communication", desc: "In many UAE organizations, a senior executive (CEO, Managing Director, or department head) will engage with you directly and change direction — without informing the project manager or marketing team you&apos;ve been working with. This is not unusual in the UAE corporate culture. Protect yourself: always CC the primary project contact on all communications with senior stakeholders. When senior direction contradicts your current brief, surface it explicitly: &apos;I want to make sure we&apos;re aligned — my brief from [contact] was X, and your direction today is Y. Should I proceed with Y, and can we confirm this with [contact]?&apos;" },
@@ -129,8 +129,8 @@ export default function HowToManageClientExpectationsUAE() {
           </section>
 
           {/* CTA */}
-          <div className="bg-gray-950 text-white rounded-2xl p-6 mt-10">
-            <p className="text-xs font-semibold text-gray-400 uppercase tracking-widest mb-2">Systems for client communication</p>
+          <div className="bg-gradient-to-br from-gray-900 to-gray-800 text-white rounded-2xl p-8 mt-12 text-center">
+            <p className="text-xs font-bold text-emerald-400 uppercase tracking-widest block mb-3">Systems for client communication</p>
             <h3 className="text-lg font-bold mb-2">Freelancer Client CRM — Client Communication Templates Built In</h3>
             <p className="text-gray-400 text-sm mb-4">
               Milestone sign-off templates, weekly status update formats, scope change
@@ -139,7 +139,7 @@ export default function HowToManageClientExpectationsUAE() {
             </p>
             <Link
               href="/products/freelancer-client-crm"
-              className="inline-block bg-white text-gray-900 font-bold px-5 py-2.5 rounded-xl hover:bg-gray-100 transition-colors text-sm"
+              className="inline-block bg-emerald-500 hover:bg-emerald-400 text-white font-bold px-8 py-3 rounded-xl transition-colors text-sm"
             >
               Get the Client CRM →
             </Link>

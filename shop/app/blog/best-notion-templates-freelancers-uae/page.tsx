@@ -62,7 +62,7 @@ export default function Article() {
           </p>
         </div>
 
-        <div className="prose prose-gray max-w-none text-gray-700 leading-relaxed space-y-6">
+        <div className="space-y-6 leading-relaxed">
 
           <p>
             Notion fixes all of that — but only if you have the right setup. The blank canvas is a curse, not a feature.
@@ -73,7 +73,7 @@ export default function Article() {
             I've tested dozens of Notion setups over two years. These are the only templates worth using.
           </p>
 
-          <h2 className="text-xl font-bold text-gray-900 mt-10 mb-3">1. Client CRM (The Most Important One)</h2>
+          <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2"><span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>1. Client CRM (The Most Important One)</h2>
 
           <p>
             Every freelancer needs a place to track leads, ongoing projects, and follow-ups. Without it, you're
@@ -115,7 +115,7 @@ export default function Article() {
             </Link>
           </div>
 
-          <h2 className="text-xl font-bold text-gray-900 mt-10 mb-3">2. Solopreneur OS (For the Full Picture)</h2>
+          <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2"><span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>2. Solopreneur OS (For the Full Picture)</h2>
 
           <p>
             If you're running a solo business — not just freelancing but building something — you need more than
@@ -151,7 +151,7 @@ export default function Article() {
             </Link>
           </div>
 
-          <h2 className="text-xl font-bold text-gray-900 mt-10 mb-3">How to Actually Use Notion Templates</h2>
+          <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2"><span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>How to Actually Use Notion Templates</h2>
 
           <p>
             Most people buy or download a template, open it once, feel overwhelmed by the structure,
@@ -177,7 +177,7 @@ export default function Article() {
             </li>
           </ol>
 
-          <h2 className="text-xl font-bold text-gray-900 mt-10 mb-3">Free vs. Paid Templates</h2>
+          <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2"><span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>Free vs. Paid Templates</h2>
 
           <p>
             Free templates are fine to start with — Notion's own template gallery has decent options.

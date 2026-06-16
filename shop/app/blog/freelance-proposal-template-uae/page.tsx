@@ -118,9 +118,9 @@ export default function Article() {
           </p>
         </div>
 
-        <div className="text-gray-700 leading-relaxed space-y-6">
+        <div className="space-y-6 leading-relaxed">
 
-          <h2 className="text-xl font-bold text-gray-900 mt-10 mb-3">Why Most Proposals Fail</h2>
+          <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2"><span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>Why Most Proposals Fail</h2>
 
           <p>
             The most common proposal mistake isn&apos;t pricing too high. It&apos;s opening with yourself.
@@ -139,9 +139,7 @@ export default function Article() {
             your pricing) is easier to accept once the client trusts that you understand them.
           </p>
 
-          <h2 className="text-xl font-bold text-gray-900 mt-10 mb-3">
-            The 7-Section Proposal Structure That Works for UAE Clients
-          </h2>
+          <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2"><span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>The 7-Section Proposal Structure That Works for UAE Clients</h2>
 
           <ol className="list-decimal pl-5 space-y-4 text-gray-600">
             <li>
@@ -181,7 +179,7 @@ export default function Article() {
             </li>
           </ol>
 
-          <h2 className="text-xl font-bold text-gray-900 mt-10 mb-3">The Full Template (Copy-Paste Ready)</h2>
+          <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2"><span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>The Full Template (Copy-Paste Ready)</h2>
 
           <p>
             Use this as your base. Personalise the bracketed sections for each client.
@@ -212,7 +210,7 @@ export default function Article() {
             </Link>
           </div>
 
-          <h2 className="text-xl font-bold text-gray-900 mt-10 mb-3">5 Common UAE Proposal Mistakes</h2>
+          <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2"><span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>5 Common UAE Proposal Mistakes</h2>
 
           <ol className="list-decimal pl-5 space-y-4 text-gray-600">
             <li>
@@ -245,7 +243,7 @@ export default function Article() {
             </li>
           </ol>
 
-          <h2 className="text-xl font-bold text-gray-900 mt-10 mb-3">How to Use AI to Write Proposals Faster</h2>
+          <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2"><span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>How to Use AI to Write Proposals Faster</h2>
 
           <p>
             AI won&apos;t write a great proposal from nothing — but it&apos;s excellent at turning your raw
@@ -280,8 +278,8 @@ export default function Article() {
             short briefs, budget objections, and multi-service proposals.
           </p>
 
-          <div className="bg-blue-50 border border-blue-100 rounded-2xl p-5 my-6">
-            <p className="text-sm font-semibold text-blue-900 mb-2">
+          <div className="bg-emerald-50 border border-blue-100 rounded-2xl p-5 my-6">
+            <p className="text-sm font-semibold text-emerald-900 mb-2">
               Quick answer: How long should a UAE freelance proposal be?
             </p>
             <p className="text-sm text-blue-800">

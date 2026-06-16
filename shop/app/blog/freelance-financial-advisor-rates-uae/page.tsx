@@ -109,7 +109,7 @@ export default function FreelanceFinancialAdvisorRatesUAE() {
           </p>
 
           <div className="bg-gray-50 border border-gray-200 rounded-xl p-4 text-sm mb-8">
-            <p className="font-semibold text-gray-900 mb-1">Quick benchmark</p>
+            <p className="text-sm font-bold text-emerald-800 mb-2">Quick benchmark</p>
             <p className="text-gray-700">
               A mid-level independent financial advisor in the UAE with 5–10 years of
               experience and a client base of 20–40 high-net-worth expats typically earns

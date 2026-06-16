@@ -69,7 +69,7 @@ export default function FreelanceNetworkEngineerRatesUAE() {
         </div>
 
 
-        <div className="prose prose-gray max-w-none text-gray-700 leading-relaxed space-y-6">
+        <div className="space-y-6 leading-relaxed">
 
           <p>
             Network engineering remains one of the most consistent freelance opportunities
@@ -82,8 +82,8 @@ export default function FreelanceNetworkEngineerRatesUAE() {
             network engineers. Here are the 2026 rate benchmarks.
           </p>
 
-          <div className="bg-gray-50 border border-gray-200 rounded-xl p-4 text-sm">
-            <p className="font-semibold text-gray-900 mb-1">Quick benchmark</p>
+          <div className="bg-emerald-50 border border-emerald-200 rounded-xl p-5">
+            <p className="text-sm font-bold text-emerald-800 mb-2">Quick benchmark</p>
             <p className="text-gray-700">
               A mid-level freelance network engineer in Dubai (CCNP or equivalent,
               4–7 years, UAE enterprise experience) typically charges
@@ -96,7 +96,7 @@ export default function FreelanceNetworkEngineerRatesUAE() {
           </div>
 
           <section>
-            <h2 className="text-xl font-bold text-gray-900 mt-8 mb-4">Freelance Network Engineer Rates in the UAE by Service (2026)</h2>
+            <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2"><span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>Freelance Network Engineer Rates in the UAE by Service (2026)</h2>
             <p className="text-xs text-gray-400 mb-4">Junior: 0–3 years / Mid: 4–7 years, CCNP or equivalent, UAE enterprise deployments / Senior: 8+ years, multi-site enterprise architecture, Cisco/Juniper Expert level</p>
             <div className="overflow-x-auto">
               <table className="w-full text-sm border-collapse">
@@ -123,7 +123,7 @@ export default function FreelanceNetworkEngineerRatesUAE() {
           </section>
 
           <section>
-            <h2 className="text-xl font-bold text-gray-900 mt-8 mb-3">High-Value Network Engineering Niches in the UAE</h2>
+            <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2"><span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>High-Value Network Engineering Niches in the UAE</h2>
             <div className="space-y-3 mt-4">
               {[
                 { niche: "Free zone and commercial tower network infrastructure (DIFC, JLT, Business Bay)", rate: "AED 12,000–100,000+ per project", why: "Dubai&apos;s commercial free zones (DIFC, JAFZA, DMCCr, JLT) and landmark commercial towers have a constant cycle of tenant fit-outs requiring dedicated network infrastructure. Each new tenant needs structured cabling, switch installation, firewall configuration, internet connectivity setup, and WiFi deployment. Network engineers with strong relationships with DIFC or JLT building management companies can build a consistent project pipeline from a single geographic area." },
@@ -134,7 +134,7 @@ export default function FreelanceNetworkEngineerRatesUAE() {
                 <div key={item.niche} className="border border-gray-200 rounded-xl p-4">
                   <div className="flex items-start justify-between gap-2 mb-1">
                     <p className="font-semibold text-gray-900 text-sm">{item.niche}</p>
-                    <span className="text-xs font-bold text-green-700 bg-green-50 px-2 py-0.5 rounded-full shrink-0">{item.rate}</span>
+                    <span className="text-xs font-bold text-emerald-700 bg-emerald-50 border border-emerald-200 px-2 py-0.5 rounded-full shrink-0">{item.rate}</span>
                   </div>
                   <p className="text-xs text-gray-600">{item.why}</p>
                 </div>
@@ -143,7 +143,7 @@ export default function FreelanceNetworkEngineerRatesUAE() {
           </section>
 
           <section>
-            <h2 className="text-xl font-bold text-gray-900 mt-8 mb-3">Certifications for UAE Network Engineers</h2>
+            <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2"><span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>Certifications for UAE Network Engineers</h2>
             <ul className="space-y-1 text-sm text-gray-600 mt-3">
               <li>• <strong>CCNP (Cisco Certified Network Professional)</strong> — The standard mid-level Cisco credential in the UAE. Enterprise, Security, and Service Provider tracks all have UAE market relevance. CCNP is the baseline requirement for most UAE enterprise network projects</li>
               <li>• <strong>CCIE (Cisco Certified Internetwork Expert)</strong> — The expert-level Cisco credential. CCIEs command the highest rates in the UAE network engineering market and are prioritized for major enterprise and government network contracts</li>
@@ -154,8 +154,8 @@ export default function FreelanceNetworkEngineerRatesUAE() {
           </section>
 
           {/* CTA */}
-          <div className="bg-gray-950 text-white rounded-2xl p-6 mt-10">
-            <p className="text-xs font-semibold text-gray-400 uppercase tracking-widest mb-2">Manage your network engineering clients</p>
+          <div className="bg-gradient-to-br from-gray-900 to-gray-800 text-white rounded-2xl p-8 mt-12 text-center">
+            <p className="text-xs font-bold text-emerald-400 uppercase tracking-widest block mb-3">Manage your network engineering clients</p>
             <h3 className="text-lg font-bold mb-2">Freelancer Client CRM — Track Every Network Project</h3>
             <p className="text-gray-400 text-sm mb-4">
               Track network projects from scoping through sign-off, manage site documentation,
@@ -164,7 +164,7 @@ export default function FreelanceNetworkEngineerRatesUAE() {
             </p>
             <Link
               href="/products/freelancer-client-crm"
-              className="inline-block bg-white text-gray-900 font-bold px-5 py-2.5 rounded-xl hover:bg-gray-100 transition-colors text-sm"
+              className="inline-block bg-emerald-500 hover:bg-emerald-400 text-white font-bold px-8 py-3 rounded-xl transition-colors text-sm"
             >
               Get the Client CRM →
             </Link>

@@ -70,7 +70,7 @@ export default function Article() {
           </p>
         </div>
 
-        <div className="text-gray-700 leading-relaxed space-y-6">
+        <div className="space-y-6 leading-relaxed">
 
           <p>
             Standard Operating Procedures (SOPs) are the difference between a business that runs on systems
@@ -81,7 +81,7 @@ export default function Article() {
             Here's what you actually need, and how to set it up without spending a weekend writing SOPs from scratch.
           </p>
 
-          <h2 className="text-xl font-bold text-gray-900 mt-10 mb-3">What Is an SOP (and Why Freelancers Need Them)</h2>
+          <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2"><span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>What Is an SOP (and Why Freelancers Need Them)</h2>
 
           <p>
             An SOP is a documented process for how you do something repeatedly in your business. Not a vague
@@ -101,7 +101,7 @@ export default function Article() {
             <li>Offboarding clients cleanly (this one is massively overlooked)</li>
           </ul>
 
-          <h2 className="text-xl font-bold text-gray-900 mt-10 mb-3">The 4 Categories Every Freelancer Needs</h2>
+          <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2"><span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>The 4 Categories Every Freelancer Needs</h2>
 
           <div className="flex flex-col gap-4 my-6">
             {sopCategories.map((cat) => (
@@ -138,7 +138,7 @@ export default function Article() {
             </Link>
           </div>
 
-          <h2 className="text-xl font-bold text-gray-900 mt-10 mb-3">How to Write an SOP (If You're Starting From Scratch)</h2>
+          <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2"><span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>How to Write an SOP (If You're Starting From Scratch)</h2>
 
           <p>
             If you can't or won't use a template pack, here's the fastest way to write your own SOPs:
@@ -164,7 +164,7 @@ export default function Article() {
             </li>
           </ol>
 
-          <h2 className="text-xl font-bold text-gray-900 mt-10 mb-3">The Most Important SOP You're Missing</h2>
+          <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2"><span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>The Most Important SOP You're Missing</h2>
 
           <p>
             It's the client offboarding SOP.

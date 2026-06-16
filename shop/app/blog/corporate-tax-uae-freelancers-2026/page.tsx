@@ -34,7 +34,7 @@ const scenarios = [
   { situation: "Your revenue is AED 375,000–3,000,000/year", outcome: "9% CT on taxable income above AED 375,000. Register with EmaraTax and file annual returns.", color: "bg-amber-50 border-amber-200" },
   { situation: "You are employed (not self-employed)", outcome: "No CT. Employment income is explicitly exempt from corporate tax.", color: "bg-emerald-50 border-emerald-200" },
   { situation: "You earn passive income (rent, dividends, interest)", outcome: "Generally exempt if earned personally, not through a business entity.", color: "bg-emerald-50 border-emerald-200" },
-  { situation: "You are in a qualifying free zone", outcome: "May be eligible for 0% CT on qualifying income. Complex rules apply — get specific advice.", color: "bg-blue-50 border-blue-200" },
+  { situation: "You are in a qualifying free zone", outcome: "May be eligible for 0% CT on qualifying income. Complex rules apply — get specific advice.", color: "bg-emerald-50 border-emerald-200" },
 ];
 
 const incomeTable = [
@@ -103,7 +103,7 @@ export default function CorporateTaxUAEFreelancers() {
             {scenarios.map((item, i) => (
               <div key={i} className={`border rounded-xl p-4 ${item.color}`}>
                 <p className="text-sm font-semibold text-gray-900 mb-1">If: {item.situation}</p>
-                <p className="text-sm text-gray-700">→ {item.outcome}</p>
+                <p className="text-sm text-emerald-800">→ {item.outcome}</p>
               </div>
             ))}
           </div>
@@ -207,7 +207,7 @@ export default function CorporateTaxUAEFreelancers() {
                 { href: "/blog/best-banks-freelancers-uae", label: "Best Bank Accounts for UAE Freelancers" },
                 { href: "/blog/rakez-vs-ifza-freelance-license-uae", label: "RAKEZ vs IFZA vs Meydan: Best Free Zone UAE" },
               ].map((link) => (
-                <Link key={link.href} href={link.href} className="block text-blue-600 hover:text-blue-800 text-sm">
+                <Link key={link.href} href={link.href} className="block text-emerald-700 hover:text-emerald-900 text-sm">
                   → {link.label}
                 </Link>
               ))}

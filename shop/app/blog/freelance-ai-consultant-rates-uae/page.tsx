@@ -69,8 +69,8 @@ export default function FreelanceAIConsultantRatesUAE() {
         </div>
 
 
-          <div className="bg-blue-50 border border-blue-200 rounded-xl p-6 mb-10">
-            <h2 className="text-base font-semibold text-blue-900 mb-3">Quick Rate Benchmark</h2>
+          <div className="bg-emerald-50 border border-emerald-200 rounded-xl p-6 mb-10">
+            <h2 className="text-base font-semibold text-emerald-900 mb-3">Quick Rate Benchmark</h2>
             <div className="grid grid-cols-3 gap-4 text-center">
               <div>
                 <div className="text-2xl font-bold text-blue-700">AED 1,000–1,800</div>
@@ -181,7 +181,7 @@ export default function FreelanceAIConsultantRatesUAE() {
                 Builds, trains, fine-tunes, and deploys AI models and systems. Writes code,
                 manages data pipelines, integrates AI APIs, and runs infrastructure.
                 Deliverables: working software, APIs, model pipelines, and deployed AI systems.
-                See <Link href="/blog/freelance-ai-engineer-rates-uae" className="text-blue-600 hover:text-blue-800">freelance AI engineer rates UAE</Link> for
+                See <Link href="/blog/freelance-ai-engineer-rates-uae" className="text-emerald-700 hover:text-emerald-900">freelance AI engineer rates UAE</Link> for
                 technical implementation rates.
               </p>
             </div>
@@ -220,7 +220,7 @@ export default function FreelanceAIConsultantRatesUAE() {
                 { href: "/blog/how-to-use-chatgpt-freelancers-uae", label: "How UAE Freelancers Can Use ChatGPT" },
                 { href: "/blog/freelance-it-consultant-rates-uae", label: "Freelance IT Consultant Rates UAE" },
               ].map((link) => (
-                <Link key={link.href} href={link.href} className="block text-blue-600 hover:text-blue-800 text-sm">
+                <Link key={link.href} href={link.href} className="block text-emerald-700 hover:text-emerald-900 text-sm">
                   → {link.label}
                 </Link>
               ))}

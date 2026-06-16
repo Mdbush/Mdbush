@@ -71,7 +71,7 @@ export default function Article() {
           </p>
         </div>
 
-        <div className="text-gray-700 leading-relaxed space-y-6">
+        <div className="space-y-6 leading-relaxed">
 
           <p>
             The hardest rate conversation is not with a new prospect you have never met. It is with the
@@ -94,9 +94,7 @@ export default function Article() {
             them. This guide walks you through exactly how to do it.
           </p>
 
-          <h2 className="text-xl font-bold text-gray-900 mt-10 mb-3">
-            Section 1: Three Signals That You Are Ready to Raise Rates
-          </h2>
+          <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2"><span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>Section 1: Three Signals That You Are Ready to Raise Rates</h2>
 
           <p>
             You do not need to wait for a client to suggest it — they never will. But these three signals
@@ -157,9 +155,7 @@ export default function Article() {
             </div>
           </div>
 
-          <h2 className="text-xl font-bold text-gray-900 mt-10 mb-3">
-            Section 2: How Much to Raise — With AED Examples
-          </h2>
+          <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2"><span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>Section 2: How Much to Raise — With AED Examples</h2>
 
           <p>
             The right increase depends on how far below market you are and how long it has been since
@@ -199,12 +195,12 @@ export default function Article() {
               },
             ].map((ex) => (
               <div key={ex.label} className="border border-gray-200 rounded-xl p-4">
-                <p className="text-xs font-semibold text-gray-400 uppercase tracking-widest mb-2">{ex.label}</p>
+                <p className="text-xs font-bold text-emerald-400 uppercase tracking-widest block mb-3">{ex.label}</p>
                 <div className="flex items-center gap-3 mb-2">
                   <span className="text-sm text-gray-500 line-through">{ex.before}</span>
                   <span className="text-gray-300">→</span>
                   <span className="text-sm font-semibold text-gray-900">{ex.after}</span>
-                  <span className="text-xs font-bold text-green-600 bg-green-50 px-2 py-0.5 rounded-full">{ex.pct}</span>
+                  <span className="text-xs font-bold text-emerald-600 bg-emerald-50 border border-emerald-200 px-3 py-1 rounded-full">{ex.pct}</span>
                 </div>
                 <p className="text-xs text-gray-500">{ex.note}</p>
               </div>
@@ -236,9 +232,7 @@ export default function Article() {
             .
           </p>
 
-          <h2 className="text-xl font-bold text-gray-900 mt-10 mb-3">
-            Section 3: The Timing Playbook
-          </h2>
+          <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2"><span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>Section 3: The Timing Playbook</h2>
 
           <p>
             When you have the conversation matters as much as what you say in it. The best moments:
@@ -272,9 +266,7 @@ export default function Article() {
             for something else (an extension, a scope reduction). Give each major ask its own moment.
           </p>
 
-          <h2 className="text-xl font-bold text-gray-900 mt-10 mb-3">
-            Section 4: The 3-Step Conversation Framework
-          </h2>
+          <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2"><span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>Section 4: The 3-Step Conversation Framework</h2>
 
           <p>
             Do not spring a rate increase on a client. The most effective approach has three steps spaced
@@ -328,9 +320,7 @@ export default function Article() {
             </div>
           </div>
 
-          <h2 className="text-xl font-bold text-gray-900 mt-10 mb-3">
-            Section 5: Word-for-Word Email Template — Retainer Client
-          </h2>
+          <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2"><span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>Section 5: Word-for-Word Email Template — Retainer Client</h2>
 
           <p>
             This template is for a retainer client you have worked with for 12 months or more. Adjust the
@@ -371,9 +361,7 @@ export default function Article() {
             </p>
           </div>
 
-          <h2 className="text-xl font-bold text-gray-900 mt-10 mb-3">
-            Section 6: Word-for-Word Email Template — Project Client
-          </h2>
+          <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2"><span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>Section 6: Word-for-Word Email Template — Project Client</h2>
 
           <p>
             For a client you work with on a project-by-project basis, the angle is slightly different —
@@ -420,9 +408,7 @@ export default function Article() {
             .
           </p>
 
-          <h2 className="text-xl font-bold text-gray-900 mt-10 mb-3">
-            Section 7: What If They Push Back?
-          </h2>
+          <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2"><span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>Section 7: What If They Push Back?</h2>
 
           <p>
             Some clients will not accept the first number. That is normal and it does not mean the
@@ -465,9 +451,7 @@ export default function Article() {
             negotiation.
           </p>
 
-          <h2 className="text-xl font-bold text-gray-900 mt-10 mb-3">
-            Section 8: What If They Leave?
-          </h2>
+          <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2"><span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>Section 8: What If They Leave?</h2>
 
           <p>
             Sometimes a client will decline the new rate and the relationship will end. This is less
@@ -500,7 +484,7 @@ export default function Article() {
             {" "}to understand what the market will currently bear for your category.
           </p>
 
-          <h2 className="text-xl font-bold text-gray-900 mt-10 mb-3">The Long Game</h2>
+          <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2"><span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>The Long Game</h2>
 
           <p>
             Most UAE freelancers never raise rates with existing clients. Not because the clients would

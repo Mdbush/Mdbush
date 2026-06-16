@@ -69,7 +69,7 @@ export default function FreelanceAudiologistRatesUAE() {
         </div>
 
 
-        <div className="prose prose-gray max-w-none text-gray-700 leading-relaxed space-y-6">
+        <div className="space-y-6 leading-relaxed">
 
           <p>
             Audiology in the UAE operates across ENT clinics, specialist audiology centres,
@@ -80,8 +80,8 @@ export default function FreelanceAudiologistRatesUAE() {
             Emirates. These are the 2026 rate benchmarks.
           </p>
 
-          <div className="bg-gray-50 border border-gray-200 rounded-xl p-4 text-sm">
-            <p className="font-semibold text-gray-900 mb-1">Quick benchmark</p>
+          <div className="bg-emerald-50 border border-emerald-200 rounded-xl p-5">
+            <p className="text-sm font-bold text-emerald-800 mb-2">Quick benchmark</p>
             <p className="text-gray-700">
               A mid-level freelance audiologist in Dubai with DHA licence typically earns
               <strong> AED 150–250/hr</strong> for diagnostic and fitting work.
@@ -91,7 +91,7 @@ export default function FreelanceAudiologistRatesUAE() {
           </div>
 
           <section>
-            <h2 className="text-xl font-bold text-gray-900 mt-8 mb-4">Audiology Freelance &amp; Locum Rates in the UAE (2026)</h2>
+            <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2"><span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>Audiology Freelance &amp; Locum Rates in the UAE (2026)</h2>
             <div className="overflow-x-auto">
               <table className="w-full text-sm border-collapse">
                 <thead>
@@ -115,11 +115,11 @@ export default function FreelanceAudiologistRatesUAE() {
           </section>
 
           <section>
-            <h2 className="text-xl font-bold text-gray-900 mt-8 mb-3">Clinical Settings for Freelance Audiologists</h2>
+            <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2"><span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>Clinical Settings for Freelance Audiologists</h2>
             <div className="space-y-3 mt-4">
               <div className="border border-gray-200 rounded-xl p-4">
                 <p className="font-bold text-gray-900 text-sm mb-2">ENT clinic sessional work</p>
-                <p className="text-sm text-gray-700">
+                <p className="text-sm text-emerald-800">
                   The most common entry point for freelance audiologists in the UAE. ENT clinics
                   across Dubai and Abu Dhabi hire sessional audiologists to conduct diagnostic
                   assessments — pure tone audiometry, tympanometry, speech testing — typically
@@ -130,7 +130,7 @@ export default function FreelanceAudiologistRatesUAE() {
               </div>
               <div className="border border-gray-200 rounded-xl p-4">
                 <p className="font-bold text-gray-900 text-sm mb-2">Paediatric hospital and specialist clinics</p>
-                <p className="text-sm text-gray-700">
+                <p className="text-sm text-emerald-800">
                   Paediatric audiology demand is high — driven by neonatal hearing screening
                   programmes, high rates of hearing loss identification in the expatriate paediatric
                   population, and cochlear implant programmes at major UAE hospitals (Cleveland Clinic
@@ -142,7 +142,7 @@ export default function FreelanceAudiologistRatesUAE() {
               </div>
               <div className="border border-gray-200 rounded-xl p-4">
                 <p className="font-bold text-gray-900 text-sm mb-2">Hearing aid dispensing and fitting</p>
-                <p className="text-sm text-gray-700">
+                <p className="text-sm text-emerald-800">
                   Hearing aid dispensing is a significant revenue stream for UAE audiologists.
                   Major hearing aid centres (Widex, Phonak, Oticon retailers) employ or contract
                   audiologists for fittings and fine-tuning. Commission-based arrangements (percentage
@@ -156,7 +156,7 @@ export default function FreelanceAudiologistRatesUAE() {
           </section>
 
           <section>
-            <h2 className="text-xl font-bold text-gray-900 mt-8 mb-3">Industrial Audiometry: High-Value Corporate Niche</h2>
+            <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2"><span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>Industrial Audiometry: High-Value Corporate Niche</h2>
             <p>
               UAE occupational health regulations (OSHAD in Abu Dhabi, Dubai Municipality guidelines)
               require employers in noisy industries to conduct regular hearing screening for at-risk
@@ -172,7 +172,7 @@ export default function FreelanceAudiologistRatesUAE() {
                 <div key={item.setting} className="border border-gray-200 rounded-xl p-4">
                   <div className="flex items-start justify-between gap-2 mb-1">
                     <p className="font-semibold text-gray-900 text-sm">{item.setting}</p>
-                    <span className="text-xs font-bold text-green-700 bg-green-50 px-2 py-0.5 rounded-full shrink-0">{item.rate}</span>
+                    <span className="text-xs font-bold text-emerald-700 bg-emerald-50 border border-emerald-200 px-2 py-0.5 rounded-full shrink-0">{item.rate}</span>
                   </div>
                   <p className="text-xs text-gray-600">{item.detail}</p>
                 </div>
@@ -181,7 +181,7 @@ export default function FreelanceAudiologistRatesUAE() {
           </section>
 
           <section>
-            <h2 className="text-xl font-bold text-gray-900 mt-8 mb-3">Licensing Requirements for UAE Audiologists</h2>
+            <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2"><span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>Licensing Requirements for UAE Audiologists</h2>
             <ul className="space-y-1 text-sm text-gray-600 mt-3">
               <li>• <strong>DHA licence (Dubai)</strong> — Apply via Sheryan portal. Requires dataflow primary source verification of degree and professional registration, good standing certificate from home regulator, English language evidence if required. Processing: 4–12 weeks</li>
               <li>• <strong>DOH licence (Abu Dhabi)</strong> — Separate from DHA. Required for clinical practice in Abu Dhabi. Apply via TAMM portal</li>
@@ -191,8 +191,8 @@ export default function FreelanceAudiologistRatesUAE() {
             </ul>
           </section>
 
-          <div className="bg-gray-950 text-white rounded-2xl p-6 mt-10">
-            <p className="text-xs font-semibold text-gray-400 uppercase tracking-widest mb-2">Manage your audiology practice</p>
+          <div className="bg-gradient-to-br from-gray-900 to-gray-800 text-white rounded-2xl p-8 mt-12 text-center">
+            <p className="text-xs font-bold text-emerald-400 uppercase tracking-widest block mb-3">Manage your audiology practice</p>
             <h3 className="text-lg font-bold mb-2">Freelancer Client CRM — Track Every Client &amp; Session</h3>
             <p className="text-gray-400 text-sm mb-4">
               Track patient caseloads, session billing, client communications, and invoicing.
@@ -200,7 +200,7 @@ export default function FreelanceAudiologistRatesUAE() {
             </p>
             <Link
               href="/products/freelancer-client-crm"
-              className="inline-block bg-white text-gray-900 font-bold px-5 py-2.5 rounded-xl hover:bg-gray-100 transition-colors text-sm"
+              className="inline-block bg-emerald-500 hover:bg-emerald-400 text-white font-bold px-8 py-3 rounded-xl transition-colors text-sm"
             >
               Get the Client CRM →
             </Link>

@@ -171,7 +171,7 @@ export default function HowToBuildFreelanceReferralNetworkUAE() {
                 { href: "/blog/how-to-build-freelance-portfolio-uae", label: "How to Build a Freelance Portfolio in the UAE" },
                 { href: "/blog/how-to-fire-a-freelance-client-uae", label: "How to Fire a Client as a UAE Freelancer" },
               ].map((link) => (
-                <Link key={link.href} href={link.href} className="block text-blue-600 hover:text-blue-800 text-sm">
+                <Link key={link.href} href={link.href} className="block text-emerald-700 hover:text-emerald-900 text-sm">
                   → {link.label}
                 </Link>
               ))}

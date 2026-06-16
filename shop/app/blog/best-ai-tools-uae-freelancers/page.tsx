@@ -157,7 +157,7 @@ export default function Article() {
           </p>
         </div>
 
-        <div className="text-gray-700 leading-relaxed space-y-6">
+        <div className="space-y-6 leading-relaxed">
 
           <p>
             There are hundreds of AI tools available right now. Most of them will waste your time.
@@ -173,8 +173,8 @@ export default function Article() {
             Each tool gets an honest rating. No affiliate links. No hype.
           </p>
 
-          <div className="bg-blue-50 border border-blue-200 rounded-2xl p-5 my-6">
-            <p className="text-sm font-semibold text-blue-900 mb-2">Quick Answer: Is ChatGPT available in UAE?</p>
+          <div className="bg-emerald-50 border border-emerald-200 rounded-2xl p-5 my-6">
+            <p className="text-sm font-semibold text-emerald-900 mb-2">Quick Answer: Is ChatGPT available in UAE?</p>
             <p className="text-sm text-blue-800">
               Yes — fully available. ChatGPT, Claude, and all the tools listed here work in the UAE without
               a VPN. There are no regional restrictions. You can sign up and pay with a UAE card.
@@ -183,7 +183,7 @@ export default function Article() {
 
           {tools.map((category) => (
             <div key={category.category}>
-              <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4">{category.category}</h2>
+              <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2"><span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>{category.category}</h2>
               <div className="flex flex-col gap-4">
                 {category.items.map((tool) => (
                   <div key={tool.name} className="border border-gray-200 rounded-2xl p-5">
@@ -201,7 +201,7 @@ export default function Article() {
             </div>
           ))}
 
-          <h2 className="text-xl font-bold text-gray-900 mt-10 mb-3">The Recommended AI Stack for UAE Freelancers</h2>
+          <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2"><span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>The Recommended AI Stack for UAE Freelancers</h2>
 
           <p>
             You don&apos;t need every tool on this list. Here&apos;s the stack that covers 90% of use cases
@@ -232,7 +232,7 @@ export default function Article() {
             </div>
           </div>
 
-          <h2 className="text-xl font-bold text-gray-900 mt-10 mb-3">The Missing Piece: Prompts</h2>
+          <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2"><span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>The Missing Piece: Prompts</h2>
 
           <p>
             AI tools are only as good as the prompts you give them. Most freelancers waste 30–40 minutes
@@ -281,7 +281,7 @@ export default function Article() {
             </Link>
           </div>
 
-          <h2 className="text-xl font-bold text-gray-900 mt-10 mb-3">What to Ignore</h2>
+          <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2"><span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>What to Ignore</h2>
 
           <p>
             A few popular categories that aren&apos;t worth your time yet:

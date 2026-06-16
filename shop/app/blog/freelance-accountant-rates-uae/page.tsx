@@ -69,7 +69,7 @@ export default function FreelanceAccountantRatesUAE() {
         </div>
 
 
-        <div className="prose prose-gray max-w-none text-gray-700 leading-relaxed space-y-6">
+        <div className="space-y-6 leading-relaxed">
 
           <p>
             The UAE&apos;s introduction of VAT (2018) and corporate tax (2023) has created
@@ -81,8 +81,8 @@ export default function FreelanceAccountantRatesUAE() {
             financial leadership. Here are the 2026 rate benchmarks.
           </p>
 
-          <div className="bg-gray-50 border border-gray-200 rounded-xl p-4 text-sm">
-            <p className="font-semibold text-gray-900 mb-1">Quick benchmark</p>
+          <div className="bg-emerald-50 border border-emerald-200 rounded-xl p-5">
+            <p className="text-sm font-bold text-emerald-800 mb-2">Quick benchmark</p>
             <p className="text-gray-700">
               A mid-level freelance accountant in Dubai (ACCA or CPA qualified, 5–8 years
               UAE experience) typically charges <strong>AED 2,000–4,500/month for bookkeeping
@@ -95,7 +95,7 @@ export default function FreelanceAccountantRatesUAE() {
           </div>
 
           <section>
-            <h2 className="text-xl font-bold text-gray-900 mt-8 mb-4">Freelance Accountant & CFO Rates in the UAE by Service (2026)</h2>
+            <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2"><span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>Freelance Accountant & CFO Rates in the UAE by Service (2026)</h2>
             <p className="text-xs text-gray-400 mb-4">Junior: 0–4 years, part-qualified / Mid: 5–9 years, ACCA/CPA qualified / Senior: 10+ years, Big 4 background or CFO experience</p>
             <div className="overflow-x-auto">
               <table className="w-full text-sm border-collapse">
@@ -122,7 +122,7 @@ export default function FreelanceAccountantRatesUAE() {
           </section>
 
           <section>
-            <h2 className="text-xl font-bold text-gray-900 mt-8 mb-3">High-Value Accounting Niches in the UAE</h2>
+            <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2"><span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>High-Value Accounting Niches in the UAE</h2>
             <div className="space-y-3 mt-4">
               {[
                 { niche: "UAE corporate tax compliance (SME and startup market)", rate: "AED 7,000–60,000+ per year per client", why: "UAE Corporate Tax (9% on profits above AED 375,000) became effective from June 2023. Most UAE SMEs do not have in-house tax expertise to navigate CT registration, transfer pricing requirements, Small Business Relief eligibility, and annual CT filing. This is a recurring annual revenue stream with a large captive market — every UAE-registered business with relevant income needs CT compliance. The work is repeatable, relationship-based, and generates referrals within SME networks." },
@@ -133,7 +133,7 @@ export default function FreelanceAccountantRatesUAE() {
                 <div key={item.niche} className="border border-gray-200 rounded-xl p-4">
                   <div className="flex items-start justify-between gap-2 mb-1">
                     <p className="font-semibold text-gray-900 text-sm">{item.niche}</p>
-                    <span className="text-xs font-bold text-green-700 bg-green-50 px-2 py-0.5 rounded-full shrink-0">{item.rate}</span>
+                    <span className="text-xs font-bold text-emerald-700 bg-emerald-50 border border-emerald-200 px-2 py-0.5 rounded-full shrink-0">{item.rate}</span>
                   </div>
                   <p className="text-xs text-gray-600">{item.why}</p>
                 </div>
@@ -142,7 +142,7 @@ export default function FreelanceAccountantRatesUAE() {
           </section>
 
           <section>
-            <h2 className="text-xl font-bold text-gray-900 mt-8 mb-3">Professional Qualifications for UAE Accountants</h2>
+            <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2"><span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>Professional Qualifications for UAE Accountants</h2>
             <ul className="space-y-1 text-sm text-gray-600 mt-3">
               <li>• <strong>ACCA (Association of Chartered Certified Accountants)</strong> — The most commonly held professional qualification among UAE-based freelance accountants. Widely recognized by UAE SMEs, corporates, and government entities. ACCA members (FCCA or ACCA) command significant rate premiums over unqualified bookkeepers</li>
               <li>• <strong>CPA (Certified Public Accountant)</strong> — US qualification, recognized in the UAE especially within multinational subsidiaries and US-connected businesses. Strong for audit-related work and US GAAP reporting</li>
@@ -153,7 +153,7 @@ export default function FreelanceAccountantRatesUAE() {
           </section>
 
           <section>
-            <h2 className="text-xl font-bold text-gray-900 mt-8 mb-3">Technology Stack for UAE Freelance Accountants</h2>
+            <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2"><span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>Technology Stack for UAE Freelance Accountants</h2>
             <ul className="space-y-1 text-sm text-gray-600 mt-3">
               <li>• <strong>Zoho Books</strong> — The most widely used accounting software among UAE SMEs. UAE VAT compliant, Arabic interface available, integrates with UAE banking. Most UAE bookkeeping clients will already be on Zoho or need migrating to it</li>
               <li>• <strong>QuickBooks Online</strong> — Common among UAE businesses with Western parent companies or international operations. IFRS reporting module available</li>
@@ -164,8 +164,8 @@ export default function FreelanceAccountantRatesUAE() {
           </section>
 
           {/* CTA */}
-          <div className="bg-gray-950 text-white rounded-2xl p-6 mt-10">
-            <p className="text-xs font-semibold text-gray-400 uppercase tracking-widest mb-2">Manage your accounting clients</p>
+          <div className="bg-gradient-to-br from-gray-900 to-gray-800 text-white rounded-2xl p-8 mt-12 text-center">
+            <p className="text-xs font-bold text-emerald-400 uppercase tracking-widest block mb-3">Manage your accounting clients</p>
             <h3 className="text-lg font-bold mb-2">Freelancer Client CRM — Track Every Client & Compliance Deadline</h3>
             <p className="text-gray-400 text-sm mb-4">
               Track bookkeeping clients, log VAT filing deadlines, manage retainer billing,
@@ -174,7 +174,7 @@ export default function FreelanceAccountantRatesUAE() {
             </p>
             <Link
               href="/products/freelancer-client-crm"
-              className="inline-block bg-white text-gray-900 font-bold px-5 py-2.5 rounded-xl hover:bg-gray-100 transition-colors text-sm"
+              className="inline-block bg-emerald-500 hover:bg-emerald-400 text-white font-bold px-8 py-3 rounded-xl transition-colors text-sm"
             >
               Get the Client CRM →
             </Link>

@@ -316,10 +316,10 @@ export default function Article() {
           <div className="mt-10">
             <h3 className="text-sm font-semibold text-gray-900 mb-3">Related Guides</h3>
             <div className="space-y-1.5">
-              <Link href="/blog/freelance-linkedin-profile-uae" className="block text-blue-600 hover:text-blue-800 text-sm">→ How to Optimize Your LinkedIn Profile as a UAE Freelancer</Link>
-              <Link href="/blog/personal-brand-freelancer-uae" className="block text-blue-600 hover:text-blue-800 text-sm">→ How to Build a Personal Brand as a UAE Freelancer</Link>
-              <Link href="/blog/get-freelance-clients-uae" className="block text-blue-600 hover:text-blue-800 text-sm">→ How to Get Freelance Clients in the UAE (6 Strategies)</Link>
-              <Link href="/blog/how-to-get-international-clients-uae" className="block text-blue-600 hover:text-blue-800 text-sm">→ How to Get International Clients as a UAE Freelancer</Link>
+              <Link href="/blog/freelance-linkedin-profile-uae" className="block text-emerald-700 hover:text-emerald-900 text-sm">→ How to Optimize Your LinkedIn Profile as a UAE Freelancer</Link>
+              <Link href="/blog/personal-brand-freelancer-uae" className="block text-emerald-700 hover:text-emerald-900 text-sm">→ How to Build a Personal Brand as a UAE Freelancer</Link>
+              <Link href="/blog/get-freelance-clients-uae" className="block text-emerald-700 hover:text-emerald-900 text-sm">→ How to Get Freelance Clients in the UAE (6 Strategies)</Link>
+              <Link href="/blog/how-to-get-international-clients-uae" className="block text-emerald-700 hover:text-emerald-900 text-sm">→ How to Get International Clients as a UAE Freelancer</Link>
             </div>
           </div>
         </div>

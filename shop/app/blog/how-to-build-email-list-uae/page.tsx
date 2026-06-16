@@ -73,7 +73,7 @@ export default function HowToBuildEmailListUAE() {
         </div>
 
 
-        <div className="prose prose-gray max-w-none text-gray-700 leading-relaxed space-y-6">
+        <div className="space-y-6 leading-relaxed">
 
           <p>
             An email list is the most resilient marketing asset a UAE freelancer can build.
@@ -95,7 +95,7 @@ export default function HowToBuildEmailListUAE() {
           </div>
 
           <section>
-            <h2 className="text-xl font-bold text-gray-900 mt-8 mb-3">Step 1: Choose Your Lead Magnet</h2>
+            <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2"><span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>Step 1: Choose Your Lead Magnet</h2>
             <p>
               No one subscribes to a generic newsletter. You need a specific, valuable
               free resource that solves one problem for one type of person. Here are the
@@ -113,7 +113,7 @@ export default function HowToBuildEmailListUAE() {
           </section>
 
           <section>
-            <h2 className="text-xl font-bold text-gray-900 mt-8 mb-3">Step 2: Choose Your Platform</h2>
+            <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2"><span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>Step 2: Choose Your Platform</h2>
             <div className="space-y-3 mt-4">
               {platforms.map((p) => (
                 <div key={p.name} className="border border-gray-200 rounded-xl p-4">
@@ -129,7 +129,7 @@ export default function HowToBuildEmailListUAE() {
           </section>
 
           <section>
-            <h2 className="text-xl font-bold text-gray-900 mt-8 mb-3">Step 3: Grow From Your Existing Network</h2>
+            <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2"><span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>Step 3: Grow From Your Existing Network</h2>
             <p>
               Before building organic traffic or running ads, mine what you already have:
             </p>
@@ -149,7 +149,7 @@ export default function HowToBuildEmailListUAE() {
           </section>
 
           <section>
-            <h2 className="text-xl font-bold text-gray-900 mt-8 mb-3">Step 4: Send Emails That Actually Get Read</h2>
+            <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2"><span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>Step 4: Send Emails That Actually Get Read</h2>
             <p>
               Most email lists die from neglect or from sending boring broadcast emails.
               The emails that get opened and replied to have three things in common:
@@ -170,7 +170,7 @@ export default function HowToBuildEmailListUAE() {
           </section>
 
           <section>
-            <h2 className="text-xl font-bold text-gray-900 mt-8 mb-3">When Does an Email List Generate Clients?</h2>
+            <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2"><span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>When Does an Email List Generate Clients?</h2>
             <p>
               At 200–500 engaged subscribers, your list will start generating warm inbound
               inquiries — people who receive your emails regularly and reach out when they
@@ -186,8 +186,8 @@ export default function HowToBuildEmailListUAE() {
           </section>
 
           {/* CTA */}
-          <div className="bg-gray-950 text-white rounded-2xl p-6 mt-10">
-            <p className="text-xs font-semibold text-gray-400 uppercase tracking-widest mb-2">Get 10 free AI prompts</p>
+          <div className="bg-gradient-to-br from-gray-900 to-gray-800 text-white rounded-2xl p-8 mt-12 text-center">
+            <p className="text-xs font-bold text-emerald-400 uppercase tracking-widest block mb-3">Get 10 free AI prompts</p>
             <h3 className="text-lg font-bold mb-2">Free Prompt Pack for UAE Freelancers</h3>
             <p className="text-gray-400 text-sm mb-4">
               10 copy-paste AI prompts for proposals, client emails, follow-ups, and
@@ -195,7 +195,7 @@ export default function HowToBuildEmailListUAE() {
             </p>
             <Link
               href="/free"
-              className="inline-block bg-white text-gray-900 font-bold px-5 py-2.5 rounded-xl hover:bg-gray-100 transition-colors text-sm"
+              className="inline-block bg-emerald-500 hover:bg-emerald-400 text-white font-bold px-8 py-3 rounded-xl transition-colors text-sm"
             >
               Get Free Prompts →
             </Link>

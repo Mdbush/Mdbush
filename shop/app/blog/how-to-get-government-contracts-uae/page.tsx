@@ -108,7 +108,7 @@ export default function HowToGetGovernmentContractsUAE() {
         </div>
 
 
-        <div className="prose prose-gray max-w-none text-gray-700 leading-relaxed space-y-6">
+        <div className="space-y-6 leading-relaxed">
 
           <p>
             UAE government and quasi-government contracts are among the highest-paying
@@ -129,7 +129,7 @@ export default function HowToGetGovernmentContractsUAE() {
           </div>
 
           <section>
-            <h2 className="text-xl font-bold text-gray-900 mt-8 mb-4">Key UAE Government Procurement Portals</h2>
+            <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2"><span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>Key UAE Government Procurement Portals</h2>
             <div className="space-y-3">
               {portals.map((p) => (
                 <div key={p.name} className="border border-gray-200 rounded-xl p-4">
@@ -144,19 +144,19 @@ export default function HowToGetGovernmentContractsUAE() {
           </section>
 
           <section>
-            <h2 className="text-xl font-bold text-gray-900 mt-8 mb-3">The 5-Step Path to Government Contracts</h2>
+            <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2"><span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>The 5-Step Path to Government Contracts</h2>
             <div className="space-y-4 mt-4">
               {steps.map((s) => (
                 <div key={s.step} className="border border-gray-200 rounded-xl p-4">
                   <p className="font-bold text-gray-900 text-sm mb-2">{s.step}</p>
-                  <p className="text-sm text-gray-700">{s.detail}</p>
+                  <p className="text-sm text-emerald-800">{s.detail}</p>
                 </div>
               ))}
             </div>
           </section>
 
           <section>
-            <h2 className="text-xl font-bold text-gray-900 mt-8 mb-3">The Subcontracting Route (Fastest Path In)</h2>
+            <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2"><span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>The Subcontracting Route (Fastest Path In)</h2>
             <p>
               The fastest way for a freelancer to access government work is not directly — it&apos;s
               through a consulting firm or agency that holds a prime contract. These firms
@@ -181,7 +181,7 @@ export default function HowToGetGovernmentContractsUAE() {
           </section>
 
           <section>
-            <h2 className="text-xl font-bold text-gray-900 mt-8 mb-3">What UAE Government Clients Pay</h2>
+            <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2"><span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>What UAE Government Clients Pay</h2>
             <div className="overflow-x-auto">
               <table className="w-full text-sm border-collapse">
                 <thead>
@@ -212,7 +212,7 @@ export default function HowToGetGovernmentContractsUAE() {
           </section>
 
           <section>
-            <h2 className="text-xl font-bold text-gray-900 mt-8 mb-3">What Slows Government Payments</h2>
+            <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2"><span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>What Slows Government Payments</h2>
             <p>
               Government clients pay — but slowly. Typical payment cycles for UAE government
               entities are 60–90 days from invoice, and 120–180 days is not unusual for
@@ -228,8 +228,8 @@ export default function HowToGetGovernmentContractsUAE() {
           </section>
 
           {/* CTA */}
-          <div className="bg-gray-950 text-white rounded-2xl p-6 mt-10">
-            <p className="text-xs font-semibold text-gray-400 uppercase tracking-widest mb-2">Write proposals that win</p>
+          <div className="bg-gradient-to-br from-gray-900 to-gray-800 text-white rounded-2xl p-8 mt-12 text-center">
+            <p className="text-xs font-bold text-emerald-400 uppercase tracking-widest block mb-3">Write proposals that win</p>
             <h3 className="text-lg font-bold mb-2">Freelance Proposal Template UAE (Copy-Paste)</h3>
             <p className="text-gray-400 text-sm mb-4">
               A structured proposal template built for UAE client expectations — covers
@@ -237,7 +237,7 @@ export default function HowToGetGovernmentContractsUAE() {
             </p>
             <Link
               href="/blog/freelance-proposal-template-uae"
-              className="inline-block bg-white text-gray-900 font-bold px-5 py-2.5 rounded-xl hover:bg-gray-100 transition-colors text-sm"
+              className="inline-block bg-emerald-500 hover:bg-emerald-400 text-white font-bold px-8 py-3 rounded-xl transition-colors text-sm"
             >
               Get the Proposal Template →
             </Link>

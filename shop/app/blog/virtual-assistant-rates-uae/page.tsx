@@ -69,7 +69,7 @@ export default function VirtualAssistantRatesUAE() {
         </div>
 
 
-        <div className="prose prose-gray max-w-none text-gray-700 leading-relaxed space-y-6">
+        <div className="space-y-6 leading-relaxed">
 
           <p>
             Virtual assistant services in the UAE occupy a wide price range — from
@@ -80,8 +80,8 @@ export default function VirtualAssistantRatesUAE() {
             the 2026 benchmarks.
           </p>
 
-          <div className="bg-gray-50 border border-gray-200 rounded-xl p-4 text-sm">
-            <p className="font-semibold text-gray-900 mb-1">Quick benchmark</p>
+          <div className="bg-emerald-50 border border-emerald-200 rounded-xl p-5">
+            <p className="text-sm font-bold text-emerald-800 mb-2">Quick benchmark</p>
             <p className="text-gray-700">
               A mid-level executive VA in the UAE with 3–5 years of experience supporting
               senior professionals typically earns <strong>AED 12,000–22,000/month</strong> across
@@ -91,7 +91,7 @@ export default function VirtualAssistantRatesUAE() {
           </div>
 
           <section>
-            <h2 className="text-xl font-bold text-gray-900 mt-8 mb-4">VA Rates in the UAE by Service Type (2026)</h2>
+            <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2"><span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>VA Rates in the UAE by Service Type (2026)</h2>
             <p className="text-xs text-gray-400 mb-4">Junior: 0–2 years / Mid: 3–5 years / Senior: 6+ years or specialist (exec/technical/e-commerce)</p>
             <div className="overflow-x-auto">
               <table className="w-full text-sm border-collapse">
@@ -118,7 +118,7 @@ export default function VirtualAssistantRatesUAE() {
           </section>
 
           <section>
-            <h2 className="text-xl font-bold text-gray-900 mt-8 mb-3">The 4 VA Specializations That Pay Most in the UAE</h2>
+            <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2"><span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>The 4 VA Specializations That Pay Most in the UAE</h2>
             <div className="space-y-3 mt-4">
               {[
                 {
@@ -145,7 +145,7 @@ export default function VirtualAssistantRatesUAE() {
                 <div key={item.spec} className="border border-gray-200 rounded-xl p-4">
                   <div className="flex items-start justify-between gap-2 mb-1">
                     <p className="font-semibold text-gray-900 text-sm">{item.spec}</p>
-                    <span className="text-xs font-bold text-green-700 bg-green-50 px-2 py-0.5 rounded-full shrink-0">{item.rate}</span>
+                    <span className="text-xs font-bold text-emerald-700 bg-emerald-50 border border-emerald-200 px-2 py-0.5 rounded-full shrink-0">{item.rate}</span>
                   </div>
                   <p className="text-xs text-gray-600">{item.why}</p>
                 </div>
@@ -154,7 +154,7 @@ export default function VirtualAssistantRatesUAE() {
           </section>
 
           <section>
-            <h2 className="text-xl font-bold text-gray-900 mt-8 mb-3">Hourly vs Package vs Retainer: Which Pricing Model Pays More?</h2>
+            <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2"><span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>Hourly vs Package vs Retainer: Which Pricing Model Pays More?</h2>
             <p>
               Hourly pricing is the least profitable VA pricing model. Clients buy the
               minimum, cap hours unexpectedly, and your income fluctuates. The highest-earning
@@ -163,7 +163,7 @@ export default function VirtualAssistantRatesUAE() {
             <div className="space-y-3 mt-4">
               <div className="border border-gray-200 rounded-xl p-4">
                 <p className="font-semibold text-gray-900 text-sm mb-2">Monthly retainer (preferred)</p>
-                <p className="text-sm text-gray-700">
+                <p className="text-sm text-emerald-800">
                   A fixed monthly fee for a defined set of services or hours. Provides income
                   predictability for you, and cost predictability for the client. Example:
                   &ldquo;AED 5,500/month for 40 hours of executive VA support, including calendar
@@ -173,7 +173,7 @@ export default function VirtualAssistantRatesUAE() {
               </div>
               <div className="border border-gray-200 rounded-xl p-4">
                 <p className="font-semibold text-gray-900 text-sm mb-2">Service packages</p>
-                <p className="text-sm text-gray-700">
+                <p className="text-sm text-emerald-800">
                   Pre-defined deliverables at a fixed price. Example: &ldquo;Social media VA
                   package: 16 posts/month + scheduling + basic analytics report = AED 4,500/month.&rdquo;
                   Packages are easier to sell (clear value) and easier to deliver (defined scope).
@@ -184,7 +184,7 @@ export default function VirtualAssistantRatesUAE() {
           </section>
 
           <section>
-            <h2 className="text-xl font-bold text-gray-900 mt-8 mb-3">Tools UAE VA Clients Expect</h2>
+            <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2"><span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>Tools UAE VA Clients Expect</h2>
             <ul className="space-y-1 text-sm text-gray-600 mt-3">
               <li><strong>Google Workspace:</strong> Calendar, Gmail, Drive, Meet — standard for most UAE SMEs</li>
               <li><strong>Notion:</strong> Increasingly used by founders for knowledge management and project tracking</li>
@@ -197,7 +197,7 @@ export default function VirtualAssistantRatesUAE() {
           </section>
 
           <section>
-            <h2 className="text-xl font-bold text-gray-900 mt-8 mb-3">How to Find Clients as a UAE-Based VA</h2>
+            <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2"><span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>How to Find Clients as a UAE-Based VA</h2>
             <ul className="space-y-2 text-sm text-gray-600 mt-3">
               <li>• <strong>LinkedIn:</strong> Connect with UAE founders and C-suite professionals directly. Your headline should say your specialization, not &ldquo;virtual assistant.&rdquo;</li>
               <li>• <strong>UAE founder communities:</strong> AstroLabs, in5, Hub71, and Flat6Labs alumni networks all contain potential clients</li>
@@ -208,8 +208,8 @@ export default function VirtualAssistantRatesUAE() {
           </section>
 
           {/* CTA */}
-          <div className="bg-gray-950 text-white rounded-2xl p-6 mt-10">
-            <p className="text-xs font-semibold text-gray-400 uppercase tracking-widest mb-2">Manage your VA clients like a pro</p>
+          <div className="bg-gradient-to-br from-gray-900 to-gray-800 text-white rounded-2xl p-8 mt-12 text-center">
+            <p className="text-xs font-bold text-emerald-400 uppercase tracking-widest block mb-3">Manage your VA clients like a pro</p>
             <h3 className="text-lg font-bold mb-2">Freelancer Client CRM — Track Every Client, Project & Invoice</h3>
             <p className="text-gray-400 text-sm mb-4">
               Purpose-built for UAE freelancers and VAs managing multiple retainer clients.
@@ -217,7 +217,7 @@ export default function VirtualAssistantRatesUAE() {
             </p>
             <Link
               href="/products/freelancer-client-crm"
-              className="inline-block bg-white text-gray-900 font-bold px-5 py-2.5 rounded-xl hover:bg-gray-100 transition-colors text-sm"
+              className="inline-block bg-emerald-500 hover:bg-emerald-400 text-white font-bold px-8 py-3 rounded-xl transition-colors text-sm"
             >
               Get the Client CRM →
             </Link>

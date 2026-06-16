@@ -58,7 +58,7 @@ export default function FreelanceWorkPermitVsTradeLicenseUAE() {
         </div>
 
 
-        <div className="prose prose-gray max-w-none text-gray-700 leading-relaxed space-y-6">
+        <div className="space-y-6 leading-relaxed">
 
           <p>
             One of the most confusing decisions for new UAE freelancers is whether they need a
@@ -77,7 +77,7 @@ export default function FreelanceWorkPermitVsTradeLicenseUAE() {
           </div>
 
           <section>
-            <h2 className="text-xl font-bold text-gray-900 mt-8 mb-3">The Three Options Explained</h2>
+            <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2"><span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>The Three Options Explained</h2>
 
             <div className="space-y-5 mt-4">
               <div className="border border-gray-200 rounded-2xl p-5">
@@ -146,7 +146,7 @@ export default function FreelanceWorkPermitVsTradeLicenseUAE() {
           </section>
 
           <section>
-            <h2 className="text-xl font-bold text-gray-900 mt-8 mb-3">Head-to-Head Comparison</h2>
+            <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2"><span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>Head-to-Head Comparison</h2>
             <div className="overflow-x-auto -mx-4 sm:mx-0">
               <table className="w-full text-sm border-collapse min-w-[500px]">
                 <thead>
@@ -181,7 +181,7 @@ export default function FreelanceWorkPermitVsTradeLicenseUAE() {
           </section>
 
           <section>
-            <h2 className="text-xl font-bold text-gray-900 mt-8 mb-3">Which Should You Choose?</h2>
+            <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2"><span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>Which Should You Choose?</h2>
 
             <div className="space-y-3 mt-4">
               {[
@@ -200,8 +200,8 @@ export default function FreelanceWorkPermitVsTradeLicenseUAE() {
           </section>
 
           {/* CTA */}
-          <div className="bg-gray-950 text-white rounded-2xl p-6 mt-10">
-            <p className="text-xs font-semibold text-gray-400 uppercase tracking-widest mb-2">Once you are legal, get organized</p>
+          <div className="bg-gradient-to-br from-gray-900 to-gray-800 text-white rounded-2xl p-8 mt-12 text-center">
+            <p className="text-xs font-bold text-emerald-400 uppercase tracking-widest block mb-3">Once you are legal, get organized</p>
             <h3 className="text-lg font-bold mb-2">The Freelancer Client CRM tracks clients and invoices from day one</h3>
             <p className="text-gray-400 text-sm mb-4">
               Whether you are operating under a freelance permit or a company license, your
@@ -210,7 +210,7 @@ export default function FreelanceWorkPermitVsTradeLicenseUAE() {
             </p>
             <Link
               href="/products/freelancer-client-crm"
-              className="inline-block bg-white text-gray-900 font-bold px-5 py-2.5 rounded-xl hover:bg-gray-100 transition-colors text-sm"
+              className="inline-block bg-emerald-500 hover:bg-emerald-400 text-white font-bold px-8 py-3 rounded-xl transition-colors text-sm"
             >
               See the Client CRM →
             </Link>

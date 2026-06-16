@@ -58,7 +58,7 @@ export default function HowToSetFreelancePricesUAE() {
         </div>
 
 
-        <div className="prose prose-gray max-w-none text-gray-700 leading-relaxed space-y-6">
+        <div className="space-y-6 leading-relaxed">
 
           <p>
             Most UAE freelancers set their rates wrong — either by copying what they see
@@ -70,8 +70,8 @@ export default function HowToSetFreelancePricesUAE() {
             Here is a complete pricing system for 2026.
           </p>
 
-          <div className="bg-gray-50 border border-gray-200 rounded-xl p-4 text-sm">
-            <p className="font-semibold text-gray-900 mb-1">The core principle</p>
+          <div className="bg-emerald-50 border border-emerald-200 rounded-xl p-5">
+            <p className="text-sm font-bold text-emerald-800 mb-2">The core principle</p>
             <p className="text-gray-700">
               Freelance rates are not determined by what you think you&apos;re worth —
               they&apos;re determined by <strong>the value you create for the client</strong> and
@@ -83,7 +83,7 @@ export default function HowToSetFreelancePricesUAE() {
           </div>
 
           <section>
-            <h2 className="text-xl font-bold text-gray-900 mt-8 mb-3">Step 1: Calculate Your Minimum Viable Rate</h2>
+            <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2"><span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>Step 1: Calculate Your Minimum Viable Rate</h2>
             <p className="text-sm text-gray-600 mb-3">
               Before setting market rates, know your floor — the minimum you need to earn
               to cover costs and sustain your freelance career in the UAE.
@@ -104,7 +104,7 @@ export default function HowToSetFreelancePricesUAE() {
           </section>
 
           <section>
-            <h2 className="text-xl font-bold text-gray-900 mt-8 mb-3">Step 2: Understand What the UAE Market Actually Pays</h2>
+            <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2"><span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>Step 2: Understand What the UAE Market Actually Pays</h2>
             <p className="text-sm text-gray-600 mb-3">
               The UAE has multiple rate tiers depending on the client type. The same
               service has different market rates depending on who&apos;s paying:
@@ -138,7 +138,7 @@ export default function HowToSetFreelancePricesUAE() {
           </section>
 
           <section>
-            <h2 className="text-xl font-bold text-gray-900 mt-8 mb-3">Step 3: The Three Pricing Models and When to Use Each</h2>
+            <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2"><span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>Step 3: The Three Pricing Models and When to Use Each</h2>
             <div className="space-y-3 mt-4">
               {[
                 { model: "Hourly rates", when: "Use when scope is unclear, for ongoing advisory work, or when you&apos;re building a relationship with a new client where neither side knows the true scope.", pros: "Fair when work expands unexpectedly. Easy to understand.", cons: "Penalizes efficiency — the better you get, the less you earn for the same output. Clients can feel uncertain about the final bill." },
@@ -156,7 +156,7 @@ export default function HowToSetFreelancePricesUAE() {
           </section>
 
           <section>
-            <h2 className="text-xl font-bold text-gray-900 mt-8 mb-3">Step 4: How to Present Your Rates Without Losing the Deal</h2>
+            <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2"><span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>Step 4: How to Present Your Rates Without Losing the Deal</h2>
             <ul className="space-y-2 text-sm text-gray-600 mt-3">
               <li>• <strong>Anchor high first</strong> — The first number you mention anchors the negotiation. Lead with a premium option. If your target price is AED 8,000, your first option should be a AED 14,000 comprehensive package. AED 8,000 now looks like a reasonable mid-tier, not an expensive entry point</li>
               <li>• <strong>Use a tiered proposal</strong> — Present 3 options: an entry tier, a core tier (your preferred engagement), and a premium tier. Most clients choose the middle option. The premium tier makes the core look reasonable; the entry tier shows flexibility without making AED zero your floor</li>
@@ -167,7 +167,7 @@ export default function HowToSetFreelancePricesUAE() {
           </section>
 
           <section>
-            <h2 className="text-xl font-bold text-gray-900 mt-8 mb-3">Step 5: When and How to Raise Your Rates</h2>
+            <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2"><span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>Step 5: When and How to Raise Your Rates</h2>
             <p className="text-sm text-gray-600 mb-3">
               In the UAE market, there are three reliable signals that it&apos;s time to raise rates:
             </p>
@@ -180,8 +180,8 @@ export default function HowToSetFreelancePricesUAE() {
           </section>
 
           {/* CTA */}
-          <div className="bg-gray-950 text-white rounded-2xl p-6 mt-10">
-            <p className="text-xs font-semibold text-gray-400 uppercase tracking-widest mb-2">Build your pricing system</p>
+          <div className="bg-gradient-to-br from-gray-900 to-gray-800 text-white rounded-2xl p-8 mt-12 text-center">
+            <p className="text-xs font-bold text-emerald-400 uppercase tracking-widest block mb-3">Build your pricing system</p>
             <h3 className="text-lg font-bold mb-2">Freelancer Rate Calculator — Know Your Floor Before You Quote</h3>
             <p className="text-gray-400 text-sm mb-4">
               Calculate your minimum viable rate based on your actual UAE living costs,
@@ -190,7 +190,7 @@ export default function HowToSetFreelancePricesUAE() {
             </p>
             <Link
               href="/products/freelancer-client-crm"
-              className="inline-block bg-white text-gray-900 font-bold px-5 py-2.5 rounded-xl hover:bg-gray-100 transition-colors text-sm"
+              className="inline-block bg-emerald-500 hover:bg-emerald-400 text-white font-bold px-8 py-3 rounded-xl transition-colors text-sm"
             >
               Get the Rate Calculator →
             </Link>

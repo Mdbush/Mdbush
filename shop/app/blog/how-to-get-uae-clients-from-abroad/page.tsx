@@ -58,7 +58,7 @@ export default function HowToGetUAEClientsFromAbroad() {
         </div>
 
 
-        <div className="prose prose-gray max-w-none text-gray-700 leading-relaxed space-y-6">
+        <div className="space-y-6 leading-relaxed">
 
           <p>
             Dubai and Abu Dhabi are two of the highest-spending markets in the world for
@@ -79,7 +79,7 @@ export default function HowToGetUAEClientsFromAbroad() {
           </div>
 
           <section>
-            <h2 className="text-xl font-bold text-gray-900 mt-8 mb-3">Why UAE Clients Are Worth Targeting</h2>
+            <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2"><span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>Why UAE Clients Are Worth Targeting</h2>
             <p>The UAE market offers several unique advantages for remote freelancers:</p>
             <ul className="space-y-2 text-sm text-gray-600 mt-3">
               <li><strong>High budgets:</strong> Dubai companies often pay 30–60% above what you would get for equivalent work in the UK, EU, or US markets — especially for marketing, design, and content services targeting the Gulf.</li>
@@ -91,7 +91,7 @@ export default function HowToGetUAEClientsFromAbroad() {
           </section>
 
           <section>
-            <h2 className="text-xl font-bold text-gray-900 mt-8 mb-3">How UAE Clients Think About Remote Freelancers</h2>
+            <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2"><span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>How UAE Clients Think About Remote Freelancers</h2>
             <p>
               Understanding how UAE-based clients evaluate remote freelancers is critical to
               winning their business:
@@ -112,7 +112,7 @@ export default function HowToGetUAEClientsFromAbroad() {
           </section>
 
           <section>
-            <h2 className="text-xl font-bold text-gray-900 mt-8 mb-3">How to Find and Reach UAE Clients</h2>
+            <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2"><span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>How to Find and Reach UAE Clients</h2>
 
             <h3 className="text-base font-semibold text-gray-900 mt-4 mb-2">LinkedIn: the primary channel</h3>
             <p>
@@ -154,7 +154,7 @@ export default function HowToGetUAEClientsFromAbroad() {
           </section>
 
           <section>
-            <h2 className="text-xl font-bold text-gray-900 mt-8 mb-3">Pricing for UAE Clients</h2>
+            <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2"><span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>Pricing for UAE Clients</h2>
             <p>
               One of the most common mistakes remote freelancers make with UAE clients: underpricing
               because they compare to their local market rate. UAE companies — particularly Dubai
@@ -170,7 +170,7 @@ export default function HowToGetUAEClientsFromAbroad() {
           </section>
 
           <section>
-            <h2 className="text-xl font-bold text-gray-900 mt-8 mb-3">Getting Paid: International Payment Options</h2>
+            <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2"><span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>Getting Paid: International Payment Options</h2>
             <p>UAE clients commonly pay via:</p>
             <ul className="space-y-1 text-sm text-gray-600 mt-3">
               <li>• <strong>Bank wire transfer (SWIFT):</strong> Standard for B2B payments; UAE banks process these efficiently. Include your SWIFT/IBAN on your invoice.</li>
@@ -181,15 +181,15 @@ export default function HowToGetUAEClientsFromAbroad() {
           </section>
 
           {/* CTA */}
-          <div className="bg-gray-950 text-white rounded-2xl p-6 mt-10">
-            <p className="text-xs font-semibold text-gray-400 uppercase tracking-widest mb-2">Win more UAE clients with better proposals</p>
+          <div className="bg-gradient-to-br from-gray-900 to-gray-800 text-white rounded-2xl p-8 mt-12 text-center">
+            <p className="text-xs font-bold text-emerald-400 uppercase tracking-widest block mb-3">Win more UAE clients with better proposals</p>
             <h3 className="text-lg font-bold mb-2">The AI Prompt Pack includes UAE-specific proposal and outreach templates</h3>
             <p className="text-gray-400 text-sm mb-4">
               LinkedIn outreach messages, cold email sequences, proposal structures, and follow-up scripts — all pre-written and tested for service-based freelancers targeting high-value clients.
             </p>
             <Link
               href="/products/ai-prompt-pack-pro"
-              className="inline-block bg-white text-gray-900 font-bold px-5 py-2.5 rounded-xl hover:bg-gray-100 transition-colors text-sm"
+              className="inline-block bg-emerald-500 hover:bg-emerald-400 text-white font-bold px-8 py-3 rounded-xl transition-colors text-sm"
             >
               See the AI Prompt Pack →
             </Link>

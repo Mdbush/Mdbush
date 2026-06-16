@@ -85,9 +85,9 @@ export default function HowToNegotiateContractsFreelanceUAE() {
                 <li>→ Late payment fee (1.5–3% per month) for overdue invoices</li>
               </ul>
             </div>
-            <div className="bg-blue-50 rounded-lg p-4">
+            <div className="bg-emerald-50 rounded-lg p-4">
               <div className="text-xs font-semibold text-blue-600 mb-2">SCRIPT:</div>
-              <p className="text-sm text-blue-900 italic">
+              <p className="text-sm text-emerald-900 italic">
                 &quot;I notice payment terms are net-60. My standard is net-30, which keeps my project pipeline
                 healthy and ensures I can dedicate full focus to your work. Would you be comfortable with
                 net-30, or can we discuss a milestone structure that works for your accounting team?&quot;
@@ -111,9 +111,9 @@ export default function HowToNegotiateContractsFreelanceUAE() {
                 <li>→ Right to use the work in your portfolio (with client approval)</li>
               </ul>
             </div>
-            <div className="bg-blue-50 rounded-lg p-4">
+            <div className="bg-emerald-50 rounded-lg p-4">
               <div className="text-xs font-semibold text-blue-600 mb-2">SCRIPT:</div>
-              <p className="text-sm text-blue-900 italic">
+              <p className="text-sm text-emerald-900 italic">
                 &quot;I&apos;m happy for all deliverables to transfer to you upon final payment. I&apos;d like to retain
                 the underlying tools and methods I use across clients — these aren&apos;t project-specific assets,
                 just my working toolkit. Can we adjust the IP clause to reflect that?&quot;
@@ -136,9 +136,9 @@ export default function HowToNegotiateContractsFreelanceUAE() {
                 <li>→ A change order process for out-of-scope requests</li>
               </ul>
             </div>
-            <div className="bg-blue-50 rounded-lg p-4">
+            <div className="bg-emerald-50 rounded-lg p-4">
               <div className="text-xs font-semibold text-blue-600 mb-2">SCRIPT:</div>
-              <p className="text-sm text-blue-900 italic">
+              <p className="text-sm text-emerald-900 italic">
                 &quot;The scope section describes the work broadly. To protect both of us, I&apos;d like to attach
                 a Statement of Work that lists the specific deliverables, revision rounds, and a change
                 order process. This way we both know exactly what&apos;s included — and what isn&apos;t.&quot;
@@ -161,9 +161,9 @@ export default function HowToNegotiateContractsFreelanceUAE() {
                 <li>→ Minimum notice period (7–30 days) for cancellation</li>
               </ul>
             </div>
-            <div className="bg-blue-50 rounded-lg p-4">
+            <div className="bg-emerald-50 rounded-lg p-4">
               <div className="text-xs font-semibold text-blue-600 mb-2">SCRIPT:</div>
-              <p className="text-sm text-blue-900 italic">
+              <p className="text-sm text-emerald-900 italic">
                 &quot;I&apos;d like to add a cancellation clause. If the project is cancelled after we&apos;ve started,
                 I&apos;ll invoice for all work completed plus a kill fee of 25% of the remaining balance.
                 This is standard practice — it covers the pipeline opportunity I&apos;ve passed on and the
@@ -188,9 +188,9 @@ export default function HowToNegotiateContractsFreelanceUAE() {
                 <li>→ Geographic limitations (UAE only, not globally)</li>
               </ul>
             </div>
-            <div className="bg-blue-50 rounded-lg p-4">
+            <div className="bg-emerald-50 rounded-lg p-4">
               <div className="text-xs font-semibold text-blue-600 mb-2">SCRIPT:</div>
-              <p className="text-sm text-blue-900 italic">
+              <p className="text-sm text-emerald-900 italic">
                 &quot;The non-compete is quite broad. I work across the industry, so I can&apos;t agree to exclude
                 your competitors entirely. I can commit to not sharing confidential information or working
                 on directly competing projects simultaneously — would that address your concern?&quot;
@@ -214,9 +214,9 @@ export default function HowToNegotiateContractsFreelanceUAE() {
                 <li>→ DIFC courts for cross-border engagements (English common law, internationally recognized)</li>
               </ul>
             </div>
-            <div className="bg-blue-50 rounded-lg p-4">
+            <div className="bg-emerald-50 rounded-lg p-4">
               <div className="text-xs font-semibold text-blue-600 mb-2">SCRIPT:</div>
-              <p className="text-sm text-blue-900 italic">
+              <p className="text-sm text-emerald-900 italic">
                 &quot;The governing law clause specifies English courts. Since we&apos;re both operating in the UAE,
                 I&apos;d prefer UAE governing law — either Dubai courts or DIFC. It&apos;s simpler and more
                 practical if we ever need to resolve a dispute.&quot;
@@ -280,7 +280,7 @@ export default function HowToNegotiateContractsFreelanceUAE() {
                 { href: "/blog/how-to-handle-scope-creep-uae", label: "How to Handle Scope Creep as a UAE Freelancer" },
                 { href: "/blog/how-to-manage-client-expectations-uae", label: "How to Manage Client Expectations UAE" },
               ].map((link) => (
-                <Link key={link.href} href={link.href} className="block text-blue-600 hover:text-blue-800 text-sm">
+                <Link key={link.href} href={link.href} className="block text-emerald-700 hover:text-emerald-900 text-sm">
                   → {link.label}
                 </Link>
               ))}

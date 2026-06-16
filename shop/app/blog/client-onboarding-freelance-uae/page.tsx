@@ -96,7 +96,7 @@ export default function Article() {
           </p>
         </div>
 
-        <div className="text-gray-700 leading-relaxed space-y-6">
+        <div className="space-y-6 leading-relaxed">
 
           <p>
             The first 72 hours of a project determine whether the client experience will be smooth
@@ -110,7 +110,7 @@ export default function Article() {
             workspace means you have documentation when disagreements arise.
           </p>
 
-          <h2 className="text-xl font-bold text-gray-900 mt-10 mb-3">Why Most Freelancers Skip This</h2>
+          <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2"><span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>Why Most Freelancers Skip This</h2>
 
           <p>
             Onboarding feels like admin. Most freelancers want to start the actual work immediately
@@ -130,7 +130,7 @@ export default function Article() {
             the conversations that would otherwise derail the project mid-way.
           </p>
 
-          <h2 className="text-xl font-bold text-gray-900 mt-10 mb-3">The 5-Step Client Onboarding Process</h2>
+          <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2"><span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>The 5-Step Client Onboarding Process</h2>
 
           <div className="flex flex-col gap-6 my-6">
             {steps.map((step) => (
@@ -156,7 +156,7 @@ export default function Article() {
             ))}
           </div>
 
-          <h2 className="text-xl font-bold text-gray-900 mt-10 mb-3">What to Include in Your Kickoff Call Agenda</h2>
+          <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2"><span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>What to Include in Your Kickoff Call Agenda</h2>
 
           <p>Send the agenda 24 hours before the call. Keep it to 45–60 minutes maximum.</p>
 
@@ -172,7 +172,7 @@ export default function Article() {
             </ol>
           </div>
 
-          <h2 className="text-xl font-bold text-gray-900 mt-10 mb-3">The Onboarding Documents You Need</h2>
+          <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2"><span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>The Onboarding Documents You Need</h2>
 
           <div className="flex flex-col gap-3 my-4">
             {[
@@ -206,7 +206,7 @@ export default function Article() {
             </Link>
           </div>
 
-          <h2 className="text-xl font-bold text-gray-900 mt-10 mb-3">Common Onboarding Mistakes</h2>
+          <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2"><span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>Common Onboarding Mistakes</h2>
 
           <div className="flex flex-col gap-3 my-4">
             {[
@@ -234,7 +234,7 @@ export default function Article() {
             ))}
           </div>
 
-          <h2 className="text-xl font-bold text-gray-900 mt-10 mb-3">The ROI of Professional Onboarding</h2>
+          <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2"><span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>The ROI of Professional Onboarding</h2>
 
           <p>
             A structured onboarding takes about 2 hours to set up as a system (templates, checklist,

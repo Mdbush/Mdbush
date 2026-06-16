@@ -167,7 +167,7 @@ export default function HowToPriceDiscoveryWorkshopsUAE() {
                 { href: "/blog/how-to-write-freelance-proposal-uae", label: "How to Write a Freelance Proposal That Wins Clients" },
                 { href: "/blog/how-to-negotiate-freelance-rates-uae", label: "How to Negotiate Your Freelance Rates in the UAE" },
               ].map((link) => (
-                <Link key={link.href} href={link.href} className="block text-blue-600 hover:text-blue-800 text-sm">
+                <Link key={link.href} href={link.href} className="block text-emerald-700 hover:text-emerald-900 text-sm">
                   → {link.label}
                 </Link>
               ))}

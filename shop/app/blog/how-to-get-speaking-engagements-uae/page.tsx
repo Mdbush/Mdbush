@@ -68,7 +68,7 @@ export default function HowToGetSpeakingEngagementsUAE() {
         </div>
 
 
-        <div className="prose prose-gray max-w-none text-gray-700 leading-relaxed space-y-6">
+        <div className="space-y-6 leading-relaxed">
 
           <p>
             Speaking at conferences and corporate events is one of the highest-leverage
@@ -80,8 +80,8 @@ export default function HowToGetSpeakingEngagementsUAE() {
             almost any other city on earth. Here is how to get them.
           </p>
 
-          <div className="bg-gray-50 border border-gray-200 rounded-xl p-4 text-sm">
-            <p className="font-semibold text-gray-900 mb-1">Speaking is a client acquisition strategy, not just income</p>
+          <div className="bg-emerald-50 border border-emerald-200 rounded-xl p-5">
+            <p className="text-sm font-bold text-emerald-800 mb-2">Speaking is a client acquisition strategy, not just income</p>
             <p className="text-gray-700">
               Most UAE freelancers who speak at events do not do it primarily for the speaking
               fee. They do it because a single well-placed talk at an industry conference
@@ -92,13 +92,13 @@ export default function HowToGetSpeakingEngagementsUAE() {
           </div>
 
           <section>
-            <h2 className="text-xl font-bold text-gray-900 mt-8 mb-4">UAE Speaker Fees by Event Type</h2>
+            <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2"><span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>UAE Speaker Fees by Event Type</h2>
             <div className="space-y-3 mt-4">
               {speakerFees.map((tier, i) => (
                 <div key={i} className="border border-gray-200 rounded-xl p-4">
                   <div className="flex items-start justify-between gap-2 mb-1">
                     <p className="font-semibold text-gray-900 text-sm">{tier.tier}</p>
-                    <span className="text-xs font-bold text-green-700 bg-green-50 px-2 py-0.5 rounded-full shrink-0">{tier.fee}</span>
+                    <span className="text-xs font-bold text-emerald-700 bg-emerald-50 border border-emerald-200 px-2 py-0.5 rounded-full shrink-0">{tier.fee}</span>
                   </div>
                   <p className="text-xs text-gray-600">{tier.when}</p>
                 </div>
@@ -107,7 +107,7 @@ export default function HowToGetSpeakingEngagementsUAE() {
           </section>
 
           <section>
-            <h2 className="text-xl font-bold text-gray-900 mt-8 mb-3">The 5 Steps to Your First UAE Speaking Gig</h2>
+            <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2"><span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>The 5 Steps to Your First UAE Speaking Gig</h2>
             <div className="space-y-3 mt-4">
               {[
                 {
@@ -133,14 +133,14 @@ export default function HowToGetSpeakingEngagementsUAE() {
               ].map((item, i) => (
                 <div key={i} className="border border-gray-200 rounded-2xl p-5">
                   <p className="font-bold text-gray-900 text-sm mb-2">{item.step}</p>
-                  <p className="text-sm text-gray-700">{item.detail}</p>
+                  <p className="text-sm text-emerald-800">{item.detail}</p>
                 </div>
               ))}
             </div>
           </section>
 
           <section>
-            <h2 className="text-xl font-bold text-gray-900 mt-8 mb-3">UAE Conferences Worth Speaking At (By Niche)</h2>
+            <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2"><span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>UAE Conferences Worth Speaking At (By Niche)</h2>
             <div className="overflow-x-auto">
               <table className="w-full text-sm border-collapse">
                 <thead>
@@ -171,7 +171,7 @@ export default function HowToGetSpeakingEngagementsUAE() {
           </section>
 
           <section>
-            <h2 className="text-xl font-bold text-gray-900 mt-8 mb-3">Speaker Bureaus Operating in the UAE</h2>
+            <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2"><span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>Speaker Bureaus Operating in the UAE</h2>
             <p>
               If you have an established speaking track record (20+ talks, strong reel,
               measurable expertise), UAE-active speaker bureaus can place you in corporate
@@ -192,8 +192,8 @@ export default function HowToGetSpeakingEngagementsUAE() {
           </section>
 
           {/* CTA */}
-          <div className="bg-gray-950 text-white rounded-2xl p-6 mt-10">
-            <p className="text-xs font-semibold text-gray-400 uppercase tracking-widest mb-2">Build your expert positioning</p>
+          <div className="bg-gradient-to-br from-gray-900 to-gray-800 text-white rounded-2xl p-8 mt-12 text-center">
+            <p className="text-xs font-bold text-emerald-400 uppercase tracking-widest block mb-3">Build your expert positioning</p>
             <h3 className="text-lg font-bold mb-2">How to Build a Personal Brand as a UAE Freelancer</h3>
             <p className="text-gray-400 text-sm mb-4">
               Speaking is one part of a broader personal brand strategy. Read the complete
@@ -202,7 +202,7 @@ export default function HowToGetSpeakingEngagementsUAE() {
             </p>
             <Link
               href="/blog/personal-brand-freelancer-uae"
-              className="inline-block bg-white text-gray-900 font-bold px-5 py-2.5 rounded-xl hover:bg-gray-100 transition-colors text-sm"
+              className="inline-block bg-emerald-500 hover:bg-emerald-400 text-white font-bold px-8 py-3 rounded-xl transition-colors text-sm"
             >
               Read the Personal Brand Guide →
             </Link>

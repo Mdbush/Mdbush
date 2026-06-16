@@ -69,8 +69,8 @@ export default function FreelanceProductDesignerRatesUAE() {
         </div>
 
 
-          <div className="bg-blue-50 border border-blue-200 rounded-xl p-6 mb-10">
-            <h2 className="text-base font-semibold text-blue-900 mb-3">Quick Rate Benchmark</h2>
+          <div className="bg-emerald-50 border border-emerald-200 rounded-xl p-6 mb-10">
+            <h2 className="text-base font-semibold text-emerald-900 mb-3">Quick Rate Benchmark</h2>
             <div className="grid grid-cols-3 gap-4 text-center">
               <div>
                 <div className="text-2xl font-bold text-blue-700">AED 700–1,000</div>
@@ -132,7 +132,7 @@ export default function FreelanceProductDesignerRatesUAE() {
                 and usability. Often produces lower-fidelity outputs (wireframes, user flows,
                 journey maps) that UI designers then refine. In larger UAE product teams,
                 UX and UI may be split roles. See our{" "}
-                <Link href="/blog/freelance-ux-designer-rates-uae" className="text-blue-600 hover:text-blue-800">
+                <Link href="/blog/freelance-ux-designer-rates-uae" className="text-emerald-700 hover:text-emerald-900">
                   UX designer rates guide
                 </Link>{" "}
                 for separate benchmarks. Day rate range: AED 600–2,800/day.
@@ -224,7 +224,7 @@ export default function FreelanceProductDesignerRatesUAE() {
                 { href: "/blog/freelance-ux-researcher-rates-uae", label: "Freelance UX Researcher Rates UAE" },
                 { href: "/blog/freelance-graphic-designer-rates-uae", label: "Freelance Graphic Designer Rates UAE" },
               ].map((link) => (
-                <Link key={link.href} href={link.href} className="block text-blue-600 hover:text-blue-800 text-sm">
+                <Link key={link.href} href={link.href} className="block text-emerald-700 hover:text-emerald-900 text-sm">
                   → {link.label}
                 </Link>
               ))}

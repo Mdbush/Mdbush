@@ -66,7 +66,7 @@ export default function HowToWriteCaseStudiesUAE() {
         </div>
 
 
-        <div className="prose prose-gray max-w-none text-gray-700 leading-relaxed space-y-6">
+        <div className="space-y-6 leading-relaxed">
 
           <p>
             Most UAE freelancers skip case studies entirely — or write versions so vague
@@ -77,8 +77,8 @@ export default function HowToWriteCaseStudiesUAE() {
             case study converts better than any brochure. Here is the system.
           </p>
 
-          <div className="bg-gray-50 border border-gray-200 rounded-xl p-4 text-sm">
-            <p className="font-semibold text-gray-900 mb-1">Why case studies matter more in the UAE</p>
+          <div className="bg-emerald-50 border border-emerald-200 rounded-xl p-5">
+            <p className="text-sm font-bold text-emerald-800 mb-2">Why case studies matter more in the UAE</p>
             <p className="text-gray-700">
               UAE B2B buyers are risk-averse about new freelancer relationships. The
               question they are constantly asking is: &quot;Has this person done this before,
@@ -89,11 +89,11 @@ export default function HowToWriteCaseStudiesUAE() {
           </div>
 
           <section>
-            <h2 className="text-xl font-bold text-gray-900 mt-8 mb-3">The 5-Part Case Study Structure</h2>
+            <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2"><span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>The 5-Part Case Study Structure</h2>
             <div className="space-y-3 mt-4">
               <div className="border border-gray-200 rounded-xl p-4">
                 <p className="font-bold text-gray-900 text-sm mb-2">1. Client context (2–3 sentences)</p>
-                <p className="text-sm text-gray-700">
+                <p className="text-sm text-emerald-800">
                   Who was the client — industry, size, and the specific situation they were
                   in when they hired you. Do not name the client unless they have explicitly
                   given permission. If confidential: &quot;A Dubai-based fintech startup with
@@ -103,7 +103,7 @@ export default function HowToWriteCaseStudiesUAE() {
               </div>
               <div className="border border-gray-200 rounded-xl p-4">
                 <p className="font-bold text-gray-900 text-sm mb-2">2. The problem (3–5 sentences)</p>
-                <p className="text-sm text-gray-700">
+                <p className="text-sm text-emerald-800">
                   What was broken, stuck, or missing before you arrived? Write this from
                   the client&apos;s perspective, not yours. What were they experiencing?
                   What was the cost of the problem (lost revenue, wasted time, missed
@@ -113,7 +113,7 @@ export default function HowToWriteCaseStudiesUAE() {
               </div>
               <div className="border border-gray-200 rounded-xl p-4">
                 <p className="font-bold text-gray-900 text-sm mb-2">3. Your approach (3–5 sentences)</p>
-                <p className="text-sm text-gray-700">
+                <p className="text-sm text-emerald-800">
                   What did you do, and why? This is the only section about your methodology —
                   keep it brief. Describe your process in a way that shows strategic thinking,
                   not just execution. &quot;We started with a 2-week audit to identify the highest-
@@ -123,7 +123,7 @@ export default function HowToWriteCaseStudiesUAE() {
               </div>
               <div className="border border-gray-200 rounded-xl p-4">
                 <p className="font-bold text-gray-900 text-sm mb-2">4. The results (3–5 bullets)</p>
-                <p className="text-sm text-gray-700">
+                <p className="text-sm text-emerald-800">
                   The most important section. Lead with the number, then the context:
                   &quot;Revenue increased 38% in the quarter following the rebrand.&quot; Not:
                   &quot;The rebrand was well-received.&quot; Use as many quantified metrics as
@@ -134,7 +134,7 @@ export default function HowToWriteCaseStudiesUAE() {
               </div>
               <div className="border border-gray-200 rounded-xl p-4">
                 <p className="font-bold text-gray-900 text-sm mb-2">5. Client quote + what happened next</p>
-                <p className="text-sm text-gray-700">
+                <p className="text-sm text-emerald-800">
                   One strong client quote authenticates everything above. Follow it with
                   a sentence about continuity: &quot;The client renewed for a 6-month retainer
                   following project completion.&quot; or &quot;Referred us to their CFO for a
@@ -146,7 +146,7 @@ export default function HowToWriteCaseStudiesUAE() {
           </section>
 
           <section>
-            <h2 className="text-xl font-bold text-gray-900 mt-8 mb-3">5 Common Case Study Mistakes (and How to Fix Them)</h2>
+            <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2"><span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>5 Common Case Study Mistakes (and How to Fix Them)</h2>
             <div className="space-y-3 mt-4">
               {mistakes.map((item, i) => (
                 <div key={i} className="border border-gray-200 rounded-xl p-4">
@@ -158,7 +158,7 @@ export default function HowToWriteCaseStudiesUAE() {
           </section>
 
           <section>
-            <h2 className="text-xl font-bold text-gray-900 mt-8 mb-3">Copy-Paste Case Study Template</h2>
+            <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2"><span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>Copy-Paste Case Study Template</h2>
             <div className="bg-gray-50 border border-gray-200 rounded-xl p-4 text-sm font-mono text-gray-700 mt-3">
               <p className="font-bold not-italic mb-3">CASE STUDY: [Headline with specific result]</p>
               <p className="font-bold not-italic mt-2">Client</p>
@@ -178,7 +178,7 @@ export default function HowToWriteCaseStudiesUAE() {
           </section>
 
           <section>
-            <h2 className="text-xl font-bold text-gray-900 mt-8 mb-3">How to Get Client Permission to Publish</h2>
+            <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2"><span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>How to Get Client Permission to Publish</h2>
             <p>
               The most common reason UAE freelancers avoid case studies is fear of asking.
               Here is the message that works:
@@ -203,7 +203,7 @@ export default function HowToWriteCaseStudiesUAE() {
           </section>
 
           <section>
-            <h2 className="text-xl font-bold text-gray-900 mt-8 mb-3">Where to Use Case Studies in the UAE</h2>
+            <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2"><span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>Where to Use Case Studies in the UAE</h2>
             <ul className="space-y-1 text-sm text-gray-600 mt-3">
               <li>• <strong>Proposals</strong> — Attach 1–2 relevant case studies. The most powerful sales move: show a prospect a case study from a client in their industry</li>
               <li>• <strong>LinkedIn</strong> — Post case study highlights as articles or posts. &quot;How I helped a Dubai F&B brand reduce customer acquisition cost by 40%&quot; outperforms any general thought leadership</li>
@@ -214,8 +214,8 @@ export default function HowToWriteCaseStudiesUAE() {
           </section>
 
           {/* CTA */}
-          <div className="bg-gray-950 text-white rounded-2xl p-6 mt-10">
-            <p className="text-xs font-semibold text-gray-400 uppercase tracking-widest mb-2">Win more UAE clients</p>
+          <div className="bg-gradient-to-br from-gray-900 to-gray-800 text-white rounded-2xl p-8 mt-12 text-center">
+            <p className="text-xs font-bold text-emerald-400 uppercase tracking-widest block mb-3">Win more UAE clients</p>
             <h3 className="text-lg font-bold mb-2">Freelance Proposal Template — Copy-Paste Format That Wins</h3>
             <p className="text-gray-400 text-sm mb-4">
               A structured proposal template designed for UAE clients — with the sections
@@ -224,7 +224,7 @@ export default function HowToWriteCaseStudiesUAE() {
             </p>
             <Link
               href="/blog/freelance-proposal-template-uae"
-              className="inline-block bg-white text-gray-900 font-bold px-5 py-2.5 rounded-xl hover:bg-gray-100 transition-colors text-sm"
+              className="inline-block bg-emerald-500 hover:bg-emerald-400 text-white font-bold px-8 py-3 rounded-xl transition-colors text-sm"
             >
               Get the Proposal Template →
             </Link>

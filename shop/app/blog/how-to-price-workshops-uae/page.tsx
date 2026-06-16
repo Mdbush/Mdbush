@@ -60,8 +60,8 @@ export default function HowToPriceWorkshopsUAE() {
         </div>
 
 
-          <div className="bg-blue-50 border border-blue-200 rounded-xl p-6 mb-10">
-            <h2 className="text-base font-semibold text-blue-900 mb-3">UAE Workshop Rate Ranges</h2>
+          <div className="bg-emerald-50 border border-emerald-200 rounded-xl p-6 mb-10">
+            <h2 className="text-base font-semibold text-emerald-900 mb-3">UAE Workshop Rate Ranges</h2>
             <div className="overflow-x-auto">
               <table className="w-full text-sm text-left">
                 <thead>
@@ -223,7 +223,7 @@ export default function HowToPriceWorkshopsUAE() {
                 { href: "/blog/how-to-price-retainer-clients-uae", label: "How to Price Retainer Clients in the UAE" },
                 { href: "/blog/how-to-package-freelance-services-uae", label: "How to Package Your Freelance Services in the UAE" },
               ].map((link) => (
-                <Link key={link.href} href={link.href} className="block text-blue-600 hover:text-blue-800 text-sm">
+                <Link key={link.href} href={link.href} className="block text-emerald-700 hover:text-emerald-900 text-sm">
                   → {link.label}
                 </Link>
               ))}

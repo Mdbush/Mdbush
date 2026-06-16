@@ -296,10 +296,10 @@ export default function FreelanceHealthInsuranceUAEPage() {
           <div className="mt-10">
             <h3 className="text-sm font-semibold text-gray-900 mb-3">Related Guides</h3>
             <div className="space-y-1.5">
-              <Link href="/blog/freelance-visa-uae" className="block text-blue-600 hover:text-blue-800 text-sm">→ How to Get a Freelance Visa in the UAE (Full Guide)</Link>
-              <Link href="/blog/freelance-tax-uae" className="block text-blue-600 hover:text-blue-800 text-sm">→ Do Freelancers Pay Tax in the UAE? (2026 Guide)</Link>
-              <Link href="/blog/freelance-vs-salary-uae" className="block text-blue-600 hover:text-blue-800 text-sm">→ Freelance vs Salary in UAE — What Actually Pays More?</Link>
-              <Link href="/blog/best-banks-freelancers-uae" className="block text-blue-600 hover:text-blue-800 text-sm">→ Best Banks for Freelancers in the UAE (2026)</Link>
+              <Link href="/blog/freelance-visa-uae" className="block text-emerald-700 hover:text-emerald-900 text-sm">→ How to Get a Freelance Visa in the UAE (Full Guide)</Link>
+              <Link href="/blog/freelance-tax-uae" className="block text-emerald-700 hover:text-emerald-900 text-sm">→ Do Freelancers Pay Tax in the UAE? (2026 Guide)</Link>
+              <Link href="/blog/freelance-vs-salary-uae" className="block text-emerald-700 hover:text-emerald-900 text-sm">→ Freelance vs Salary in UAE — What Actually Pays More?</Link>
+              <Link href="/blog/best-banks-freelancers-uae" className="block text-emerald-700 hover:text-emerald-900 text-sm">→ Best Banks for Freelancers in the UAE (2026)</Link>
             </div>
           </div>
         </div>

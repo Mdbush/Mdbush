@@ -58,7 +58,7 @@ export default function HowToWriteFreelanceProposalUAE() {
         </div>
 
 
-        <div className="prose prose-gray max-w-none text-gray-700 leading-relaxed space-y-6">
+        <div className="space-y-6 leading-relaxed">
 
           <p>
             Most freelance proposals fail before the rate section. They start with your
@@ -70,8 +70,8 @@ export default function HowToWriteFreelanceProposalUAE() {
             write proposals that convert.
           </p>
 
-          <div className="bg-gray-50 border border-gray-200 rounded-xl p-4 text-sm">
-            <p className="font-semibold text-gray-900 mb-1">The UAE proposal reality</p>
+          <div className="bg-emerald-50 border border-emerald-200 rounded-xl p-5">
+            <p className="text-sm font-bold text-emerald-800 mb-2">The UAE proposal reality</p>
             <p className="text-gray-700">
               In the UAE market, personal credibility and perceived understanding of the
               client&apos;s situation outweigh formal credentials more than in most markets.
@@ -83,7 +83,7 @@ export default function HowToWriteFreelanceProposalUAE() {
           </div>
 
           <section>
-            <h2 className="text-xl font-bold text-gray-900 mt-8 mb-3">The 7-Section Proposal Structure That Converts</h2>
+            <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2"><span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>The 7-Section Proposal Structure That Converts</h2>
             <div className="space-y-3 mt-4">
               {[
                 { section: "1. The situation (their problem, in their words)", desc: "Open by describing their situation as specifically as possible — the challenge they&apos;re trying to solve, the context that makes it difficult, what they&apos;ve already tried, what success looks like for them. This section should feel uncomfortably specific. You want the client to read it and think: 'This person actually listened.' Source this from your discovery call or intake form. Never write a generic problem statement — it signals that you send the same proposal to everyone." },
@@ -103,7 +103,7 @@ export default function HowToWriteFreelanceProposalUAE() {
           </section>
 
           <section>
-            <h2 className="text-xl font-bold text-gray-900 mt-8 mb-3">UAE-Specific Proposal Considerations</h2>
+            <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2"><span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>UAE-Specific Proposal Considerations</h2>
             <ul className="space-y-2 text-sm text-gray-600 mt-3">
               <li>• <strong>Use AED for all pricing</strong> — Always quote in AED for UAE-based clients, even if you intend to convert to another currency for banking purposes. Quoting in USD or GBP adds friction and signals that you treat the UAE as a secondary market rather than your primary one. If the client is an international company with a Dubai office, check their preferred currency before quoting</li>
               <li>• <strong>Include a signed contract requirement</strong> — UAE clients expect a formal contract before work begins. Mention in your proposal that you will provide a contract for signing once the proposal is approved. Clients who want to proceed informally (&apos;just start and we&apos;ll sort the paperwork&apos;) are a significant payment risk in the UAE market — insist on a signed agreement</li>
@@ -114,7 +114,7 @@ export default function HowToWriteFreelanceProposalUAE() {
           </section>
 
           <section>
-            <h2 className="text-xl font-bold text-gray-900 mt-8 mb-3">What to Do When They Don&apos;t Respond</h2>
+            <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2"><span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>What to Do When They Don&apos;t Respond</h2>
             <ul className="space-y-1 text-sm text-gray-600 mt-3">
               <li>• <strong>Day 3: WhatsApp follow-up</strong> — &apos;Hi [name], just checking in on the proposal I sent [date]. Happy to answer any questions or hop on a quick call if anything needs clarifying.&apos; WhatsApp is the primary business communication channel for UAE SMEs and is appropriate for professional follow-ups</li>
               <li>• <strong>Day 7: Email with value add</strong> — Follow up with something useful: a relevant case study, an answer to a question they raised on the call, a thought on their specific situation. This signals continued interest without pure &apos;just checking in&apos; energy</li>
@@ -124,8 +124,8 @@ export default function HowToWriteFreelanceProposalUAE() {
           </section>
 
           {/* CTA */}
-          <div className="bg-gray-950 text-white rounded-2xl p-6 mt-10">
-            <p className="text-xs font-semibold text-gray-400 uppercase tracking-widest mb-2">Ready-to-use proposal templates</p>
+          <div className="bg-gradient-to-br from-gray-900 to-gray-800 text-white rounded-2xl p-8 mt-12 text-center">
+            <p className="text-xs font-bold text-emerald-400 uppercase tracking-widest block mb-3">Ready-to-use proposal templates</p>
             <h3 className="text-lg font-bold mb-2">Freelancer Client CRM — With Proposal Templates Built In</h3>
             <p className="text-gray-400 text-sm mb-4">
               7-section proposal templates for UAE freelancers, a client pipeline to track
@@ -134,7 +134,7 @@ export default function HowToWriteFreelanceProposalUAE() {
             </p>
             <Link
               href="/products/freelancer-client-crm"
-              className="inline-block bg-white text-gray-900 font-bold px-5 py-2.5 rounded-xl hover:bg-gray-100 transition-colors text-sm"
+              className="inline-block bg-emerald-500 hover:bg-emerald-400 text-white font-bold px-8 py-3 rounded-xl transition-colors text-sm"
             >
               Get the Client CRM →
             </Link>

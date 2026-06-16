@@ -69,7 +69,7 @@ export default function FreelanceTechnicalWriterRatesUAE() {
         </div>
 
 
-        <div className="prose prose-gray max-w-none text-gray-700 leading-relaxed space-y-6">
+        <div className="space-y-6 leading-relaxed">
 
           <p>
             Technical writing is a specialized freelance discipline distinct from general
@@ -82,8 +82,8 @@ export default function FreelanceTechnicalWriterRatesUAE() {
             product documentation for their MENA operations. Here are the 2026 rate benchmarks.
           </p>
 
-          <div className="bg-gray-50 border border-gray-200 rounded-xl p-4 text-sm">
-            <p className="font-semibold text-gray-900 mb-1">Quick benchmark</p>
+          <div className="bg-emerald-50 border border-emerald-200 rounded-xl p-5">
+            <p className="text-sm font-bold text-emerald-800 mb-2">Quick benchmark</p>
             <p className="text-gray-700">
               A mid-level freelance technical writer in Dubai (5–8 years, tech or fintech
               domain knowledge, API and software documentation experience) typically charges
@@ -95,7 +95,7 @@ export default function FreelanceTechnicalWriterRatesUAE() {
           </div>
 
           <section>
-            <h2 className="text-xl font-bold text-gray-900 mt-8 mb-4">Freelance Technical Writer Rates in the UAE by Service (2026)</h2>
+            <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2"><span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>Freelance Technical Writer Rates in the UAE by Service (2026)</h2>
             <p className="text-xs text-gray-400 mb-4">Junior: 0–3 years / Mid: 4–8 years, domain expertise in tech or regulated industry / Senior: 9+ years, enterprise documentation or regulatory writing background</p>
             <div className="overflow-x-auto">
               <table className="w-full text-sm border-collapse">
@@ -122,7 +122,7 @@ export default function FreelanceTechnicalWriterRatesUAE() {
           </section>
 
           <section>
-            <h2 className="text-xl font-bold text-gray-900 mt-8 mb-3">High-Value Technical Writing Niches in the UAE</h2>
+            <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2"><span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>High-Value Technical Writing Niches in the UAE</h2>
             <div className="space-y-3 mt-4">
               {[
                 { niche: "UAE government and smart city documentation (Dubai, Abu Dhabi)", rate: "AED 20,000–120,000+ per engagement", why: "Dubai Smart City, Abu Dhabi Digital Authority, and federal government entities require extensive documentation: policy frameworks, citizen-facing user guides, SOP manuals for digital services, and compliance documents for smart city infrastructure. Technical writers who can produce government-grade documentation — meeting UAE government Arabic and English bilingual requirements, accessibility standards, and official formatting conventions — command premium rates for these rare engagements." },
@@ -133,7 +133,7 @@ export default function FreelanceTechnicalWriterRatesUAE() {
                 <div key={item.niche} className="border border-gray-200 rounded-xl p-4">
                   <div className="flex items-start justify-between gap-2 mb-1">
                     <p className="font-semibold text-gray-900 text-sm">{item.niche}</p>
-                    <span className="text-xs font-bold text-green-700 bg-green-50 px-2 py-0.5 rounded-full shrink-0">{item.rate}</span>
+                    <span className="text-xs font-bold text-emerald-700 bg-emerald-50 border border-emerald-200 px-2 py-0.5 rounded-full shrink-0">{item.rate}</span>
                   </div>
                   <p className="text-xs text-gray-600">{item.why}</p>
                 </div>
@@ -142,7 +142,7 @@ export default function FreelanceTechnicalWriterRatesUAE() {
           </section>
 
           <section>
-            <h2 className="text-xl font-bold text-gray-900 mt-8 mb-3">Technical Writing vs Copywriting vs Content Writing: Rate Differences</h2>
+            <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2"><span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>Technical Writing vs Copywriting vs Content Writing: Rate Differences</h2>
             <ul className="space-y-2 text-sm text-gray-600 mt-3">
               <li>• <strong>Technical writing</strong> rates are 40–100% higher than general content writing for equivalent word counts. The premium reflects domain expertise, accuracy requirements, source material complexity, and the fact that errors have real consequences (product mis-use, compliance failures, developer integration errors)</li>
               <li>• <strong>Copywriting</strong> (persuasive marketing writing) is priced by project or outcome-based metrics, not word count. Technical marketing content — white papers, technical case studies, product datasheets — overlaps with technical writing and commands copywriting-level rates</li>
@@ -152,8 +152,8 @@ export default function FreelanceTechnicalWriterRatesUAE() {
           </section>
 
           {/* CTA */}
-          <div className="bg-gray-950 text-white rounded-2xl p-6 mt-10">
-            <p className="text-xs font-semibold text-gray-400 uppercase tracking-widest mb-2">Manage your technical writing clients</p>
+          <div className="bg-gradient-to-br from-gray-900 to-gray-800 text-white rounded-2xl p-8 mt-12 text-center">
+            <p className="text-xs font-bold text-emerald-400 uppercase tracking-widest block mb-3">Manage your technical writing clients</p>
             <h3 className="text-lg font-bold mb-2">Freelancer Client CRM — Track Every Documentation Project</h3>
             <p className="text-gray-400 text-sm mb-4">
               Track technical writing projects from brief to final delivery, manage
@@ -162,7 +162,7 @@ export default function FreelanceTechnicalWriterRatesUAE() {
             </p>
             <Link
               href="/products/freelancer-client-crm"
-              className="inline-block bg-white text-gray-900 font-bold px-5 py-2.5 rounded-xl hover:bg-gray-100 transition-colors text-sm"
+              className="inline-block bg-emerald-500 hover:bg-emerald-400 text-white font-bold px-8 py-3 rounded-xl transition-colors text-sm"
             >
               Get the Client CRM →
             </Link>

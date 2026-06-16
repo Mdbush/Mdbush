@@ -69,7 +69,7 @@ export default function FreelanceContentCreatorRatesUAE() {
         </div>
 
 
-        <div className="prose prose-gray max-w-none text-gray-700 leading-relaxed space-y-6">
+        <div className="space-y-6 leading-relaxed">
 
           <p>
             The UAE has one of the highest social media penetration rates in the world,
@@ -82,8 +82,8 @@ export default function FreelanceContentCreatorRatesUAE() {
             the 2026 benchmarks.
           </p>
 
-          <div className="bg-gray-50 border border-gray-200 rounded-xl p-4 text-sm">
-            <p className="font-semibold text-gray-900 mb-1">Quick benchmark</p>
+          <div className="bg-emerald-50 border border-emerald-200 rounded-xl p-5">
+            <p className="text-sm font-bold text-emerald-800 mb-2">Quick benchmark</p>
             <p className="text-gray-700">
               A mid-tier UAE content creator with 30K–80K engaged Instagram followers
               typically charges <strong>AED 2,000–5,000 per sponsored post</strong> and
@@ -95,7 +95,7 @@ export default function FreelanceContentCreatorRatesUAE() {
           </div>
 
           <section>
-            <h2 className="text-xl font-bold text-gray-900 mt-8 mb-4">UAE Content Creator Rates by Platform & Format (2026)</h2>
+            <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2"><span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>UAE Content Creator Rates by Platform & Format (2026)</h2>
             <div className="overflow-x-auto">
               <table className="w-full text-sm border-collapse">
                 <thead>
@@ -120,7 +120,7 @@ export default function FreelanceContentCreatorRatesUAE() {
           </section>
 
           <section>
-            <h2 className="text-xl font-bold text-gray-900 mt-8 mb-3">What Actually Determines Your Rate in the UAE</h2>
+            <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2"><span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>What Actually Determines Your Rate in the UAE</h2>
             <div className="space-y-3 mt-4">
               {[
                 { factor: "Engagement rate (more important than follower count)", detail: "UAE brands have become more sophisticated — they look at engagement rate, not just followers. A 30K account with 6% engagement is worth more than a 100K account with 0.8% engagement. Track your own engagement rate and include it in your media kit. Above 3.5% is strong for UAE Instagram; above 5% commands premium rates." },
@@ -137,7 +137,7 @@ export default function FreelanceContentCreatorRatesUAE() {
           </section>
 
           <section>
-            <h2 className="text-xl font-bold text-gray-900 mt-8 mb-3">UGC (User Generated Content) as a Revenue Stream</h2>
+            <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2"><span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>UGC (User Generated Content) as a Revenue Stream</h2>
             <p>
               UGC is a growing revenue stream for UAE creators who want brand income
               without building a large audience. In UGC contracts, you produce content
@@ -153,7 +153,7 @@ export default function FreelanceContentCreatorRatesUAE() {
           </section>
 
           <section>
-            <h2 className="text-xl font-bold text-gray-900 mt-8 mb-3">Structuring UAE Brand Deals: What to Include</h2>
+            <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2"><span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>Structuring UAE Brand Deals: What to Include</h2>
             <ul className="space-y-1 text-sm text-gray-600 mt-3">
               <li>• <strong>Deliverables</strong> — Exact number of posts, format (static vs. video), platform, and length</li>
               <li>• <strong>Timeline</strong> — Posting schedule, approval turnaround expectations (UAE brands can be slow with approvals — build 5–7 days into your schedule)</li>
@@ -165,8 +165,8 @@ export default function FreelanceContentCreatorRatesUAE() {
           </section>
 
           {/* CTA */}
-          <div className="bg-gray-950 text-white rounded-2xl p-6 mt-10">
-            <p className="text-xs font-semibold text-gray-400 uppercase tracking-widest mb-2">Manage your brand deals</p>
+          <div className="bg-gradient-to-br from-gray-900 to-gray-800 text-white rounded-2xl p-8 mt-12 text-center">
+            <p className="text-xs font-bold text-emerald-400 uppercase tracking-widest block mb-3">Manage your brand deals</p>
             <h3 className="text-lg font-bold mb-2">Freelancer Client CRM — Track Every Brand Deal & Invoice</h3>
             <p className="text-gray-400 text-sm mb-4">
               Track brand partnerships from brief to posting, manage approval timelines,
@@ -174,7 +174,7 @@ export default function FreelanceContentCreatorRatesUAE() {
             </p>
             <Link
               href="/products/freelancer-client-crm"
-              className="inline-block bg-white text-gray-900 font-bold px-5 py-2.5 rounded-xl hover:bg-gray-100 transition-colors text-sm"
+              className="inline-block bg-emerald-500 hover:bg-emerald-400 text-white font-bold px-8 py-3 rounded-xl transition-colors text-sm"
             >
               Get the Client CRM →
             </Link>

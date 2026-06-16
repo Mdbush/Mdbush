@@ -69,7 +69,7 @@ export default function FreelanceLifeCoachRatesUAE() {
         </div>
 
 
-        <div className="prose prose-gray max-w-none text-gray-700 leading-relaxed space-y-6">
+        <div className="space-y-6 leading-relaxed">
 
           <p>
             The coaching industry in the UAE has matured significantly. Dubai and Abu Dhabi
@@ -83,8 +83,8 @@ export default function FreelanceLifeCoachRatesUAE() {
             are the 2026 benchmarks.
           </p>
 
-          <div className="bg-gray-50 border border-gray-200 rounded-xl p-4 text-sm">
-            <p className="font-semibold text-gray-900 mb-1">Quick benchmark</p>
+          <div className="bg-emerald-50 border border-emerald-200 rounded-xl p-5">
+            <p className="text-sm font-bold text-emerald-800 mb-2">Quick benchmark</p>
             <p className="text-gray-700">
               A mid-level executive coach in Dubai with ICF ACC certification and 4–7
               years experience typically charges <strong>AED 1,500–3,500 per session</strong> and
@@ -95,7 +95,7 @@ export default function FreelanceLifeCoachRatesUAE() {
           </div>
 
           <section>
-            <h2 className="text-xl font-bold text-gray-900 mt-8 mb-4">Life Coach & Executive Coach Rates in the UAE by Service (2026)</h2>
+            <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2"><span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>Life Coach & Executive Coach Rates in the UAE by Service (2026)</h2>
             <p className="text-xs text-gray-400 mb-4">Junior: 0–3 years / Mid: 4–7 years + ICF ACC / Senior: 8+ years + ICF PCC/MCC or specialist</p>
             <div className="overflow-x-auto">
               <table className="w-full text-sm border-collapse">
@@ -122,7 +122,7 @@ export default function FreelanceLifeCoachRatesUAE() {
           </section>
 
           <section>
-            <h2 className="text-xl font-bold text-gray-900 mt-8 mb-3">High-Value Coaching Niches in the UAE</h2>
+            <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2"><span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>High-Value Coaching Niches in the UAE</h2>
             <div className="space-y-3 mt-4">
               {[
                 { niche: "C-suite executive coaching (CEO, CFO, COO of UAE corporates)", rate: "AED 4,000–12,000+ per session", why: "Senior leaders at major UAE companies (banks, government entities, family conglomerates) have coaching budgets approved at board level. C-suite coaches are typically brought in through executive search firms, board relationships, or existing corporate coaching relationships. A PCC or MCC credential from ICF plus demonstrable experience with C-suite challenges (board dynamics, strategy under ambiguity, cross-cultural leadership) are prerequisites." },
@@ -133,7 +133,7 @@ export default function FreelanceLifeCoachRatesUAE() {
                 <div key={item.niche} className="border border-gray-200 rounded-xl p-4">
                   <div className="flex items-start justify-between gap-2 mb-1">
                     <p className="font-semibold text-gray-900 text-sm">{item.niche}</p>
-                    <span className="text-xs font-bold text-green-700 bg-green-50 px-2 py-0.5 rounded-full shrink-0">{item.rate}</span>
+                    <span className="text-xs font-bold text-emerald-700 bg-emerald-50 border border-emerald-200 px-2 py-0.5 rounded-full shrink-0">{item.rate}</span>
                   </div>
                   <p className="text-xs text-gray-600">{item.why}</p>
                 </div>
@@ -142,11 +142,11 @@ export default function FreelanceLifeCoachRatesUAE() {
           </section>
 
           <section>
-            <h2 className="text-xl font-bold text-gray-900 mt-8 mb-3">Pricing Models for UAE Coaches</h2>
+            <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2"><span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>Pricing Models for UAE Coaches</h2>
             <div className="space-y-3 mt-4">
               <div className="border border-gray-200 rounded-xl p-4">
                 <p className="font-bold text-gray-900 text-sm mb-2">Package pricing (the professional standard)</p>
-                <p className="text-sm text-gray-700">
+                <p className="text-sm text-emerald-800">
                   Most professional coaches in the UAE do not sell individual sessions —
                   they sell programs (3, 6, or 12 months). Package pricing creates
                   client commitment, enables the depth of work that creates genuine
@@ -157,7 +157,7 @@ export default function FreelanceLifeCoachRatesUAE() {
               </div>
               <div className="border border-gray-200 rounded-xl p-4">
                 <p className="font-bold text-gray-900 text-sm mb-2">Corporate retainer (the highest-value model)</p>
-                <p className="text-sm text-gray-700">
+                <p className="text-sm text-emerald-800">
                   Corporate coaching retainers — where a company pays a monthly fee
                   for access to coaching hours across a defined group of leaders —
                   provide the highest income stability. A AED 20,000/month retainer
@@ -168,7 +168,7 @@ export default function FreelanceLifeCoachRatesUAE() {
               </div>
               <div className="border border-gray-200 rounded-xl p-4">
                 <p className="font-bold text-gray-900 text-sm mb-2">Online group programs (scalability)</p>
-                <p className="text-sm text-gray-700">
+                <p className="text-sm text-emerald-800">
                   A 10-person group coaching program at AED 5,000/person generates
                   AED 50,000 for the same time investment as 2–3 individual clients.
                   UAE professionals are increasingly comfortable with online group
@@ -181,7 +181,7 @@ export default function FreelanceLifeCoachRatesUAE() {
           </section>
 
           <section>
-            <h2 className="text-xl font-bold text-gray-900 mt-8 mb-3">ICF Credentials and UAE Market Perception</h2>
+            <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2"><span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>ICF Credentials and UAE Market Perception</h2>
             <ul className="space-y-1 text-sm text-gray-600 mt-3">
               <li>• <strong>ICF ACC (Associate Certified Coach)</strong> — Minimum 60 hours of coach-specific training + 100 hours of coaching experience. The baseline credential for professional coaching in the UAE corporate market</li>
               <li>• <strong>ICF PCC (Professional Certified Coach)</strong> — 125+ hours training + 500+ hours experience. Significantly increases your corporate credibility and justifies senior-tier rates</li>
@@ -191,8 +191,8 @@ export default function FreelanceLifeCoachRatesUAE() {
           </section>
 
           {/* CTA */}
-          <div className="bg-gray-950 text-white rounded-2xl p-6 mt-10">
-            <p className="text-xs font-semibold text-gray-400 uppercase tracking-widest mb-2">Manage your coaching clients</p>
+          <div className="bg-gradient-to-br from-gray-900 to-gray-800 text-white rounded-2xl p-8 mt-12 text-center">
+            <p className="text-xs font-bold text-emerald-400 uppercase tracking-widest block mb-3">Manage your coaching clients</p>
             <h3 className="text-lg font-bold mb-2">Freelancer Client CRM — Track Every Program & Invoice</h3>
             <p className="text-gray-400 text-sm mb-4">
               Track coaching programs from intake to completion, log session notes,
@@ -201,7 +201,7 @@ export default function FreelanceLifeCoachRatesUAE() {
             </p>
             <Link
               href="/products/freelancer-client-crm"
-              className="inline-block bg-white text-gray-900 font-bold px-5 py-2.5 rounded-xl hover:bg-gray-100 transition-colors text-sm"
+              className="inline-block bg-emerald-500 hover:bg-emerald-400 text-white font-bold px-8 py-3 rounded-xl transition-colors text-sm"
             >
               Get the Client CRM →
             </Link>

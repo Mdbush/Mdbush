@@ -219,7 +219,7 @@ export default function HowToBuildEmailListFreelancersUAE() {
                 { href: "/blog/personal-brand-freelancer-uae", label: "How to Build a Personal Brand as a UAE Freelancer" },
                 { href: "/blog/how-to-get-clients-linkedin-uae", label: "How to Get Clients on LinkedIn in the UAE" },
               ].map((link) => (
-                <Link key={link.href} href={link.href} className="block text-blue-600 hover:text-blue-800 text-sm">
+                <Link key={link.href} href={link.href} className="block text-emerald-700 hover:text-emerald-900 text-sm">
                   → {link.label}
                 </Link>
               ))}

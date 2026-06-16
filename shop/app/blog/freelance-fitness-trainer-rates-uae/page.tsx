@@ -69,7 +69,7 @@ export default function FreelanceFitnessTrainerRatesUAE() {
         </div>
 
 
-        <div className="prose prose-gray max-w-none text-gray-700 leading-relaxed space-y-6">
+        <div className="space-y-6 leading-relaxed">
 
           <p>
             Dubai and Abu Dhabi have among the highest gym membership rates in the world —
@@ -81,8 +81,8 @@ export default function FreelanceFitnessTrainerRatesUAE() {
             Here are the 2026 rate benchmarks.
           </p>
 
-          <div className="bg-gray-50 border border-gray-200 rounded-xl p-4 text-sm">
-            <p className="font-semibold text-gray-900 mb-1">Quick benchmark</p>
+          <div className="bg-emerald-50 border border-emerald-200 rounded-xl p-5">
+            <p className="text-sm font-bold text-emerald-800 mb-2">Quick benchmark</p>
             <p className="text-gray-700">
               A mid-level freelance personal trainer in Dubai (certified, 4–7 years
               experience) typically charges <strong>AED 400–700 per 1-on-1 session</strong> and
@@ -94,7 +94,7 @@ export default function FreelanceFitnessTrainerRatesUAE() {
           </div>
 
           <section>
-            <h2 className="text-xl font-bold text-gray-900 mt-8 mb-4">Freelance Personal Trainer Rates in the UAE by Service (2026)</h2>
+            <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2"><span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>Freelance Personal Trainer Rates in the UAE by Service (2026)</h2>
             <p className="text-xs text-gray-400 mb-4">Junior: 0–3 years / Mid: 4–7 years / Senior: 8+ years, specialist certification, or luxury client base</p>
             <div className="overflow-x-auto">
               <table className="w-full text-sm border-collapse">
@@ -121,7 +121,7 @@ export default function FreelanceFitnessTrainerRatesUAE() {
           </section>
 
           <section>
-            <h2 className="text-xl font-bold text-gray-900 mt-8 mb-3">High-Value Fitness Niches in the UAE</h2>
+            <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2"><span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>High-Value Fitness Niches in the UAE</h2>
             <div className="space-y-3 mt-4">
               {[
                 { niche: "UHNW / private residence training (Palm Jumeirah, Emirates Hills, DIFC penthouses)", rate: "AED 800–2,500+ per session", why: "Dubai&apos;s ultra-high-net-worth population maintains private gyms at home and expects trainers to travel to them, schedule around their calendar, and deliver white-glove service. These clients pay a substantial premium for discretion, flexibility, and expertise. One or two UHNW clients can anchor an entire income. Entry point is typically through hotel concierge, private member clubs (like Nad Al Sheba Sports Complex), or referral from existing luxury clients." },
@@ -132,7 +132,7 @@ export default function FreelanceFitnessTrainerRatesUAE() {
                 <div key={item.niche} className="border border-gray-200 rounded-xl p-4">
                   <div className="flex items-start justify-between gap-2 mb-1">
                     <p className="font-semibold text-gray-900 text-sm">{item.niche}</p>
-                    <span className="text-xs font-bold text-green-700 bg-green-50 px-2 py-0.5 rounded-full shrink-0">{item.rate}</span>
+                    <span className="text-xs font-bold text-emerald-700 bg-emerald-50 border border-emerald-200 px-2 py-0.5 rounded-full shrink-0">{item.rate}</span>
                   </div>
                   <p className="text-xs text-gray-600">{item.why}</p>
                 </div>
@@ -141,7 +141,7 @@ export default function FreelanceFitnessTrainerRatesUAE() {
           </section>
 
           <section>
-            <h2 className="text-xl font-bold text-gray-900 mt-8 mb-3">UAE Licensing for Freelance Personal Trainers</h2>
+            <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2"><span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>UAE Licensing for Freelance Personal Trainers</h2>
             <ul className="space-y-1 text-sm text-gray-600 mt-3">
               <li>• <strong>Dubai Sports Council (DSC)</strong> — Personal trainers working in Dubai must be registered with the Dubai Sports Council. DSC sets minimum certification standards (Level 3 equivalent) and issues coach IDs. Operating without DSC registration can result in fines and removal from gym premises</li>
               <li>• <strong>Minimum certification standard</strong> — DSC requires a recognized personal training qualification: NASM CPT, ACE CPT, CIMSPA Level 3, REPs Level 3, or equivalent. A basic weekend course is not sufficient to legally operate in Dubai</li>
@@ -152,7 +152,7 @@ export default function FreelanceFitnessTrainerRatesUAE() {
           </section>
 
           <section>
-            <h2 className="text-xl font-bold text-gray-900 mt-8 mb-3">From Per-Session to Package Billing</h2>
+            <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2"><span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>From Per-Session to Package Billing</h2>
             <p className="text-sm text-gray-600 mb-3">
               The most important income shift for UAE personal trainers is moving from per-session
               billing to packages and retainers. Here&apos;s why it works:
@@ -174,8 +174,8 @@ export default function FreelanceFitnessTrainerRatesUAE() {
           </section>
 
           {/* CTA */}
-          <div className="bg-gray-950 text-white rounded-2xl p-6 mt-10">
-            <p className="text-xs font-semibold text-gray-400 uppercase tracking-widest mb-2">Manage your PT clients</p>
+          <div className="bg-gradient-to-br from-gray-900 to-gray-800 text-white rounded-2xl p-8 mt-12 text-center">
+            <p className="text-xs font-bold text-emerald-400 uppercase tracking-widest block mb-3">Manage your PT clients</p>
             <h3 className="text-lg font-bold mb-2">Freelancer Client CRM — Track Every Client & Package</h3>
             <p className="text-gray-400 text-sm mb-4">
               Track PT clients from initial assessment through program completion,
@@ -184,7 +184,7 @@ export default function FreelanceFitnessTrainerRatesUAE() {
             </p>
             <Link
               href="/products/freelancer-client-crm"
-              className="inline-block bg-white text-gray-900 font-bold px-5 py-2.5 rounded-xl hover:bg-gray-100 transition-colors text-sm"
+              className="inline-block bg-emerald-500 hover:bg-emerald-400 text-white font-bold px-8 py-3 rounded-xl transition-colors text-sm"
             >
               Get the Client CRM →
             </Link>

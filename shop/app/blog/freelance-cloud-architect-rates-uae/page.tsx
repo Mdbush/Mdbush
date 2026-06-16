@@ -69,7 +69,7 @@ export default function FreelanceCloudArchitectRatesUAE() {
         </div>
 
 
-        <div className="prose prose-gray max-w-none text-gray-700 leading-relaxed space-y-6">
+        <div className="space-y-6 leading-relaxed">
 
           <p>
             Cloud architecture is among the highest-rate technical specializations in the
@@ -82,8 +82,8 @@ export default function FreelanceCloudArchitectRatesUAE() {
             professionals. Here are the 2026 rate benchmarks.
           </p>
 
-          <div className="bg-gray-50 border border-gray-200 rounded-xl p-4 text-sm">
-            <p className="font-semibold text-gray-900 mb-1">Quick benchmark</p>
+          <div className="bg-emerald-50 border border-emerald-200 rounded-xl p-5">
+            <p className="text-sm font-bold text-emerald-800 mb-2">Quick benchmark</p>
             <p className="text-gray-700">
               A mid-level freelance cloud architect in Dubai (AWS Solutions Architect
               Professional or Azure Solutions Architect Expert, 5–8 years, production
@@ -96,7 +96,7 @@ export default function FreelanceCloudArchitectRatesUAE() {
           </div>
 
           <section>
-            <h2 className="text-xl font-bold text-gray-900 mt-8 mb-4">Freelance Cloud Architect Rates in the UAE by Service (2026)</h2>
+            <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2"><span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>Freelance Cloud Architect Rates in the UAE by Service (2026)</h2>
             <p className="text-xs text-gray-400 mb-4">Junior: 0–3 years / Mid: 4–8 years, AWS SAP or Azure Expert certified / Senior: 9+ years, multi-cloud enterprise architecture, VP/CTO level background</p>
             <div className="overflow-x-auto">
               <table className="w-full text-sm border-collapse">
@@ -123,7 +123,7 @@ export default function FreelanceCloudArchitectRatesUAE() {
           </section>
 
           <section>
-            <h2 className="text-xl font-bold text-gray-900 mt-8 mb-3">High-Value Cloud Architecture Niches in the UAE</h2>
+            <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2"><span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>High-Value Cloud Architecture Niches in the UAE</h2>
             <div className="space-y-3 mt-4">
               {[
                 { niche: "UAE regulated industry cloud (banking, healthcare, government — Azure UAE North)", rate: "AED 50,000–300,000+ per engagement", why: "Data sovereignty requirements in UAE regulated industries mandate on-shore cloud storage. Azure UAE North (Dubai) is the dominant platform for UAE banking, government, and healthcare cloud workloads. A cloud architect with deep Azure UAE North expertise — including Azure Confidential Computing, Azure Private Link, UAE data residency configuration, and Azure Government Cloud compliance controls — commands a significant premium over generalist Azure architects in this market." },
@@ -134,7 +134,7 @@ export default function FreelanceCloudArchitectRatesUAE() {
                 <div key={item.niche} className="border border-gray-200 rounded-xl p-4">
                   <div className="flex items-start justify-between gap-2 mb-1">
                     <p className="font-semibold text-gray-900 text-sm">{item.niche}</p>
-                    <span className="text-xs font-bold text-green-700 bg-green-50 px-2 py-0.5 rounded-full shrink-0">{item.rate}</span>
+                    <span className="text-xs font-bold text-emerald-700 bg-emerald-50 border border-emerald-200 px-2 py-0.5 rounded-full shrink-0">{item.rate}</span>
                   </div>
                   <p className="text-xs text-gray-600">{item.why}</p>
                 </div>
@@ -143,7 +143,7 @@ export default function FreelanceCloudArchitectRatesUAE() {
           </section>
 
           <section>
-            <h2 className="text-xl font-bold text-gray-900 mt-8 mb-3">Certifications That Define the UAE Cloud Architecture Market</h2>
+            <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2"><span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>Certifications That Define the UAE Cloud Architecture Market</h2>
             <ul className="space-y-1 text-sm text-gray-600 mt-3">
               <li>• <strong>AWS Solutions Architect Professional (SAP)</strong> — The highest AWS architecture credential. Required or strongly preferred for senior AWS architecture roles in UAE enterprise accounts</li>
               <li>• <strong>Azure Solutions Architect Expert (AZ-305)</strong> — The most commercially valuable single cloud certification in the UAE market given Azure&apos;s dominance in regulated industries</li>
@@ -154,8 +154,8 @@ export default function FreelanceCloudArchitectRatesUAE() {
           </section>
 
           {/* CTA */}
-          <div className="bg-gray-950 text-white rounded-2xl p-6 mt-10">
-            <p className="text-xs font-semibold text-gray-400 uppercase tracking-widest mb-2">Manage your cloud architecture clients</p>
+          <div className="bg-gradient-to-br from-gray-900 to-gray-800 text-white rounded-2xl p-8 mt-12 text-center">
+            <p className="text-xs font-bold text-emerald-400 uppercase tracking-widest block mb-3">Manage your cloud architecture clients</p>
             <h3 className="text-lg font-bold mb-2">Freelancer Client CRM — Track Every Architecture Engagement</h3>
             <p className="text-gray-400 text-sm mb-4">
               Track cloud engagements from architecture review through migration go-live,
@@ -164,7 +164,7 @@ export default function FreelanceCloudArchitectRatesUAE() {
             </p>
             <Link
               href="/products/freelancer-client-crm"
-              className="inline-block bg-white text-gray-900 font-bold px-5 py-2.5 rounded-xl hover:bg-gray-100 transition-colors text-sm"
+              className="inline-block bg-emerald-500 hover:bg-emerald-400 text-white font-bold px-8 py-3 rounded-xl transition-colors text-sm"
             >
               Get the Client CRM →
             </Link>

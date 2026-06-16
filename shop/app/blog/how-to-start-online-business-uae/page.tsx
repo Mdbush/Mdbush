@@ -96,7 +96,7 @@ export default function HowToStartOnlineBusinessUAE() {
         </div>
 
 
-        <div className="prose prose-gray max-w-none text-gray-700 leading-relaxed space-y-6">
+        <div className="space-y-6 leading-relaxed">
 
           <p>
             The UAE is one of the best places in the world to start an online business.
@@ -106,7 +106,7 @@ export default function HowToStartOnlineBusinessUAE() {
             founders. This guide walks you through the full process — legally and practically.
           </p>
 
-          <div className="bg-gray-50 border border-gray-200 rounded-xl p-4 text-sm">
+          <div className="bg-emerald-50 border border-emerald-200 rounded-xl p-5">
             <p className="font-semibold text-gray-900 mb-2">What counts as an &ldquo;online business&rdquo; in the UAE?</p>
             <p className="text-gray-700">
               Consulting, coaching, content creation, e-commerce (selling physical or digital products),
@@ -116,7 +116,7 @@ export default function HowToStartOnlineBusinessUAE() {
           </div>
 
           <section>
-            <h2 className="text-xl font-bold text-gray-900 mt-8 mb-3">Freelance Permit vs Free Zone License vs Mainland License</h2>
+            <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2"><span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>Freelance Permit vs Free Zone License vs Mainland License</h2>
 
             <div className="space-y-4 mt-4">
               <div className="border border-gray-200 rounded-xl p-4">
@@ -138,7 +138,7 @@ export default function HowToStartOnlineBusinessUAE() {
           </section>
 
           <section>
-            <h2 className="text-xl font-bold text-gray-900 mt-8 mb-4">7 Steps to Start Your Online Business in the UAE</h2>
+            <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2"><span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>7 Steps to Start Your Online Business in the UAE</h2>
             <div className="space-y-5">
               {steps.map((step) => (
                 <div key={step.num} className="flex gap-4">
@@ -155,7 +155,7 @@ export default function HowToStartOnlineBusinessUAE() {
           </section>
 
           <section>
-            <h2 className="text-xl font-bold text-gray-900 mt-8 mb-3">Common Mistakes to Avoid</h2>
+            <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2"><span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>Common Mistakes to Avoid</h2>
             <ul className="space-y-2 text-sm text-gray-600 mt-3">
               <li><strong>Operating before you are licensed:</strong> Operating without a UAE trade license exposes you to fines. Get the license first.</li>
               <li><strong>Mixing personal and business finances:</strong> Open a separate business account from day one — banks and accountants will insist on it later, and it is much harder to separate retroactively.</li>
@@ -166,7 +166,7 @@ export default function HowToStartOnlineBusinessUAE() {
           </section>
 
           <section>
-            <h2 className="text-xl font-bold text-gray-900 mt-8 mb-3">What It Costs to Start: Realistic Numbers</h2>
+            <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2"><span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>What It Costs to Start: Realistic Numbers</h2>
             <div className="overflow-x-auto -mx-4 sm:mx-0">
               <table className="w-full text-sm border-collapse min-w-[350px]">
                 <thead>
@@ -196,8 +196,8 @@ export default function HowToStartOnlineBusinessUAE() {
           </section>
 
           {/* CTA */}
-          <div className="bg-gray-950 text-white rounded-2xl p-6 mt-10">
-            <p className="text-xs font-semibold text-gray-400 uppercase tracking-widest mb-2">Run your new business like a professional from day one</p>
+          <div className="bg-gradient-to-br from-gray-900 to-gray-800 text-white rounded-2xl p-8 mt-12 text-center">
+            <p className="text-xs font-bold text-emerald-400 uppercase tracking-widest block mb-3">Run your new business like a professional from day one</p>
             <h3 className="text-lg font-bold mb-2">The Solopreneur OS — your complete business operating system</h3>
             <p className="text-gray-400 text-sm mb-4">
               Goals, revenue tracking, client management, content calendar, and daily planning —
@@ -205,7 +205,7 @@ export default function HowToStartOnlineBusinessUAE() {
             </p>
             <Link
               href="/products/solopreneur-os"
-              className="inline-block bg-white text-gray-900 font-bold px-5 py-2.5 rounded-xl hover:bg-gray-100 transition-colors text-sm"
+              className="inline-block bg-emerald-500 hover:bg-emerald-400 text-white font-bold px-8 py-3 rounded-xl transition-colors text-sm"
             >
               See the Solopreneur OS →
             </Link>

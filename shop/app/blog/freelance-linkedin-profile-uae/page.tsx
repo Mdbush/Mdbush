@@ -235,7 +235,7 @@ export default function Article() {
               },
             ].map((ex) => (
               <div key={ex.role} className="border border-gray-200 rounded-xl p-4">
-                <p className="text-xs font-semibold text-gray-400 uppercase tracking-widest mb-2">{ex.role}</p>
+                <p className="text-xs font-bold text-emerald-400 uppercase tracking-widest block mb-3">{ex.role}</p>
                 <div className="flex flex-col gap-2 text-sm">
                   <div className="flex items-start gap-2">
                     <span className="text-red-400 shrink-0 mt-0.5">✗</span>
@@ -354,10 +354,10 @@ export default function Article() {
           <div className="mt-10">
             <h3 className="text-sm font-semibold text-gray-900 mb-3">Related Guides</h3>
             <div className="space-y-1.5">
-              <Link href="/blog/how-to-get-clients-linkedin-uae" className="block text-blue-600 hover:text-blue-800 text-sm">→ How to Get Freelance Clients on LinkedIn in the UAE (Posting Strategy)</Link>
-              <Link href="/blog/personal-brand-freelancer-uae" className="block text-blue-600 hover:text-blue-800 text-sm">→ How to Build a Personal Brand as a UAE Freelancer</Link>
-              <Link href="/blog/get-freelance-clients-uae" className="block text-blue-600 hover:text-blue-800 text-sm">→ How to Get Freelance Clients in the UAE (6 Strategies)</Link>
-              <Link href="/blog/freelance-rate-calculator-uae" className="block text-blue-600 hover:text-blue-800 text-sm">→ Freelance Rate Calculator UAE</Link>
+              <Link href="/blog/how-to-get-clients-linkedin-uae" className="block text-emerald-700 hover:text-emerald-900 text-sm">→ How to Get Freelance Clients on LinkedIn in the UAE (Posting Strategy)</Link>
+              <Link href="/blog/personal-brand-freelancer-uae" className="block text-emerald-700 hover:text-emerald-900 text-sm">→ How to Build a Personal Brand as a UAE Freelancer</Link>
+              <Link href="/blog/get-freelance-clients-uae" className="block text-emerald-700 hover:text-emerald-900 text-sm">→ How to Get Freelance Clients in the UAE (6 Strategies)</Link>
+              <Link href="/blog/freelance-rate-calculator-uae" className="block text-emerald-700 hover:text-emerald-900 text-sm">→ Freelance Rate Calculator UAE</Link>
             </div>
           </div>
         </div>

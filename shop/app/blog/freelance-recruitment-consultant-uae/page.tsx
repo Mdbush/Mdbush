@@ -67,7 +67,7 @@ export default function FreelanceRecruitmentConsultantUAE() {
         </div>
 
 
-        <div className="prose prose-gray max-w-none text-gray-700 leading-relaxed space-y-6">
+        <div className="space-y-6 leading-relaxed">
 
           <p>
             Independent recruitment consultants in the UAE operate in one of the world&apos;s
@@ -78,8 +78,8 @@ export default function FreelanceRecruitmentConsultantUAE() {
             recruiters and independent executive search consultants.
           </p>
 
-          <div className="bg-gray-50 border border-gray-200 rounded-xl p-4 text-sm">
-            <p className="font-semibold text-gray-900 mb-1">Quick benchmark</p>
+          <div className="bg-emerald-50 border border-emerald-200 rounded-xl p-5">
+            <p className="text-sm font-bold text-emerald-800 mb-2">Quick benchmark</p>
             <p className="text-gray-700">
               A mid-level freelance recruiter specializing in finance, technology, or
               executive roles in the UAE typically earns <strong>15–22% of first-year
@@ -91,7 +91,7 @@ export default function FreelanceRecruitmentConsultantUAE() {
           </div>
 
           <section>
-            <h2 className="text-xl font-bold text-gray-900 mt-8 mb-4">Freelance Recruitment Fee Structures in the UAE (2026)</h2>
+            <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2"><span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>Freelance Recruitment Fee Structures in the UAE (2026)</h2>
             <div className="overflow-x-auto">
               <table className="w-full text-sm border-collapse">
                 <thead>
@@ -118,11 +118,11 @@ export default function FreelanceRecruitmentConsultantUAE() {
           </section>
 
           <section>
-            <h2 className="text-xl font-bold text-gray-900 mt-8 mb-3">Contingency vs Retained Search: Understanding the Models</h2>
+            <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2"><span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>Contingency vs Retained Search: Understanding the Models</h2>
             <div className="space-y-3 mt-4">
               <div className="border border-gray-200 rounded-xl p-4">
                 <p className="font-bold text-gray-900 text-sm mb-2">Contingency recruitment (no placement, no fee)</p>
-                <p className="text-sm text-gray-700">
+                <p className="text-sm text-emerald-800">
                   You only get paid when a candidate you sourced is hired and starts. High risk —
                   the client can use multiple agencies and reject your candidates without paying.
                   In the UAE, many companies abuse contingency by running parallel searches with
@@ -133,7 +133,7 @@ export default function FreelanceRecruitmentConsultantUAE() {
               </div>
               <div className="border border-gray-200 rounded-xl p-4">
                 <p className="font-bold text-gray-900 text-sm mb-2">Retained search (upfront commitment from client)</p>
-                <p className="text-sm text-gray-700">
+                <p className="text-sm text-emerald-800">
                   The client pays a portion upfront (typically 33% of the estimated total fee),
                   a second tranche at shortlist (33%), and the balance on acceptance of an offer.
                   Retained searches give you guaranteed income, exclusive access to the mandate,
@@ -143,7 +143,7 @@ export default function FreelanceRecruitmentConsultantUAE() {
               </div>
               <div className="border border-gray-200 rounded-xl p-4">
                 <p className="font-bold text-gray-900 text-sm mb-2">RPO / embedded talent partner (project or retainer)</p>
-                <p className="text-sm text-gray-700">
+                <p className="text-sm text-emerald-800">
                   Recruitment Process Outsourcing as a freelancer — you act as an embedded
                   talent partner for a company going through a hiring surge (new office opening,
                   funding round, rapid expansion). Typically priced as a day rate
@@ -155,7 +155,7 @@ export default function FreelanceRecruitmentConsultantUAE() {
           </section>
 
           <section>
-            <h2 className="text-xl font-bold text-gray-900 mt-8 mb-3">High-Value Recruitment Niches in the UAE</h2>
+            <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2"><span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>High-Value Recruitment Niches in the UAE</h2>
             <div className="space-y-3 mt-4">
               {[
                 { niche: "Technology & fintech talent (DIFC/Hub71 ecosystem)", rate: "18–25% per placement", why: "Software engineers, product managers, data scientists, and fintech specialists are in chronic short supply in the UAE. Candidates with both technical skills and UAE visa status are especially scarce. Tech companies pay above-market fees for quality candidates." },
@@ -167,7 +167,7 @@ export default function FreelanceRecruitmentConsultantUAE() {
                 <div key={item.niche} className="border border-gray-200 rounded-xl p-4">
                   <div className="flex items-start justify-between gap-2 mb-1">
                     <p className="font-semibold text-gray-900 text-sm">{item.niche}</p>
-                    <span className="text-xs font-bold text-green-700 bg-green-50 px-2 py-0.5 rounded-full shrink-0">{item.rate}</span>
+                    <span className="text-xs font-bold text-emerald-700 bg-emerald-50 border border-emerald-200 px-2 py-0.5 rounded-full shrink-0">{item.rate}</span>
                   </div>
                   <p className="text-xs text-gray-600">{item.why}</p>
                 </div>
@@ -176,7 +176,7 @@ export default function FreelanceRecruitmentConsultantUAE() {
           </section>
 
           <section>
-            <h2 className="text-xl font-bold text-gray-900 mt-8 mb-3">Operating as a Freelance Recruiter in the UAE: Legal Setup</h2>
+            <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2"><span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>Operating as a Freelance Recruiter in the UAE: Legal Setup</h2>
             <p>
               Recruitment and executive search is a regulated activity in the UAE. Key
               requirements for freelance recruiters:
@@ -190,7 +190,7 @@ export default function FreelanceRecruitmentConsultantUAE() {
           </section>
 
           <section>
-            <h2 className="text-xl font-bold text-gray-900 mt-8 mb-3">What the Guarantee Period Actually Means</h2>
+            <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2"><span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>What the Guarantee Period Actually Means</h2>
             <p>
               The standard UAE recruitment guarantee is <strong>3 months from the candidate&apos;s
               start date</strong>. If the candidate leaves or is let go within 3 months, you either
@@ -207,8 +207,8 @@ export default function FreelanceRecruitmentConsultantUAE() {
           </section>
 
           {/* CTA */}
-          <div className="bg-gray-950 text-white rounded-2xl p-6 mt-10">
-            <p className="text-xs font-semibold text-gray-400 uppercase tracking-widest mb-2">Manage your recruitment clients</p>
+          <div className="bg-gradient-to-br from-gray-900 to-gray-800 text-white rounded-2xl p-8 mt-12 text-center">
+            <p className="text-xs font-bold text-emerald-400 uppercase tracking-widest block mb-3">Manage your recruitment clients</p>
             <h3 className="text-lg font-bold mb-2">Freelancer Client CRM — Track Every Client & Candidate</h3>
             <p className="text-gray-400 text-sm mb-4">
               Manage recruitment mandates, track candidate pipelines, log client communications,
@@ -216,7 +216,7 @@ export default function FreelanceRecruitmentConsultantUAE() {
             </p>
             <Link
               href="/products/freelancer-client-crm"
-              className="inline-block bg-white text-gray-900 font-bold px-5 py-2.5 rounded-xl hover:bg-gray-100 transition-colors text-sm"
+              className="inline-block bg-emerald-500 hover:bg-emerald-400 text-white font-bold px-8 py-3 rounded-xl transition-colors text-sm"
             >
               Get the Client CRM →
             </Link>

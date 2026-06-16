@@ -200,7 +200,7 @@ export default function FreelanceContractTemplateUAEPage() {
                 </div>
                 <div className="px-5 py-4 space-y-3">
                   <div>
-                    <p className="text-xs font-semibold text-gray-400 uppercase tracking-widest mb-2">What to include</p>
+                    <p className="text-xs font-bold text-emerald-400 uppercase tracking-widest block mb-3">What to include</p>
                     <ul className="space-y-1">
                       {include.map((item) => (
                         <li key={item} className="flex gap-2 text-sm text-gray-700">
@@ -210,7 +210,7 @@ export default function FreelanceContractTemplateUAEPage() {
                       ))}
                     </ul>
                   </div>
-                  <div className="bg-blue-50 rounded-lg p-3">
+                  <div className="bg-emerald-50 rounded-lg p-3">
                     <p className="text-xs font-semibold text-blue-700 mb-1">Example language</p>
                     <p className="text-xs text-blue-800 leading-relaxed italic">{example}</p>
                   </div>

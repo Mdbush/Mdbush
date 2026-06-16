@@ -58,7 +58,7 @@ export default function HowToFindFirstFreelanceClientUAE() {
         </div>
 
 
-        <div className="prose prose-gray max-w-none text-gray-700 leading-relaxed space-y-6">
+        <div className="space-y-6 leading-relaxed">
 
           <p>
             Getting a first client as a UAE freelancer is the hardest part — not because
@@ -69,8 +69,8 @@ export default function HowToFindFirstFreelanceClientUAE() {
             most reliable paths to landing your first paid project in Dubai and Abu Dhabi.
           </p>
 
-          <div className="bg-blue-50 border border-blue-200 rounded-xl p-4 text-sm">
-            <p className="font-semibold text-blue-900 mb-1">Key insight</p>
+          <div className="bg-emerald-50 border border-emerald-200 rounded-xl p-4 text-sm">
+            <p className="font-semibold text-emerald-900 mb-1">Key insight</p>
             <p className="text-blue-800">
               Your first client almost certainly already knows you. Before doing anything else,
               make a list of every person who has paid you for anything professional — at an
@@ -80,7 +80,7 @@ export default function HowToFindFirstFreelanceClientUAE() {
           </div>
 
           <section>
-            <h2 className="text-xl font-bold text-gray-900 mt-8 mb-3">Method 1: Warm Outreach to Your Existing Network</h2>
+            <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2"><span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>Method 1: Warm Outreach to Your Existing Network</h2>
             <p>
               The fastest route to a first client is always a warm introduction. People who
               already know your work will hire you before a stranger will. Here&apos;s how to
@@ -89,7 +89,7 @@ export default function HowToFindFirstFreelanceClientUAE() {
             <div className="space-y-3 mt-4">
               <div className="border border-gray-200 rounded-xl p-4">
                 <p className="font-bold text-gray-900 text-sm mb-2">Message former colleagues and managers</p>
-                <p className="text-sm text-gray-700">
+                <p className="text-sm text-emerald-800">
                   Your former employers know what you can do. Reach out directly on WhatsApp or
                   LinkedIn: &quot;Hi [Name], I&apos;ve just gone freelance as a [your service]. I&apos;m
                   taking on a small number of initial clients — do you know anyone who might need
@@ -100,7 +100,7 @@ export default function HowToFindFirstFreelanceClientUAE() {
               </div>
               <div className="border border-gray-200 rounded-xl p-4">
                 <p className="font-bold text-gray-900 text-sm mb-2">Contact everyone you have worked with professionally</p>
-                <p className="text-sm text-gray-700">
+                <p className="text-sm text-emerald-800">
                   Suppliers, clients, business partners from your employed career. Go through your
                   LinkedIn connections and email contacts systematically. A personal message to
                   200 contacts takes 3–4 hours and reliably produces 5–10 responses and 1–3 qualified
@@ -110,7 +110,7 @@ export default function HowToFindFirstFreelanceClientUAE() {
               </div>
               <div className="border border-gray-200 rounded-xl p-4">
                 <p className="font-bold text-gray-900 text-sm mb-2">Post on your personal LinkedIn announcing your freelance launch</p>
-                <p className="text-sm text-gray-700">
+                <p className="text-sm text-emerald-800">
                   A single well-written LinkedIn post announcing you are now freelancing reaches
                   your entire professional network simultaneously. Be specific about what you do
                   and who you help: &quot;After 8 years in corporate marketing, I&apos;ve just launched
@@ -123,7 +123,7 @@ export default function HowToFindFirstFreelanceClientUAE() {
           </section>
 
           <section>
-            <h2 className="text-xl font-bold text-gray-900 mt-8 mb-3">Method 2: Offer a Paid Discovery Session</h2>
+            <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2"><span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>Method 2: Offer a Paid Discovery Session</h2>
             <p>
               Many new freelancers offer free consultations to attract first clients. This attracts
               people who want advice but not services. A better approach: offer a paid discovery
@@ -139,7 +139,7 @@ export default function HowToFindFirstFreelanceClientUAE() {
           </section>
 
           <section>
-            <h2 className="text-xl font-bold text-gray-900 mt-8 mb-3">Method 3: Attend Dubai Networking Events</h2>
+            <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2"><span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>Method 3: Attend Dubai Networking Events</h2>
             <p>
               Dubai has an exceptionally active business networking scene. In-person events
               produce faster relationship conversion than any digital channel in the UAE.
@@ -155,7 +155,7 @@ export default function HowToFindFirstFreelanceClientUAE() {
                 <div key={item.venue} className="border border-gray-200 rounded-xl p-4">
                   <div className="flex items-start justify-between gap-2 mb-1">
                     <p className="font-semibold text-gray-900 text-sm">{item.venue}</p>
-                    <span className="text-xs font-bold text-green-700 bg-green-50 px-2 py-0.5 rounded-full shrink-0">{item.freq}</span>
+                    <span className="text-xs font-bold text-emerald-700 bg-emerald-50 border border-emerald-200 px-2 py-0.5 rounded-full shrink-0">{item.freq}</span>
                   </div>
                   <p className="text-xs text-gray-600">{item.detail}</p>
                 </div>
@@ -164,7 +164,7 @@ export default function HowToFindFirstFreelanceClientUAE() {
           </section>
 
           <section>
-            <h2 className="text-xl font-bold text-gray-900 mt-8 mb-3">Method 4: Direct Outreach on LinkedIn</h2>
+            <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2"><span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>Method 4: Direct Outreach on LinkedIn</h2>
             <p>
               LinkedIn cold outreach works in the UAE when done correctly. The key is specificity
               and a clear offer — not a vague &quot;I&apos;d love to connect&quot; message.
@@ -178,7 +178,7 @@ export default function HowToFindFirstFreelanceClientUAE() {
           </section>
 
           <section>
-            <h2 className="text-xl font-bold text-gray-900 mt-8 mb-3">Method 5: Do One Piece of Spec Work</h2>
+            <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2"><span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>Method 5: Do One Piece of Spec Work</h2>
             <p>
               If you have zero portfolio and zero clients, spec work is the fastest way to
               demonstrate capability. Pick a UAE brand or company you want to work with,
@@ -199,8 +199,8 @@ export default function HowToFindFirstFreelanceClientUAE() {
             </p>
           </section>
 
-          <div className="bg-gray-950 text-white rounded-2xl p-6 mt-10">
-            <p className="text-xs font-semibold text-gray-400 uppercase tracking-widest mb-2">Track your client pipeline</p>
+          <div className="bg-gradient-to-br from-gray-900 to-gray-800 text-white rounded-2xl p-8 mt-12 text-center">
+            <p className="text-xs font-bold text-emerald-400 uppercase tracking-widest block mb-3">Track your client pipeline</p>
             <h3 className="text-lg font-bold mb-2">Freelancer Client CRM — Never Lose a Lead Again</h3>
             <p className="text-gray-400 text-sm mb-4">
               Track every prospect, follow-up, and active client in one Notion workspace.
@@ -208,7 +208,7 @@ export default function HowToFindFirstFreelanceClientUAE() {
             </p>
             <Link
               href="/products/freelancer-client-crm"
-              className="inline-block bg-white text-gray-900 font-bold px-5 py-2.5 rounded-xl hover:bg-gray-100 transition-colors text-sm"
+              className="inline-block bg-emerald-500 hover:bg-emerald-400 text-white font-bold px-8 py-3 rounded-xl transition-colors text-sm"
             >
               Get the Client CRM →
             </Link>

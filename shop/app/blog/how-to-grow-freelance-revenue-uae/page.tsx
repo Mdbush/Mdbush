@@ -184,7 +184,7 @@ export default function HowToGrowFreelanceRevenueUAE() {
                 { href: "/blog/freelance-rates-increase-strategy-uae", label: "How to Increase Freelance Revenue Without More Clients" },
                 { href: "/blog/how-to-scale-freelance-business-uae", label: "How to Scale a Freelance Business in the UAE" },
               ].map((link) => (
-                <Link key={link.href} href={link.href} className="block text-blue-600 hover:text-blue-800 text-sm">
+                <Link key={link.href} href={link.href} className="block text-emerald-700 hover:text-emerald-900 text-sm">
                   → {link.label}
                 </Link>
               ))}

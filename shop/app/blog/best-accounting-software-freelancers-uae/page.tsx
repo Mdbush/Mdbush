@@ -81,8 +81,8 @@ export default function BestAccountingSoftwareFreelancersUAEPage() {
 
 
         {/* Quick picks box */}
-        <div className="bg-blue-50 border border-blue-200 rounded-xl p-6 mb-10">
-          <h2 className="font-bold text-blue-900 mb-3">Quick Picks</h2>
+        <div className="bg-emerald-50 border border-emerald-200 rounded-xl p-6 mb-10">
+          <h2 className="font-bold text-emerald-900 mb-3">Quick Picks</h2>
           <ul className="space-y-2 text-blue-800 text-sm">
             <li>🆓 <strong>Best free option:</strong> Wave (works for UAE, no VAT support)</li>
             <li>⚡ <strong>Best for freelancers:</strong> FreshBooks (AED 60–120/month)</li>
@@ -437,16 +437,16 @@ export default function BestAccountingSoftwareFreelancersUAEPage() {
               </p>
             </div>
 
-            <div className="border border-blue-200 bg-blue-50 rounded-xl p-5">
+            <div className="border border-emerald-200 bg-emerald-50 rounded-xl p-5">
               <div className="flex items-center gap-2 mb-2">
-                <span className="bg-blue-200 text-blue-900 text-xs font-bold px-2 py-0.5 rounded">Stage 3</span>
-                <h3 className="font-bold text-blue-900">Above AED 40,000/month or VAT-registered</h3>
+                <span className="bg-blue-200 text-emerald-900 text-xs font-bold px-2 py-0.5 rounded">Stage 3</span>
+                <h3 className="font-bold text-emerald-900">Above AED 40,000/month or VAT-registered</h3>
               </div>
               <p className="text-sm text-blue-800 mb-3 leading-relaxed">
                 At this level, accounting accuracy directly affects your tax liability. FTA compliance
                 is not optional. You likely also have a bookkeeper or accountant at least part-time.
               </p>
-              <p className="text-sm text-blue-900 font-semibold">
+              <p className="text-sm text-emerald-900 font-semibold">
                 Recommended: Zoho Books UAE Professional or QuickBooks Online Plus
               </p>
               <p className="text-sm text-blue-700 mt-1">

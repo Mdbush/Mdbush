@@ -69,7 +69,7 @@ export default function FreelanceBusinessCoachRatesUAE() {
         </div>
 
 
-        <div className="prose prose-gray max-w-none text-gray-700 leading-relaxed space-y-6">
+        <div className="space-y-6 leading-relaxed">
 
           <p>
             The UAE has one of the highest concentrations of entrepreneurs, startup founders,
@@ -82,8 +82,8 @@ export default function FreelanceBusinessCoachRatesUAE() {
             decision-making support, not reports. Here are the 2026 rate benchmarks.
           </p>
 
-          <div className="bg-gray-50 border border-gray-200 rounded-xl p-4 text-sm">
-            <p className="font-semibold text-gray-900 mb-1">Quick benchmark</p>
+          <div className="bg-emerald-50 border border-emerald-200 rounded-xl p-5">
+            <p className="text-sm font-bold text-emerald-800 mb-2">Quick benchmark</p>
             <p className="text-gray-700">
               A mid-level freelance business coach in Dubai (5–8 years experience, proven
               track record with SME or startup clients) typically charges <strong>AED 1,000–2,500
@@ -94,7 +94,7 @@ export default function FreelanceBusinessCoachRatesUAE() {
           </div>
 
           <section>
-            <h2 className="text-xl font-bold text-gray-900 mt-8 mb-4">Freelance Business Coach Rates in the UAE by Service (2026)</h2>
+            <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2"><span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>Freelance Business Coach Rates in the UAE by Service (2026)</h2>
             <p className="text-xs text-gray-400 mb-4">Junior: 0–4 years / Mid: 5–9 years / Senior: 10+ years, C-suite clients, or specialist niche</p>
             <div className="overflow-x-auto">
               <table className="w-full text-sm border-collapse">
@@ -121,7 +121,7 @@ export default function FreelanceBusinessCoachRatesUAE() {
           </section>
 
           <section>
-            <h2 className="text-xl font-bold text-gray-900 mt-8 mb-3">High-Value Business Coaching Niches in the UAE</h2>
+            <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2"><span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>High-Value Business Coaching Niches in the UAE</h2>
             <div className="space-y-3 mt-4">
               {[
                 { niche: "Startup founder coaching (pre-seed to Series A)", rate: "AED 10,000–35,000/month", why: "Dubai&apos;s startup ecosystem (Dubai Future Foundation, Hub71 Abu Dhabi, in5 Dubai) generates a growing pool of first-time founders navigating fundraising, team building, and go-to-market execution simultaneously. Coaches who have personally built or exited companies, or who have deep startup ecosystem relationships, command premium rates. These clients measure ROI in funding rounds and revenue milestones, not sessions." },
@@ -132,7 +132,7 @@ export default function FreelanceBusinessCoachRatesUAE() {
                 <div key={item.niche} className="border border-gray-200 rounded-xl p-4">
                   <div className="flex items-start justify-between gap-2 mb-1">
                     <p className="font-semibold text-gray-900 text-sm">{item.niche}</p>
-                    <span className="text-xs font-bold text-green-700 bg-green-50 px-2 py-0.5 rounded-full shrink-0">{item.rate}</span>
+                    <span className="text-xs font-bold text-emerald-700 bg-emerald-50 border border-emerald-200 px-2 py-0.5 rounded-full shrink-0">{item.rate}</span>
                   </div>
                   <p className="text-xs text-gray-600">{item.why}</p>
                 </div>
@@ -141,7 +141,7 @@ export default function FreelanceBusinessCoachRatesUAE() {
           </section>
 
           <section>
-            <h2 className="text-xl font-bold text-gray-900 mt-8 mb-3">Business Coaching vs Management Consulting: Pricing Implications</h2>
+            <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2"><span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>Business Coaching vs Management Consulting: Pricing Implications</h2>
             <p className="text-sm text-gray-600 mb-3">
               The distinction matters significantly for how you price and position your services:
             </p>
@@ -161,7 +161,7 @@ export default function FreelanceBusinessCoachRatesUAE() {
           </section>
 
           <section>
-            <h2 className="text-xl font-bold text-gray-900 mt-8 mb-3">Credentials and Trust-Building in the UAE</h2>
+            <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2"><span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>Credentials and Trust-Building in the UAE</h2>
             <ul className="space-y-1 text-sm text-gray-600 mt-3">
               <li>• <strong>ICF credentials</strong> — International Coaching Federation (ACC, PCC, MCC) credentials are internationally recognized. PCC and above significantly raises perceived credibility, especially with corporate and C-suite clients</li>
               <li>• <strong>Operating experience matters most</strong> — UAE business coaching clients (particularly founder and CEO-level) weight real operating experience (having built and run businesses) far above coaching certificates alone. Your track record as an operator or advisor is your primary credential</li>
@@ -172,8 +172,8 @@ export default function FreelanceBusinessCoachRatesUAE() {
           </section>
 
           {/* CTA */}
-          <div className="bg-gray-950 text-white rounded-2xl p-6 mt-10">
-            <p className="text-xs font-semibold text-gray-400 uppercase tracking-widest mb-2">Manage your coaching clients</p>
+          <div className="bg-gradient-to-br from-gray-900 to-gray-800 text-white rounded-2xl p-8 mt-12 text-center">
+            <p className="text-xs font-bold text-emerald-400 uppercase tracking-widest block mb-3">Manage your coaching clients</p>
             <h3 className="text-lg font-bold mb-2">Freelancer Client CRM — Track Every Client & Engagement</h3>
             <p className="text-gray-400 text-sm mb-4">
               Track coaching clients from intake through program completion, log session
@@ -182,7 +182,7 @@ export default function FreelanceBusinessCoachRatesUAE() {
             </p>
             <Link
               href="/products/freelancer-client-crm"
-              className="inline-block bg-white text-gray-900 font-bold px-5 py-2.5 rounded-xl hover:bg-gray-100 transition-colors text-sm"
+              className="inline-block bg-emerald-500 hover:bg-emerald-400 text-white font-bold px-8 py-3 rounded-xl transition-colors text-sm"
             >
               Get the Client CRM →
             </Link>

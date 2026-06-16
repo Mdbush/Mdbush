@@ -101,7 +101,7 @@ export default function FreelanceSEOConsultantRatesUAE() {
           </p>
 
           <div className="bg-gray-50 border border-gray-200 rounded-xl p-4 text-sm mb-8">
-            <p className="font-semibold text-gray-900 mb-1">Quick benchmark</p>
+            <p className="text-sm font-bold text-emerald-800 mb-2">Quick benchmark</p>
             <p className="text-gray-700">
               A mid-level freelance SEO consultant in the UAE typically earns <strong>AED 20,000–35,000/month</strong> through
               2–4 retainer clients. Senior specialists with e-commerce or enterprise experience
@@ -181,7 +181,7 @@ export default function FreelanceSEOConsultantRatesUAE() {
           </p>
 
           <div className="bg-gray-50 border border-gray-200 rounded-xl p-4 text-sm mb-8">
-            <p className="font-semibold text-gray-900 mb-1">Retainer structure recommendation</p>
+            <p className="text-sm font-bold text-emerald-800 mb-2">Retainer structure recommendation</p>
             <p className="text-gray-700">
               Lead with an SEO audit (AED 3,500–8,000 one-time) → present a roadmap → propose
               a 6-month retainer with monthly deliverables defined upfront. This positions the

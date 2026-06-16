@@ -69,7 +69,7 @@ export default function FreelancePhotographerVideographerPackageUAE() {
         </div>
 
 
-        <div className="prose prose-gray max-w-none text-gray-700 leading-relaxed space-y-6">
+        <div className="space-y-6 leading-relaxed">
 
           <p>
             Dubai&apos;s visual content demand is among the highest in the world per business capita.
@@ -82,8 +82,8 @@ export default function FreelancePhotographerVideographerPackageUAE() {
             combined photography and videography packages.
           </p>
 
-          <div className="bg-gray-50 border border-gray-200 rounded-xl p-4 text-sm">
-            <p className="font-semibold text-gray-900 mb-1">Quick benchmark</p>
+          <div className="bg-emerald-50 border border-emerald-200 rounded-xl p-5">
+            <p className="text-sm font-bold text-emerald-800 mb-2">Quick benchmark</p>
             <p className="text-gray-700">
               A mid-level Dubai-based photo/video freelancer with 4–7 years experience
               typically charges <strong>AED 6,500–14,000 for a brand content day</strong> and
@@ -95,7 +95,7 @@ export default function FreelancePhotographerVideographerPackageUAE() {
           </div>
 
           <section>
-            <h2 className="text-xl font-bold text-gray-900 mt-8 mb-4">Photography + Videography Package Rates in the UAE (2026)</h2>
+            <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2"><span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>Photography + Videography Package Rates in the UAE (2026)</h2>
             <p className="text-xs text-gray-400 mb-4">Junior: 0–3 years / Mid: 4–7 years / Senior: 8+ years, major brand portfolio, or specialist niche</p>
             <div className="overflow-x-auto">
               <table className="w-full text-sm border-collapse">
@@ -122,7 +122,7 @@ export default function FreelancePhotographerVideographerPackageUAE() {
           </section>
 
           <section>
-            <h2 className="text-xl font-bold text-gray-900 mt-8 mb-3">High-Value Niches for UAE Photo + Video Freelancers</h2>
+            <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2"><span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>High-Value Niches for UAE Photo + Video Freelancers</h2>
             <div className="space-y-3 mt-4">
               {[
                 { niche: "Real estate and off-plan property (Dubai developers)", rate: "AED 3,000–15,000+ per property", why: "Dubai&apos;s real estate market is one of the most active in the world — AED 528 billion in transactions in 2024. Every developer listing units (off-plan and ready properties) needs hero photography and walkthrough video. High-volume opportunities: one developer relationship generates 4–8 shoots per month. Drone capability is near-essential for this niche. Aerial footage of Dubai&apos;s skyline context commands premium rates." },
@@ -133,7 +133,7 @@ export default function FreelancePhotographerVideographerPackageUAE() {
                 <div key={item.niche} className="border border-gray-200 rounded-xl p-4">
                   <div className="flex items-start justify-between gap-2 mb-1">
                     <p className="font-semibold text-gray-900 text-sm">{item.niche}</p>
-                    <span className="text-xs font-bold text-green-700 bg-green-50 px-2 py-0.5 rounded-full shrink-0">{item.rate}</span>
+                    <span className="text-xs font-bold text-emerald-700 bg-emerald-50 border border-emerald-200 px-2 py-0.5 rounded-full shrink-0">{item.rate}</span>
                   </div>
                   <p className="text-xs text-gray-600">{item.why}</p>
                 </div>
@@ -142,7 +142,7 @@ export default function FreelancePhotographerVideographerPackageUAE() {
           </section>
 
           <section>
-            <h2 className="text-xl font-bold text-gray-900 mt-8 mb-3">Drone Licensing in the UAE: What You Need to Know</h2>
+            <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2"><span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>Drone Licensing in the UAE: What You Need to Know</h2>
             <ul className="space-y-1 text-sm text-gray-600 mt-3">
               <li>• <strong>GCAA Drone Pilot License</strong> — General Civil Aviation Authority (GCAA) requires a Remote Pilot License to fly drones commercially in the UAE. Must pass a theory exam and log flight hours. Required before you can legally fly drones for paying clients</li>
               <li>• <strong>Dubai DCAA approval</strong> — Dubai Civil Aviation Authority approval is required for drone flights in Dubai in addition to GCAA licensing. Many locations in Dubai require specific location permits (near airports, certain residential areas, Palm Jumeirah)</li>
@@ -153,7 +153,7 @@ export default function FreelancePhotographerVideographerPackageUAE() {
           </section>
 
           <section>
-            <h2 className="text-xl font-bold text-gray-900 mt-8 mb-3">What to Include in Your UAE Photo + Video Package</h2>
+            <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2"><span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>What to Include in Your UAE Photo + Video Package</h2>
             <p className="text-sm text-gray-600 mb-3">
               Clear package definitions prevent scope creep and set client expectations. Always specify:
             </p>
@@ -169,8 +169,8 @@ export default function FreelancePhotographerVideographerPackageUAE() {
           </section>
 
           {/* CTA */}
-          <div className="bg-gray-950 text-white rounded-2xl p-6 mt-10">
-            <p className="text-xs font-semibold text-gray-400 uppercase tracking-widest mb-2">Manage your production clients</p>
+          <div className="bg-gradient-to-br from-gray-900 to-gray-800 text-white rounded-2xl p-8 mt-12 text-center">
+            <p className="text-xs font-bold text-emerald-400 uppercase tracking-widest block mb-3">Manage your production clients</p>
             <h3 className="text-lg font-bold mb-2">Freelancer Client CRM — Track Every Shoot & Invoice</h3>
             <p className="text-gray-400 text-sm mb-4">
               Track photography and videography projects from brief to delivery, manage
@@ -179,7 +179,7 @@ export default function FreelancePhotographerVideographerPackageUAE() {
             </p>
             <Link
               href="/products/freelancer-client-crm"
-              className="inline-block bg-white text-gray-900 font-bold px-5 py-2.5 rounded-xl hover:bg-gray-100 transition-colors text-sm"
+              className="inline-block bg-emerald-500 hover:bg-emerald-400 text-white font-bold px-8 py-3 rounded-xl transition-colors text-sm"
             >
               Get the Client CRM →
             </Link>

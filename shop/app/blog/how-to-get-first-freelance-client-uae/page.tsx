@@ -58,7 +58,7 @@ export default function HowToGetFirstFreelanceClientUAE() {
         </div>
 
 
-        <div className="prose prose-gray max-w-none text-gray-700 leading-relaxed space-y-6">
+        <div className="space-y-6 leading-relaxed">
 
           <p>
             Getting your first freelance client in the UAE is both easier and harder than
@@ -70,8 +70,8 @@ export default function HowToGetFirstFreelanceClientUAE() {
             initiative, not through a polished portfolio. Here is the exact approach that works.
           </p>
 
-          <div className="bg-gray-50 border border-gray-200 rounded-xl p-4 text-sm">
-            <p className="font-semibold text-gray-900 mb-1">The first client reality check</p>
+          <div className="bg-emerald-50 border border-emerald-200 rounded-xl p-5">
+            <p className="text-sm font-bold text-emerald-800 mb-2">The first client reality check</p>
             <p className="text-gray-700">
               Your first client will not come from your website. It will not come from a
               cold email to a stranger. It will come from someone who already knows you,
@@ -83,7 +83,7 @@ export default function HowToGetFirstFreelanceClientUAE() {
           </div>
 
           <section>
-            <h2 className="text-xl font-bold text-gray-900 mt-8 mb-3">Step 1: Map Your Warm Network Before Anything Else</h2>
+            <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2"><span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>Step 1: Map Your Warm Network Before Anything Else</h2>
             <p className="text-sm text-gray-600 mb-3">
               Before you write a single cold email or optimize a LinkedIn profile, do this
               exercise. Write down every person you know who might hire you or refer someone
@@ -105,7 +105,7 @@ export default function HowToGetFirstFreelanceClientUAE() {
           </section>
 
           <section>
-            <h2 className="text-xl font-bold text-gray-900 mt-8 mb-3">Step 2: How to Price When You Have No Portfolio</h2>
+            <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2"><span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>Step 2: How to Price When You Have No Portfolio</h2>
             <ul className="space-y-2 text-sm text-gray-600 mt-3">
               <li>• <strong>Do not work for free</strong> — Free work signals low value and attracts clients who don&apos;t take the engagement seriously. Even your very first project should have a fee. A token fee (AED 500–2,000 for a first project that would normally be AED 5,000+) is better than free because it establishes a commercial relationship and creates psychological commitment from the client to show up and engage</li>
               <li>• <strong>Discount explicitly, don&apos;t lower your rate</strong> — &apos;My standard rate for this is AED 8,000, but I&apos;m offering AED 3,500 for this first project in exchange for your permission to use the result in my portfolio and a short testimonial if you&apos;re happy with the outcome.&apos; This frames the discount as strategic, not a signal of low confidence</li>
@@ -115,7 +115,7 @@ export default function HowToGetFirstFreelanceClientUAE() {
           </section>
 
           <section>
-            <h2 className="text-xl font-bold text-gray-900 mt-8 mb-3">Step 3: The Outreach Message That Works</h2>
+            <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2"><span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>Step 3: The Outreach Message That Works</h2>
             <p className="text-sm text-gray-600 mb-3">
               For warm network outreach, the message should be short, specific, and
               low-pressure. Here is the format that generates responses:
@@ -139,7 +139,7 @@ export default function HowToGetFirstFreelanceClientUAE() {
           </section>
 
           <section>
-            <h2 className="text-xl font-bold text-gray-900 mt-8 mb-3">Step 4: Convert Your First Client into Momentum</h2>
+            <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2"><span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>Step 4: Convert Your First Client into Momentum</h2>
             <div className="space-y-3 mt-4">
               {[
                 { action: "Over-deliver on scope (this time only)", desc: "Your first client is a case study investment. Do more than they paid for — not significantly more, but noticeably more. Add one extra deliverable, respond faster than promised, present findings more clearly than expected. The goal is a memorable first impression that generates a testimonial and a referral." },
@@ -156,8 +156,8 @@ export default function HowToGetFirstFreelanceClientUAE() {
           </section>
 
           {/* CTA */}
-          <div className="bg-gray-950 text-white rounded-2xl p-6 mt-10">
-            <p className="text-xs font-semibold text-gray-400 uppercase tracking-widest mb-2">Build systems from day one</p>
+          <div className="bg-gradient-to-br from-gray-900 to-gray-800 text-white rounded-2xl p-8 mt-12 text-center">
+            <p className="text-xs font-bold text-emerald-400 uppercase tracking-widest block mb-3">Build systems from day one</p>
             <h3 className="text-lg font-bold mb-2">Freelancer Client CRM — Start Organized, Stay Organized</h3>
             <p className="text-gray-400 text-sm mb-4">
               Track your warm network outreach, manage your first project professionally,
@@ -166,7 +166,7 @@ export default function HowToGetFirstFreelanceClientUAE() {
             </p>
             <Link
               href="/products/freelancer-client-crm"
-              className="inline-block bg-white text-gray-900 font-bold px-5 py-2.5 rounded-xl hover:bg-gray-100 transition-colors text-sm"
+              className="inline-block bg-emerald-500 hover:bg-emerald-400 text-white font-bold px-8 py-3 rounded-xl transition-colors text-sm"
             >
               Get the Client CRM →
             </Link>

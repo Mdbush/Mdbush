@@ -201,7 +201,7 @@ export default function HowToUseAIForFreelanceProposalsUAE() {
                 { href: "/blog/how-to-use-chatgpt-freelancers-uae", label: "How to Use ChatGPT as a UAE Freelancer" },
                 { href: "/blog/how-to-use-claude-ai-freelancers-uae", label: "How to Use Claude AI as a UAE Freelancer" },
               ].map((link) => (
-                <Link key={link.href} href={link.href} className="block text-blue-600 hover:text-blue-800 text-sm">
+                <Link key={link.href} href={link.href} className="block text-emerald-700 hover:text-emerald-900 text-sm">
                   → {link.label}
                 </Link>
               ))}

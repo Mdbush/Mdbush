@@ -180,7 +180,7 @@ export default function HowToHandlePaymentDisputesUAE() {
                 { href: "/blog/freelance-contract-template-uae", label: "Freelance Contract Template UAE" },
                 { href: "/blog/client-red-flags-uae", label: "Client Red Flags UAE Freelancers Should Know" },
               ].map((link) => (
-                <Link key={link.href} href={link.href} className="block text-blue-600 hover:text-blue-800 text-sm">
+                <Link key={link.href} href={link.href} className="block text-emerald-700 hover:text-emerald-900 text-sm">
                   → {link.label}
                 </Link>
               ))}

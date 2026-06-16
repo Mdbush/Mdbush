@@ -89,7 +89,7 @@ export default function Article() {
           </p>
         </div>
 
-        <div className="text-gray-700 leading-relaxed space-y-6">
+        <div className="space-y-6 leading-relaxed">
 
           <p>
             A client owes you AED 12,000. The due date was two weeks ago.
@@ -106,7 +106,7 @@ export default function Article() {
             and eat hours of your time in follow-up. Here&apos;s how to handle them systematically.
           </p>
 
-          <h2 className="text-xl font-bold text-gray-900 mt-10 mb-3">Prevention: The Best Late Payment Strategy</h2>
+          <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2"><span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>Prevention: The Best Late Payment Strategy</h2>
 
           <p>
             The best time to deal with a late payment is before you issue the invoice.
@@ -139,7 +139,7 @@ export default function Article() {
             ))}
           </div>
 
-          <h2 className="text-xl font-bold text-gray-900 mt-10 mb-3">The 4-Step Follow-Up Sequence</h2>
+          <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2"><span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>The 4-Step Follow-Up Sequence</h2>
 
           <p>
             When an invoice does go overdue, follow this sequence. The key is to escalate
@@ -176,7 +176,7 @@ export default function Article() {
             </Link>
           </div>
 
-          <h2 className="text-xl font-bold text-gray-900 mt-10 mb-3">What to Do When They Go Silent</h2>
+          <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2"><span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>What to Do When They Go Silent</h2>
 
           <p>
             If a client stops responding to emails after day 14, try a different channel.
@@ -190,7 +190,7 @@ export default function Article() {
             on your day 30 follow-up without explanation.
           </p>
 
-          <h2 className="text-xl font-bold text-gray-900 mt-10 mb-3">Legal Options in the UAE</h2>
+          <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2"><span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>Legal Options in the UAE</h2>
 
           <p>
             If payment is still not made after 30+ days and a final notice:
@@ -218,7 +218,7 @@ export default function Article() {
             This documentation is essential if it escalates.
           </p>
 
-          <h2 className="text-xl font-bold text-gray-900 mt-10 mb-3">Build a System So This Doesn&apos;t Keep Happening</h2>
+          <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2"><span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>Build a System So This Doesn&apos;t Keep Happening</h2>
 
           <p>
             The clients who pay late tend to be the same clients who pay late every time.

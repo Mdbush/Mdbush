@@ -69,7 +69,7 @@ export default function FreelanceManagementConsultantUAE() {
         </div>
 
 
-        <div className="prose prose-gray max-w-none text-gray-700 leading-relaxed space-y-6">
+        <div className="space-y-6 leading-relaxed">
 
           <p>
             Independent management consultants — those who have left McKinsey, BCG, Deloitte,
@@ -81,8 +81,8 @@ export default function FreelanceManagementConsultantUAE() {
             2026 rate benchmarks.
           </p>
 
-          <div className="bg-gray-50 border border-gray-200 rounded-xl p-4 text-sm">
-            <p className="font-semibold text-gray-900 mb-1">Quick benchmark</p>
+          <div className="bg-emerald-50 border border-emerald-200 rounded-xl p-5">
+            <p className="text-sm font-bold text-emerald-800 mb-2">Quick benchmark</p>
             <p className="text-gray-700">
               A mid-level independent management consultant in the UAE with 8–12 years of
               experience (including Big 4 or strategy firm background) typically charges
@@ -93,7 +93,7 @@ export default function FreelanceManagementConsultantUAE() {
           </div>
 
           <section>
-            <h2 className="text-xl font-bold text-gray-900 mt-8 mb-4">Freelance Management Consultant Rates in the UAE by Service (2026)</h2>
+            <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2"><span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>Freelance Management Consultant Rates in the UAE by Service (2026)</h2>
             <p className="text-xs text-gray-400 mb-4">Junior: 5–8 years (ex-Big 4 consultant) / Mid: 8–15 years / Senior: 15+ years or ex-MBB/C-suite</p>
             <div className="overflow-x-auto">
               <table className="w-full text-sm border-collapse">
@@ -120,7 +120,7 @@ export default function FreelanceManagementConsultantUAE() {
           </section>
 
           <section>
-            <h2 className="text-xl font-bold text-gray-900 mt-8 mb-3">High-Value Engagement Types for UAE Management Consultants</h2>
+            <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2"><span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>High-Value Engagement Types for UAE Management Consultants</h2>
             <div className="space-y-3 mt-4">
               {[
                 { niche: "UAE Vision 2031 / national strategy alignment projects", rate: "AED 120,000–500,000+ per engagement", why: "Government and semi-government entities regularly hire senior independent advisors to align organizational strategy with UAE national agendas. These are multi-month engagements requiring Arabic cultural fluency, relationships at the ministerial level, and deep UAE market knowledge." },
@@ -132,7 +132,7 @@ export default function FreelanceManagementConsultantUAE() {
                 <div key={item.niche} className="border border-gray-200 rounded-xl p-4">
                   <div className="flex items-start justify-between gap-2 mb-1">
                     <p className="font-semibold text-gray-900 text-sm">{item.niche}</p>
-                    <span className="text-xs font-bold text-green-700 bg-green-50 px-2 py-0.5 rounded-full shrink-0">{item.rate}</span>
+                    <span className="text-xs font-bold text-emerald-700 bg-emerald-50 border border-emerald-200 px-2 py-0.5 rounded-full shrink-0">{item.rate}</span>
                   </div>
                   <p className="text-xs text-gray-600">{item.why}</p>
                 </div>
@@ -141,7 +141,7 @@ export default function FreelanceManagementConsultantUAE() {
           </section>
 
           <section>
-            <h2 className="text-xl font-bold text-gray-900 mt-8 mb-3">Transitioning from Consulting Firm to Independent</h2>
+            <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2"><span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>Transitioning from Consulting Firm to Independent</h2>
             <p>
               Most UAE management consultants who go independent come from Big 4 (Deloitte,
               PwC, EY, KPMG) or strategy firms (McKinsey, BCG, Bain, Strategy&amp;, Oliver Wyman).
@@ -150,7 +150,7 @@ export default function FreelanceManagementConsultantUAE() {
             <div className="space-y-3 mt-4">
               <div className="border border-gray-200 rounded-xl p-4">
                 <p className="font-bold text-gray-900 text-sm mb-2">Year 1: The transition period (AED 30K–80K/month)</p>
-                <p className="text-sm text-gray-700">
+                <p className="text-sm text-emerald-800">
                   Most first mandates come from your previous employer (who may need to
                   sub-contract specific expertise) or former clients. Rates are often
                   discounted initially to build a track record. Year 1 income is typically
@@ -160,7 +160,7 @@ export default function FreelanceManagementConsultantUAE() {
               </div>
               <div className="border border-gray-200 rounded-xl p-4">
                 <p className="font-bold text-gray-900 text-sm mb-2">Year 2–3: Referral compounding (AED 80K–200K/month)</p>
-                <p className="text-sm text-gray-700">
+                <p className="text-sm text-emerald-800">
                   Successful delivery of 3–5 projects generates strong referrals. You
                   begin commanding full market rates. Niche positioning becomes important —
                   the independent who &apos;does strategy across all sectors&apos; earns less than
@@ -169,7 +169,7 @@ export default function FreelanceManagementConsultantUAE() {
               </div>
               <div className="border border-gray-200 rounded-xl p-4">
                 <p className="font-bold text-gray-900 text-sm mb-2">Year 3+: Established independent (AED 200K+/month)</p>
-                <p className="text-sm text-gray-700">
+                <p className="text-sm text-emerald-800">
                   At this stage, you turn down work rather than chase it. A portfolio of
                   3–4 CEO/board advisory retainers (AED 25,000–50,000/month each) plus
                   1–2 active project engagements can generate AED 200,000–500,000/month
@@ -180,7 +180,7 @@ export default function FreelanceManagementConsultantUAE() {
           </section>
 
           <section>
-            <h2 className="text-xl font-bold text-gray-900 mt-8 mb-3">Independent Consulting Platforms Active in the UAE</h2>
+            <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2"><span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>Independent Consulting Platforms Active in the UAE</h2>
             <p>
               Several platforms connect independent management consultants with clients in
               the UAE and GCC:
@@ -195,8 +195,8 @@ export default function FreelanceManagementConsultantUAE() {
           </section>
 
           {/* CTA */}
-          <div className="bg-gray-950 text-white rounded-2xl p-6 mt-10">
-            <p className="text-xs font-semibold text-gray-400 uppercase tracking-widest mb-2">Manage your consulting engagements</p>
+          <div className="bg-gradient-to-br from-gray-900 to-gray-800 text-white rounded-2xl p-8 mt-12 text-center">
+            <p className="text-xs font-bold text-emerald-400 uppercase tracking-widest block mb-3">Manage your consulting engagements</p>
             <h3 className="text-lg font-bold mb-2">Freelancer Client CRM — Track Every Client & Engagement</h3>
             <p className="text-gray-400 text-sm mb-4">
               Manage advisory retainers and project engagements, track deliverables and
@@ -204,7 +204,7 @@ export default function FreelanceManagementConsultantUAE() {
             </p>
             <Link
               href="/products/freelancer-client-crm"
-              className="inline-block bg-white text-gray-900 font-bold px-5 py-2.5 rounded-xl hover:bg-gray-100 transition-colors text-sm"
+              className="inline-block bg-emerald-500 hover:bg-emerald-400 text-white font-bold px-8 py-3 rounded-xl transition-colors text-sm"
             >
               Get the Client CRM →
             </Link>

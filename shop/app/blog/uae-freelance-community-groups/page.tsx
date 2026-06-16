@@ -156,7 +156,7 @@ export default function UAEFreelanceCommunityGroups() {
         </div>
 
 
-        <div className="prose prose-gray max-w-none text-gray-700 leading-relaxed space-y-6">
+        <div className="space-y-6 leading-relaxed">
 
           <p>
             Freelancing in the UAE is easier with the right network. Referrals are the
@@ -169,8 +169,8 @@ export default function UAEFreelanceCommunityGroups() {
             on what each is actually useful for.
           </p>
 
-          <div className="bg-gray-50 border border-gray-200 rounded-xl p-4 text-sm">
-            <p className="font-semibold text-gray-900 mb-1">How to get value from communities (not just take from them)</p>
+          <div className="bg-emerald-50 border border-emerald-200 rounded-xl p-5">
+            <p className="text-sm font-bold text-emerald-800 mb-2">How to get value from communities (not just take from them)</p>
             <p className="text-gray-700">
               Communities reward contributors. Answer questions before you ask them. Share a useful
               tip before you post about your availability. Help someone with a referral before you
@@ -200,7 +200,7 @@ export default function UAEFreelanceCommunityGroups() {
           </div>
 
           <section>
-            <h2 className="text-xl font-bold text-gray-900 mt-8 mb-3">How Many Communities Should You Join?</h2>
+            <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2"><span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>How Many Communities Should You Join?</h2>
             <p>
               Quality over quantity. Being deeply active in 2–3 communities generates more leads
               than passively lurking in 20. The best approach:
@@ -218,7 +218,7 @@ export default function UAEFreelanceCommunityGroups() {
           </section>
 
           <section>
-            <h2 className="text-xl font-bold text-gray-900 mt-8 mb-3">UAE-Specific Community Etiquette</h2>
+            <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2"><span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>UAE-Specific Community Etiquette</h2>
             <ul className="space-y-2 text-sm text-gray-600 mt-3">
               <li><strong>Business cards still matter</strong> at in-person events in the UAE — have some, and exchange them respectfully with both hands.</li>
               <li><strong>WhatsApp is the primary channel</strong> for follow-ups after in-person meetings. Connect on WhatsApp rather than email for personal contacts.</li>
@@ -228,8 +228,8 @@ export default function UAEFreelanceCommunityGroups() {
           </section>
 
           {/* CTA */}
-          <div className="bg-gray-950 text-white rounded-2xl p-6 mt-10">
-            <p className="text-xs font-semibold text-gray-400 uppercase tracking-widest mb-2">Turn your network into inbound clients</p>
+          <div className="bg-gradient-to-br from-gray-900 to-gray-800 text-white rounded-2xl p-8 mt-12 text-center">
+            <p className="text-xs font-bold text-emerald-400 uppercase tracking-widest block mb-3">Turn your network into inbound clients</p>
             <h3 className="text-lg font-bold mb-2">How to Get Referrals as a UAE Freelancer</h3>
             <p className="text-gray-400 text-sm mb-4">
               The referral ask, 5 non-client referral sources, how to make it easy to refer you,
@@ -238,7 +238,7 @@ export default function UAEFreelanceCommunityGroups() {
             </p>
             <Link
               href="/blog/get-referrals-freelance-uae"
-              className="inline-block bg-white text-gray-900 font-bold px-5 py-2.5 rounded-xl hover:bg-gray-100 transition-colors text-sm"
+              className="inline-block bg-emerald-500 hover:bg-emerald-400 text-white font-bold px-8 py-3 rounded-xl transition-colors text-sm"
             >
               Read the Referrals Guide →
             </Link>

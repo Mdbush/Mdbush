@@ -69,7 +69,7 @@ export default function FreelanceAIEngineerRatesUAE() {
         </div>
 
 
-        <div className="prose prose-gray max-w-none text-gray-700 leading-relaxed space-y-6">
+        <div className="space-y-6 leading-relaxed">
 
           <p>
             AI engineering is the highest-rate technical specialization in the UAE market
@@ -82,8 +82,8 @@ export default function FreelanceAIEngineerRatesUAE() {
             creating exceptional rate conditions for independent practitioners.
           </p>
 
-          <div className="bg-gray-50 border border-gray-200 rounded-xl p-4 text-sm">
-            <p className="font-semibold text-gray-900 mb-1">Quick benchmark</p>
+          <div className="bg-emerald-50 border border-emerald-200 rounded-xl p-5">
+            <p className="text-sm font-bold text-emerald-800 mb-2">Quick benchmark</p>
             <p className="text-gray-700">
               A mid-level freelance AI engineer in Dubai (3–6 years, PyTorch/TensorFlow
               proficient, LLM deployment experience, cloud ML platforms) typically charges
@@ -96,7 +96,7 @@ export default function FreelanceAIEngineerRatesUAE() {
           </div>
 
           <section>
-            <h2 className="text-xl font-bold text-gray-900 mt-8 mb-4">Freelance AI Engineer Rates in the UAE by Service (2026)</h2>
+            <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2"><span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>Freelance AI Engineer Rates in the UAE by Service (2026)</h2>
             <p className="text-xs text-gray-400 mb-4">Junior: 0–3 years / Mid: 4–7 years, production ML deployment experience / Senior: 8+ years, research background or enterprise AI system architecture</p>
             <div className="overflow-x-auto">
               <table className="w-full text-sm border-collapse">
@@ -123,7 +123,7 @@ export default function FreelanceAIEngineerRatesUAE() {
           </section>
 
           <section>
-            <h2 className="text-xl font-bold text-gray-900 mt-8 mb-3">High-Value AI Engineering Niches in the UAE</h2>
+            <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2"><span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>High-Value AI Engineering Niches in the UAE</h2>
             <div className="space-y-3 mt-4">
               {[
                 { niche: "Arabic large language model (LLM) fine-tuning and deployment", rate: "AED 80,000–500,000+ per engagement", why: "Arabic NLP and Arabic LLM work is among the most specialized and highest-paid AI engineering in the UAE market. Most global LLMs (GPT-4, Claude, Gemini) have significantly weaker Arabic performance than English. UAE and Gulf enterprises needing AI systems that understand Arabic dialects (Gulf, Egyptian, Levantine), Arabic business documents, or Islamic finance terminology require custom fine-tuning. Engineers with Arabic NLP depth — including knowledge of Arabic morphology, right-to-left UI integration, and Arabic dialect training data curation — command extraordinary rates in the UAE market." },
@@ -134,7 +134,7 @@ export default function FreelanceAIEngineerRatesUAE() {
                 <div key={item.niche} className="border border-gray-200 rounded-xl p-4">
                   <div className="flex items-start justify-between gap-2 mb-1">
                     <p className="font-semibold text-gray-900 text-sm">{item.niche}</p>
-                    <span className="text-xs font-bold text-green-700 bg-green-50 px-2 py-0.5 rounded-full shrink-0">{item.rate}</span>
+                    <span className="text-xs font-bold text-emerald-700 bg-emerald-50 border border-emerald-200 px-2 py-0.5 rounded-full shrink-0">{item.rate}</span>
                   </div>
                   <p className="text-xs text-gray-600">{item.why}</p>
                 </div>
@@ -143,7 +143,7 @@ export default function FreelanceAIEngineerRatesUAE() {
           </section>
 
           <section>
-            <h2 className="text-xl font-bold text-gray-900 mt-8 mb-3">UAE AI Infrastructure Context</h2>
+            <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2"><span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>UAE AI Infrastructure Context</h2>
             <ul className="space-y-1 text-sm text-gray-600 mt-3">
               <li>• <strong>Azure AI (UAE North region)</strong> — Microsoft Azure UAE North hosts Azure OpenAI Service, Azure Machine Learning, and Azure AI Services. For UAE enterprises with data sovereignty requirements (banking, government, healthcare), Azure UAE North is the preferred AI deployment platform. AI engineers with Azure ML and Azure OpenAI experience are strongly preferred for regulated UAE engagements</li>
               <li>• <strong>G42 and Inception Institute of AI (Abu Dhabi)</strong> — G42&apos;s AI division and the Mohamed bin Zayed University of Artificial Intelligence (MBZUAI) in Abu Dhabi are major UAE AI ecosystem players. G42 has partnered with Microsoft for UAE-specific AI cloud infrastructure. Projects originating from the Abu Dhabi AI ecosystem often prefer G42-ecosystem partners</li>
@@ -153,7 +153,7 @@ export default function FreelanceAIEngineerRatesUAE() {
           </section>
 
           <section>
-            <h2 className="text-xl font-bold text-gray-900 mt-8 mb-3">Credentials for UAE AI Engineers</h2>
+            <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2"><span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>Credentials for UAE AI Engineers</h2>
             <ul className="space-y-1 text-sm text-gray-600 mt-3">
               <li>• <strong>AWS Machine Learning Specialty</strong> — Validates AWS ML services knowledge. Recognized by UAE startups and enterprise clients using AWS infrastructure</li>
               <li>• <strong>Azure AI Engineer Associate (AI-102)</strong> — Microsoft&apos;s credential for AI solution implementation using Azure Cognitive Services and Azure OpenAI. Most relevant for regulated UAE industry AI work</li>
@@ -164,8 +164,8 @@ export default function FreelanceAIEngineerRatesUAE() {
           </section>
 
           {/* CTA */}
-          <div className="bg-gray-950 text-white rounded-2xl p-6 mt-10">
-            <p className="text-xs font-semibold text-gray-400 uppercase tracking-widest mb-2">Manage your AI engineering clients</p>
+          <div className="bg-gradient-to-br from-gray-900 to-gray-800 text-white rounded-2xl p-8 mt-12 text-center">
+            <p className="text-xs font-bold text-emerald-400 uppercase tracking-widest block mb-3">Manage your AI engineering clients</p>
             <h3 className="text-lg font-bold mb-2">Freelancer Client CRM — Track Every AI Project</h3>
             <p className="text-gray-400 text-sm mb-4">
               Track AI engineering engagements from scoping through model deployment,
@@ -174,7 +174,7 @@ export default function FreelanceAIEngineerRatesUAE() {
             </p>
             <Link
               href="/products/freelancer-client-crm"
-              className="inline-block bg-white text-gray-900 font-bold px-5 py-2.5 rounded-xl hover:bg-gray-100 transition-colors text-sm"
+              className="inline-block bg-emerald-500 hover:bg-emerald-400 text-white font-bold px-8 py-3 rounded-xl transition-colors text-sm"
             >
               Get the Client CRM →
             </Link>

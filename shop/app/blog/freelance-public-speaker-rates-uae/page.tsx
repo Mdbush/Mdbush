@@ -69,7 +69,7 @@ export default function FreelancePublicSpeakerRatesUAE() {
         </div>
 
 
-        <div className="prose prose-gray max-w-none text-gray-700 leading-relaxed space-y-6">
+        <div className="space-y-6 leading-relaxed">
 
           <p>
             Dubai is one of the world&apos;s busiest conference and event cities — GITEX,
@@ -82,8 +82,8 @@ export default function FreelancePublicSpeakerRatesUAE() {
             income stream from speaking fees alone. Here are the 2026 rate benchmarks.
           </p>
 
-          <div className="bg-gray-50 border border-gray-200 rounded-xl p-4 text-sm">
-            <p className="font-semibold text-gray-900 mb-1">Quick benchmark</p>
+          <div className="bg-emerald-50 border border-emerald-200 rounded-xl p-5">
+            <p className="text-sm font-bold text-emerald-800 mb-2">Quick benchmark</p>
             <p className="text-gray-700">
               A mid-level professional speaker in Dubai (recognizable in their industry,
               consistent track record at major UAE events) typically charges <strong>AED 8,000–20,000
@@ -95,7 +95,7 @@ export default function FreelancePublicSpeakerRatesUAE() {
           </div>
 
           <section>
-            <h2 className="text-xl font-bold text-gray-900 mt-8 mb-4">Freelance Public Speaker Rates in the UAE by Engagement (2026)</h2>
+            <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2"><span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>Freelance Public Speaker Rates in the UAE by Engagement (2026)</h2>
             <p className="text-xs text-gray-400 mb-4">Junior: emerging speaker, limited track record / Mid: established speaker, UAE industry recognition / Senior: 10+ years, major media profile, or international reputation</p>
             <div className="overflow-x-auto">
               <table className="w-full text-sm border-collapse">
@@ -122,7 +122,7 @@ export default function FreelancePublicSpeakerRatesUAE() {
           </section>
 
           <section>
-            <h2 className="text-xl font-bold text-gray-900 mt-8 mb-3">High-Value Speaking Niches in the UAE</h2>
+            <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2"><span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>High-Value Speaking Niches in the UAE</h2>
             <div className="space-y-3 mt-4">
               {[
                 { niche: "Tech & AI keynotes (GITEX, Dubai AI Festival, corporate digital transformation events)", rate: "AED 15,000–80,000+ per keynote", why: "Dubai&apos;s positioning as an AI hub creates strong demand for speakers who can articulate practical AI applications in business, government digital transformation, fintech, and specific industry verticals. GITEX Global (October, Dubai World Trade Centre) is the world&apos;s largest tech event by attendance — keynote slots at GITEX-associated events are among the most visible in the region. Speakers with credible AI expertise and communication skills that translate complex topics for C-suite audiences command premium rates." },
@@ -133,7 +133,7 @@ export default function FreelancePublicSpeakerRatesUAE() {
                 <div key={item.niche} className="border border-gray-200 rounded-xl p-4">
                   <div className="flex items-start justify-between gap-2 mb-1">
                     <p className="font-semibold text-gray-900 text-sm">{item.niche}</p>
-                    <span className="text-xs font-bold text-green-700 bg-green-50 px-2 py-0.5 rounded-full shrink-0">{item.rate}</span>
+                    <span className="text-xs font-bold text-emerald-700 bg-emerald-50 border border-emerald-200 px-2 py-0.5 rounded-full shrink-0">{item.rate}</span>
                   </div>
                   <p className="text-xs text-gray-600">{item.why}</p>
                 </div>
@@ -142,7 +142,7 @@ export default function FreelancePublicSpeakerRatesUAE() {
           </section>
 
           <section>
-            <h2 className="text-xl font-bold text-gray-900 mt-8 mb-3">How to Build a Speaking Career in the UAE</h2>
+            <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2"><span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>How to Build a Speaking Career in the UAE</h2>
             <ul className="space-y-2 text-sm text-gray-600 mt-3">
               <li>• <strong>Develop a signature talk</strong> — Successful professional speakers have one or two core talks they know inside-out. A 45-minute talk with a clear thesis, memorable framework, and specific UAE market case studies is far more bookable than a generalist who can speak on anything</li>
               <li>• <strong>Speak for free early, then stop</strong> — Speaking at TEDxDubai, Toastmasters, industry meetups, and community events builds your reel and references when you&apos;re getting started. Once you have 3–5 video clips of strong performances, establish a minimum speaking fee. Continuing to speak for free signals that paid fees are optional</li>
@@ -153,7 +153,7 @@ export default function FreelancePublicSpeakerRatesUAE() {
           </section>
 
           <section>
-            <h2 className="text-xl font-bold text-gray-900 mt-8 mb-3">What to Include in Your Speaking Contract</h2>
+            <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2"><span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>What to Include in Your Speaking Contract</h2>
             <ul className="space-y-1 text-sm text-gray-600 mt-3">
               <li>• <strong>Speaker fee and payment terms</strong> — 50% deposit on signing, 50% before event day (not after). Do not arrive at events with outstanding balance — it creates awkward conversations and non-payment risk</li>
               <li>• <strong>Exclusivity clause</strong> — Define whether you are exclusive to this event and whether the organizer can film and distribute your talk. Exclusivity (no other keynote on the same topic at the same event) and usage rights for the recording are standard negotiation points</li>
@@ -163,8 +163,8 @@ export default function FreelancePublicSpeakerRatesUAE() {
           </section>
 
           {/* CTA */}
-          <div className="bg-gray-950 text-white rounded-2xl p-6 mt-10">
-            <p className="text-xs font-semibold text-gray-400 uppercase tracking-widest mb-2">Manage your speaking engagements</p>
+          <div className="bg-gradient-to-br from-gray-900 to-gray-800 text-white rounded-2xl p-8 mt-12 text-center">
+            <p className="text-xs font-bold text-emerald-400 uppercase tracking-widest block mb-3">Manage your speaking engagements</p>
             <h3 className="text-lg font-bold mb-2">Freelancer Client CRM — Track Every Speaking Lead & Booking</h3>
             <p className="text-gray-400 text-sm mb-4">
               Track speaking enquiries from first contact through booking confirmation,
@@ -173,7 +173,7 @@ export default function FreelancePublicSpeakerRatesUAE() {
             </p>
             <Link
               href="/products/freelancer-client-crm"
-              className="inline-block bg-white text-gray-900 font-bold px-5 py-2.5 rounded-xl hover:bg-gray-100 transition-colors text-sm"
+              className="inline-block bg-emerald-500 hover:bg-emerald-400 text-white font-bold px-8 py-3 rounded-xl transition-colors text-sm"
             >
               Get the Client CRM →
             </Link>

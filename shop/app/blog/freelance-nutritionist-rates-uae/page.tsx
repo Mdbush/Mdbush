@@ -69,7 +69,7 @@ export default function FreelanceNutritionistRatesUAE() {
         </div>
 
 
-        <div className="prose prose-gray max-w-none text-gray-700 leading-relaxed space-y-6">
+        <div className="space-y-6 leading-relaxed">
 
           <p>
             The UAE has one of the highest rates of lifestyle disease in the world —
@@ -82,8 +82,8 @@ export default function FreelanceNutritionistRatesUAE() {
             the 2026 rate benchmarks.
           </p>
 
-          <div className="bg-gray-50 border border-gray-200 rounded-xl p-4 text-sm">
-            <p className="font-semibold text-gray-900 mb-1">Quick benchmark</p>
+          <div className="bg-emerald-50 border border-emerald-200 rounded-xl p-5">
+            <p className="text-sm font-bold text-emerald-800 mb-2">Quick benchmark</p>
             <p className="text-gray-700">
               A mid-level freelance nutritionist in Dubai (BSc in Nutrition or Dietetics,
               3–6 years experience) typically charges <strong>AED 700–1,400 for an initial
@@ -95,7 +95,7 @@ export default function FreelanceNutritionistRatesUAE() {
           </div>
 
           <section>
-            <h2 className="text-xl font-bold text-gray-900 mt-8 mb-4">Freelance Nutritionist & Dietitian Rates in the UAE by Service (2026)</h2>
+            <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2"><span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>Freelance Nutritionist & Dietitian Rates in the UAE by Service (2026)</h2>
             <p className="text-xs text-gray-400 mb-4">Junior: 0–3 years / Mid: 4–7 years / Senior: 8+ years, clinical specialist, or sports nutrition specialist</p>
             <div className="overflow-x-auto">
               <table className="w-full text-sm border-collapse">
@@ -122,7 +122,7 @@ export default function FreelanceNutritionistRatesUAE() {
           </section>
 
           <section>
-            <h2 className="text-xl font-bold text-gray-900 mt-8 mb-3">High-Value Nutrition Niches in the UAE</h2>
+            <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2"><span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>High-Value Nutrition Niches in the UAE</h2>
             <div className="space-y-3 mt-4">
               {[
                 { niche: "Corporate wellness (DIFC firms, multinationals, government entities)", rate: "AED 25,000–100,000+ per quarter per company", why: "UAE companies investing in employee wellness are a growing client segment. HR and L&D departments at DIFC-licensed companies, multinationals, and large government entities commission nutrition programs as part of comprehensive wellness initiatives. These are B2B contracts rather than individual clients — one corporate client generates more revenue than 30 individual consultations per month." },
@@ -133,7 +133,7 @@ export default function FreelanceNutritionistRatesUAE() {
                 <div key={item.niche} className="border border-gray-200 rounded-xl p-4">
                   <div className="flex items-start justify-between gap-2 mb-1">
                     <p className="font-semibold text-gray-900 text-sm">{item.niche}</p>
-                    <span className="text-xs font-bold text-green-700 bg-green-50 px-2 py-0.5 rounded-full shrink-0">{item.rate}</span>
+                    <span className="text-xs font-bold text-emerald-700 bg-emerald-50 border border-emerald-200 px-2 py-0.5 rounded-full shrink-0">{item.rate}</span>
                   </div>
                   <p className="text-xs text-gray-600">{item.why}</p>
                 </div>
@@ -142,7 +142,7 @@ export default function FreelanceNutritionistRatesUAE() {
           </section>
 
           <section>
-            <h2 className="text-xl font-bold text-gray-900 mt-8 mb-3">UAE Licensing for Nutritionists</h2>
+            <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2"><span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>UAE Licensing for Nutritionists</h2>
             <ul className="space-y-1 text-sm text-gray-600 mt-3">
               <li>• <strong>Dubai Health Authority (DHA)</strong> — All health professionals practising in Dubai require DHA registration. Nutritionists and dietitians must hold a recognized degree and pass the DHA exam. Without registration, you cannot legally call yourself a &quot;registered dietitian&quot; or practice clinical nutrition</li>
               <li>• <strong>Department of Health Abu Dhabi (DOH)</strong> — Equivalent registration for Abu Dhabi practice. Separate from DHA — you need both if you practice in both emirates</li>
@@ -153,8 +153,8 @@ export default function FreelanceNutritionistRatesUAE() {
           </section>
 
           {/* CTA */}
-          <div className="bg-gray-950 text-white rounded-2xl p-6 mt-10">
-            <p className="text-xs font-semibold text-gray-400 uppercase tracking-widest mb-2">Manage your client programs</p>
+          <div className="bg-gradient-to-br from-gray-900 to-gray-800 text-white rounded-2xl p-8 mt-12 text-center">
+            <p className="text-xs font-bold text-emerald-400 uppercase tracking-widest block mb-3">Manage your client programs</p>
             <h3 className="text-lg font-bold mb-2">Freelancer Client CRM — Track Every Client & Package</h3>
             <p className="text-gray-400 text-sm mb-4">
               Track nutrition coaching clients from initial assessment through program
@@ -163,7 +163,7 @@ export default function FreelanceNutritionistRatesUAE() {
             </p>
             <Link
               href="/products/freelancer-client-crm"
-              className="inline-block bg-white text-gray-900 font-bold px-5 py-2.5 rounded-xl hover:bg-gray-100 transition-colors text-sm"
+              className="inline-block bg-emerald-500 hover:bg-emerald-400 text-white font-bold px-8 py-3 rounded-xl transition-colors text-sm"
             >
               Get the Client CRM →
             </Link>

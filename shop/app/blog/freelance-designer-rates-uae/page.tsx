@@ -234,7 +234,7 @@ export default function FreelanceDesignerRatesUAE() {
                 { href: "/blog/freelance-rate-calculator-uae", label: "Freelance Rate Calculator: How Much Should You Charge?" },
                 { href: "/blog/how-to-price-freelance-services-uae", label: "How to Price Your Freelance Services in the UAE" },
               ].map((link) => (
-                <Link key={link.href} href={link.href} className="block text-blue-600 hover:text-blue-800 text-sm">
+                <Link key={link.href} href={link.href} className="block text-emerald-700 hover:text-emerald-900 text-sm">
                   → {link.label}
                 </Link>
               ))}

@@ -243,7 +243,7 @@ export default function HowToUseAIFreelanceProductivityUAE() {
                 { href: "/blog/how-to-scale-freelance-business-uae", label: "How to Scale Your Freelance Business to AED 100K/Month" },
                 { href: "/blog/how-to-get-freelance-clients-uae", label: "How to Get Freelance Clients in the UAE" },
               ].map((link) => (
-                <Link key={link.href} href={link.href} className="block text-blue-600 hover:text-blue-800 text-sm">
+                <Link key={link.href} href={link.href} className="block text-emerald-700 hover:text-emerald-900 text-sm">
                   → {link.label}
                 </Link>
               ))}

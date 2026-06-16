@@ -69,7 +69,7 @@ export default function FreelanceCybersecurityConsultantUAE() {
         </div>
 
 
-        <div className="prose prose-gray max-w-none text-gray-700 leading-relaxed space-y-6">
+        <div className="space-y-6 leading-relaxed">
 
           <p>
             Cybersecurity is among the highest-paid freelance specializations in the UAE.
@@ -81,8 +81,8 @@ export default function FreelanceCybersecurityConsultantUAE() {
             demand. Here are the 2026 rate benchmarks.
           </p>
 
-          <div className="bg-gray-50 border border-gray-200 rounded-xl p-4 text-sm">
-            <p className="font-semibold text-gray-900 mb-1">Quick benchmark</p>
+          <div className="bg-emerald-50 border border-emerald-200 rounded-xl p-5">
+            <p className="text-sm font-bold text-emerald-800 mb-2">Quick benchmark</p>
             <p className="text-gray-700">
               A mid-level freelance cybersecurity consultant in the UAE with 4–8 years
               of experience and CISSP or CEH certification typically earns
@@ -93,7 +93,7 @@ export default function FreelanceCybersecurityConsultantUAE() {
           </div>
 
           <section>
-            <h2 className="text-xl font-bold text-gray-900 mt-8 mb-4">Freelance Cybersecurity Rates in the UAE by Service Type (2026)</h2>
+            <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2"><span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>Freelance Cybersecurity Rates in the UAE by Service Type (2026)</h2>
             <p className="text-xs text-gray-400 mb-4">Junior: 0–3 years / Mid: 4–8 years / Senior: 9+ years or certified specialist (CISSP/CISM/OSCP)</p>
             <div className="overflow-x-auto">
               <table className="w-full text-sm border-collapse">
@@ -120,7 +120,7 @@ export default function FreelanceCybersecurityConsultantUAE() {
           </section>
 
           <section>
-            <h2 className="text-xl font-bold text-gray-900 mt-8 mb-3">High-Value Cybersecurity Niches in the UAE</h2>
+            <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2"><span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>High-Value Cybersecurity Niches in the UAE</h2>
             <div className="space-y-3 mt-4">
               {[
                 { niche: "Financial sector security (banks, fintech, insurance)", rate: "AED 1,000–2,500+/hour", why: "CBUAE and DFSA regulations require rigorous security programs. Banks and fintech firms cannot risk non-compliance — they pay premium rates for credentialed consultants." },
@@ -132,7 +132,7 @@ export default function FreelanceCybersecurityConsultantUAE() {
                 <div key={item.niche} className="border border-gray-200 rounded-xl p-4">
                   <div className="flex items-start justify-between gap-2 mb-1">
                     <p className="font-semibold text-gray-900 text-sm">{item.niche}</p>
-                    <span className="text-xs font-bold text-green-700 bg-green-50 px-2 py-0.5 rounded-full shrink-0">{item.rate}</span>
+                    <span className="text-xs font-bold text-emerald-700 bg-emerald-50 border border-emerald-200 px-2 py-0.5 rounded-full shrink-0">{item.rate}</span>
                   </div>
                   <p className="text-xs text-gray-600">{item.why}</p>
                 </div>
@@ -141,7 +141,7 @@ export default function FreelanceCybersecurityConsultantUAE() {
           </section>
 
           <section>
-            <h2 className="text-xl font-bold text-gray-900 mt-8 mb-3">Certifications That Command UAE Market Rates</h2>
+            <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2"><span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>Certifications That Command UAE Market Rates</h2>
             <ul className="space-y-2 text-sm text-gray-600 mt-3">
               <li><strong>CISSP (Certified Information Systems Security Professional):</strong> The most recognized senior security credential in UAE procurement. Required for many government and enterprise CISO-as-a-Service engagements.</li>
               <li><strong>CISM (Certified Information Security Manager):</strong> Management-focused certification. Strong for GRC and CISO advisory roles. Valued by financial institutions.</li>
@@ -153,7 +153,7 @@ export default function FreelanceCybersecurityConsultantUAE() {
           </section>
 
           <section>
-            <h2 className="text-xl font-bold text-gray-900 mt-8 mb-3">CISO-as-a-Service: The Highest-Value Model</h2>
+            <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2"><span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>CISO-as-a-Service: The Highest-Value Model</h2>
             <p>
               The highest-earning cybersecurity freelancers in the UAE operate as fractional
               CISOs — providing strategic security leadership to organizations that can&apos;t
@@ -171,8 +171,8 @@ export default function FreelanceCybersecurityConsultantUAE() {
           </section>
 
           {/* CTA */}
-          <div className="bg-gray-950 text-white rounded-2xl p-6 mt-10">
-            <p className="text-xs font-semibold text-gray-400 uppercase tracking-widest mb-2">Price your consulting correctly</p>
+          <div className="bg-gradient-to-br from-gray-900 to-gray-800 text-white rounded-2xl p-8 mt-12 text-center">
+            <p className="text-xs font-bold text-emerald-400 uppercase tracking-widest block mb-3">Price your consulting correctly</p>
             <h3 className="text-lg font-bold mb-2">How to Price Yourself as a Freelancer in the UAE: The Complete System</h3>
             <p className="text-gray-400 text-sm mb-4">
               Floor rate formula, value-based pricing, and how to present your rate to
@@ -180,7 +180,7 @@ export default function FreelanceCybersecurityConsultantUAE() {
             </p>
             <Link
               href="/blog/how-to-price-yourself-as-freelancer-uae"
-              className="inline-block bg-white text-gray-900 font-bold px-5 py-2.5 rounded-xl hover:bg-gray-100 transition-colors text-sm"
+              className="inline-block bg-emerald-500 hover:bg-emerald-400 text-white font-bold px-8 py-3 rounded-xl transition-colors text-sm"
             >
               Read the Pricing System →
             </Link>

@@ -223,7 +223,7 @@ export default function HowToWinWithoutBeingCheapestUAE() {
                 { href: "/blog/how-to-negotiate-freelance-rates-uae", label: "How to Negotiate Freelance Rates in the UAE" },
                 { href: "/blog/how-to-create-a-freelance-niche-uae", label: "How to Create a Freelance Niche in the UAE" },
               ].map((link) => (
-                <Link key={link.href} href={link.href} className="block text-blue-600 hover:text-blue-800 text-sm">
+                <Link key={link.href} href={link.href} className="block text-emerald-700 hover:text-emerald-900 text-sm">
                   → {link.label}
                 </Link>
               ))}

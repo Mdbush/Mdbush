@@ -202,7 +202,7 @@ export default function HowToBuildRecurringRevenueUAE() {
                 { href: "/blog/freelance-passive-income-uae", label: "Freelance Passive Income Strategies in the UAE" },
                 { href: "/blog/how-to-productize-freelance-services-uae", label: "How to Productize Your Freelance Services in the UAE" },
               ].map((link) => (
-                <Link key={link.href} href={link.href} className="block text-blue-600 hover:text-blue-800 text-sm">
+                <Link key={link.href} href={link.href} className="block text-emerald-700 hover:text-emerald-900 text-sm">
                   → {link.label}
                 </Link>
               ))}

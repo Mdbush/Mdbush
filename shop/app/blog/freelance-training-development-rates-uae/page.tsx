@@ -69,7 +69,7 @@ export default function FreelanceTrainingDevelopmentRatesUAE() {
         </div>
 
 
-        <div className="prose prose-gray max-w-none text-gray-700 leading-relaxed space-y-6">
+        <div className="space-y-6 leading-relaxed">
 
           <p>
             Corporate training and learning & development is a significant market in the UAE —
@@ -82,8 +82,8 @@ export default function FreelanceTrainingDevelopmentRatesUAE() {
             Here are the 2026 rate benchmarks.
           </p>
 
-          <div className="bg-gray-50 border border-gray-200 rounded-xl p-4 text-sm">
-            <p className="font-semibold text-gray-900 mb-1">Quick benchmark</p>
+          <div className="bg-emerald-50 border border-emerald-200 rounded-xl p-5">
+            <p className="text-sm font-bold text-emerald-800 mb-2">Quick benchmark</p>
             <p className="text-gray-700">
               A mid-level freelance corporate trainer in Dubai (5–8 years experience, professional
               certifications) typically charges <strong>AED 7,000–15,000 per full training day</strong>
@@ -95,7 +95,7 @@ export default function FreelanceTrainingDevelopmentRatesUAE() {
           </div>
 
           <section>
-            <h2 className="text-xl font-bold text-gray-900 mt-8 mb-4">Freelance Corporate Trainer & L&D Consultant Rates in the UAE (2026)</h2>
+            <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2"><span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>Freelance Corporate Trainer & L&D Consultant Rates in the UAE (2026)</h2>
             <p className="text-xs text-gray-400 mb-4">Junior: 0–4 years / Mid: 5–9 years / Senior: 10+ years, specialist sector, or bilingual Arabic-English facilitation</p>
             <div className="overflow-x-auto">
               <table className="w-full text-sm border-collapse">
@@ -122,7 +122,7 @@ export default function FreelanceTrainingDevelopmentRatesUAE() {
           </section>
 
           <section>
-            <h2 className="text-xl font-bold text-gray-900 mt-8 mb-3">High-Value Training & L&D Niches in the UAE</h2>
+            <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2"><span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>High-Value Training & L&D Niches in the UAE</h2>
             <div className="space-y-3 mt-4">
               {[
                 { niche: "Emiratisation / UAE national workforce development", rate: "AED 60,000–250,000+ per program", why: "The UAE government&apos;s Emiratisation requirements mandate that private sector companies hire a minimum percentage of UAE nationals (Emiratisation). Companies in banking, insurance, and large corporates face specific targets with financial penalties for non-compliance. Developing tailored programs that upskill Emirati employees, support career progression into senior roles, and meet government reporting requirements is a high-value, compliance-driven niche. Cultural sensitivity and Arabic language capability are significant differentiators." },
@@ -133,7 +133,7 @@ export default function FreelanceTrainingDevelopmentRatesUAE() {
                 <div key={item.niche} className="border border-gray-200 rounded-xl p-4">
                   <div className="flex items-start justify-between gap-2 mb-1">
                     <p className="font-semibold text-gray-900 text-sm">{item.niche}</p>
-                    <span className="text-xs font-bold text-green-700 bg-green-50 px-2 py-0.5 rounded-full shrink-0">{item.rate}</span>
+                    <span className="text-xs font-bold text-emerald-700 bg-emerald-50 border border-emerald-200 px-2 py-0.5 rounded-full shrink-0">{item.rate}</span>
                   </div>
                   <p className="text-xs text-gray-600">{item.why}</p>
                 </div>
@@ -142,7 +142,7 @@ export default function FreelanceTrainingDevelopmentRatesUAE() {
           </section>
 
           <section>
-            <h2 className="text-xl font-bold text-gray-900 mt-8 mb-3">Professional Credentials for UAE Corporate Trainers</h2>
+            <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2"><span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>Professional Credentials for UAE Corporate Trainers</h2>
             <ul className="space-y-1 text-sm text-gray-600 mt-3">
               <li>• <strong>CIPD (Chartered Institute of Personnel and Development)</strong> — The primary L&D professional credential recognized in the UAE corporate market. CIPD Level 5 (Associate) or Level 7 (Advanced) in Learning and Development significantly increases perceived credibility, especially with HR departments. CIPD has a UAE chapter and is active in the Dubai HR market</li>
               <li>• <strong>ATD (Association for Talent Development)</strong> — CPLP (Certified Professional in Learning and Performance) credential is recognized globally and in the UAE multinational market</li>
@@ -153,7 +153,7 @@ export default function FreelanceTrainingDevelopmentRatesUAE() {
           </section>
 
           <section>
-            <h2 className="text-xl font-bold text-gray-900 mt-8 mb-3">Facilitation Day Rate vs. Program Design vs. eLearning</h2>
+            <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2"><span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>Facilitation Day Rate vs. Program Design vs. eLearning</h2>
             <p className="text-sm text-gray-600 mb-3">
               Three distinct revenue streams with different income profiles:
             </p>
@@ -166,7 +166,7 @@ export default function FreelanceTrainingDevelopmentRatesUAE() {
                 <div key={item.stream} className="border border-gray-200 rounded-xl p-4">
                   <div className="flex items-start justify-between gap-2 mb-1">
                     <p className="font-semibold text-gray-900 text-sm">{item.stream}</p>
-                    <span className="text-xs font-bold text-blue-700 bg-blue-50 px-2 py-0.5 rounded-full shrink-0">Scalability: {item.scalability}</span>
+                    <span className="text-xs font-bold text-blue-700 bg-emerald-50 px-2 py-0.5 rounded-full shrink-0">Scalability: {item.scalability}</span>
                   </div>
                   <p className="text-xs text-gray-600">{item.profile}</p>
                 </div>
@@ -175,8 +175,8 @@ export default function FreelanceTrainingDevelopmentRatesUAE() {
           </section>
 
           {/* CTA */}
-          <div className="bg-gray-950 text-white rounded-2xl p-6 mt-10">
-            <p className="text-xs font-semibold text-gray-400 uppercase tracking-widest mb-2">Manage your training clients</p>
+          <div className="bg-gradient-to-br from-gray-900 to-gray-800 text-white rounded-2xl p-8 mt-12 text-center">
+            <p className="text-xs font-bold text-emerald-400 uppercase tracking-widest block mb-3">Manage your training clients</p>
             <h3 className="text-lg font-bold mb-2">Freelancer Client CRM — Track Every Program & Invoice</h3>
             <p className="text-gray-400 text-sm mb-4">
               Track corporate training clients from TNA through program delivery,
@@ -185,7 +185,7 @@ export default function FreelanceTrainingDevelopmentRatesUAE() {
             </p>
             <Link
               href="/products/freelancer-client-crm"
-              className="inline-block bg-white text-gray-900 font-bold px-5 py-2.5 rounded-xl hover:bg-gray-100 transition-colors text-sm"
+              className="inline-block bg-emerald-500 hover:bg-emerald-400 text-white font-bold px-8 py-3 rounded-xl transition-colors text-sm"
             >
               Get the Client CRM →
             </Link>

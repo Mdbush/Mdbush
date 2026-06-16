@@ -63,7 +63,7 @@ export default function HowToBuildPassiveIncomeUAE() {
         </div>
 
 
-        <div className="prose prose-gray max-w-none text-gray-700 leading-relaxed space-y-6">
+        <div className="space-y-6 leading-relaxed">
 
           <p>
             Every UAE freelancer eventually has the same realisation: your income is a direct
@@ -88,8 +88,8 @@ export default function HowToBuildPassiveIncomeUAE() {
             advice on how to get started from where you are now.
           </p>
 
-          <div className="bg-gray-50 border border-gray-200 rounded-xl p-4 text-sm">
-            <p className="font-semibold text-gray-900 mb-1">A note on &quot;passive&quot; income</p>
+          <div className="bg-emerald-50 border border-emerald-200 rounded-xl p-5">
+            <p className="text-sm font-bold text-emerald-800 mb-2">A note on &quot;passive&quot; income</p>
             <p className="text-gray-700">
               The streams in this guide require significant upfront work — typically 3–12 months
               of consistent effort before meaningful revenue arrives. The income becomes
@@ -99,9 +99,7 @@ export default function HowToBuildPassiveIncomeUAE() {
           </div>
 
           <section>
-            <h2 className="text-xl font-bold text-gray-900 mt-8 mb-3">
-              1. Digital Products: Notion Templates, Spreadsheets, and Frameworks
-            </h2>
+            <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2"><span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>1. Digital Products: Notion Templates, Spreadsheets, and Frameworks</h2>
 
             <div className="grid grid-cols-3 gap-3 my-4 text-center text-xs">
               <div className="bg-gray-50 rounded-xl p-3">
@@ -169,8 +167,8 @@ export default function HowToBuildPassiveIncomeUAE() {
               Month 18 with a full catalogue and established SEO: AED 8,000–25,000.
             </p>
 
-            <div className="bg-blue-50 border border-blue-100 rounded-xl p-4 text-sm mt-4">
-              <p className="font-semibold text-blue-900 mb-1">The key insight</p>
+            <div className="bg-emerald-50 border border-blue-100 rounded-xl p-4 text-sm mt-4">
+              <p className="font-semibold text-emerald-900 mb-1">The key insight</p>
               <p className="text-blue-800">
                 The professionals best positioned to build profitable digital products are
                 those who already create systems for their clients. If you are a freelance
@@ -184,9 +182,7 @@ export default function HowToBuildPassiveIncomeUAE() {
           </section>
 
           <section>
-            <h2 className="text-xl font-bold text-gray-900 mt-8 mb-3">
-              2. Online Courses and Educational Products
-            </h2>
+            <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2"><span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>2. Online Courses and Educational Products</h2>
 
             <div className="grid grid-cols-3 gap-3 my-4 text-center text-xs">
               <div className="bg-gray-50 rounded-xl p-3">
@@ -252,9 +248,7 @@ export default function HowToBuildPassiveIncomeUAE() {
           </section>
 
           <section>
-            <h2 className="text-xl font-bold text-gray-900 mt-8 mb-3">
-              3. SEO Content: Affiliate Income and Ad Revenue
-            </h2>
+            <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2"><span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>3. SEO Content: Affiliate Income and Ad Revenue</h2>
 
             <div className="grid grid-cols-3 gap-3 my-4 text-center text-xs">
               <div className="bg-gray-50 rounded-xl p-3">
@@ -323,9 +317,7 @@ export default function HowToBuildPassiveIncomeUAE() {
           </section>
 
           <section>
-            <h2 className="text-xl font-bold text-gray-900 mt-8 mb-3">
-              4. Licensing Your Expertise: Frameworks, Reports, and IP
-            </h2>
+            <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2"><span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>4. Licensing Your Expertise: Frameworks, Reports, and IP</h2>
 
             <div className="grid grid-cols-3 gap-3 my-4 text-center text-xs">
               <div className="bg-gray-50 rounded-xl p-3">
@@ -397,9 +389,7 @@ export default function HowToBuildPassiveIncomeUAE() {
           </section>
 
           <section>
-            <h2 className="text-xl font-bold text-gray-900 mt-8 mb-3">
-              5. Rental Income: The UAE Property Context for Freelancers
-            </h2>
+            <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2"><span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>5. Rental Income: The UAE Property Context for Freelancers</h2>
 
             <div className="grid grid-cols-3 gap-3 my-4 text-center text-xs">
               <div className="bg-gray-50 rounded-xl p-3">
@@ -459,9 +449,7 @@ export default function HowToBuildPassiveIncomeUAE() {
           </section>
 
           <section>
-            <h2 className="text-xl font-bold text-gray-900 mt-8 mb-3">
-              Building Your First Passive Income Stream: Where to Start
-            </h2>
+            <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2"><span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>Building Your First Passive Income Stream: Where to Start</h2>
             <p>
               Most freelancers are already sitting on the raw material for a passive income
               stream — they just have not packaged it yet. Here is the decision framework
@@ -502,9 +490,7 @@ export default function HowToBuildPassiveIncomeUAE() {
           </section>
 
           <section>
-            <h2 className="text-xl font-bold text-gray-900 mt-8 mb-3">
-              Common Mistakes UAE Freelancers Make When Building Passive Income
-            </h2>
+            <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2"><span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>Common Mistakes UAE Freelancers Make When Building Passive Income</h2>
 
             <div className="space-y-3">
               {[
@@ -543,9 +529,7 @@ export default function HowToBuildPassiveIncomeUAE() {
           </section>
 
           <section>
-            <h2 className="text-xl font-bold text-gray-900 mt-8 mb-3">
-              Passive Income Timeline: What to Realistically Expect
-            </h2>
+            <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2"><span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>Passive Income Timeline: What to Realistically Expect</h2>
 
             <div className="overflow-x-auto">
               <table className="w-full text-sm border-collapse">
@@ -583,8 +567,8 @@ export default function HowToBuildPassiveIncomeUAE() {
           </section>
 
           {/* CTA */}
-          <div className="bg-gray-950 text-white rounded-2xl p-6 mt-10">
-            <p className="text-xs font-semibold text-gray-400 uppercase tracking-widest mb-2">
+          <div className="bg-gradient-to-br from-gray-900 to-gray-800 text-white rounded-2xl p-8 mt-12 text-center">
+            <p className="text-xs font-bold text-emerald-400 uppercase tracking-widest block mb-3">
               Run your whole freelance business in one place
             </p>
             <h3 className="text-lg font-bold mb-2">SoloKit Freelance OS</h3>
@@ -596,7 +580,7 @@ export default function HowToBuildPassiveIncomeUAE() {
             </p>
             <Link
               href="/products/solokit-freelance-os"
-              className="inline-block bg-white text-gray-900 font-bold px-5 py-2.5 rounded-xl hover:bg-gray-100 transition-colors text-sm"
+              className="inline-block bg-emerald-500 hover:bg-emerald-400 text-white font-bold px-8 py-3 rounded-xl transition-colors text-sm"
             >
               Get SoloKit Freelance OS →
             </Link>

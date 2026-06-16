@@ -223,10 +223,10 @@ export default function Article() {
           <div className="mt-10">
             <h3 className="text-sm font-semibold text-gray-900 mb-3">Related Guides</h3>
             <div className="space-y-1.5">
-              <Link href="/blog/how-to-become-freelancer-uae" className="block text-blue-600 hover:text-blue-800 text-sm">→ How to Become a Freelancer in the UAE — Complete 2026 Guide</Link>
-              <Link href="/blog/freelance-visa-uae" className="block text-blue-600 hover:text-blue-800 text-sm">→ UAE Freelance Visa — SHAMS vs RAKEZ vs Free Zone Options</Link>
-              <Link href="/blog/freelance-rate-calculator-uae" className="block text-blue-600 hover:text-blue-800 text-sm">→ Freelance Rate Calculator UAE — What Should You Charge?</Link>
-              <Link href="/blog/freelance-vs-salary-uae" className="block text-blue-600 hover:text-blue-800 text-sm">→ Freelance vs Salary in the UAE: The Real Numbers</Link>
+              <Link href="/blog/how-to-become-freelancer-uae" className="block text-emerald-700 hover:text-emerald-900 text-sm">→ How to Become a Freelancer in the UAE — Complete 2026 Guide</Link>
+              <Link href="/blog/freelance-visa-uae" className="block text-emerald-700 hover:text-emerald-900 text-sm">→ UAE Freelance Visa — SHAMS vs RAKEZ vs Free Zone Options</Link>
+              <Link href="/blog/freelance-rate-calculator-uae" className="block text-emerald-700 hover:text-emerald-900 text-sm">→ Freelance Rate Calculator UAE — What Should You Charge?</Link>
+              <Link href="/blog/freelance-vs-salary-uae" className="block text-emerald-700 hover:text-emerald-900 text-sm">→ Freelance vs Salary in the UAE: The Real Numbers</Link>
             </div>
           </div>
         </div>

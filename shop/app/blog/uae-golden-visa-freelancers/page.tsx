@@ -137,8 +137,8 @@ export default function GoldenVisaFreelancersPage() {
             what it takes to qualify.
           </p>
 
-          <div className="bg-blue-50 border border-blue-200 rounded-xl p-4 text-sm mb-8">
-            <p className="font-semibold text-blue-900 mb-1">Official source: GDRFA and ICA</p>
+          <div className="bg-emerald-50 border border-emerald-200 rounded-xl p-4 text-sm mb-8">
+            <p className="font-semibold text-emerald-900 mb-1">Official source: GDRFA and ICA</p>
             <p className="text-blue-800">
               UAE Golden Visa requirements are set by the General Directorate of Residency and
               Foreigners Affairs (GDRFA) in Dubai and the Federal Authority for Identity, Citizenship,

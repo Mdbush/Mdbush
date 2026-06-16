@@ -58,7 +58,7 @@ export default function FreelanceAccountantUAE() {
         </div>
 
 
-        <div className="prose prose-gray max-w-none text-gray-700 leading-relaxed space-y-6">
+        <div className="space-y-6 leading-relaxed">
 
           <p>
             The UAE tax environment used to be simple enough that most freelancers could manage
@@ -76,7 +76,7 @@ export default function FreelanceAccountantUAE() {
           </div>
 
           <section>
-            <h2 className="text-xl font-bold text-gray-900 mt-8 mb-3">Bookkeeper vs Accountant: What Is the Difference?</h2>
+            <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2"><span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>Bookkeeper vs Accountant: What Is the Difference?</h2>
 
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-4">
               <div className="border border-gray-200 rounded-xl p-4">
@@ -105,7 +105,7 @@ export default function FreelanceAccountantUAE() {
           </section>
 
           <section>
-            <h2 className="text-xl font-bold text-gray-900 mt-8 mb-3">Do You Actually Need One?</h2>
+            <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2"><span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>Do You Actually Need One?</h2>
             <p>The honest answer depends on your situation:</p>
 
             <div className="space-y-3 mt-4">
@@ -144,7 +144,7 @@ export default function FreelanceAccountantUAE() {
           </section>
 
           <section>
-            <h2 className="text-xl font-bold text-gray-900 mt-8 mb-3">What UAE Accountants Typically Charge</h2>
+            <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2"><span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>What UAE Accountants Typically Charge</h2>
 
             <div className="overflow-x-auto -mx-4 sm:mx-0">
               <table className="w-full text-sm border-collapse min-w-[400px]">
@@ -176,7 +176,7 @@ export default function FreelanceAccountantUAE() {
           </section>
 
           <section>
-            <h2 className="text-xl font-bold text-gray-900 mt-8 mb-3">How to Find a Good Accountant in the UAE</h2>
+            <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2"><span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>How to Find a Good Accountant in the UAE</h2>
 
             <h3 className="text-base font-semibold text-gray-900 mt-4 mb-2">Look for UAE-specific credentials</h3>
             <p>
@@ -206,7 +206,7 @@ export default function FreelanceAccountantUAE() {
           </section>
 
           <section>
-            <h2 className="text-xl font-bold text-gray-900 mt-8 mb-3">Before You Hire: Get Your Own Records in Order</h2>
+            <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2"><span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>Before You Hire: Get Your Own Records in Order</h2>
             <p>
               Whatever level of professional support you hire, your accountant or bookkeeper can
               only work with what you give them. The cleaner your records, the lower your bill.
@@ -222,8 +222,8 @@ export default function FreelanceAccountantUAE() {
           </section>
 
           {/* CTA */}
-          <div className="bg-gray-950 text-white rounded-2xl p-6 mt-10">
-            <p className="text-xs font-semibold text-gray-400 uppercase tracking-widest mb-2">Track revenue before you need an accountant</p>
+          <div className="bg-gradient-to-br from-gray-900 to-gray-800 text-white rounded-2xl p-8 mt-12 text-center">
+            <p className="text-xs font-bold text-emerald-400 uppercase tracking-widest block mb-3">Track revenue before you need an accountant</p>
             <h3 className="text-lg font-bold mb-2">The Solopreneur OS includes a finance dashboard</h3>
             <p className="text-gray-400 text-sm mb-4">
               Monthly revenue, income categories, and expense tracking — built into your Notion workspace.
@@ -231,7 +231,7 @@ export default function FreelanceAccountantUAE() {
             </p>
             <Link
               href="/products/solopreneur-os"
-              className="inline-block bg-white text-gray-900 font-bold px-5 py-2.5 rounded-xl hover:bg-gray-100 transition-colors text-sm"
+              className="inline-block bg-emerald-500 hover:bg-emerald-400 text-white font-bold px-8 py-3 rounded-xl transition-colors text-sm"
             >
               See the Solopreneur OS →
             </Link>

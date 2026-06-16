@@ -60,7 +60,7 @@ export default function FreelanceFinancialPlanningUAE() {
         </div>
 
 
-        <div className="prose prose-gray max-w-none text-gray-700 leading-relaxed space-y-6">
+        <div className="space-y-6 leading-relaxed">
 
           <p>
             Freelancing in the UAE has one massive financial advantage: no income tax on your earnings.
@@ -75,7 +75,7 @@ export default function FreelanceFinancialPlanningUAE() {
           </p>
 
           <section>
-            <h2 className="text-xl font-bold text-gray-900 mt-8 mb-3">Pillar 1: Income Smoothing</h2>
+            <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2"><span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>Pillar 1: Income Smoothing</h2>
             <p>
               Freelance income is lumpy. You might earn AED 40,000 in March and AED 12,000 in
               April. The mistake most freelancers make is spending based on their good months and
@@ -105,7 +105,7 @@ export default function FreelanceFinancialPlanningUAE() {
           </section>
 
           <section>
-            <h2 className="text-xl font-bold text-gray-900 mt-8 mb-3">Pillar 2: The Emergency Fund</h2>
+            <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2"><span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>Pillar 2: The Emergency Fund</h2>
             <p>
               Before you invest anything, build an emergency fund of 6 months of personal expenses
               in a separate savings account. Not 3 months — 6. Freelancers face income gaps that
@@ -131,7 +131,7 @@ export default function FreelanceFinancialPlanningUAE() {
           </section>
 
           <section>
-            <h2 className="text-xl font-bold text-gray-900 mt-8 mb-3">Pillar 3: Business vs Personal Money</h2>
+            <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2"><span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>Pillar 3: Business vs Personal Money</h2>
             <p>
               Many UAE freelancers run everything through one account. This is a mistake for three
               reasons:
@@ -155,7 +155,7 @@ export default function FreelanceFinancialPlanningUAE() {
           </section>
 
           <section>
-            <h2 className="text-xl font-bold text-gray-900 mt-8 mb-3">Pillar 4: Long-Term Wealth Without a Pension</h2>
+            <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2"><span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>Pillar 4: Long-Term Wealth Without a Pension</h2>
             <p>
               The UAE has no mandatory pension scheme for expatriates. If you do not build
               retirement wealth yourself, there is no safety net. The good news: with no income tax,
@@ -204,7 +204,7 @@ export default function FreelanceFinancialPlanningUAE() {
           </section>
 
           <section>
-            <h2 className="text-xl font-bold text-gray-900 mt-8 mb-3">Health and Protection Insurance</h2>
+            <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2"><span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>Health and Protection Insurance</h2>
             <p>
               Health insurance is mandatory for all UAE residents, and as a freelancer you are
               responsible for arranging your own. Beyond the mandatory cover, consider:
@@ -229,7 +229,7 @@ export default function FreelanceFinancialPlanningUAE() {
           </section>
 
           <section>
-            <h2 className="text-xl font-bold text-gray-900 mt-8 mb-3">Your UAE Freelancer Financial Checklist</h2>
+            <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2"><span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>Your UAE Freelancer Financial Checklist</h2>
             <div className="space-y-2 mt-3">
               {[
                 "Separate business and personal bank accounts",
@@ -244,14 +244,14 @@ export default function FreelanceFinancialPlanningUAE() {
               ].map((item, i) => (
                 <div key={i} className="flex items-start gap-3 py-2 border-b border-gray-100 last:border-0">
                   <div className="w-5 h-5 border-2 border-gray-300 rounded shrink-0 mt-0.5" />
-                  <p className="text-sm text-gray-700">{item}</p>
+                  <p className="text-sm text-emerald-800">{item}</p>
                 </div>
               ))}
             </div>
           </section>
 
           <section>
-            <h2 className="text-xl font-bold text-gray-900 mt-8 mb-3">A Note on Financial Advisors in the UAE</h2>
+            <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2"><span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>A Note on Financial Advisors in the UAE</h2>
             <p>
               The UAE has a significant number of financial advisors, and not all of them are
               working in your best interest. Be very cautious of advisors who:
@@ -270,8 +270,8 @@ export default function FreelanceFinancialPlanningUAE() {
           </section>
 
           {/* CTA */}
-          <div className="bg-gray-950 text-white rounded-2xl p-6 mt-10">
-            <p className="text-xs font-semibold text-gray-400 uppercase tracking-widest mb-2">Track your business finances</p>
+          <div className="bg-gradient-to-br from-gray-900 to-gray-800 text-white rounded-2xl p-8 mt-12 text-center">
+            <p className="text-xs font-bold text-emerald-400 uppercase tracking-widest block mb-3">Track your business finances</p>
             <h3 className="text-lg font-bold mb-2">The Solopreneur OS includes a finance tracker</h3>
             <p className="text-gray-400 text-sm mb-4">
               Monitor your monthly revenue, expenses, take-home salary, and savings rate — all in
@@ -279,7 +279,7 @@ export default function FreelanceFinancialPlanningUAE() {
             </p>
             <Link
               href="/products/solopreneur-os"
-              className="inline-block bg-white text-gray-900 font-bold px-5 py-2.5 rounded-xl hover:bg-gray-100 transition-colors text-sm"
+              className="inline-block bg-emerald-500 hover:bg-emerald-400 text-white font-bold px-8 py-3 rounded-xl transition-colors text-sm"
             >
               See the Solopreneur OS →
             </Link>

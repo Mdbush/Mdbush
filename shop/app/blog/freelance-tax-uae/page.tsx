@@ -256,7 +256,7 @@ export default function FreeanceTaxUAEPage() {
                 { href: "/blog/freelance-rate-calculator-uae", label: "Freelance Rate Calculator: How to Price Your Work in AED" },
                 { href: "/blog/best-banks-freelancers-uae", label: "Best Banks for UAE Freelancers (2026)" },
               ].map((link) => (
-                <Link key={link.href} href={link.href} className="block text-blue-600 hover:text-blue-800 text-sm">
+                <Link key={link.href} href={link.href} className="block text-emerald-700 hover:text-emerald-900 text-sm">
                   → {link.label}
                 </Link>
               ))}

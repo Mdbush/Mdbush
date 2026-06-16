@@ -240,7 +240,7 @@ export default function HowToUseNotionAsCRMUAE() {
                 { href: "/blog/best-notion-templates-freelancers-uae", label: "Best Notion Templates for Freelancers in the UAE" },
                 { href: "/blog/how-to-manage-multiple-clients-uae", label: "How to Manage Multiple Clients as a UAE Freelancer" },
               ].map((link) => (
-                <Link key={link.href} href={link.href} className="block text-blue-600 hover:text-blue-800 text-sm">
+                <Link key={link.href} href={link.href} className="block text-emerald-700 hover:text-emerald-900 text-sm">
                   → {link.label}
                 </Link>
               ))}

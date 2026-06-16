@@ -69,7 +69,7 @@ export default function FreelanceSupplyChainConsultantUAE() {
         </div>
 
 
-        <div className="prose prose-gray max-w-none text-gray-700 leading-relaxed space-y-6">
+        <div className="space-y-6 leading-relaxed">
 
           <p>
             The UAE is the logistics hub of the Middle East. Jebel Ali Port — the largest
@@ -80,8 +80,8 @@ export default function FreelanceSupplyChainConsultantUAE() {
             brands to government procurement functions. Here are the 2026 benchmarks.
           </p>
 
-          <div className="bg-gray-50 border border-gray-200 rounded-xl p-4 text-sm">
-            <p className="font-semibold text-gray-900 mb-1">Quick benchmark</p>
+          <div className="bg-emerald-50 border border-emerald-200 rounded-xl p-5">
+            <p className="text-sm font-bold text-emerald-800 mb-2">Quick benchmark</p>
             <p className="text-gray-700">
               A mid-level freelance supply chain consultant in the UAE with 5–9 years of
               experience typically earns <strong>AED 30,000–60,000/month</strong>. Senior consultants
@@ -91,7 +91,7 @@ export default function FreelanceSupplyChainConsultantUAE() {
           </div>
 
           <section>
-            <h2 className="text-xl font-bold text-gray-900 mt-8 mb-4">Freelance Supply Chain & Logistics Rates in the UAE (2026)</h2>
+            <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2"><span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>Freelance Supply Chain & Logistics Rates in the UAE (2026)</h2>
             <p className="text-xs text-gray-400 mb-4">Junior: 0–4 years / Mid: 5–9 years / Senior: 10+ years or CIPS/CSCP specialist</p>
             <div className="overflow-x-auto">
               <table className="w-full text-sm border-collapse">
@@ -118,7 +118,7 @@ export default function FreelanceSupplyChainConsultantUAE() {
           </section>
 
           <section>
-            <h2 className="text-xl font-bold text-gray-900 mt-8 mb-3">High-Value Supply Chain Niches in the UAE</h2>
+            <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2"><span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>High-Value Supply Chain Niches in the UAE</h2>
             <div className="space-y-3 mt-4">
               {[
                 { niche: "FMCG distribution optimization (GCC)", rate: "AED 25,000–80,000+ per project", why: "UAE FMCG distributors serving GCC markets need constant supply chain optimization. Last-mile delivery costs, distributor margin management, and inventory right-sizing are recurring pain points." },
@@ -130,7 +130,7 @@ export default function FreelanceSupplyChainConsultantUAE() {
                 <div key={item.niche} className="border border-gray-200 rounded-xl p-4">
                   <div className="flex items-start justify-between gap-2 mb-1">
                     <p className="font-semibold text-gray-900 text-sm">{item.niche}</p>
-                    <span className="text-xs font-bold text-green-700 bg-green-50 px-2 py-0.5 rounded-full shrink-0">{item.rate}</span>
+                    <span className="text-xs font-bold text-emerald-700 bg-emerald-50 border border-emerald-200 px-2 py-0.5 rounded-full shrink-0">{item.rate}</span>
                   </div>
                   <p className="text-xs text-gray-600">{item.why}</p>
                 </div>
@@ -139,7 +139,7 @@ export default function FreelanceSupplyChainConsultantUAE() {
           </section>
 
           <section>
-            <h2 className="text-xl font-bold text-gray-900 mt-8 mb-3">Certifications That Drive UAE Supply Chain Rates</h2>
+            <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2"><span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>Certifications That Drive UAE Supply Chain Rates</h2>
             <ul className="space-y-2 text-sm text-gray-600 mt-3">
               <li><strong>CIPS (Chartered Institute of Procurement & Supply):</strong> The most recognized procurement credential in UAE government and large corporate procurement. MCIPS (Member) or FCIPS (Fellow) significantly increases rate ceiling and government tender eligibility.</li>
               <li><strong>CSCP (Certified Supply Chain Professional — APICS):</strong> End-to-end supply chain credential. Recognized by multinational manufacturers and retailers in the UAE.</li>
@@ -150,7 +150,7 @@ export default function FreelanceSupplyChainConsultantUAE() {
           </section>
 
           <section>
-            <h2 className="text-xl font-bold text-gray-900 mt-8 mb-3">Where to Find Supply Chain Consulting Clients in the UAE</h2>
+            <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2"><span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>Where to Find Supply Chain Consulting Clients in the UAE</h2>
             <ul className="space-y-2 text-sm text-gray-600 mt-3">
               <li>• <strong>Dubai Chamber of Commerce events:</strong> FMCG, retail, and logistics company decision-makers attend regularly</li>
               <li>• <strong>Manifest Dubai (annual logistics conference):</strong> The primary UAE logistics industry networking event</li>
@@ -161,8 +161,8 @@ export default function FreelanceSupplyChainConsultantUAE() {
           </section>
 
           {/* CTA */}
-          <div className="bg-gray-950 text-white rounded-2xl p-6 mt-10">
-            <p className="text-xs font-semibold text-gray-400 uppercase tracking-widest mb-2">Win more consulting projects</p>
+          <div className="bg-gradient-to-br from-gray-900 to-gray-800 text-white rounded-2xl p-8 mt-12 text-center">
+            <p className="text-xs font-bold text-emerald-400 uppercase tracking-widest block mb-3">Win more consulting projects</p>
             <h3 className="text-lg font-bold mb-2">How to Win Government Contracts as a UAE Freelancer</h3>
             <p className="text-gray-400 text-sm mb-4">
               UAE government procurement portals, vendor registration, and how supply chain
@@ -170,7 +170,7 @@ export default function FreelanceSupplyChainConsultantUAE() {
             </p>
             <Link
               href="/blog/how-to-get-government-contracts-uae"
-              className="inline-block bg-white text-gray-900 font-bold px-5 py-2.5 rounded-xl hover:bg-gray-100 transition-colors text-sm"
+              className="inline-block bg-emerald-500 hover:bg-emerald-400 text-white font-bold px-8 py-3 rounded-xl transition-colors text-sm"
             >
               Read the Government Contracts Guide →
             </Link>

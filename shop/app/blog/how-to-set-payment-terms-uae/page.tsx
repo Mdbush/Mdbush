@@ -173,7 +173,7 @@ export default function HowToSetPaymentTermsUAE() {
                 { href: "/blog/how-to-get-paid-faster-uae", label: "How to Get Paid Faster as a UAE Freelancer" },
                 { href: "/blog/freelance-contract-template-uae", label: "Freelance Contract Template UAE" },
               ].map((link) => (
-                <Link key={link.href} href={link.href} className="block text-blue-600 hover:text-blue-800 text-sm">
+                <Link key={link.href} href={link.href} className="block text-emerald-700 hover:text-emerald-900 text-sm">
                   → {link.label}
                 </Link>
               ))}

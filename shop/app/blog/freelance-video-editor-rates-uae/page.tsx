@@ -67,7 +67,7 @@ export default function FreelanceVideoEditorRatesUAE() {
         </div>
 
 
-        <div className="prose prose-gray max-w-none text-gray-700 leading-relaxed space-y-6">
+        <div className="space-y-6 leading-relaxed">
 
           <p>
             Demand for video content in the UAE has surged as brands invest more in short-form
@@ -86,7 +86,7 @@ export default function FreelanceVideoEditorRatesUAE() {
           </div>
 
           <section>
-            <h2 className="text-xl font-bold text-gray-900 mt-8 mb-4">Video Editing Rates in the UAE by Project Type (2026)</h2>
+            <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2"><span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>Video Editing Rates in the UAE by Project Type (2026)</h2>
 
             <div className="overflow-x-auto -mx-4 sm:mx-0">
               <table className="w-full text-sm border-collapse min-w-[500px]">
@@ -113,7 +113,7 @@ export default function FreelanceVideoEditorRatesUAE() {
           </section>
 
           <section>
-            <h2 className="text-xl font-bold text-gray-900 mt-8 mb-3">Per-Video vs Hourly vs Monthly Retainer</h2>
+            <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2"><span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>Per-Video vs Hourly vs Monthly Retainer</h2>
 
             <h3 className="text-base font-semibold text-gray-900 mt-4 mb-2">Per-video pricing (best for one-off projects)</h3>
             <p>
@@ -150,7 +150,7 @@ export default function FreelanceVideoEditorRatesUAE() {
           </section>
 
           <section>
-            <h2 className="text-xl font-bold text-gray-900 mt-8 mb-3">Factors That Justify Higher Rates</h2>
+            <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2"><span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>Factors That Justify Higher Rates</h2>
             <ul className="space-y-2 text-sm text-gray-600 mt-3">
               <li><strong>Motion graphics expertise (After Effects, Cinema 4D):</strong> Add AED 100–300/hour on top of base editing rate</li>
               <li><strong>Colour grading to professional standard:</strong> AED 200–500 per project on top of editing</li>
@@ -162,7 +162,7 @@ export default function FreelanceVideoEditorRatesUAE() {
           </section>
 
           <section>
-            <h2 className="text-xl font-bold text-gray-900 mt-8 mb-3">Where UAE Video Editors Find Clients</h2>
+            <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2"><span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>Where UAE Video Editors Find Clients</h2>
             <p>
               The strongest channels in the UAE for video editors:
             </p>
@@ -176,7 +176,7 @@ export default function FreelanceVideoEditorRatesUAE() {
           </section>
 
           <section>
-            <h2 className="text-xl font-bold text-gray-900 mt-8 mb-3">Setting Your Rate When Starting Out</h2>
+            <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2"><span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>Setting Your Rate When Starting Out</h2>
             <p>
               New UAE video editors often undercharge to build a portfolio, which is understandable.
               However, do not go below AED 200/hour or AED 500 per short video — rates below that
@@ -187,8 +187,8 @@ export default function FreelanceVideoEditorRatesUAE() {
           </section>
 
           {/* CTA */}
-          <div className="bg-gray-950 text-white rounded-2xl p-6 mt-10">
-            <p className="text-xs font-semibold text-gray-400 uppercase tracking-widest mb-2">Get paid faster</p>
+          <div className="bg-gradient-to-br from-gray-900 to-gray-800 text-white rounded-2xl p-8 mt-12 text-center">
+            <p className="text-xs font-bold text-emerald-400 uppercase tracking-widest block mb-3">Get paid faster</p>
             <h3 className="text-lg font-bold mb-2">The Solopreneur OS tracks your revenue and client projects</h3>
             <p className="text-gray-400 text-sm mb-4">
               Know your monthly revenue at a glance, track active projects, and plan your
@@ -196,7 +196,7 @@ export default function FreelanceVideoEditorRatesUAE() {
             </p>
             <Link
               href="/products/solopreneur-os"
-              className="inline-block bg-white text-gray-900 font-bold px-5 py-2.5 rounded-xl hover:bg-gray-100 transition-colors text-sm"
+              className="inline-block bg-emerald-500 hover:bg-emerald-400 text-white font-bold px-8 py-3 rounded-xl transition-colors text-sm"
             >
               See the Solopreneur OS →
             </Link>

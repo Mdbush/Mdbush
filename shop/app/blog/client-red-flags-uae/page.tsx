@@ -111,7 +111,7 @@ export default function ClientRedFlagsUAE() {
         </div>
 
 
-        <div className="prose prose-gray max-w-none text-gray-700 leading-relaxed space-y-6">
+        <div className="space-y-6 leading-relaxed">
 
           <p>
             The most expensive mistakes in a freelance career are not bad projects — they are bad
@@ -146,7 +146,7 @@ export default function ClientRedFlagsUAE() {
           </div>
 
           <section>
-            <h2 className="text-xl font-bold text-gray-900 mt-8 mb-3">When You Spot Multiple Red Flags</h2>
+            <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2"><span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>When You Spot Multiple Red Flags</h2>
             <p>
               One red flag can be addressed with a direct conversation. Two red flags together
               warrant careful evaluation. Three or more — especially in combination with gut
@@ -168,7 +168,7 @@ export default function ClientRedFlagsUAE() {
           </section>
 
           <section>
-            <h2 className="text-xl font-bold text-gray-900 mt-8 mb-3">The Flip Side: What Good Clients Look Like</h2>
+            <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2"><span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>The Flip Side: What Good Clients Look Like</h2>
             <ul className="space-y-1 text-sm text-gray-600 mt-3">
               <li>• They come with a clear brief or are willing to work on one together</li>
               <li>• They ask about your process and timeline — not just your price</li>
@@ -185,8 +185,8 @@ export default function ClientRedFlagsUAE() {
           </section>
 
           {/* CTA */}
-          <div className="bg-gray-950 text-white rounded-2xl p-6 mt-10">
-            <p className="text-xs font-semibold text-gray-400 uppercase tracking-widest mb-2">Protect yourself from the start</p>
+          <div className="bg-gradient-to-br from-gray-900 to-gray-800 text-white rounded-2xl p-8 mt-12 text-center">
+            <p className="text-xs font-bold text-emerald-400 uppercase tracking-widest block mb-3">Protect yourself from the start</p>
             <h3 className="text-lg font-bold mb-2">Freelance Contract: 9 Clauses You Must Include</h3>
             <p className="text-gray-400 text-sm mb-4">
               A solid contract prevents most client problems before they start. These 9 clauses
@@ -195,7 +195,7 @@ export default function ClientRedFlagsUAE() {
             </p>
             <Link
               href="/blog/freelance-contract-template-uae"
-              className="inline-block bg-white text-gray-900 font-bold px-5 py-2.5 rounded-xl hover:bg-gray-100 transition-colors text-sm"
+              className="inline-block bg-emerald-500 hover:bg-emerald-400 text-white font-bold px-8 py-3 rounded-xl transition-colors text-sm"
             >
               Read the Contract Guide →
             </Link>

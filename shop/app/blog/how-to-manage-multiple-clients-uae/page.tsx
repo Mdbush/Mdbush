@@ -86,7 +86,7 @@ export default function HowToManageMultipleClientsUAE() {
         </div>
 
 
-        <div className="prose prose-gray max-w-none text-gray-700 leading-relaxed space-y-6">
+        <div className="space-y-6 leading-relaxed">
 
           <p>
             Managing multiple clients simultaneously is how most freelancers grow their income
@@ -120,7 +120,7 @@ export default function HowToManageMultipleClientsUAE() {
           </div>
 
           <section>
-            <h2 className="text-xl font-bold text-gray-900 mt-8 mb-3">When a Client Demands More Than Their Share</h2>
+            <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2"><span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>When a Client Demands More Than Their Share</h2>
             <p>
               Some clients expand to fill whatever space you give them. Warning signs: messages
               at all hours, frequent scope additions, expecting same-day turnarounds on every
@@ -143,7 +143,7 @@ export default function HowToManageMultipleClientsUAE() {
           </section>
 
           <section>
-            <h2 className="text-xl font-bold text-gray-900 mt-8 mb-3">Signs You Have Too Many Clients</h2>
+            <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2"><span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>Signs You Have Too Many Clients</h2>
             <ul className="space-y-2 text-sm text-gray-600 mt-3">
               <li>• You regularly miss self-imposed deadlines or have to ask for extensions</li>
               <li>• You are doing shallow work on all clients rather than deep work on any of them</li>
@@ -159,8 +159,8 @@ export default function HowToManageMultipleClientsUAE() {
           </section>
 
           {/* CTA */}
-          <div className="bg-gray-950 text-white rounded-2xl p-6 mt-10">
-            <p className="text-xs font-semibold text-gray-400 uppercase tracking-widest mb-2">Build the system that holds it all together</p>
+          <div className="bg-gradient-to-br from-gray-900 to-gray-800 text-white rounded-2xl p-8 mt-12 text-center">
+            <p className="text-xs font-bold text-emerald-400 uppercase tracking-widest block mb-3">Build the system that holds it all together</p>
             <h3 className="text-lg font-bold mb-2">Notion Setup Guide for UAE Freelancers</h3>
             <p className="text-gray-400 text-sm mb-4">
               Client dashboards, project tracking, communication logs, and deadline calendars —
@@ -168,7 +168,7 @@ export default function HowToManageMultipleClientsUAE() {
             </p>
             <Link
               href="/blog/notion-setup-guide-freelancers"
-              className="inline-block bg-white text-gray-900 font-bold px-5 py-2.5 rounded-xl hover:bg-gray-100 transition-colors text-sm"
+              className="inline-block bg-emerald-500 hover:bg-emerald-400 text-white font-bold px-8 py-3 rounded-xl transition-colors text-sm"
             >
               Read the Notion Guide →
             </Link>

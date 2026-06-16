@@ -183,7 +183,7 @@ export default function HowToWriteLinkedInContentUAE() {
                 { href: "/blog/how-to-build-personal-brand-linkedin-uae", label: "How to Build a Personal Brand on LinkedIn in the UAE" },
                 { href: "/blog/how-to-use-linkedin-ads-freelancers-uae", label: "How UAE Freelancers Can Use LinkedIn Ads to Get B2B Clients" },
               ].map((link) => (
-                <Link key={link.href} href={link.href} className="block text-blue-600 hover:text-blue-800 text-sm">
+                <Link key={link.href} href={link.href} className="block text-emerald-700 hover:text-emerald-900 text-sm">
                   → {link.label}
                 </Link>
               ))}

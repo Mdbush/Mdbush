@@ -86,7 +86,7 @@ export default function HowToUseAIWriteProposalsUAE() {
         </div>
 
 
-        <div className="prose prose-gray max-w-none text-gray-700 leading-relaxed space-y-6">
+        <div className="space-y-6 leading-relaxed">
 
           <p>
             Most freelancers take 2–4 hours to write a proposal from scratch. With the right
@@ -108,7 +108,7 @@ export default function HowToUseAIWriteProposalsUAE() {
           </div>
 
           <section>
-            <h2 className="text-xl font-bold text-gray-900 mt-8 mb-3">The 5-Section Proposal Structure (AI-Assisted)</h2>
+            <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2"><span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>The 5-Section Proposal Structure (AI-Assisted)</h2>
             <p>
               Every winning UAE freelance proposal contains these five sections in this order.
               Below each is the AI prompt that generates a strong first draft:
@@ -134,7 +134,7 @@ export default function HowToUseAIWriteProposalsUAE() {
           </section>
 
           <section>
-            <h2 className="text-xl font-bold text-gray-900 mt-8 mb-3">The 20-Minute AI Proposal Workflow</h2>
+            <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2"><span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>The 20-Minute AI Proposal Workflow</h2>
             <div className="space-y-3 mt-4">
               {[
                 { time: "Minutes 1–5", task: "Read the brief carefully. Write 3 bullet points: the real problem, what success looks like for the client, and one risk they probably haven't mentioned. This is your thinking, not AI's." },
@@ -144,15 +144,15 @@ export default function HowToUseAIWriteProposalsUAE() {
                 { time: "Minutes 19–20", task: "Add one personalized sentence to the opening that shows you paid attention to something specific about the client — their recent project, a challenge they mentioned, something on their website. No AI can do this." },
               ].map((step) => (
                 <div key={step.time} className="flex gap-4 border border-gray-200 rounded-xl p-4">
-                  <span className="text-xs font-bold text-blue-700 bg-blue-50 px-2 py-1 rounded-lg shrink-0 h-fit">{step.time}</span>
-                  <p className="text-sm text-gray-700">{step.task}</p>
+                  <span className="text-xs font-bold text-blue-700 bg-emerald-50 px-2 py-1 rounded-lg shrink-0 h-fit">{step.time}</span>
+                  <p className="text-sm text-emerald-800">{step.task}</p>
                 </div>
               ))}
             </div>
           </section>
 
           <section>
-            <h2 className="text-xl font-bold text-gray-900 mt-8 mb-3">UAE-Specific Proposal Considerations</h2>
+            <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2"><span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>UAE-Specific Proposal Considerations</h2>
             <ul className="space-y-2 text-sm text-gray-600 mt-3">
               <li>• <strong>Include your trade license number:</strong> UAE corporate clients often require this for vendor records before approving payment</li>
               <li>• <strong>State VAT position:</strong> If registered for VAT, state your TRN and that prices are exclusive of 5% VAT</li>
@@ -163,7 +163,7 @@ export default function HowToUseAIWriteProposalsUAE() {
           </section>
 
           <section>
-            <h2 className="text-xl font-bold text-gray-900 mt-8 mb-3">Common AI Proposal Mistakes to Avoid</h2>
+            <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2"><span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>Common AI Proposal Mistakes to Avoid</h2>
             <ul className="space-y-2 text-sm text-gray-600 mt-3">
               <li>• <strong>Using the AI output without editing:</strong> AI writes generically. Every sentence must earn its place.</li>
               <li>• <strong>Letting AI set your price:</strong> Price is a strategic decision — AI doesn&apos;t know your capacity, your costs, or how much you want the project</li>
@@ -174,8 +174,8 @@ export default function HowToUseAIWriteProposalsUAE() {
           </section>
 
           {/* CTA */}
-          <div className="bg-gray-950 text-white rounded-2xl p-6 mt-10">
-            <p className="text-xs font-semibold text-gray-400 uppercase tracking-widest mb-2">Get 50 AI prompts for freelancers</p>
+          <div className="bg-gradient-to-br from-gray-900 to-gray-800 text-white rounded-2xl p-8 mt-12 text-center">
+            <p className="text-xs font-bold text-emerald-400 uppercase tracking-widest block mb-3">Get 50 AI prompts for freelancers</p>
             <h3 className="text-lg font-bold mb-2">AI Prompt Pack Pro — 50 Prompts for Freelance Work</h3>
             <p className="text-gray-400 text-sm mb-4">
               Proposals, client emails, invoices, follow-ups, content outlines, and more.
@@ -183,7 +183,7 @@ export default function HowToUseAIWriteProposalsUAE() {
             </p>
             <Link
               href="/products/ai-prompt-pack-pro"
-              className="inline-block bg-white text-gray-900 font-bold px-5 py-2.5 rounded-xl hover:bg-gray-100 transition-colors text-sm"
+              className="inline-block bg-emerald-500 hover:bg-emerald-400 text-white font-bold px-8 py-3 rounded-xl transition-colors text-sm"
             >
               Get the AI Prompt Pack →
             </Link>

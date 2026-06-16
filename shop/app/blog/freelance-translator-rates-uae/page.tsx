@@ -69,7 +69,7 @@ export default function FreelanceTranslatorRatesUAE() {
         </div>
 
 
-        <div className="prose prose-gray max-w-none text-gray-700 leading-relaxed space-y-6">
+        <div className="space-y-6 leading-relaxed">
 
           <p>
             Translation and interpretation in the UAE is a specialized market. The country&apos;s
@@ -80,8 +80,8 @@ export default function FreelanceTranslatorRatesUAE() {
             certification is required. Here are the 2026 benchmarks.
           </p>
 
-          <div className="bg-gray-50 border border-gray-200 rounded-xl p-4 text-sm">
-            <p className="font-semibold text-gray-900 mb-1">Quick benchmark</p>
+          <div className="bg-emerald-50 border border-emerald-200 rounded-xl p-5">
+            <p className="text-sm font-bold text-emerald-800 mb-2">Quick benchmark</p>
             <p className="text-gray-700">
               A mid-level freelance translator working between Arabic and English with
               3–6 years of experience and legal or medical specialization typically earns
@@ -91,7 +91,7 @@ export default function FreelanceTranslatorRatesUAE() {
           </div>
 
           <section>
-            <h2 className="text-xl font-bold text-gray-900 mt-8 mb-4">Freelance Translation & Interpretation Rates in the UAE (2026)</h2>
+            <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2"><span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>Freelance Translation & Interpretation Rates in the UAE (2026)</h2>
             <p className="text-xs text-gray-400 mb-4">Junior: 0–2 years / Mid: 3–6 years / Senior: 7+ years or certified specialist (legal/medical/sworn)</p>
             <div className="overflow-x-auto">
               <table className="w-full text-sm border-collapse">
@@ -118,7 +118,7 @@ export default function FreelanceTranslatorRatesUAE() {
           </section>
 
           <section>
-            <h2 className="text-xl font-bold text-gray-900 mt-8 mb-3">The UAE Translation Market: What Makes It Different</h2>
+            <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2"><span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>The UAE Translation Market: What Makes It Different</h2>
 
             <h3 className="text-base font-semibold text-gray-900 mt-4 mb-2">Sworn/certified translation premium</h3>
             <p>
@@ -148,7 +148,7 @@ export default function FreelanceTranslatorRatesUAE() {
           </section>
 
           <section>
-            <h2 className="text-xl font-bold text-gray-900 mt-8 mb-3">High-Value Translation Niches in the UAE</h2>
+            <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2"><span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>High-Value Translation Niches in the UAE</h2>
             <div className="space-y-3 mt-4">
               {[
                 { niche: "Legal translation (contracts, court documents, arbitration)", rate: "AED 0.60–1.80+/word", why: "Legal documents require precision and certified translators. Law firms and courts pay above-market rates for qualified practitioners." },
@@ -160,7 +160,7 @@ export default function FreelanceTranslatorRatesUAE() {
                 <div key={item.niche} className="border border-gray-200 rounded-xl p-4">
                   <div className="flex items-start justify-between gap-2 mb-1">
                     <p className="font-semibold text-gray-900 text-sm">{item.niche}</p>
-                    <span className="text-xs font-bold text-green-700 bg-green-50 px-2 py-0.5 rounded-full shrink-0">{item.rate}</span>
+                    <span className="text-xs font-bold text-emerald-700 bg-emerald-50 border border-emerald-200 px-2 py-0.5 rounded-full shrink-0">{item.rate}</span>
                   </div>
                   <p className="text-xs text-gray-600">{item.why}</p>
                 </div>
@@ -169,7 +169,7 @@ export default function FreelanceTranslatorRatesUAE() {
           </section>
 
           <section>
-            <h2 className="text-xl font-bold text-gray-900 mt-8 mb-3">Certifications & Registration</h2>
+            <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2"><span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>Certifications & Registration</h2>
             <ul className="space-y-2 text-sm text-gray-600 mt-3">
               <li><strong>UAE Ministry of Justice sworn translator registration:</strong> Required for certified translation accepted by UAE courts and government. Highest-value credential in the UAE market.</li>
               <li><strong>ATA (American Translators Association) certification:</strong> Recognized internationally and by international law firms operating in the UAE.</li>
@@ -179,8 +179,8 @@ export default function FreelanceTranslatorRatesUAE() {
           </section>
 
           {/* CTA */}
-          <div className="bg-gray-950 text-white rounded-2xl p-6 mt-10">
-            <p className="text-xs font-semibold text-gray-400 uppercase tracking-widest mb-2">Build a sustainable translation practice</p>
+          <div className="bg-gradient-to-br from-gray-900 to-gray-800 text-white rounded-2xl p-8 mt-12 text-center">
+            <p className="text-xs font-bold text-emerald-400 uppercase tracking-widest block mb-3">Build a sustainable translation practice</p>
             <h3 className="text-lg font-bold mb-2">Freelance Rate Calculator: How Much Should You Charge?</h3>
             <p className="text-gray-400 text-sm mb-4">
               Input your UAE costs, target income, and working hours to calculate your
@@ -188,7 +188,7 @@ export default function FreelanceTranslatorRatesUAE() {
             </p>
             <Link
               href="/blog/freelance-rate-calculator-uae"
-              className="inline-block bg-white text-gray-900 font-bold px-5 py-2.5 rounded-xl hover:bg-gray-100 transition-colors text-sm"
+              className="inline-block bg-emerald-500 hover:bg-emerald-400 text-white font-bold px-8 py-3 rounded-xl transition-colors text-sm"
             >
               Use the Rate Calculator →
             </Link>

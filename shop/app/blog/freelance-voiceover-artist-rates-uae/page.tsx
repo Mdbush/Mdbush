@@ -70,7 +70,7 @@ export default function FreelanceVoiceoverArtistRatesUAE() {
         </div>
 
 
-        <div className="prose prose-gray max-w-none text-gray-700 leading-relaxed space-y-6">
+        <div className="space-y-6 leading-relaxed">
 
           <p>
             The UAE has one of the most active voiceover markets in the Middle East. Arabic
@@ -81,8 +81,8 @@ export default function FreelanceVoiceoverArtistRatesUAE() {
             strongest per-hour rates in the creative industry. Here are the 2026 benchmarks.
           </p>
 
-          <div className="bg-gray-50 border border-gray-200 rounded-xl p-4 text-sm">
-            <p className="font-semibold text-gray-900 mb-1">Quick benchmark</p>
+          <div className="bg-emerald-50 border border-emerald-200 rounded-xl p-5">
+            <p className="text-sm font-bold text-emerald-800 mb-2">Quick benchmark</p>
             <p className="text-gray-700">
               A mid-level Arabic VO artist in the UAE with a professional home studio
               and 4–7 years of experience typically charges
@@ -95,7 +95,7 @@ export default function FreelanceVoiceoverArtistRatesUAE() {
           </div>
 
           <section>
-            <h2 className="text-xl font-bold text-gray-900 mt-8 mb-4">Freelance Voiceover Artist Rates in the UAE by Project Type (2026)</h2>
+            <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2"><span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>Freelance Voiceover Artist Rates in the UAE by Project Type (2026)</h2>
             <p className="text-xs text-gray-400 mb-4">Junior: 0–3 years / Mid: 4–7 years / Senior: 8+ years or broadcast/government specialist</p>
             <div className="overflow-x-auto">
               <table className="w-full text-sm border-collapse">
@@ -122,7 +122,7 @@ export default function FreelanceVoiceoverArtistRatesUAE() {
           </section>
 
           <section>
-            <h2 className="text-xl font-bold text-gray-900 mt-8 mb-3">High-Value Voiceover Niches in the UAE</h2>
+            <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2"><span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>High-Value Voiceover Niches in the UAE</h2>
             <div className="space-y-3 mt-4">
               {[
                 { niche: "UAE government & semi-government campaigns", rate: "AED 8,000–80,000+ per campaign", why: "Government entities (Ministry of Health, Dubai Municipality, ADNOC, Etihad) run large-scale campaigns requiring professional Arabic narration for video, radio, and multimedia. These projects are well-funded, professionally managed, and often require native Emirati or Gulf Arabic voice talent for authenticity. Agency relationships are the primary entry point." },
@@ -133,7 +133,7 @@ export default function FreelanceVoiceoverArtistRatesUAE() {
                 <div key={item.niche} className="border border-gray-200 rounded-xl p-4">
                   <div className="flex items-start justify-between gap-2 mb-1">
                     <p className="font-semibold text-gray-900 text-sm">{item.niche}</p>
-                    <span className="text-xs font-bold text-green-700 bg-green-50 px-2 py-0.5 rounded-full shrink-0">{item.rate}</span>
+                    <span className="text-xs font-bold text-emerald-700 bg-emerald-50 border border-emerald-200 px-2 py-0.5 rounded-full shrink-0">{item.rate}</span>
                   </div>
                   <p className="text-xs text-gray-600">{item.why}</p>
                 </div>
@@ -142,7 +142,7 @@ export default function FreelanceVoiceoverArtistRatesUAE() {
           </section>
 
           <section>
-            <h2 className="text-xl font-bold text-gray-900 mt-8 mb-3">Usage Rights: How to License Your VO</h2>
+            <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2"><span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>Usage Rights: How to License Your VO</h2>
             <p>
               Voiceover rates are not fixed — they depend heavily on how the recording is
               used. The same 30-second read commands very different fees depending on usage:
@@ -150,7 +150,7 @@ export default function FreelanceVoiceoverArtistRatesUAE() {
             <div className="space-y-3 mt-4">
               <div className="border border-gray-200 rounded-xl p-4">
                 <p className="font-bold text-gray-900 text-sm mb-2">Online / digital only (limited term)</p>
-                <p className="text-sm text-gray-700">
+                <p className="text-sm text-emerald-800">
                   Social media ads, YouTube, website use — lowest usage category. Base rate
                   applies. Specify the term (6 months, 1 year) and territory (UAE only,
                   MENA, global). Unlimited digital use in perpetuity is worth 3–5x the
@@ -159,7 +159,7 @@ export default function FreelanceVoiceoverArtistRatesUAE() {
               </div>
               <div className="border border-gray-200 rounded-xl p-4">
                 <p className="font-bold text-gray-900 text-sm mb-2">Broadcast (TV / radio) — regional</p>
-                <p className="text-sm text-gray-700">
+                <p className="text-sm text-emerald-800">
                   UAE, GCC, or MENA broadcast adds a significant usage premium — typically
                   2–5x online rates. Specify the broadcast territory precisely. A UAE
                   national TV campaign is different from a pan-Arab satellite broadcast
@@ -168,7 +168,7 @@ export default function FreelanceVoiceoverArtistRatesUAE() {
               </div>
               <div className="border border-gray-200 rounded-xl p-4">
                 <p className="font-bold text-gray-900 text-sm mb-2">Buyout vs. residual model</p>
-                <p className="text-sm text-gray-700">
+                <p className="text-sm text-emerald-800">
                   The UAE market mostly operates on flat buyouts — one fee covers a defined
                   term and territory. Western residual models (ongoing payments per broadcast)
                   are uncommon here. If a client wants unlimited, perpetual, global rights
@@ -180,7 +180,7 @@ export default function FreelanceVoiceoverArtistRatesUAE() {
           </section>
 
           <section>
-            <h2 className="text-xl font-bold text-gray-900 mt-8 mb-3">Home Studio Setup for UAE Voiceover Artists</h2>
+            <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2"><span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>Home Studio Setup for UAE Voiceover Artists</h2>
             <p>
               A professional home studio is non-negotiable for consistent freelance VO
               work in the UAE. Clients expect broadcast-ready audio on first delivery.
@@ -196,8 +196,8 @@ export default function FreelanceVoiceoverArtistRatesUAE() {
           </section>
 
           {/* CTA */}
-          <div className="bg-gray-950 text-white rounded-2xl p-6 mt-10">
-            <p className="text-xs font-semibold text-gray-400 uppercase tracking-widest mb-2">Manage your voiceover projects</p>
+          <div className="bg-gradient-to-br from-gray-900 to-gray-800 text-white rounded-2xl p-8 mt-12 text-center">
+            <p className="text-xs font-bold text-emerald-400 uppercase tracking-widest block mb-3">Manage your voiceover projects</p>
             <h3 className="text-lg font-bold mb-2">Freelancer Client CRM — Track Every Project & Invoice</h3>
             <p className="text-gray-400 text-sm mb-4">
               Track VO projects from brief to delivery, log usage rights and revision rounds,
@@ -205,7 +205,7 @@ export default function FreelanceVoiceoverArtistRatesUAE() {
             </p>
             <Link
               href="/products/freelancer-client-crm"
-              className="inline-block bg-white text-gray-900 font-bold px-5 py-2.5 rounded-xl hover:bg-gray-100 transition-colors text-sm"
+              className="inline-block bg-emerald-500 hover:bg-emerald-400 text-white font-bold px-8 py-3 rounded-xl transition-colors text-sm"
             >
               Get the Client CRM →
             </Link>

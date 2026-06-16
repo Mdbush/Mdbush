@@ -105,7 +105,7 @@ export default function HowToSellDigitalProductsUAE() {
         </div>
 
 
-        <div className="prose prose-gray max-w-none text-gray-700 leading-relaxed space-y-6">
+        <div className="space-y-6 leading-relaxed">
 
           <p>
             Digital products — templates, prompt packs, guides, and courses — are the
@@ -116,8 +116,8 @@ export default function HowToSellDigitalProductsUAE() {
             per month alongside client work. Here&apos;s how to build one that sells.
           </p>
 
-          <div className="bg-gray-50 border border-gray-200 rounded-xl p-4 text-sm">
-            <p className="font-semibold text-gray-900 mb-1">The core principle</p>
+          <div className="bg-emerald-50 border border-emerald-200 rounded-xl p-5">
+            <p className="text-sm font-bold text-emerald-800 mb-2">The core principle</p>
             <p className="text-gray-700">
               The best digital product is documentation of something you already do.
               If you have a client onboarding system, a proposal template, a rate-setting
@@ -127,14 +127,14 @@ export default function HowToSellDigitalProductsUAE() {
           </div>
 
           <section>
-            <h2 className="text-xl font-bold text-gray-900 mt-8 mb-4">Digital Product Types & What They Sell For</h2>
+            <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2"><span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>Digital Product Types & What They Sell For</h2>
             <div className="space-y-3 mt-4">
               {productTypes.map((p) => (
                 <div key={p.type} className="border border-gray-200 rounded-xl p-4">
                   <div className="flex items-start justify-between gap-2 mb-2">
                     <p className="font-semibold text-gray-900 text-sm">{p.type}</p>
                     <div className="flex gap-2 shrink-0">
-                      <span className="text-xs font-bold text-green-700 bg-green-50 px-2 py-0.5 rounded-full">{p.price}</span>
+                      <span className="text-xs font-bold text-emerald-700 bg-emerald-50 border border-emerald-200 px-2 py-0.5 rounded-full">{p.price}</span>
                       <span className="text-xs text-gray-500 bg-gray-100 px-2 py-0.5 rounded-full">Effort: {p.effort}</span>
                     </div>
                   </div>
@@ -145,7 +145,7 @@ export default function HowToSellDigitalProductsUAE() {
           </section>
 
           <section>
-            <h2 className="text-xl font-bold text-gray-900 mt-8 mb-3">The 5-Step Digital Product Launch</h2>
+            <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2"><span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>The 5-Step Digital Product Launch</h2>
             <div className="space-y-4 mt-4">
               {[
                 {
@@ -171,14 +171,14 @@ export default function HowToSellDigitalProductsUAE() {
               ].map((s) => (
                 <div key={s.step} className="border border-gray-200 rounded-xl p-4">
                   <p className="font-bold text-gray-900 text-sm mb-2">{s.step}</p>
-                  <p className="text-sm text-gray-700">{s.detail}</p>
+                  <p className="text-sm text-emerald-800">{s.detail}</p>
                 </div>
               ))}
             </div>
           </section>
 
           <section>
-            <h2 className="text-xl font-bold text-gray-900 mt-8 mb-3">Best Platforms for UAE Digital Product Sellers</h2>
+            <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2"><span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>Best Platforms for UAE Digital Product Sellers</h2>
             <div className="space-y-3 mt-4">
               {platforms.map((p) => (
                 <div key={p.name} className="border border-gray-200 rounded-xl p-4">
@@ -190,7 +190,7 @@ export default function HowToSellDigitalProductsUAE() {
           </section>
 
           <section>
-            <h2 className="text-xl font-bold text-gray-900 mt-8 mb-3">VAT Considerations for UAE Digital Product Sellers</h2>
+            <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2"><span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>VAT Considerations for UAE Digital Product Sellers</h2>
             <p>
               If you are VAT-registered in the UAE (annual turnover above AED 375,000),
               you must charge 5% VAT on digital products sold to UAE-based customers.
@@ -205,8 +205,8 @@ export default function HowToSellDigitalProductsUAE() {
           </section>
 
           {/* CTA */}
-          <div className="bg-gray-950 text-white rounded-2xl p-6 mt-10">
-            <p className="text-xs font-semibold text-gray-400 uppercase tracking-widest mb-2">See what a digital product looks like</p>
+          <div className="bg-gradient-to-br from-gray-900 to-gray-800 text-white rounded-2xl p-8 mt-12 text-center">
+            <p className="text-xs font-bold text-emerald-400 uppercase tracking-widest block mb-3">See what a digital product looks like</p>
             <h3 className="text-lg font-bold mb-2">Browse SoloKit Products — Built for UAE Freelancers</h3>
             <p className="text-gray-400 text-sm mb-4">
               Notion templates, AI prompt packs, and SOP toolkits. Each one was built
@@ -214,7 +214,7 @@ export default function HowToSellDigitalProductsUAE() {
             </p>
             <Link
               href="/#products"
-              className="inline-block bg-white text-gray-900 font-bold px-5 py-2.5 rounded-xl hover:bg-gray-100 transition-colors text-sm"
+              className="inline-block bg-emerald-500 hover:bg-emerald-400 text-white font-bold px-8 py-3 rounded-xl transition-colors text-sm"
             >
               Browse SoloKit Products →
             </Link>

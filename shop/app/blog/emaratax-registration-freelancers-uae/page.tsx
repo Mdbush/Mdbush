@@ -283,10 +283,10 @@ export default function EmarataxRegistrationFreelancersUAEPage() {
           <div className="mt-10">
             <h3 className="text-sm font-semibold text-gray-900 mb-3">Related Guides</h3>
             <div className="space-y-1.5">
-              <Link href="/blog/freelance-tax-uae" className="block text-blue-600 hover:text-blue-800 text-sm">→ Do Freelancers Pay Tax in the UAE? (2026 Complete Guide)</Link>
-              <Link href="/blog/freelance-invoice-uae" className="block text-blue-600 hover:text-blue-800 text-sm">→ How to Invoice Clients in the UAE (AED Invoicing Guide)</Link>
-              <Link href="/blog/freelance-visa-uae" className="block text-blue-600 hover:text-blue-800 text-sm">→ How to Get a Freelance Visa in UAE (2026)</Link>
-              <Link href="/blog/best-banks-freelancers-uae" className="block text-blue-600 hover:text-blue-800 text-sm">→ Best Banks for UAE Freelancers (2026)</Link>
+              <Link href="/blog/freelance-tax-uae" className="block text-emerald-700 hover:text-emerald-900 text-sm">→ Do Freelancers Pay Tax in the UAE? (2026 Complete Guide)</Link>
+              <Link href="/blog/freelance-invoice-uae" className="block text-emerald-700 hover:text-emerald-900 text-sm">→ How to Invoice Clients in the UAE (AED Invoicing Guide)</Link>
+              <Link href="/blog/freelance-visa-uae" className="block text-emerald-700 hover:text-emerald-900 text-sm">→ How to Get a Freelance Visa in UAE (2026)</Link>
+              <Link href="/blog/best-banks-freelancers-uae" className="block text-emerald-700 hover:text-emerald-900 text-sm">→ Best Banks for UAE Freelancers (2026)</Link>
             </div>
           </div>
         </div>

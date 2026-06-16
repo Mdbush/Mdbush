@@ -74,9 +74,9 @@ export default function HowToDealWithDifficultClientsUAE() {
               This is the most common difficult client type in the UAE, where net-60 or net-90 payment
               cultures are common in corporates.
             </p>
-            <div className="bg-blue-50 rounded-lg p-4 mb-3">
+            <div className="bg-emerald-50 rounded-lg p-4 mb-3">
               <div className="text-xs font-semibold text-blue-600 mb-2">SCRIPT (Week 1 after due date):</div>
-              <p className="text-sm text-blue-900 italic">
+              <p className="text-sm text-emerald-900 italic">
                 &quot;Hi [name], I wanted to follow up on invoice #[X] for AED [amount] which was due on [date]. Could you let me know the payment status and expected date? Happy to resend the invoice if that helps.&quot;
               </p>
             </div>
@@ -102,9 +102,9 @@ export default function HowToDealWithDifficultClientsUAE() {
               You agreed to design a 5-page website. They&apos;re now asking for a 12-page website plus a brand
               identity, social media templates, and &quot;while you&apos;re at it, can you also...&quot;
             </p>
-            <div className="bg-blue-50 rounded-lg p-4 mb-3">
+            <div className="bg-emerald-50 rounded-lg p-4 mb-3">
               <div className="text-xs font-semibold text-blue-600 mb-2">SCRIPT:</div>
-              <p className="text-sm text-blue-900 italic">
+              <p className="text-sm text-emerald-900 italic">
                 &quot;Happy to add [new request] to the project. This is outside our original scope, so I&apos;ll put together a quick change order for AED [amount]. Should take about [X days]. Want me to proceed?&quot;
               </p>
             </div>
@@ -124,9 +124,9 @@ export default function HowToDealWithDifficultClientsUAE() {
               Messages at 6am, 11pm, and over the weekend. Expects instant responses to every question.
               Treats your freelance relationship like a full-time employment relationship.
             </p>
-            <div className="bg-blue-50 rounded-lg p-4 mb-3">
+            <div className="bg-emerald-50 rounded-lg p-4 mb-3">
               <div className="text-xs font-semibold text-blue-600 mb-2">SCRIPT (set boundaries early):</div>
-              <p className="text-sm text-blue-900 italic">
+              <p className="text-sm text-emerald-900 italic">
                 &quot;Just a note on communication — I respond to messages within [4 hours] during business hours (9am–6pm, Monday–Friday). For urgent matters outside those hours, [define what urgent means or offer a priority retainer]. I find this keeps our work moving efficiently.&quot;
               </p>
             </div>
@@ -146,9 +146,9 @@ export default function HowToDealWithDifficultClientsUAE() {
               Round 7 of revisions and the brief keeps changing. &quot;I&apos;ll know it when I see it&quot; is not a brief.
               This client costs you money with every revision cycle.
             </p>
-            <div className="bg-blue-50 rounded-lg p-4 mb-3">
+            <div className="bg-emerald-50 rounded-lg p-4 mb-3">
               <div className="text-xs font-semibold text-blue-600 mb-2">SCRIPT (approaching limit):</div>
-              <p className="text-sm text-blue-900 italic">
+              <p className="text-sm text-emerald-900 italic">
                 &quot;We&apos;re at our second included revision round. I want to make sure you&apos;re completely happy with the outcome — if you&apos;d like further changes, I can continue at my standard rate of AED [X]/hour. Alternatively, if we can consolidate all remaining feedback into one final list, I&apos;ll include one more round at no extra charge.&quot;
               </p>
             </div>
@@ -168,9 +168,9 @@ export default function HowToDealWithDifficultClientsUAE() {
               You sent a proposal for AED 15,000. They came back asking for the same work for AED 7,000,
               or requesting &quot;just the most important parts&quot; without being specific.
             </p>
-            <div className="bg-blue-50 rounded-lg p-4 mb-3">
+            <div className="bg-emerald-50 rounded-lg p-4 mb-3">
               <div className="text-xs font-semibold text-blue-600 mb-2">SCRIPT:</div>
-              <p className="text-sm text-blue-900 italic">
+              <p className="text-sm text-emerald-900 italic">
                 &quot;My rate for this project reflects the scope outlined. I can work within a lower budget — but that would mean reducing the scope rather than the rate. Let me know which deliverables are your priority and I&apos;ll revise the proposal to fit your budget.&quot;
               </p>
             </div>
@@ -190,9 +190,9 @@ export default function HowToDealWithDifficultClientsUAE() {
               Project started, deposit paid, you&apos;re mid-work — and they stopped responding. Or they approved
               the work but haven&apos;t paid the final invoice and aren&apos;t responding to follow-ups.
             </p>
-            <div className="bg-blue-50 rounded-lg p-4 mb-3">
+            <div className="bg-emerald-50 rounded-lg p-4 mb-3">
               <div className="text-xs font-semibold text-blue-600 mb-2">SCRIPT (final attempt before escalation):</div>
-              <p className="text-sm text-blue-900 italic">
+              <p className="text-sm text-emerald-900 italic">
                 &quot;I haven&apos;t heard from you in [X weeks]. Invoice #[N] for AED [amount] remains outstanding. If I don&apos;t receive payment or a response by [date], I will need to pursue this through [small claims / Dubai Courts / DIFC Courts]. I&apos;d prefer to resolve this directly — please respond.&quot;
               </p>
             </div>
@@ -240,7 +240,7 @@ export default function HowToDealWithDifficultClientsUAE() {
                 { href: "/blog/how-to-set-freelance-boundaries-uae", label: "How to Set Boundaries as a UAE Freelancer" },
                 { href: "/blog/freelance-contract-template-uae", label: "Freelance Contract Template for UAE Clients" },
               ].map((link) => (
-                <Link key={link.href} href={link.href} className="block text-blue-600 hover:text-blue-800 text-sm">
+                <Link key={link.href} href={link.href} className="block text-emerald-700 hover:text-emerald-900 text-sm">
                   → {link.label}
                 </Link>
               ))}

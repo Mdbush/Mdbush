@@ -85,7 +85,7 @@ export default function Article() {
           </p>
         </div>
 
-        <div className="text-gray-700 leading-relaxed space-y-6">
+        <div className="space-y-6 leading-relaxed">
 
           <p>
             You spent two hours writing a detailed proposal. You outlined your experience, listed your tools,
@@ -105,7 +105,7 @@ export default function Article() {
             The fix isn&apos;t a better portfolio or lower price. It&apos;s a different structure.
           </p>
 
-          <h2 className="text-xl font-bold text-gray-900 mt-10 mb-3">Why Most Proposals Fail</h2>
+          <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2"><span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>Why Most Proposals Fail</h2>
 
           <p>
             The average freelance proposal looks like this:
@@ -125,7 +125,7 @@ export default function Article() {
             whether you understand their specific problem and can solve it.
           </p>
 
-          <h2 className="text-xl font-bold text-gray-900 mt-10 mb-3">The Structure of a Winning Proposal</h2>
+          <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2"><span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>The Structure of a Winning Proposal</h2>
 
           <p>
             A proposal that wins follows this structure, in order:
@@ -171,7 +171,7 @@ export default function Article() {
             ))}
           </div>
 
-          <h2 className="text-xl font-bold text-gray-900 mt-10 mb-3">Common Proposal Mistakes (and the Fix)</h2>
+          <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2"><span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>Common Proposal Mistakes (and the Fix)</h2>
 
           <div className="flex flex-col gap-4 my-6">
             {mistakes.map((item, i) => (
@@ -182,7 +182,7 @@ export default function Article() {
             ))}
           </div>
 
-          <h2 className="text-xl font-bold text-gray-900 mt-10 mb-3">Length: Shorter Than You Think</h2>
+          <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2"><span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>Length: Shorter Than You Think</h2>
 
           <p>
             The best proposals for most freelance work in the UAE are 300–600 words.
@@ -199,7 +199,7 @@ export default function Article() {
             is expected. Even then, lead with a one-page executive summary.
           </p>
 
-          <h2 className="text-xl font-bold text-gray-900 mt-10 mb-3">Follow Up — Without Being Annoying</h2>
+          <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2"><span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>Follow Up — Without Being Annoying</h2>
 
           <p>
             Send a follow-up if you haven&apos;t heard back in 3 business days.
@@ -230,7 +230,7 @@ export default function Article() {
             </Link>
           </div>
 
-          <h2 className="text-xl font-bold text-gray-900 mt-10 mb-3">Winning the Project Before You Send the Proposal</h2>
+          <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2"><span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>Winning the Project Before You Send the Proposal</h2>
 
           <p>
             The best proposals are almost formalities — the client already wants to work with you

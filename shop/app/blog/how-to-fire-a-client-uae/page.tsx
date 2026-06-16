@@ -99,7 +99,7 @@ export default function Article() {
           </p>
         </div>
 
-        <div className="text-gray-700 leading-relaxed space-y-6">
+        <div className="space-y-6 leading-relaxed">
 
           <p>
             Not all revenue is good revenue. Some clients cost more than they pay — in late payment
@@ -122,7 +122,7 @@ export default function Article() {
             as much as why.
           </p>
 
-          <h2 className="text-xl font-bold text-gray-900 mt-10 mb-3">5 Clear Signs It&apos;s Time to Fire a Client</h2>
+          <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2"><span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>5 Clear Signs It&apos;s Time to Fire a Client</h2>
 
           <div className="space-y-5 my-6">
             {signs.map((sign) => (
@@ -151,7 +151,7 @@ export default function Article() {
             — because if the primary issue is payments, there are steps to take before you exit.
           </p>
 
-          <h2 className="text-xl font-bold text-gray-900 mt-10 mb-3">Before You Fire — What to Check First</h2>
+          <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2"><span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>Before You Fire — What to Check First</h2>
 
           <p>
             Firing a client without preparation is almost always more disruptive than it needs to be.
@@ -188,7 +188,7 @@ export default function Article() {
             ))}
           </div>
 
-          <h2 className="text-xl font-bold text-gray-900 mt-10 mb-3">How to Actually Do It — 3 Approaches by Situation</h2>
+          <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2"><span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>How to Actually Do It — 3 Approaches by Situation</h2>
 
           <p>
             The right way to exit depends entirely on the situation. Here are the three most common
@@ -197,7 +197,7 @@ export default function Article() {
 
           <div className="space-y-6 my-6">
             <div className="border border-gray-200 rounded-2xl p-5">
-              <p className="text-xs font-semibold text-gray-400 uppercase tracking-widest mb-2">Situation 1</p>
+              <p className="text-xs font-bold text-emerald-400 uppercase tracking-widest block mb-3">Situation 1</p>
               <h3 className="font-semibold text-gray-900 mb-2">End of project — natural ending</h3>
               <p className="text-sm text-gray-600 mb-3">
                 The current engagement is wrapping up and you simply don&apos;t want to continue. This is
@@ -237,7 +237,7 @@ export default function Article() {
             </div>
 
             <div className="border border-gray-200 rounded-2xl p-5">
-              <p className="text-xs font-semibold text-gray-400 uppercase tracking-widest mb-2">Situation 2</p>
+              <p className="text-xs font-bold text-emerald-400 uppercase tracking-widest block mb-3">Situation 2</p>
               <h3 className="font-semibold text-gray-900 mb-2">Mid-project — early exit</h3>
               <p className="text-sm text-gray-600 mb-3">
                 You want to exit before an engagement is complete. This requires more care. Your
@@ -282,7 +282,7 @@ export default function Article() {
             </div>
 
             <div className="border border-gray-200 rounded-2xl p-5">
-              <p className="text-xs font-semibold text-gray-400 uppercase tracking-widest mb-2">Situation 3</p>
+              <p className="text-xs font-bold text-emerald-400 uppercase tracking-widest block mb-3">Situation 3</p>
               <h3 className="font-semibold text-gray-900 mb-2">Emergency exit — abusive or high-risk client</h3>
               <p className="text-sm text-gray-600 mb-3">
                 If a client has been abusive, made threats, or put you in a legally or professionally
@@ -325,7 +325,7 @@ export default function Article() {
             </div>
           </div>
 
-          <h2 className="text-xl font-bold text-gray-900 mt-10 mb-3">If They Owe You Money — Collect First, Fire Second. Always.</h2>
+          <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2"><span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>If They Owe You Money — Collect First, Fire Second. Always.</h2>
 
           <p>
             This is the most important tactical point in this entire guide. If a client has an
@@ -375,7 +375,7 @@ export default function Article() {
             .
           </p>
 
-          <h2 className="text-xl font-bold text-gray-900 mt-10 mb-3">What to Do About the Income Gap</h2>
+          <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2"><span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>What to Do About the Income Gap</h2>
 
           <p>
             The reason most freelancers stay in bad client relationships is income fear. Ending a
@@ -433,7 +433,7 @@ export default function Article() {
             .
           </p>
 
-          <h2 className="text-xl font-bold text-gray-900 mt-10 mb-3">The Mindset Shift That Makes This Easier</h2>
+          <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2"><span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>The Mindset Shift That Makes This Easier</h2>
 
           <p>
             Most UAE freelancers frame the decision to fire a client as a revenue loss. The correct

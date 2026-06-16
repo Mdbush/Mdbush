@@ -199,7 +199,7 @@ export default function HowToPriceEquityOverCashUAE() {
                 { href: "/blog/how-to-negotiate-contracts-freelance-uae", label: "How to Negotiate Contracts as a UAE Freelancer" },
                 { href: "/blog/freelance-contract-template-uae", label: "Freelance Contract Template for UAE Clients" },
               ].map((link) => (
-                <Link key={link.href} href={link.href} className="block text-blue-600 hover:text-blue-800 text-sm">
+                <Link key={link.href} href={link.href} className="block text-emerald-700 hover:text-emerald-900 text-sm">
                   → {link.label}
                 </Link>
               ))}

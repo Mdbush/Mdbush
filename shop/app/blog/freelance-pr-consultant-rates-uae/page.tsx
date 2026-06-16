@@ -68,7 +68,7 @@ export default function FreelancePRConsultantRatesUAE() {
         </div>
 
 
-        <div className="prose prose-gray max-w-none text-gray-700 leading-relaxed space-y-6">
+        <div className="space-y-6 leading-relaxed">
 
           <p>
             PR consulting in the UAE operates in a unique market: a dense concentration of
@@ -79,8 +79,8 @@ export default function FreelancePRConsultantRatesUAE() {
             and bilingual capabilities. Here are the 2026 benchmarks.
           </p>
 
-          <div className="bg-gray-50 border border-gray-200 rounded-xl p-4 text-sm">
-            <p className="font-semibold text-gray-900 mb-1">Quick benchmark</p>
+          <div className="bg-emerald-50 border border-emerald-200 rounded-xl p-5">
+            <p className="text-sm font-bold text-emerald-800 mb-2">Quick benchmark</p>
             <p className="text-gray-700">
               A mid-level freelance PR consultant in the UAE with 3–5 years of experience and
               established media contacts typically earns <strong>AED 25,000–45,000/month</strong> through
@@ -90,7 +90,7 @@ export default function FreelancePRConsultantRatesUAE() {
           </div>
 
           <section>
-            <h2 className="text-xl font-bold text-gray-900 mt-8 mb-4">Freelance PR Rates in the UAE by Service Type (2026)</h2>
+            <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2"><span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>Freelance PR Rates in the UAE by Service Type (2026)</h2>
             <p className="text-xs text-gray-400 mb-4">Junior: 0–2 years / Mid: 3–6 years / Senior: 7+ years or senior media relationships</p>
             <div className="overflow-x-auto">
               <table className="w-full text-sm border-collapse">
@@ -117,7 +117,7 @@ export default function FreelancePRConsultantRatesUAE() {
           </section>
 
           <section>
-            <h2 className="text-xl font-bold text-gray-900 mt-8 mb-3">What Drives PR Rates in the UAE</h2>
+            <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2"><span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>What Drives PR Rates in the UAE</h2>
 
             <h3 className="text-base font-semibold text-gray-900 mt-4 mb-2">Media relationships are the product</h3>
             <p>
@@ -149,7 +149,7 @@ export default function FreelancePRConsultantRatesUAE() {
           </section>
 
           <section>
-            <h2 className="text-xl font-bold text-gray-900 mt-8 mb-3">Retainer vs Project-Based PR: Which Model Works Better?</h2>
+            <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2"><span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>Retainer vs Project-Based PR: Which Model Works Better?</h2>
             <p>
               PR is relationship-based and works best as a retainer engagement — media relationships
               need consistent nurturing, and sporadic project bursts produce worse results than
@@ -164,8 +164,8 @@ export default function FreelancePRConsultantRatesUAE() {
           </section>
 
           {/* CTA */}
-          <div className="bg-gray-950 text-white rounded-2xl p-6 mt-10">
-            <p className="text-xs font-semibold text-gray-400 uppercase tracking-widest mb-2">Price your consulting correctly</p>
+          <div className="bg-gradient-to-br from-gray-900 to-gray-800 text-white rounded-2xl p-8 mt-12 text-center">
+            <p className="text-xs font-bold text-emerald-400 uppercase tracking-widest block mb-3">Price your consulting correctly</p>
             <h3 className="text-lg font-bold mb-2">How to Price Yourself as a Freelancer in the UAE: The Complete System</h3>
             <p className="text-gray-400 text-sm mb-4">
               Floor rate formula, 5 pricing models, and how to present your consulting rate
@@ -173,7 +173,7 @@ export default function FreelancePRConsultantRatesUAE() {
             </p>
             <Link
               href="/blog/how-to-price-yourself-as-freelancer-uae"
-              className="inline-block bg-white text-gray-900 font-bold px-5 py-2.5 rounded-xl hover:bg-gray-100 transition-colors text-sm"
+              className="inline-block bg-emerald-500 hover:bg-emerald-400 text-white font-bold px-8 py-3 rounded-xl transition-colors text-sm"
             >
               Read the Pricing System →
             </Link>

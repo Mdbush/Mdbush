@@ -58,7 +58,7 @@ export default function HowToBuildPassiveIncomeFreelancerUAE() {
         </div>
 
 
-        <div className="prose prose-gray max-w-none text-gray-700 leading-relaxed space-y-6">
+        <div className="space-y-6 leading-relaxed">
 
           <p>
             &quot;Passive income&quot; is one of the most misused phrases in the freelance world.
@@ -70,8 +70,8 @@ export default function HowToBuildPassiveIncomeFreelancerUAE() {
             — not theoretical frameworks, but what experienced UAE freelancers are building.
           </p>
 
-          <div className="bg-gray-50 border border-gray-200 rounded-xl p-4 text-sm">
-            <p className="font-semibold text-gray-900 mb-1">The income diversification reality</p>
+          <div className="bg-emerald-50 border border-emerald-200 rounded-xl p-5">
+            <p className="text-sm font-bold text-emerald-800 mb-2">The income diversification reality</p>
             <p className="text-gray-700">
               Most UAE freelancers who successfully build secondary income streams do so
               by packaging expertise they already have into a format that can be sold
@@ -83,7 +83,7 @@ export default function HowToBuildPassiveIncomeFreelancerUAE() {
           </div>
 
           <section>
-            <h2 className="text-xl font-bold text-gray-900 mt-8 mb-3">1. Digital Products: The Lowest-Maintenance Income Stream</h2>
+            <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2"><span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>1. Digital Products: The Lowest-Maintenance Income Stream</h2>
             <div className="space-y-3 mt-4">
               {[
                 { product: "Templates (Notion, Excel, Canva, PowerPoint)", potential: "AED 50–500 per sale", desc: "Templates package your process into a reusable format. A UAE-specific Notion template (client CRM for UAE freelancers, freelance income tracker in AED, Arabic/English bilingual dashboard), an Excel financial model for UAE real estate investors, or a Canva brand kit template for UAE SMEs can sell repeatedly with no additional work per sale. Platforms: Gumroad, Lemon Squeezy, your own website. The UAE-specific angle (AED, Arabic support, UAE market context) differentiates your templates from generic international products." },
@@ -93,7 +93,7 @@ export default function HowToBuildPassiveIncomeFreelancerUAE() {
                 <div key={item.product} className="border border-gray-200 rounded-xl p-4">
                   <div className="flex items-start justify-between gap-2 mb-1">
                     <p className="font-semibold text-gray-900 text-sm">{item.product}</p>
-                    <span className="text-xs font-bold text-green-700 bg-green-50 px-2 py-0.5 rounded-full shrink-0">{item.potential}</span>
+                    <span className="text-xs font-bold text-emerald-700 bg-emerald-50 border border-emerald-200 px-2 py-0.5 rounded-full shrink-0">{item.potential}</span>
                   </div>
                   <p className="text-xs text-gray-600">{item.desc}</p>
                 </div>
@@ -102,7 +102,7 @@ export default function HowToBuildPassiveIncomeFreelancerUAE() {
           </section>
 
           <section>
-            <h2 className="text-xl font-bold text-gray-900 mt-8 mb-3">2. Online Courses: High Revenue, High Upfront Work</h2>
+            <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2"><span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>2. Online Courses: High Revenue, High Upfront Work</h2>
             <ul className="space-y-2 text-sm text-gray-600 mt-3">
               <li>• <strong>UAE-focused courses have a real advantage</strong> — Global e-learning platforms (Udemy, Skillshare, Teachable) are saturated with generic courses on most topics. A course specifically addressing UAE market conditions — &apos;Freelancing in the UAE: Visa, Tax, and Getting Clients&apos; or &apos;UAE Real Estate Financial Modelling in Excel&apos; — competes in a much smaller pool. UAE professionals are also willing to pay more for content that directly addresses their specific context</li>
               <li>• <strong>LinkedIn Learning and corporate licensing</strong> — UAE corporate training departments regularly license e-learning content for employee development. A course on a professional topic (UAE business communication, UAE corporate tax compliance, Excel for UAE accountants) can be licensed to companies at AED 5,000–25,000+ per organization, significantly multiplying the economics of the individual sale model</li>
@@ -112,7 +112,7 @@ export default function HowToBuildPassiveIncomeFreelancerUAE() {
           </section>
 
           <section>
-            <h2 className="text-xl font-bold text-gray-900 mt-8 mb-3">3. Retainer-Based Models: Predictable Revenue, Not Passive</h2>
+            <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2"><span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>3. Retainer-Based Models: Predictable Revenue, Not Passive</h2>
             <p className="text-sm text-gray-600 mb-3">
               Not truly passive, but the most reliable income diversification for UAE
               freelancers is shifting client work from project-based to retainer-based:
@@ -132,7 +132,7 @@ export default function HowToBuildPassiveIncomeFreelancerUAE() {
           </section>
 
           <section>
-            <h2 className="text-xl font-bold text-gray-900 mt-8 mb-3">UAE Tax Treatment of Digital Product and Course Income</h2>
+            <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2"><span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>UAE Tax Treatment of Digital Product and Course Income</h2>
             <ul className="space-y-1 text-sm text-gray-600 mt-3">
               <li>• <strong>Digital product sales are UAE-taxable business income</strong> — Revenue from Gumroad, Lemon Squeezy, Teachable, or any other platform is business income, regardless of the platform&apos;s jurisdiction. Report through EmaraTax as business revenue</li>
               <li>• <strong>UAE corporate tax threshold</strong> — If total business revenue (client work + digital products) exceeds AED 375,000/year, you may be subject to UAE corporate tax. Consult a UAE-registered accountant for your specific situation</li>
@@ -141,8 +141,8 @@ export default function HowToBuildPassiveIncomeFreelancerUAE() {
           </section>
 
           {/* CTA */}
-          <div className="bg-gray-950 text-white rounded-2xl p-6 mt-10">
-            <p className="text-xs font-semibold text-gray-400 uppercase tracking-widest mb-2">Build your product income system</p>
+          <div className="bg-gradient-to-br from-gray-900 to-gray-800 text-white rounded-2xl p-8 mt-12 text-center">
+            <p className="text-xs font-bold text-emerald-400 uppercase tracking-widest block mb-3">Build your product income system</p>
             <h3 className="text-lg font-bold mb-2">Solopreneur OS — Track Revenue from Every Stream</h3>
             <p className="text-gray-400 text-sm mb-4">
               Track income from client work, digital products, courses, and retainers in
@@ -152,7 +152,7 @@ export default function HowToBuildPassiveIncomeFreelancerUAE() {
             </p>
             <Link
               href="/products/solopreneur-os"
-              className="inline-block bg-white text-gray-900 font-bold px-5 py-2.5 rounded-xl hover:bg-gray-100 transition-colors text-sm"
+              className="inline-block bg-emerald-500 hover:bg-emerald-400 text-white font-bold px-8 py-3 rounded-xl transition-colors text-sm"
             >
               Get the Solopreneur OS →
             </Link>

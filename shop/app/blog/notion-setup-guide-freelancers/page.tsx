@@ -106,7 +106,7 @@ export default function Article() {
           </p>
         </div>
 
-        <div className="text-gray-700 leading-relaxed space-y-6">
+        <div className="space-y-6 leading-relaxed">
 
           <p>
             Most UAE freelancers manage their business across five different places: a WhatsApp group for client
@@ -120,7 +120,7 @@ export default function Article() {
             Here&apos;s how to build it properly.
           </p>
 
-          <h2 className="text-xl font-bold text-gray-900 mt-10 mb-3">Why Notion Beats Spreadsheets for Freelancers</h2>
+          <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2"><span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>Why Notion Beats Spreadsheets for Freelancers</h2>
 
           <p>
             Spreadsheets are flat. You have a clients sheet, a projects sheet, an invoices sheet — and no
@@ -134,7 +134,7 @@ export default function Article() {
             the Notion app in Dubai is fast enough to take notes during client meetings without switching apps.
           </p>
 
-          <h2 className="text-xl font-bold text-gray-900 mt-10 mb-3">The 5 Things Every Freelancer Needs in Their Notion Workspace</h2>
+          <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2"><span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>The 5 Things Every Freelancer Needs in Their Notion Workspace</h2>
 
           <div className="space-y-4 my-6">
             {fiveThings.map((item) => (
@@ -150,7 +150,7 @@ export default function Article() {
             ))}
           </div>
 
-          <h2 className="text-xl font-bold text-gray-900 mt-10 mb-3">How to Create a Linked Database in Notion (Client → Projects)</h2>
+          <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2"><span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>How to Create a Linked Database in Notion (Client → Projects)</h2>
 
           <p>
             This is the most powerful thing you can learn in Notion and it takes about 3 minutes:
@@ -171,7 +171,7 @@ export default function Article() {
             ))}
           </div>
 
-          <h2 className="text-xl font-bold text-gray-900 mt-10 mb-3">The 15-Minute Friday Review Template</h2>
+          <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2"><span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>The 15-Minute Friday Review Template</h2>
 
           <p>
             High-performing freelancers do a short weekly review. Here&apos;s the exact routine to run every Friday at 4pm:
@@ -193,7 +193,7 @@ export default function Article() {
             ))}
           </div>
 
-          <h2 className="text-xl font-bold text-gray-900 mt-10 mb-3">How to Add a Revenue Dashboard</h2>
+          <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2"><span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>How to Add a Revenue Dashboard</h2>
 
           <p>
             In your Invoice Tracker database, add a formula property called <strong>Revenue (Paid)</strong>.
@@ -208,7 +208,7 @@ export default function Article() {
             command centre. Open it every Monday morning.
           </p>
 
-          <h2 className="text-xl font-bold text-gray-900 mt-10 mb-3">Common Notion Mistakes Freelancers Make</h2>
+          <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2"><span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>Common Notion Mistakes Freelancers Make</h2>
 
           <div className="flex flex-col gap-4 my-4">
             {mistakes.map((item) => (
@@ -219,7 +219,7 @@ export default function Article() {
             ))}
           </div>
 
-          <h2 className="text-xl font-bold text-gray-900 mt-10 mb-3">Using Notion on Mobile in Dubai</h2>
+          <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2"><span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>Using Notion on Mobile in Dubai</h2>
 
           <p>
             The Notion mobile app works well — fast enough for a 4G connection at a café in DIFC.
@@ -237,7 +237,7 @@ export default function Article() {
             </p>
           </div>
 
-          <h2 className="text-xl font-bold text-gray-900 mt-10 mb-3">The Shortcut: Skip the Setup</h2>
+          <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2"><span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>The Shortcut: Skip the Setup</h2>
 
           <p>
             Building a full Notion workspace from scratch takes 3–5 hours if you&apos;ve never done it before.

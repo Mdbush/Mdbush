@@ -163,7 +163,7 @@ export default function ClaudeAIFreelancersPage() {
         </div>
 
 
-        <div className="prose prose-gray max-w-none text-gray-700 leading-relaxed space-y-6">
+        <div className="space-y-6 leading-relaxed">
 
           <p>
             Claude AI is one of the most capable language models available in 2026, and for UAE
@@ -179,8 +179,8 @@ export default function ClaudeAIFreelancersPage() {
             the more useful the output becomes.
           </p>
 
-          <div className="bg-gray-50 border border-gray-200 rounded-xl p-4 text-sm">
-            <p className="font-semibold text-gray-900 mb-1">How to use the prompts below</p>
+          <div className="bg-emerald-50 border border-emerald-200 rounded-xl p-5">
+            <p className="text-sm font-bold text-emerald-800 mb-2">How to use the prompts below</p>
             <p className="text-gray-600">
               Copy the prompt, replace the brackets with your specific details, and paste into
               Claude at claude.ai. For the best results, include as much context as possible —
@@ -190,16 +190,16 @@ export default function ClaudeAIFreelancersPage() {
 
           {useCases.map((section) => (
             <section key={section.category}>
-              <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4">{section.category}</h2>
+              <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2"><span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>{section.category}</h2>
               <div className="space-y-6">
                 {section.cases.map((item, i) => (
                   <div key={i} className="border border-gray-200 rounded-xl overflow-hidden">
                     <div className="px-5 py-3 border-b border-gray-100 flex items-center justify-between gap-3">
                       <h3 className="font-semibold text-gray-900 text-sm">{item.title}</h3>
-                      <span className="text-xs text-green-600 font-semibold shrink-0">{item.timeSaved}</span>
+                      <span className="text-xs text-emerald-600 font-semibold shrink-0">{item.timeSaved}</span>
                     </div>
                     <div className="px-5 py-4 bg-gray-50">
-                      <p className="text-xs font-semibold text-gray-400 uppercase tracking-widest mb-2">Prompt</p>
+                      <p className="text-xs font-bold text-emerald-400 uppercase tracking-widest block mb-3">Prompt</p>
                       <p className="text-sm text-gray-700 font-mono leading-relaxed">{item.prompt}</p>
                     </div>
                   </div>
@@ -209,7 +209,7 @@ export default function ClaudeAIFreelancersPage() {
           ))}
 
           <section>
-            <h2 className="text-xl font-bold text-gray-900 mt-10 mb-3">Tips for Getting Better Results</h2>
+            <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2"><span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>Tips for Getting Better Results</h2>
 
             <h3 className="text-base font-semibold text-gray-900 mt-4 mb-2">Give context about the UAE market</h3>
             <p>
@@ -245,7 +245,7 @@ export default function ClaudeAIFreelancersPage() {
           </section>
 
           <section>
-            <h2 className="text-xl font-bold text-gray-900 mt-8 mb-3">What Claude Is Not Good At</h2>
+            <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2"><span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>What Claude Is Not Good At</h2>
             <p>
               Be aware of the limitations:
             </p>
@@ -258,8 +258,8 @@ export default function ClaudeAIFreelancersPage() {
           </section>
 
           {/* CTA */}
-          <div className="bg-gray-950 text-white rounded-2xl p-6 mt-10">
-            <p className="text-xs font-semibold text-gray-400 uppercase tracking-widest mb-2">Take it further</p>
+          <div className="bg-gradient-to-br from-gray-900 to-gray-800 text-white rounded-2xl p-8 mt-12 text-center">
+            <p className="text-xs font-bold text-emerald-400 uppercase tracking-widest block mb-3">Take it further</p>
             <h3 className="text-lg font-bold mb-2">200+ prompts built specifically for UAE freelancers</h3>
             <p className="text-gray-400 text-sm mb-4">
               The AI Prompt Pack Pro gives you 200+ categorized prompts for proposals, client
@@ -268,7 +268,7 @@ export default function ClaudeAIFreelancersPage() {
             </p>
             <Link
               href="/products/ai-prompt-pack-pro"
-              className="inline-block bg-white text-gray-900 font-bold px-5 py-2.5 rounded-xl hover:bg-gray-100 transition-colors text-sm"
+              className="inline-block bg-emerald-500 hover:bg-emerald-400 text-white font-bold px-8 py-3 rounded-xl transition-colors text-sm"
             >
               Get the AI Prompt Pack →
             </Link>

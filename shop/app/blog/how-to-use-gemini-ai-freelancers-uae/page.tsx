@@ -133,7 +133,7 @@ export default function HowToUseGeminiAIFreelancersUAE() {
         </div>
 
 
-        <div className="prose prose-gray max-w-none text-gray-700 leading-relaxed space-y-6">
+        <div className="space-y-6 leading-relaxed">
 
           <p>
             Google Gemini has one significant advantage over ChatGPT and Claude for UAE
@@ -144,8 +144,8 @@ export default function HowToUseGeminiAIFreelancersUAE() {
             the alternatives.
           </p>
 
-          <div className="bg-gray-50 border border-gray-200 rounded-xl p-4 text-sm">
-            <p className="font-semibold text-gray-900 mb-1">What Gemini does best for freelancers</p>
+          <div className="bg-emerald-50 border border-emerald-200 rounded-xl p-5">
+            <p className="text-sm font-bold text-emerald-800 mb-2">What Gemini does best for freelancers</p>
             <p className="text-gray-700">
               Gemini&apos;s main advantage is <strong>Google Workspace integration and real-time web access</strong>.
               It works inside Gmail, Docs, Sheets, and Slides — and can search your Drive.
@@ -156,7 +156,7 @@ export default function HowToUseGeminiAIFreelancersUAE() {
           </div>
 
           <section>
-            <h2 className="text-xl font-bold text-gray-900 mt-8 mb-4">12 Ways UAE Freelancers Use Google Gemini</h2>
+            <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2"><span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>12 Ways UAE Freelancers Use Google Gemini</h2>
             <div className="space-y-4 mt-4">
               {useCases.map((uc) => (
                 <div key={uc.n} className="border border-gray-200 rounded-2xl p-5">
@@ -164,17 +164,17 @@ export default function HowToUseGeminiAIFreelancersUAE() {
                     <span className="text-xs font-bold text-white bg-gray-900 w-5 h-5 rounded-full flex items-center justify-center shrink-0 mt-0.5">{uc.n}</span>
                     <div>
                       <p className="font-bold text-gray-900 text-sm">{uc.title}</p>
-                      <span className="text-xs font-semibold text-green-700 bg-green-50 px-2 py-0.5 rounded-full">{uc.time}</span>
+                      <span className="text-xs font-semibold text-emerald-700 bg-emerald-50 border border-emerald-200 px-2 py-0.5 rounded-full">{uc.time}</span>
                     </div>
                   </div>
-                  <p className="text-sm text-gray-700">{uc.how}</p>
+                  <p className="text-sm text-emerald-800">{uc.how}</p>
                 </div>
               ))}
             </div>
           </section>
 
           <section>
-            <h2 className="text-xl font-bold text-gray-900 mt-8 mb-3">Gemini Access: Free vs Gemini Advanced</h2>
+            <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2"><span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>Gemini Access: Free vs Gemini Advanced</h2>
             <p>
               The free Gemini tier gives you access to the standard model via gemini.google.com.
               Gemini Advanced (approximately USD 20/month as part of Google One AI Premium)
@@ -189,7 +189,7 @@ export default function HowToUseGeminiAIFreelancersUAE() {
           </section>
 
           <section>
-            <h2 className="text-xl font-bold text-gray-900 mt-8 mb-3">Gemini vs ChatGPT vs Claude: Which to Use for What</h2>
+            <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2"><span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>Gemini vs ChatGPT vs Claude: Which to Use for What</h2>
             <div className="overflow-x-auto">
               <table className="w-full text-sm border-collapse">
                 <thead>
@@ -220,8 +220,8 @@ export default function HowToUseGeminiAIFreelancersUAE() {
           </section>
 
           {/* CTA */}
-          <div className="bg-gray-950 text-white rounded-2xl p-6 mt-10">
-            <p className="text-xs font-semibold text-gray-400 uppercase tracking-widest mb-2">See all AI tools compared</p>
+          <div className="bg-gradient-to-br from-gray-900 to-gray-800 text-white rounded-2xl p-8 mt-12 text-center">
+            <p className="text-xs font-bold text-emerald-400 uppercase tracking-widest block mb-3">See all AI tools compared</p>
             <h3 className="text-lg font-bold mb-2">Best AI Tools for UAE Freelancers (2026)</h3>
             <p className="text-gray-400 text-sm mb-4">
               ChatGPT vs Claude vs Gemini vs Perplexity — compared for UAE freelance use cases
@@ -229,7 +229,7 @@ export default function HowToUseGeminiAIFreelancersUAE() {
             </p>
             <Link
               href="/blog/best-ai-tools-uae-freelancers"
-              className="inline-block bg-white text-gray-900 font-bold px-5 py-2.5 rounded-xl hover:bg-gray-100 transition-colors text-sm"
+              className="inline-block bg-emerald-500 hover:bg-emerald-400 text-white font-bold px-8 py-3 rounded-xl transition-colors text-sm"
             >
               Read the AI Tools Guide →
             </Link>

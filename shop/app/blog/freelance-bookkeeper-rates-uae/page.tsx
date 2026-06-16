@@ -69,7 +69,7 @@ export default function FreelanceBookkeeperRatesUAE() {
         </div>
 
 
-        <div className="prose prose-gray max-w-none text-gray-700 leading-relaxed space-y-6">
+        <div className="space-y-6 leading-relaxed">
 
           <p>
             The UAE&apos;s introduction of corporate tax in 2023 and the established VAT regime
@@ -81,8 +81,8 @@ export default function FreelanceBookkeeperRatesUAE() {
             monthly relationships rather than one-off projects. These are the 2026 rate benchmarks.
           </p>
 
-          <div className="bg-gray-50 border border-gray-200 rounded-xl p-4 text-sm">
-            <p className="font-semibold text-gray-900 mb-1">Quick benchmark</p>
+          <div className="bg-emerald-50 border border-emerald-200 rounded-xl p-5">
+            <p className="text-sm font-bold text-emerald-800 mb-2">Quick benchmark</p>
             <p className="text-gray-700">
               A freelance bookkeeper in Dubai handling a typical UAE SME (30–60 transactions/month,
               quarterly VAT, monthly payroll for 5–10 staff) typically charges
@@ -92,7 +92,7 @@ export default function FreelanceBookkeeperRatesUAE() {
           </div>
 
           <section>
-            <h2 className="text-xl font-bold text-gray-900 mt-8 mb-4">UAE Freelance Bookkeeping Rates (2026)</h2>
+            <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2"><span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>UAE Freelance Bookkeeping Rates (2026)</h2>
             <div className="overflow-x-auto">
               <table className="w-full text-sm border-collapse">
                 <thead>
@@ -116,11 +116,11 @@ export default function FreelanceBookkeeperRatesUAE() {
           </section>
 
           <section>
-            <h2 className="text-xl font-bold text-gray-900 mt-8 mb-3">What UAE Clients Need from a Freelance Bookkeeper</h2>
+            <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2"><span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>What UAE Clients Need from a Freelance Bookkeeper</h2>
             <div className="space-y-3 mt-4">
               <div className="border border-gray-200 rounded-xl p-4">
                 <p className="font-bold text-gray-900 text-sm mb-2">VAT compliance (mandatory since 2018)</p>
-                <p className="text-sm text-gray-700">
+                <p className="text-sm text-emerald-800">
                   Any UAE business with taxable supplies above AED 375,000/year must be VAT-registered.
                   VAT returns are filed quarterly via the FTA portal. Freelance bookkeepers who handle
                   VAT returns add significant value — most SME owners find the FTA portal complex and
@@ -130,7 +130,7 @@ export default function FreelanceBookkeeperRatesUAE() {
               </div>
               <div className="border border-gray-200 rounded-xl p-4">
                 <p className="font-bold text-gray-900 text-sm mb-2">Corporate tax compliance (from 2023)</p>
-                <p className="text-sm text-gray-700">
+                <p className="text-sm text-emerald-800">
                   UAE corporate tax at 9% on profits above AED 375,000 applies from June 2023.
                   Businesses need proper profit and loss accounts to file corporate tax returns.
                   Freelance bookkeepers who maintain clean, audit-ready books position themselves
@@ -140,7 +140,7 @@ export default function FreelanceBookkeeperRatesUAE() {
               </div>
               <div className="border border-gray-200 rounded-xl p-4">
                 <p className="font-bold text-gray-900 text-sm mb-2">WPS payroll (mandatory for employees)</p>
-                <p className="text-sm text-gray-700">
+                <p className="text-sm text-emerald-800">
                   The Wage Protection System (WPS) requires UAE employers to pay salaries through
                   approved financial institutions and submit payroll data to MOHRE (Ministry of
                   Human Resources). Freelance bookkeepers who handle WPS-compliant payroll
@@ -153,7 +153,7 @@ export default function FreelanceBookkeeperRatesUAE() {
           </section>
 
           <section>
-            <h2 className="text-xl font-bold text-gray-900 mt-8 mb-3">Accounting Software for UAE Freelance Bookkeepers</h2>
+            <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2"><span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>Accounting Software for UAE Freelance Bookkeepers</h2>
             <div className="space-y-3 mt-4">
               {[
                 { software: "Xero", cost: "AED 110–220/month (client pays)", detail: "Popular with UAE SMEs and preferred by international clients. Strong bank feed integration with UAE banks (ENBD, FAB, ADCB). Good VAT reporting module for UAE. Recommended if your client has international stakeholders or uses a Big 4 auditor." },
@@ -164,7 +164,7 @@ export default function FreelanceBookkeeperRatesUAE() {
                 <div key={item.software} className="border border-gray-200 rounded-xl p-4">
                   <div className="flex items-start justify-between gap-2 mb-1">
                     <p className="font-semibold text-gray-900 text-sm">{item.software}</p>
-                    <span className="text-xs font-bold text-blue-700 bg-blue-50 px-2 py-0.5 rounded-full shrink-0">{item.cost}</span>
+                    <span className="text-xs font-bold text-blue-700 bg-emerald-50 px-2 py-0.5 rounded-full shrink-0">{item.cost}</span>
                   </div>
                   <p className="text-xs text-gray-600">{item.detail}</p>
                 </div>
@@ -173,7 +173,7 @@ export default function FreelanceBookkeeperRatesUAE() {
           </section>
 
           <section>
-            <h2 className="text-xl font-bold text-gray-900 mt-8 mb-3">Licensing for Freelance Bookkeepers in the UAE</h2>
+            <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2"><span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>Licensing for Freelance Bookkeepers in the UAE</h2>
             <ul className="space-y-1 text-sm text-gray-600 mt-3">
               <li>• <strong>Freelance permit (IFZA, Meydan, Shuraa, etc.)</strong> — Most freelance bookkeepers operate under a freelance permit from a UAE free zone. This allows you to invoice clients directly without setting up a full company. Cost: AED 7,500–15,000/year depending on free zone</li>
               <li>• <strong>Tax Agent registration (FTA)</strong> — If you want to represent clients before the FTA (file VAT returns on their behalf as their official representative), you need FTA Tax Agent registration. This requires a relevant accounting qualification (ACCA, CPA, CA) and passing the FTA Tax Agent examination</li>
@@ -182,8 +182,8 @@ export default function FreelanceBookkeeperRatesUAE() {
             </ul>
           </section>
 
-          <div className="bg-gray-950 text-white rounded-2xl p-6 mt-10">
-            <p className="text-xs font-semibold text-gray-400 uppercase tracking-widest mb-2">Manage your bookkeeping clients</p>
+          <div className="bg-gradient-to-br from-gray-900 to-gray-800 text-white rounded-2xl p-8 mt-12 text-center">
+            <p className="text-xs font-bold text-emerald-400 uppercase tracking-widest block mb-3">Manage your bookkeeping clients</p>
             <h3 className="text-lg font-bold mb-2">Freelancer Client CRM — Track Every Client &amp; Invoice</h3>
             <p className="text-gray-400 text-sm mb-4">
               Track bookkeeping clients, recurring retainers, invoice due dates, and client
@@ -191,7 +191,7 @@ export default function FreelanceBookkeeperRatesUAE() {
             </p>
             <Link
               href="/products/freelancer-client-crm"
-              className="inline-block bg-white text-gray-900 font-bold px-5 py-2.5 rounded-xl hover:bg-gray-100 transition-colors text-sm"
+              className="inline-block bg-emerald-500 hover:bg-emerald-400 text-white font-bold px-8 py-3 rounded-xl transition-colors text-sm"
             >
               Get the Client CRM →
             </Link>

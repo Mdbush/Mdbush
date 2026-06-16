@@ -91,7 +91,7 @@ export default function FreelanceMorningRoutineUAE() {
         </div>
 
 
-        <div className="prose prose-gray max-w-none text-gray-700 leading-relaxed space-y-6">
+        <div className="space-y-6 leading-relaxed">
 
           <p>
             The freedom of freelancing comes with a trap: without structure, every morning
@@ -107,7 +107,7 @@ export default function FreelanceMorningRoutineUAE() {
           </p>
 
           <section>
-            <h2 className="text-xl font-bold text-gray-900 mt-8 mb-3">The UAE Freelancer Morning Problem</h2>
+            <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2"><span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>The UAE Freelancer Morning Problem</h2>
             <p>
               Several things make morning structure harder in the UAE than in other markets:
             </p>
@@ -120,7 +120,7 @@ export default function FreelanceMorningRoutineUAE() {
           </section>
 
           <section>
-            <h2 className="text-xl font-bold text-gray-900 mt-8 mb-3">The 90-Minute Protected Morning Block</h2>
+            <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2"><span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>The 90-Minute Protected Morning Block</h2>
             <p className="text-sm text-gray-500 mb-4">
               This is a template — adjust the times to match your natural rhythm. The structure matters more than the exact hours.
             </p>
@@ -139,7 +139,7 @@ export default function FreelanceMorningRoutineUAE() {
           </section>
 
           <section>
-            <h2 className="text-xl font-bold text-gray-900 mt-8 mb-3">Setting Client Expectations Around Your Morning</h2>
+            <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2"><span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>Setting Client Expectations Around Your Morning</h2>
             <p>
               The biggest obstacle to a protected morning block is the expectation that you are
               always available. UAE clients often expect fast responses — and WhatsApp read receipts
@@ -160,7 +160,7 @@ export default function FreelanceMorningRoutineUAE() {
           </section>
 
           <section>
-            <h2 className="text-xl font-bold text-gray-900 mt-8 mb-3">Adjusting for Ramadan</h2>
+            <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2"><span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>Adjusting for Ramadan</h2>
             <p>
               During Ramadan, many UAE freelancers find their most productive hours shift.
               If you are fasting, energy peaks and troughs change significantly:
@@ -173,7 +173,7 @@ export default function FreelanceMorningRoutineUAE() {
           </section>
 
           <section>
-            <h2 className="text-xl font-bold text-gray-900 mt-8 mb-3">The Evening Prep That Makes Mornings Work</h2>
+            <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2"><span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>The Evening Prep That Makes Mornings Work</h2>
             <p>
               A good morning starts the night before. Before you close your laptop:
             </p>
@@ -190,8 +190,8 @@ export default function FreelanceMorningRoutineUAE() {
           </section>
 
           {/* CTA */}
-          <div className="bg-gray-950 text-white rounded-2xl p-6 mt-10">
-            <p className="text-xs font-semibold text-gray-400 uppercase tracking-widest mb-2">Build the full system</p>
+          <div className="bg-gradient-to-br from-gray-900 to-gray-800 text-white rounded-2xl p-8 mt-12 text-center">
+            <p className="text-xs font-bold text-emerald-400 uppercase tracking-widest block mb-3">Build the full system</p>
             <h3 className="text-lg font-bold mb-2">Notion Setup Guide for UAE Freelancers</h3>
             <p className="text-gray-400 text-sm mb-4">
               From morning planning to client management — the Notion workspace setup that keeps
@@ -199,7 +199,7 @@ export default function FreelanceMorningRoutineUAE() {
             </p>
             <Link
               href="/blog/notion-setup-guide-freelancers"
-              className="inline-block bg-white text-gray-900 font-bold px-5 py-2.5 rounded-xl hover:bg-gray-100 transition-colors text-sm"
+              className="inline-block bg-emerald-500 hover:bg-emerald-400 text-white font-bold px-8 py-3 rounded-xl transition-colors text-sm"
             >
               Read the Notion Setup Guide →
             </Link>

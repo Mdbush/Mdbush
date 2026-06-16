@@ -164,7 +164,7 @@ export default function HowToPackageFreelanceServicesUAE() {
                 { href: "/blog/how-to-price-retainer-clients-uae", label: "How to Price Retainer Clients in the UAE" },
                 { href: "/blog/freelance-rate-calculator-uae", label: "Freelance Rate Calculator UAE" },
               ].map((link) => (
-                <Link key={link.href} href={link.href} className="block text-blue-600 hover:text-blue-800 text-sm">
+                <Link key={link.href} href={link.href} className="block text-emerald-700 hover:text-emerald-900 text-sm">
                   → {link.label}
                 </Link>
               ))}

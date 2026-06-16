@@ -69,7 +69,7 @@ export default function FreelanceERPConsultantRatesUAE() {
         </div>
 
 
-        <div className="prose prose-gray max-w-none text-gray-700 leading-relaxed space-y-6">
+        <div className="space-y-6 leading-relaxed">
 
           <p>
             ERP consulting is one of the highest-value freelance categories in the UAE.
@@ -83,8 +83,8 @@ export default function FreelanceERPConsultantRatesUAE() {
             the 2026 rate benchmarks.
           </p>
 
-          <div className="bg-gray-50 border border-gray-200 rounded-xl p-4 text-sm">
-            <p className="font-semibold text-gray-900 mb-1">Quick benchmark</p>
+          <div className="bg-emerald-50 border border-emerald-200 rounded-xl p-5">
+            <p className="text-sm font-bold text-emerald-800 mb-2">Quick benchmark</p>
             <p className="text-gray-700">
               A mid-level freelance ERP consultant in Dubai (SAP certified or Microsoft
               Dynamics Partner, 4–8 years, 3+ UAE implementations) typically charges
@@ -96,7 +96,7 @@ export default function FreelanceERPConsultantRatesUAE() {
           </div>
 
           <section>
-            <h2 className="text-xl font-bold text-gray-900 mt-8 mb-4">Freelance ERP Consultant Rates in the UAE by Service (2026)</h2>
+            <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2"><span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>Freelance ERP Consultant Rates in the UAE by Service (2026)</h2>
             <p className="text-xs text-gray-400 mb-4">Junior: 0–3 years / Mid: 4–8 years, platform certified, 2–3 UAE go-lives / Senior: 9+ years, Big 4 ERP practice or regional head background</p>
             <div className="overflow-x-auto">
               <table className="w-full text-sm border-collapse">
@@ -123,7 +123,7 @@ export default function FreelanceERPConsultantRatesUAE() {
           </section>
 
           <section>
-            <h2 className="text-xl font-bold text-gray-900 mt-8 mb-3">UAE ERP Market Context: Platform by Industry</h2>
+            <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2"><span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>UAE ERP Market Context: Platform by Industry</h2>
             <ul className="space-y-2 text-sm text-gray-600 mt-3">
               <li>• <strong>SAP S/4HANA</strong> — Dominant in large UAE enterprises: energy companies (ADNOC subsidiaries), manufacturing groups, major retail chains, and government entities. SAP is the preferred platform for UAE companies seeking enterprise-grade procurement, financial management, and supply chain functionality. SAP consultants are in genuine short supply in the UAE — most SAP expertise is concentrated in a small number of large consulting firms</li>
               <li>• <strong>Microsoft Dynamics 365</strong> — Strong adoption in UAE SMEs (AED 20M–200M revenue) and professional services firms, particularly those already on Microsoft 365. Dynamics 365 Business Central (ERP) is the most widely deployed mid-market ERP in UAE. Microsoft Partner Network certification is the standard credential for UAE Dynamics consultants</li>
@@ -134,7 +134,7 @@ export default function FreelanceERPConsultantRatesUAE() {
           </section>
 
           <section>
-            <h2 className="text-xl font-bold text-gray-900 mt-8 mb-3">Post-Go-Live Retainers: The Recurring Revenue Model</h2>
+            <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2"><span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>Post-Go-Live Retainers: The Recurring Revenue Model</h2>
             <p className="text-sm text-gray-600 mb-3">
               The most overlooked revenue opportunity for UAE ERP consultants is the
               post-go-live support retainer. After an ERP goes live, the client needs:
@@ -154,8 +154,8 @@ export default function FreelanceERPConsultantRatesUAE() {
           </section>
 
           {/* CTA */}
-          <div className="bg-gray-950 text-white rounded-2xl p-6 mt-10">
-            <p className="text-xs font-semibold text-gray-400 uppercase tracking-widest mb-2">Manage your ERP consulting clients</p>
+          <div className="bg-gradient-to-br from-gray-900 to-gray-800 text-white rounded-2xl p-8 mt-12 text-center">
+            <p className="text-xs font-bold text-emerald-400 uppercase tracking-widest block mb-3">Manage your ERP consulting clients</p>
             <h3 className="text-lg font-bold mb-2">Freelancer Client CRM — Track Every ERP Implementation</h3>
             <p className="text-gray-400 text-sm mb-4">
               Track ERP projects from requirements through go-live, manage phase milestones,
@@ -164,7 +164,7 @@ export default function FreelanceERPConsultantRatesUAE() {
             </p>
             <Link
               href="/products/freelancer-client-crm"
-              className="inline-block bg-white text-gray-900 font-bold px-5 py-2.5 rounded-xl hover:bg-gray-100 transition-colors text-sm"
+              className="inline-block bg-emerald-500 hover:bg-emerald-400 text-white font-bold px-8 py-3 rounded-xl transition-colors text-sm"
             >
               Get the Client CRM →
             </Link>

@@ -186,7 +186,7 @@ export default function HowToProductizeFreelanceServicesUAE() {
                 { href: "/blog/value-based-pricing-uae-freelancers", label: "Value-Based Pricing for UAE Freelancers" },
                 { href: "/blog/how-to-win-retainer-clients-uae", label: "How to Win Retainer Clients as a UAE Freelancer" },
               ].map((link) => (
-                <Link key={link.href} href={link.href} className="block text-blue-600 hover:text-blue-800 text-sm">
+                <Link key={link.href} href={link.href} className="block text-emerald-700 hover:text-emerald-900 text-sm">
                   → {link.label}
                 </Link>
               ))}

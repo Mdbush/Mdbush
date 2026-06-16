@@ -148,7 +148,7 @@ export default function HowToUseAIForClientOnboardingUAE() {
                 { href: "/blog/how-to-use-notion-as-crm-uae", label: "How to Use Notion as a CRM for UAE Freelancers" },
                 { href: "/blog/how-to-set-up-whatsapp-business-uae", label: "How UAE Freelancers Use WhatsApp Business" },
               ].map((link) => (
-                <Link key={link.href} href={link.href} className="block text-blue-600 hover:text-blue-800 text-sm">
+                <Link key={link.href} href={link.href} className="block text-emerald-700 hover:text-emerald-900 text-sm">
                   → {link.label}
                 </Link>
               ))}

@@ -72,7 +72,7 @@ export default function Article() {
           </p>
         </div>
 
-        <div className="text-gray-700 leading-relaxed space-y-6">
+        <div className="space-y-6 leading-relaxed">
 
           <p>
             Every month a new tool gets added to the &quot;must-have freelancer stack&quot; lists. Project
@@ -97,7 +97,7 @@ export default function Article() {
             after this one.
           </p>
 
-          <h2 className="text-xl font-bold text-gray-900 mt-10 mb-3">Client &amp; Project Management</h2>
+          <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2"><span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>Client &amp; Project Management</h2>
 
           <p>
             This is the category where most freelancers either over-invest or under-invest.
@@ -135,7 +135,7 @@ export default function Article() {
             </p>
           </div>
 
-          <h2 className="text-xl font-bold text-gray-900 mt-10 mb-3">Invoicing &amp; Finance</h2>
+          <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2"><span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>Invoicing &amp; Finance</h2>
 
           <p>
             UAE freelancers have specific requirements here: invoices need to include your
@@ -181,7 +181,7 @@ export default function Article() {
             </Link>.
           </p>
 
-          <h2 className="text-xl font-bold text-gray-900 mt-10 mb-3">Contracts</h2>
+          <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2"><span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>Contracts</h2>
 
           <p>
             A freelance contract is not optional in the UAE. Without one, you have no legal
@@ -214,7 +214,7 @@ export default function Article() {
             late payment fees, and revision limits under UAE law.
           </p>
 
-          <h2 className="text-xl font-bold text-gray-900 mt-10 mb-3">AI &amp; Writing</h2>
+          <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2"><span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>AI &amp; Writing</h2>
 
           <p>
             AI tools are now a genuine productivity multiplier for freelancers — not a gimmick.
@@ -261,7 +261,7 @@ export default function Article() {
             </Link>.
           </p>
 
-          <h2 className="text-xl font-bold text-gray-900 mt-10 mb-3">Payments</h2>
+          <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2"><span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>Payments</h2>
 
           <p>
             Getting paid as a UAE freelancer has two dimensions: local payments and international
@@ -297,7 +297,7 @@ export default function Article() {
             </li>
           </ul>
 
-          <h2 className="text-xl font-bold text-gray-900 mt-10 mb-3">Communication &amp; Client Portals</h2>
+          <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2"><span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>Communication &amp; Client Portals</h2>
 
           <p>
             Async communication tools save significant time once you are juggling multiple clients.
@@ -325,7 +325,7 @@ export default function Article() {
             covers exactly how to build this.
           </p>
 
-          <h2 className="text-xl font-bold text-gray-900 mt-10 mb-3">The Lean Stack: What to Actually Use at Each Stage</h2>
+          <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2"><span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>The Lean Stack: What to Actually Use at Each Stage</h2>
 
           <p>
             The goal is to spend money on tools that pay for themselves — either by saving time
@@ -375,7 +375,7 @@ export default function Article() {
             </div>
           </div>
 
-          <h2 className="text-xl font-bold text-gray-900 mt-10 mb-3">The Honest Take on Tool Stacking</h2>
+          <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2"><span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>The Honest Take on Tool Stacking</h2>
 
           <p>
             The freelancers who run the leanest stacks are almost always the ones earning the

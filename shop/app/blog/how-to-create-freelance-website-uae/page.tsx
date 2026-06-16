@@ -94,7 +94,7 @@ export default function HowToCreateFreelanceWebsiteUAE() {
         </div>
 
 
-        <div className="prose prose-gray max-w-none text-gray-700 leading-relaxed space-y-6">
+        <div className="space-y-6 leading-relaxed">
 
           <p>
             Most freelancer websites fail to generate leads — not because they look bad, but
@@ -114,13 +114,13 @@ export default function HowToCreateFreelanceWebsiteUAE() {
           </div>
 
           <section>
-            <h2 className="text-xl font-bold text-gray-900 mt-8 mb-4">The 5 Pages Every Freelance Website Needs</h2>
+            <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2"><span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>The 5 Pages Every Freelance Website Needs</h2>
             <div className="space-y-5">
               {pages.map((item) => (
                 <div key={item.page} className="border border-gray-200 rounded-2xl p-5">
                   <h3 className="font-bold text-gray-900 mb-3">{item.page}</h3>
                   <div className="mb-3">
-                    <p className="text-xs font-semibold text-green-600 mb-1.5">Must include</p>
+                    <p className="text-xs font-semibold text-emerald-600 mb-1.5">Must include</p>
                     <ul className="space-y-1">
                       {item.mustInclude.map((point) => <li key={point} className="text-xs text-gray-600">✓ {point}</li>)}
                     </ul>
@@ -135,7 +135,7 @@ export default function HowToCreateFreelanceWebsiteUAE() {
           </section>
 
           <section>
-            <h2 className="text-xl font-bold text-gray-900 mt-8 mb-3">The Home Page Headline Formula</h2>
+            <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2"><span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>The Home Page Headline Formula</h2>
             <p>
               Your headline is the most important text on your website. Most freelancers write
               something like &ldquo;Creative design solutions for forward-thinking businesses.&rdquo; That
@@ -155,7 +155,7 @@ export default function HowToCreateFreelanceWebsiteUAE() {
           </section>
 
           <section>
-            <h2 className="text-xl font-bold text-gray-900 mt-8 mb-3">Which Platform to Build On</h2>
+            <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2"><span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>Which Platform to Build On</h2>
             <div className="space-y-3 mt-4">
               {platforms.map((p) => (
                 <div key={p.name} className="border border-gray-200 rounded-xl p-4">
@@ -165,7 +165,7 @@ export default function HowToCreateFreelanceWebsiteUAE() {
                   </div>
                   <p className="text-xs text-gray-500 mb-2"><strong>Best for:</strong> {p.bestFor}</p>
                   <div className="grid grid-cols-2 gap-2">
-                    <div><p className="text-xs text-green-600">✓ {p.pros}</p></div>
+                    <div><p className="text-xs text-emerald-600">✓ {p.pros}</p></div>
                     <div><p className="text-xs text-red-500">✗ {p.cons}</p></div>
                   </div>
                 </div>
@@ -179,7 +179,7 @@ export default function HowToCreateFreelanceWebsiteUAE() {
           </section>
 
           <section>
-            <h2 className="text-xl font-bold text-gray-900 mt-8 mb-3">UAE-Specific Website Considerations</h2>
+            <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2"><span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>UAE-Specific Website Considerations</h2>
             <ul className="space-y-2 text-sm text-gray-600 mt-3">
               <li><strong>Include your location explicitly:</strong> UAE, Dubai, or Abu Dhabi in your meta title and home page helps with local search. Many UAE clients specifically search for local freelancers.</li>
               <li><strong>Arabic translation optional but valuable:</strong> A basic Arabic version of your site or just an Arabic headline can capture Arabic-language searches. Worth doing if you serve Arabic-speaking clients.</li>
@@ -190,8 +190,8 @@ export default function HowToCreateFreelanceWebsiteUAE() {
           </section>
 
           {/* CTA */}
-          <div className="bg-gray-950 text-white rounded-2xl p-6 mt-10">
-            <p className="text-xs font-semibold text-gray-400 uppercase tracking-widest mb-2">Before the website — your LinkedIn</p>
+          <div className="bg-gradient-to-br from-gray-900 to-gray-800 text-white rounded-2xl p-8 mt-12 text-center">
+            <p className="text-xs font-bold text-emerald-400 uppercase tracking-widest block mb-3">Before the website — your LinkedIn</p>
             <h3 className="text-lg font-bold mb-2">How to Optimize Your LinkedIn Profile as a UAE Freelancer</h3>
             <p className="text-gray-400 text-sm mb-4">
               7 profile elements that drive inbound clients, before/after headline examples,
@@ -199,7 +199,7 @@ export default function HowToCreateFreelanceWebsiteUAE() {
             </p>
             <Link
               href="/blog/freelance-linkedin-profile-uae"
-              className="inline-block bg-white text-gray-900 font-bold px-5 py-2.5 rounded-xl hover:bg-gray-100 transition-colors text-sm"
+              className="inline-block bg-emerald-500 hover:bg-emerald-400 text-white font-bold px-8 py-3 rounded-xl transition-colors text-sm"
             >
               Optimize Your LinkedIn →
             </Link>

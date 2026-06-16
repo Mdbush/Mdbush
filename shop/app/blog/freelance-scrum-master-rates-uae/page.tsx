@@ -69,7 +69,7 @@ export default function FreelanceScrumMasterRatesUAE() {
         </div>
 
 
-        <div className="prose prose-gray max-w-none text-gray-700 leading-relaxed space-y-6">
+        <div className="space-y-6 leading-relaxed">
 
           <p>
             Agile coaching and Scrum Master roles are increasingly being filled by
@@ -81,8 +81,8 @@ export default function FreelanceScrumMasterRatesUAE() {
             for freelance Scrum Masters and agile coaches in Dubai and Abu Dhabi.
           </p>
 
-          <div className="bg-gray-50 border border-gray-200 rounded-xl p-4 text-sm">
-            <p className="font-semibold text-gray-900 mb-1">Quick benchmark</p>
+          <div className="bg-emerald-50 border border-emerald-200 rounded-xl p-5">
+            <p className="text-sm font-bold text-emerald-800 mb-2">Quick benchmark</p>
             <p className="text-gray-700">
               A mid-level freelance Scrum Master / Agile coach in Dubai (CSM/PSM certified,
               4–7 years, enterprise agile transformation experience) typically charges
@@ -96,7 +96,7 @@ export default function FreelanceScrumMasterRatesUAE() {
           </div>
 
           <section>
-            <h2 className="text-xl font-bold text-gray-900 mt-8 mb-4">Freelance Scrum Master Rates in the UAE by Service (2026)</h2>
+            <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2"><span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>Freelance Scrum Master Rates in the UAE by Service (2026)</h2>
             <p className="text-xs text-gray-400 mb-4">Junior: 0–3 years / Mid: 4–7 years, CSM/PSM certified, enterprise teams / Senior: 8+ years, SAFe SP or RTE, multi-portfolio agile transformation</p>
             <div className="overflow-x-auto">
               <table className="w-full text-sm border-collapse">
@@ -123,7 +123,7 @@ export default function FreelanceScrumMasterRatesUAE() {
           </section>
 
           <section>
-            <h2 className="text-xl font-bold text-gray-900 mt-8 mb-3">High-Value Agile Coaching Niches in the UAE</h2>
+            <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2"><span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>High-Value Agile Coaching Niches in the UAE</h2>
             <div className="space-y-3 mt-4">
               {[
                 { niche: "UAE government digital transformation agile (Dubai, Abu Dhabi)", rate: "AED 30,000–200,000+ per engagement", why: "Dubai and Abu Dhabi government entities (DTCM, RTA, DLD, ADDA, ministries) are actively adopting agile delivery for digital services — but their starting point is typically highly waterfall and procurement-constrained. An agile coach who can operate within government constraints while genuinely shifting delivery culture is extraordinarily valuable. These engagements are typically sourced through government-aligned consultancies or directly through department relationships, and run 6–18 months." },
@@ -134,7 +134,7 @@ export default function FreelanceScrumMasterRatesUAE() {
                 <div key={item.niche} className="border border-gray-200 rounded-xl p-4">
                   <div className="flex items-start justify-between gap-2 mb-1">
                     <p className="font-semibold text-gray-900 text-sm">{item.niche}</p>
-                    <span className="text-xs font-bold text-green-700 bg-green-50 px-2 py-0.5 rounded-full shrink-0">{item.rate}</span>
+                    <span className="text-xs font-bold text-emerald-700 bg-emerald-50 border border-emerald-200 px-2 py-0.5 rounded-full shrink-0">{item.rate}</span>
                   </div>
                   <p className="text-xs text-gray-600">{item.why}</p>
                 </div>
@@ -143,7 +143,7 @@ export default function FreelanceScrumMasterRatesUAE() {
           </section>
 
           <section>
-            <h2 className="text-xl font-bold text-gray-900 mt-8 mb-3">Certifications for UAE Freelance Scrum Masters</h2>
+            <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2"><span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>Certifications for UAE Freelance Scrum Masters</h2>
             <ul className="space-y-1 text-sm text-gray-600 mt-3">
               <li>• <strong>CSM (Certified Scrum Master) — Scrum Alliance</strong> — The most widely recognized entry-level Scrum credential. Required or preferred by most UAE enterprise and startup hiring for Scrum Master roles</li>
               <li>• <strong>PSM (Professional Scrum Master) — Scrum.org</strong> — Scrum.org&apos;s credential series (PSM I, PSM II, PSM III). More technically rigorous than CSM. PSM II and III signal genuine Scrum mastery beyond introductory level</li>
@@ -154,8 +154,8 @@ export default function FreelanceScrumMasterRatesUAE() {
           </section>
 
           {/* CTA */}
-          <div className="bg-gray-950 text-white rounded-2xl p-6 mt-10">
-            <p className="text-xs font-semibold text-gray-400 uppercase tracking-widest mb-2">Manage your agile coaching clients</p>
+          <div className="bg-gradient-to-br from-gray-900 to-gray-800 text-white rounded-2xl p-8 mt-12 text-center">
+            <p className="text-xs font-bold text-emerald-400 uppercase tracking-widest block mb-3">Manage your agile coaching clients</p>
             <h3 className="text-lg font-bold mb-2">Freelancer Client CRM — Track Every Sprint and Engagement</h3>
             <p className="text-gray-400 text-sm mb-4">
               Track agile coaching engagements from kickoff through transformation review,
@@ -165,7 +165,7 @@ export default function FreelanceScrumMasterRatesUAE() {
             </p>
             <Link
               href="/products/freelancer-client-crm"
-              className="inline-block bg-white text-gray-900 font-bold px-5 py-2.5 rounded-xl hover:bg-gray-100 transition-colors text-sm"
+              className="inline-block bg-emerald-500 hover:bg-emerald-400 text-white font-bold px-8 py-3 rounded-xl transition-colors text-sm"
             >
               Get the Client CRM →
             </Link>

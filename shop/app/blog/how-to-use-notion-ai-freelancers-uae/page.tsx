@@ -133,7 +133,7 @@ export default function HowToUseNotionAIFreelancersUAE() {
         </div>
 
 
-        <div className="prose prose-gray max-w-none text-gray-700 leading-relaxed space-y-6">
+        <div className="space-y-6 leading-relaxed">
 
           <p>
             Notion AI turns Notion from a document tool into an active collaborator.
@@ -143,8 +143,8 @@ export default function HowToUseNotionAIFreelancersUAE() {
             Here are 12 use cases that save meaningful time every week.
           </p>
 
-          <div className="bg-gray-50 border border-gray-200 rounded-xl p-4 text-sm">
-            <p className="font-semibold text-gray-900 mb-1">What Notion AI actually does well</p>
+          <div className="bg-emerald-50 border border-emerald-200 rounded-xl p-5">
+            <p className="text-sm font-bold text-emerald-800 mb-2">What Notion AI actually does well</p>
             <p className="text-gray-700">
               Notion AI is best at: structuring unstructured notes, turning bullet points
               into flowing prose, summarizing long documents, and improving drafts you&apos;ve
@@ -155,7 +155,7 @@ export default function HowToUseNotionAIFreelancersUAE() {
           </div>
 
           <section>
-            <h2 className="text-xl font-bold text-gray-900 mt-8 mb-4">12 Ways to Use Notion AI as a UAE Freelancer</h2>
+            <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2"><span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>12 Ways to Use Notion AI as a UAE Freelancer</h2>
             <div className="space-y-4 mt-4">
               {useCases.map((uc) => (
                 <div key={uc.n} className="border border-gray-200 rounded-2xl p-5">
@@ -163,17 +163,17 @@ export default function HowToUseNotionAIFreelancersUAE() {
                     <span className="text-xs font-bold text-white bg-gray-900 w-5 h-5 rounded-full flex items-center justify-center shrink-0 mt-0.5">{uc.n}</span>
                     <div>
                       <p className="font-bold text-gray-900 text-sm">{uc.title}</p>
-                      <span className="text-xs font-semibold text-green-700 bg-green-50 px-2 py-0.5 rounded-full">{uc.time}</span>
+                      <span className="text-xs font-semibold text-emerald-700 bg-emerald-50 border border-emerald-200 px-2 py-0.5 rounded-full">{uc.time}</span>
                     </div>
                   </div>
-                  <p className="text-sm text-gray-700">{uc.how}</p>
+                  <p className="text-sm text-emerald-800">{uc.how}</p>
                 </div>
               ))}
             </div>
           </section>
 
           <section>
-            <h2 className="text-xl font-bold text-gray-900 mt-8 mb-3">Setting Up Notion AI for Freelance Work</h2>
+            <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2"><span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>Setting Up Notion AI for Freelance Work</h2>
             <p>
               Notion AI is included in the Notion Plus plan (approximately USD 10/month).
               To activate it, open any Notion page, press the spacebar (or type &apos;/&apos; and
@@ -191,7 +191,7 @@ export default function HowToUseNotionAIFreelancersUAE() {
           </section>
 
           <section>
-            <h2 className="text-xl font-bold text-gray-900 mt-8 mb-3">Notion AI vs ChatGPT vs Claude: What to Use for What</h2>
+            <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2"><span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>Notion AI vs ChatGPT vs Claude: What to Use for What</h2>
             <div className="overflow-x-auto">
               <table className="w-full text-sm border-collapse">
                 <thead>
@@ -220,8 +220,8 @@ export default function HowToUseNotionAIFreelancersUAE() {
           </section>
 
           {/* CTA */}
-          <div className="bg-gray-950 text-white rounded-2xl p-6 mt-10">
-            <p className="text-xs font-semibold text-gray-400 uppercase tracking-widest mb-2">Get a Notion setup that works</p>
+          <div className="bg-gradient-to-br from-gray-900 to-gray-800 text-white rounded-2xl p-8 mt-12 text-center">
+            <p className="text-xs font-bold text-emerald-400 uppercase tracking-widest block mb-3">Get a Notion setup that works</p>
             <h3 className="text-lg font-bold mb-2">Notion Setup Guide for UAE Freelancers</h3>
             <p className="text-gray-400 text-sm mb-4">
               The full Notion workspace setup for freelancers — client dashboards, project
@@ -230,7 +230,7 @@ export default function HowToUseNotionAIFreelancersUAE() {
             </p>
             <Link
               href="/blog/notion-setup-guide-freelancers"
-              className="inline-block bg-white text-gray-900 font-bold px-5 py-2.5 rounded-xl hover:bg-gray-100 transition-colors text-sm"
+              className="inline-block bg-emerald-500 hover:bg-emerald-400 text-white font-bold px-8 py-3 rounded-xl transition-colors text-sm"
             >
               Read the Notion Setup Guide →
             </Link>

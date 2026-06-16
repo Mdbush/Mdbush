@@ -170,7 +170,7 @@ export default function HowToGetPaidInForeignCurrencyUAE() {
                 { href: "/blog/best-banks-freelancers-uae", label: "Best Bank Accounts for UAE Freelancers" },
                 { href: "/blog/how-to-manage-freelance-finances-uae", label: "How to Manage Your Finances as a UAE Freelancer" },
               ].map((link) => (
-                <Link key={link.href} href={link.href} className="block text-blue-600 hover:text-blue-800 text-sm">
+                <Link key={link.href} href={link.href} className="block text-emerald-700 hover:text-emerald-900 text-sm">
                   → {link.label}
                 </Link>
               ))}

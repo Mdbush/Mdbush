@@ -58,7 +58,7 @@ export default function HowToPriceYourselfFreelancerUAE() {
         </div>
 
 
-        <div className="prose prose-gray max-w-none text-gray-700 leading-relaxed space-y-6">
+        <div className="space-y-6 leading-relaxed">
 
           <p>
             Most UAE freelancers pick a number that &ldquo;feels about right&rdquo; or copy what they think
@@ -69,7 +69,7 @@ export default function HowToPriceYourselfFreelancerUAE() {
           </p>
 
           <section>
-            <h2 className="text-xl font-bold text-gray-900 mt-8 mb-3">Step 1: Calculate Your Floor Rate</h2>
+            <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2"><span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>Step 1: Calculate Your Floor Rate</h2>
             <p>
               Your floor rate is the absolute minimum hourly or daily rate you need to charge
               to cover your costs and sustain your business. Anything below this, and you are
@@ -98,7 +98,7 @@ export default function HowToPriceYourselfFreelancerUAE() {
           </section>
 
           <section>
-            <h2 className="text-xl font-bold text-gray-900 mt-8 mb-3">Step 2: Research Market Rates</h2>
+            <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2"><span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>Step 2: Research Market Rates</h2>
             <p>
               Your floor rate tells you the minimum. Market rates tell you what clients expect
               to pay. Research both the top and bottom of your market:
@@ -117,7 +117,7 @@ export default function HowToPriceYourselfFreelancerUAE() {
           </section>
 
           <section>
-            <h2 className="text-xl font-bold text-gray-900 mt-8 mb-3">Step 3: Choose Your Pricing Model</h2>
+            <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2"><span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>Step 3: Choose Your Pricing Model</h2>
 
             <div className="space-y-4 mt-4">
               {[
@@ -131,7 +131,7 @@ export default function HowToPriceYourselfFreelancerUAE() {
                   <p className="font-semibold text-gray-900 text-sm mb-2">{item.model}</p>
                   <div className="grid grid-cols-1 sm:grid-cols-2 gap-2 mb-2">
                     <div>
-                      <p className="text-xs text-green-600 font-semibold mb-1">Pros</p>
+                      <p className="text-xs text-emerald-600 font-semibold mb-1">Pros</p>
                       <p className="text-xs text-gray-600">{item.pros}</p>
                     </div>
                     <div>
@@ -146,7 +146,7 @@ export default function HowToPriceYourselfFreelancerUAE() {
           </section>
 
           <section>
-            <h2 className="text-xl font-bold text-gray-900 mt-8 mb-3">Step 4: Price for the Client&apos;s Budget, Not Your Time</h2>
+            <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2"><span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>Step 4: Price for the Client&apos;s Budget, Not Your Time</h2>
             <p>
               The most important pricing mindset shift: stop thinking about how long something
               takes you and start thinking about what it is worth to the client. A social media
@@ -165,7 +165,7 @@ export default function HowToPriceYourselfFreelancerUAE() {
           </section>
 
           <section>
-            <h2 className="text-xl font-bold text-gray-900 mt-8 mb-3">Step 5: Stop Justifying Your Rate</h2>
+            <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2"><span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>Step 5: Stop Justifying Your Rate</h2>
             <p>
               One of the most common signals of underpricing: freelancers who over-explain their
               rates. &ldquo;My rate is AED 2,500/day, which includes X, Y, Z, and I have 8 years of
@@ -185,7 +185,7 @@ export default function HowToPriceYourselfFreelancerUAE() {
           </section>
 
           <section>
-            <h2 className="text-xl font-bold text-gray-900 mt-8 mb-3">When and How to Raise Your Rates</h2>
+            <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2"><span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>When and How to Raise Your Rates</h2>
             <p>
               Raise your rates when: you are fully booked consistently (demand outstripping supply),
               you are winning most proposals without pushback (rates may be too low), your costs
@@ -199,8 +199,8 @@ export default function HowToPriceYourselfFreelancerUAE() {
           </section>
 
           {/* CTA */}
-          <div className="bg-gray-950 text-white rounded-2xl p-6 mt-10">
-            <p className="text-xs font-semibold text-gray-400 uppercase tracking-widest mb-2">Calculate your target rate</p>
+          <div className="bg-gradient-to-br from-gray-900 to-gray-800 text-white rounded-2xl p-8 mt-12 text-center">
+            <p className="text-xs font-bold text-emerald-400 uppercase tracking-widest block mb-3">Calculate your target rate</p>
             <h3 className="text-lg font-bold mb-2">Use our free Freelance Rate Calculator</h3>
             <p className="text-gray-400 text-sm mb-4">
               Input your costs, desired income, and work hours to get a recommended minimum hourly
@@ -208,7 +208,7 @@ export default function HowToPriceYourselfFreelancerUAE() {
             </p>
             <Link
               href="/blog/freelance-rate-calculator-uae"
-              className="inline-block bg-white text-gray-900 font-bold px-5 py-2.5 rounded-xl hover:bg-gray-100 transition-colors text-sm"
+              className="inline-block bg-emerald-500 hover:bg-emerald-400 text-white font-bold px-8 py-3 rounded-xl transition-colors text-sm"
             >
               Use the Rate Calculator →
             </Link>

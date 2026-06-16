@@ -62,7 +62,7 @@ export default function Article() {
           </p>
         </div>
 
-        <div className="text-gray-700 leading-relaxed space-y-6">
+        <div className="space-y-6 leading-relaxed">
 
           <p>
             I've spoken to dozens of freelancers in the UAE over the past two years. Designers, developers,
@@ -78,7 +78,7 @@ export default function Article() {
             Here's what's actually happening.
           </p>
 
-          <h2 className="text-xl font-bold text-gray-900 mt-10 mb-3">The Real Ceiling Is Invisible Work</h2>
+          <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2"><span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>The Real Ceiling Is Invisible Work</h2>
 
           <p>
             For every billable hour you work, how many unbillable hours are you spending on:
@@ -98,7 +98,7 @@ export default function Article() {
             unpaid work that feels like work but produces nothing billable.
           </p>
 
-          <h2 className="text-xl font-bold text-gray-900 mt-10 mb-3">The Freelancers Who Break Through</h2>
+          <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2"><span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>The Freelancers Who Break Through</h2>
 
           <p>
             The freelancers who consistently earn AED 25K-50K+ per month don't work harder.
@@ -132,7 +132,7 @@ export default function Article() {
             </li>
           </ol>
 
-          <h2 className="text-xl font-bold text-gray-900 mt-10 mb-3">How to Build This Without Starting From Scratch</h2>
+          <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2"><span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>How to Build This Without Starting From Scratch</h2>
 
           <p>
             The fastest path to having these systems is not building them yourself.
@@ -173,7 +173,7 @@ export default function Article() {
             </div>
           </div>
 
-          <h2 className="text-xl font-bold text-gray-900 mt-10 mb-3">Start With One Thing</h2>
+          <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2"><span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>Start With One Thing</h2>
 
           <p>
             Don't try to fix everything at once. Pick the single biggest time leak in your business

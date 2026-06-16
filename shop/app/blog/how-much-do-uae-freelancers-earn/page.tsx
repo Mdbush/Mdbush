@@ -263,10 +263,10 @@ export default function HowMuchDoUAEFreelancersEarnPage() {
           <div className="mt-10">
             <h3 className="text-sm font-semibold text-gray-900 mb-3">Related Guides</h3>
             <div className="space-y-1.5">
-              <Link href="/blog/freelance-rate-calculator-uae" className="block text-blue-600 hover:text-blue-800 text-sm">→ Freelance Rate Calculator: How to Price Your Work in AED</Link>
-              <Link href="/blog/how-to-get-international-clients-uae" className="block text-blue-600 hover:text-blue-800 text-sm">→ How to Get International Clients as a UAE Freelancer</Link>
-              <Link href="/blog/freelance-vs-salary-uae" className="block text-blue-600 hover:text-blue-800 text-sm">→ Freelance vs Salary in UAE — Which Pays More?</Link>
-              <Link href="/blog/how-to-scale-freelance-business-uae" className="block text-blue-600 hover:text-blue-800 text-sm">→ How to Scale a Freelance Business in the UAE</Link>
+              <Link href="/blog/freelance-rate-calculator-uae" className="block text-emerald-700 hover:text-emerald-900 text-sm">→ Freelance Rate Calculator: How to Price Your Work in AED</Link>
+              <Link href="/blog/how-to-get-international-clients-uae" className="block text-emerald-700 hover:text-emerald-900 text-sm">→ How to Get International Clients as a UAE Freelancer</Link>
+              <Link href="/blog/freelance-vs-salary-uae" className="block text-emerald-700 hover:text-emerald-900 text-sm">→ Freelance vs Salary in UAE — Which Pays More?</Link>
+              <Link href="/blog/how-to-scale-freelance-business-uae" className="block text-emerald-700 hover:text-emerald-900 text-sm">→ How to Scale a Freelance Business in the UAE</Link>
             </div>
           </div>
         </div>

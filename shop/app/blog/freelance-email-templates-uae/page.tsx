@@ -218,7 +218,7 @@ export default function FreelanceEmailTemplatesUAE() {
         </div>
 
 
-        <div className="prose prose-gray max-w-none text-gray-700 leading-relaxed space-y-6">
+        <div className="space-y-6 leading-relaxed">
 
           <p>
             Writing client emails from scratch is slow, inconsistent, and often leads to poor
@@ -251,7 +251,7 @@ export default function FreelanceEmailTemplatesUAE() {
           </div>
 
           <section>
-            <h2 className="text-xl font-bold text-gray-900 mt-8 mb-3">UAE Email Etiquette Tips</h2>
+            <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2"><span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>UAE Email Etiquette Tips</h2>
             <ul className="space-y-2 text-sm text-gray-600 mt-3">
               <li><strong>Reply speed matters:</strong> UAE business culture values responsiveness. Aim to reply within 4 hours during business hours, even if just to acknowledge receipt.</li>
               <li><strong>WhatsApp vs email:</strong> Many UAE clients prefer WhatsApp for quick exchanges. Use email for anything requiring a record: proposals, scope agreements, invoice disputes.</li>
@@ -262,8 +262,8 @@ export default function FreelanceEmailTemplatesUAE() {
           </section>
 
           {/* CTA */}
-          <div className="bg-gray-950 text-white rounded-2xl p-6 mt-10">
-            <p className="text-xs font-semibold text-gray-400 uppercase tracking-widest mb-2">200 more templates for every situation</p>
+          <div className="bg-gradient-to-br from-gray-900 to-gray-800 text-white rounded-2xl p-8 mt-12 text-center">
+            <p className="text-xs font-bold text-emerald-400 uppercase tracking-widest block mb-3">200 more templates for every situation</p>
             <h3 className="text-lg font-bold mb-2">The AI Prompt Pack Pro — write anything in minutes</h3>
             <p className="text-gray-400 text-sm mb-4">
               200 AI prompts covering proposals, follow-ups, content, social media, strategy, and business development.
@@ -271,7 +271,7 @@ export default function FreelanceEmailTemplatesUAE() {
             </p>
             <Link
               href="/products/ai-prompt-pack-pro"
-              className="inline-block bg-white text-gray-900 font-bold px-5 py-2.5 rounded-xl hover:bg-gray-100 transition-colors text-sm"
+              className="inline-block bg-emerald-500 hover:bg-emerald-400 text-white font-bold px-8 py-3 rounded-xl transition-colors text-sm"
             >
               See the AI Prompt Pack →
             </Link>

@@ -58,7 +58,7 @@ export default function HowToHandleLatePaymentsUAE() {
         </div>
 
 
-        <div className="prose prose-gray max-w-none text-gray-700 leading-relaxed space-y-6">
+        <div className="space-y-6 leading-relaxed">
 
           <p>
             Late payment is one of the most common and damaging problems UAE freelancers face.
@@ -79,7 +79,7 @@ export default function HowToHandleLatePaymentsUAE() {
           </div>
 
           <section>
-            <h2 className="text-xl font-bold text-gray-900 mt-8 mb-3">Step 1: Send a Structured Reminder Sequence</h2>
+            <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2"><span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>Step 1: Send a Structured Reminder Sequence</h2>
             <p>
               Most late payments are administrative rather than intentional. A structured reminder
               sequence handles these without damaging the client relationship:
@@ -88,9 +88,9 @@ export default function HowToHandleLatePaymentsUAE() {
               <div className="border border-gray-200 rounded-xl p-4">
                 <div className="flex items-center justify-between mb-2">
                   <p className="font-bold text-gray-900 text-sm">Day 0 (due date)</p>
-                  <span className="text-xs bg-blue-50 text-blue-700 px-2 py-0.5 rounded-full font-semibold">Proactive</span>
+                  <span className="text-xs bg-emerald-50 text-blue-700 px-2 py-0.5 rounded-full font-semibold">Proactive</span>
                 </div>
-                <p className="text-sm text-gray-700">
+                <p className="text-sm text-emerald-800">
                   If your invoice is larger than AED 5,000, send a brief &quot;payment due today&quot;
                   reminder the morning of the due date: &quot;Hi [Name], just a friendly reminder that
                   Invoice #[X] for AED [amount] is due today. Please let me know if you need anything
@@ -103,7 +103,7 @@ export default function HowToHandleLatePaymentsUAE() {
                   <p className="font-bold text-gray-900 text-sm">Day 3–5 (first overdue reminder)</p>
                   <span className="text-xs bg-yellow-50 text-yellow-700 px-2 py-0.5 rounded-full font-semibold">Friendly</span>
                 </div>
-                <p className="text-sm text-gray-700">
+                <p className="text-sm text-emerald-800">
                   Friendly tone, assume it slipped through: &quot;Hi [Name], I wanted to follow up on
                   Invoice #[X] for AED [amount], which was due on [date]. Could you confirm when
                   payment will be processed? I&apos;ve attached the invoice again for convenience.&quot;
@@ -115,7 +115,7 @@ export default function HowToHandleLatePaymentsUAE() {
                   <p className="font-bold text-gray-900 text-sm">Day 14 (second reminder)</p>
                   <span className="text-xs bg-orange-50 text-orange-700 px-2 py-0.5 rounded-full font-semibold">Firm</span>
                 </div>
-                <p className="text-sm text-gray-700">
+                <p className="text-sm text-emerald-800">
                   More direct, reference the overdue period: &quot;This invoice is now [X] days overdue.
                   Please advise on the payment status by [specific date] so we can resolve this. I am
                   happy to arrange a call if there are any queries about the invoice.&quot;
@@ -127,7 +127,7 @@ export default function HowToHandleLatePaymentsUAE() {
                   <p className="font-bold text-gray-900 text-sm">Day 30 (formal demand)</p>
                   <span className="text-xs bg-red-50 text-red-700 px-2 py-0.5 rounded-full font-semibold">Formal</span>
                 </div>
-                <p className="text-sm text-gray-700">
+                <p className="text-sm text-emerald-800">
                   Formal written notice (email and WhatsApp): &quot;This is a formal payment demand for
                   Invoice #[X] totalling AED [amount], now 30 days overdue. If payment is not received
                   by [date 7 days out], I will pursue recovery through the relevant legal channels
@@ -139,7 +139,7 @@ export default function HowToHandleLatePaymentsUAE() {
           </section>
 
           <section>
-            <h2 className="text-xl font-bold text-gray-900 mt-8 mb-3">Step 2: Escalate Within the Client Organisation</h2>
+            <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2"><span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>Step 2: Escalate Within the Client Organisation</h2>
             <p>
               If the direct contact is unresponsive, escalate within the client&apos;s organisation
               before going legal. Contact:
@@ -152,7 +152,7 @@ export default function HowToHandleLatePaymentsUAE() {
           </section>
 
           <section>
-            <h2 className="text-xl font-bold text-gray-900 mt-8 mb-3">Step 3: Legal Recovery Options in the UAE</h2>
+            <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2"><span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>Step 3: Legal Recovery Options in the UAE</h2>
             <div className="space-y-3 mt-4">
               {[
                 { route: "Small Claims Tribunal (Dubai Courts)", threshold: "Up to AED 500,000", detail: "Dubai Small Claims Tribunal handles commercial disputes up to AED 500,000 with simplified procedures. Filing fees are approximately 2.5–5% of the claim value. Cases are typically heard within 4–8 weeks. You represent yourself — no lawyer required for small claims. This is the most practical option for UAE freelancers with unpaid invoices below AED 500,000." },
@@ -163,7 +163,7 @@ export default function HowToHandleLatePaymentsUAE() {
                 <div key={item.route} className="border border-gray-200 rounded-xl p-4">
                   <div className="flex items-start justify-between gap-2 mb-1">
                     <p className="font-semibold text-gray-900 text-sm">{item.route}</p>
-                    <span className="text-xs font-bold text-blue-700 bg-blue-50 px-2 py-0.5 rounded-full shrink-0">{item.threshold}</span>
+                    <span className="text-xs font-bold text-blue-700 bg-emerald-50 px-2 py-0.5 rounded-full shrink-0">{item.threshold}</span>
                   </div>
                   <p className="text-xs text-gray-600">{item.detail}</p>
                 </div>
@@ -172,7 +172,7 @@ export default function HowToHandleLatePaymentsUAE() {
           </section>
 
           <section>
-            <h2 className="text-xl font-bold text-gray-900 mt-8 mb-3">Prevention: Contract Clauses That Protect You</h2>
+            <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2"><span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>Prevention: Contract Clauses That Protect You</h2>
             <ul className="space-y-2 text-sm text-gray-700 mt-3">
               <li className="flex gap-2"><span className="text-blue-500 font-bold">✓</span> <strong>Upfront deposit (30–50%)</strong> — Require a 30–50% deposit before starting any project. This filters out non-serious clients and ensures you cover your costs even if payment disputes arise on final delivery.</li>
               <li className="flex gap-2"><span className="text-blue-500 font-bold">✓</span> <strong>Milestone payments</strong> — Structure larger projects as 30% deposit, 30% at mid-point milestone, 40% on delivery. You never deliver the final product without payment of 60%+ — reducing exposure significantly.</li>
@@ -184,7 +184,7 @@ export default function HowToHandleLatePaymentsUAE() {
           </section>
 
           <section>
-            <h2 className="text-xl font-bold text-gray-900 mt-8 mb-3">When to Write Off the Debt</h2>
+            <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2"><span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>When to Write Off the Debt</h2>
             <p>
               Not every unpaid invoice is worth pursuing. Before escalating to legal action, consider:
             </p>
@@ -196,8 +196,8 @@ export default function HowToHandleLatePaymentsUAE() {
             </ul>
           </section>
 
-          <div className="bg-gray-950 text-white rounded-2xl p-6 mt-10">
-            <p className="text-xs font-semibold text-gray-400 uppercase tracking-widest mb-2">Templates for UAE freelancers</p>
+          <div className="bg-gradient-to-br from-gray-900 to-gray-800 text-white rounded-2xl p-8 mt-12 text-center">
+            <p className="text-xs font-bold text-emerald-400 uppercase tracking-widest block mb-3">Templates for UAE freelancers</p>
             <h3 className="text-lg font-bold mb-2">Payment Reminder Templates &amp; Late Payment Clause Library</h3>
             <p className="text-gray-400 text-sm mb-4">
               SoloKit includes ready-to-use payment reminder email templates, late payment
@@ -206,7 +206,7 @@ export default function HowToHandleLatePaymentsUAE() {
             </p>
             <Link
               href="/products/solokit-freelance-os"
-              className="inline-block bg-white text-gray-900 font-bold px-5 py-2.5 rounded-xl hover:bg-gray-100 transition-colors text-sm"
+              className="inline-block bg-emerald-500 hover:bg-emerald-400 text-white font-bold px-8 py-3 rounded-xl transition-colors text-sm"
             >
               Get SoloKit →
             </Link>

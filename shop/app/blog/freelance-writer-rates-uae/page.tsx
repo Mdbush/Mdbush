@@ -142,7 +142,7 @@ export default function FreelanceWriterRatesUAE() {
           </p>
 
           <div className="bg-gray-50 border border-gray-200 rounded-xl p-4 text-sm mb-8">
-            <p className="font-semibold text-gray-900 mb-1">Quick benchmark</p>
+            <p className="text-sm font-bold text-emerald-800 mb-2">Quick benchmark</p>
             <p className="text-gray-700">
               A mid-level freelance content writer in the UAE typically earns <strong>AED 15,000–25,000/month</strong> through
               a mix of retainer clients and project work. Senior writers with a specialist niche

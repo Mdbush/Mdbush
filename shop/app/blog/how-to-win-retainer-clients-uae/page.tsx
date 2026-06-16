@@ -58,7 +58,7 @@ export default function HowToWinRetainerClientsUAE() {
         </div>
 
 
-        <div className="prose prose-gray max-w-none text-gray-700 leading-relaxed space-y-6">
+        <div className="space-y-6 leading-relaxed">
 
           <p>
             A retainer client is the highest-leverage relationship in a freelance business.
@@ -70,8 +70,8 @@ export default function HowToWinRetainerClientsUAE() {
             This guide covers exactly how to do it.
           </p>
 
-          <div className="bg-gray-50 border border-gray-200 rounded-xl p-4 text-sm">
-            <p className="font-semibold text-gray-900 mb-1">The retainer income math</p>
+          <div className="bg-emerald-50 border border-emerald-200 rounded-xl p-5">
+            <p className="text-sm font-bold text-emerald-800 mb-2">The retainer income math</p>
             <p className="text-gray-700">
               3 retainer clients at AED 8,000/month = AED 24,000/month guaranteed.
               To generate the same income from project work requires winning 4–6 new projects
@@ -83,7 +83,7 @@ export default function HowToWinRetainerClientsUAE() {
           </div>
 
           <section>
-            <h2 className="text-xl font-bold text-gray-900 mt-8 mb-3">When to Propose a Retainer</h2>
+            <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2"><span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>When to Propose a Retainer</h2>
             <p className="text-sm text-gray-600 mb-3">
               The timing of your retainer proposal determines whether it lands. There are four
               ideal moments:
@@ -104,7 +104,7 @@ export default function HowToWinRetainerClientsUAE() {
           </section>
 
           <section>
-            <h2 className="text-xl font-bold text-gray-900 mt-8 mb-3">What to Include in a UAE Retainer Proposal</h2>
+            <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2"><span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>What to Include in a UAE Retainer Proposal</h2>
             <p className="text-sm text-gray-600 mb-3">
               A well-structured retainer proposal removes the client&apos;s uncertainty about what
               they&apos;re paying for each month. Be specific:
@@ -120,7 +120,7 @@ export default function HowToWinRetainerClientsUAE() {
           </section>
 
           <section>
-            <h2 className="text-xl font-bold text-gray-900 mt-8 mb-3">The Retainer Conversion Conversation: Word-for-Word Scripts</h2>
+            <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2"><span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>The Retainer Conversion Conversation: Word-for-Word Scripts</h2>
             <div className="space-y-4 mt-4">
               {[
                 {
@@ -145,7 +145,7 @@ export default function HowToWinRetainerClientsUAE() {
           </section>
 
           <section>
-            <h2 className="text-xl font-bold text-gray-900 mt-8 mb-3">How to Price a UAE Retainer</h2>
+            <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2"><span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>How to Price a UAE Retainer</h2>
             <p className="text-sm text-gray-600 mb-3">
               Retainer pricing should be structured to give clients a discount versus
               project pricing while increasing your income stability:
@@ -168,7 +168,7 @@ export default function HowToWinRetainerClientsUAE() {
           </section>
 
           <section>
-            <h2 className="text-xl font-bold text-gray-900 mt-8 mb-3">Keeping UAE Retainer Clients Long-Term</h2>
+            <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2"><span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>Keeping UAE Retainer Clients Long-Term</h2>
             <ul className="space-y-1 text-sm text-gray-600 mt-3">
               <li>• <strong>Monthly review call (10–15 minutes)</strong> — Brief monthly check-in to align on next month&apos;s priorities. Keeps the relationship warm, surfaces new needs before they become crises, and signals professional investment in their business</li>
               <li>• <strong>Proactive insights</strong> — Send the client something valuable at least once a month that they didn&apos;t ask for: a competitor analysis, a market trend, an industry article directly relevant to their situation. This differentiates you from a vendor executing orders and positions you as a strategic partner</li>
@@ -178,8 +178,8 @@ export default function HowToWinRetainerClientsUAE() {
           </section>
 
           {/* CTA */}
-          <div className="bg-gray-950 text-white rounded-2xl p-6 mt-10">
-            <p className="text-xs font-semibold text-gray-400 uppercase tracking-widest mb-2">Manage your retainer clients</p>
+          <div className="bg-gradient-to-br from-gray-900 to-gray-800 text-white rounded-2xl p-8 mt-12 text-center">
+            <p className="text-xs font-bold text-emerald-400 uppercase tracking-widest block mb-3">Manage your retainer clients</p>
             <h3 className="text-lg font-bold mb-2">Freelancer Client CRM — Track Every Retainer & Renewal</h3>
             <p className="text-gray-400 text-sm mb-4">
               Track retainer clients, log monthly deliverables, manage recurring billing,
@@ -187,7 +187,7 @@ export default function HowToWinRetainerClientsUAE() {
             </p>
             <Link
               href="/products/freelancer-client-crm"
-              className="inline-block bg-white text-gray-900 font-bold px-5 py-2.5 rounded-xl hover:bg-gray-100 transition-colors text-sm"
+              className="inline-block bg-emerald-500 hover:bg-emerald-400 text-white font-bold px-8 py-3 rounded-xl transition-colors text-sm"
             >
               Get the Client CRM →
             </Link>

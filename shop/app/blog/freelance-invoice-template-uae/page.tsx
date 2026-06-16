@@ -77,7 +77,7 @@ export default function FreelanceInvoiceTemplateUAE() {
         </div>
 
 
-        <div className="prose prose-gray max-w-none text-gray-700 leading-relaxed space-y-6">
+        <div className="space-y-6 leading-relaxed">
 
           <p>
             A professional invoice does two things: it gets you paid, and it protects you if
@@ -87,7 +87,7 @@ export default function FreelanceInvoiceTemplateUAE() {
           </p>
 
           <section>
-            <h2 className="text-xl font-bold text-gray-900 mt-8 mb-3">Mandatory Invoice Fields for UAE Freelancers</h2>
+            <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2"><span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>Mandatory Invoice Fields for UAE Freelancers</h2>
             <div className="space-y-3 mt-4">
               {mandatoryFields.map((item, i) => (
                 <div key={i} className="border border-gray-200 rounded-xl p-4">
@@ -99,7 +99,7 @@ export default function FreelanceInvoiceTemplateUAE() {
           </section>
 
           <section>
-            <h2 className="text-xl font-bold text-gray-900 mt-8 mb-3">VAT Rules for UAE Freelance Invoices</h2>
+            <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2"><span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>VAT Rules for UAE Freelance Invoices</h2>
             <div className="space-y-3 mt-4">
               {vatRules.map((item) => (
                 <div key={item.scenario} className="border border-gray-200 rounded-xl p-4">
@@ -116,7 +116,7 @@ export default function FreelanceInvoiceTemplateUAE() {
           </section>
 
           <section>
-            <h2 className="text-xl font-bold text-gray-900 mt-8 mb-3">Invoice Template (Copy-Paste Structure)</h2>
+            <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2"><span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>Invoice Template (Copy-Paste Structure)</h2>
             <div className="bg-gray-50 border border-gray-200 rounded-xl p-5 text-sm font-mono">
               <div className="space-y-1 text-gray-700">
                 <p className="font-bold text-gray-900 text-base">INVOICE</p>
@@ -126,7 +126,7 @@ export default function FreelanceInvoiceTemplateUAE() {
 
                 <div className="grid grid-cols-2 gap-4 mt-4 border-t border-gray-200 pt-4">
                   <div>
-                    <p className="font-semibold text-gray-900 mb-1">From</p>
+                    <p className="text-sm font-bold text-emerald-800 mb-2">From</p>
                     <p>[Your full name / business name]</p>
                     <p>[Email address]</p>
                     <p>[Phone number]</p>
@@ -134,7 +134,7 @@ export default function FreelanceInvoiceTemplateUAE() {
                     <p>[TRN: XXXXXXXXXX — if VAT registered]</p>
                   </div>
                   <div>
-                    <p className="font-semibold text-gray-900 mb-1">To</p>
+                    <p className="text-sm font-bold text-emerald-800 mb-2">To</p>
                     <p>[Client company name]</p>
                     <p>[Client address]</p>
                     <p>[Client TRN — if they are VAT registered]</p>
@@ -166,7 +166,7 @@ export default function FreelanceInvoiceTemplateUAE() {
                 </table>
 
                 <div className="mt-4 border-t border-gray-200 pt-4">
-                  <p className="font-semibold text-gray-900 mb-1">Payment details</p>
+                  <p className="text-sm font-bold text-emerald-800 mb-2">Payment details</p>
                   <p>Bank: [Bank name]</p>
                   <p>Account name: [Your name / business name]</p>
                   <p>IBAN: AE[XX XXXX XXXX XXXX XXXX XXX]</p>
@@ -181,7 +181,7 @@ export default function FreelanceInvoiceTemplateUAE() {
           </section>
 
           <section>
-            <h2 className="text-xl font-bold text-gray-900 mt-8 mb-3">Payment Terms That Get You Paid Faster</h2>
+            <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2"><span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>Payment Terms That Get You Paid Faster</h2>
             <ul className="space-y-2 text-sm text-gray-600 mt-3">
               <li><strong>Net 15, not Net 30:</strong> Shorter terms lead to faster payment — most clients will not object to 15 days.</li>
               <li><strong>Specific dates only:</strong> Say &ldquo;due by 30 June 2026&rdquo; not &ldquo;due within 30 days.&rdquo; Ambiguity is always resolved in the client&apos;s favour.</li>
@@ -192,7 +192,7 @@ export default function FreelanceInvoiceTemplateUAE() {
           </section>
 
           <section>
-            <h2 className="text-xl font-bold text-gray-900 mt-8 mb-3">Tools for Creating Invoices in AED</h2>
+            <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2"><span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>Tools for Creating Invoices in AED</h2>
             <div className="space-y-2 mt-3">
               {[
                 { tool: "Wave (free)", note: "Excellent free invoicing with AED support, payment tracking, and basic accounting" },
@@ -209,8 +209,8 @@ export default function FreelanceInvoiceTemplateUAE() {
           </section>
 
           {/* CTA */}
-          <div className="bg-gray-950 text-white rounded-2xl p-6 mt-10">
-            <p className="text-xs font-semibold text-gray-400 uppercase tracking-widest mb-2">When invoices go unpaid</p>
+          <div className="bg-gradient-to-br from-gray-900 to-gray-800 text-white rounded-2xl p-8 mt-12 text-center">
+            <p className="text-xs font-bold text-emerald-400 uppercase tracking-widest block mb-3">When invoices go unpaid</p>
             <h3 className="text-lg font-bold mb-2">How to Chase Late Payments as a UAE Freelancer</h3>
             <p className="text-gray-400 text-sm mb-4">
               A 4-step follow-up sequence, prevention tactics, and the legal options available
@@ -218,7 +218,7 @@ export default function FreelanceInvoiceTemplateUAE() {
             </p>
             <Link
               href="/blog/late-payment-freelance-uae"
-              className="inline-block bg-white text-gray-900 font-bold px-5 py-2.5 rounded-xl hover:bg-gray-100 transition-colors text-sm"
+              className="inline-block bg-emerald-500 hover:bg-emerald-400 text-white font-bold px-8 py-3 rounded-xl transition-colors text-sm"
             >
               Read the Late Payment Guide →
             </Link>

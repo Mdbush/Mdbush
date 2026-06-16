@@ -174,7 +174,7 @@ export default function FreelanceLegalConsultantRatesUAE() {
           </p>
 
           <div className="bg-gray-50 border border-gray-200 rounded-xl p-4 text-sm mb-8">
-            <p className="font-semibold text-gray-900 mb-1">Quick benchmark</p>
+            <p className="text-sm font-bold text-emerald-800 mb-2">Quick benchmark</p>
             <p className="text-gray-700">
               A mid-level freelance commercial lawyer in the UAE with 5–8 years of experience
               typically earns <strong>AED 40,000–80,000/month</strong> on a mix of retainer and

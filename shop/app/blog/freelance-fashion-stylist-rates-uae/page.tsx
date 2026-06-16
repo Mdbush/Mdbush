@@ -70,7 +70,7 @@ export default function FreelanceFashionStylistRatesUAE() {
         </div>
 
 
-        <div className="prose prose-gray max-w-none text-gray-700 leading-relaxed space-y-6">
+        <div className="space-y-6 leading-relaxed">
 
           <p>
             Dubai is a genuine fashion capital — FFWD (Fashion Forward Dubai), the proliferation
@@ -82,8 +82,8 @@ export default function FreelanceFashionStylistRatesUAE() {
             2026 benchmarks.
           </p>
 
-          <div className="bg-gray-50 border border-gray-200 rounded-xl p-4 text-sm">
-            <p className="font-semibold text-gray-900 mb-1">Quick benchmark</p>
+          <div className="bg-emerald-50 border border-emerald-200 rounded-xl p-5">
+            <p className="text-sm font-bold text-emerald-800 mb-2">Quick benchmark</p>
             <p className="text-gray-700">
               A mid-level freelance fashion stylist in Dubai with 4–7 years of experience
               across editorial and personal styling typically charges
@@ -95,7 +95,7 @@ export default function FreelanceFashionStylistRatesUAE() {
           </div>
 
           <section>
-            <h2 className="text-xl font-bold text-gray-900 mt-8 mb-4">Freelance Fashion Stylist Rates in the UAE by Service Type (2026)</h2>
+            <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2"><span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>Freelance Fashion Stylist Rates in the UAE by Service Type (2026)</h2>
             <p className="text-xs text-gray-400 mb-4">Junior: 0–3 years / Mid: 4–7 years / Senior: 8+ years or celebrity/luxury specialist</p>
             <div className="overflow-x-auto">
               <table className="w-full text-sm border-collapse">
@@ -122,7 +122,7 @@ export default function FreelanceFashionStylistRatesUAE() {
           </section>
 
           <section>
-            <h2 className="text-xl font-bold text-gray-900 mt-8 mb-3">High-Value Fashion Styling Niches in the UAE</h2>
+            <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2"><span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>High-Value Fashion Styling Niches in the UAE</h2>
             <div className="space-y-3 mt-4">
               {[
                 { niche: "UHNW personal styling (Palm Jumeirah, Emirates Hills, DIFC)", rate: "AED 10,000–30,000+/month retainer", why: "Dubai hosts a significant concentration of ultra-high-net-worth individuals who dress for international social circuits, government events, and business contexts where appearance carries weight. Personal stylists to this demographic combine discretion, international brand relationships, and an understanding of cultural dress codes across occasions. Monthly retainers covering regular wardrobe reviews, event dressing, and travel packing are the model." },
@@ -133,7 +133,7 @@ export default function FreelanceFashionStylistRatesUAE() {
                 <div key={item.niche} className="border border-gray-200 rounded-xl p-4">
                   <div className="flex items-start justify-between gap-2 mb-1">
                     <p className="font-semibold text-gray-900 text-sm">{item.niche}</p>
-                    <span className="text-xs font-bold text-green-700 bg-green-50 px-2 py-0.5 rounded-full shrink-0">{item.rate}</span>
+                    <span className="text-xs font-bold text-emerald-700 bg-emerald-50 border border-emerald-200 px-2 py-0.5 rounded-full shrink-0">{item.rate}</span>
                   </div>
                   <p className="text-xs text-gray-600">{item.why}</p>
                 </div>
@@ -142,11 +142,11 @@ export default function FreelanceFashionStylistRatesUAE() {
           </section>
 
           <section>
-            <h2 className="text-xl font-bold text-gray-900 mt-8 mb-3">Pricing Models for Fashion Stylists</h2>
+            <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2"><span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>Pricing Models for Fashion Stylists</h2>
             <div className="space-y-3 mt-4">
               <div className="border border-gray-200 rounded-xl p-4">
                 <p className="font-bold text-gray-900 text-sm mb-2">Day rate (standard for editorial & commercial)</p>
-                <p className="text-sm text-gray-700">
+                <p className="text-sm text-emerald-800">
                   The industry standard for shoots and events. Quote a clear day rate and define
                   what a day means (8 hours on set, or including prep time?). Prep days —
                   pulling pieces, confirming bookings, fitting appointments — should be
@@ -156,7 +156,7 @@ export default function FreelanceFashionStylistRatesUAE() {
               </div>
               <div className="border border-gray-200 rounded-xl p-4">
                 <p className="font-bold text-gray-900 text-sm mb-2">Project fee (personal styling overhauls)</p>
-                <p className="text-sm text-gray-700">
+                <p className="text-sm text-emerald-800">
                   For wardrobe overhauls, style identity projects, and capsule wardrobe
                   builds, quote a project fee covering all sessions. Include a clear scope:
                   number of sessions, whether shopping accompaniment is included, and
@@ -166,7 +166,7 @@ export default function FreelanceFashionStylistRatesUAE() {
               </div>
               <div className="border border-gray-200 rounded-xl p-4">
                 <p className="font-bold text-gray-900 text-sm mb-2">Monthly retainer (ongoing private clients)</p>
-                <p className="text-sm text-gray-700">
+                <p className="text-sm text-emerald-800">
                   Retainer agreements with private clients provide income stability and
                   guarantee consistent access to you. Define retainer scope precisely:
                   how many shopping sessions, how many event styling days, turnaround
@@ -178,7 +178,7 @@ export default function FreelanceFashionStylistRatesUAE() {
           </section>
 
           <section>
-            <h2 className="text-xl font-bold text-gray-900 mt-8 mb-3">What Affects Your Rate as a UAE Fashion Stylist</h2>
+            <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2"><span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>What Affects Your Rate as a UAE Fashion Stylist</h2>
             <ul className="space-y-1 text-sm text-gray-600 mt-3">
               <li>• <strong>Portfolio prestige</strong> — Credits in Vogue Arabia, Harper&apos;s Bazaar Arabia, Grazia ME, or L&apos;Officiel Arabia carry weight. One strong editorial credit opens commercial doors</li>
               <li>• <strong>Network</strong> — Access to premium showrooms, brand PR contacts, and the ability to pull pieces that aren&apos;t in standard rental inventory differentiates serious stylists</li>
@@ -189,11 +189,11 @@ export default function FreelanceFashionStylistRatesUAE() {
           </section>
 
           <section>
-            <h2 className="text-xl font-bold text-gray-900 mt-8 mb-3">Building a UAE Fashion Styling Practice</h2>
+            <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2"><span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>Building a UAE Fashion Styling Practice</h2>
             <div className="space-y-3 mt-4">
               <div className="border border-gray-200 rounded-xl p-4">
                 <p className="font-bold text-gray-900 text-sm mb-2">Start with editorial (build the book first)</p>
-                <p className="text-sm text-gray-700">
+                <p className="text-sm text-emerald-800">
                   UAE publications — Vogue Arabia, Grazia ME, Mojeh, Scoop — work with
                   both established and emerging stylists. Editorial rates are lower than
                   commercial (sometimes trade or low-pay), but the credits build your
@@ -203,7 +203,7 @@ export default function FreelanceFashionStylistRatesUAE() {
               </div>
               <div className="border border-gray-200 rounded-xl p-4">
                 <p className="font-bold text-gray-900 text-sm mb-2">Identify your niche and price accordingly</p>
-                <p className="text-sm text-gray-700">
+                <p className="text-sm text-emerald-800">
                   The highest rates in UAE styling go to specialists, not generalists.
                   Decide early: personal styling for UHNW clients, luxury editorial,
                   commercial campaigns, abaya/modest fashion, or influencer content.
@@ -213,7 +213,7 @@ export default function FreelanceFashionStylistRatesUAE() {
               </div>
               <div className="border border-gray-200 rounded-xl p-4">
                 <p className="font-bold text-gray-900 text-sm mb-2">Build showroom relationships early</p>
-                <p className="text-sm text-gray-700">
+                <p className="text-sm text-emerald-800">
                   Access to pull pieces from UAE showrooms (luxury multi-brand boutiques,
                   designer PR contacts) is a material advantage in commercial work. Start
                   building these relationships before you need them. Attend fashion weeks,
@@ -225,8 +225,8 @@ export default function FreelanceFashionStylistRatesUAE() {
           </section>
 
           {/* CTA */}
-          <div className="bg-gray-950 text-white rounded-2xl p-6 mt-10">
-            <p className="text-xs font-semibold text-gray-400 uppercase tracking-widest mb-2">Track your styling clients</p>
+          <div className="bg-gradient-to-br from-gray-900 to-gray-800 text-white rounded-2xl p-8 mt-12 text-center">
+            <p className="text-xs font-bold text-emerald-400 uppercase tracking-widest block mb-3">Track your styling clients</p>
             <h3 className="text-lg font-bold mb-2">Freelancer Client CRM — Manage Every Project in Notion</h3>
             <p className="text-gray-400 text-sm mb-4">
               Track client projects from brief to delivery, log fittings and shoot days,
@@ -234,7 +234,7 @@ export default function FreelanceFashionStylistRatesUAE() {
             </p>
             <Link
               href="/products/freelancer-client-crm"
-              className="inline-block bg-white text-gray-900 font-bold px-5 py-2.5 rounded-xl hover:bg-gray-100 transition-colors text-sm"
+              className="inline-block bg-emerald-500 hover:bg-emerald-400 text-white font-bold px-8 py-3 rounded-xl transition-colors text-sm"
             >
               Get the Client CRM →
             </Link>

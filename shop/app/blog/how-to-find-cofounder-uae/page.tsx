@@ -58,7 +58,7 @@ export default function HowToFindCofounderUAE() {
         </div>
 
 
-        <div className="prose prose-gray max-w-none text-gray-700 leading-relaxed space-y-6">
+        <div className="space-y-6 leading-relaxed">
 
           <p>
             The wrong co-founder is one of the leading causes of early-stage startup failure.
@@ -69,8 +69,8 @@ export default function HowToFindCofounderUAE() {
             — how to evaluate fit before you commit. Here&apos;s a practical approach for 2026.
           </p>
 
-          <div className="bg-gray-50 border border-gray-200 rounded-xl p-4 text-sm">
-            <p className="font-semibold text-gray-900 mb-1">The real question before you search</p>
+          <div className="bg-emerald-50 border border-emerald-200 rounded-xl p-5">
+            <p className="text-sm font-bold text-emerald-800 mb-2">The real question before you search</p>
             <p className="text-gray-700">
               Before finding a co-founder, answer: <strong>Do you actually need one?</strong>
               Many UAE founders look for a co-founder because they feel lonely or nervous,
@@ -82,7 +82,7 @@ export default function HowToFindCofounderUAE() {
           </div>
 
           <section>
-            <h2 className="text-xl font-bold text-gray-900 mt-8 mb-3">Where to Find Co-Founders in the UAE</h2>
+            <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2"><span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>Where to Find Co-Founders in the UAE</h2>
             <div className="space-y-3 mt-4">
               {[
                 { place: "Startup accelerators and incubators", detail: "Dubai: in5 (TECOM Group), Astrolabs, Dubai Future Accelerators, DIFC Innovation Hub. Abu Dhabi: Hub71 (the most active startup ecosystem in the UAE by funding). Founders in accelerator cohorts are pre-vetted, building-stage, and actively looking for startup relationships. Apply to programs or attend their demo days and networking events." },
@@ -101,7 +101,7 @@ export default function HowToFindCofounderUAE() {
           </section>
 
           <section>
-            <h2 className="text-xl font-bold text-gray-900 mt-8 mb-3">What to Look for in a UAE Co-Founder</h2>
+            <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2"><span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>What to Look for in a UAE Co-Founder</h2>
             <ul className="space-y-2 text-sm text-gray-600 mt-3">
               <li>• <strong>Complementary skills, not identical ones</strong> — The classic pairing: product/technical founder + commercial/distribution founder. Two developers or two business people without a technical founder are both problematic. Ask: what does this person do better than me that the business actually needs?</li>
               <li>• <strong>Aligned risk tolerance</strong> — Building a company in the UAE has real financial risk. Your co-founder needs to be genuinely comfortable with 12–24 months of below-market compensation (or none) while building. Mismatched financial runway expectations destroy co-founding relationships</li>
@@ -112,7 +112,7 @@ export default function HowToFindCofounderUAE() {
           </section>
 
           <section>
-            <h2 className="text-xl font-bold text-gray-900 mt-8 mb-3">Co-Founder Equity: How to Structure the Split</h2>
+            <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2"><span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>Co-Founder Equity: How to Structure the Split</h2>
             <p className="text-sm text-gray-600 mb-3">
               Equity conversations are uncomfortable, which is why they&apos;re often avoided until
               it&apos;s too late. Have them early, clearly, and in writing.
@@ -136,7 +136,7 @@ export default function HowToFindCofounderUAE() {
           </section>
 
           <section>
-            <h2 className="text-xl font-bold text-gray-900 mt-8 mb-3">Legal: What to Sign Before You Build</h2>
+            <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2"><span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>Legal: What to Sign Before You Build</h2>
             <p className="text-sm text-gray-600 mb-3">
               Many UAE co-founding relationships collapse not because of personality clashes,
               but because the legal structure was never established clearly. Get legal documentation
@@ -151,7 +151,7 @@ export default function HowToFindCofounderUAE() {
           </section>
 
           <section>
-            <h2 className="text-xl font-bold text-gray-900 mt-8 mb-3">Run a Trial Period Before Committing</h2>
+            <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2"><span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>Run a Trial Period Before Committing</h2>
             <p>
               Before signing equity agreements, work together on a real project for 4–8 weeks.
               Build an MVP, run a market test, pitch to 5 potential customers together.
@@ -163,8 +163,8 @@ export default function HowToFindCofounderUAE() {
           </section>
 
           {/* CTA */}
-          <div className="bg-gray-950 text-white rounded-2xl p-6 mt-10">
-            <p className="text-xs font-semibold text-gray-400 uppercase tracking-widest mb-2">Build your startup systems</p>
+          <div className="bg-gradient-to-br from-gray-900 to-gray-800 text-white rounded-2xl p-8 mt-12 text-center">
+            <p className="text-xs font-bold text-emerald-400 uppercase tracking-widest block mb-3">Build your startup systems</p>
             <h3 className="text-lg font-bold mb-2">Solopreneur OS — The Complete Freelance & Startup Operating System</h3>
             <p className="text-gray-400 text-sm mb-4">
               Project tracking, client management, goal-setting, financial planning, and
@@ -173,7 +173,7 @@ export default function HowToFindCofounderUAE() {
             </p>
             <Link
               href="/products/solopreneur-os"
-              className="inline-block bg-white text-gray-900 font-bold px-5 py-2.5 rounded-xl hover:bg-gray-100 transition-colors text-sm"
+              className="inline-block bg-emerald-500 hover:bg-emerald-400 text-white font-bold px-8 py-3 rounded-xl transition-colors text-sm"
             >
               Get the Solopreneur OS →
             </Link>

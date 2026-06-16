@@ -69,7 +69,7 @@ export default function FreelanceDataScientistRatesUAE() {
         </div>
 
 
-        <div className="prose prose-gray max-w-none text-gray-700 leading-relaxed space-y-6">
+        <div className="space-y-6 leading-relaxed">
 
           <p>
             The UAE is investing heavily in AI and data capabilities across government,
@@ -81,8 +81,8 @@ export default function FreelanceDataScientistRatesUAE() {
             the 2026 rate benchmarks.
           </p>
 
-          <div className="bg-gray-50 border border-gray-200 rounded-xl p-4 text-sm">
-            <p className="font-semibold text-gray-900 mb-1">Quick benchmark</p>
+          <div className="bg-emerald-50 border border-emerald-200 rounded-xl p-5">
+            <p className="text-sm font-bold text-emerald-800 mb-2">Quick benchmark</p>
             <p className="text-gray-700">
               A mid-level freelance data scientist in Dubai (3–6 years, proven ML deployment
               experience) typically charges <strong>AED 700–1,500/hr for consulting</strong> and
@@ -94,7 +94,7 @@ export default function FreelanceDataScientistRatesUAE() {
           </div>
 
           <section>
-            <h2 className="text-xl font-bold text-gray-900 mt-8 mb-4">Freelance Data Scientist Rates in the UAE by Service (2026)</h2>
+            <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2"><span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>Freelance Data Scientist Rates in the UAE by Service (2026)</h2>
             <p className="text-xs text-gray-400 mb-4">Junior: 0–3 years / Mid: 4–7 years / Senior: 8+ years, ML deployment specialist, or Arabic NLP expert</p>
             <div className="overflow-x-auto">
               <table className="w-full text-sm border-collapse">
@@ -121,7 +121,7 @@ export default function FreelanceDataScientistRatesUAE() {
           </section>
 
           <section>
-            <h2 className="text-xl font-bold text-gray-900 mt-8 mb-3">High-Value Data Science Niches in the UAE</h2>
+            <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2"><span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>High-Value Data Science Niches in the UAE</h2>
             <div className="space-y-3 mt-4">
               {[
                 { niche: "Arabic NLP and large language models for government", rate: "AED 80,000–350,000+ per project", why: "The UAE government is investing significantly in Arabic AI capabilities — Arabic language understanding for government services, legal document processing, Arabic chatbots for public services, and Arabic voice recognition. Arabic NLP specialists with the ability to fine-tune existing LLMs (Llama, Mistral, GPT-4 class) for Arabic dialectal content are extraordinarily rare. Projects come through government tech divisions, TDRA, and AI-focused government entities." },
@@ -132,7 +132,7 @@ export default function FreelanceDataScientistRatesUAE() {
                 <div key={item.niche} className="border border-gray-200 rounded-xl p-4">
                   <div className="flex items-start justify-between gap-2 mb-1">
                     <p className="font-semibold text-gray-900 text-sm">{item.niche}</p>
-                    <span className="text-xs font-bold text-green-700 bg-green-50 px-2 py-0.5 rounded-full shrink-0">{item.rate}</span>
+                    <span className="text-xs font-bold text-emerald-700 bg-emerald-50 border border-emerald-200 px-2 py-0.5 rounded-full shrink-0">{item.rate}</span>
                   </div>
                   <p className="text-xs text-gray-600">{item.why}</p>
                 </div>
@@ -141,7 +141,7 @@ export default function FreelanceDataScientistRatesUAE() {
           </section>
 
           <section>
-            <h2 className="text-xl font-bold text-gray-900 mt-8 mb-3">Pricing Data Science Projects: Common Mistakes</h2>
+            <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2"><span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>Pricing Data Science Projects: Common Mistakes</h2>
             <ul className="space-y-2 text-sm text-gray-600 mt-3">
               <li>• <strong>Quoting hourly for ML model projects</strong> — Machine learning project timelines are genuinely uncertain. A model that should take 40 hours might take 120 if the data quality is poor. Hourly billing on ML projects transfers all the project risk to you. Quote ML projects as fixed-price deliverables based on defined success criteria (accuracy metrics, performance benchmarks)</li>
               <li>• <strong>Not accounting for data preparation time</strong> — In real-world UAE client engagements, 50–70% of project time is spent cleaning, transforming, and validating data — not building models. Include a data assessment phase as a paid deliverable before committing to a model timeline</li>
@@ -151,7 +151,7 @@ export default function FreelanceDataScientistRatesUAE() {
           </section>
 
           <section>
-            <h2 className="text-xl font-bold text-gray-900 mt-8 mb-3">UAE Tech Stack and Platform Context</h2>
+            <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2"><span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>UAE Tech Stack and Platform Context</h2>
             <ul className="space-y-1 text-sm text-gray-600 mt-3">
               <li>• <strong>Cloud providers</strong> — AWS has a Middle East region (AWS me-south-1, Bahrain). Microsoft Azure UAE North (Dubai) is the preferred cloud for UAE government projects due to data sovereignty requirements. Google Cloud has no dedicated UAE region as of 2026 — data sovereignty-sensitive clients default to Azure or AWS</li>
               <li>• <strong>Data sovereignty</strong> — UAE personal data must remain in the UAE for regulated industries (banking, healthcare, government). Azure UAE North is the standard choice for regulated-industry ML deployments. This creates a skills premium for engineers experienced with Azure ML, Azure AI Studio, and Azure Data Factory</li>
@@ -160,8 +160,8 @@ export default function FreelanceDataScientistRatesUAE() {
           </section>
 
           {/* CTA */}
-          <div className="bg-gray-950 text-white rounded-2xl p-6 mt-10">
-            <p className="text-xs font-semibold text-gray-400 uppercase tracking-widest mb-2">Manage your data science projects</p>
+          <div className="bg-gradient-to-br from-gray-900 to-gray-800 text-white rounded-2xl p-8 mt-12 text-center">
+            <p className="text-xs font-bold text-emerald-400 uppercase tracking-widest block mb-3">Manage your data science projects</p>
             <h3 className="text-lg font-bold mb-2">Freelancer Client CRM — Track Every Project & Milestone</h3>
             <p className="text-gray-400 text-sm mb-4">
               Track data science projects from discovery through model deployment,
@@ -170,7 +170,7 @@ export default function FreelanceDataScientistRatesUAE() {
             </p>
             <Link
               href="/products/freelancer-client-crm"
-              className="inline-block bg-white text-gray-900 font-bold px-5 py-2.5 rounded-xl hover:bg-gray-100 transition-colors text-sm"
+              className="inline-block bg-emerald-500 hover:bg-emerald-400 text-white font-bold px-8 py-3 rounded-xl transition-colors text-sm"
             >
               Get the Client CRM →
             </Link>

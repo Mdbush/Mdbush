@@ -179,7 +179,7 @@ export default function HowToNegotiateEquityCompensationUAE() {
                 { href: "/blog/how-to-negotiate-freelance-rates-uae", label: "How to Negotiate Rates Without Losing the Client" },
                 { href: "/blog/how-to-set-payment-terms-uae", label: "How to Set Payment Terms as a UAE Freelancer" },
               ].map((link) => (
-                <Link key={link.href} href={link.href} className="block text-blue-600 hover:text-blue-800 text-sm">
+                <Link key={link.href} href={link.href} className="block text-emerald-700 hover:text-emerald-900 text-sm">
                   → {link.label}
                 </Link>
               ))}

@@ -201,7 +201,7 @@ export default function HowToCreateFreelanceRateCardUAE() {
                 { href: "/blog/how-to-negotiate-freelance-rates-uae", label: "How to Negotiate Rates Without Losing the Client" },
                 { href: "/blog/freelance-proposal-template-uae", label: "Freelance Proposal Template UAE (Copy-Paste)" },
               ].map((link) => (
-                <Link key={link.href} href={link.href} className="block text-blue-600 hover:text-blue-800 text-sm">
+                <Link key={link.href} href={link.href} className="block text-emerald-700 hover:text-emerald-900 text-sm">
                   → {link.label}
                 </Link>
               ))}

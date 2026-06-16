@@ -69,7 +69,7 @@ export default function FreelanceInteriorDesignRatesUAE() {
         </div>
 
 
-        <div className="prose prose-gray max-w-none text-gray-700 leading-relaxed space-y-6">
+        <div className="space-y-6 leading-relaxed">
 
           <p>
             Dubai and Abu Dhabi are among the world&apos;s most active construction and interior
@@ -80,8 +80,8 @@ export default function FreelanceInteriorDesignRatesUAE() {
             highest project fees in the regional creative industry. Here are the 2026 benchmarks.
           </p>
 
-          <div className="bg-gray-50 border border-gray-200 rounded-xl p-4 text-sm">
-            <p className="font-semibold text-gray-900 mb-1">Quick benchmark</p>
+          <div className="bg-emerald-50 border border-emerald-200 rounded-xl p-5">
+            <p className="text-sm font-bold text-emerald-800 mb-2">Quick benchmark</p>
             <p className="text-gray-700">
               A mid-level freelance interior designer in the UAE with 4–7 years of experience
               in residential and commercial projects typically charges
@@ -93,7 +93,7 @@ export default function FreelanceInteriorDesignRatesUAE() {
           </div>
 
           <section>
-            <h2 className="text-xl font-bold text-gray-900 mt-8 mb-4">Freelance Interior Designer Rates in the UAE by Project Type (2026)</h2>
+            <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2"><span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>Freelance Interior Designer Rates in the UAE by Project Type (2026)</h2>
             <p className="text-xs text-gray-400 mb-4">Junior: 0–3 years / Mid: 4–7 years / Senior: 8+ years or luxury/hospitality specialist</p>
             <div className="overflow-x-auto">
               <table className="w-full text-sm border-collapse">
@@ -120,7 +120,7 @@ export default function FreelanceInteriorDesignRatesUAE() {
           </section>
 
           <section>
-            <h2 className="text-xl font-bold text-gray-900 mt-8 mb-3">High-Value Interior Design Niches in the UAE</h2>
+            <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2"><span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>High-Value Interior Design Niches in the UAE</h2>
             <div className="space-y-3 mt-4">
               {[
                 { niche: "Luxury residential (Palm Jumeirah, Emirates Hills, Jumeirah Bay)", rate: "AED 800–2,500+/sqm design fee", why: "Dubai&apos;s ultra-luxury residential market (villas and penthouses at AED 20M–200M+) demands interior designers with international exposure, custom furniture sourcing capabilities, and the discretion to manage UHNW client relationships. One luxury villa project can represent AED 500,000–2,000,000+ in design fees." },
@@ -131,7 +131,7 @@ export default function FreelanceInteriorDesignRatesUAE() {
                 <div key={item.niche} className="border border-gray-200 rounded-xl p-4">
                   <div className="flex items-start justify-between gap-2 mb-1">
                     <p className="font-semibold text-gray-900 text-sm">{item.niche}</p>
-                    <span className="text-xs font-bold text-green-700 bg-green-50 px-2 py-0.5 rounded-full shrink-0">{item.rate}</span>
+                    <span className="text-xs font-bold text-emerald-700 bg-emerald-50 border border-emerald-200 px-2 py-0.5 rounded-full shrink-0">{item.rate}</span>
                   </div>
                   <p className="text-xs text-gray-600">{item.why}</p>
                 </div>
@@ -140,11 +140,11 @@ export default function FreelanceInteriorDesignRatesUAE() {
           </section>
 
           <section>
-            <h2 className="text-xl font-bold text-gray-900 mt-8 mb-3">Pricing Models for UAE Interior Designers</h2>
+            <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2"><span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>Pricing Models for UAE Interior Designers</h2>
             <div className="space-y-3 mt-4">
               <div className="border border-gray-200 rounded-xl p-4">
                 <p className="font-bold text-gray-900 text-sm mb-2">Per-sqm fee (most common in UAE)</p>
-                <p className="text-sm text-gray-700">
+                <p className="text-sm text-emerald-800">
                   Industry standard in the UAE residential market. Clearly communicates scope
                   and allows clients to compare. Set a minimum project fee (typically AED 20,000–50,000)
                   for projects under a certain sqm threshold — small projects have disproportionate
@@ -153,7 +153,7 @@ export default function FreelanceInteriorDesignRatesUAE() {
               </div>
               <div className="border border-gray-200 rounded-xl p-4">
                 <p className="font-bold text-gray-900 text-sm mb-2">Fixed project fee (recommended for commercial & hospitality)</p>
-                <p className="text-sm text-gray-700">
+                <p className="text-sm text-emerald-800">
                   For commercial and hospitality projects with defined briefs, a fixed fee
                   covering design stages from concept through construction documentation.
                   Break into phases: Concept (30%), Design Development (40%), Construction
@@ -163,7 +163,7 @@ export default function FreelanceInteriorDesignRatesUAE() {
               </div>
               <div className="border border-gray-200 rounded-xl p-4">
                 <p className="font-bold text-gray-900 text-sm mb-2">Percentage of construction cost (alternative for luxury)</p>
-                <p className="text-sm text-gray-700">
+                <p className="text-sm text-emerald-800">
                   Some luxury residential designers charge 8–15% of total construction budget.
                   On a AED 5,000,000 villa fit-out, that is AED 400,000–750,000 in design fees.
                   Requires clear agreement on what counts as &quot;construction budget&quot; — define this
@@ -174,7 +174,7 @@ export default function FreelanceInteriorDesignRatesUAE() {
           </section>
 
           <section>
-            <h2 className="text-xl font-bold text-gray-900 mt-8 mb-3">Licensing Requirements for Interior Designers in the UAE</h2>
+            <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2"><span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>Licensing Requirements for Interior Designers in the UAE</h2>
             <ul className="space-y-1 text-sm text-gray-600 mt-3">
               <li>• <strong>Dubai</strong> — Interior designers practising in Dubai generally need a professional license from DED or a free zone. For projects that touch structural elements, Dubai Municipality (DM) approval may be required, which typically requires an architecture firm to be the design of record</li>
               <li>• <strong>Abu Dhabi</strong> — Department of Municipalities and Transport (DMT) oversees commercial interior fit-outs. Residential projects have fewer requirements but villa alterations require permits</li>
@@ -184,8 +184,8 @@ export default function FreelanceInteriorDesignRatesUAE() {
           </section>
 
           {/* CTA */}
-          <div className="bg-gray-950 text-white rounded-2xl p-6 mt-10">
-            <p className="text-xs font-semibold text-gray-400 uppercase tracking-widest mb-2">Manage your design clients</p>
+          <div className="bg-gradient-to-br from-gray-900 to-gray-800 text-white rounded-2xl p-8 mt-12 text-center">
+            <p className="text-xs font-bold text-emerald-400 uppercase tracking-widest block mb-3">Manage your design clients</p>
             <h3 className="text-lg font-bold mb-2">Freelancer Client CRM — Track Every Project & Invoice</h3>
             <p className="text-gray-400 text-sm mb-4">
               Manage interior design projects from concept to handover, track milestones,
@@ -193,7 +193,7 @@ export default function FreelanceInteriorDesignRatesUAE() {
             </p>
             <Link
               href="/products/freelancer-client-crm"
-              className="inline-block bg-white text-gray-900 font-bold px-5 py-2.5 rounded-xl hover:bg-gray-100 transition-colors text-sm"
+              className="inline-block bg-emerald-500 hover:bg-emerald-400 text-white font-bold px-8 py-3 rounded-xl transition-colors text-sm"
             >
               Get the Client CRM →
             </Link>

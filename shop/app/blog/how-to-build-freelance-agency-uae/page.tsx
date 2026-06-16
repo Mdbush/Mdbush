@@ -85,7 +85,7 @@ export default function HowToBuildFreelanceAgencyUAE() {
         </div>
 
 
-        <div className="prose prose-gray max-w-none text-gray-700 leading-relaxed space-y-6">
+        <div className="space-y-6 leading-relaxed">
 
           <p>
             Most UAE freelancers hit an income ceiling around AED 40,000–60,000/month —
@@ -96,8 +96,8 @@ export default function HowToBuildFreelanceAgencyUAE() {
             fast, or without the systems to support it.
           </p>
 
-          <div className="bg-gray-50 border border-gray-200 rounded-xl p-4 text-sm">
-            <p className="font-semibold text-gray-900 mb-1">The honest truth about going solo to agency</p>
+          <div className="bg-emerald-50 border border-emerald-200 rounded-xl p-5">
+            <p className="text-sm font-bold text-emerald-800 mb-2">The honest truth about going solo to agency</p>
             <p className="text-gray-700">
               Building an agency means your income temporarily <em>decreases</em> while you invest in
               coordination overhead — managing people, quality control, client communication,
@@ -108,7 +108,7 @@ export default function HowToBuildFreelanceAgencyUAE() {
           </div>
 
           <section>
-            <h2 className="text-xl font-bold text-gray-900 mt-8 mb-4">The 4 Stages of Freelancer to Agency</h2>
+            <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2"><span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>The 4 Stages of Freelancer to Agency</h2>
             <div className="space-y-4 mt-4">
               {stages.map((s, i) => (
                 <div key={i} className="border border-gray-200 rounded-2xl p-5">
@@ -133,11 +133,11 @@ export default function HowToBuildFreelanceAgencyUAE() {
           </section>
 
           <section>
-            <h2 className="text-xl font-bold text-gray-900 mt-8 mb-3">3 Things You Must Have Before Hiring Anyone</h2>
+            <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2"><span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>3 Things You Must Have Before Hiring Anyone</h2>
             <div className="space-y-3 mt-4">
               <div className="border border-gray-200 rounded-xl p-4">
                 <p className="font-bold text-gray-900 text-sm mb-2">1. Documented SOPs for every deliverable type</p>
-                <p className="text-sm text-gray-700">
+                <p className="text-sm text-emerald-800">
                   If you cannot write down how you do your best work, you cannot hand it to someone
                   else. Document your process for each service type before hiring. The SOP does not
                   need to be perfect — it needs to be clear enough that someone unfamiliar with your
@@ -147,7 +147,7 @@ export default function HowToBuildFreelanceAgencyUAE() {
               </div>
               <div className="border border-gray-200 rounded-xl p-4">
                 <p className="font-bold text-gray-900 text-sm mb-2">2. A client pipeline that is not entirely dependent on you</p>
-                <p className="text-sm text-gray-700">
+                <p className="text-sm text-emerald-800">
                   If all your leads come from your personal LinkedIn, your personal network, or
                   your reputation alone — scaling is extremely fragile. Before hiring, build at
                   least one inbound channel that generates leads independent of you: a content
@@ -157,7 +157,7 @@ export default function HowToBuildFreelanceAgencyUAE() {
               </div>
               <div className="border border-gray-200 rounded-xl p-4">
                 <p className="font-bold text-gray-900 text-sm mb-2">3. 3 months of operating expenses in reserve</p>
-                <p className="text-sm text-gray-700">
+                <p className="text-sm text-emerald-800">
                   Subcontractors expect to be paid on time even if a client delays payment.
                   The UAE&apos;s notoriously slow invoice cycles (60–90 days payment terms for
                   corporate clients) mean you need working capital to bridge the gap between
@@ -170,7 +170,7 @@ export default function HowToBuildFreelanceAgencyUAE() {
           </section>
 
           <section>
-            <h2 className="text-xl font-bold text-gray-900 mt-8 mb-3">Pricing for an Agency vs Solo: The Markup Logic</h2>
+            <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2"><span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>Pricing for an Agency vs Solo: The Markup Logic</h2>
             <p>
               When you hire subcontractors, your pricing needs to account for three things:
               their rate, your coordination overhead, and your profit margin. A common mistake
@@ -210,7 +210,7 @@ export default function HowToBuildFreelanceAgencyUAE() {
           </section>
 
           <section>
-            <h2 className="text-xl font-bold text-gray-900 mt-8 mb-3">UAE Legal Structure for a Growing Studio</h2>
+            <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2"><span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>UAE Legal Structure for a Growing Studio</h2>
             <p>
               Most UAE freelancers operate on a freelance permit (DED, SHAMS, or similar).
               As you scale to a studio model, your current license may limit you:
@@ -224,7 +224,7 @@ export default function HowToBuildFreelanceAgencyUAE() {
           </section>
 
           <section>
-            <h2 className="text-xl font-bold text-gray-900 mt-8 mb-3">The One System You Need Before Anything Else</h2>
+            <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2"><span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>The One System You Need Before Anything Else</h2>
             <p>
               Before you hire, before you restructure your pricing, before you relaunch your
               website as a studio — build a client management system that tracks every client,
@@ -239,8 +239,8 @@ export default function HowToBuildFreelanceAgencyUAE() {
           </section>
 
           {/* CTA */}
-          <div className="bg-gray-950 text-white rounded-2xl p-6 mt-10">
-            <p className="text-xs font-semibold text-gray-400 uppercase tracking-widest mb-2">The operational backbone for UAE studios</p>
+          <div className="bg-gradient-to-br from-gray-900 to-gray-800 text-white rounded-2xl p-8 mt-12 text-center">
+            <p className="text-xs font-bold text-emerald-400 uppercase tracking-widest block mb-3">The operational backbone for UAE studios</p>
             <h3 className="text-lg font-bold mb-2">Freelancer Client CRM — Track Every Client, Project & Invoice</h3>
             <p className="text-gray-400 text-sm mb-4">
               The Notion system UAE freelancers and micro-agencies use to manage multiple
@@ -249,7 +249,7 @@ export default function HowToBuildFreelanceAgencyUAE() {
             </p>
             <Link
               href="/products/freelancer-client-crm"
-              className="inline-block bg-white text-gray-900 font-bold px-5 py-2.5 rounded-xl hover:bg-gray-100 transition-colors text-sm"
+              className="inline-block bg-emerald-500 hover:bg-emerald-400 text-white font-bold px-8 py-3 rounded-xl transition-colors text-sm"
             >
               Get the Client CRM →
             </Link>

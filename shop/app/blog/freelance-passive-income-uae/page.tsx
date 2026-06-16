@@ -72,7 +72,7 @@ export default function Article() {
           </p>
         </div>
 
-        <div className="text-gray-700 leading-relaxed space-y-6">
+        <div className="space-y-6 leading-relaxed">
 
           <p>
             The maths of freelancing eventually run into a wall. You can raise your rates.
@@ -98,9 +98,7 @@ export default function Article() {
             required to start, not potential size.
           </p>
 
-          <h2 className="text-xl font-bold text-gray-900 mt-10 mb-3">
-            Why Passive Income Hits Different in the UAE
-          </h2>
+          <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2"><span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>Why Passive Income Hits Different in the UAE</h2>
 
           <p>
             The UAE has no personal income tax. This is not a footnote — it&apos;s a structural
@@ -127,9 +125,7 @@ export default function Article() {
             Wise is worth setting up before your first sale.
           </p>
 
-          <h2 className="text-xl font-bold text-gray-900 mt-10 mb-3">
-            Stream 1 — Digital Products
-          </h2>
+          <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2"><span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>Stream 1 — Digital Products</h2>
 
           <p>
             Digital products are the cleanest passive income model: build once, sell indefinitely,
@@ -179,9 +175,7 @@ export default function Article() {
             </p>
           </div>
 
-          <h2 className="text-xl font-bold text-gray-900 mt-10 mb-3">
-            Stream 2 — Templates and Tools on Marketplaces
-          </h2>
+          <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2"><span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>Stream 2 — Templates and Tools on Marketplaces</h2>
 
           <p>
             The distinction between Stream 1 and Stream 2 is distribution. Digital products you
@@ -226,9 +220,7 @@ export default function Article() {
             are a good starting point; direct sales are a better long-term play.
           </p>
 
-          <h2 className="text-xl font-bold text-gray-900 mt-10 mb-3">
-            Stream 3 — Affiliate Programs
-          </h2>
+          <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2"><span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>Stream 3 — Affiliate Programs</h2>
 
           <p>
             Affiliate income is the lowest-friction passive stream to add if you&apos;re already
@@ -278,9 +270,7 @@ export default function Article() {
             damage your credibility and convert poorly anyway.
           </p>
 
-          <h2 className="text-xl font-bold text-gray-900 mt-10 mb-3">
-            Stream 4 — Cohort or DIY Courses
-          </h2>
+          <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2"><span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>Stream 4 — Cohort or DIY Courses</h2>
 
           <p>
             Teaching what you know is one of the oldest forms of passive income. The model
@@ -327,9 +317,7 @@ export default function Article() {
             ask you regularly. The answer to the most common question is your course outline.
           </p>
 
-          <h2 className="text-xl font-bold text-gray-900 mt-10 mb-3">
-            Stream 5 — Retainers With Productised Services
-          </h2>
+          <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2"><span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>Stream 5 — Retainers With Productised Services</h2>
 
           <p>
             This one isn&apos;t passive in the pure sense — you&apos;re still delivering work. But retainer-based
@@ -372,9 +360,7 @@ export default function Article() {
             start any project work. That changes the psychology of your entire business.
           </p>
 
-          <h2 className="text-xl font-bold text-gray-900 mt-10 mb-3">
-            The Compounding Maths — What AED 5K/Month Passive Does to Your Business
-          </h2>
+          <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2"><span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>The Compounding Maths — What AED 5K/Month Passive Does to Your Business</h2>
 
           <p>
             Here&apos;s what changes when you add AED 5,000/month in passive or recurring income
@@ -425,9 +411,7 @@ export default function Article() {
             </Link>.
           </p>
 
-          <h2 className="text-xl font-bold text-gray-900 mt-10 mb-3">
-            Where to Start: Pick One Stream, Build in 30 Days
-          </h2>
+          <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2"><span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>Where to Start: Pick One Stream, Build in 30 Days</h2>
 
           <p>
             The biggest mistake is trying to build all five at once. Each stream requires

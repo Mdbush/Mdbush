@@ -103,7 +103,7 @@ export default function HowToGetPaidFasterUAE() {
         </div>
 
 
-        <div className="prose prose-gray max-w-none text-gray-700 leading-relaxed space-y-6">
+        <div className="space-y-6 leading-relaxed">
 
           <p>
             Late payments are one of the biggest cash flow problems for UAE freelancers — not
@@ -113,8 +113,8 @@ export default function HowToGetPaidFasterUAE() {
             changes that put you in control of your payment timeline.
           </p>
 
-          <div className="bg-gray-50 border border-gray-200 rounded-xl p-4 text-sm">
-            <p className="font-semibold text-gray-900 mb-1">The single most important change</p>
+          <div className="bg-emerald-50 border border-emerald-200 rounded-xl p-5">
+            <p className="text-sm font-bold text-emerald-800 mb-2">The single most important change</p>
             <p className="text-gray-700">
               If you implement only one thing from this guide, make it a deposit before starting.
               A deposit changes the entire payment dynamic — it signals professionalism, creates
@@ -139,7 +139,7 @@ export default function HowToGetPaidFasterUAE() {
           </div>
 
           <section>
-            <h2 className="text-xl font-bold text-gray-900 mt-8 mb-3">UAE-Specific Payment Context</h2>
+            <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2"><span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>UAE-Specific Payment Context</h2>
             <ul className="space-y-2 text-sm text-gray-600 mt-3">
               <li><strong>Payment via WhatsApp is common for small amounts:</strong> Some UAE clients prefer quick bank transfers organized over WhatsApp. Always follow up with a formal invoice for your records, even if payment was agreed informally.</li>
               <li><strong>Large companies move slowly:</strong> Multinationals in Dubai often have 45–60 day payment terms internally. If your client is a large corporate, discuss payment terms before signing any contract — or ask to have your contact approve the invoice directly rather than routing through central accounts payable.</li>
@@ -149,8 +149,8 @@ export default function HowToGetPaidFasterUAE() {
           </section>
 
           {/* CTA */}
-          <div className="bg-gray-950 text-white rounded-2xl p-6 mt-10">
-            <p className="text-xs font-semibold text-gray-400 uppercase tracking-widest mb-2">When the invoice is already overdue</p>
+          <div className="bg-gradient-to-br from-gray-900 to-gray-800 text-white rounded-2xl p-8 mt-12 text-center">
+            <p className="text-xs font-bold text-emerald-400 uppercase tracking-widest block mb-3">When the invoice is already overdue</p>
             <h3 className="text-lg font-bold mb-2">How to Chase Late Payments as a UAE Freelancer</h3>
             <p className="text-gray-400 text-sm mb-4">
               A 4-step follow-up sequence from friendly reminder to formal notice — with
@@ -158,7 +158,7 @@ export default function HowToGetPaidFasterUAE() {
             </p>
             <Link
               href="/blog/late-payment-freelance-uae"
-              className="inline-block bg-white text-gray-900 font-bold px-5 py-2.5 rounded-xl hover:bg-gray-100 transition-colors text-sm"
+              className="inline-block bg-emerald-500 hover:bg-emerald-400 text-white font-bold px-8 py-3 rounded-xl transition-colors text-sm"
             >
               Read the Late Payment Guide →
             </Link>

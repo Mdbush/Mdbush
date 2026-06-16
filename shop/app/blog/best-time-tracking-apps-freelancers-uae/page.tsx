@@ -106,7 +106,7 @@ export default function BestTimeTrackingAppsFreelancersUAE() {
         </div>
 
 
-        <div className="prose prose-gray max-w-none text-gray-700 leading-relaxed space-y-6">
+        <div className="space-y-6 leading-relaxed">
 
           <p>
             If you charge hourly rates or need to track time for client billing, a time tracking
@@ -115,8 +115,8 @@ export default function BestTimeTrackingAppsFreelancersUAE() {
             much more accurate. Here are the best options for UAE freelancers in 2026.
           </p>
 
-          <div className="bg-gray-50 border border-gray-200 rounded-xl p-4 text-sm">
-            <p className="font-semibold text-gray-900 mb-1">Quick recommendation</p>
+          <div className="bg-emerald-50 border border-emerald-200 rounded-xl p-5">
+            <p className="text-sm font-bold text-emerald-800 mb-2">Quick recommendation</p>
             <p className="text-gray-700">
               <strong>For most UAE freelancers:</strong> Start with <strong>Toggl Track</strong> (free tier is excellent) or
               <strong> Clockify</strong> (fully free). If you also want to invoice directly from
@@ -125,7 +125,7 @@ export default function BestTimeTrackingAppsFreelancersUAE() {
           </div>
 
           <section>
-            <h2 className="text-xl font-bold text-gray-900 mt-8 mb-5">Best Time Tracking Apps for UAE Freelancers</h2>
+            <h2 className="text-xl font-bold text-gray-900 mt-10 mb-5 flex items-center gap-2"><span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>Best Time Tracking Apps for UAE Freelancers</h2>
             <div className="space-y-6">
               {apps.map((app, i) => (
                 <div key={i} className="border border-gray-200 rounded-2xl p-5">
@@ -145,7 +145,7 @@ export default function BestTimeTrackingAppsFreelancersUAE() {
                   </div>
                   <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 mb-3">
                     <div>
-                      <p className="text-xs font-semibold text-green-600 mb-1">Strengths</p>
+                      <p className="text-xs font-semibold text-emerald-600 mb-1">Strengths</p>
                       <ul className="space-y-0.5">
                         {app.strengths.map((s) => <li key={s} className="text-xs text-gray-600">✓ {s}</li>)}
                       </ul>
@@ -164,7 +164,7 @@ export default function BestTimeTrackingAppsFreelancersUAE() {
           </section>
 
           <section>
-            <h2 className="text-xl font-bold text-gray-900 mt-8 mb-3">UAE-Specific Considerations for Time Tracking</h2>
+            <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2"><span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>UAE-Specific Considerations for Time Tracking</h2>
 
             <h3 className="text-base font-semibold text-gray-900 mt-4 mb-2">Currency and invoicing</h3>
             <p>
@@ -191,7 +191,7 @@ export default function BestTimeTrackingAppsFreelancersUAE() {
           </section>
 
           <section>
-            <h2 className="text-xl font-bold text-gray-900 mt-8 mb-3">The Time Tracking Habit That Changes Your Business</h2>
+            <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2"><span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>The Time Tracking Habit That Changes Your Business</h2>
             <p>
               The biggest benefit of time tracking is not the billing — it is the data. After 3
               months of consistent tracking, most freelancers discover:
@@ -210,8 +210,8 @@ export default function BestTimeTrackingAppsFreelancersUAE() {
           </section>
 
           {/* CTA */}
-          <div className="bg-gray-950 text-white rounded-2xl p-6 mt-10">
-            <p className="text-xs font-semibold text-gray-400 uppercase tracking-widest mb-2">Complete your freelance toolkit</p>
+          <div className="bg-gradient-to-br from-gray-900 to-gray-800 text-white rounded-2xl p-8 mt-12 text-center">
+            <p className="text-xs font-bold text-emerald-400 uppercase tracking-widest block mb-3">Complete your freelance toolkit</p>
             <h3 className="text-lg font-bold mb-2">The best tools for UAE freelancers in 2026</h3>
             <p className="text-gray-400 text-sm mb-4">
               Beyond time tracking — the complete tool stack for UAE freelancers, covering accounting,
@@ -219,7 +219,7 @@ export default function BestTimeTrackingAppsFreelancersUAE() {
             </p>
             <Link
               href="/blog/best-tools-freelancers-uae-2026"
-              className="inline-block bg-white text-gray-900 font-bold px-5 py-2.5 rounded-xl hover:bg-gray-100 transition-colors text-sm"
+              className="inline-block bg-emerald-500 hover:bg-emerald-400 text-white font-bold px-8 py-3 rounded-xl transition-colors text-sm"
             >
               See the Complete Tools Guide →
             </Link>

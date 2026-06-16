@@ -71,7 +71,7 @@ export default function Article() {
           </p>
         </div>
 
-        <div className="text-gray-700 leading-relaxed space-y-6">
+        <div className="space-y-6 leading-relaxed">
 
           <p>
             The most common question from new UAE freelancers: &quot;How do I get clients without a
@@ -94,7 +94,7 @@ export default function Article() {
             strong case studies, presented in a specific way.
           </p>
 
-          <h2 className="text-xl font-bold text-gray-900 mt-10 mb-3">Why UAE Clients Check Your Portfolio Before Anything Else</h2>
+          <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2"><span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>Why UAE Clients Check Your Portfolio Before Anything Else</h2>
 
           <p>
             The UAE freelance market has specific dynamics that make portfolio quality particularly
@@ -125,7 +125,7 @@ export default function Article() {
             proof that you can do it.
           </p>
 
-          <h2 className="text-xl font-bold text-gray-900 mt-10 mb-3">The 5 Elements Every Freelance Portfolio Needs</h2>
+          <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2"><span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>The 5 Elements Every Freelance Portfolio Needs</h2>
 
           <p>
             These are not suggestions — they are the minimum required for a portfolio that
@@ -170,7 +170,7 @@ export default function Article() {
             </li>
           </ol>
 
-          <h2 className="text-xl font-bold text-gray-900 mt-10 mb-3">How to Get Your First 3 Case Studies</h2>
+          <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2"><span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>How to Get Your First 3 Case Studies</h2>
 
           <p>
             You do not need paying clients to have case studies. Here are three approaches that
@@ -206,8 +206,8 @@ export default function Article() {
             if you frame them as demonstrations of method rather than client work.
           </p>
 
-          <div className="bg-blue-50 border border-blue-100 rounded-2xl p-5 my-6">
-            <p className="text-sm font-semibold text-blue-900 mb-2">Note on transparency</p>
+          <div className="bg-emerald-50 border border-blue-100 rounded-2xl p-5 my-6">
+            <p className="text-sm font-semibold text-emerald-900 mb-2">Note on transparency</p>
             <p className="text-sm text-blue-800">
               Always label spec work and self-initiated projects clearly. UAE business culture
               values directness and honesty. Presenting spec work as commissioned work is a
@@ -216,7 +216,7 @@ export default function Article() {
             </p>
           </div>
 
-          <h2 className="text-xl font-bold text-gray-900 mt-10 mb-3">Portfolio Formats: Notion vs Website vs PDF</h2>
+          <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2"><span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>Portfolio Formats: Notion vs Website vs PDF</h2>
 
           <p>
             New freelancers often spend weeks agonising over which format their portfolio should
@@ -257,7 +257,7 @@ export default function Article() {
             your main portfolio, not as the portfolio itself.
           </p>
 
-          <h2 className="text-xl font-bold text-gray-900 mt-10 mb-3">What UAE Clients Specifically Look For</h2>
+          <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2"><span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>What UAE Clients Specifically Look For</h2>
 
           <p>
             Beyond the universal portfolio basics, there are elements that carry extra weight
@@ -293,7 +293,7 @@ export default function Article() {
             </li>
           </ul>
 
-          <h2 className="text-xl font-bold text-gray-900 mt-10 mb-3">How to Present Process, Not Just Output</h2>
+          <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2"><span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>How to Present Process, Not Just Output</h2>
 
           <p>
             The difference between a portfolio that gets enquiries and one that does not is often
@@ -322,7 +322,7 @@ export default function Article() {
             they are not going to be managing a disorganised freelancer over chaotic WhatsApp threads.
           </p>
 
-          <h2 className="text-xl font-bold text-gray-900 mt-10 mb-3">The Portfolio-to-Proposal Pipeline</h2>
+          <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2"><span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>The Portfolio-to-Proposal Pipeline</h2>
 
           <p>
             Building a portfolio is the first step. The second step — which most freelancers skip —
@@ -361,7 +361,7 @@ export default function Article() {
             </Link>
           </div>
 
-          <h2 className="text-xl font-bold text-gray-900 mt-10 mb-3">Red Flags That Kill Proposals Before They Start</h2>
+          <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2"><span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>Red Flags That Kill Proposals Before They Start</h2>
 
           <p>
             Some portfolio mistakes do not just fail to impress — they actively create doubt that

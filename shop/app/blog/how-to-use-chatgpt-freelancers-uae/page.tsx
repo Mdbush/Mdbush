@@ -72,7 +72,7 @@ export default function Article() {
           </p>
         </div>
 
-        <div className="text-gray-700 leading-relaxed space-y-6">
+        <div className="space-y-6 leading-relaxed">
 
           <p>
             There&apos;s a version of AI adoption that sounds impressive in headlines and does nothing
@@ -92,9 +92,7 @@ export default function Article() {
             with a UAE card. If you&apos;re not using either of them yet, that&apos;s the first step.
           </p>
 
-          <h2 className="text-xl font-bold text-gray-900 mt-10 mb-3">
-            The 5 Use Cases Where AI Actually Saves Time
-          </h2>
+          <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2"><span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>The 5 Use Cases Where AI Actually Saves Time</h2>
 
           <p>
             Most productivity advice about AI is too vague to act on. &quot;Use AI for your business&quot; is
@@ -145,9 +143,7 @@ export default function Article() {
             ))}
           </div>
 
-          <h2 className="text-xl font-bold text-gray-900 mt-10 mb-3">
-            How to Write a Proposal in 10 Minutes (Step-by-Step)
-          </h2>
+          <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2"><span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>How to Write a Proposal in 10 Minutes (Step-by-Step)</h2>
 
           <p>
             This is the workflow. Follow it once and you&apos;ll have a repeatable system for every
@@ -174,7 +170,7 @@ export default function Article() {
           </ol>
 
           <div className="bg-gray-50 border border-gray-200 rounded-2xl p-5 my-4">
-            <p className="text-xs font-semibold text-gray-400 uppercase tracking-widest mb-2">Example Prompt</p>
+            <p className="text-xs font-bold text-emerald-400 uppercase tracking-widest block mb-3">Example Prompt</p>
             <p className="text-sm text-gray-700 italic leading-relaxed">
               &quot;You are a senior UAE freelance [your discipline] writing a proposal for a new client.
               Here is the client&apos;s brief: [paste brief]. My most relevant case study is: [one line with a result].
@@ -203,9 +199,7 @@ export default function Article() {
             </Link>.
           </p>
 
-          <h2 className="text-xl font-bold text-gray-900 mt-10 mb-3">
-            Client Emails You Can Write in 2 Minutes
-          </h2>
+          <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2"><span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>Client Emails You Can Write in 2 Minutes</h2>
 
           <p>
             The client emails that take the longest to write aren&apos;t the friendly ones. They&apos;re the
@@ -243,9 +237,7 @@ export default function Article() {
             at a blank email for 20 minutes trying to find the right tone.
           </p>
 
-          <h2 className="text-xl font-bold text-gray-900 mt-10 mb-3">
-            How to Create 30 Days of LinkedIn Content in 1 Hour
-          </h2>
+          <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2"><span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>How to Create 30 Days of LinkedIn Content in 1 Hour</h2>
 
           <p>
             Most UAE freelancers know they should post on LinkedIn. Most don&apos;t, because writing
@@ -277,9 +269,7 @@ export default function Article() {
             sound like you — because you gave the AI your actual perspective and topics.
           </p>
 
-          <h2 className="text-xl font-bold text-gray-900 mt-10 mb-3">
-            Using AI for Research
-          </h2>
+          <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2"><span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>Using AI for Research</h2>
 
           <p>
             Two research tasks eat freelancer time disproportionately: pricing benchmarks (what
@@ -301,9 +291,7 @@ export default function Article() {
             This primes you for the call without an hour of manual research.
           </p>
 
-          <h2 className="text-xl font-bold text-gray-900 mt-10 mb-3">
-            The Mistakes UAE Freelancers Make With AI
-          </h2>
+          <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2"><span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>The Mistakes UAE Freelancers Make With AI</h2>
 
           <p>
             The gap between &quot;AI doesn&apos;t work for me&quot; and &quot;AI saves me 8 hours a week&quot; is almost
@@ -340,9 +328,7 @@ export default function Article() {
             </div>
           </div>
 
-          <h2 className="text-xl font-bold text-gray-900 mt-10 mb-3">
-            ChatGPT vs Claude vs Gemini — When to Use Which
-          </h2>
+          <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2"><span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>ChatGPT vs Claude vs Gemini — When to Use Which</h2>
 
           <p>
             All three are available in the UAE. All three are useful. They&apos;re not interchangeable.
@@ -380,9 +366,7 @@ export default function Article() {
             </Link>.
           </p>
 
-          <h2 className="text-xl font-bold text-gray-900 mt-10 mb-3">
-            The RATS Prompting Framework
-          </h2>
+          <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2"><span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>The RATS Prompting Framework</h2>
 
           <p>
             Most prompt frameworks are overcomplicated. RATS is four things that every useful prompt
@@ -414,7 +398,7 @@ export default function Article() {
 
           <div className="space-y-4 my-6">
             <div className="bg-gray-50 border border-gray-200 rounded-2xl p-5">
-              <p className="text-xs font-semibold text-gray-400 uppercase tracking-widest mb-2">Example 1 — LinkedIn post</p>
+              <p className="text-xs font-bold text-emerald-400 uppercase tracking-widest block mb-3">Example 1 — LinkedIn post</p>
               <p className="text-sm text-gray-700 italic leading-relaxed">
                 &quot;[R] You are a UAE-based freelance brand strategist with 7 years of experience working with
                 Dubai SMEs. [A] Write a LinkedIn post about the mistake most UAE founders make when briefing
@@ -424,7 +408,7 @@ export default function Article() {
               </p>
             </div>
             <div className="bg-gray-50 border border-gray-200 rounded-2xl p-5">
-              <p className="text-xs font-semibold text-gray-400 uppercase tracking-widest mb-2">Example 2 — SOP draft</p>
+              <p className="text-xs font-bold text-emerald-400 uppercase tracking-widest block mb-3">Example 2 — SOP draft</p>
               <p className="text-sm text-gray-700 italic leading-relaxed">
                 &quot;[R] You are an operations consultant helping a UAE freelancer systematise their client
                 onboarding process. [A] Write a step-by-step SOP for onboarding a new client from signed
@@ -456,7 +440,7 @@ export default function Article() {
             </Link>
           </div>
 
-          <h2 className="text-xl font-bold text-gray-900 mt-10 mb-3">What This Looks Like in Practice</h2>
+          <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2"><span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>What This Looks Like in Practice</h2>
 
           <p>
             A realistic AI-assisted day for a UAE freelancer:
@@ -480,8 +464,8 @@ export default function Article() {
             It removes everything else.
           </p>
 
-          <div className="bg-blue-50 border border-blue-100 rounded-2xl p-5 my-6">
-            <p className="text-sm font-semibold text-blue-900 mb-2">Quick answer: Is ChatGPT free in the UAE?</p>
+          <div className="bg-emerald-50 border border-blue-100 rounded-2xl p-5 my-6">
+            <p className="text-sm font-semibold text-emerald-900 mb-2">Quick answer: Is ChatGPT free in the UAE?</p>
             <p className="text-sm text-blue-800">
               ChatGPT has a free tier that works in the UAE without restrictions. ChatGPT Plus (the paid version
               with GPT-4 access) costs approximately AED 73/month and can be paid with a UAE card.
