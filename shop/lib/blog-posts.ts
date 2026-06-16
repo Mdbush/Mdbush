@@ -971,6 +971,33 @@ export const posts: BlogPost[] = [
     readTime: "7 min read",
     category: "Pricing & Rates",
   },
+  {
+    slug: "freelance-operations-consultant-uae",
+    title: "Freelance Operations Consultant Rates in the UAE (2026): What to Charge",
+    description:
+      "Real AED rates for freelance operations and process consultants in Dubai and Abu Dhabi — process optimization, supply chain, operational excellence, and COO-as-a-service fees in 2026.",
+    date: "June 16, 2026",
+    readTime: "7 min read",
+    category: "Pricing & Rates",
+  },
+  {
+    slug: "how-to-build-freelance-agency-uae",
+    title: "How to Build a Freelance Agency in the UAE: From Solo to Studio",
+    description:
+      "How UAE freelancers scale from solopreneur to agency or studio — when to hire, how to structure the business, pricing for teams, legal setup, and the systems you need before taking on a first contractor.",
+    date: "June 16, 2026",
+    readTime: "9 min read",
+    category: "Business & Mindset",
+  },
+  {
+    slug: "freelance-medical-writer-rates-uae",
+    title: "Freelance Medical Writer Rates in the UAE (2026): What to Charge",
+    description:
+      "Real AED rates for freelance medical writers in Dubai and Abu Dhabi — clinical content, regulatory writing, pharma communications, health journalism, and healthcare marketing copy in 2026.",
+    date: "June 16, 2026",
+    readTime: "7 min read",
+    category: "Pricing & Rates",
+  },
 ];
 
 export function getPost(slug: string): BlogPost | undefined {
