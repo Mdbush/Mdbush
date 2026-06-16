@@ -260,6 +260,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "freelance-infrastructure-engineer-rates-uae",
     "how-to-write-linkedin-content-uae",
     "freelance-legal-tech-consultant-rates-uae",
+    "freelance-performance-marketer-rates-uae",
+    "how-to-protect-intellectual-property-uae",
+    "freelance-insurance-consultant-rates-uae",
   ].map((slug) => ({
     url: `${base}/blog/${slug}`,
     lastModified: new Date(),

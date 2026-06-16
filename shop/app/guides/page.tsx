@@ -6,11 +6,11 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "UAE Freelancer Guides & Resources — SoloKit",
   description:
-    "252 practical guides for freelancers and solopreneurs in the UAE. Visa, tax, rates, clients, contracts, AI tools, and more. All free.",
+    "255 practical guides for freelancers and solopreneurs in the UAE. Visa, tax, rates, clients, contracts, AI tools, and more. All free.",
   alternates: { canonical: "/guides" },
   openGraph: {
     title: "UAE Freelancer Guides & Resources — SoloKit",
-    description: "252 free guides covering everything a UAE freelancer needs to know.",
+    description: "255 free guides covering everything a UAE freelancer needs to know.",
     type: "website",
     url: "/guides",
   },
@@ -237,6 +237,8 @@ const categories = [
       { slug: "freelance-healthcare-consultant-rates-uae", title: "Freelance Healthcare Consultant Rates in the UAE (2026)", time: "7 min" },
       { slug: "freelance-infrastructure-engineer-rates-uae", title: "Freelance Infrastructure Engineer Rates in the UAE (2026)", time: "7 min" },
       { slug: "freelance-legal-tech-consultant-rates-uae", title: "Freelance Legal Tech Consultant Rates in the UAE (2026)", time: "7 min" },
+      { slug: "freelance-performance-marketer-rates-uae", title: "Freelance Performance Marketer Rates in the UAE (2026)", time: "7 min" },
+      { slug: "freelance-insurance-consultant-rates-uae", title: "Freelance Insurance Consultant Rates in the UAE (2026)", time: "7 min" },
     ],
   },
   {
@@ -259,6 +261,7 @@ const categories = [
       { slug: "how-to-handle-payment-disputes-uae", title: "How to Handle Payment Disputes as a Freelancer in the UAE (2026 Guide)", time: "7 min" },
       { slug: "how-to-set-payment-terms-uae", title: "How to Set Payment Terms as a UAE Freelancer (2026 Guide)", time: "7 min" },
       { slug: "how-to-run-discovery-workshops-uae", title: "How to Run Discovery Workshops with UAE Clients (2026 Guide)", time: "7 min" },
+      { slug: "how-to-protect-intellectual-property-uae", title: "How UAE Freelancers Protect Their Intellectual Property (2026 Guide)", time: "7 min" },
     ],
   },
   {
@@ -346,7 +349,7 @@ export default function GuidesPage() {
           <span className="text-xs font-semibold text-gray-400 uppercase tracking-widest">Free Resources</span>
           <h1 className="text-3xl sm:text-4xl font-bold text-gray-900 mt-2 mb-3">UAE Freelancer Guides</h1>
           <p className="text-gray-500 max-w-xl mx-auto leading-relaxed">
-            252 practical guides covering everything you need to know about freelancing in Dubai and Abu Dhabi.
+            255 practical guides covering everything you need to know about freelancing in Dubai and Abu Dhabi.
             Written specifically for the UAE market — AED pricing, local laws, free zone context.
           </p>
         </div>

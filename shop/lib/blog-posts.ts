@@ -2240,6 +2240,33 @@ export const posts: BlogPost[] = [
     readTime: "7 min read",
     category: "Pricing & Rates",
   },
+  {
+    slug: "freelance-performance-marketer-rates-uae",
+    title: "Freelance Performance Marketer Rates in the UAE (2026)",
+    description:
+      "Real AED day rates for freelance performance marketers in Dubai and Abu Dhabi. Google Ads, Meta Ads, TikTok Ads, paid media management, PPC strategy, and performance marketing retainer fees for UAE businesses in 2026.",
+    date: "June 16, 2026",
+    readTime: "7 min read",
+    category: "Pricing & Rates",
+  },
+  {
+    slug: "how-to-protect-intellectual-property-uae",
+    title: "How UAE Freelancers Protect Their Intellectual Property (2026 Guide)",
+    description:
+      "How UAE freelancers protect their work — copyright, trademark registration, contract IP clauses, creative brief ownership, and what to do when clients steal or misuse your work. Practical guide for Dubai and Abu Dhabi freelancers.",
+    date: "June 16, 2026",
+    readTime: "7 min read",
+    category: "Client Work & Proposals",
+  },
+  {
+    slug: "freelance-insurance-consultant-rates-uae",
+    title: "Freelance Insurance Consultant Rates in the UAE (2026)",
+    description:
+      "Real AED day rates for freelance insurance consultants and actuaries in Dubai and Abu Dhabi. Insurance product development, claims advisory, reinsurance, actuarial consulting, and regulatory compliance fees for UAE insurance companies in 2026.",
+    date: "June 16, 2026",
+    readTime: "7 min read",
+    category: "Pricing & Rates",
+  },
 ];
 
 export function getPost(slug: string): BlogPost | undefined {
