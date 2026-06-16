@@ -163,6 +163,25 @@ export default function LandingPage() {
           </div>
         </section>
 
+        {/* FAQ */}
+        <section className="py-14 border-t border-gray-100">
+          <h2 className="text-2xl font-bold text-gray-900 text-center mb-8">Frequently asked questions</h2>
+          <div className="max-w-2xl mx-auto space-y-4">
+            {[
+              { q: "What format are the SOPs in?", a: "Both Notion and Google Docs. You get the full pack in Notion (a duplicatable template) and Google Docs (shareable with contractors and VAs). Use whichever suits you." },
+              { q: "Are these UAE-specific?", a: "The workflows themselves are universal (client onboarding, invoice follow-up, content publishing). The context and examples reference UAE business norms — things like WhatsApp communication preferences and dirham pricing." },
+              { q: "Can I customize them?", a: "Yes — that's the whole point. Every SOP is a starting document that you make your own. Add your brand voice, your specific tools, your actual process steps. Most take 10–20 minutes to personalize." },
+              { q: "I'm a solo freelancer, not a team. Do I still need SOPs?", a: "SOPs are just documented processes — useful even if you're solo. They help you stay consistent across clients, save time when you're tired, and prepare you to delegate when you're ready to." },
+              { q: "What if I need a refund?", a: "30-day money-back guarantee. Email us and we'll refund you fully — no questions, no conditions." },
+            ].map((item) => (
+              <div key={item.q} className="border border-gray-200 rounded-2xl p-5">
+                <p className="font-semibold text-gray-900 mb-2">{item.q}</p>
+                <p className="text-sm text-gray-500">{item.a}</p>
+              </div>
+            ))}
+          </div>
+        </section>
+
         {/* Final CTA */}
         <section className="py-14 border-t border-gray-100 text-center">
           <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-3">

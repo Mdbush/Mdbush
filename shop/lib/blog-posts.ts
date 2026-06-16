@@ -494,6 +494,69 @@ export const posts: BlogPost[] = [
     readTime: "7 min read",
     category: "Visa & Legal",
   },
+  {
+    slug: "freelance-photographer-rates-uae",
+    title: "Freelance Photographer Rates in the UAE (2026): What to Charge",
+    description:
+      "Photography rates in Dubai and Abu Dhabi — day rates, half-day rates, and per-image fees across corporate, commercial, real estate, events, fashion, and food photography.",
+    date: "June 16, 2026",
+    readTime: "7 min read",
+    category: "Pricing & Rates",
+  },
+  {
+    slug: "freelance-video-editor-rates-uae",
+    title: "Freelance Video Editor Rates in the UAE (2026): What to Charge",
+    description:
+      "Freelance video editing rates in Dubai and Abu Dhabi — per-video, hourly, and monthly retainer pricing across social media, corporate, events, and documentary formats.",
+    date: "June 16, 2026",
+    readTime: "7 min read",
+    category: "Pricing & Rates",
+  },
+  {
+    slug: "best-virtual-offices-dubai",
+    title: "Best Virtual Offices in Dubai for Freelancers (2026)",
+    description:
+      "The best virtual office providers in Dubai — professional business address, mail handling, and meeting rooms without full office rent. With pricing and what each includes.",
+    date: "June 16, 2026",
+    readTime: "6 min read",
+    category: "Visa & Legal",
+  },
+  {
+    slug: "freelance-accountant-uae",
+    title: "Do UAE Freelancers Need an Accountant? (2026 Guide)",
+    description:
+      "When to hire an accountant vs bookkeeper as a UAE freelancer — VAT, corporate tax, EmaraTax, what it costs, and the questions to ask before hiring.",
+    date: "June 16, 2026",
+    readTime: "7 min read",
+    category: "Tax & Finance",
+  },
+  {
+    slug: "freelance-project-manager-rates-uae",
+    title: "Freelance Project Manager Rates in the UAE (2026): What to Charge",
+    description:
+      "Freelance project management rates in Dubai and Abu Dhabi — day rates, monthly retainers, and project fees across IT, construction, marketing, and consulting sectors.",
+    date: "June 16, 2026",
+    readTime: "7 min read",
+    category: "Pricing & Rates",
+  },
+  {
+    slug: "how-to-start-online-business-uae",
+    title: "How to Start an Online Business in the UAE (2026 Guide)",
+    description:
+      "Step-by-step guide to starting an online business in the UAE — license options, free zones, bank accounts, taxes, and your first 30 days. For freelancers and solopreneurs.",
+    date: "June 16, 2026",
+    readTime: "9 min read",
+    category: "Getting Started",
+  },
+  {
+    slug: "client-communication-tips-freelancers-uae",
+    title: "Client Communication for UAE Freelancers: Scripts That Work",
+    description:
+      "How to communicate with clients as a UAE freelancer — setting expectations, handling WhatsApp, managing scope creep, late payments, and difficult feedback. With word-for-word scripts.",
+    date: "June 16, 2026",
+    readTime: "8 min read",
+    category: "Client Work & Proposals",
+  },
 ];
 
 export function getPost(slug: string): BlogPost | undefined {

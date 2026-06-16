@@ -141,6 +141,25 @@ export default function LandingPage() {
           </div>
         </section>
 
+        {/* FAQ */}
+        <section className="py-14 border-t border-gray-100">
+          <h2 className="text-2xl font-bold text-gray-900 text-center mb-8">Frequently asked questions</h2>
+          <div className="max-w-2xl mx-auto space-y-4">
+            {[
+              { q: "Do I need a paid Notion plan?", a: "No. The Solopreneur OS works on Notion's free plan. You can upgrade to Notion Plus later if you want more storage or sharing features, but it's not required." },
+              { q: "How long does setup take?", a: "Most users are fully set up within 60 minutes. You duplicate the template, add your goals and current projects, and you're running. There's a setup guide included." },
+              { q: "I'm already using another Notion template. Will this conflict?", a: "No. Each Notion workspace or page is independent. You can either use the Solopreneur OS as a standalone workspace or integrate it alongside existing pages — your choice." },
+              { q: "Is this a subscription?", a: "No. This is a one-time payment. You get permanent access to the template and any future updates we push to it." },
+              { q: "What if it's not right for me?", a: "30-day money-back guarantee. Email us within 30 days of purchase and we'll refund you fully — no questions asked." },
+            ].map((item) => (
+              <div key={item.q} className="border border-gray-200 rounded-2xl p-5">
+                <p className="font-semibold text-gray-900 mb-2">{item.q}</p>
+                <p className="text-sm text-gray-500">{item.a}</p>
+              </div>
+            ))}
+          </div>
+        </section>
+
         {/* Final CTA */}
         <section className="py-14 border-t border-gray-100 text-center">
           <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-3">

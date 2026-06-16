@@ -144,6 +144,25 @@ export default function LandingPage() {
           </div>
         </section>
 
+        {/* FAQ */}
+        <section className="py-14 border-t border-gray-100">
+          <h2 className="text-2xl font-bold text-gray-900 text-center mb-8">Frequently asked questions</h2>
+          <div className="max-w-2xl mx-auto space-y-4">
+            {[
+              { q: "Do I need to pay for Notion?", a: "No — the CRM works on Notion's free plan. You do not need a paid Notion subscription to use it." },
+              { q: "How do I get access after purchasing?", a: "Instantly. After checkout, you'll receive a Notion template link. Click it, duplicate it to your workspace, and you're ready to use it in minutes." },
+              { q: "I'm not tech-savvy. Is this easy to set up?", a: "Yes. It's designed for non-technical users. Setup involves duplicating a template and filling in your real client names — there's no coding or complex configuration." },
+              { q: "Can I use this for multiple currencies (USD, EUR)?", a: "Yes. All currency symbols and amounts are editable text — you can use AED, USD, EUR, or any other currency." },
+              { q: "What if it doesn't work for me?", a: "We offer a 30-day money-back guarantee. If you're not happy with the product, email us and we'll refund you fully — no questions asked." },
+            ].map((item) => (
+              <div key={item.q} className="border border-gray-200 rounded-2xl p-5">
+                <p className="font-semibold text-gray-900 mb-2">{item.q}</p>
+                <p className="text-sm text-gray-500">{item.a}</p>
+              </div>
+            ))}
+          </div>
+        </section>
+
         {/* Final CTA */}
         <section className="py-14 border-t border-gray-100 text-center">
           <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-3">

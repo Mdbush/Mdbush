@@ -145,6 +145,25 @@ export default function LandingPage() {
           </div>
         </section>
 
+        {/* FAQ */}
+        <section className="py-14 border-t border-gray-100">
+          <h2 className="text-2xl font-bold text-gray-900 text-center mb-8">Frequently asked questions</h2>
+          <div className="max-w-2xl mx-auto space-y-4">
+            {[
+              { q: "Which AI tools do these prompts work with?", a: "All of them. The prompts are AI-agnostic — they work with ChatGPT, Claude, Gemini, Grok, and any other text-based AI model. They're written in plain language, not for any specific platform." },
+              { q: "What format do I receive them in?", a: "Two formats: a Notion page (fully searchable, with categories and tags) and a PDF (for offline reference or printing). Both are included in your purchase." },
+              { q: "I'm not a copywriter. Will these work for my type of freelance work?", a: "Yes. The pack covers proposals, follow-ups, client emails, business strategy, and content — not just copywriting. Most prompts are designed to be adapted to any service-based business." },
+              { q: "200 prompts sounds like a lot. Will I actually use them all?", a: "You won't use all of them every week — but you'll use different ones for different situations. The pack is organized by category so you can find what you need quickly without scrolling through everything." },
+              { q: "Is there a money-back guarantee?", a: "Yes — 30 days. If you're not happy with the quality of the prompts, email us and we'll refund you fully." },
+            ].map((item) => (
+              <div key={item.q} className="border border-gray-200 rounded-2xl p-5">
+                <p className="font-semibold text-gray-900 mb-2">{item.q}</p>
+                <p className="text-sm text-gray-500">{item.a}</p>
+              </div>
+            ))}
+          </div>
+        </section>
+
         {/* Final CTA */}
         <section className="py-14 border-t border-gray-100 text-center">
           <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-3">
