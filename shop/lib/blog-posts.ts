@@ -1079,6 +1079,33 @@ export const posts: BlogPost[] = [
     readTime: "7 min read",
     category: "Pricing & Rates",
   },
+  {
+    slug: "freelance-fashion-stylist-rates-uae",
+    title: "Freelance Fashion Stylist Rates in the UAE (2026): What to Charge",
+    description:
+      "Real AED rates for freelance fashion stylists in Dubai and Abu Dhabi — personal styling, editorial shoots, commercial campaigns, celebrity event dressing, and monthly retainer pricing in 2026.",
+    date: "June 16, 2026",
+    readTime: "7 min read",
+    category: "Pricing & Rates",
+  },
+  {
+    slug: "how-to-use-linkedin-ads-freelancers-uae",
+    title: "How UAE Freelancers Can Use LinkedIn Ads to Get B2B Clients (2026)",
+    description:
+      "A practical guide to LinkedIn Ads for UAE freelancers — targeting DIFC and UAE corporate decision-makers, ad formats, budget benchmarks, cost per lead, and how to measure ROI on a freelancer budget.",
+    date: "June 16, 2026",
+    readTime: "8 min read",
+    category: "Getting Clients",
+  },
+  {
+    slug: "freelance-voiceover-artist-rates-uae",
+    title: "Freelance Voiceover Artist Rates in the UAE (2026): What to Charge",
+    description:
+      "Real AED rates for freelance voiceover artists in Dubai and Abu Dhabi — Arabic and English VO, commercial ads, eLearning narration, IVR, dubbing, and usage rights pricing in 2026.",
+    date: "June 16, 2026",
+    readTime: "7 min read",
+    category: "Pricing & Rates",
+  },
 ];
 
 export function getPost(slug: string): BlogPost | undefined {
