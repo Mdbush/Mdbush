@@ -2294,6 +2294,33 @@ export const posts: BlogPost[] = [
     readTime: "7 min read",
     category: "Pricing & Rates",
   },
+  {
+    slug: "freelance-investment-analyst-rates-uae",
+    title: "Freelance Investment Analyst Rates in the UAE (2026)",
+    description:
+      "Real AED day rates for freelance investment analysts in Dubai and Abu Dhabi. Equity research, financial modelling, deal sourcing, private equity due diligence, and VC investment advisory fees for UAE funds and family offices in 2026.",
+    date: "June 16, 2026",
+    readTime: "7 min read",
+    category: "Pricing & Rates",
+  },
+  {
+    slug: "how-to-create-online-course-uae",
+    title: "How to Create and Sell an Online Course as a UAE Freelancer (2026)",
+    description:
+      "How UAE freelancers package expertise into online courses — topic validation, course structure, platform choice (Teachable, Kajabi, Gumroad), pricing in AED, and marketing to UAE and MENA audiences. Step-by-step guide for Dubai and Abu Dhabi freelancers.",
+    date: "June 16, 2026",
+    readTime: "7 min read",
+    category: "Business & Mindset",
+  },
+  {
+    slug: "freelance-supply-chain-director-rates-uae",
+    title: "Freelance Supply Chain Director Rates in the UAE (2026)",
+    description:
+      "Real AED day rates for freelance and interim supply chain directors in Dubai and Abu Dhabi. Supply chain transformation, procurement strategy, logistics optimisation, inventory management, and S&OP advisory fees for UAE companies in 2026.",
+    date: "June 16, 2026",
+    readTime: "7 min read",
+    category: "Pricing & Rates",
+  },
 ];
 
 export function getPost(slug: string): BlogPost | undefined {

@@ -266,6 +266,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "freelance-sustainability-reporting-consultant-rates-uae",
     "how-to-build-freelance-authority-uae",
     "freelance-treasury-consultant-rates-uae",
+    "freelance-investment-analyst-rates-uae",
+    "how-to-create-online-course-uae",
+    "freelance-supply-chain-director-rates-uae",
   ].map((slug) => ({
     url: `${base}/blog/${slug}`,
     lastModified: new Date(),
