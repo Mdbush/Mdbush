@@ -382,6 +382,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${base}/for/marketers`, lastModified: new Date(), changeFrequency: "monthly", priority: 0.7 },
     { url: `${base}/for/consultants`, lastModified: new Date(), changeFrequency: "monthly", priority: 0.7 },
     { url: `${base}/for/coaches`, lastModified: new Date(), changeFrequency: "monthly", priority: 0.7 },
+    { url: `${base}/for/saudi-arabia`, lastModified: new Date(), changeFrequency: "monthly", priority: 0.8 },
     ...productUrls,
     ...blogUrls,
   ];
