@@ -6,11 +6,11 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "UAE Freelancer Guides & Resources — SoloKit",
   description:
-    "45 practical guides for freelancers and solopreneurs in the UAE. Visa, tax, rates, clients, contracts, AI tools, and more. All free.",
+    "48 practical guides for freelancers and solopreneurs in the UAE. Visa, tax, rates, clients, contracts, AI tools, and more. All free.",
   alternates: { canonical: "/guides" },
   openGraph: {
     title: "UAE Freelancer Guides & Resources — SoloKit",
-    description: "45 free guides covering everything a UAE freelancer needs to know.",
+    description: "48 free guides covering everything a UAE freelancer needs to know.",
     type: "website",
     url: "/guides",
   },
@@ -61,6 +61,7 @@ const categories = [
       { slug: "best-freelance-platforms-uae", title: "Best Freelance Platforms in the UAE", time: "8 min" },
       { slug: "how-to-build-freelance-portfolio-uae", title: "How to Build a Freelance Portfolio in the UAE", time: "7 min" },
       { slug: "how-to-write-freelance-bio-uae", title: "How to Write a Freelance Bio That Gets You Hired in the UAE", time: "6 min" },
+      { slug: "get-referrals-freelance-uae", title: "How to Get Referrals as a UAE Freelancer: A System That Works", time: "7 min" },
     ],
   },
   {
@@ -106,6 +107,7 @@ const categories = [
       { slug: "best-ai-tools-uae-freelancers", title: "Best AI Tools for UAE Freelancers in 2026", time: "5 min" },
       { slug: "ai-prompts-for-freelancers", title: "How to Use AI to Do More Freelance Work in Less Time", time: "7 min" },
       { slug: "how-to-use-chatgpt-freelancers-uae", title: "How to Use ChatGPT as a UAE Freelancer (Practical Guide)", time: "7 min" },
+      { slug: "how-to-use-claude-ai-freelancers-uae", title: "How to Use Claude AI as a UAE Freelancer: 15 Practical Use Cases", time: "8 min" },
     ],
   },
   {
@@ -126,6 +128,7 @@ const categories = [
       { slug: "freelancer-burnout-uae", title: "Freelancer Burnout in Dubai: How to Recognize and Fix It", time: "6 min" },
       { slug: "freelance-vs-salary-uae", title: "Freelance vs Salary in the UAE: The Real Numbers", time: "7 min" },
       { slug: "freelance-passive-income-uae", title: "How UAE Freelancers Build Passive Income", time: "8 min" },
+      { slug: "freelance-financial-planning-uae", title: "Financial Planning for UAE Freelancers: Save, Invest, and Retire", time: "8 min" },
       { slug: "freelance-work-life-balance-uae", title: "Work-Life Balance for UAE Freelancers: Protect Your Time Without Losing Clients", time: "6 min" },
     ],
   },
@@ -144,7 +147,7 @@ export default function GuidesPage() {
           <span className="text-xs font-semibold text-gray-400 uppercase tracking-widest">Free Resources</span>
           <h1 className="text-3xl sm:text-4xl font-bold text-gray-900 mt-2 mb-3">UAE Freelancer Guides</h1>
           <p className="text-gray-500 max-w-xl mx-auto leading-relaxed">
-            45 practical guides covering everything you need to know about freelancing in Dubai and Abu Dhabi.
+            48 practical guides covering everything you need to know about freelancing in Dubai and Abu Dhabi.
             Written specifically for the UAE market — AED pricing, local laws, free zone context.
           </p>
         </div>

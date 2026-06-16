@@ -413,6 +413,33 @@ export const posts: BlogPost[] = [
     readTime: "8 min read",
     category: "Visa & Legal",
   },
+  {
+    slug: "how-to-use-claude-ai-freelancers-uae",
+    title: "How to Use Claude AI as a UAE Freelancer: 15 Practical Use Cases",
+    description:
+      "15 real use cases for Claude AI in your UAE freelance business — writing proposals, client emails, LinkedIn posts, contracts, and planning. With copy-paste prompts for each.",
+    date: "June 16, 2026",
+    readTime: "8 min read",
+    category: "AI Tools",
+  },
+  {
+    slug: "get-referrals-freelance-uae",
+    title: "How to Get Referrals as a UAE Freelancer: A System That Works",
+    description:
+      "Stop waiting for word-of-mouth. The referral ask (word-for-word), 5 non-client referral sources, how to make it easy to refer you, and the 30-day referral sprint.",
+    date: "June 16, 2026",
+    readTime: "7 min read",
+    category: "Client Acquisition",
+  },
+  {
+    slug: "freelance-financial-planning-uae",
+    title: "Financial Planning for UAE Freelancers: Save, Invest, and Retire",
+    description:
+      "No pension, no employer benefits — here is the four-pillar system for UAE freelancer finances: income smoothing, emergency fund, business vs personal money, and building long-term wealth.",
+    date: "June 16, 2026",
+    readTime: "8 min read",
+    category: "Business & Mindset",
+  },
 ];
 
 export function getPost(slug: string): BlogPost | undefined {
