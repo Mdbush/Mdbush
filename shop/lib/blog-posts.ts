@@ -1268,6 +1268,33 @@ export const posts: BlogPost[] = [
     readTime: "7 min read",
     category: "Pricing & Rates",
   },
+  {
+    slug: "how-to-set-freelance-prices-uae",
+    title: "How to Set Your Freelance Prices in the UAE: The Complete System (2026)",
+    description:
+      "A step-by-step pricing system for UAE freelancers — how to calculate your minimum viable rate, client type tiers and their UAE rate expectations, when to use hourly vs project vs retainer pricing, how to present rates without losing the deal, and when to raise your prices.",
+    date: "June 16, 2026",
+    readTime: "9 min read",
+    category: "Pricing & Rates",
+  },
+  {
+    slug: "freelance-social-media-strategist-rates-uae",
+    title: "Freelance Social Media Strategist Rates in the UAE (2026): What to Charge",
+    description:
+      "Real AED rates for freelance social media strategists in Dubai and Abu Dhabi — strategy audits, content strategy development, channel management retainers, influencer program strategy, paid social strategy, and Ramadan campaign rates for 2026.",
+    date: "June 16, 2026",
+    readTime: "7 min read",
+    category: "Pricing & Rates",
+  },
+  {
+    slug: "how-to-get-corporate-clients-uae",
+    title: "How to Get Corporate Clients as a UAE Freelancer (2026 Guide)",
+    description:
+      "How UAE freelancers land corporate clients in Dubai and Abu Dhabi — which enterprise clients to target (DIFC firms, government entities, multinationals, banks), how to reach procurement and marketing teams, what documentation enterprises require, and how to structure corporate proposals.",
+    date: "June 16, 2026",
+    readTime: "9 min read",
+    category: "Getting Clients",
+  },
 ];
 
 export function getPost(slug: string): BlogPost | undefined {
