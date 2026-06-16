@@ -1106,6 +1106,33 @@ export const posts: BlogPost[] = [
     readTime: "7 min read",
     category: "Pricing & Rates",
   },
+  {
+    slug: "freelance-3d-artist-rates-uae",
+    title: "Freelance 3D Artist Rates in the UAE (2026): What to Charge",
+    description:
+      "Real AED rates for freelance 3D artists in Dubai and Abu Dhabi — architectural visualization, product rendering, 3D animation, character modeling, and VFX rates for 2026.",
+    date: "June 16, 2026",
+    readTime: "7 min read",
+    category: "Pricing & Rates",
+  },
+  {
+    slug: "how-to-write-case-studies-uae",
+    title: "How to Write Case Studies That Win UAE Clients (With Template)",
+    description:
+      "How UAE freelancers write case studies that convert prospects to clients — the exact 5-part structure, what UAE decision-makers care about, common mistakes, and a copy-paste template.",
+    date: "June 16, 2026",
+    readTime: "7 min read",
+    category: "Client Work & Proposals",
+  },
+  {
+    slug: "freelance-content-creator-rates-uae",
+    title: "Freelance Content Creator Rates in the UAE (2026): What to Charge",
+    description:
+      "Real AED rates for freelance content creators in Dubai and Abu Dhabi — Instagram reels, YouTube videos, TikTok, brand partnerships, UGC content, and monthly retainer pricing for 2026.",
+    date: "June 16, 2026",
+    readTime: "7 min read",
+    category: "Pricing & Rates",
+  },
 ];
 
 export function getPost(slug: string): BlogPost | undefined {
