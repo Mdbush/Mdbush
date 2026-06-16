@@ -4,17 +4,128 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 
 export const metadata: Metadata = {
-  title: "LinkedIn Content — SoloKit",
+  title: "LinkedIn Content Library — SoloKit",
   robots: { index: false, follow: false },
 };
 
-const setupItems = [
-  { label: "Page name", value: "SoloKit" },
-  { label: "Tagline", value: "Notion templates, AI prompts & SOPs for UAE freelancers" },
-  { label: "Website", value: "solokit.cloud" },
-  { label: "Post frequency", value: "3-5× per week" },
-  { label: "Best times (UAE)", value: "7-9 AM, 12-1 PM, 6-8 PM" },
-  { label: "Industry", value: "Software / Professional Services" },
+const profileOptimization = [
+  {
+    field: "Headline",
+    bad: "Freelance UX Designer",
+    good: "I help Dubai tech companies build products users love | Freelance UX Designer",
+  },
+  {
+    field: "About (para 1)",
+    bad: "I am a passionate designer with 6 years of experience...",
+    good: "Dubai-based UX designer working with SaaS and fintech companies to reduce churn through better product experience.",
+  },
+  {
+    field: "About (para 2)",
+    bad: "(generic skills list)",
+    good: "Led product redesigns for 3 Dubai-based Series A startups. Most recent: reduced onboarding drop-off by 34% for a fintech app in 6 weeks.",
+  },
+  {
+    field: "About (para 3 — CTA)",
+    bad: "(no call to action)",
+    good: "If you're a Dubai SaaS or fintech company looking to improve your product experience, message me directly.",
+  },
+  {
+    field: "Featured section",
+    bad: "(empty — most profiles leave this blank)",
+    good: "Case study: reduced app drop-off 34% for a Dubai fintech. Link to portfolio. Link to free resource for your audience.",
+  },
+  {
+    field: "Experience",
+    bad: "Freelance Designer — various clients",
+    good: "Freelance UX Designer (self-employed) — 'Led product redesigns for 3 Dubai-based Series A startups. Key results: [specific metrics].'",
+  },
+  {
+    field: "Banner image",
+    bad: "(default blue LinkedIn banner)",
+    good: "Custom 1584×396px banner: your tagline, a single strong result, your website URL. Dark background, white text.",
+  },
+];
+
+const connectionTemplates = [
+  {
+    scenario: "After meeting at a Dubai event",
+    template: `Hi [name],
+
+Great meeting you at [event] yesterday. I enjoyed our conversation about [topic].
+
+Would love to stay connected — what you're doing at [company] sounds like great work.
+
+[Your name]`,
+  },
+  {
+    scenario: "Connecting with a potential client",
+    template: `Hi [name],
+
+I came across your profile while researching [industry] companies in Dubai. Your work at [company] on [project/area] caught my attention.
+
+I'm a freelance [your role] helping Dubai companies with [outcome]. Thought it would be worth connecting.
+
+[Your name]`,
+  },
+  {
+    scenario: "Following up after a blog/post they wrote",
+    template: `Hi [name],
+
+Your post about [topic] was exactly what I needed to see this week — specifically the point about [specific insight].
+
+Connecting to keep up with your content.
+
+[Your name]`,
+  },
+  {
+    scenario: "Warm intro from a mutual connection",
+    template: `Hi [name],
+
+[Mutual connection] suggested I reach out — they thought our work might overlap. I'm a freelance [your role] based in Dubai.
+
+Happy to connect and share ideas.
+
+[Your name]`,
+  },
+];
+
+const contentCalendar = [
+  { day: "Monday", type: "Story post", description: "Personal experience — a win, failure, or turning point from your freelance journey" },
+  { day: "Tuesday", type: "Educational (tips)", description: "List post: 3–5 specific, actionable insights your audience can use today" },
+  { day: "Wednesday", type: "Data/insight", description: "A number, stat, or rate calculation that challenges a common assumption" },
+  { day: "Thursday", type: "Story or opinion", description: "Controversial take OR a client story (scope creep, rate negotiation, red flag)" },
+  { day: "Friday", type: "Tutorial", description: "Step-by-step: how to do one specific thing better (tool, template, process)" },
+];
+
+const linkedInRules = [
+  {
+    rule: "No links in the post body",
+    detail: "LinkedIn's algorithm suppresses external links in post bodies. Put the link in the FIRST COMMENT instead. In the post body, write: 'Link in the comments.' This alone can 2–3× your reach.",
+  },
+  {
+    rule: "Personal account, not company page",
+    detail: "Personal LinkedIn profiles get 3–5× more organic reach than company pages. Post from your own profile, not the SoloKit page. Tag the company page in the post if needed.",
+  },
+  {
+    rule: "End every post with a question",
+    detail: "Every post must end with a direct question. 'What's your experience?' 'Agree or disagree?' 'Which one do you wish you'd known sooner?' Comments signal relevance to the algorithm.",
+  },
+  {
+    rule: "Reply within the first hour",
+    detail: "The first hour after posting is when LinkedIn decides how far to push your content. Set a reminder to reply to every comment in the first 60 minutes. Each reply extends reach.",
+  },
+  {
+    rule: "Hook is your entire distribution",
+    detail: "LinkedIn shows only the first 2–3 lines before a 'see more' cut-off. Your hook is the post. Test different openers on the same content — the hook alone can 10× your reach.",
+  },
+  {
+    rule: "Post at 7–9 AM UAE time",
+    detail: "Dubai professionals are commuting or starting their day. This window gets the fastest early engagement, which feeds the algorithm. Also try 12–1 PM for a secondary post.",
+  },
+  {
+    rule: "Format mix: 40% story / 40% educational / 20% opinion",
+    detail: "Story posts (personal experience) build trust. Educational posts build authority. Controversial opinions generate discussion. All three are needed to grow a professional audience.",
+  },
 ];
 
 const posts = [
@@ -97,7 +208,7 @@ Same project. Same price. Completely different first impression.
 
 The client reads on because you showed you understand what they actually need.
 
-What's your go-to proposal opening? Share it below 👇`,
+What's your go-to proposal opening? Share it below`,
   },
   {
     id: 4,
@@ -125,7 +236,7 @@ They're busy. And broke.
 
 If you've never calculated your real minimum rate — do it today.
 
-Free calculator in the comments 👇`,
+Free calculator in the comments`,
   },
   {
     id: 5,
@@ -213,7 +324,7 @@ The reason most freelancers don't track their business: the setup felt too compl
 
 I made the template so you don't have to.
 
-Link in comments 👇`,
+Link in comments`,
   },
   {
     id: 8,
@@ -261,7 +372,7 @@ But you DO need to register on EmaraTax.ae for corporate tax — even if you owe
 
 Since 2023, registration is required for all businesses, regardless of whether they owe tax.
 
-Full breakdown with step-by-step instructions: solokit.cloud/blog/freelance-tax-uae
+Full breakdown with step-by-step instructions in the comments.
 
 (Save this and share it with any freelancer who's confused about UAE taxes.)`,
   },
@@ -344,81 +455,40 @@ The ROI on 2 hours of LinkedIn optimization compounds for years.`,
   },
 ];
 
-const profileOptimization = [
-  {
-    field: "Headline",
-    bad: "Freelance UX Designer",
-    good: "I help Dubai tech companies build products users love | Freelance UX Designer",
-  },
-  {
-    field: "About (para 1)",
-    bad: "I am a passionate designer with 6 years of experience...",
-    good: "Dubai-based UX designer working with SaaS and fintech companies to reduce churn through better product experience.",
-  },
-  {
-    field: "Featured section",
-    bad: "(empty)",
-    good: "Case study: reduced app drop-off by 34% for a Dubai fintech. Link to portfolio. Link to free resource.",
-  },
-  {
-    field: "Experience",
-    bad: "Freelance Designer — various clients",
-    good: "Freelance UX Designer (self-employed) — 'Led product redesigns for 3 Dubai-based Series A startups. Key results: [specific metrics].'",
-  },
-];
-
-const strategyPoints = [
-  {
-    title: "Format mix",
-    desc: "40% story posts (personal experience), 40% educational (tips/data), 20% controversial opinions. This mix maximizes reach + trust.",
-  },
-  {
-    title: "Hook is everything",
-    desc: "The first line determines if anyone reads the rest. Test different hooks on the same content — different hooks on the same post can get 10× different reach.",
-  },
-  {
-    title: "End with a question",
-    desc: 'Every post ends with "What\'s your experience?" or a question. Comments signal relevance to the algorithm.',
-  },
-  {
-    title: "Post at 7-9 AM UAE",
-    desc: "This is when Dubai professionals are commuting or starting their day. Highest engagement window.",
-  },
-  {
-    title: "Reply to every comment in the first hour",
-    desc: "This dramatically boosts reach. Set a reminder when you post.",
-  },
-  {
-    title: "Personal account first",
-    desc: "Post from your personal LinkedIn, not the company page. Personal profiles get 3-5× more organic reach.",
-  },
-  {
-    title: "Don't add links in the post body",
-    desc: "LinkedIn suppresses external links. Put the link in the first comment instead.",
-  },
-];
-
 export default function LinkedInPage() {
   return (
     <>
       <Header />
-      <main className="min-h-screen bg-gray-50">
+      <main className="min-h-screen bg-white">
+        <div className="max-w-3xl mx-auto px-4 py-10">
 
-        {/* Hero */}
-        <div className="bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 text-white px-4 py-14">
-          <div className="max-w-4xl mx-auto">
-            <div className="flex items-center gap-3 mb-5">
-              <svg viewBox="0 0 24 24" className="w-7 h-7 text-blue-400 shrink-0" fill="currentColor">
-                <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
-              </svg>
-              <span className="text-xs font-bold text-emerald-400 uppercase tracking-widest">SoloKit Content Hub</span>
+          {/* Breadcrumb */}
+          <nav className="text-xs text-gray-400 mb-6 flex items-center gap-1.5">
+            <Link href="/" className="hover:text-gray-600">Home</Link>
+            <span>/</span>
+            <span className="text-gray-600">LinkedIn Content</span>
+          </nav>
+
+          {/* Dark hero — LinkedIn identity */}
+          <div className="bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 text-white px-6 py-10 rounded-2xl mb-8">
+            <div className="flex items-center gap-3 mb-4">
+              {/* LinkedIn blue platform badge */}
+              <span className="inline-flex items-center gap-1.5 bg-[#0A66C2]/20 border border-[#0A66C2]/40 text-[#5ba4f5] text-xs font-bold px-3 py-1 rounded-full uppercase tracking-widest">
+                <svg viewBox="0 0 24 24" className="w-3.5 h-3.5 shrink-0" fill="currentColor">
+                  <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
+                </svg>
+                LinkedIn
+              </span>
+              <span className="text-xs font-bold text-emerald-400 uppercase tracking-widest">Professional · B2B · Thought Leadership</span>
             </div>
-            <h1 className="text-3xl sm:text-4xl font-bold mb-3">LinkedIn Content Library</h1>
-            <p className="text-gray-300 text-lg mb-6 max-w-xl">12 ready-to-post text posts. Story-driven, educational, built to drive engagement from UAE professionals.</p>
+            <h1 className="text-3xl sm:text-4xl font-bold leading-tight mb-4">LinkedIn Content Library</h1>
+            <p className="text-gray-300 text-sm mb-5 leading-relaxed max-w-xl">
+              12 ready-to-post text posts built for the LinkedIn algorithm. Story-driven, educational, each ending with a question. No links in the body — ever.
+            </p>
             <div className="flex flex-wrap gap-3">
               <div className="bg-white/10 backdrop-blur rounded-xl px-4 py-2.5 text-sm">
-                <span className="text-gray-400">Page</span>
-                <span className="ml-2 font-semibold text-white">SoloKit</span>
+                <span className="text-gray-400">Format</span>
+                <span className="ml-2 font-semibold text-white">Text posts — no images needed</span>
               </div>
               <div className="bg-white/10 backdrop-blur rounded-xl px-4 py-2.5 text-sm">
                 <span className="text-gray-400">Frequency</span>
@@ -428,47 +498,51 @@ export default function LinkedInPage() {
                 <span className="text-gray-400">Best times (UAE)</span>
                 <span className="ml-2 font-semibold text-white">7–9 AM · 12–1 PM · 6–8 PM</span>
               </div>
+              <div className="bg-white/10 backdrop-blur rounded-xl px-4 py-2.5 text-sm">
+                <span className="text-gray-400">Post from</span>
+                <span className="ml-2 font-semibold text-white">Personal profile (3–5× more reach)</span>
+              </div>
             </div>
           </div>
-        </div>
 
-        <div className="max-w-4xl mx-auto px-4 py-10">
-
-          {/* Page setup */}
-          <div className="grid sm:grid-cols-3 gap-4 mb-10">
-            {[
-              { label: "Page name", value: "SoloKit" },
-              { label: "Tagline", value: "Notion templates, AI prompts & SOPs for UAE freelancers" },
-              { label: "Website", value: "solokit.cloud" },
-              { label: "Post frequency", value: "3-5× per week" },
-              { label: "Best times (UAE)", value: "7-9 AM, 12-1 PM, 6-8 PM" },
-              { label: "Industry", value: "Software / Professional Services" },
-            ].map(({ label, value }) => (
-              <div key={label} className="bg-white border border-gray-200 rounded-xl p-4">
-                <p className="text-xs font-semibold text-gray-400 uppercase tracking-widest mb-1">{label}</p>
-                <p className="text-sm font-semibold text-gray-900">{value}</p>
+          {/* LinkedIn-specific rules — platform protocol */}
+          <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2">
+            <span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>
+            LinkedIn Protocol — read before posting
+          </h2>
+          <div className="space-y-3 mb-10">
+            {linkedInRules.map(({ rule, detail }) => (
+              <div key={rule} className="bg-white border border-gray-200 rounded-xl p-4">
+                <div className="flex items-start gap-3">
+                  <span className="w-2 h-2 rounded-full bg-[#0A66C2] mt-1.5 shrink-0"></span>
+                  <div>
+                    <p className="text-sm font-bold text-gray-900 mb-1">{rule}</p>
+                    <p className="text-sm text-gray-600">{detail}</p>
+                  </div>
+                </div>
               </div>
             ))}
           </div>
 
-          {/* Profile optimization */}
-          <h2 className="text-xl font-bold text-gray-900 flex items-center gap-2 mb-5">
+          {/* Profile Optimization — Before/After */}
+          <h2 className="text-xl font-bold text-gray-900 mt-10 mb-2 flex items-center gap-2">
             <span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>
-            Profile optimization — do this first
+            Profile Optimization — do this first
           </h2>
-          <div className="space-y-3 mb-12">
+          <p className="text-sm text-gray-500 mb-5">Your LinkedIn profile is your landing page. Optimize it before you post a single thing.</p>
+          <div className="space-y-3 mb-10">
             {profileOptimization.map(({ field, bad, good }) => (
-              <div key={field} className="bg-white border border-gray-200 rounded-2xl overflow-hidden shadow-sm">
+              <div key={field} className="bg-white border border-gray-200 rounded-2xl overflow-hidden">
                 <div className="px-5 py-2.5 bg-gray-50 border-b border-gray-100">
                   <span className="text-xs font-bold text-gray-500 uppercase tracking-widest">{field}</span>
                 </div>
                 <div className="grid sm:grid-cols-2 divide-y sm:divide-y-0 sm:divide-x divide-gray-100">
                   <div className="p-4">
-                    <p className="text-xs font-bold text-red-500 mb-1.5">❌ Before</p>
+                    <p className="text-xs font-bold text-red-500 mb-1.5">Before</p>
                     <p className="text-sm text-gray-500 italic">&ldquo;{bad}&rdquo;</p>
                   </div>
                   <div className="p-4">
-                    <p className="text-xs font-bold text-emerald-600 mb-1.5">✅ After</p>
+                    <p className="text-xs font-bold text-emerald-600 mb-1.5">After</p>
                     <p className="text-sm text-gray-800">&ldquo;{good}&rdquo;</p>
                   </div>
                 </div>
@@ -476,20 +550,60 @@ export default function LinkedInPage() {
             ))}
           </div>
 
-          {/* Post library */}
-          <div className="flex items-center justify-between mb-5">
-            <h2 className="text-xl font-bold text-gray-900 flex items-center gap-2">
-              <span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>
-              Post library
-            </h2>
-            <span className="bg-red-100 text-red-700 text-xs font-semibold px-3 py-1 rounded-full">🔥 Viral potential marked</span>
+          {/* Connection Request Templates */}
+          <h2 className="text-xl font-bold text-gray-900 mt-10 mb-2 flex items-center gap-2">
+            <span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>
+            Connection Request Templates
+          </h2>
+          <p className="text-sm text-gray-500 mb-5">LinkedIn limits connection notes to 300 characters. Be specific, warm, and never pitch on first contact.</p>
+          <div className="space-y-4 mb-10">
+            {connectionTemplates.map(({ scenario, template }) => (
+              <div key={scenario} className="bg-white border border-gray-200 rounded-2xl overflow-hidden">
+                <div className="px-5 py-2.5 bg-gray-50 border-b border-gray-100">
+                  <span className="text-xs font-bold text-gray-500 uppercase tracking-widest">{scenario}</span>
+                </div>
+                <div className="px-5 py-4">
+                  <pre className="text-sm text-gray-700 bg-gray-50 border border-gray-100 rounded-xl p-4 whitespace-pre-wrap leading-relaxed font-sans overflow-x-auto select-all">
+                    {template}
+                  </pre>
+                </div>
+              </div>
+            ))}
           </div>
 
-          <div className="space-y-5 mb-12">
+          {/* Content Calendar */}
+          <h2 className="text-xl font-bold text-gray-900 mt-10 mb-2 flex items-center gap-2">
+            <span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>
+            Weekly Content Calendar
+          </h2>
+          <p className="text-sm text-gray-500 mb-5">Post Sunday–Thursday (UAE work week). Best window: 7–9 AM. Never post Friday evening — the algorithm needs your early engagement window.</p>
+          <div className="space-y-2 mb-10">
+            {contentCalendar.map(({ day, type, description }) => (
+              <div key={day} className="bg-white border border-gray-200 rounded-xl p-4 flex items-start gap-4">
+                <div className="w-24 shrink-0">
+                  <p className="text-xs font-bold text-gray-900">{day}</p>
+                  <p className="text-xs text-[#0A66C2] font-semibold mt-0.5">{type}</p>
+                </div>
+                <p className="text-sm text-gray-600">{description}</p>
+              </div>
+            ))}
+          </div>
+
+          {/* Post Library */}
+          <h2 className="text-xl font-bold text-gray-900 mt-10 mb-2 flex items-center gap-2">
+            <span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>
+            Post Library — 12 text posts
+          </h2>
+          <div className="bg-amber-50 border border-amber-200 rounded-xl px-4 py-3 mb-6">
+            <p className="text-xs font-bold text-amber-800 mb-1">LinkedIn text-only rule</p>
+            <p className="text-xs text-amber-700">Every post below is text-only by design. Do NOT add images — LinkedIn&apos;s algorithm favors native text posts for organic reach. If any post mentions a link, put that link in the first comment immediately after posting.</p>
+          </div>
+
+          <div className="space-y-5 mb-10">
             {posts.map((p) => (
-              <div key={p.id} className="bg-white border border-gray-200 rounded-2xl overflow-hidden shadow-sm">
+              <div key={p.id} className="bg-white border border-gray-200 rounded-2xl overflow-hidden">
                 <div className="px-5 py-4 border-b border-gray-100 flex items-start gap-3">
-                  <span className="w-7 h-7 rounded-full bg-gray-100 text-gray-500 text-xs font-bold flex items-center justify-center shrink-0">
+                  <span className="w-8 h-8 bg-emerald-500 text-white rounded-full flex items-center justify-center shrink-0 font-bold text-sm">
                     {p.id}
                   </span>
                   <div className="flex-1 min-w-0">
@@ -507,51 +621,27 @@ export default function LinkedInPage() {
                   <pre className="text-sm text-gray-700 bg-gray-50 border border-gray-100 rounded-xl p-4 whitespace-pre-wrap leading-relaxed font-sans overflow-x-auto select-all">
                     {p.content}
                   </pre>
+                  <p className="text-xs text-[#0A66C2] mt-2 font-medium">Reminder: paste any links in the first comment after posting</p>
                 </div>
               </div>
             ))}
           </div>
 
-          {/* Strategy */}
-          <div className="bg-gradient-to-br from-gray-900 to-gray-800 text-white rounded-2xl p-8">
-            <span className="text-xs font-bold text-emerald-400 uppercase tracking-widest block mb-3">Posting strategy</span>
-            <h2 className="text-xl font-bold mb-5">LinkedIn growth playbook</h2>
-            <div className="space-y-4 text-sm text-gray-300">
-              <div className="border-l-2 border-emerald-500 pl-4">
-                <p className="font-semibold text-white mb-0.5">Format mix</p>
-                <p>40% story posts (personal experience), 40% educational (tips/data), 20% controversial opinions.</p>
-              </div>
-              <div className="border-l-2 border-emerald-500 pl-4">
-                <p className="font-semibold text-white mb-0.5">Hook is everything</p>
-                <p>The first line determines if anyone reads the rest. Test different hooks on the same content.</p>
-              </div>
-              <div className="border-l-2 border-emerald-500 pl-4">
-                <p className="font-semibold text-white mb-0.5">End with a question</p>
-                <p>Every post ends with &ldquo;What&apos;s your experience?&rdquo; or a question. Comments signal relevance to the algorithm.</p>
-              </div>
-              <div className="border-l-2 border-emerald-500 pl-4">
-                <p className="font-semibold text-white mb-0.5">Post at 7–9 AM UAE</p>
-                <p>When Dubai professionals are commuting or starting their day. Highest engagement window.</p>
-              </div>
-              <div className="border-l-2 border-emerald-500 pl-4">
-                <p className="font-semibold text-white mb-0.5">Reply to every comment in the first hour</p>
-                <p>This dramatically boosts reach. Set a reminder when you post.</p>
-              </div>
-              <div className="border-l-2 border-emerald-500 pl-4">
-                <p className="font-semibold text-white mb-0.5">Personal account first</p>
-                <p>Post from your personal LinkedIn, not the company page. Personal profiles get 3–5× more organic reach.</p>
-              </div>
-              <div className="border-l-2 border-gray-600 pl-4">
-                <p className="font-semibold text-gray-400 mb-0.5">Don&apos;t</p>
-                <p>Add the link in the post body (LinkedIn suppresses external links). Put it in the first comment instead.</p>
-              </div>
-            </div>
-            <div className="mt-6 pt-6 border-t border-white/10">
-              <Link href="/blog" className="inline-block bg-emerald-500 hover:bg-emerald-400 text-white font-bold px-6 py-2.5 rounded-xl transition-colors text-sm">
-                Browse blog articles to turn into posts →
-              </Link>
-            </div>
+          <div className="bg-emerald-50 border border-emerald-200 rounded-xl p-5 mb-8">
+            <p className="text-sm font-bold text-emerald-800 mb-2">Posting tip</p>
+            <p className="text-sm text-emerald-800">Industry: Software / Professional Services. Best times: 7–9 AM, 12–1 PM, 6–8 PM UAE time. Reply to every comment within 60 minutes of posting.</p>
           </div>
+
+          {/* Bottom CTA */}
+          <div className="bg-gradient-to-br from-gray-900 to-gray-800 text-white rounded-2xl p-8 mt-12 text-center">
+            <span className="text-xs font-bold text-emerald-400 uppercase tracking-widest block mb-3">SoloKit</span>
+            <h3 className="text-2xl font-bold mb-3">Build your freelance system</h3>
+            <p className="text-gray-300 text-sm mb-6 max-w-sm mx-auto">Notion templates, AI prompts, and SOPs built for UAE freelancers. Everything you need in one kit.</p>
+            <Link href="/" className="inline-block bg-emerald-500 hover:bg-emerald-400 text-white font-bold px-8 py-3 rounded-xl transition-colors text-sm">
+              Explore SoloKit →
+            </Link>
+          </div>
+
         </div>
       </main>
       <Footer />
