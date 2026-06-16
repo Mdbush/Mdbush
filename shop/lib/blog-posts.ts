@@ -1295,6 +1295,33 @@ export const posts: BlogPost[] = [
     readTime: "9 min read",
     category: "Getting Clients",
   },
+  {
+    slug: "freelance-data-scientist-rates-uae",
+    title: "Freelance Data Scientist Rates in the UAE (2026): What to Charge",
+    description:
+      "Real AED rates for freelance data scientists in Dubai and Abu Dhabi — data analysis, machine learning model development, AI/ML consulting, data engineering, BI dashboards, Arabic NLP, and monthly analytics retainers; UAE government and banking niches; pricing ML projects correctly for 2026.",
+    date: "June 16, 2026",
+    readTime: "7 min read",
+    category: "Pricing & Rates",
+  },
+  {
+    slug: "how-to-win-retainer-clients-uae",
+    title: "How to Win Retainer Clients as a UAE Freelancer (2026 Guide)",
+    description:
+      "How UAE freelancers convert one-off project clients into monthly retainers — the four best moments to propose, what to include in a retainer offer, word-for-word conversation scripts, how to price tiered retainers, and how to keep UAE clients long-term.",
+    date: "June 16, 2026",
+    readTime: "8 min read",
+    category: "Getting Clients",
+  },
+  {
+    slug: "freelance-training-development-rates-uae",
+    title: "Freelance Training & Learning Development Rates in the UAE (2026): What to Charge",
+    description:
+      "Real AED rates for freelance corporate trainers and L&D consultants in Dubai and Abu Dhabi — facilitation day rates, training program design, eLearning development, leadership programs, Emiratisation development programs, and bilingual Arabic-English facilitation for 2026.",
+    date: "June 16, 2026",
+    readTime: "7 min read",
+    category: "Pricing & Rates",
+  },
 ];
 
 export function getPost(slug: string): BlogPost | undefined {
