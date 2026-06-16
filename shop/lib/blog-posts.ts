@@ -2645,6 +2645,33 @@ export const posts: BlogPost[] = [
     readTime: "7 min read",
     category: "Pricing & Rates",
   },
+  {
+    slug: "freelance-civil-engineer-rates-uae",
+    title: "Freelance Civil Engineer Rates in the UAE (2026)",
+    description:
+      "Real AED day rates for freelance civil engineers in Dubai and Abu Dhabi. Structural design, infrastructure advisory, roads and highways, geotechnical consulting, construction project management, and construction supervision fees for 2026.",
+    date: "June 16, 2026",
+    readTime: "7 min read",
+    category: "Pricing & Rates",
+  },
+  {
+    slug: "freelance-executive-coach-rates-uae",
+    title: "Freelance Executive Coach Rates in the UAE (2026)",
+    description:
+      "Real AED rates for freelance executive coaches in Dubai and Abu Dhabi. C-suite coaching, leadership development, career transition coaching, team coaching, Emiratisation leadership programs, and executive presence coaching fees for 2026.",
+    date: "June 16, 2026",
+    readTime: "7 min read",
+    category: "Pricing & Rates",
+  },
+  {
+    slug: "freelance-wedding-planner-rates-uae",
+    title: "Freelance Wedding Planner Rates in the UAE (2026)",
+    description:
+      "Real AED rates for freelance wedding planners in Dubai and Abu Dhabi. Full wedding coordination, partial planning, day-of coordination, destination weddings, Arabic traditional weddings, South Asian weddings, and luxury wedding design fees for 2026.",
+    date: "June 16, 2026",
+    readTime: "7 min read",
+    category: "Pricing & Rates",
+  },
 ];
 
 export function getPost(slug: string): BlogPost | undefined {
