@@ -6,11 +6,11 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "UAE Freelancer Guides & Resources — SoloKit",
   description:
-    "74 practical guides for freelancers and solopreneurs in the UAE. Visa, tax, rates, clients, contracts, AI tools, and more. All free.",
+    "77 practical guides for freelancers and solopreneurs in the UAE. Visa, tax, rates, clients, contracts, AI tools, and more. All free.",
   alternates: { canonical: "/guides" },
   openGraph: {
     title: "UAE Freelancer Guides & Resources — SoloKit",
-    description: "74 free guides covering everything a UAE freelancer needs to know.",
+    description: "77 free guides covering everything a UAE freelancer needs to know.",
     type: "website",
     url: "/guides",
   },
@@ -51,6 +51,8 @@ const categories = [
       { slug: "best-accounting-software-freelancers-uae", title: "Best Accounting Software for UAE Freelancers", time: "6 min" },
       { slug: "corporate-tax-uae-freelancers-2026", title: "UAE Corporate Tax 2026 for Freelancers: What You Need to Know", time: "8 min" },
       { slug: "freelance-accountant-uae", title: "Do UAE Freelancers Need an Accountant?", time: "7 min" },
+      { slug: "uae-freelance-tax-registration", title: "UAE Freelance Tax Registration: VAT, Corporate Tax & EmaraTax (2026)", time: "8 min" },
+      { slug: "freelance-invoice-template-uae", title: "Freelance Invoice Template for UAE Clients (What to Include + AED Format)", time: "6 min" },
     ],
   },
   {
@@ -107,6 +109,7 @@ const categories = [
       { slug: "client-communication-tips-freelancers-uae", title: "Client Communication for UAE Freelancers: Scripts That Work", time: "8 min" },
       { slug: "freelance-email-templates-uae", title: "Freelance Email Templates for UAE Clients (Copy-Paste)", time: "7 min" },
       { slug: "client-red-flags-uae", title: "10 Client Red Flags for UAE Freelancers (How to Spot Them Before You Sign)", time: "7 min" },
+      { slug: "how-to-get-paid-faster-uae", title: "How to Get Paid Faster as a UAE Freelancer (7 Practical Strategies)", time: "6 min" },
     ],
   },
   {
@@ -172,7 +175,7 @@ export default function GuidesPage() {
           <span className="text-xs font-semibold text-gray-400 uppercase tracking-widest">Free Resources</span>
           <h1 className="text-3xl sm:text-4xl font-bold text-gray-900 mt-2 mb-3">UAE Freelancer Guides</h1>
           <p className="text-gray-500 max-w-xl mx-auto leading-relaxed">
-            74 practical guides covering everything you need to know about freelancing in Dubai and Abu Dhabi.
+            77 practical guides covering everything you need to know about freelancing in Dubai and Abu Dhabi.
             Written specifically for the UAE market — AED pricing, local laws, free zone context.
           </p>
         </div>

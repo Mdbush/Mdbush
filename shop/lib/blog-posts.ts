@@ -674,6 +674,33 @@ export const posts: BlogPost[] = [
     readTime: "6 min read",
     category: "Systems & Productivity",
   },
+  {
+    slug: "freelance-invoice-template-uae",
+    title: "Freelance Invoice Template for UAE Clients (What to Include + AED Format)",
+    description:
+      "What to include on a freelance invoice in the UAE — mandatory fields, VAT rules, AED formatting, payment terms, and how to create a professional invoice that gets paid on time.",
+    date: "June 16, 2026",
+    readTime: "6 min read",
+    category: "Tax & Finance",
+  },
+  {
+    slug: "how-to-get-paid-faster-uae",
+    title: "How to Get Paid Faster as a UAE Freelancer (7 Practical Strategies)",
+    description:
+      "7 proven strategies for UAE freelancers to get paid faster — upfront deposits, payment term negotiation, invoice timing, late fees, and what actually works with UAE clients.",
+    date: "June 16, 2026",
+    readTime: "6 min read",
+    category: "Client Work & Proposals",
+  },
+  {
+    slug: "uae-freelance-tax-registration",
+    title: "UAE Freelance Tax Registration: VAT, Corporate Tax & EmaraTax (2026)",
+    description:
+      "Complete guide to tax registration for UAE freelancers in 2026 — when to register for VAT, how the corporate tax AED 1M threshold works, EmaraTax setup, and what freelancers actually need to do.",
+    date: "June 16, 2026",
+    readTime: "8 min read",
+    category: "Tax & Finance",
+  },
 ];
 
 export function getPost(slug: string): BlogPost | undefined {
