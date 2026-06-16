@@ -917,6 +917,33 @@ export const posts: BlogPost[] = [
     readTime: "7 min read",
     category: "Pricing & Rates",
   },
+  {
+    slug: "freelance-event-planner-rates-uae",
+    title: "Freelance Event Planner Rates in the UAE (2026): What to Charge",
+    description:
+      "Real AED rates for freelance event planners and coordinators in Dubai and Abu Dhabi — corporate events, weddings, product launches, and MICE planning fees in 2026.",
+    date: "June 16, 2026",
+    readTime: "7 min read",
+    category: "Pricing & Rates",
+  },
+  {
+    slug: "how-to-use-notion-ai-freelancers-uae",
+    title: "How to Use Notion AI as a UAE Freelancer: 12 Practical Use Cases",
+    description:
+      "12 practical ways UAE freelancers use Notion AI to write faster, organize better, and save hours every week — proposals, meeting notes, SOPs, client communication, and project management.",
+    date: "June 16, 2026",
+    readTime: "7 min read",
+    category: "AI Tools",
+  },
+  {
+    slug: "freelance-brand-strategist-rates-uae",
+    title: "Freelance Brand Strategist Rates in the UAE (2026): What to Charge",
+    description:
+      "Real AED rates for freelance brand strategists in Dubai and Abu Dhabi — brand audits, positioning projects, naming, brand identity strategy, and retainer fees in 2026.",
+    date: "June 16, 2026",
+    readTime: "7 min read",
+    category: "Pricing & Rates",
+  },
 ];
 
 export function getPost(slug: string): BlogPost | undefined {
