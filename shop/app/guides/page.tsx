@@ -6,11 +6,11 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "UAE & GCC Freelancer Guides & Resources — SoloKit",
   description:
-    "350 practical guides for freelancers and solopreneurs across the UAE, Saudi Arabia, and GCC. Visa, tax, rates, clients, contracts, AI tools, and more. All free.",
+    "353 practical guides for freelancers and solopreneurs across the UAE, Saudi Arabia, and GCC. Visa, tax, rates, clients, contracts, AI tools, and more. All free.",
   alternates: { canonical: "/guides" },
   openGraph: {
     title: "UAE & GCC Freelancer Guides & Resources — SoloKit",
-    description: "350 free guides covering everything a UAE and GCC freelancer needs to know.",
+    description: "353 free guides covering everything a UAE and GCC freelancer needs to know.",
     type: "website",
     url: "/guides",
   },
@@ -435,6 +435,15 @@ const categories = [
       { slug: "how-to-set-up-freelance-business-uae", title: "How to Set Up a Freelance Business in the UAE (2026): Complete Guide", time: "10 min" },
     ],
   },
+  {
+    name: "Saudi Arabia",
+    description: "Freelancing in Saudi Arabia — visas, SAR rates, Maroof registration, ZATCA tax, and Vision 2030 opportunities.",
+    guides: [
+      { slug: "freelance-visa-saudi-arabia", title: "How to Get a Freelance Visa in Saudi Arabia (2026): Al-Qudurat & Freelance Options", time: "9 min" },
+      { slug: "freelance-rates-saudi-arabia", title: "Freelance Rates in Saudi Arabia (2026): What to Charge in SAR", time: "8 min" },
+      { slug: "how-to-set-up-freelance-business-saudi-arabia", title: "How to Set Up a Freelance Business in Saudi Arabia (2026): Complete Guide", time: "9 min" },
+    ],
+  },
 ];
 
 export default function GuidesPage() {
@@ -450,7 +459,7 @@ export default function GuidesPage() {
           <span className="text-xs font-semibold text-gray-400 uppercase tracking-widest">Free Resources</span>
           <h1 className="text-3xl sm:text-4xl font-bold text-gray-900 mt-2 mb-3">UAE &amp; GCC Freelancer Guides</h1>
           <p className="text-gray-500 max-w-xl mx-auto leading-relaxed">
-            350 practical guides covering everything you need to know about freelancing in the UAE, Saudi Arabia, and across the GCC.
+            353 practical guides covering everything you need to know about freelancing in the UAE, Saudi Arabia, and across the GCC.
             Written for the Gulf market — AED pricing, local laws, free zone and KSA context.
           </p>
         </div>

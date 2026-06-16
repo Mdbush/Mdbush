@@ -360,6 +360,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "how-to-set-up-freelance-business-uae",
     "freelance-risk-manager-rates-uae",
     "how-to-build-passive-income-uae",
+    "freelance-visa-saudi-arabia",
+    "freelance-rates-saudi-arabia",
+    "how-to-set-up-freelance-business-saudi-arabia",
   ].map((slug) => ({
     url: `${base}/blog/${slug}`,
     lastModified: new Date(),

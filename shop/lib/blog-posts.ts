@@ -3131,6 +3131,33 @@ export const posts: BlogPost[] = [
     readTime: "10 min read",
     category: "Business & Mindset",
   },
+  {
+    slug: "freelance-visa-saudi-arabia",
+    title: "How to Get a Freelance Visa in Saudi Arabia (2026): Al-Qudurat & Freelance Options",
+    description:
+      "Complete guide to freelance visas and work permits in Saudi Arabia — Al-Qudurat platform, talent residency, iqama for freelancers, Vision 2030 opportunities, and how to work legally as a freelancer in KSA.",
+    date: "June 16, 2026",
+    readTime: "9 min read",
+    category: "Getting Started",
+  },
+  {
+    slug: "freelance-rates-saudi-arabia",
+    title: "Freelance Rates in Saudi Arabia (2026): What to Charge in SAR",
+    description:
+      "Real SAR day rates and project fees for freelancers in Saudi Arabia — management consultants, IT, marketing, design, legal, and finance freelancers working with Saudi clients in Riyadh, Jeddah, and NEOM in 2026.",
+    date: "June 16, 2026",
+    readTime: "8 min read",
+    category: "Pricing & Rates",
+  },
+  {
+    slug: "how-to-set-up-freelance-business-saudi-arabia",
+    title: "How to Set Up a Freelance Business in Saudi Arabia (2026): Complete Guide",
+    description:
+      "Step-by-step guide to setting up a freelance business legally in Saudi Arabia — Maroof platform, ZATCA tax registration, Al Rajhi & SNB bank accounts, SAR invoicing, and Vision 2030 opportunities.",
+    date: "June 16, 2026",
+    readTime: "9 min read",
+    category: "Getting Started",
+  },
 ];
 
 export function getPost(slug: string): BlogPost | undefined {
