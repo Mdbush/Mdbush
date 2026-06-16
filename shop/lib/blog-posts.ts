@@ -701,6 +701,33 @@ export const posts: BlogPost[] = [
     readTime: "8 min read",
     category: "Tax & Finance",
   },
+  {
+    slug: "freelance-writer-rates-uae",
+    title: "Freelance Writer Rates in the UAE (2026): What to Charge",
+    description:
+      "Real AED rates for freelance writers in Dubai and Abu Dhabi — per-word, per-article, per-project pricing for blog content, white papers, social media, press releases, and more.",
+    date: "June 16, 2026",
+    readTime: "7 min read",
+    category: "Pricing & Rates",
+  },
+  {
+    slug: "best-project-management-tools-freelancers",
+    title: "Best Project Management Tools for Freelancers in the UAE (2026)",
+    description:
+      "The best project management tools for UAE freelancers — Notion, Trello, Asana, ClickUp, and Monday reviewed for solo use. Free and paid options with AED pricing.",
+    date: "June 16, 2026",
+    readTime: "6 min read",
+    category: "Systems & Productivity",
+  },
+  {
+    slug: "dubai-free-zone-comparison-freelancers",
+    title: "Dubai Free Zone Comparison for Freelancers (2026): Costs, Visas & Best Options",
+    description:
+      "Compare the best Dubai free zones for freelancers in 2026 — RAKEZ, IFZA, Meydan, SHAMS, and Fujairah Creative City. License costs, visa eligibility, setup time, and which is cheapest.",
+    date: "June 16, 2026",
+    readTime: "9 min read",
+    category: "Visa & Legal",
+  },
 ];
 
 export function getPost(slug: string): BlogPost | undefined {
