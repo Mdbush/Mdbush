@@ -1350,6 +1350,33 @@ export const posts: BlogPost[] = [
     category: "Pricing & Rates",
   },
   {
+    slug: "freelance-cloud-architect-rates-uae",
+    title: "Freelance Cloud Architect Rates in the UAE (2026): What to Charge",
+    description:
+      "Real AED rates for freelance cloud architects in Dubai and Abu Dhabi — cloud architecture design, multi-cloud strategy, AWS/Azure solution architecture, cloud migration blueprints, Well-Architected Reviews, and fractional cloud CTO rates for 2026.",
+    date: "June 16, 2026",
+    readTime: "7 min read",
+    category: "Pricing & Rates",
+  },
+  {
+    slug: "how-to-manage-client-expectations-uae",
+    title: "How to Manage Client Expectations as a UAE Freelancer (2026 Guide)",
+    description:
+      "How to set and manage client expectations in the UAE — scoping conversations, milestone sign-offs, scope change processes, communication cadence, and how to handle UAE-specific client dynamics without damaging relationships.",
+    date: "June 16, 2026",
+    readTime: "8 min read",
+    category: "Client Work & Proposals",
+  },
+  {
+    slug: "freelance-erp-consultant-rates-uae",
+    title: "Freelance ERP Consultant Rates in the UAE (2026): What to Charge",
+    description:
+      "Real AED rates for freelance ERP consultants in Dubai and Abu Dhabi — SAP, Oracle, Microsoft Dynamics, Odoo, and NetSuite implementation advisory, customization, training, and ERP support retainer rates for 2026.",
+    date: "June 16, 2026",
+    readTime: "7 min read",
+    category: "Pricing & Rates",
+  },
+  {
     slug: "freelance-scrum-master-rates-uae",
     title: "Freelance Scrum Master & Agile Coach Rates in the UAE (2026)",
     description:
