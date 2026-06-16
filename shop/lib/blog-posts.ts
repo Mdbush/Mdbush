@@ -2537,6 +2537,33 @@ export const posts: BlogPost[] = [
     readTime: "7 min read",
     category: "Pricing & Rates",
   },
+  {
+    slug: "freelance-real-estate-valuer-rates-uae",
+    title: "Freelance Real Estate Valuer & Property Consultant Rates UAE (2026)",
+    description:
+      "Real AED day rates for freelance real estate valuers and property consultants in Dubai and Abu Dhabi. RICS valuation, investment advisory, due diligence, DLD-registered valuation, market analysis, and property development advisory fees for UAE projects in 2026.",
+    date: "June 16, 2026",
+    readTime: "7 min read",
+    category: "Pricing & Rates",
+  },
+  {
+    slug: "how-to-manage-client-feedback-rounds-uae",
+    title: "How UAE Freelancers Manage Client Feedback Rounds (2026)",
+    description:
+      "How UAE freelancers structure, limit, and manage client feedback rounds to avoid endless revisions — revision policies, feedback brief templates, structured review meetings, and how to handle feedback that expands scope.",
+    date: "June 16, 2026",
+    readTime: "7 min read",
+    category: "Client Work & Proposals",
+  },
+  {
+    slug: "freelance-telecoms-consultant-rates-uae",
+    title: "Freelance Telecoms Consultant Rates in the UAE (2026)",
+    description:
+      "Real AED day rates for freelance telecoms consultants in Dubai and Abu Dhabi. Network strategy, 5G advisory, MVNO consulting, spectrum management, UAE TRA regulatory compliance, telecom infrastructure, and connectivity advisory fees for 2026.",
+    date: "June 16, 2026",
+    readTime: "7 min read",
+    category: "Pricing & Rates",
+  },
 ];
 
 export function getPost(slug: string): BlogPost | undefined {

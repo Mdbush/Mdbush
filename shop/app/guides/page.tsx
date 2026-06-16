@@ -6,11 +6,11 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "UAE Freelancer Guides & Resources — SoloKit",
   description:
-    "285 practical guides for freelancers and solopreneurs in the UAE. Visa, tax, rates, clients, contracts, AI tools, and more. All free.",
+    "288 practical guides for freelancers and solopreneurs in the UAE. Visa, tax, rates, clients, contracts, AI tools, and more. All free.",
   alternates: { canonical: "/guides" },
   openGraph: {
     title: "UAE Freelancer Guides & Resources — SoloKit",
-    description: "285 free guides covering everything a UAE freelancer needs to know.",
+    description: "288 free guides covering everything a UAE freelancer needs to know.",
     type: "website",
     url: "/guides",
   },
@@ -264,6 +264,8 @@ const categories = [
       { slug: "freelance-maritime-consultant-rates-uae", title: "Freelance Maritime Consultant Rates in the UAE (2026)", time: "7 min" },
       { slug: "freelance-aviation-consultant-rates-uae", title: "Freelance Aviation Consultant Rates in the UAE (2026)", time: "7 min" },
       { slug: "freelance-luxury-brand-consultant-rates-uae", title: "Freelance Luxury Brand Consultant Rates in the UAE (2026)", time: "7 min" },
+      { slug: "freelance-real-estate-valuer-rates-uae", title: "Freelance Real Estate Valuer & Property Consultant Rates UAE (2026)", time: "7 min" },
+      { slug: "freelance-telecoms-consultant-rates-uae", title: "Freelance Telecoms Consultant Rates in the UAE (2026)", time: "7 min" },
     ],
   },
   {
@@ -287,6 +289,7 @@ const categories = [
       { slug: "how-to-set-payment-terms-uae", title: "How to Set Payment Terms as a UAE Freelancer (2026 Guide)", time: "7 min" },
       { slug: "how-to-run-discovery-workshops-uae", title: "How to Run Discovery Workshops with UAE Clients (2026 Guide)", time: "7 min" },
       { slug: "how-to-protect-intellectual-property-uae", title: "How UAE Freelancers Protect Their Intellectual Property (2026 Guide)", time: "7 min" },
+      { slug: "how-to-manage-client-feedback-rounds-uae", title: "How UAE Freelancers Manage Client Feedback Rounds (2026)", time: "7 min" },
     ],
   },
   {
@@ -379,7 +382,7 @@ export default function GuidesPage() {
           <span className="text-xs font-semibold text-gray-400 uppercase tracking-widest">Free Resources</span>
           <h1 className="text-3xl sm:text-4xl font-bold text-gray-900 mt-2 mb-3">UAE Freelancer Guides</h1>
           <p className="text-gray-500 max-w-xl mx-auto leading-relaxed">
-            285 practical guides covering everything you need to know about freelancing in Dubai and Abu Dhabi.
+            288 practical guides covering everything you need to know about freelancing in Dubai and Abu Dhabi.
             Written specifically for the UAE market — AED pricing, local laws, free zone context.
           </p>
         </div>
