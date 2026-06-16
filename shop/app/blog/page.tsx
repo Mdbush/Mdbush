@@ -5,12 +5,12 @@ import { posts } from "@/lib/blog-posts";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Blog — 61 Free Guides for UAE Freelancers — SoloKit",
-  description: "61 free guides for freelancers and solopreneurs in the UAE. Visa, tax, rates, proposals, AI tools, contracts, and more. No fluff.",
+  title: "Blog — 65 Free Guides for UAE Freelancers — SoloKit",
+  description: "65 free guides for freelancers and solopreneurs in the UAE. Visa, tax, rates, proposals, AI tools, contracts, and more. No fluff.",
   alternates: { canonical: "/blog" },
   openGraph: {
     title: "Free Guides for UAE Freelancers — SoloKit Blog",
-    description: "61 practical guides covering everything UAE freelancers need. No fluff.",
+    description: "65 practical guides covering everything UAE freelancers need. No fluff.",
     url: "/blog",
     type: "website",
   },

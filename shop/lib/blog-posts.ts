@@ -557,6 +557,42 @@ export const posts: BlogPost[] = [
     readTime: "8 min read",
     category: "Client Work & Proposals",
   },
+  {
+    slug: "freelance-social-media-manager-rates-uae",
+    title: "Freelance Social Media Manager Rates in the UAE (2026)",
+    description:
+      "What freelance social media managers charge in Dubai and Abu Dhabi — monthly retainer, per-platform, and per-post rates across Instagram, TikTok, LinkedIn, and YouTube.",
+    date: "June 16, 2026",
+    readTime: "7 min read",
+    category: "Pricing & Rates",
+  },
+  {
+    slug: "freelance-hr-consultant-uae",
+    title: "Freelance HR Consultant in the UAE: Rates, Services & How to Start (2026)",
+    description:
+      "Freelance HR consulting rates and services in Dubai and Abu Dhabi — who hires independent HR consultants, what they pay, and how to build an HR practice in the UAE.",
+    date: "June 16, 2026",
+    readTime: "8 min read",
+    category: "Pricing & Rates",
+  },
+  {
+    slug: "how-to-get-uae-clients-from-abroad",
+    title: "How to Get UAE Clients from Abroad (Remote Freelancing to Dubai)",
+    description:
+      "How to land UAE-based clients as a remote freelancer — positioning, outreach, rates in AED, time zones, and handling payments from outside the UAE.",
+    date: "June 16, 2026",
+    readTime: "8 min read",
+    category: "Getting Clients",
+  },
+  {
+    slug: "freelance-work-permit-vs-trade-license-uae",
+    title: "Freelance Work Permit vs Trade License in the UAE: Which Do You Need?",
+    description:
+      "Freelance work permit vs trade license in the UAE — what each is, what it costs, who should get which, and how they compare to free zone and mainland options.",
+    date: "June 16, 2026",
+    readTime: "8 min read",
+    category: "Visa & Legal",
+  },
 ];
 
 export function getPost(slug: string): BlogPost | undefined {

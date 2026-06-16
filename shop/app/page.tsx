@@ -377,7 +377,7 @@ export default function Home() {
           <div className="flex items-center justify-between mb-8">
             <div>
               <h2 className="text-2xl font-bold text-gray-900">Free guides for UAE freelancers</h2>
-              <p className="text-sm text-gray-500 mt-1">61 practical articles — no fluff</p>
+              <p className="text-sm text-gray-500 mt-1">65 practical articles — no fluff</p>
             </div>
             <Link href="/blog" className="text-sm font-semibold text-gray-900 hover:text-gray-600 transition-colors shrink-0">
               All articles →
