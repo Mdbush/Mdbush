@@ -2375,6 +2375,33 @@ export const posts: BlogPost[] = [
     readTime: "7 min read",
     category: "Pricing & Rates",
   },
+  {
+    slug: "freelance-coo-rates-uae",
+    title: "Freelance & Fractional COO Rates in the UAE (2026)",
+    description:
+      "Real AED day rates and monthly fees for freelance and fractional Chief Operating Officers in Dubai and Abu Dhabi. Interim COO, fractional COO, operations leadership, process improvement, and operational transformation fees for UAE companies in 2026.",
+    date: "June 16, 2026",
+    readTime: "7 min read",
+    category: "Pricing & Rates",
+  },
+  {
+    slug: "how-to-get-paid-in-foreign-currency-uae",
+    title: "How UAE Freelancers Get Paid in Foreign Currency (USD, EUR, GBP) — 2026",
+    description:
+      "How UAE freelancers receive payments in USD, EUR, and GBP from international clients — Wise, Payoneer, UAE multi-currency accounts, invoicing in foreign currency, and converting to AED with minimum fees. Practical guide for Dubai and Abu Dhabi freelancers.",
+    date: "June 16, 2026",
+    readTime: "7 min read",
+    category: "Tax & Finance",
+  },
+  {
+    slug: "freelance-tax-consultant-rates-uae",
+    title: "Freelance Tax Consultant Rates in the UAE (2026)",
+    description:
+      "Real AED day rates for freelance tax consultants in Dubai and Abu Dhabi. UAE corporate tax advisory, VAT compliance, international tax structuring, transfer pricing, and EmaraTax advisory fees for UAE businesses and individuals in 2026.",
+    date: "June 16, 2026",
+    readTime: "7 min read",
+    category: "Pricing & Rates",
+  },
 ];
 
 export function getPost(slug: string): BlogPost | undefined {
