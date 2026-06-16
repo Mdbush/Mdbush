@@ -1727,6 +1727,33 @@ export const posts: BlogPost[] = [
     readTime: "7 min read",
     category: "Pricing & Rates",
   },
+  {
+    slug: "freelance-database-administrator-rates-uae",
+    title: "Freelance Database Administrator Rates in the UAE (2026): DBA & Data Engineering Fees",
+    description:
+      "Real AED day rates for freelance DBAs and data engineers in Dubai and Abu Dhabi. Oracle, PostgreSQL, SQL Server, MongoDB, Redis, data migration, and database consulting fees for 2026.",
+    date: "June 16, 2026",
+    readTime: "7 min read",
+    category: "Pricing & Rates",
+  },
+  {
+    slug: "how-to-price-software-project-uae",
+    title: "How to Price a Software Development Project in the UAE (2026): Fixed vs Time & Materials",
+    description:
+      "How to estimate, scope, and price software projects as a freelance developer in the UAE. Fixed price vs time and materials, AED project benchmarks, change order process, and how to protect your margin.",
+    date: "June 16, 2026",
+    readTime: "9 min read",
+    category: "Pricing & Rates",
+  },
+  {
+    slug: "freelance-ui-engineer-rates-uae",
+    title: "Freelance UI Engineer Rates in the UAE (2026): Design Systems & Component Library Fees",
+    description:
+      "Real AED day rates for freelance UI engineers in Dubai and Abu Dhabi. Design system implementation, component libraries (Radix, shadcn), Storybook, Figma-to-code, and accessibility engineering rates for 2026.",
+    date: "June 16, 2026",
+    readTime: "7 min read",
+    category: "Pricing & Rates",
+  },
 ];
 
 export function getPost(slug: string): BlogPost | undefined {
