@@ -1133,6 +1133,33 @@ export const posts: BlogPost[] = [
     readTime: "7 min read",
     category: "Pricing & Rates",
   },
+  {
+    slug: "freelance-web-developer-rates-uae",
+    title: "Freelance Web Developer Rates in the UAE (2026): What to Charge",
+    description:
+      "Real AED rates for freelance web developers in Dubai and Abu Dhabi — WordPress, Shopify, React, Next.js, full-stack, and e-commerce development project fees and hourly rates for 2026.",
+    date: "June 16, 2026",
+    readTime: "7 min read",
+    category: "Pricing & Rates",
+  },
+  {
+    slug: "how-to-set-freelance-boundaries-uae",
+    title: "How to Set Client Boundaries as a UAE Freelancer (Without Losing Work)",
+    description:
+      "How UAE freelancers set professional client boundaries — WhatsApp hours, scope limits, revision rounds, payment terms, and word-for-word scripts that work in the UAE relationship-first business culture.",
+    date: "June 16, 2026",
+    readTime: "7 min read",
+    category: "Business & Mindset",
+  },
+  {
+    slug: "freelance-podcast-producer-rates-uae",
+    title: "Freelance Podcast Producer Rates in the UAE (2026): What to Charge",
+    description:
+      "Real AED rates for freelance podcast producers in Dubai and Abu Dhabi — episode production, show setup, audio editing, show notes, Arabic podcast production, and monthly retainer pricing for 2026.",
+    date: "June 16, 2026",
+    readTime: "7 min read",
+    category: "Pricing & Rates",
+  },
 ];
 
 export function getPost(slug: string): BlogPost | undefined {
