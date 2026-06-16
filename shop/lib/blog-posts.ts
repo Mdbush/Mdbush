@@ -2159,6 +2159,33 @@ export const posts: BlogPost[] = [
     readTime: "7 min read",
     category: "Pricing & Rates",
   },
+  {
+    slug: "freelance-data-engineer-rates-uae",
+    title: "Freelance Data Engineer Rates in the UAE (2026)",
+    description:
+      "Real AED day rates for freelance data engineers in Dubai and Abu Dhabi. Data pipeline development, ETL/ELT, dbt, Snowflake, data warehouse design, and data platform architecture fees for UAE companies in 2026.",
+    date: "June 16, 2026",
+    readTime: "7 min read",
+    category: "Pricing & Rates",
+  },
+  {
+    slug: "how-to-build-recurring-revenue-uae",
+    title: "How UAE Freelancers Build Recurring Revenue (2026 Guide)",
+    description:
+      "How UAE freelancers build predictable monthly income through retainers, productized services, digital products, and membership models. Practical strategies for Dubai and Abu Dhabi freelancers who want income stability without more clients.",
+    date: "June 16, 2026",
+    readTime: "8 min read",
+    category: "Business & Mindset",
+  },
+  {
+    slug: "freelance-procurement-consultant-rates-uae",
+    title: "Freelance Procurement Consultant Rates in the UAE (2026)",
+    description:
+      "Real AED day rates for freelance procurement consultants in Dubai and Abu Dhabi. Strategic sourcing, supplier rationalisation, category management, tender management, and procurement transformation fees for UAE companies in 2026.",
+    date: "June 16, 2026",
+    readTime: "7 min read",
+    category: "Pricing & Rates",
+  },
 ];
 
 export function getPost(slug: string): BlogPost | undefined {
