@@ -59,7 +59,8 @@ export default function Article() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
       <Header />
 
-      <main className="flex-1 max-w-2xl mx-auto px-4 sm:px-6 py-14">
+      <main className="min-h-screen bg-white">
+        <div className="max-w-3xl mx-auto px-4 py-10">
         <Link href="/blog" className="text-sm text-emerald-700 hover:text-emerald-900 transition-colors mb-8 inline-block">
           ← Blog
         </Link>
@@ -287,6 +288,7 @@ export default function Article() {
           <Link href="/blog" className="text-sm text-emerald-700 hover:text-emerald-900 transition-colors">
             ← Back to Blog
           </Link>
+        </div>
         </div>
       </main>
 
