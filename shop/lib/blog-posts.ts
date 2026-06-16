@@ -1322,6 +1322,33 @@ export const posts: BlogPost[] = [
     readTime: "7 min read",
     category: "Pricing & Rates",
   },
+  {
+    slug: "freelance-accountant-rates-uae",
+    title: "Freelance Accountant & CFO Rates in the UAE (2026): What to Charge",
+    description:
+      "Real AED rates for freelance accountants and fractional CFOs in Dubai and Abu Dhabi — bookkeeping, VAT filing, financial statements, corporate tax returns, fractional CFO retainers, financial modelling, and audit support; UAE corporate tax, family office, and real estate niches for 2026.",
+    date: "June 16, 2026",
+    readTime: "7 min read",
+    category: "Pricing & Rates",
+  },
+  {
+    slug: "how-to-use-upwork-uae",
+    title: "How to Use Upwork as a UAE Freelancer (2026 Guide): Getting Clients",
+    description:
+      "A practical guide to using Upwork from the UAE in 2026 — profile optimization, proposal strategy that gets responses, managing your Job Success Score, UAE-specific considerations (Payoneer, SWIFT, time zones), and how to legally move Upwork clients to direct retainers.",
+    date: "June 16, 2026",
+    readTime: "8 min read",
+    category: "Getting Clients",
+  },
+  {
+    slug: "freelance-public-speaker-rates-uae",
+    title: "Freelance Public Speaker Rates in the UAE (2026): What to Charge",
+    description:
+      "Real AED rates for freelance professional speakers in Dubai and Abu Dhabi — keynotes, conference panels, MC/facilitation, corporate workshops, motivational talks, virtual keynotes, and Arabic-language speaking; tech AI, women in leadership, sustainability niches; contract and speaker kit essentials for 2026.",
+    date: "June 16, 2026",
+    readTime: "7 min read",
+    category: "Pricing & Rates",
+  },
 ];
 
 export function getPost(slug: string): BlogPost | undefined {
