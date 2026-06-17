@@ -65,10 +65,31 @@ ${[
 </body>
 </html>`;
 
+// Simple in-memory rate limiter — 5 requests per IP per minute
+const rateLimitMap = new Map<string, { count: number; resetAt: number }>();
+function isRateLimited(ip: string): boolean {
+  const now = Date.now();
+  const entry = rateLimitMap.get(ip);
+  if (!entry || entry.resetAt < now) {
+    rateLimitMap.set(ip, { count: 1, resetAt: now + 60_000 });
+    return false;
+  }
+  if (entry.count >= 5) return true;
+  entry.count++;
+  return false;
+}
+
 export async function POST(request: Request) {
   try {
+    const ip =
+      request.headers.get("x-forwarded-for")?.split(",")[0]?.trim() ?? "unknown";
+    if (isRateLimited(ip)) {
+      return NextResponse.json({ error: "Too many requests" }, { status: 429 });
+    }
+
     const { email } = await request.json();
-    if (!email || !email.includes("@")) {
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/;
+    if (!email || !emailRegex.test(email)) {
       return NextResponse.json({ error: "Invalid email" }, { status: 400 });
     }
 
@@ -107,7 +128,7 @@ export async function POST(request: Request) {
 
     // Send welcome email with prompts
     const senderEmail = process.env.BREVO_SENDER_EMAIL ?? "hello@solokit.cloud";
-    await fetch("https://api.brevo.com/v3/smtp/email", {
+    const emailRes = await fetch("https://api.brevo.com/v3/smtp/email", {
       method: "POST",
       headers: {
         "api-key": apiKey,
@@ -120,7 +141,15 @@ export async function POST(request: Request) {
         subject: "Your 10 free AI prompts (copy & paste ready)",
         htmlContent: welcomeHtml(email),
       }),
-    }).catch((e) => console.error("Welcome email failed:", e));
+    }).catch((e) => {
+      console.error("Welcome email network error:", e);
+      return null;
+    });
+
+    if (!emailRes?.ok) {
+      const errBody = await emailRes?.json().catch(() => ({}));
+      console.error("Welcome email send failed:", errBody);
+    }
 
     return NextResponse.json({ ok: true });
   } catch {

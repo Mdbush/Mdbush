@@ -82,7 +82,11 @@ export default function Footer() {
             <p className="text-xs font-semibold text-gray-900 uppercase tracking-widest mb-3">SoloKit</p>
             <div className="space-y-2 text-sm text-gray-500">
               <Link href="/about" className="block hover:text-gray-900 transition-colors">About</Link>
-              <a href="mailto:md.a.bushara@gmail.com" className="block hover:text-gray-900 transition-colors">Contact</a>
+              <Link href="/contact" className="block hover:text-gray-900 transition-colors">Contact</Link>
+              <Link href="/testimonials" className="block hover:text-gray-900 transition-colors">Testimonials</Link>
+              <Link href="/privacy" className="block hover:text-gray-900 transition-colors">Privacy Policy</Link>
+              <Link href="/terms" className="block hover:text-gray-900 transition-colors">Terms of Service</Link>
+              <Link href="/refund" className="block hover:text-gray-900 transition-colors">Refund Policy</Link>
             </div>
           </div>
         </div>
