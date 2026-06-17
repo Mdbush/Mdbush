@@ -1,64 +1,81 @@
+import type { Metadata } from "next";
 import Link from "next/link";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
-import type { Metadata } from "next";
-
-const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? "https://solokit.cloud";
 
 export const metadata: Metadata = {
-  title: "Health Insurance for UAE Freelancers (2026 Guide) — SoloKit",
+  title: "Health Insurance for UAE Freelancers: Complete Guide 2026 — SoloKit",
   description:
-    "UAE freelancers must get their own health insurance — here's how. Compare Dubai vs Abu Dhabi requirements, AED costs, best plans, and what happens if you skip it.",
-  alternates: { canonical: "/blog/freelance-health-insurance-uae" },
-  openGraph: {
-    title: "Health Insurance for Freelancers in the UAE (2026 Guide)",
-    description:
-      "UAE freelancers must get their own health insurance — here's how. Compare Dubai vs Abu Dhabi requirements, AED costs, best plans, and what happens if you skip it.",
-    type: "article",
-    url: "/blog/freelance-health-insurance-uae",
-  },
-  twitter: {
-    card: "summary_large_image",
-    title: "Health Insurance for Freelancers in the UAE (2026 Guide)",
-    description:
-      "UAE freelancers must get their own health insurance — here's how. Compare Dubai vs Abu Dhabi requirements, AED costs, best plans, and what happens if you skip it.",
-  },
+    "Everything UAE freelancers need to know about health insurance in 2026 — mandatory requirements, best plans, costs, and how to compare options in Dubai and Abu Dhabi.",
 };
 
-const jsonLd = {
-  "@context": "https://schema.org",
-  "@type": "Article",
-  headline: "Health Insurance for Freelancers in the UAE (2026 Guide)",
-  description:
-    "UAE freelancers must get their own health insurance — here's how. Compare Dubai vs Abu Dhabi requirements, AED costs, best plans, and what happens if you skip it.",
-  datePublished: "2026-06-16",
-  dateModified: "2026-06-16",
-  author: { "@type": "Organization", name: "SoloKit" },
-  publisher: { "@type": "Organization", name: "SoloKit", url: "https://solokit.cloud" },
-  url: `${siteUrl}/blog/freelance-health-insurance-uae`,
-  mainEntityOfPage: `${siteUrl}/blog/freelance-health-insurance-uae`,
-  image: `${siteUrl}/og-image.png`,
-  keywords: [
-    "health insurance freelancers UAE",
-    "freelance health insurance Dubai",
-    "Abu Dhabi health insurance freelancer",
-    "DHA health insurance Dubai",
-    "Daman health insurance UAE",
-    "cheapest health insurance UAE freelancer",
-  ],
-};
+const insuranceTypes = [
+  {
+    type: "Basic Mandatory Coverage",
+    cost: "AED 500–1,200/year",
+    suitable: "Sole traders on tight budgets who just need to meet the mandatory requirement in Dubai",
+    coverage: "Emergency and basic outpatient coverage. Covers government-mandated minimums under Dubai's Essential Benefits Plan.",
+    note: "Required by law in Dubai for all residents. Does not cover dental, optical, maternity, or chronic conditions.",
+  },
+  {
+    type: "Mid-Tier Group Plan (Freelancer Networks)",
+    cost: "AED 3,000–7,000/year",
+    suitable: "Freelancers wanting solid outpatient and inpatient coverage without premium pricing",
+    coverage: "General outpatient, specialist visits, emergency, basic diagnostics, some dental. Network varies by insurer.",
+    note: "Several freelancer associations and free zones negotiate group rates. Check if your free zone offers a group plan — it is often 20–40% cheaper than individual rates.",
+  },
+  {
+    type: "Comprehensive Individual Plan",
+    cost: "AED 8,000–25,000/year",
+    suitable: "Freelancers with dependants, pre-existing conditions, or who want full access to private hospitals",
+    coverage: "Full inpatient and outpatient, dental, optical, maternity, specialist access, evacuation. Unlimited or high annual limits.",
+    note: "Prices vary significantly based on age, medical history, and network (restricted vs. open). Compare carefully — the same coverage level can range 40% in price across insurers.",
+  },
+];
 
-export default function FreelanceHealthInsuranceUAEPage() {
+const providers = [
+  { name: "AXA Gulf", notes: "Wide hospital network. Strong digital claims process. Popular mid-tier and comprehensive plans." },
+  { name: "Daman (National Health Insurance Company)", notes: "Strong in Abu Dhabi. Handles Thiqa (government) and Daman Smart/Daman Basic plans. Good for Abu Dhabi-based freelancers." },
+  { name: "Bupa Arabia / Bupa Global", notes: "Premium international plans. Excellent for freelancers with global clients or who travel frequently." },
+  { name: "MetLife UAE", notes: "Competitive group rates. Often chosen by freelancer networks and coworking spaces negotiating group deals." },
+  { name: "Cigna Global", notes: "Strong for expat freelancers with international needs. Higher price point but comprehensive global coverage." },
+  { name: "Oman Insurance / Orient Insurance", notes: "UAE-focused. Competitive individual plans. Strong inpatient coverage at mid-tier prices." },
+];
+
+const steps = [
+  {
+    num: "1",
+    title: "Check if your emirate is Dubai or Abu Dhabi — the rules differ",
+    body: "Dubai mandates health insurance for all residents under the Essential Benefits Plan. Abu Dhabi's Thiqa system covers UAE nationals and Daman covers employees — freelancers need to arrange their own. Sharjah and other emirates have their own requirements. Your free zone location matters as much as your residence emirate.",
+  },
+  {
+    num: "2",
+    title: "Check your free zone's group plan first",
+    body: "Many UAE free zones (IFZA, RAKEZ, DMCC, TECOM) offer group health insurance as part of their license packages or as an optional add-on. Group rates are typically 20–40% below individual market rates for equivalent coverage. This is usually the best value option and the first place to check.",
+  },
+  {
+    num: "3",
+    title: "Use a broker, not just comparison websites",
+    body: "Insurance comparison sites show listed prices. A licensed broker (required to be regulated by IA UAE) has access to negotiated rates and can often source coverage 15–30% below comparison site prices. For plans above AED 8,000/year, a broker typically saves more than their fee.",
+  },
+  {
+    num: "4",
+    title: "Declare pre-existing conditions honestly",
+    body: "Undeclaring pre-existing conditions to get a lower premium is a false economy in the UAE — insurers can and do deny claims for undeclared conditions discovered during treatment. The cost of an excluded condition covered out-of-pocket in a Dubai private hospital will far exceed any premium saved.",
+  },
+  {
+    num: "5",
+    title: "Check the network before the price",
+    body: "A plan covering a hospital network that doesn't include your preferred or nearest hospital is a bad plan at any price. Most UAE insurers have restricted networks — check that the clinics and hospitals you actually want to use are included before comparing premiums.",
+  },
+];
+
+export default function BlogPostPage() {
   return (
     <>
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
-      />
       <Header />
       <main className="min-h-screen bg-white">
         <div className="max-w-3xl mx-auto px-4 py-10">
-          {/* Breadcrumb */}
           <nav className="text-xs text-gray-400 mb-6 flex items-center gap-1.5">
             <Link href="/" className="hover:text-gray-600">Home</Link>
             <span>/</span>
@@ -67,240 +84,144 @@ export default function FreelanceHealthInsuranceUAEPage() {
             <span className="text-gray-600">Health Insurance UAE Freelancers</span>
           </nav>
 
-          {/* Hero */}
           <div className="bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 text-white px-6 py-10 rounded-2xl mb-8">
-            <span className="text-xs font-bold text-emerald-400 uppercase tracking-widest mb-3 block">Freelance Setup</span>
+            <span className="text-xs font-bold text-emerald-400 uppercase tracking-widest mb-3 block">FINANCE</span>
             <h1 className="text-3xl sm:text-4xl font-bold leading-tight mb-4">
-              Health Insurance for Freelancers in the UAE (2026 Guide)
+              Health Insurance for UAE Freelancers: Complete Guide 2026
             </h1>
             <p className="text-gray-300 text-sm mb-5 leading-relaxed max-w-xl">
-              The moment you leave your employer, your health insurance ends. For most new UAE freelancers,
-              that realisation arrives with a jolt — especially in Dubai and Abu Dhabi, where health
-              insurance isn&apos;t optional.
+              Health insurance is mandatory in Dubai and complex across the UAE. This guide covers what freelancers are legally required to have, the best plans by budget, and how to avoid the most expensive mistakes.
             </p>
             <div className="flex flex-wrap gap-4 text-xs text-gray-400">
-              <span>Updated June 2026</span>
-              <span>·</span>
-              <span>7 min read</span>
+              <span>June 2026</span><span>·</span><span>8 min read</span>
             </div>
           </div>
 
-          {/* Stats grid */}
-          <div className="grid grid-cols-3 gap-3 mb-8">
-            {[
-              { value: "AED 600–1,200", label: "Dubai EBP minimum annual cost" },
-              { value: "AED 500/mo", label: "DHA fine for non-compliance" },
-              { value: "AED 150,000", label: "EBP annual benefit limit" },
-            ].map((s) => (
-              <div key={s.label} className="bg-gray-50 border border-gray-200 rounded-xl p-4 text-center">
-                <div className="text-lg font-bold text-gray-900">{s.value}</div>
-                <div className="text-xs text-gray-500 mt-1">{s.label}</div>
-              </div>
-            ))}
-          </div>
+          <p className="text-gray-700 leading-relaxed mb-6">
+            When you are employed in the UAE, your employer arranges health insurance. When you are a freelancer, that responsibility falls entirely on you — and the cost, complexity, and legal requirements are often a shock for newly independent professionals. This guide is the clear overview most freelancers wish they had read before they started.
+          </p>
 
-          <div className="bg-emerald-50 border border-emerald-200 rounded-xl p-5 mb-8">
-            <p className="text-sm font-semibold text-emerald-900 mb-2">Key Takeaways</p>
-            <ul className="space-y-1 text-sm text-emerald-800">
-              <li>→ <strong>Health insurance is mandatory</strong> in Dubai and Abu Dhabi — not optional</li>
-              <li>→ <strong>Basic plans start from AED 600–1,200/year</strong> in Dubai; more in Abu Dhabi</li>
-              <li>→ <strong>Operating without cover = fines + visa renewal risk</strong></li>
-              <li>→ <strong>Best options for freelancers:</strong> Daman, AXA Gulf, BUPA Arabia</li>
-            </ul>
-          </div>
-
-          {/* Is It Mandatory */}
           <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2">
-            <span className="w-1 h-6 bg-emerald-500 rounded-full inline-block"></span>
-            Is Health Insurance Mandatory in the UAE?
+            <span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>
+            Is Health Insurance Mandatory for UAE Freelancers?
           </h2>
 
           <p className="text-gray-700 leading-relaxed mb-4">
-            Yes — but the rules differ by emirate. In <strong>Dubai</strong> and <strong>Abu Dhabi</strong>,
-            health insurance is a legal requirement for all residents, including freelancers. This is not a
-            recommendation or best practice. It is a condition of holding a valid UAE residence visa.
+            In Dubai: yes. Under Dubai Law No. 11 of 2013, all residents — including self-employed individuals — must have health insurance. The mandatory minimum is the Essential Benefits Plan (EBP), which costs around AED 500–700 per year for basic coverage. Without it, you cannot renew your residence visa.
           </p>
 
           <p className="text-gray-700 leading-relaxed mb-6">
-            When you were employed, your company handled this. Now that you&apos;re self-employed, you
-            are the employer — and therefore responsible for covering yourself and any dependants you
-            sponsor on your visa.
+            In Abu Dhabi: residents without employer-sponsored coverage need to arrange private insurance. The Daman Smart Plans are specifically designed for self-employed individuals and are the most common solution for Abu Dhabi freelancers.
           </p>
 
-          {/* Dubai Requirements */}
-          <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2">
-            <span className="w-1 h-6 bg-emerald-500 rounded-full inline-block"></span>
-            Dubai Requirements (DHA)
-          </h2>
-
-          <p className="text-gray-700 leading-relaxed mb-4">
-            The <strong>Dubai Health Authority (DHA)</strong> mandates health insurance for all Dubai
-            residents. The minimum standard is the <strong>Essential Benefits Plan (EBP)</strong>.
-          </p>
-
-          <div className="bg-gray-50 border border-gray-200 rounded-xl p-5 mb-4">
-            <h3 className="font-semibold text-gray-900 mb-3 text-sm">Essential Benefits Plan (EBP) — Minimum Dubai Cover</h3>
-            <ul className="space-y-2 text-sm text-gray-700">
-              <li className="flex gap-2"><span className="text-emerald-500">✓</span>Annual benefit limit: <strong>AED 150,000</strong></li>
-              <li className="flex gap-2"><span className="text-emerald-500">✓</span>Inpatient: covered (up to the annual limit)</li>
-              <li className="flex gap-2"><span className="text-emerald-500">✓</span>Outpatient: covered with 20% co-pay</li>
-              <li className="flex gap-2"><span className="text-emerald-500">✓</span>Emergency: covered UAE-wide</li>
-              <li className="flex gap-2"><span className="text-amber-500">⚠</span>Maternity: basic only</li>
-              <li className="flex gap-2"><span className="text-amber-500">⚠</span>Dental and optical: not included</li>
-              <li className="flex gap-2"><span className="text-amber-500">⚠</span>Pre-existing conditions: covered after 6-month waiting period</li>
-            </ul>
-          </div>
-
-          <div className="bg-amber-50 border border-amber-200 rounded-xl p-5 mb-6">
-            <p className="text-sm font-semibold text-amber-900 mb-1">⚠️ Fines for non-compliance</p>
-            <p className="text-sm text-amber-800">
-              DHA can issue fines of <strong>AED 500 per month</strong> per uninsured individual.
-              These fines accumulate and must be paid before you can renew your visa or Emirates ID.
+          <div className="bg-red-50 border border-red-200 rounded-xl p-5 mb-8">
+            <p className="text-sm font-semibold text-red-900 mb-1">Legal requirement</p>
+            <p className="text-sm text-red-800">
+              Freelancers operating under a Dubai freelance permit who do not have valid health insurance cannot renew their permit or residence visa. The fine for non-compliance can reach AED 500 per employee per month. This is not optional.
             </p>
           </div>
 
-          {/* Abu Dhabi Requirements */}
           <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2">
-            <span className="w-1 h-6 bg-emerald-500 rounded-full inline-block"></span>
-            Abu Dhabi Requirements (DoH)
+            <span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>
+            Types of Health Insurance Available
           </h2>
 
-          <p className="text-gray-700 leading-relaxed mb-4">
-            Abu Dhabi&apos;s minimum requirement is typically higher than Dubai&apos;s EBP — plans tend to offer
-            broader coverage and wider networks, which comes at a higher price.
-            Expect to pay <strong>AED 1,500–3,500/year</strong> for a basic Abu Dhabi-compliant plan.
-            The most common provider is <strong>Daman</strong> (the National Health Insurance Company).
-          </p>
-
-          <div className="bg-amber-50 border border-amber-200 rounded-xl p-5 mb-6">
-            <p className="text-sm font-semibold text-amber-900 mb-1">⚠️ Important distinction</p>
-            <p className="text-sm text-amber-800">
-              If your freelance permit is issued by an Abu Dhabi-based free zone (like twofour54, ADGM, or
-              Masdar City), your health insurance must comply with DoH standards — even if you live in Dubai.
-              Many freelancers miss this.
-            </p>
-          </div>
-
-          {/* How to Get It */}
-          <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2">
-            <span className="w-1 h-6 bg-emerald-500 rounded-full inline-block"></span>
-            How to Get Health Insurance as a Freelancer
-          </h2>
-
-          <div className="space-y-4 mb-6">
-            {[
-              {
-                option: "Option 1: Through Your Free Zone",
-                detail: "Many UAE free zones include a basic health insurance plan as part of their freelance permit package or offer it as an add-on. This is usually the easiest route — one application, bundled with your permit renewal.",
-              },
-              {
-                option: "Option 2: Directly Through an Insurer",
-                detail: "Buy directly from Daman, AXA Gulf, BUPA Arabia, or Al Buhaira via their websites or branches. Most insurers now have online quote tools. Have your Emirates ID, passport, and visa page ready.",
-              },
-              {
-                option: "Option 3: Via an Insurance Broker",
-                detail: "Platforms like PolicyBazaar UAE and Bayzat compare multiple insurers simultaneously. Brokers earn a commission from the insurer, so there's usually no direct cost to you. Best option for non-standard situations.",
-              },
-            ].map((item) => (
-              <div key={item.option} className="bg-gray-50 border border-gray-200 rounded-xl p-5">
-                <h3 className="font-semibold text-gray-900 mb-2 text-sm">{item.option}</h3>
-                <p className="text-sm text-gray-600 leading-relaxed">{item.detail}</p>
+          <div className="space-y-5 mb-8">
+            {insuranceTypes.map((plan, i) => (
+              <div key={i} className="border border-gray-200 rounded-xl p-5">
+                <div className="flex flex-wrap items-start justify-between gap-2 mb-2">
+                  <h3 className="font-bold text-gray-900 text-base">{plan.type}</h3>
+                  <span className="text-xs bg-emerald-50 text-emerald-700 px-2 py-1 rounded-full font-medium">{plan.cost}</span>
+                </div>
+                <p className="text-sm text-gray-700 mb-2"><span className="font-medium text-gray-900">Coverage:</span> {plan.coverage}</p>
+                <p className="text-sm text-gray-700 mb-2"><span className="font-medium text-gray-900">Suitable for:</span> {plan.suitable}</p>
+                <p className="text-xs text-amber-700 bg-amber-50 rounded-lg p-2 mt-2">{plan.note}</p>
               </div>
             ))}
           </div>
 
-          {/* Best Plans Table */}
           <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2">
-            <span className="w-1 h-6 bg-emerald-500 rounded-full inline-block"></span>
-            Best Health Insurance Options for UAE Freelancers (2026)
+            <span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>
+            5 Steps to Getting the Right Coverage
           </h2>
 
-          <div className="overflow-x-auto mb-6">
-            <table className="w-full text-sm border-collapse">
-              <thead>
-                <tr className="bg-gray-900 text-white">
-                  <th className="text-left p-3 border border-gray-700 font-semibold">Insurer</th>
-                  <th className="text-left p-3 border border-gray-700 font-semibold">Annual Cost (AED)</th>
-                  <th className="text-left p-3 border border-gray-700 font-semibold">Best For</th>
-                </tr>
-              </thead>
-              <tbody>
-                {[
-                  { insurer: "Daman (National)", cost: "700–2,500", costColor: "text-emerald-700", best: "Abu Dhabi residents; solid network" },
-                  { insurer: "AXA Gulf (Al Buhaira)", cost: "900–3,500", costColor: "text-emerald-700", best: "Dubai freelancers; good outpatient cover" },
-                  { insurer: "BUPA Arabia", cost: "1,800–5,000", costColor: "text-amber-700", best: "Wider network; international cover add-on" },
-                  { insurer: "Oman Insurance (Orient)", cost: "800–2,800", costColor: "text-emerald-700", best: "Competitive pricing; good for Dubai EBP" },
-                  { insurer: "Nextcare / RSA", cost: "1,500–6,000", costColor: "text-amber-700", best: "Freelancers needing dental/optical add-ons" },
-                  { insurer: "Metlife UAE", cost: "3,000–8,000", costColor: "text-red-600", best: "High earners wanting comprehensive cover" },
-                ].map((row, i) => (
-                  <tr key={row.insurer} className={i % 2 === 1 ? "bg-gray-50" : ""}>
-                    <td className="p-3 border border-gray-200 font-medium">{row.insurer}</td>
-                    <td className={`p-3 border border-gray-200 ${row.costColor}`}>{row.cost}</td>
-                    <td className="p-3 border border-gray-200 text-gray-600">{row.best}</td>
-                  </tr>
-                ))}
-              </tbody>
-            </table>
-          </div>
-
-          {/* What to Look For */}
-          <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2">
-            <span className="w-1 h-6 bg-emerald-500 rounded-full inline-block"></span>
-            What to Look For in a Plan
-          </h2>
-
-          <div className="grid sm:grid-cols-2 gap-4 mb-8">
-            {[
-              { aspect: "Inpatient vs Outpatient", detail: "Inpatient (hospitalisation) cover is the non-negotiable minimum. Outpatient cover matters more for day-to-day health — GP visits, specialist consultations, lab tests, prescriptions." },
-              { aspect: "Network Size", detail: "Check that your preferred clinic and hospital are in the insurer's network before buying. Daman has one of the largest networks in the UAE." },
-              { aspect: "Co-pay & Deductibles", detail: "Most UAE plans charge a co-pay (10–20% of each claim). Higher deductible plans have lower premiums — useful if you rarely visit the doctor." },
-              { aspect: "Pre-existing Conditions", detail: "Most basic plans exclude pre-existing conditions for 6–12 months. If you have a chronic condition, look for plans with shorter waiting periods." },
-              { aspect: "Annual Benefit Limit", detail: "EBP plans offer AED 150,000. Mid-range plans offer AED 500,000–1,000,000. Premium plans are often unlimited. For most healthy freelancers, AED 500,000 is adequate." },
-              { aspect: "Dental & Optical", detail: "Usually not included in basic or EBP plans. Can be added as a rider for AED 200–800/year. Worth adding if you're likely to need dental work." },
-            ].map((item) => (
-              <div key={item.aspect} className="border border-gray-200 rounded-xl p-5">
-                <h3 className="font-semibold text-gray-900 mb-2 text-sm">{item.aspect}</h3>
-                <p className="text-sm text-gray-600 leading-relaxed">{item.detail}</p>
+          <div className="space-y-4 mb-8">
+            {steps.map((step) => (
+              <div key={step.num} className="flex gap-4">
+                <div className="w-8 h-8 bg-emerald-500 text-white rounded-full flex items-center justify-center text-sm font-bold shrink-0 mt-0.5">
+                  {step.num}
+                </div>
+                <div>
+                  <h3 className="font-semibold text-gray-900 mb-1">{step.title}</h3>
+                  <p className="text-sm text-gray-600 leading-relaxed">{step.body}</p>
+                </div>
               </div>
             ))}
           </div>
 
-          {/* Tips to Lower Premium */}
           <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2">
-            <span className="w-1 h-6 bg-emerald-500 rounded-full inline-block"></span>
-            Tips to Lower Your Health Insurance Premium
+            <span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>
+            Main Insurance Providers for UAE Freelancers
           </h2>
 
-          <ul className="space-y-3 mb-6">
-            {[
-              { tip: "Choose a higher excess/deductible", detail: "If you're young and generally healthy, opt for a plan with a higher deductible in exchange for a lower annual premium." },
-              { tip: "Use a broker to compare", detail: "Platforms like PolicyBazaar UAE compare 10+ insurers simultaneously. The same coverage level can vary by AED 500–1,500 per year between providers." },
-              { tip: "Pay annually, not monthly", detail: "Most insurers charge a 5–10% loading on monthly payment plans. If you can afford the annual premium upfront, you'll pay less overall." },
-            ].map((item) => (
-              <li key={item.tip} className="flex gap-3 text-sm text-gray-700">
-                <span className="text-emerald-500 font-bold mt-0.5 shrink-0">→</span>
-                <span><strong className="text-gray-900">{item.tip}:</strong> {item.detail}</span>
-              </li>
+          <div className="grid sm:grid-cols-2 gap-3 mb-8">
+            {providers.map((provider, i) => (
+              <div key={i} className="border border-gray-200 rounded-xl p-4">
+                <p className="font-semibold text-gray-900 text-sm mb-1">{provider.name}</p>
+                <p className="text-xs text-gray-600 leading-relaxed">{provider.notes}</p>
+              </div>
             ))}
-          </ul>
-
-          {/* CTA */}
-          <div className="bg-gradient-to-br from-gray-900 to-gray-800 text-white rounded-2xl p-8 mt-12 text-center">
-            <span className="text-xs font-bold text-emerald-400 uppercase tracking-widest block mb-3">SoloKit</span>
-            <h3 className="text-2xl font-bold mb-3">Run Your UAE Freelance Business Like a Pro</h3>
-            <p className="text-gray-400 text-sm mb-6 max-w-sm mx-auto">Templates, SOPs, and systems built for UAE freelancers.</p>
-            <Link href="/products/solokit-freelance-os" className="inline-block bg-emerald-500 hover:bg-emerald-400 text-white font-bold px-8 py-3 rounded-xl transition-colors text-sm">Get SoloKit →</Link>
           </div>
 
-          {/* Related links */}
-          <div className="mt-10">
-            <h3 className="text-sm font-semibold text-gray-900 mb-3">Related Guides</h3>
-            <div className="space-y-1.5">
-              <Link href="/blog/freelance-visa-uae" className="block text-emerald-700 hover:text-emerald-900 text-sm">→ How to Get a Freelance Visa in the UAE (Full Guide)</Link>
-              <Link href="/blog/freelance-tax-uae" className="block text-emerald-700 hover:text-emerald-900 text-sm">→ Do Freelancers Pay Tax in the UAE? (2026 Guide)</Link>
-              <Link href="/blog/freelance-vs-salary-uae" className="block text-emerald-700 hover:text-emerald-900 text-sm">→ Freelance vs Salary in UAE — What Actually Pays More?</Link>
-              <Link href="/blog/best-banks-freelancers-uae" className="block text-emerald-700 hover:text-emerald-900 text-sm">→ Best Banks for Freelancers in the UAE (2026)</Link>
+          <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2">
+            <span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>
+            What About Dependants?
+          </h2>
+
+          <p className="text-gray-700 leading-relaxed mb-4">
+            If you are sponsoring family members on your freelance permit, they must also have health insurance. In Dubai, dependants also need at minimum the Essential Benefits Plan. Spouse and children can be added to your policy — most insurers offer family plans at a discount compared to individual policies per person.
+          </p>
+
+          <p className="text-gray-700 leading-relaxed mb-6">
+            For freelancers with a spouse and one or two children, a family plan from AXA Gulf, Daman, or Oman Insurance typically costs AED 12,000–22,000 per year for comprehensive coverage. Group plans through free zones sometimes extend to family members — worth checking before going to market.
+          </p>
+
+          <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4 flex items-center gap-2">
+            <span className="w-1 h-6 bg-emerald-500 rounded-full inline-block shrink-0"></span>
+            Budgeting for Health Insurance as a Freelancer
+          </h2>
+
+          <p className="text-gray-700 leading-relaxed mb-4">
+            Health insurance is a fixed business expense — budget it alongside your free zone license renewal and office costs. For a single person, plan for AED 4,000–8,000 per year for decent mid-tier coverage. For a family of four, AED 15,000–25,000.
+          </p>
+
+          <p className="text-gray-700 leading-relaxed mb-6">
+            The mistake many freelancers make is treating insurance as an afterthought and then taking whichever policy they find closest to visa renewal time. A 30-minute comparison effort when your policy is 3 months from renewal typically saves AED 2,000–6,000.
+          </p>
+
+          <div className="mt-10 pt-6 border-t border-gray-100">
+            <p className="text-sm font-semibold text-gray-900 mb-3">Further reading</p>
+            <div className="flex flex-col gap-2">
+              <Link href="/blog/freelance-visa-uae" className="text-sm text-gray-500 hover:text-gray-900 transition-colors underline underline-offset-2">
+                UAE Freelance Visa Guide: Everything You Need to Know →
+              </Link>
+              <Link href="/blog/freelance-financial-planning-uae" className="text-sm text-gray-500 hover:text-gray-900 transition-colors underline underline-offset-2">
+                Financial Planning for UAE Freelancers →
+              </Link>
+              <Link href="/blog/freelance-professional-indemnity-insurance-uae" className="text-sm text-gray-500 hover:text-gray-900 transition-colors underline underline-offset-2">
+                Professional Indemnity Insurance for UAE Freelancers →
+              </Link>
             </div>
+          </div>
+
+          <div className="bg-gradient-to-br from-gray-900 to-gray-800 text-white rounded-2xl p-8 mt-12 text-center">
+            <p className="font-bold text-lg mb-2">Manage Your Freelance Business Like a Pro</p>
+            <p className="text-gray-400 text-sm mb-6 max-w-md mx-auto">
+              SoloKit helps UAE freelancers track every business expense — including insurance — with Notion templates built for solo business owners.
+            </p>
+            <Link href="/" className="inline-block bg-emerald-500 hover:bg-emerald-400 text-white font-bold px-8 py-3 rounded-xl transition-colors text-sm">
+              Explore SoloKit →
+            </Link>
           </div>
         </div>
       </main>
