@@ -59,7 +59,7 @@ function getPurchaseEmailHtml(productName: string, orderEmail: string): string {
 </td></tr>
 
 <tr><td style="padding:24px 40px;border-top:1px solid #f3f4f6;text-align:center;">
-<p style="margin:0;color:#9ca3af;font-size:12px;">Questions? Reply to this email or contact <a href="mailto:md.a.bushara@gmail.com" style="color:#6b7280;">md.a.bushara@gmail.com</a>. We respond within 24 hours.</p>
+<p style="margin:0;color:#9ca3af;font-size:12px;">Questions? Reply to this email or contact <a href="mailto:hello@solokit.cloud" style="color:#6b7280;">hello@solokit.cloud</a>. We respond within 24 hours.</p>
 <p style="margin:8px 0 0;color:#9ca3af;font-size:12px;">SoloKit · Dubai, UAE · <a href="${SITE_URL}" style="color:#6b7280;">solokit.cloud</a></p>
 </td></tr>
 
