@@ -45,6 +45,7 @@ Add these in **GitHub → Settings → Secrets and variables → Actions**:
 | `ANTHROPIC_API_KEY` | **secret** (required) | Lets the agents call Claude. Create one at the Anthropic Console. |
 | `AGENT_MODEL` | variable (optional) | Override the model (default `claude-opus-4-8`). |
 | `COMPETITORS` | variable (optional) | Comma-separated competitor list for the intel agent. |
+| `SERP_API_KEY` | secret (optional) | Grounds the keyword-gap analysis in real UAE Google demand ([Serper.dev](https://serper.dev)). Without it the gap section still runs on web search + the model's knowledge. |
 
 The workflow already has `GITHUB_TOKEN` (via `github.token`) to open PRs — no
 extra setup for that.
@@ -61,9 +62,14 @@ You asked what to use — here's the honest shortlist:
   content.
 - **Web search** — the `competitor-intel` agent uses Anthropic's built-in
   `web_search` server tool (no separate key, billed per search as part of the
-  API call). If you'd rather use a dedicated SERP API (e.g. for structured
-  keyword data), that's a separate paid service you can wire into
-  `competitor-intel.mjs`; not required to start.
+  API call).
+- **SERP demand data (optional)** — `competitor-intel` also runs a **keyword-gap
+  analysis**: it's handed the ~400 blog slugs already published and asked for the
+  specific topics UAE freelancers search for that SoloKit does *not* cover yet.
+  Set `SERP_API_KEY` ([Serper.dev](https://serper.dev), a few $/mo) to ground
+  that section in real Google related-searches / people-also-ask for the UAE. No
+  key → it still runs on web search + the model's knowledge. `lib/serp.mjs` is the
+  pluggable provider (swap for DataForSEO/SerpApi easily).
 - **Social image generation** — the Anthropic API does not generate images.
   SoloKit already renders branded images server-side with Next.js
   `ImageResponse` (`app/api/og/*`, `app/api/social-card`). The cheapest, most
@@ -78,8 +84,9 @@ No other paid services are required to run the engine.
 scripts/agents/
   lib/anthropic.mjs      # fetch-based Messages API client (no SDK dependency)
   lib/blog.mjs           # wire a new article into blog-posts.ts + sitemap.ts
+  lib/serp.mjs           # optional SERP demand signals for the keyword-gap section
   seo-content.mjs        # generate one blog article (flagship)
-  competitor-intel.mjs   # weekly market/competitor digest
+  competitor-intel.mjs   # weekly market/competitor digest + keyword-gap table
   social-campaign.mjs    # batch of on-brand social posts (JSON)
   product-ideas.mjs      # new-product briefs
   out/                   # generated digests / JSON (committed via PR)
@@ -108,5 +115,6 @@ node scripts/agents/social-campaign.mjs --count=8 --ai   # + AI images (needs OP
 
 - **Auto-publish tier**: once the social output is trusted, flip
   `social-campaign` to feed `app/api/cron/social-post` directly instead of a PR.
-- **Keyword-gap analysis**: add a SERP source to `competitor-intel` to target
-  articles at real search demand.
+- **Keyword-gap → SEO loop**: the `## Keyword gaps (target these)` table from
+  `competitor-intel` is a ready-made topic queue; wire `seo-content` to read the
+  latest digest and write against the top-ranked gap automatically.
