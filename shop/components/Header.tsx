@@ -11,7 +11,7 @@ export default function Header() {
       </div>
 
       {/* Sticky header */}
-      <header className="border-b border-gray-100 bg-white sticky top-0 z-50">
+      <header className="border-b border-gray-100/80 bg-white/80 backdrop-blur-md supports-[backdrop-filter]:bg-white/60 sticky top-0 z-50">
         <div className="max-w-5xl mx-auto px-4 sm:px-6 h-14 flex items-center justify-between">
           <Link href="/" className="font-bold text-lg tracking-tight text-gray-900 hover:text-gray-700">
             SoloKit
