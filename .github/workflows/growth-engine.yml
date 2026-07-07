@@ -1,0 +1,104 @@
+name: Growth engine
+
+# Runs the SoloKit growth agents on a schedule (or on demand) and opens a PR
+# with whatever they produce. Nothing goes live without review by default —
+# the "hybrid" autonomy model. See shop/scripts/agents/README.md.
+#
+# Required repo secret: ANTHROPIC_API_KEY
+# Optional:            AGENT_MODEL, COMPETITORS
+
+on:
+  workflow_dispatch:
+    inputs:
+      agent:
+        description: Which agent to run
+        required: true
+        default: seo-content
+        type: choice
+        options:
+          - seo-content
+          - competitor-intel
+          - social-campaign
+          - product-ideas
+  schedule:
+    # Tue & Fri 06:17 UTC — one new blog article
+    - cron: "17 6 * * 2,5"
+    # Monday 07:23 UTC — competitor digest
+    - cron: "23 7 * * 1"
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  run-agent:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Resolve which agent to run
+        id: which
+        run: |
+          if [ -n "${{ github.event.inputs.agent }}" ]; then
+            AGENT="${{ github.event.inputs.agent }}"
+          elif [ "${{ github.event.schedule }}" = "17 6 * * 2,5" ]; then
+            AGENT="seo-content"
+          elif [ "${{ github.event.schedule }}" = "23 7 * * 1" ]; then
+            AGENT="competitor-intel"
+          else
+            AGENT="seo-content"
+          fi
+          echo "agent=$AGENT" >> "$GITHUB_OUTPUT"
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Install deps
+        working-directory: shop
+        run: npm ci
+
+      - name: Run agent
+        id: run
+        working-directory: shop
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          AGENT_MODEL: ${{ vars.AGENT_MODEL }}
+          COMPETITORS: ${{ vars.COMPETITORS }}
+        run: |
+          node "scripts/agents/${{ steps.which.outputs.agent }}.mjs" | tee /tmp/agent.log
+          # Surface any slug/title the SEO agent emitted for the PR title.
+          SLUG=$(grep -oP '::ARTICLE_SLUG::\K.*' /tmp/agent.log || true)
+          echo "slug=$SLUG" >> "$GITHUB_OUTPUT"
+
+      - name: Validate content agents (lint + build)
+        if: steps.which.outputs.agent == 'seo-content'
+        working-directory: shop
+        run: |
+          npx eslint .
+          npm run build
+
+      - name: Open pull request
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          set -e
+          if [ -z "$(git status --porcelain)" ]; then
+            echo "No changes produced — nothing to open."
+            exit 0
+          fi
+          AGENT="${{ steps.which.outputs.agent }}"
+          STAMP=$(date -u +%Y%m%d-%H%M)
+          BRANCH="growth/${AGENT}-${STAMP}"
+          git config user.name "solokit-growth-bot"
+          git config user.email "hello@solokit.cloud"
+          git checkout -b "$BRANCH"
+          git add -A
+          git commit -m "Growth engine: ${AGENT} output (${STAMP})"
+          git push -u origin "$BRANCH"
+          TITLE="Growth: ${AGENT} — ${{ steps.run.outputs.slug }}${STAMP}"
+          gh pr create \
+            --base "${{ github.ref_name }}" \
+            --head "$BRANCH" \
+            --title "$TITLE" \
+            --body "Automated output from the \`${AGENT}\` growth agent. Review before merging."
