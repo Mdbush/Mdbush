@@ -9,6 +9,11 @@ export async function GET(request: NextRequest) {
     const text = searchParams.get("text") ?? "Tools for UAE Freelancers";
     const sub = searchParams.get("sub") ?? "";
     const type = searchParams.get("type") ?? "tip";
+    // format: "square" (1080×1080, default) or "landscape" (1200×630)
+    const landscape = searchParams.get("format") === "landscape";
+    const width = landscape ? 1200 : 1080;
+    const height = landscape ? 630 : 1080;
+    const pad = landscape ? "64px" : "80px";
 
     const accentColor =
       type === "promo"
@@ -26,10 +31,24 @@ export async function GET(request: NextRequest) {
             display: "flex",
             flexDirection: "column",
             backgroundColor: "#030712",
-            padding: "80px",
+            backgroundImage:
+              "radial-gradient(900px 500px at 15% 0%, rgba(16,185,129,0.16), transparent)",
+            padding: pad,
             justifyContent: "space-between",
+            position: "relative",
           }}
         >
+          {/* Emerald accent bar */}
+          <div
+            style={{
+              position: "absolute",
+              top: 0,
+              left: 0,
+              right: 0,
+              height: "10px",
+              backgroundImage: "linear-gradient(90deg, #34d399, #10b981)",
+            }}
+          />
           {/* Top tag */}
           <div
             style={{
@@ -71,7 +90,13 @@ export async function GET(request: NextRequest) {
             <div
               style={{
                 color: "#ffffff",
-                fontSize: text.length > 60 ? "64px" : "80px",
+                fontSize: landscape
+                  ? text.length > 70
+                    ? "48px"
+                    : "60px"
+                  : text.length > 60
+                  ? "64px"
+                  : "80px",
                 fontWeight: 800,
                 lineHeight: 1.1,
                 letterSpacing: "-0.02em",
@@ -123,8 +148,8 @@ export async function GET(request: NextRequest) {
         </div>
       ),
       {
-        width: 1080,
-        height: 1080,
+        width,
+        height,
       }
     );
   } catch (e) {

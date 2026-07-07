@@ -86,11 +86,26 @@ scripts/agents/
 .github/workflows/growth-engine.yml
 ```
 
+## Social images
+
+Every post from `social-campaign` ships with an image:
+
+- **Branded card (always, free):** each post gets an `imageUrl` pointing at the
+  site's `/api/social-card` route, which renders an on-brand 1080×1080 (or
+  `?format=landscape` 1200×630) image — SoloKit colours, emerald accent, the
+  post's hook as text, `solokit.cloud` footer. No key, no cost.
+- **AI illustration (optional):** run with `--ai` (or `SOCIAL_AI_IMAGES=1`) and
+  set `OPENAI_API_KEY` — the agent generates a richer AI image per post into
+  `out/` and records `aiImagePath`. Without a key it silently skips and keeps the
+  branded cards. `lib/image.mjs` is the pluggable provider.
+
+```bash
+node scripts/agents/social-campaign.mjs --count=8        # branded cards only
+node scripts/agents/social-campaign.mjs --count=8 --ai   # + AI images (needs OPENAI_API_KEY)
+```
+
 ## Roadmap
 
-- **Branded social images**: render each generated post through the existing
-  `ImageResponse` OG pipeline (a `/api/social-card?text=…` variant) so every
-  post ships with a matching on-brand image — no external image API.
 - **Auto-publish tier**: once the social output is trusted, flip
   `social-campaign` to feed `app/api/cron/social-post` directly instead of a PR.
 - **Keyword-gap analysis**: add a SERP source to `competitor-intel` to target
