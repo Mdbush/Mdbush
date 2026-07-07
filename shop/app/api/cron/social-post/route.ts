@@ -1,7 +1,17 @@
 import { NextResponse } from "next/server";
+import crypto from "crypto";
 import { socialPosts, type SocialPost } from "@/lib/social-queue";
 
 const FB_PAGE_ID = "1098756576664555";
+
+function isAuthorized(authHeader: string | null, secret: string | undefined): boolean {
+  if (!secret || !authHeader) return false;
+  const expected = `Bearer ${secret}`;
+  const a = Buffer.from(authHeader);
+  const b = Buffer.from(expected);
+  if (a.byteLength !== b.byteLength) return false;
+  return crypto.timingSafeEqual(a, b);
+}
 
 function getPostIndex(): number {
   // Count days since epoch and pick sequential post — cycles through the queue evenly
@@ -136,7 +146,7 @@ async function postToFacebook(post: SocialPost, token: string): Promise<void> {
 
 export async function GET(request: Request) {
   const authHeader = request.headers.get("authorization");
-  if (authHeader !== `Bearer ${process.env.CRON_SECRET}`) {
+  if (!isAuthorized(authHeader, process.env.CRON_SECRET)) {
     return NextResponse.json({ error: "Unauthorized" }, { status: 401 });
   }
 
