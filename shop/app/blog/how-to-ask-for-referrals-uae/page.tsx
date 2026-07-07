@@ -200,7 +200,7 @@ export default function HowToAskForReferralsUAE() {
               designed for UAE freelancers who want consistent referral flow.
             </p>
             <Link
-              href="/products/solokit-freelance-os"
+              href="/bundle"
               className="inline-block bg-white text-gray-900 font-semibold px-6 py-3 rounded-xl hover:bg-gray-100 transition-colors"
             >
               Get SoloKit

@@ -211,7 +211,7 @@ export default function Article() {
             <h3 className="text-sm font-semibold text-gray-900 mb-3">Related Guides</h3>
             <div className="space-y-1.5">
               <Link href="/blog/dmcc-freelance-licence-guide" className="block text-emerald-700 hover:text-emerald-900 text-sm">→ DMCC Freelance Permit Guide 2026</Link>
-              <Link href="/blog/how-to-get-freelance-permit-uae" className="block text-emerald-700 hover:text-emerald-900 text-sm">→ How to Get a Freelance Permit in the UAE</Link>
+              <Link href="/blog/freelance-visa-uae" className="block text-emerald-700 hover:text-emerald-900 text-sm">→ How to Get a Freelance Permit in the UAE</Link>
               <Link href="/blog/corporate-tax-uae-freelancers-2026" className="block text-emerald-700 hover:text-emerald-900 text-sm">→ UAE Corporate Tax for Freelancers 2026</Link>
             </div>
           </div>

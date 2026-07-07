@@ -197,7 +197,7 @@ export default function FreelanceConsultantRatesUAE() {
             <span className="text-xs font-bold text-emerald-400 uppercase tracking-widest block mb-3">SoloKit</span>
             <h3 className="text-2xl font-bold mb-3">Run Your Consulting Practice Like a Pro</h3>
             <p className="text-gray-400 text-sm mb-6 max-w-sm mx-auto">Client pipeline, project tracking, revenue dashboard, and 90-day goal planning — everything an independent consultant needs to run a professional practice.</p>
-            <Link href="/products/solokit-freelance-os" className="inline-block bg-emerald-500 hover:bg-emerald-400 text-white font-bold px-8 py-3 rounded-xl transition-colors text-sm">
+            <Link href="/bundle" className="inline-block bg-emerald-500 hover:bg-emerald-400 text-white font-bold px-8 py-3 rounded-xl transition-colors text-sm">
               Get SoloKit →
             </Link>
           </div>

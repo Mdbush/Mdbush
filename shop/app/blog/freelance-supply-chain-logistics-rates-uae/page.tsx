@@ -229,7 +229,7 @@ export default function Article() {
             <h3 className="text-sm font-semibold text-gray-900 mb-3">Related Guides</h3>
             <div className="space-y-1.5">
               <Link href="/blog/freelance-consultant-rates-uae" className="block text-emerald-700 hover:text-emerald-900 text-sm">→ Freelance Consultant Day Rates UAE 2026</Link>
-              <Link href="/blog/freelance-engineer-rates-uae" className="block text-emerald-700 hover:text-emerald-900 text-sm">→ Freelance Engineer Rates UAE 2026</Link>
+              <Link href="/blog/freelance-mechanical-engineer-rates-uae" className="block text-emerald-700 hover:text-emerald-900 text-sm">→ Freelance Mechanical Engineer Rates UAE 2026</Link>
               <Link href="/blog/freelance-rate-calculator-uae" className="block text-emerald-700 hover:text-emerald-900 text-sm">→ Freelance Rate Calculator UAE</Link>
             </div>
           </div>

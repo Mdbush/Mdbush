@@ -204,9 +204,9 @@ export default function Article() {
           <div className="mt-10">
             <h3 className="text-sm font-semibold text-gray-900 mb-3">Related Guides</h3>
             <div className="space-y-1.5">
-              <Link href="/blog/vat-registration-uae-freelancers" className="block text-emerald-700 hover:text-emerald-900 text-sm">→ VAT Registration for UAE Freelancers — Complete Guide</Link>
+              <Link href="/blog/uae-freelance-tax-registration" className="block text-emerald-700 hover:text-emerald-900 text-sm">→ VAT Registration for UAE Freelancers — Complete Guide</Link>
               <Link href="/blog/corporate-tax-uae-freelancers-2026" className="block text-emerald-700 hover:text-emerald-900 text-sm">→ UAE Corporate Tax for Freelancers 2026</Link>
-              <Link href="/blog/freelance-accounting-uae" className="block text-emerald-700 hover:text-emerald-900 text-sm">→ Best Accounting Tools for UAE Freelancers</Link>
+              <Link href="/blog/best-accounting-software-freelancers-uae" className="block text-emerald-700 hover:text-emerald-900 text-sm">→ Best Accounting Tools for UAE Freelancers</Link>
             </div>
           </div>
         </div>
