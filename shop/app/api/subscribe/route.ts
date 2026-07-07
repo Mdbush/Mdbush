@@ -2,7 +2,7 @@ import { NextResponse } from "next/server";
 
 const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? "https://solokit.cloud";
 
-const welcomeHtml = (email: string) => `<!DOCTYPE html>
+const welcomeHtml = () => `<!DOCTYPE html>
 <html>
 <head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"></head>
 <body style="margin:0;padding:0;background:#f9fafb;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;">
@@ -139,7 +139,7 @@ export async function POST(request: Request) {
         sender: { name: "SoloKit", email: senderEmail },
         to: [{ email }],
         subject: "Your 10 free AI prompts (copy & paste ready)",
-        htmlContent: welcomeHtml(email),
+        htmlContent: welcomeHtml(),
       }),
     }).catch((e) => {
       console.error("Welcome email network error:", e);

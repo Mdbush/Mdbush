@@ -111,11 +111,11 @@ export default function FreelanceRateCalculatorUAEPage() {
           </h2>
 
           <div className="bg-gradient-to-br from-gray-900 to-gray-800 text-white rounded-xl p-6 mb-6 font-mono text-sm">
-            <p className="text-gray-400 mb-2">// Step 1: Annual target income</p>
+            <p className="text-gray-400 mb-2">{"// Step 1: Annual target income"}</p>
             <p className="mb-4">Target Take-Home × 12 = Annual Target</p>
-            <p className="text-gray-400 mb-2">// Step 2: Add overhead</p>
+            <p className="text-gray-400 mb-2">{"// Step 2: Add overhead"}</p>
             <p className="mb-4">Annual Target + Business Costs = Gross Revenue Needed</p>
-            <p className="text-gray-400 mb-2">// Step 3: Account for non-billable time</p>
+            <p className="text-gray-400 mb-2">{"// Step 3: Account for non-billable time"}</p>
             <p>Gross Revenue ÷ Billable Hours Per Year = Minimum Hourly Rate</p>
           </div>
 

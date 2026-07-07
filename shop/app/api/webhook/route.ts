@@ -13,7 +13,7 @@ function verifySignature(payload: string, signature: string, secret: string): bo
   return crypto.timingSafeEqual(digestBuf, sigBuf);
 }
 
-function getPurchaseEmailHtml(productName: string, orderEmail: string): string {
+function getPurchaseEmailHtml(productName: string): string {
   return `<!DOCTYPE html>
 <html>
 <head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"></head>
@@ -104,7 +104,7 @@ async function handlePurchase(email: string, productName: string) {
       sender: { name: "Mohamed @ SoloKit", email: senderEmail },
       to: [{ email }],
       subject: `Your ${productName} is ready — SoloKit`,
-      htmlContent: getPurchaseEmailHtml(productName, email),
+      htmlContent: getPurchaseEmailHtml(productName),
     }),
   }).catch((e) => console.error("Purchase email failed:", e));
 }
