@@ -29,45 +29,6 @@ const jsonLd = {
   dateModified: "2026-06-01",
 };
 
-const rates = [
-  {
-    specialization: "Digital Marketing Generalist",
-    junior: { hourly: "AED 80–130", retainer: "AED 3,000–7,000/mo" },
-    mid: { hourly: "AED 150–250", retainer: "AED 7,000–18,000/mo" },
-    senior: { hourly: "AED 280–450", retainer: "AED 18,000–40,000/mo" },
-  },
-  {
-    specialization: "Social Media Manager",
-    junior: { hourly: "AED 60–100", retainer: "AED 2,500–5,000/mo" },
-    mid: { hourly: "AED 110–180", retainer: "AED 5,000–12,000/mo" },
-    senior: { hourly: "AED 200–320", retainer: "AED 12,000–25,000/mo" },
-  },
-  {
-    specialization: "SEO Consultant",
-    junior: { hourly: "AED 90–140", retainer: "AED 3,500–8,000/mo" },
-    mid: { hourly: "AED 160–260", retainer: "AED 8,000–20,000/mo" },
-    senior: { hourly: "AED 300–500", retainer: "AED 20,000–45,000/mo" },
-  },
-  {
-    specialization: "Paid Ads Specialist (Meta/Google)",
-    junior: { hourly: "AED 100–160", retainer: "AED 4,000–9,000/mo" },
-    mid: { hourly: "AED 180–280", retainer: "AED 9,000–22,000/mo" },
-    senior: { hourly: "AED 300–500", retainer: "AED 22,000–50,000/mo" },
-  },
-  {
-    specialization: "Email Marketing Specialist",
-    junior: { hourly: "AED 80–130", retainer: "AED 3,000–7,000/mo" },
-    mid: { hourly: "AED 140–220", retainer: "AED 7,000–15,000/mo" },
-    senior: { hourly: "AED 250–400", retainer: "AED 15,000–35,000/mo" },
-  },
-  {
-    specialization: "Content Strategist / Content Marketing",
-    junior: { hourly: "AED 80–130", retainer: "AED 3,500–8,000/mo" },
-    mid: { hourly: "AED 150–240", retainer: "AED 8,000–18,000/mo" },
-    senior: { hourly: "AED 270–420", retainer: "AED 18,000–40,000/mo" },
-  },
-];
-
 const statsData = [
   { value: "AED 80–130/hr", label: "Junior Hourly" },
   { value: "AED 150–280/hr", label: "Mid-Level Hourly" },

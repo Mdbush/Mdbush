@@ -1,7 +1,7 @@
 import Link from "next/link";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
-import { products, formatPrice } from "@/lib/products";
+import { formatPrice } from "@/lib/products";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {

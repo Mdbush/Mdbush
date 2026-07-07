@@ -21,8 +21,6 @@ export const metadata: Metadata = {
   },
 };
 
-const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? "https://solokit.cloud";
-
 const faqs = [
   {
     section: "Products",

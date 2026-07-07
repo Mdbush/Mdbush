@@ -21,7 +21,7 @@ function extractReadTime(src) {
   return m ? `${m[1]} min read` : "8 min read";
 }
 
-function extractCategory(slug, src) {
+function extractCategory(slug) {
   if (slug.includes("-rates-")) return "UAE RATES 2026";
   if (slug.includes("tax") || slug.includes("invoice") || slug.includes("finance") || slug.includes("cash-flow") || slug.includes("emaratax")) return "TAX &amp; FINANCE";
   if (slug.includes("visa") || slug.includes("license") || slug.includes("permit") || slug.includes("free-zone") || slug.includes("zone-comparison")) return "VISAS &amp; LICENSES";

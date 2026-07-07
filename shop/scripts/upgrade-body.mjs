@@ -90,14 +90,6 @@ function upgradeTipBoxes(src) {
     );
 }
 
-// Upgrade related links section
-function upgradeRelatedLinks(src) {
-  return src.replace(
-    /className="border border-gray-200 rounded-2xl p-5 mt-6">([\s\S]*?)className="text-xs font-semibold text-gray-400 uppercase tracking-widest mb-3">Related guides<\/p>/g,
-    'className="mt-10 pt-8 border-t border-gray-100">$1className="text-xs font-semibold text-gray-900 uppercase tracking-widest mb-4">Related guides</p>'
-  );
-}
-
 // Upgrade section wrappers
 function upgradeMainWrapper(src) {
   return src
