@@ -123,6 +123,37 @@ ${a.faq
   .join("\n")}`
     : "";
 
+  // Article structured data (BlogPosting + BreadcrumbList) — real values from the
+  // article, embedded as a pre-serialized JSON string literal.
+  const site = "https://solokit.cloud";
+  const canonicalUrl = `${site}/blog/${a.slug}`;
+  const org = { "@type": "Organization", name: "SoloKit", url: site };
+  const ldNodes = [
+    {
+      "@context": "https://schema.org",
+      "@type": "BlogPosting",
+      headline: a.title,
+      description: a.metaDescription,
+      author: org,
+      publisher: org,
+      mainEntityOfPage: { "@type": "WebPage", "@id": canonicalUrl },
+      url: canonicalUrl,
+      articleSection: a.category,
+      inLanguage: "en",
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      itemListElement: [
+        { "@type": "ListItem", position: 1, name: "Home", item: site },
+        { "@type": "ListItem", position: 2, name: "Blog", item: `${site}/blog` },
+        { "@type": "ListItem", position: 3, name: a.title, item: canonicalUrl },
+      ],
+    },
+  ];
+  const ldLiteral =
+    "'" + JSON.stringify(ldNodes).replace(/\\/g, "\\\\").replace(/'/g, "\\'") + "'";
+
   return `import type { Metadata } from "next";
 import Link from "next/link";
 import Header from "@/components/Header";
@@ -144,6 +175,7 @@ export const metadata: Metadata = {
 export default function Article() {
   return (
     <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: ${ldLiteral} }} />
       <Header />
       <main className="min-h-screen bg-white">
         <div className="max-w-3xl mx-auto px-4 py-10">

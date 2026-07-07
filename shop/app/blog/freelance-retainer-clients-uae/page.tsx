@@ -83,6 +83,7 @@ const scripts = [
 export default function BlogPostPage() {
   return (
     <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: '[{"@context":"https://schema.org","@type":"BlogPosting","headline":"How to Convert One-Off UAE Clients into Monthly Retainers","description":"Turn project-based UAE clients into predictable monthly retainer income. Scripts, pricing strategies, and retainer structures that work for Dubai freelancers in 2026.","datePublished":"2026-07-04","dateModified":"2026-07-04","author":{"@type":"Organization","name":"SoloKit","url":"https://solokit.cloud"},"publisher":{"@type":"Organization","name":"SoloKit","url":"https://solokit.cloud"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://solokit.cloud/blog/freelance-retainer-clients-uae"},"url":"https://solokit.cloud/blog/freelance-retainer-clients-uae","articleSection":"Getting Clients","inLanguage":"en"},{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://solokit.cloud"},{"@type":"ListItem","position":2,"name":"Blog","item":"https://solokit.cloud/blog"},{"@type":"ListItem","position":3,"name":"How to Convert One-Off UAE Clients into Monthly Retainers","item":"https://solokit.cloud/blog/freelance-retainer-clients-uae"}]}]' }} />
       <Header />
       <main className="min-h-screen bg-white">
         <div className="max-w-3xl mx-auto px-4 py-10">
