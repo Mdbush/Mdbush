@@ -29,6 +29,9 @@ export const metadata: Metadata = {
     description: "Notion templates, AI prompts & SOPs for freelancers and solopreneurs.",
   },
   verification: { google: "1WaNUPezAWlG0bqkFi4gn9YLZAZsA3mOjjBWtGSs_z0" },
+  alternates: {
+    types: { "application/rss+xml": "/feed.xml" },
+  },
 };
 
 export const viewport: Viewport = {
