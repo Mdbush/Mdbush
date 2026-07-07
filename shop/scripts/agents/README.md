@@ -85,7 +85,8 @@ scripts/agents/
   lib/anthropic.mjs      # fetch-based Messages API client (no SDK dependency)
   lib/blog.mjs           # wire a new article into blog-posts.ts + sitemap.ts
   lib/serp.mjs           # optional SERP demand signals for the keyword-gap section
-  seo-content.mjs        # generate one blog article (flagship)
+  lib/gaps.mjs           # reads the latest digest's keyword-gap table (SEO loop)
+  seo-content.mjs        # generate one blog article, targeting the top keyword gap
   competitor-intel.mjs   # weekly market/competitor digest + keyword-gap table
   social-campaign.mjs    # batch of on-brand social posts (JSON)
   product-ideas.mjs      # new-product briefs
@@ -125,6 +126,6 @@ the agent only writes JSON for review and the queue is untouched.
 
 - **Auto-publish tier**: once the social output is trusted, flip
   `social-campaign` to feed `app/api/cron/social-post` directly instead of a PR.
-- **Keyword-gap → SEO loop**: the `## Keyword gaps (target these)` table from
-  `competitor-intel` is a ready-made topic queue; wire `seo-content` to read the
-  latest digest and write against the top-ranked gap automatically.
+- **Deeper analytics loop**: feed real traffic/ranking data (GSC) back into
+  `competitor-intel` so the keyword gaps are prioritised by impressions, not just
+  perceived demand.
