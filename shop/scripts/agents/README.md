@@ -107,9 +107,19 @@ Every post from `social-campaign` ships with an image:
   branded cards. `lib/image.mjs` is the pluggable provider.
 
 ```bash
-node scripts/agents/social-campaign.mjs --count=8        # branded cards only
-node scripts/agents/social-campaign.mjs --count=8 --ai   # + AI images (needs OPENAI_API_KEY)
+node scripts/agents/social-campaign.mjs --count=8          # branded cards only (JSON for review)
+node scripts/agents/social-campaign.mjs --count=8 --ai     # + AI images (needs OPENAI_API_KEY)
+node scripts/agents/social-campaign.mjs --count=8 --queue  # also append to the live cron queue
 ```
+
+### Auto-publish (opt-in)
+
+The social-post cron (`app/api/cron/social-post/route.ts`) publishes from
+`lib/social-queue.ts`, the single source of truth for scheduled posts. Running
+the agent with `--queue` appends the generated posts to that file. Because the
+change lands through a reviewed PR, **a merged PR is what promotes a post into
+the live rotation** — nothing publishes until you approve it. Without `--queue`
+the agent only writes JSON for review and the queue is untouched.
 
 ## Roadmap
 
