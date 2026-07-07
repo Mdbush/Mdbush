@@ -21,7 +21,7 @@ const jsonLd = {
   foundingDate: "2026",
   founder: { "@type": "Person", name: "Mohamed Bushara" },
   address: { "@type": "PostalAddress", addressLocality: "Dubai", addressCountry: "AE" },
-  contactPoint: { "@type": "ContactPoint", email: "md.a.bushara@gmail.com", contactType: "customer service" },
+  contactPoint: { "@type": "ContactPoint", email: "hello@solokit.cloud", contactType: "customer service" },
   sameAs: [],
 };
 
@@ -148,8 +148,8 @@ export default function AboutPage() {
             <p className="text-sm font-bold text-emerald-800 mb-2">Questions or feedback?</p>
             <p className="text-sm text-emerald-800 mb-1">
               Email:{" "}
-              <a href="mailto:md.a.bushara@gmail.com" className="underline hover:text-emerald-600">
-                md.a.bushara@gmail.com
+              <a href="mailto:hello@solokit.cloud" className="underline hover:text-emerald-600">
+                hello@solokit.cloud
               </a>
             </p>
             <p className="text-sm text-emerald-800">We respond within 24 hours.</p>

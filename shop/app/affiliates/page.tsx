@@ -36,7 +36,7 @@ export default function AffiliatesPage() {
           </p>
           <div className="flex flex-col sm:flex-row gap-3">
             <a
-              href="mailto:md.a.bushara@gmail.com?subject=SoloKit%20Affiliate%20Program&body=Hi%2C%20I%27d%20like%20to%20join%20the%20SoloKit%20affiliate%20program."
+              href="mailto:hello@solokit.cloud?subject=SoloKit%20Affiliate%20Program&body=Hi%2C%20I%27d%20like%20to%20join%20the%20SoloKit%20affiliate%20program."
               target="_blank"
               rel="noopener noreferrer"
               className="inline-block bg-emerald-500 hover:bg-emerald-400 text-white font-bold px-8 py-3 rounded-xl transition-colors text-sm text-center"
@@ -127,7 +127,7 @@ export default function AffiliatesPage() {
             earn 30% on every sale, get paid monthly.
           </p>
           <a
-            href="mailto:md.a.bushara@gmail.com?subject=SoloKit%20Affiliate%20Program&body=Hi%2C%20I%27d%20like%20to%20join%20the%20SoloKit%20affiliate%20program."
+            href="mailto:hello@solokit.cloud?subject=SoloKit%20Affiliate%20Program&body=Hi%2C%20I%27d%20like%20to%20join%20the%20SoloKit%20affiliate%20program."
             target="_blank"
             rel="noopener noreferrer"
             className="inline-block bg-emerald-500 hover:bg-emerald-400 text-white font-bold px-8 py-3 rounded-xl transition-colors text-sm"
@@ -135,7 +135,7 @@ export default function AffiliatesPage() {
             Apply by email →
           </a>
           <p className="mt-4 text-xs text-gray-500">
-            Questions? <a href="mailto:md.a.bushara@gmail.com" className="underline hover:text-gray-300">Email us</a>
+            Questions? <a href="mailto:hello@solokit.cloud" className="underline hover:text-gray-300">Email us</a>
           </p>
         </div>
 

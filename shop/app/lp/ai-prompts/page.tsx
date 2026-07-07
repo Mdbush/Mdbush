@@ -196,7 +196,7 @@ export default function LandingPage() {
               <CheckoutButton productSlug="ai-prompt-pack-pro" price={product.price} />
             </div>
             <p className="mt-4 text-xs text-gray-400">
-              Questions? <a href="mailto:md.a.bushara@gmail.com" className="underline">Email us</a>
+              Questions? <a href="mailto:hello@solokit.cloud" className="underline">Email us</a>
             </p>
           </div>
         </section>

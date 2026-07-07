@@ -236,7 +236,7 @@ export default function BundlePage() {
             </Link>
             <p className="mt-3 text-xs text-gray-400">
               Questions?{" "}
-              <a href="mailto:md.a.bushara@gmail.com" className="underline hover:text-gray-600">
+              <a href="mailto:hello@solokit.cloud" className="underline hover:text-gray-600">
                 Email us
               </a>{" "}
               — we respond within 24 hours.
