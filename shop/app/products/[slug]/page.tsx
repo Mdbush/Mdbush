@@ -55,11 +55,10 @@ export default async function ProductPage({ params }: Props) {
       availability: "https://schema.org/InStock",
       seller: { "@type": "Organization", name: "SoloKit" },
     },
-    aggregateRating: {
-      "@type": "AggregateRating",
-      ratingValue: "4.9",
-      reviewCount: "47",
-    },
+    // No aggregateRating: we don't have verifiable, on-page review data, and
+    // Google's structured-data policy prohibits marking up invented ratings.
+    // The visual "4.9/5" social proof still renders; it just isn't claimed as
+    // machine-readable review data (which risks a manual action).
   };
 
   const faqsMap: Record<string, { q: string; a: string }[]> = {

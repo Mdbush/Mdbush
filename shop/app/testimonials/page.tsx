@@ -135,29 +135,14 @@ const products = [
   },
 ];
 
-const totalTestimonials = products.reduce((acc, p) => acc + p.testimonials.length, 0);
-
-const jsonLd = {
-  "@context": "https://schema.org",
-  "@type": "ItemList",
-  name: "SoloKit Customer Reviews",
-  numberOfItems: totalTestimonials,
-  itemListElement: products.flatMap((product, pi) =>
-    product.testimonials.map((t, ti) => ({
-      "@type": "Review",
-      position: pi * 10 + ti + 1,
-      reviewRating: { "@type": "Rating", ratingValue: "5", bestRating: "5" },
-      author: { "@type": "Person", name: t.name },
-      reviewBody: t.quote,
-      itemReviewed: { "@type": "Product", name: `SoloKit ${product.name}` },
-    }))
-  ),
-};
+// No Review/Rating structured data: these are marketing testimonials, not
+// verifiable customer reviews, so marking them up with hardcoded 5-star ratings
+// would violate Google's structured-data policy. The quotes still render on the
+// page as social proof — they're just not claimed as machine-readable reviews.
 
 export default function TestimonialsPage() {
   return (
     <>
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
       <Header />
 
       <main className="min-h-screen bg-white">
