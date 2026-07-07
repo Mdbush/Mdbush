@@ -122,6 +122,12 @@ change lands through a reviewed PR, **a merged PR is what promotes a post into
 the live rotation** — nothing publishes until you approve it. Without `--queue`
 the agent only writes JSON for review and the queue is untouched.
 
+When a queued post carries an `imageUrl` (agent-generated posts point at the
+branded `/api/social-card`), the cron publishes it **with the image attached** —
+a native LinkedIn image (registered + uploaded) and a Facebook photo post. Image
+attachment is best-effort: if it fails, the post still goes out as text-only.
+The hand-authored seed posts have no `imageUrl`, so they post as text (unchanged).
+
 ## Roadmap
 
 - **Auto-publish tier**: once the social output is trusted, flip
