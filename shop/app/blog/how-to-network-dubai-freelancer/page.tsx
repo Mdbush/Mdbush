@@ -263,7 +263,7 @@ export default function Article() {
           <div className="mt-10">
             <h3 className="text-sm font-semibold text-gray-900 mb-3">Related Guides</h3>
             <div className="space-y-1.5">
-              <Link href="/blog/best-coworking-spaces-dubai-freelancers" className="block text-emerald-700 hover:text-emerald-900 text-sm">→ Best Coworking Spaces in Dubai for Freelancers 2026</Link>
+              <Link href="/blog/best-coworking-spaces-dubai" className="block text-emerald-700 hover:text-emerald-900 text-sm">→ Best Coworking Spaces in Dubai for Freelancers 2026</Link>
               <Link href="/blog/cold-email-templates-freelancers-uae" className="block text-emerald-700 hover:text-emerald-900 text-sm">→ Cold Email Templates for UAE Freelancers</Link>
               <Link href="/blog/client-onboarding-freelance-uae" className="block text-emerald-700 hover:text-emerald-900 text-sm">→ Client Onboarding for UAE Freelancers</Link>
             </div>

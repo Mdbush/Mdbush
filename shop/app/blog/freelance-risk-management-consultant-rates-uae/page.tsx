@@ -180,7 +180,7 @@ export default function FreelanceRiskManagementConsultantRatesUAE() {
               SOPs — everything a freelance risk consultant needs to run professionally in the UAE.
             </p>
             <Link
-              href="/products/solokit-freelance-os"
+              href="/bundle"
               className="inline-block bg-white text-gray-900 font-semibold px-6 py-3 rounded-xl hover:bg-gray-100 transition-colors"
             >
               Get SoloKit

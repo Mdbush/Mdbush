@@ -373,7 +373,7 @@ export default function FreelanceVisaSaudiArabia() {
           <h3 className="text-2xl font-bold mb-3">Run Your Saudi Freelance Business Like a Pro</h3>
           <p className="text-gray-400 text-sm mb-6 max-w-sm mx-auto">Client CRM, invoice tracker, and business systems — built for GCC freelancers working with Saudi clients.</p>
           <Link
-            href="/products/solokit-freelance-os"
+            href="/bundle"
             className="inline-block bg-emerald-500 hover:bg-emerald-400 text-white font-bold px-8 py-3 rounded-xl transition-colors text-sm"
           >
             Get SoloKit →

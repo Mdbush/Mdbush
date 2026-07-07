@@ -181,7 +181,7 @@ export default function HowToSetUpFreelanceBusinessUAE() {
               you need to run a professional UAE freelance business from one Notion workspace.
             </p>
             <Link
-              href="/products/solokit-freelance-os"
+              href="/bundle"
               className="inline-block bg-emerald-500 hover:bg-emerald-400 text-white font-bold px-8 py-3 rounded-xl transition-colors text-sm"
             >
               Get SoloKit →

@@ -241,7 +241,7 @@ export default function FreeanceTaxUAEPage() {
             <span className="text-xs font-bold text-emerald-400 uppercase tracking-widest block mb-3">SoloKit</span>
             <h3 className="text-2xl font-bold mb-3">Run Your UAE Freelance Business Like a Pro</h3>
             <p className="text-gray-400 text-sm mb-6 max-w-sm mx-auto">Track invoices, log expenses, manage clients, and monitor your AED 375K tax threshold — all in one workspace built for UAE freelancers.</p>
-            <Link href="/products/solokit-freelance-os" className="inline-block bg-emerald-500 hover:bg-emerald-400 text-white font-bold px-8 py-3 rounded-xl transition-colors text-sm">
+            <Link href="/bundle" className="inline-block bg-emerald-500 hover:bg-emerald-400 text-white font-bold px-8 py-3 rounded-xl transition-colors text-sm">
               Get SoloKit →
             </Link>
           </div>

@@ -382,7 +382,7 @@ export default function FreelanceRatesQatar() {
             Templates, invoices, and systems for UAE, Saudi Arabia, Qatar, and Kuwait clients — all in one toolkit.
           </p>
           <Link
-            href="/products/solokit-freelance-os"
+            href="/bundle"
             className="inline-block bg-emerald-500 hover:bg-emerald-400 text-white font-bold px-8 py-3 rounded-xl transition-colors text-sm"
           >
             Get SoloKit →
