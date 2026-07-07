@@ -5,6 +5,7 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import CheckoutButton from "@/components/CheckoutButton";
 import MobileStickyBuy from "@/components/MobileStickyBuy";
+import { SITE_URL as siteUrl } from "@/lib/site";
 import type { Metadata } from "next";
 
 type Props = { params: Promise<{ slug: string }> };
@@ -40,7 +41,6 @@ export default async function ProductPage({ params }: Props) {
   const product = getProduct(slug);
   if (!product) notFound();
 
-  const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? "https://solokit.cloud";
   const jsonLd = {
     "@context": "https://schema.org",
     "@type": "Product",

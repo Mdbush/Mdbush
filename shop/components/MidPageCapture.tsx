@@ -1,30 +1,8 @@
 "use client";
-import { useState } from "react";
+import { useEmailSubscribe } from "./useEmailSubscribe";
 
 export default function MidPageCapture() {
-  const [email, setEmail] = useState("");
-  const [status, setStatus] = useState<"idle" | "loading" | "success" | "error">("idle");
-
-  async function handleSubmit(e: React.FormEvent) {
-    e.preventDefault();
-    if (!email) return;
-    setStatus("loading");
-    try {
-      const res = await fetch("/api/subscribe", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ email }),
-      });
-      if (res.ok) {
-        setStatus("success");
-        setEmail("");
-      } else {
-        setStatus("error");
-      }
-    } catch {
-      setStatus("error");
-    }
-  }
+  const { email, setEmail, status, handleSubmit } = useEmailSubscribe();
 
   if (status === "success") {
     return (

@@ -1,7 +1,7 @@
 import { NextRequest, NextResponse } from "next/server";
 import crypto from "crypto";
-
-const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? "https://solokit.cloud";
+import { SITE_URL } from "@/lib/site";
+import { addBrevoContact, sendBrevoEmail } from "@/lib/brevo";
 
 function verifySignature(payload: string, signature: string, secret: string): boolean {
   if (!signature) return false;
@@ -74,38 +74,19 @@ async function handlePurchase(email: string, productName: string) {
   const apiKey = process.env.BREVO_API_KEY;
   if (!apiKey) return;
 
-  const senderEmail = process.env.BREVO_SENDER_EMAIL ?? "hello@solokit.cloud";
-
   // Add to customers list (list 3) and tag as buyer
-  await fetch("https://api.brevo.com/v3/contacts", {
-    method: "POST",
-    headers: {
-      "api-key": apiKey,
-      "Content-Type": "application/json",
-      Accept: "application/json",
-    },
-    body: JSON.stringify({
-      email,
-      listIds: [3],
-      updateEnabled: true,
-      attributes: { SOURCE: "purchase", LAST_PRODUCT: productName },
-    }),
+  await addBrevoContact(apiKey, {
+    email,
+    listIds: [3],
+    attributes: { SOURCE: "purchase", LAST_PRODUCT: productName },
   }).catch((e) => console.error("Brevo customer add failed:", e));
 
   // Send purchase confirmation email
-  await fetch("https://api.brevo.com/v3/smtp/email", {
-    method: "POST",
-    headers: {
-      "api-key": apiKey,
-      "Content-Type": "application/json",
-      Accept: "application/json",
-    },
-    body: JSON.stringify({
-      sender: { name: "Mohamed @ SoloKit", email: senderEmail },
-      to: [{ email }],
-      subject: `Your ${productName} is ready — SoloKit`,
-      htmlContent: getPurchaseEmailHtml(productName),
-    }),
+  await sendBrevoEmail(apiKey, {
+    senderName: "Mohamed @ SoloKit",
+    to: email,
+    subject: `Your ${productName} is ready — SoloKit`,
+    htmlContent: getPurchaseEmailHtml(productName),
   }).catch((e) => console.error("Purchase email failed:", e));
 }
 

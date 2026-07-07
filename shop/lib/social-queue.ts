@@ -7,6 +7,8 @@
  * is what promotes a generated post into the live rotation — nothing publishes
  * without review. Educational, expert-voice posts — not ads.
  */
+import { SITE_URL } from "./site";
+
 export type SocialPost = {
   text: string;
   /** Optional theme/topic label (set on agent-generated posts). */
@@ -14,8 +16,6 @@ export type SocialPost = {
   /** Optional branded card / image URL (set on agent-generated posts). */
   imageUrl?: string;
 };
-
-const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? "https://solokit.cloud";
 
 export const socialPosts: SocialPost[] = [
   // ── TIPS & INSIGHTS ──

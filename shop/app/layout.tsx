@@ -4,16 +4,13 @@ import { Geist } from "next/font/google";
 import { Analytics } from "@vercel/analytics/next";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 import WhatsAppButton from "@/components/WhatsAppButton";
+import { SITE_URL } from "@/lib/site";
 import "./globals.css";
 
 const geist = Geist({ subsets: ["latin"], variable: "--font-geist-sans" });
 
 export const metadata: Metadata = {
-  metadataBase: new URL(
-    process.env.NEXT_PUBLIC_SITE_URL?.startsWith("http")
-      ? process.env.NEXT_PUBLIC_SITE_URL
-      : "https://solokit.cloud"
-  ),
+  metadataBase: new URL(SITE_URL),
   title: "SoloKit — Notion Templates, AI Prompts & SOPs for UAE Freelancers",
   description:
     "Ready-to-use Notion templates, AI prompt packs, and SOPs built for UAE freelancers. AED pricing. Instant download. 30-day guarantee.",
