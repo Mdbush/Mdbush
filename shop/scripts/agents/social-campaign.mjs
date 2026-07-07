@@ -8,19 +8,26 @@
  *      set, a richer AI image is generated and saved next to the JSON.
  *
  * Output: scripts/agents/out/social-posts-<date>.json (+ optional PNGs) for review.
+ * With --queue, the posts are also appended to lib/social-queue.ts — the live
+ * rotation the social-post cron publishes from (still gated by PR review).
  *
- *   node scripts/agents/social-campaign.mjs [--count=10] [--ai] [--dry-run]
+ *   node scripts/agents/social-campaign.mjs [--count=10] [--ai] [--queue] [--dry-run]
  */
 import fs from "fs";
 import path from "path";
 import { fileURLToPath } from "url";
 import { callClaude, hasApiKey } from "./lib/anthropic.mjs";
 import { generateAiImage, hasImageProvider } from "./lib/image.mjs";
+import { addToQueue, queueCount } from "./lib/social.mjs";
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const OUT_DIR = path.join(__dirname, "out");
 const DRY_RUN = process.argv.includes("--dry-run");
 const WANT_AI = process.argv.includes("--ai") || process.env.SOCIAL_AI_IMAGES === "1";
+// --queue: also append the generated posts to lib/social-queue.ts (the live cron
+// rotation). Off by default — the JSON output is for review; queueing is opt-in so
+// a reviewed/merged PR is what promotes posts to publishing.
+const WANT_QUEUE = process.argv.includes("--queue");
 const countArg = process.argv.find((a) => a.startsWith("--count="));
 const COUNT = countArg ? Math.max(1, parseInt(countArg.split("=")[1], 10) || 10) : 10;
 const SITE = process.env.NEXT_PUBLIC_SITE_URL || "https://solokit.cloud";
@@ -69,6 +76,7 @@ async function main() {
     console.log(
       `[dry-run] Would generate ${COUNT} posts, each with a branded card URL` +
         (WANT_AI ? " + AI image" : "") +
+        (WANT_QUEUE ? ` and append them to the live queue (currently ${queueCount()} posts)` : "") +
         `. AI provider configured: ${hasImageProvider()}.`
     );
     return;
@@ -114,6 +122,16 @@ async function main() {
   fs.writeFileSync(file, JSON.stringify(posts, null, 2) + "\n");
   console.log(`Wrote ${posts.length} posts to ${file}`);
   console.log(`Each post has a branded imageUrl${WANT_AI ? " (and AI images where generated)" : ""}.`);
+
+  // Opt-in: promote the generated posts into the live cron rotation. This edits
+  // lib/social-queue.ts; the change still goes through the PR, so nothing
+  // publishes until it's reviewed and merged.
+  if (WANT_QUEUE) {
+    for (const p of posts) {
+      addToQueue({ text: p.text, theme: p.theme, imageUrl: p.imageUrl });
+    }
+    console.log(`Appended ${posts.length} posts to lib/social-queue.ts (now ${queueCount()} in the queue).`);
+  }
 }
 
 main().catch((err) => {
