@@ -72,13 +72,16 @@ export default function BundlePage() {
       <main className="flex-1">
 
         {/* Dark gradient hero */}
-        <section className="bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 text-white py-14 px-4 sm:px-6">
+        <section className="relative isolate overflow-hidden bg-gradient-to-br from-gray-950 via-gray-900 to-gray-800 text-white py-16 px-4 sm:px-6">
+          <div className="hero-glow -z-10 animate-float w-80 h-80 bg-emerald-500/25 -top-24 -left-16" />
+          <div className="hero-glow -z-10 animate-float w-72 h-72 bg-teal-400/20 top-10 -right-10" style={{ animationDelay: "1.5s" }} />
+          <div className="absolute inset-0 -z-10 bg-dot-grid" />
           <div className="max-w-3xl mx-auto text-center">
             <span className="text-xs font-bold text-emerald-400 uppercase tracking-widest mb-3 block">
               Complete Stack
             </span>
             <h1 className="text-4xl sm:text-5xl font-bold leading-tight mb-5">
-              Everything you need to run a professional freelance business
+              Everything you need to run a <span className="text-gradient">professional freelance business</span>
             </h1>
             <p className="text-lg text-gray-300 max-w-2xl mx-auto leading-relaxed mb-6">
               Get all 4 SoloKit products — the CRM, OS, AI prompts, and SOPs — at launch pricing.
