@@ -56,7 +56,7 @@ const faqs = [
       },
       {
         q: "When will I receive my product?",
-        a: "Within seconds. After payment, Lemon Squeezy sends a receipt email with your download link immediately. If you don't see it within 5 minutes, check your spam folder. If it's still missing, email us at md.a.bushara@gmail.com.",
+        a: "Within seconds. After payment, Lemon Squeezy sends a receipt email with your download link immediately. If you don't see it within 5 minutes, check your spam folder. If it's still missing, email us at hello@solokit.cloud.",
       },
       {
         q: "Is there a subscription? Will I be charged again?",
@@ -73,7 +73,7 @@ const faqs = [
     items: [
       {
         q: "What is your refund policy?",
-        a: "We offer a 30-day money-back guarantee on all products. If you're not satisfied for any reason within 30 days of purchase, email md.a.bushara@gmail.com with your order number and we'll issue a full refund — no questions, no forms.",
+        a: "We offer a 30-day money-back guarantee on all products. If you're not satisfied for any reason within 30 days of purchase, email hello@solokit.cloud with your order number and we'll issue a full refund — no questions, no forms.",
       },
       {
         q: "Do I need to explain why I want a refund?",
@@ -200,7 +200,7 @@ export default function FAQPage() {
             Email us and we&apos;ll reply within 24 hours.
           </p>
           <a
-            href="mailto:md.a.bushara@gmail.com"
+            href="mailto:hello@solokit.cloud"
             className="inline-block bg-emerald-500 hover:bg-emerald-400 text-white font-bold px-6 py-2.5 rounded-xl transition-colors text-sm"
           >
             Email us →
