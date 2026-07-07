@@ -8,7 +8,9 @@ export default function ProductCard({ product }: { product: Product }) {
       : null;
 
   return (
-    <div className="group relative bg-white border border-gray-200 rounded-2xl p-6 flex flex-col gap-4 hover:border-gray-900 hover:shadow-lg transition-all duration-200">
+    <div className="group relative bg-white border border-gray-200 rounded-2xl p-6 flex flex-col gap-4 overflow-hidden hover:border-emerald-400 hover:shadow-xl hover:shadow-emerald-500/10 hover:-translate-y-1 transition-all duration-300">
+      {/* Hover accent bar */}
+      <span className="absolute inset-x-0 top-0 h-1 bg-gradient-to-r from-emerald-400 to-teal-400 scale-x-0 group-hover:scale-x-100 origin-left transition-transform duration-300" />
       {/* Badge */}
       {(product.badge || discount) && (
         <span className="absolute top-4 right-4 bg-emerald-500 text-white text-xs font-bold px-2.5 py-1 rounded-full">
@@ -18,7 +20,7 @@ export default function ProductCard({ product }: { product: Product }) {
 
       {/* Emoji + category */}
       <div>
-        <div className="text-5xl mb-2">{product.emoji}</div>
+        <div className="text-5xl mb-2 transition-transform duration-300 group-hover:scale-110 group-hover:-rotate-6">{product.emoji}</div>
         <p className="text-xs font-semibold text-gray-400 uppercase tracking-widest">
           {product.category}
         </p>

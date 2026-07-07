@@ -1,13 +1,19 @@
 "use client";
 
 import Link from "next/link";
+import { useEffect } from "react";
 
 export default function Error({
+  error,
   reset,
 }: {
   error: Error & { digest?: string };
   reset: () => void;
 }) {
+  useEffect(() => {
+    console.error("Unhandled application error:", error);
+  }, [error]);
+
   return (
     <main className="flex-1 flex items-center justify-center px-4 py-20">
       <div className="max-w-md w-full text-center flex flex-col gap-6">

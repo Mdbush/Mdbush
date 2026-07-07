@@ -80,7 +80,10 @@ export default function FreelanceRateCalculatorUAEPage() {
           </nav>
 
           {/* Dark gradient hero */}
-          <div className="bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 text-white px-6 py-10 rounded-2xl mb-8">
+          <div className="relative isolate overflow-hidden bg-gradient-to-br from-gray-950 via-gray-900 to-gray-800 text-white px-6 py-12 rounded-2xl mb-8">
+            <div className="hero-glow -z-10 animate-float w-64 h-64 bg-emerald-500/25 -top-16 -left-10" />
+            <div className="hero-glow -z-10 animate-float w-56 h-56 bg-teal-400/20 -bottom-14 -right-8" style={{ animationDelay: "1.5s" }} />
+            <div className="absolute inset-0 -z-10 bg-dot-grid" />
             <span className="text-xs font-bold text-emerald-400 uppercase tracking-widest mb-3 block">PRICING &amp; RATES</span>
             <h1 className="text-3xl sm:text-4xl font-bold leading-tight mb-4">Freelance Rate Calculator UAE: How Much Should You Charge? (2026)</h1>
             <p className="text-gray-300 text-sm mb-5 leading-relaxed max-w-xl">
@@ -111,11 +114,11 @@ export default function FreelanceRateCalculatorUAEPage() {
           </h2>
 
           <div className="bg-gradient-to-br from-gray-900 to-gray-800 text-white rounded-xl p-6 mb-6 font-mono text-sm">
-            <p className="text-gray-400 mb-2">// Step 1: Annual target income</p>
+            <p className="text-gray-400 mb-2">{"// Step 1: Annual target income"}</p>
             <p className="mb-4">Target Take-Home × 12 = Annual Target</p>
-            <p className="text-gray-400 mb-2">// Step 2: Add overhead</p>
+            <p className="text-gray-400 mb-2">{"// Step 2: Add overhead"}</p>
             <p className="mb-4">Annual Target + Business Costs = Gross Revenue Needed</p>
-            <p className="text-gray-400 mb-2">// Step 3: Account for non-billable time</p>
+            <p className="text-gray-400 mb-2">{"// Step 3: Account for non-billable time"}</p>
             <p>Gross Revenue ÷ Billable Hours Per Year = Minimum Hourly Rate</p>
           </div>
 

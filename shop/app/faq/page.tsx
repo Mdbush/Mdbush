@@ -21,8 +21,6 @@ export const metadata: Metadata = {
   },
 };
 
-const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? "https://solokit.cloud";
-
 const faqs = [
   {
     section: "Products",
@@ -58,7 +56,7 @@ const faqs = [
       },
       {
         q: "When will I receive my product?",
-        a: "Within seconds. After payment, Lemon Squeezy sends a receipt email with your download link immediately. If you don't see it within 5 minutes, check your spam folder. If it's still missing, email us at md.a.bushara@gmail.com.",
+        a: "Within seconds. After payment, Lemon Squeezy sends a receipt email with your download link immediately. If you don't see it within 5 minutes, check your spam folder. If it's still missing, email us at hello@solokit.cloud.",
       },
       {
         q: "Is there a subscription? Will I be charged again?",
@@ -75,7 +73,7 @@ const faqs = [
     items: [
       {
         q: "What is your refund policy?",
-        a: "We offer a 30-day money-back guarantee on all products. If you're not satisfied for any reason within 30 days of purchase, email md.a.bushara@gmail.com with your order number and we'll issue a full refund — no questions, no forms.",
+        a: "We offer a 30-day money-back guarantee on all products. If you're not satisfied for any reason within 30 days of purchase, email hello@solokit.cloud with your order number and we'll issue a full refund — no questions, no forms.",
       },
       {
         q: "Do I need to explain why I want a refund?",
@@ -153,10 +151,13 @@ export default function FAQPage() {
       <main className="flex-1 max-w-3xl mx-auto px-4 sm:px-6 py-10">
 
         {/* Dark gradient hero */}
-        <div className="bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 text-white px-6 py-10 rounded-2xl mb-10">
+        <div className="relative isolate overflow-hidden bg-gradient-to-br from-gray-950 via-gray-900 to-gray-800 text-white px-6 py-12 rounded-2xl mb-10">
+          <div className="hero-glow -z-10 animate-float w-64 h-64 bg-emerald-500/25 -top-16 -left-10" />
+          <div className="hero-glow -z-10 animate-float w-56 h-56 bg-teal-400/20 -bottom-14 -right-8" style={{ animationDelay: "1.5s" }} />
+          <div className="absolute inset-0 -z-10 bg-dot-grid" />
           <span className="text-xs font-bold text-emerald-400 uppercase tracking-widest mb-3 block">Help Center</span>
           <h1 className="text-3xl sm:text-4xl font-bold leading-tight mb-4">
-            Frequently Asked Questions
+            Frequently Asked <span className="text-gradient">Questions</span>
           </h1>
           <p className="text-gray-300 text-sm leading-relaxed max-w-xl mb-6">
             Everything you need to know about SoloKit products, payment, delivery, and refunds.
@@ -202,7 +203,7 @@ export default function FAQPage() {
             Email us and we&apos;ll reply within 24 hours.
           </p>
           <a
-            href="mailto:md.a.bushara@gmail.com"
+            href="mailto:hello@solokit.cloud"
             className="inline-block bg-emerald-500 hover:bg-emerald-400 text-white font-bold px-6 py-2.5 rounded-xl transition-colors text-sm"
           >
             Email us →

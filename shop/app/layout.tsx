@@ -1,4 +1,5 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
+import Link from "next/link";
 import { Geist } from "next/font/google";
 import { Analytics } from "@vercel/analytics/next";
 import { SpeedInsights } from "@vercel/speed-insights/next";
@@ -28,6 +29,15 @@ export const metadata: Metadata = {
     description: "Notion templates, AI prompts & SOPs for freelancers and solopreneurs.",
   },
   verification: { google: "1WaNUPezAWlG0bqkFi4gn9YLZAZsA3mOjjBWtGSs_z0" },
+  alternates: {
+    types: { "application/rss+xml": "/feed.xml" },
+  },
+};
+
+export const viewport: Viewport = {
+  // Matches the dark announcement bar / header so mobile browser chrome blends in.
+  themeColor: "#111827",
+  colorScheme: "light",
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
@@ -36,13 +46,13 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       <body className="min-h-screen flex flex-col bg-white text-gray-900 antialiased">
         <div className="bg-gray-900 text-white text-center text-xs font-medium py-2 px-4">
           ✦ Limited launch pricing — save up to 30% on all products.{" "}
-          <a href="/#products" className="underline underline-offset-2 hover:text-gray-300 transition-colors">
+          <Link href="/#products" className="underline underline-offset-2 hover:text-gray-300 transition-colors">
             Browse products →
-          </a>
+          </Link>
           <span className="mx-2 text-gray-500">·</span>
-          <a href="/free" className="underline underline-offset-2 hover:text-gray-300 transition-colors">
+          <Link href="/free" className="underline underline-offset-2 hover:text-gray-300 transition-colors">
             10 free prompts
-          </a>
+          </Link>
         </div>
         {children}
         <WhatsAppButton />

@@ -83,6 +83,7 @@ const steps = [
 export default function BlogPostPage() {
   return (
     <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: '[{"@context":"https://schema.org","@type":"BlogPosting","headline":"Best Bank Accounts for UAE Freelancers in 2026","description":"Compare the best bank accounts for UAE freelancers in 2026. Find accounts with low fees, easy setup, multi-currency support, and freelance-friendly onboarding.","datePublished":"2026-07-04","dateModified":"2026-07-04","author":{"@type":"Organization","name":"SoloKit","url":"https://solokit.cloud"},"publisher":{"@type":"Organization","name":"SoloKit","url":"https://solokit.cloud"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://solokit.cloud/blog/freelance-bank-account-uae"},"url":"https://solokit.cloud/blog/freelance-bank-account-uae","articleSection":"Tax & Finance","inLanguage":"en"},{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://solokit.cloud"},{"@type":"ListItem","position":2,"name":"Blog","item":"https://solokit.cloud/blog"},{"@type":"ListItem","position":3,"name":"Best Bank Accounts for UAE Freelancers in 2026","item":"https://solokit.cloud/blog/freelance-bank-account-uae"}]}]' }} />
       <Header />
       <main className="min-h-screen bg-white">
         <div className="max-w-3xl mx-auto px-4 py-10">
@@ -94,7 +95,10 @@ export default function BlogPostPage() {
             <span className="text-gray-600">Best Bank Accounts UAE Freelancers</span>
           </nav>
 
-          <div className="bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 text-white px-6 py-10 rounded-2xl mb-8">
+          <div className="relative isolate overflow-hidden bg-gradient-to-br from-gray-950 via-gray-900 to-gray-800 text-white px-6 py-12 rounded-2xl mb-8">
+            <div className="hero-glow -z-10 animate-float w-64 h-64 bg-emerald-500/25 -top-16 -left-10" />
+            <div className="hero-glow -z-10 animate-float w-56 h-56 bg-teal-400/20 -bottom-14 -right-8" style={{ animationDelay: "1.5s" }} />
+            <div className="absolute inset-0 -z-10 bg-dot-grid" />
             <span className="text-xs font-bold text-emerald-400 uppercase tracking-widest mb-3 block">FINANCE</span>
             <h1 className="text-3xl sm:text-4xl font-bold leading-tight mb-4">
               Best Bank Accounts for UAE Freelancers in 2026

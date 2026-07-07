@@ -42,13 +42,17 @@ export default function LandingPage() {
       <main className="max-w-4xl mx-auto px-4 sm:px-6">
 
         {/* Hero */}
-        <section className="bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 text-white px-6 py-14 rounded-2xl mt-8 mb-6 text-center">
+        <section className="relative overflow-hidden bg-gradient-to-br from-gray-950 via-gray-900 to-gray-800 text-white px-6 py-16 rounded-2xl mt-8 mb-6 text-center">
+          <div className="hero-glow animate-float w-72 h-72 bg-emerald-500/25 -top-20 -left-10" />
+          <div className="hero-glow animate-float w-64 h-64 bg-teal-400/20 -bottom-16 -right-8" style={{ animationDelay: "1.5s" }} />
+          <div className="absolute inset-0 bg-dot-grid" />
+          <div className="relative">
           <div className="text-6xl mb-6">📋</div>
           <div className="inline-block bg-emerald-500 text-white text-xs font-bold px-3 py-1 rounded-full mb-5 uppercase tracking-widest">
             Best Seller
           </div>
           <h1 className="text-4xl sm:text-5xl font-bold text-white leading-tight max-w-2xl mx-auto mb-5">
-            Stop losing clients and invoices to WhatsApp chaos
+            Stop losing clients and invoices to <span className="text-gradient">WhatsApp chaos</span>
           </h1>
           <p className="text-xl text-gray-300 max-w-xl mx-auto leading-relaxed mb-8">
             The complete Notion CRM for UAE freelancers. Track every client, project, and invoice
@@ -70,6 +74,7 @@ export default function LandingPage() {
               <CheckoutButton productSlug="freelancer-client-crm" price={product.price} />
             </div>
             <p className="text-xs text-gray-400">Instant Notion access · Works on free Notion plan · 30-day money-back</p>
+          </div>
           </div>
         </section>
 
@@ -191,7 +196,7 @@ export default function LandingPage() {
               <CheckoutButton productSlug="freelancer-client-crm" price={product.price} />
             </div>
             <p className="mt-4 text-xs text-gray-400">
-              Questions? <a href="mailto:md.a.bushara@gmail.com" className="underline">Email us</a> — we respond within 24 hours.
+              Questions? <a href="mailto:hello@solokit.cloud" className="underline">Email us</a> — we respond within 24 hours.
             </p>
           </div>
         </section>

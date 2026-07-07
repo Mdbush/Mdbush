@@ -75,33 +75,43 @@ export default function Home() {
       <main className="flex-1">
 
         {/* Hero — dark, punchy, direct */}
-        <section className="bg-gradient-to-br from-gray-900 to-gray-800 text-white py-20 px-4 sm:px-6">
-          <div className="max-w-3xl mx-auto text-center">
-            <span className="inline-block bg-white/10 text-white text-xs font-semibold px-3 py-1 rounded-full mb-6 uppercase tracking-widest">
+        <section className="relative overflow-hidden bg-gradient-to-br from-gray-950 via-gray-900 to-gray-800 text-white py-24 px-4 sm:px-6">
+          {/* Ambient glow blobs + dotted grid */}
+          <div className="hero-glow animate-float w-80 h-80 bg-emerald-500/30 -top-24 -left-16" />
+          <div
+            className="hero-glow animate-float w-72 h-72 bg-teal-400/20 top-10 -right-10"
+            style={{ animationDelay: "1.5s" }}
+          />
+          <div className="absolute inset-0 bg-dot-grid" />
+          <div className="absolute inset-x-0 bottom-0 h-24 bg-gradient-to-t from-gray-800/80 to-transparent" />
+
+          <div className="relative max-w-3xl mx-auto text-center">
+            <span className="inline-flex items-center gap-1.5 bg-white/10 ring-1 ring-white/15 backdrop-blur text-white text-xs font-semibold px-3.5 py-1.5 rounded-full mb-7 uppercase tracking-widest">
               🇦🇪 For UAE &amp; GCC Freelancers
             </span>
-            <h1 className="text-4xl sm:text-5xl font-bold leading-tight mb-5">
-              Stop running your business from WhatsApp.
+            <h1 className="text-4xl sm:text-6xl font-bold leading-[1.08] tracking-tight mb-5">
+              Stop running your business from <span className="text-gradient">WhatsApp.</span>
             </h1>
-            <p className="text-lg text-gray-300 max-w-2xl mx-auto leading-relaxed mb-8">
+            <p className="text-lg text-gray-300 max-w-2xl mx-auto leading-relaxed mb-9">
               Ready-to-use Notion templates, AI prompts, and SOPs for freelancers across the UAE, Saudi Arabia, and the wider GCC. Save 10+ hours a week, starting today.
             </p>
-            <div className="flex flex-col sm:flex-row items-center justify-center gap-3 mb-6">
+            <div className="flex flex-col sm:flex-row items-center justify-center gap-3 mb-7">
               <a
                 href="#products"
-                className="bg-white text-gray-900 font-bold px-8 py-3.5 rounded-xl hover:bg-gray-100 transition-colors text-sm w-full sm:w-auto"
+                className="group bg-white text-gray-900 font-bold px-8 py-3.5 rounded-xl shadow-lg shadow-black/20 hover:shadow-emerald-500/20 hover:-translate-y-0.5 transition-all text-sm w-full sm:w-auto"
               >
-                Browse Products →
+                Browse Products{" "}
+                <span className="inline-block transition-transform group-hover:translate-x-0.5">→</span>
               </a>
               <a
                 href="/free"
-                className="border border-white/30 text-white font-semibold px-8 py-3.5 rounded-xl hover:border-white/60 hover:bg-white/5 transition-colors text-sm w-full sm:w-auto"
+                className="border border-white/25 text-white font-semibold px-8 py-3.5 rounded-xl hover:border-white/60 hover:bg-white/5 transition-colors text-sm w-full sm:w-auto"
               >
                 Get 10 Free Prompts
               </a>
             </div>
             <p className="text-sm text-gray-400">
-              ★★★★★ 4.9/5 · 500+ customers · Instant download · 30-day guarantee
+              <span className="text-amber-300">★★★★★</span> 4.9/5 · 500+ customers · Instant download · 30-day guarantee
             </p>
           </div>
         </section>
@@ -377,7 +387,7 @@ export default function Home() {
           <div className="flex items-center justify-between mb-8">
             <div>
               <h2 className="text-2xl font-bold text-gray-900">Free guides for UAE &amp; GCC freelancers</h2>
-              <p className="text-sm text-gray-500 mt-1">353 practical articles — no fluff</p>
+              <p className="text-sm text-gray-500 mt-1">400+ practical articles — no fluff</p>
             </div>
             <Link href="/blog" className="text-sm font-semibold text-gray-900 hover:text-gray-600 transition-colors shrink-0">
               All articles →

@@ -144,7 +144,10 @@ export default function FreelanceLegalConsultantRatesUAE() {
           </nav>
 
           {/* Hero */}
-          <div className="bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 text-white px-6 py-10 rounded-2xl mb-8">
+          <div className="relative isolate overflow-hidden bg-gradient-to-br from-gray-950 via-gray-900 to-gray-800 text-white px-6 py-12 rounded-2xl mb-8">
+            <div className="hero-glow -z-10 animate-float w-64 h-64 bg-emerald-500/25 -top-16 -left-10" />
+            <div className="hero-glow -z-10 animate-float w-56 h-56 bg-teal-400/20 -bottom-14 -right-8" style={{ animationDelay: "1.5s" }} />
+            <div className="absolute inset-0 -z-10 bg-dot-grid" />
             <span className="text-xs font-bold text-emerald-400 uppercase tracking-widest mb-3 block">Pricing &amp; Rates</span>
             <h1 className="text-3xl sm:text-4xl font-bold leading-tight mb-4">Freelance Legal Consultant Rates in the UAE (2026): What to Charge</h1>
             <p className="text-gray-300 text-sm mb-5 leading-relaxed max-w-xl">
@@ -259,7 +262,7 @@ export default function FreelanceLegalConsultantRatesUAE() {
             <span className="text-xs font-bold text-emerald-400 uppercase tracking-widest block mb-3">SoloKit</span>
             <h3 className="text-2xl font-bold mb-3">Run Your UAE Freelance Business Like a Pro</h3>
             <p className="text-gray-400 text-sm mb-6 max-w-sm mx-auto">Templates, SOPs, and systems built for UAE freelancers.</p>
-            <Link href="/products/solokit-freelance-os" className="inline-block bg-emerald-500 hover:bg-emerald-400 text-white font-bold px-8 py-3 rounded-xl transition-colors text-sm">Get SoloKit →</Link>
+            <Link href="/bundle" className="inline-block bg-emerald-500 hover:bg-emerald-400 text-white font-bold px-8 py-3 rounded-xl transition-colors text-sm">Get SoloKit →</Link>
           </div>
 
           {/* Related */}

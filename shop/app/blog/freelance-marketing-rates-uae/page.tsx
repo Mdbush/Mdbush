@@ -29,45 +29,6 @@ const jsonLd = {
   dateModified: "2026-06-01",
 };
 
-const rates = [
-  {
-    specialization: "Digital Marketing Generalist",
-    junior: { hourly: "AED 80–130", retainer: "AED 3,000–7,000/mo" },
-    mid: { hourly: "AED 150–250", retainer: "AED 7,000–18,000/mo" },
-    senior: { hourly: "AED 280–450", retainer: "AED 18,000–40,000/mo" },
-  },
-  {
-    specialization: "Social Media Manager",
-    junior: { hourly: "AED 60–100", retainer: "AED 2,500–5,000/mo" },
-    mid: { hourly: "AED 110–180", retainer: "AED 5,000–12,000/mo" },
-    senior: { hourly: "AED 200–320", retainer: "AED 12,000–25,000/mo" },
-  },
-  {
-    specialization: "SEO Consultant",
-    junior: { hourly: "AED 90–140", retainer: "AED 3,500–8,000/mo" },
-    mid: { hourly: "AED 160–260", retainer: "AED 8,000–20,000/mo" },
-    senior: { hourly: "AED 300–500", retainer: "AED 20,000–45,000/mo" },
-  },
-  {
-    specialization: "Paid Ads Specialist (Meta/Google)",
-    junior: { hourly: "AED 100–160", retainer: "AED 4,000–9,000/mo" },
-    mid: { hourly: "AED 180–280", retainer: "AED 9,000–22,000/mo" },
-    senior: { hourly: "AED 300–500", retainer: "AED 22,000–50,000/mo" },
-  },
-  {
-    specialization: "Email Marketing Specialist",
-    junior: { hourly: "AED 80–130", retainer: "AED 3,000–7,000/mo" },
-    mid: { hourly: "AED 140–220", retainer: "AED 7,000–15,000/mo" },
-    senior: { hourly: "AED 250–400", retainer: "AED 15,000–35,000/mo" },
-  },
-  {
-    specialization: "Content Strategist / Content Marketing",
-    junior: { hourly: "AED 80–130", retainer: "AED 3,500–8,000/mo" },
-    mid: { hourly: "AED 150–240", retainer: "AED 8,000–18,000/mo" },
-    senior: { hourly: "AED 270–420", retainer: "AED 18,000–40,000/mo" },
-  },
-];
-
 const statsData = [
   { value: "AED 80–130/hr", label: "Junior Hourly" },
   { value: "AED 150–280/hr", label: "Mid-Level Hourly" },
@@ -102,7 +63,10 @@ export default function FreelanceMarketingRatesUAE() {
           </nav>
 
           {/* Hero */}
-          <div className="bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 text-white px-6 py-10 rounded-2xl mb-8">
+          <div className="relative isolate overflow-hidden bg-gradient-to-br from-gray-950 via-gray-900 to-gray-800 text-white px-6 py-12 rounded-2xl mb-8">
+            <div className="hero-glow -z-10 animate-float w-64 h-64 bg-emerald-500/25 -top-16 -left-10" />
+            <div className="hero-glow -z-10 animate-float w-56 h-56 bg-teal-400/20 -bottom-14 -right-8" style={{ animationDelay: "1.5s" }} />
+            <div className="absolute inset-0 -z-10 bg-dot-grid" />
             <span className="text-xs font-bold text-emerald-400 uppercase tracking-widest mb-3 block">Pricing &amp; Rates</span>
             <h1 className="text-3xl sm:text-4xl font-bold leading-tight mb-4">Freelance Marketing Consultant Rates in the UAE (2026)</h1>
             <p className="text-gray-300 text-sm mb-5 leading-relaxed max-w-xl">
@@ -283,7 +247,7 @@ export default function FreelanceMarketingRatesUAE() {
             <span className="text-xs font-bold text-emerald-400 uppercase tracking-widest block mb-3">SoloKit</span>
             <h3 className="text-2xl font-bold mb-3">Run Your UAE Freelance Business Like a Pro</h3>
             <p className="text-gray-400 text-sm mb-6 max-w-sm mx-auto">Templates, SOPs, and systems built for UAE freelancers.</p>
-            <Link href="/products/solokit-freelance-os" className="inline-block bg-emerald-500 hover:bg-emerald-400 text-white font-bold px-8 py-3 rounded-xl transition-colors text-sm">Get SoloKit →</Link>
+            <Link href="/bundle" className="inline-block bg-emerald-500 hover:bg-emerald-400 text-white font-bold px-8 py-3 rounded-xl transition-colors text-sm">Get SoloKit →</Link>
           </div>
 
           {/* Related */}

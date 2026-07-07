@@ -1,7 +1,7 @@
 import Link from "next/link";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
-import { products, formatPrice } from "@/lib/products";
+import { formatPrice } from "@/lib/products";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -23,6 +23,7 @@ const bundleProducts = [
     emoji: "📋",
     name: "Freelancer Client CRM",
     price: 17500,
+    originalPrice: 24900,
     highlight: "Stop tracking clients in WhatsApp",
     keyFeature: "Client pipeline + invoice log + 10 email templates",
   },
@@ -31,6 +32,7 @@ const bundleProducts = [
     emoji: "🚀",
     name: "Solopreneur OS",
     price: 24900,
+    originalPrice: 34900,
     highlight: "Your entire business in one Notion workspace",
     keyFeature: "Revenue dashboard + 90-day planner + content calendar",
   },
@@ -39,6 +41,7 @@ const bundleProducts = [
     emoji: "🤖",
     name: "AI Prompt Pack Pro",
     price: 10900,
+    originalPrice: 14900,
     highlight: "200 prompts for proposals, emails, and content",
     keyFeature: "Works with Claude, ChatGPT, Gemini — copy and paste",
   },
@@ -47,13 +50,17 @@ const bundleProducts = [
     emoji: "📝",
     name: "SOP Starter Pack",
     price: 17500,
+    originalPrice: 24900,
     highlight: "50 plug-in-play systems for your business",
     keyFeature: "Client onboarding, content workflow, finance, delegation",
   },
 ];
 
-const totalPrice = bundleProducts.reduce((sum, p) => sum + p.price, 0);
-const bundlePrice = 70800;
+// "If bought separately" = each product at its regular (pre-launch) price.
+// The bundle collects all four at their current sale prices (AED 708 total),
+// so the saving vs regular pricing is AED 288 — matching the page metadata.
+const totalPrice = bundleProducts.reduce((sum, p) => sum + p.originalPrice, 0);
+const bundlePrice = bundleProducts.reduce((sum, p) => sum + p.price, 0);
 const savings = totalPrice - bundlePrice;
 
 const timeline = [
@@ -72,13 +79,16 @@ export default function BundlePage() {
       <main className="flex-1">
 
         {/* Dark gradient hero */}
-        <section className="bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 text-white py-14 px-4 sm:px-6">
+        <section className="relative isolate overflow-hidden bg-gradient-to-br from-gray-950 via-gray-900 to-gray-800 text-white py-16 px-4 sm:px-6">
+          <div className="hero-glow -z-10 animate-float w-80 h-80 bg-emerald-500/25 -top-24 -left-16" />
+          <div className="hero-glow -z-10 animate-float w-72 h-72 bg-teal-400/20 top-10 -right-10" style={{ animationDelay: "1.5s" }} />
+          <div className="absolute inset-0 -z-10 bg-dot-grid" />
           <div className="max-w-3xl mx-auto text-center">
             <span className="text-xs font-bold text-emerald-400 uppercase tracking-widest mb-3 block">
               Complete Stack
             </span>
             <h1 className="text-4xl sm:text-5xl font-bold leading-tight mb-5">
-              Everything you need to run a professional freelance business
+              Everything you need to run a <span className="text-gradient">professional freelance business</span>
             </h1>
             <p className="text-lg text-gray-300 max-w-2xl mx-auto leading-relaxed mb-6">
               Get all 4 SoloKit products — the CRM, OS, AI prompts, and SOPs — at launch pricing.
@@ -236,7 +246,7 @@ export default function BundlePage() {
             </Link>
             <p className="mt-3 text-xs text-gray-400">
               Questions?{" "}
-              <a href="mailto:md.a.bushara@gmail.com" className="underline hover:text-gray-600">
+              <a href="mailto:hello@solokit.cloud" className="underline hover:text-gray-600">
                 Email us
               </a>{" "}
               — we respond within 24 hours.

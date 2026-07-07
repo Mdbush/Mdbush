@@ -55,11 +55,10 @@ export default async function ProductPage({ params }: Props) {
       availability: "https://schema.org/InStock",
       seller: { "@type": "Organization", name: "SoloKit" },
     },
-    aggregateRating: {
-      "@type": "AggregateRating",
-      ratingValue: "4.9",
-      reviewCount: "47",
-    },
+    // No aggregateRating: we don't have verifiable, on-page review data, and
+    // Google's structured-data policy prohibits marking up invented ratings.
+    // The visual "4.9/5" social proof still renders; it just isn't claimed as
+    // machine-readable review data (which risks a manual action).
   };
 
   const faqsMap: Record<string, { q: string; a: string }[]> = {
@@ -393,21 +392,26 @@ export default async function ProductPage({ params }: Props) {
         })()}
 
         {/* Final CTA */}
-        <section className="mt-12 bg-gradient-to-br from-gray-900 to-gray-800 rounded-2xl p-8 text-center">
-          <p className="text-xs font-semibold text-gray-400 uppercase tracking-widest mb-2">Ready to get started?</p>
-          <h2 className="text-2xl font-bold text-white mb-2">{product.name}</h2>
-          <p className="text-gray-400 text-sm mb-6 max-w-md mx-auto">{product.tagline} One-time payment. Instant delivery. 30-day guarantee.</p>
-          <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-            <CheckoutButton productSlug={product.slug} price={product.price} />
-            <p className="text-gray-500 text-sm">
-              {product.originalPrice ? (
-                <><span className="line-through text-gray-600">{formatPrice(product.originalPrice)}</span> → <span className="text-white font-bold">{formatPrice(product.price)}</span></>
-              ) : (
-                <span className="text-white font-bold">{formatPrice(product.price)}</span>
-              )}
-            </p>
+        <section className="relative overflow-hidden mt-12 bg-gradient-to-br from-gray-950 via-gray-900 to-gray-800 rounded-2xl p-10 text-center">
+          <div className="hero-glow animate-float w-64 h-64 bg-emerald-500/25 -top-16 -left-10" />
+          <div className="hero-glow animate-float w-56 h-56 bg-teal-400/20 -bottom-14 -right-8" style={{ animationDelay: "1.5s" }} />
+          <div className="absolute inset-0 bg-dot-grid" />
+          <div className="relative">
+            <p className="text-xs font-semibold text-gray-400 uppercase tracking-widest mb-2">Ready to get started?</p>
+            <h2 className="text-2xl font-bold mb-2"><span className="text-gradient">{product.name}</span></h2>
+            <p className="text-gray-400 text-sm mb-6 max-w-md mx-auto">{product.tagline} One-time payment. Instant delivery. 30-day guarantee.</p>
+            <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
+              <CheckoutButton productSlug={product.slug} price={product.price} />
+              <p className="text-gray-500 text-sm">
+                {product.originalPrice ? (
+                  <><span className="line-through text-gray-600">{formatPrice(product.originalPrice)}</span> → <span className="text-white font-bold">{formatPrice(product.price)}</span></>
+                ) : (
+                  <span className="text-white font-bold">{formatPrice(product.price)}</span>
+                )}
+              </p>
+            </div>
+            <p className="text-xs text-gray-600 mt-4">🔒 Secure checkout · AED pricing · Instant digital delivery</p>
           </div>
-          <p className="text-xs text-gray-600 mt-4">🔒 Secure checkout · AED pricing · Instant digital delivery</p>
         </section>
 
         {/* Related blog post */}

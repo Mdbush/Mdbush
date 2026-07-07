@@ -13,7 +13,7 @@ function verifySignature(payload: string, signature: string, secret: string): bo
   return crypto.timingSafeEqual(digestBuf, sigBuf);
 }
 
-function getPurchaseEmailHtml(productName: string, orderEmail: string): string {
+function getPurchaseEmailHtml(productName: string): string {
   return `<!DOCTYPE html>
 <html>
 <head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"></head>
@@ -77,7 +77,7 @@ async function handlePurchase(email: string, productName: string) {
   const senderEmail = process.env.BREVO_SENDER_EMAIL ?? "hello@solokit.cloud";
 
   // Add to customers list (list 3) and tag as buyer
-  await fetch("https://api.brevo.com/v3/contacts", {
+  const contactRes = await fetch("https://api.brevo.com/v3/contacts", {
     method: "POST",
     headers: {
       "api-key": apiKey,
@@ -90,10 +90,17 @@ async function handlePurchase(email: string, productName: string) {
       updateEnabled: true,
       attributes: { SOURCE: "purchase", LAST_PRODUCT: productName },
     }),
-  }).catch((e) => console.error("Brevo customer add failed:", e));
+  }).catch((e) => {
+    console.error("Brevo customer add network error:", e);
+    return null;
+  });
+  if (contactRes && !contactRes.ok) {
+    const body = await contactRes.text().catch(() => "");
+    console.error(`Brevo customer add failed (${contactRes.status}):`, body);
+  }
 
   // Send purchase confirmation email
-  await fetch("https://api.brevo.com/v3/smtp/email", {
+  const emailRes = await fetch("https://api.brevo.com/v3/smtp/email", {
     method: "POST",
     headers: {
       "api-key": apiKey,
@@ -104,9 +111,16 @@ async function handlePurchase(email: string, productName: string) {
       sender: { name: "Mohamed @ SoloKit", email: senderEmail },
       to: [{ email }],
       subject: `Your ${productName} is ready — SoloKit`,
-      htmlContent: getPurchaseEmailHtml(productName, email),
+      htmlContent: getPurchaseEmailHtml(productName),
     }),
-  }).catch((e) => console.error("Purchase email failed:", e));
+  }).catch((e) => {
+    console.error("Purchase email network error:", e);
+    return null;
+  });
+  if (emailRes && !emailRes.ok) {
+    const body = await emailRes.text().catch(() => "");
+    console.error(`Purchase email failed (${emailRes.status}):`, body);
+  }
 }
 
 export async function POST(request: NextRequest) {
@@ -125,8 +139,9 @@ export async function POST(request: NextRequest) {
   let event: Record<string, unknown>;
   try {
     event = JSON.parse(payload);
-  } catch {
-    return NextResponse.json({ received: true });
+  } catch (err) {
+    console.error("Webhook payload was not valid JSON:", err);
+    return NextResponse.json({ error: "Invalid JSON payload" }, { status: 400 });
   }
   const eventName: string = (event.meta as Record<string, unknown>)?.event_name as string ?? "";
 

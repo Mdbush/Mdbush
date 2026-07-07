@@ -163,7 +163,7 @@ Website: solokit.cloud`}</code>
           </div>
           <div className="border border-gray-200 rounded-xl p-5">
             <p className="text-xs font-semibold text-gray-400 uppercase tracking-widest mb-2">Email</p>
-            <code className="text-sm text-gray-900 bg-gray-50 block p-3 rounded-lg select-all">md.a.bushara@gmail.com</code>
+            <code className="text-sm text-gray-900 bg-gray-50 block p-3 rounded-lg select-all">hello@solokit.cloud</code>
           </div>
           <div className="border border-gray-200 rounded-xl p-5">
             <p className="text-xs font-semibold text-gray-400 uppercase tracking-widest mb-2">Location</p>
@@ -226,7 +226,7 @@ Stop starting from scratch ↓`}</code>
             "Bio / About section filled in",
             "Website URL set to solokit.cloud",
             "Location set to Dubai, UAE",
-            "Contact email set to md.a.bushara@gmail.com",
+            "Contact email set to hello@solokit.cloud",
             "Category/Industry set correctly",
             "First 3 posts published (educational, not ads)",
             "Instagram Highlights created",

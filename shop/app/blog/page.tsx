@@ -6,11 +6,14 @@ import type { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Blog — Free Guides for UAE & GCC Freelancers — SoloKit",
-  description: "353 free guides for freelancers and solopreneurs across the UAE, Saudi Arabia, and GCC. Visa, tax, rates, proposals, AI tools, contracts, and more. No fluff.",
-  alternates: { canonical: "/blog" },
+  description: "400+ free guides for freelancers and solopreneurs across the UAE, Saudi Arabia, and GCC. Visa, tax, rates, proposals, AI tools, contracts, and more. No fluff.",
+  alternates: {
+    canonical: "/blog",
+    types: { "application/rss+xml": "/feed.xml" },
+  },
   openGraph: {
     title: "Free Guides for UAE & GCC Freelancers — SoloKit Blog",
-    description: "353 practical guides covering everything UAE and GCC freelancers need. No fluff.",
+    description: "400+ practical guides covering everything UAE and GCC freelancers need. No fluff.",
     url: "/blog",
     type: "website",
   },
@@ -40,9 +43,21 @@ export default async function BlogPage({ searchParams }: Props) {
       <Header />
 
       <main className="flex-1 max-w-3xl mx-auto px-4 sm:px-6 py-14">
-        <div className="mb-10">
-          <h1 className="text-3xl font-bold text-gray-900 mb-2">Blog</h1>
-          <p className="text-gray-500">Practical guides for freelancers and solopreneurs across the UAE, Saudi Arabia &amp; GCC. No fluff.</p>
+        <div className="relative overflow-hidden bg-gradient-to-br from-gray-950 via-gray-900 to-gray-800 text-white rounded-2xl px-6 py-12 mb-10 text-center">
+          <div className="hero-glow animate-float w-64 h-64 bg-emerald-500/25 -top-16 -left-10" />
+          <div className="hero-glow animate-float w-56 h-56 bg-teal-400/20 -bottom-14 -right-8" style={{ animationDelay: "1.5s" }} />
+          <div className="absolute inset-0 bg-dot-grid" />
+          <div className="relative">
+            <span className="inline-flex items-center gap-1.5 bg-white/10 ring-1 ring-white/15 backdrop-blur text-white text-xs font-semibold px-3.5 py-1.5 rounded-full mb-5 uppercase tracking-widest">
+              🇦🇪 400+ free guides
+            </span>
+            <h1 className="text-3xl sm:text-4xl font-bold leading-tight mb-3">
+              The <span className="text-gradient">SoloKit</span> Blog
+            </h1>
+            <p className="text-gray-300 max-w-xl mx-auto leading-relaxed">
+              Practical guides for freelancers and solopreneurs across the UAE, Saudi Arabia &amp; GCC. No fluff.
+            </p>
+          </div>
         </div>
 
         {/* Featured — only shown when no category filter */}
@@ -54,8 +69,9 @@ export default async function BlogPage({ searchParams }: Props) {
                 <Link
                   key={post.slug}
                   href={`/blog/${post.slug}`}
-                  className="group border border-gray-200 rounded-2xl p-5 hover:border-gray-400 hover:shadow-sm transition-all bg-gray-50"
+                  className="group relative overflow-hidden border border-gray-200 rounded-2xl p-5 hover:border-emerald-300 hover:shadow-lg hover:shadow-emerald-500/5 hover:-translate-y-0.5 transition-all duration-200 bg-gray-50"
                 >
+                  <span className="absolute top-0 left-0 h-1 w-full bg-gradient-to-r from-emerald-400 to-emerald-500 origin-left scale-x-0 group-hover:scale-x-100 transition-transform duration-300" />
                   <span className="text-xs font-semibold text-gray-400 uppercase tracking-widest block mb-2">
                     {post.category}
                   </span>
@@ -105,8 +121,9 @@ export default async function BlogPage({ searchParams }: Props) {
             <Link
               key={post.slug}
               href={`/blog/${post.slug}`}
-              className="group border border-gray-200 rounded-2xl p-6 hover:border-gray-400 hover:shadow-sm transition-all"
+              className="group relative overflow-hidden border border-gray-200 rounded-2xl p-6 hover:border-emerald-300 hover:shadow-lg hover:shadow-emerald-500/5 hover:-translate-y-0.5 transition-all duration-200"
             >
+              <span className="absolute top-0 left-0 h-1 w-full bg-gradient-to-r from-emerald-400 to-emerald-500 origin-left scale-x-0 group-hover:scale-x-100 transition-transform duration-300" />
               <div className="flex items-center gap-3 mb-3">
                 <span className="text-xs font-semibold text-gray-400 uppercase tracking-widest">
                   {post.category}

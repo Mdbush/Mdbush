@@ -1,7 +1,11 @@
 import { MetadataRoute } from "next";
 
 export default function robots(): MetadataRoute.Robots {
-  const base = process.env.NEXT_PUBLIC_SITE_URL ?? "http://localhost:3000";
+  // Match sitemap.ts: only trust NEXT_PUBLIC_SITE_URL when it carries a scheme,
+  // otherwise fall back to the canonical production origin. Prevents robots.txt
+  // from advertising a localhost (or scheme-less) sitemap URL in production.
+  const rawBase = process.env.NEXT_PUBLIC_SITE_URL ?? "";
+  const base = rawBase.startsWith("http") ? rawBase : "https://solokit.cloud";
   return {
     rules: {
       userAgent: "*",
