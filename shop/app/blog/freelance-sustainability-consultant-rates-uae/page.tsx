@@ -62,7 +62,10 @@ export default function FreelanceSustainabilityConsultantRatesUAE() {
           {/* Header */}
           
         {/* Dark hero */}
-        <div className="bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 text-white px-6 py-10 rounded-2xl mb-8">
+        <div className="relative isolate overflow-hidden bg-gradient-to-br from-gray-950 via-gray-900 to-gray-800 text-white px-6 py-12 rounded-2xl mb-8">
+          <div className="hero-glow -z-10 animate-float w-64 h-64 bg-emerald-500/25 -top-16 -left-10" />
+          <div className="hero-glow -z-10 animate-float w-56 h-56 bg-teal-400/20 -bottom-14 -right-8" style={{ animationDelay: "1.5s" }} />
+          <div className="absolute inset-0 -z-10 bg-dot-grid" />
           <span className="text-xs font-bold text-emerald-400 uppercase tracking-widest mb-3 block">UAE RATES 2026</span>
           <h1 className="text-3xl sm:text-4xl font-bold leading-tight mb-4">Freelance Sustainability Consultant Rates in the UAE (2026): ESG & Green Business Fees</h1>
           <p className="text-gray-300 text-sm mb-5 leading-relaxed max-w-xl">Real AED day rates and project fees for freelance sustainability consultants in Dubai and Abu Dhabi. ESG reporting, carbon footprint, net-zero strategy, and green building rates.</p>

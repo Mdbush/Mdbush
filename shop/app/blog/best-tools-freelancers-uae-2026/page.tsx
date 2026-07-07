@@ -54,7 +54,10 @@ export default function Article() {
         <div className="mb-8">
           
         {/* Dark hero */}
-        <div className="bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 text-white px-6 py-10 rounded-2xl mb-8">
+        <div className="relative isolate overflow-hidden bg-gradient-to-br from-gray-950 via-gray-900 to-gray-800 text-white px-6 py-12 rounded-2xl mb-8">
+          <div className="hero-glow -z-10 animate-float w-64 h-64 bg-emerald-500/25 -top-16 -left-10" />
+          <div className="hero-glow -z-10 animate-float w-56 h-56 bg-teal-400/20 -bottom-14 -right-8" style={{ animationDelay: "1.5s" }} />
+          <div className="absolute inset-0 -z-10 bg-dot-grid" />
           <span className="text-xs font-bold text-emerald-400 uppercase tracking-widest mb-3 block">UAE FREELANCING</span>
           <h1 className="text-3xl sm:text-4xl font-bold leading-tight mb-4">Best Tools for Freelancers in the UAE (2026): The Complete Stack</h1>
           <p className="text-gray-300 text-sm mb-5 leading-relaxed max-w-xl">The exact tool stack UAE freelancers need in 2026 — for client management, invoicing, contracts, AI, project tracking, and payments. Honest picks with AED costs.</p>
