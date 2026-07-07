@@ -2745,15 +2745,6 @@ export const posts: BlogPost[] = [
     category: "Pricing & Rates",
   },
   {
-    slug: "how-to-negotiate-freelance-rates-uae",
-    title: "How to Negotiate Freelance Rates as a UAE Freelancer (2026 Guide)",
-    description:
-      "How UAE freelancers negotiate higher rates with clients — the anchor strategy, value framing, pushback responses, scope reduction technique, negotiating with UAE corporates vs SMEs, and copy-paste negotiation scripts for Dubai and Abu Dhabi freelancers.",
-    date: "June 16, 2026",
-    readTime: "7 min read",
-    category: "Pricing & Rates",
-  },
-  {
     slug: "freelance-facilities-management-consultant-rates-uae",
     title: "Freelance Facilities Management Consultant Rates in the UAE (2026)",
     description:
@@ -2833,33 +2824,6 @@ export const posts: BlogPost[] = [
     date: "June 16, 2026",
     readTime: "7 min read",
     category: "Pricing & Rates",
-  },
-  {
-    slug: "freelance-data-engineer-rates-uae",
-    title: "Freelance Data Engineer Rates in the UAE (2026)",
-    description:
-      "Real AED day rates for freelance data engineers in Dubai and Abu Dhabi. Data pipeline development, ETL/ELT architecture, data warehouse design, Spark, Kafka, Airflow, dbt, Databricks, Snowflake, BigQuery, and data platform architecture fees for 2026.",
-    date: "June 16, 2026",
-    readTime: "7 min read",
-    category: "Pricing & Rates",
-  },
-  {
-    slug: "freelance-environmental-consultant-rates-uae",
-    title: "Freelance Environmental Consultant Rates in the UAE (2026)",
-    description:
-      "Real AED day rates for freelance environmental consultants in Dubai and Abu Dhabi. Environmental Impact Assessment (EIA), environmental monitoring, contaminated land, waste management, biodiversity assessment, and ESG environmental strategy fees for 2026.",
-    date: "June 16, 2026",
-    readTime: "7 min read",
-    category: "Pricing & Rates",
-  },
-  {
-    slug: "how-to-productize-freelance-services-uae",
-    title: "How to Productize Your Freelance Services in the UAE (2026 Guide)",
-    description:
-      "How UAE freelancers productize their services — moving from custom quotes to fixed-scope, fixed-price offers. The UAE productization framework, how to price fixed offers, handle customisation requests, and create a service page that sells for you in Dubai and Abu Dhabi.",
-    date: "June 16, 2026",
-    readTime: "7 min read",
-    category: "Business & Mindset",
   },
   {
     slug: "freelance-investment-banker-rates-uae",
@@ -3087,15 +3051,6 @@ export const posts: BlogPost[] = [
     category: "Getting Clients",
   },
   {
-    slug: "how-to-write-freelance-proposal-uae",
-    title: "How to Write a Freelance Proposal That Wins in the UAE (2026 Guide)",
-    description:
-      "How UAE freelancers write proposals that get accepted — 7-section structure, pricing presentation, scope definition, and the exact sections that win projects in Dubai and Abu Dhabi.",
-    date: "June 16, 2026",
-    readTime: "8 min read",
-    category: "Getting Clients",
-  },
-  {
     slug: "freelance-ecommerce-consultant-rates-uae",
     title: "Freelance Ecommerce Consultant Rates in the UAE (2026): What to Charge",
     description:
@@ -3194,6 +3149,475 @@ export const posts: BlogPost[] = [
     readTime: "8 min read",
     category: "Getting Started",
   },
+  {
+    slug: "bahrain-freelance-visa-guide",
+    title: "Bahrain Freelance Visa Guide 2026: Sijiliyat Permit & Costs",
+    description:
+      "Complete guide to the Bahrain freelance permit via Sijiliyat 2026: costs in BHD/AED, process, who qualifies, and a side-by-side comparison with the UAE freelance visa.",
+    date: "July 4, 2026",
+    readTime: "9 min read",
+    category: "Visa & Legal",
+  },
+  {
+    slug: "best-banks-for-freelancers-uae",
+    title: "Best UAE Bank Accounts for Freelancers (2026): Emirates NBD, FAB, ADCB & More",
+    description:
+      "Compare the best UAE bank accounts for freelancers in 2026 — Emirates NBD, FAB, ADCB, Mashreq Neo, Liv, Wio, and RAKBank. Fees, minimum balances, digital features, and which accounts actually approve freelancers.",
+    date: "July 4, 2026",
+    readTime: "9 min read",
+    category: "Tax & Finance",
+  },
+  {
+    slug: "best-freelance-niches-uae-2026",
+    title: "Best Freelance Niches UAE 2026 — Highest Demand & Best-Paying Work",
+    description:
+      "The 15 highest-demand freelance niches in the UAE for 2026: AI consulting, ESG, cybersecurity, data science, and more. Rates, demand signals, and how to position yourself.",
+    date: "July 4, 2026",
+    readTime: "12 min read",
+    category: "Systems & Productivity",
+  },
+  {
+    slug: "cold-email-templates-freelancers-uae",
+    title: "5 Cold Email Templates That Get UAE Freelancers Hired (2026)",
+    description:
+      "Proven cold email templates for UAE freelancers: subject lines, body copy, and follow-up sequences for tech startups, real estate, hospitality, government, and professional services clients.",
+    date: "July 4, 2026",
+    readTime: "7 min read",
+    category: "Getting Clients",
+  },
+  {
+    slug: "dmcc-freelance-licence-guide",
+    title: "DMCC Freelance Licence 2026 — Setup Guide, Costs & Pros/Cons",
+    description:
+      "Complete guide to the DMCC freelance licence in Dubai 2026: setup costs, visa eligibility, pros vs SHAMS and RAKEZ, and step-by-step registration process.",
+    date: "July 4, 2026",
+    readTime: "10 min read",
+    category: "Visa & Legal",
+  },
+  {
+    slug: "freelance-accountant-bookkeeper-rates-uae",
+    title: "Freelance Accountant and Bookkeeper Rates UAE 2026",
+    description:
+      "AED rate benchmarks for freelance accountants and bookkeepers in the UAE: VAT filing, monthly bookkeeping, management accounts, year-end, audit support, and Corporate Tax returns.",
+    date: "July 4, 2026",
+    readTime: "6 min read",
+    category: "Pricing & Rates",
+  },
+  {
+    slug: "freelance-ai-tools-uae",
+    title: "Best AI Tools for UAE Freelancers in 2026",
+    description:
+      "The best AI tools for UAE freelancers in 2026 — writing, design, productivity, client communication, and finance. Save 5–15 hours per week with the right stack.",
+    date: "July 4, 2026",
+    readTime: "8 min read",
+    category: "AI Tools",
+  },
+  {
+    slug: "freelance-annual-review-uae",
+    title: "How to Do an Annual Business Review as a UAE Freelancer — 2026 Guide",
+    description:
+      "A complete annual review framework for UAE freelancers: reviewing revenue, clients, rates, positioning, and setting goals for the year ahead. Templates and financial review checklist included.",
+    date: "July 4, 2026",
+    readTime: "10 min read",
+    category: "Systems & Productivity",
+  },
+  {
+    slug: "freelance-bank-account-uae",
+    title: "Best Bank Accounts for UAE Freelancers in 2026",
+    description:
+      "Compare the best bank accounts for UAE freelancers in 2026. Find accounts with low fees, easy setup, multi-currency support, and freelance-friendly onboarding.",
+    date: "July 4, 2026",
+    readTime: "7 min read",
+    category: "Tax & Finance",
+  },
+  {
+    slug: "freelance-burnout-uae",
+    title: "Freelance Burnout in UAE: How to Recover and Build a Sustainable Business",
+    description:
+      "Recognize, recover from, and prevent freelance burnout in the UAE. Practical systems for Dubai and Abu Dhabi freelancers to build a sustainable solo business.",
+    date: "July 4, 2026",
+    readTime: "7 min read",
+    category: "Systems & Productivity",
+  },
+  {
+    slug: "freelance-client-offboarding-uae",
+    title: "How to Offboard Freelance Clients in the UAE — Checklist & Templates 2026",
+    description:
+      "A professional client offboarding process for UAE freelancers: what to deliver, how to get testimonials, how to close projects cleanly, and how to stay top of mind for referrals.",
+    date: "July 4, 2026",
+    readTime: "8 min read",
+    category: "Client Work & Proposals",
+  },
+  {
+    slug: "freelance-coworking-dubai",
+    title: "Best Coworking Spaces in Dubai for Freelancers (2026 Guide)",
+    description:
+      "Top coworking spaces in Dubai for freelancers in 2026. Compare prices, locations, amenities, and community vibes across Dubai Marina, DIFC, and Business Bay.",
+    date: "July 4, 2026",
+    readTime: "6 min read",
+    category: "Systems & Productivity",
+  },
+  {
+    slug: "freelance-crypto-payments-uae",
+    title: "Accepting Crypto Payments as a UAE Freelancer — 2026 Guide",
+    description:
+      "Can UAE freelancers accept crypto payments? Legal framework, VARA regulations, invoicing in USDC/USDT, tax treatment, and the practical steps to get paid in cryptocurrency.",
+    date: "July 4, 2026",
+    readTime: "8 min read",
+    category: "Tax & Finance",
+  },
+  {
+    slug: "freelance-email-newsletter-uae",
+    title: "How UAE Freelancers Can Use Email Newsletters to Win Clients — 2026 Guide",
+    description:
+      "Email newsletters for UAE freelancers: what to write, how often to send, how to grow your list, tools (Brevo, Mailchimp), and how to convert subscribers into paying clients.",
+    date: "July 4, 2026",
+    readTime: "9 min read",
+    category: "Systems & Productivity",
+  },
+  {
+    slug: "freelance-emiratisation-opportunities-uae",
+    title: "Emiratisation Opportunities for UAE Freelancers — 2026 Guide",
+    description:
+      "How UAE freelancers can profit from Emiratisation mandates: training delivery, compliance consulting, HR advisory, and how to position your services for government and corporate clients with Emiratisation targets.",
+    date: "July 4, 2026",
+    readTime: "10 min read",
+    category: "Visa & Legal",
+  },
+  {
+    slug: "freelance-event-manager-rates-uae",
+    title: "Freelance Event Manager Rates UAE 2026",
+    description:
+      "Event management and production freelance rates UAE 2026. Corporate events, conferences, weddings. AED day rates, project fees, and what clients expect.",
+    date: "July 4, 2026",
+    readTime: "9 min read",
+    category: "Pricing & Rates",
+  },
+  {
+    slug: "freelance-exit-freelancing-uae",
+    title: "How to Exit Freelancing in the UAE — Go Employment or Build an Agency — 2026",
+    description:
+      "When and how to exit freelancing in the UAE: transitioning to full-time employment, building an agency, financial considerations, permit cancellation, and winding down client relationships professionally.",
+    date: "July 4, 2026",
+    readTime: "10 min read",
+    category: "Systems & Productivity",
+  },
+  {
+    slug: "freelance-government-procurement-uae",
+    title: "How UAE Freelancers Can Win Government Contracts — 2026 Guide",
+    description:
+      "UAE government procurement for freelancers: vendor registration, Etimad, Abu Dhabi procurement portals, the tender process, how to position as a solo consultant, and realistic expectations.",
+    date: "July 4, 2026",
+    readTime: "10 min read",
+    category: "Visa & Legal",
+  },
+  {
+    slug: "freelance-hr-consultant-rates-uae",
+    title: "Freelance HR Consultant Rates UAE 2026",
+    description:
+      "Fractional HR, recruitment fees, L&D day rates, and payroll consulting rates for freelance HR professionals in the UAE and GCC in 2026. AED benchmarks by service type.",
+    date: "July 4, 2026",
+    readTime: "6 min read",
+    category: "Pricing & Rates",
+  },
+  {
+    slug: "freelance-linkedin-outreach-uae",
+    title: "LinkedIn Outreach for UAE Freelancers — DM Templates That Get Replies 2026",
+    description:
+      "How UAE freelancers can use LinkedIn DMs and connection requests to generate clients: message templates, who to target, follow-up sequences, and what never to send.",
+    date: "July 4, 2026",
+    readTime: "9 min read",
+    category: "Getting Clients",
+  },
+  {
+    slug: "freelance-networking-dubai",
+    title: "How to Network as a Freelancer in Dubai (Without Being Salesy)",
+    description:
+      "Build a genuine professional network in Dubai as a freelancer. Practical advice on events, LinkedIn, community groups, and turning conversations into clients — without the cringe.",
+    date: "July 4, 2026",
+    readTime: "6 min read",
+    category: "Getting Clients",
+  },
+  {
+    slug: "freelance-niche-pivot-uae",
+    title: "How to Pivot Your Freelance Niche in the UAE — 2026 Guide",
+    description:
+      "How UAE freelancers successfully change their niche: when to pivot, how to transition without losing income, rebuilding your portfolio, rebranding, and managing the switch with existing clients.",
+    date: "July 4, 2026",
+    readTime: "10 min read",
+    category: "Systems & Productivity",
+  },
+  {
+    slug: "freelance-pitch-deck-uae",
+    title: "How to Create a Freelance Pitch Deck in the UAE — 2026 Guide",
+    description:
+      "Should UAE freelancers use pitch decks? When a pitch deck wins clients, what slides to include, how to structure a credentials deck, and how to present it in UAE corporate meetings.",
+    date: "July 4, 2026",
+    readTime: "9 min read",
+    category: "Client Work & Proposals",
+  },
+  {
+    slug: "freelance-portfolio-dubai",
+    title: "How to Build a Freelance Portfolio in Dubai With No Clients Yet",
+    description:
+      "Build a credible freelance portfolio in Dubai even with zero clients. Practical strategies for spec work, volunteer projects, and positioning that wins your first UAE clients.",
+    date: "July 4, 2026",
+    readTime: "7 min read",
+    category: "Systems & Productivity",
+  },
+  {
+    slug: "freelance-pr-rates-uae",
+    title: "Freelance PR Rates in the UAE (2026): Retainers, Day Rates & Project Fees",
+    description:
+      "What do freelance PR and communications professionals charge in the UAE in 2026? Monthly retainers, day rates, press release fees, crisis comms, and event PR costs.",
+    date: "July 4, 2026",
+    readTime: "7 min read",
+    category: "Pricing & Rates",
+  },
+  {
+    slug: "freelance-productivity-system-uae",
+    title: "Freelance Productivity System for UAE Freelancers — 2026 Guide",
+    description:
+      "How top UAE freelancers structure their day, manage their calendar, handle client work and business development simultaneously, and avoid the feast-or-famine trap with a productivity system.",
+    date: "July 4, 2026",
+    readTime: "10 min read",
+    category: "Systems & Productivity",
+  },
+  {
+    slug: "freelance-professional-indemnity-insurance-uae",
+    title: "Professional Indemnity Insurance for UAE Freelancers 2026 — Guide & Costs",
+    description:
+      "Do UAE freelancers need professional indemnity insurance? Providers, costs in AED, what's covered, and when PI insurance is mandatory vs optional for consultants.",
+    date: "July 4, 2026",
+    readTime: "9 min read",
+    category: "Tax & Finance",
+  },
+  {
+    slug: "freelance-proposal-follow-up-uae",
+    title: "How to Follow Up on Freelance Proposals in the UAE — 2026 Templates",
+    description:
+      "How UAE freelancers follow up on unanswered proposals: timing, email templates, WhatsApp messages, when to walk away, and how to convert ghosted prospects into paying clients.",
+    date: "July 4, 2026",
+    readTime: "8 min read",
+    category: "Client Work & Proposals",
+  },
+  {
+    slug: "freelance-recession-proof-uae",
+    title: "How to Recession-Proof Your Freelance Business in the UAE — 2026 Guide",
+    description:
+      "How UAE freelancers can survive economic downturns: diversify income streams, build retainers, identify recession-resistant niches, cut costs without cutting quality, and build a 6-month cash reserve.",
+    date: "July 4, 2026",
+    readTime: "11 min read",
+    category: "Systems & Productivity",
+  },
+  {
+    slug: "freelance-retainer-clients-uae",
+    title: "How to Convert One-Off UAE Clients into Monthly Retainers",
+    description:
+      "Turn project-based UAE clients into predictable monthly retainer income. Scripts, pricing strategies, and retainer structures that work for Dubai freelancers in 2026.",
+    date: "July 4, 2026",
+    readTime: "7 min read",
+    category: "Getting Clients",
+  },
+  {
+    slug: "freelance-scope-of-work-uae",
+    title: "How to Write a Scope of Work as a UAE Freelancer — 2026 Templates",
+    description:
+      "How to write a clear scope of work (SOW) for UAE freelance projects: what to include, how to prevent scope creep, SOW templates for consultants and creatives, and what happens without one.",
+    date: "July 4, 2026",
+    readTime: "9 min read",
+    category: "Client Work & Proposals",
+  },
+  {
+    slug: "freelance-social-media-strategy-uae",
+    title: "Freelance Social Media Strategy UAE 2026 — LinkedIn, Instagram & TikTok",
+    description:
+      "Which social media platforms actually get UAE freelancers clients in 2026? LinkedIn vs Instagram vs TikTok — posting strategy, content types, and what actually drives leads.",
+    date: "July 4, 2026",
+    readTime: "10 min read",
+    category: "Getting Clients",
+  },
+  {
+    slug: "freelance-subcontracting-guide-uae",
+    title: "How to Subcontract as a UAE Freelancer — 2026 Guide",
+    description:
+      "How UAE freelancers subcontract work: finding subcontractors, contracts, payment structures, managing quality, legal considerations, and when to build a team vs stay solo.",
+    date: "July 4, 2026",
+    readTime: "10 min read",
+    category: "Client Work & Proposals",
+  },
+  {
+    slug: "freelance-supply-chain-logistics-rates-uae",
+    title: "Freelance Supply Chain & Logistics Consultant Rates UAE 2026",
+    description:
+      "Supply chain and logistics consultant freelance rates UAE 2026. Procurement, inventory, 3PL, and shipping. AED day rates, retainers, and project fees.",
+    date: "July 4, 2026",
+    readTime: "9 min read",
+    category: "Pricing & Rates",
+  },
+  {
+    slug: "freelance-trainer-coach-rates-uae",
+    title: "Freelance Trainer & Coach Rates UAE 2026",
+    description:
+      "Corporate trainer and life coach freelance rates in the UAE 2026. Per day, per session, per programme pricing for soft skills, leadership, and wellness.",
+    date: "July 4, 2026",
+    readTime: "9 min read",
+    category: "Pricing & Rates",
+  },
+  {
+    slug: "freelance-translator-interpreter-rates-uae",
+    title: "Freelance Translator & Interpreter Rates in the UAE (2026)",
+    description:
+      "Arabic/English translation rates per word, legal and medical translation fees, simultaneous interpreting day rates. AED benchmarks for UAE freelance translators in 2026.",
+    date: "July 4, 2026",
+    readTime: "7 min read",
+    category: "Pricing & Rates",
+  },
+  {
+    slug: "freelance-vat-invoice-guide-uae",
+    title: "How to Issue VAT Invoices as a UAE Freelancer — 2026 Guide",
+    description:
+      "UAE VAT invoicing for freelancers: what a compliant VAT invoice must include, when to charge 0% vs 5%, invoice templates, and the consequences of issuing incorrect invoices.",
+    date: "July 4, 2026",
+    readTime: "8 min read",
+    category: "Tax & Finance",
+  },
+  {
+    slug: "freelance-videographer-rates-uae",
+    title: "Freelance Videographer Rates in the UAE (2026)",
+    description:
+      "Real AED rates for freelance videographers in the UAE in 2026. Corporate video, social media reels, wedding films, drone footage, and editing-only packages compared.",
+    date: "July 4, 2026",
+    readTime: "8 min read",
+    category: "Pricing & Rates",
+  },
+  {
+    slug: "how-to-build-retainer-pipeline-uae",
+    title: "How to Build a Retainer Pipeline as a UAE Freelancer — 2026 Guide",
+    description:
+      "How to turn one-off UAE freelance projects into recurring monthly retainer income: pitch templates, retainer structures, pricing, and how to manage multiple retainer clients.",
+    date: "July 4, 2026",
+    readTime: "11 min read",
+    category: "Getting Clients",
+  },
+  {
+    slug: "how-to-close-high-ticket-clients-uae",
+    title: "How to Close High-Ticket Clients in the UAE — Freelance Sales Guide 2026",
+    description:
+      "How to win AED 20,000+ freelance contracts in the UAE: discovery calls, proposals, objection handling, follow-up strategy, and what high-ticket clients actually care about.",
+    date: "July 4, 2026",
+    readTime: "11 min read",
+    category: "Getting Clients",
+  },
+  {
+    slug: "how-to-get-clients-on-linkedin-uae",
+    title: "How to Get Freelance Clients on LinkedIn in Dubai/UAE (2026)",
+    description:
+      "Step-by-step guide to finding and winning freelance clients through LinkedIn in the UAE in 2026. Profile optimisation, outreach scripts, hashtags, and Ramadan strategy.",
+    date: "July 4, 2026",
+    readTime: "10 min read",
+    category: "Getting Clients",
+  },
+  {
+    slug: "how-to-get-featured-uae-media",
+    title: "How to Get Featured in UAE Business Media as a Freelancer — 2026 Guide",
+    description:
+      "How UAE freelancers get quoted in Gulf News, Arabian Business, Forbes Middle East, and The National: pitching editors, press releases, HARO alternatives, and building a media profile.",
+    date: "July 4, 2026",
+    readTime: "9 min read",
+    category: "Getting Clients",
+  },
+  {
+    slug: "how-to-invoice-as-freelancer-uae",
+    title: "How to Invoice Clients as a UAE Freelancer (2026)",
+    description:
+      "Required invoice fields, VAT invoices vs simplified tax invoices, payment terms, late fee clauses, and the best invoicing tools for UAE freelancers in 2026.",
+    date: "July 4, 2026",
+    readTime: "8 min read",
+    category: "Tax & Finance",
+  },
+  {
+    slug: "how-to-network-dubai-freelancer",
+    title: "How to Network as a Freelancer in Dubai 2026",
+    description:
+      "How to network as a freelancer in Dubai 2026: best events, communities, coworking spaces, and LinkedIn tactics. Specific venues, groups, and strategies that work.",
+    date: "July 4, 2026",
+    readTime: "9 min read",
+    category: "Getting Clients",
+  },
+  {
+    slug: "how-to-price-workshops-discovery-uae",
+    title: "How to Price Workshops and Discovery Sessions as a UAE Freelancer — 2026",
+    description:
+      "How much to charge for workshops, strategy sessions, and discovery calls in the UAE. Pricing frameworks, what to include, and how to position paid workshops vs free discovery calls.",
+    date: "July 4, 2026",
+    readTime: "9 min read",
+    category: "Pricing & Rates",
+  },
+  {
+    slug: "how-to-raise-freelance-rates-uae",
+    title: "How to Raise Your Freelance Rates in UAE Without Losing Clients",
+    description:
+      "How to raise freelance rates in UAE 2026 without losing clients. Scripts, timing, positioning strategies, and how to handle pushback from existing clients.",
+    date: "July 4, 2026",
+    readTime: "8 min read",
+    category: "Pricing & Rates",
+  },
+  {
+    slug: "how-to-set-up-google-workspace-freelancer",
+    title: "How UAE Freelancers Set Up Google Workspace 2026",
+    description:
+      "Step-by-step guide for UAE freelancers setting up Google Workspace: custom email, Drive, Meet, Calendar. Costs in AED and what each plan includes.",
+    date: "July 4, 2026",
+    readTime: "8 min read",
+    category: "Systems & Productivity",
+  },
+  {
+    slug: "how-to-write-freelance-contract-uae",
+    title: "How to Write a Freelance Contract in UAE 2026",
+    description:
+      "How to write a freelance contract in UAE 2026: must-have clauses, legal tips, payment terms, IP ownership, and dispute resolution under UAE law. Practical guide.",
+    date: "July 4, 2026",
+    readTime: "9 min read",
+    category: "Client Work & Proposals",
+  },
+  {
+    slug: "passive-income-ideas-freelancers-uae",
+    title: "7 Passive Income Ideas for UAE Freelancers in 2026",
+    description:
+      "Digital products, courses, affiliate marketing, stock content, ebooks, IP licensing, and micro-SaaS. Real income potential in AED and UAE-specific payment tips.",
+    date: "July 4, 2026",
+    readTime: "7 min read",
+    category: "Tax & Finance",
+  },
+  {
+    slug: "uae-free-zone-comparison-freelancers",
+    title: "UAE Free Zone Comparison for Freelancers 2026",
+    description:
+      "Compare UAE free zones for freelancers 2026: SHAMS vs RAKEZ vs Meydan vs Dubai Media City vs IFZA. Costs, setup process, and which suits your freelance profile.",
+    date: "July 4, 2026",
+    readTime: "10 min read",
+    category: "Visa & Legal",
+  },
+  {
+    slug: "uae-freelance-permit-cancellation-guide",
+    title: "How to Cancel a UAE Freelance Permit — Step-by-Step Guide 2026",
+    description:
+      "Cancelling a UAE freelance permit or licence: MOHRE, free zone, and mainland processes, cancellation costs, timelines, and what happens if you do not cancel properly.",
+    date: "July 4, 2026",
+    readTime: "9 min read",
+    category: "Visa & Legal",
+  },
+  {
+    slug: "uae-freelancer-health-insurance-guide",
+    title: "Health Insurance for UAE Freelancers 2026",
+    description:
+      "Health insurance guide for UAE freelancers 2026: mandatory vs optional, Daman, AXA, MSH, cost ranges in AED, and what to look for in a plan.",
+    date: "July 4, 2026",
+    readTime: "10 min read",
+    category: "Tax & Finance",
+  },
+
 ];
 
 export function getPost(slug: string): BlogPost | undefined {
