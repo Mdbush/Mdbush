@@ -23,6 +23,7 @@ const bundleProducts = [
     emoji: "📋",
     name: "Freelancer Client CRM",
     price: 17500,
+    originalPrice: 24900,
     highlight: "Stop tracking clients in WhatsApp",
     keyFeature: "Client pipeline + invoice log + 10 email templates",
   },
@@ -31,6 +32,7 @@ const bundleProducts = [
     emoji: "🚀",
     name: "Solopreneur OS",
     price: 24900,
+    originalPrice: 34900,
     highlight: "Your entire business in one Notion workspace",
     keyFeature: "Revenue dashboard + 90-day planner + content calendar",
   },
@@ -39,6 +41,7 @@ const bundleProducts = [
     emoji: "🤖",
     name: "AI Prompt Pack Pro",
     price: 10900,
+    originalPrice: 14900,
     highlight: "200 prompts for proposals, emails, and content",
     keyFeature: "Works with Claude, ChatGPT, Gemini — copy and paste",
   },
@@ -47,13 +50,17 @@ const bundleProducts = [
     emoji: "📝",
     name: "SOP Starter Pack",
     price: 17500,
+    originalPrice: 24900,
     highlight: "50 plug-in-play systems for your business",
     keyFeature: "Client onboarding, content workflow, finance, delegation",
   },
 ];
 
-const totalPrice = bundleProducts.reduce((sum, p) => sum + p.price, 0);
-const bundlePrice = 70800;
+// "If bought separately" = each product at its regular (pre-launch) price.
+// The bundle collects all four at their current sale prices (AED 708 total),
+// so the saving vs regular pricing is AED 288 — matching the page metadata.
+const totalPrice = bundleProducts.reduce((sum, p) => sum + p.originalPrice, 0);
+const bundlePrice = bundleProducts.reduce((sum, p) => sum + p.price, 0);
 const savings = totalPrice - bundlePrice;
 
 const timeline = [
