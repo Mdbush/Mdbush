@@ -152,7 +152,8 @@ export async function POST(request: Request) {
     }
 
     return NextResponse.json({ ok: true });
-  } catch {
+  } catch (err) {
+    console.error("Subscribe route error:", err);
     return NextResponse.json({ error: "Server error" }, { status: 500 });
   }
 }

@@ -155,6 +155,7 @@ export async function GET(request: Request) {
       await postToLinkedIn(post, linkedInToken);
       results.linkedin = "posted";
     } catch (e) {
+      console.error("LinkedIn post failed:", e);
       results.linkedin = `failed: ${e}`;
     }
   }
@@ -164,6 +165,7 @@ export async function GET(request: Request) {
       await postToFacebook(post, facebookToken);
       results.facebook = "posted";
     } catch (e) {
+      console.error("Facebook post failed:", e);
       results.facebook = `failed: ${e}`;
     }
   }
