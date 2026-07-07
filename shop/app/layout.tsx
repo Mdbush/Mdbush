@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import Link from "next/link";
 import { Geist } from "next/font/google";
 import { Analytics } from "@vercel/analytics/next";
@@ -29,6 +29,12 @@ export const metadata: Metadata = {
     description: "Notion templates, AI prompts & SOPs for freelancers and solopreneurs.",
   },
   verification: { google: "1WaNUPezAWlG0bqkFi4gn9YLZAZsA3mOjjBWtGSs_z0" },
+};
+
+export const viewport: Viewport = {
+  // Matches the dark announcement bar / header so mobile browser chrome blends in.
+  themeColor: "#111827",
+  colorScheme: "light",
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
