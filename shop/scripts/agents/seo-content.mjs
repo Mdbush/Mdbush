@@ -4,8 +4,13 @@
  * which opens a PR with the result for human review (the "hybrid" autonomy model:
  * blog content is low-risk but still reviewed before going live).
  *
+ * If a competitor-intel digest exists (scripts/agents/out/competitor-intel-*.md),
+ * the agent targets its top UNCOVERED keyword gap — closing the loop between the
+ * two agents. Pass --no-gap to ignore it and let the model pick a topic itself.
+ *
  * Usage:
- *   node scripts/agents/seo-content.mjs           # generate one article
+ *   node scripts/agents/seo-content.mjs           # generate one article (gap-driven if a digest exists)
+ *   node scripts/agents/seo-content.mjs --no-gap  # ignore the digest, model picks the topic
  *   node scripts/agents/seo-content.mjs --dry-run # print the plan, call no API
  *
  * Requires ANTHROPIC_API_KEY (except in --dry-run).
@@ -18,8 +23,12 @@ import {
   addToSitemap,
   writeArticle,
 } from "./lib/blog.mjs";
+import { latestGaps } from "./lib/gaps.mjs";
 
 const DRY_RUN = process.argv.includes("--dry-run");
+// --no-gap: ignore the competitor-intel keyword-gap digest and let the model
+// pick its own topic (the pre-loop behaviour).
+const NO_GAP = process.argv.includes("--no-gap");
 
 const ARTICLE_SCHEMA = {
   type: "object",
@@ -175,19 +184,38 @@ ${faq}
 async function main() {
   const slugs = existingSlugs();
   const categories = existingCategories();
+  // Top uncovered keyword gap from the latest competitor-intel digest (if any).
+  const gap = NO_GAP ? undefined : latestGaps(1)[0];
 
   if (DRY_RUN && !hasApiKey()) {
     console.log(`[dry-run] ${slugs.length} existing articles, ${categories.length} categories.`);
-    console.log("[dry-run] Would ask Claude for one new article avoiding existing slugs, then wire it in.");
+    console.log(
+      gap
+        ? `[dry-run] Would target keyword gap "${gap.keyword}" (slug ${gap.slug}) from the latest competitor-intel digest.`
+        : NO_GAP
+        ? "[dry-run] Keyword-gap targeting disabled (--no-gap) — would ask Claude to pick a fresh topic itself."
+        : "[dry-run] No keyword-gap digest found — would ask Claude to pick a fresh topic itself."
+    );
     return;
   }
+
+  const brief = gap
+    ? `A prior competitor-intel run flagged this as the top UNCOVERED keyword gap for SoloKit — write against it:
+- Target keyword / search intent: ${gap.keyword || gap.slug}
+- Suggested slug: ${gap.slug}${gap.why ? `\n- Why it's worth targeting: ${gap.why}` : ""}
+Use the suggested slug (or a close, better kebab-case variant) and make the article rank for that keyword. If that slug turns out to be already covered, pick the next best uncovered UAE/GCC freelance topic instead.`
+    : `Pick ONE high-value SEO topic a UAE/GCC freelancer would search for that is NOT already covered above.`;
 
   const user = `We already publish ${slugs.length} articles. Existing slugs (do NOT duplicate a topic already covered):
 ${slugs.join(", ")}
 
 Existing categories to reuse (pick the best fit): ${categories.join(", ")}
 
-Pick ONE high-value SEO topic a UAE/GCC freelancer would search for that is NOT already covered above, and write a complete, specific, ready-to-publish article. Return JSON only, matching the schema: 6-9 sections with 1-3 short paragraphs each, and 3-5 FAQ entries. The slug must be new and kebab-case. readTime should reflect the length.`;
+${brief}
+
+Write a complete, specific, ready-to-publish article. Return JSON only, matching the schema: 6-9 sections with 1-3 short paragraphs each, and 3-5 FAQ entries. The slug must be new and kebab-case. readTime should reflect the length.`;
+
+  if (gap) console.log(`Targeting keyword gap: "${gap.keyword || gap.slug}" (suggested slug ${gap.slug}).`);
 
   const article = await callClaude({
     system: SYSTEM,
