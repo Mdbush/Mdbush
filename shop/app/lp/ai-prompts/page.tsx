@@ -41,13 +41,17 @@ export default function LandingPage() {
       <main className="max-w-4xl mx-auto px-4 sm:px-6">
 
         {/* Hero */}
-        <section className="bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 text-white px-6 py-14 rounded-2xl mt-8 mb-6 text-center">
+        <section className="relative overflow-hidden bg-gradient-to-br from-gray-950 via-gray-900 to-gray-800 text-white px-6 py-16 rounded-2xl mt-8 mb-6 text-center">
+          <div className="hero-glow animate-float w-72 h-72 bg-emerald-500/25 -top-20 -left-10" />
+          <div className="hero-glow animate-float w-64 h-64 bg-teal-400/20 -bottom-16 -right-8" style={{ animationDelay: "1.5s" }} />
+          <div className="absolute inset-0 bg-dot-grid" />
+          <div className="relative">
           <div className="text-6xl mb-6">🤖</div>
           <div className="inline-block bg-emerald-500 text-white text-xs font-bold px-3 py-1 rounded-full mb-5 uppercase tracking-widest">
             New Release
           </div>
           <h1 className="text-4xl sm:text-5xl font-bold text-white leading-tight max-w-2xl mx-auto mb-5">
-            200 AI prompts that actually work for freelancers
+            200 AI prompts that <span className="text-gradient">actually work</span> for freelancers
           </h1>
           <p className="text-xl text-gray-300 max-w-xl mx-auto leading-relaxed mb-8">
             Stop getting generic outputs. These 200 battle-tested prompts are built for real freelance work —
@@ -69,6 +73,7 @@ export default function LandingPage() {
               <CheckoutButton productSlug="ai-prompt-pack-pro" price={product.price} />
             </div>
             <p className="text-xs text-gray-400">Notion page + PDF download · 30-day money-back</p>
+          </div>
           </div>
         </section>
 
