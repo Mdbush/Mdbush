@@ -82,6 +82,7 @@ const useCases = [
 export default function BlogPostPage() {
   return (
     <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: '[{"@context":"https://schema.org","@type":"BlogPosting","headline":"Best AI Tools for UAE Freelancers in 2026","description":"The best AI tools for UAE freelancers in 2026 — writing, design, productivity, client communication, and finance. Save 5–15 hours per week with the right stack.","datePublished":"2026-07-04","dateModified":"2026-07-04","author":{"@type":"Organization","name":"SoloKit","url":"https://solokit.cloud"},"publisher":{"@type":"Organization","name":"SoloKit","url":"https://solokit.cloud"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://solokit.cloud/blog/freelance-ai-tools-uae"},"url":"https://solokit.cloud/blog/freelance-ai-tools-uae","articleSection":"AI Tools","inLanguage":"en"},{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://solokit.cloud"},{"@type":"ListItem","position":2,"name":"Blog","item":"https://solokit.cloud/blog"},{"@type":"ListItem","position":3,"name":"Best AI Tools for UAE Freelancers in 2026","item":"https://solokit.cloud/blog/freelance-ai-tools-uae"}]}]' }} />
       <Header />
       <main className="min-h-screen bg-white">
         <div className="max-w-3xl mx-auto px-4 py-10">

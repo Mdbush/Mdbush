@@ -57,6 +57,7 @@ const sustainableHabits = [
 export default function BlogPostPage() {
   return (
     <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: '[{"@context":"https://schema.org","@type":"BlogPosting","headline":"Freelance Burnout in UAE: How to Recover and Build a Sustainable Business","description":"Recognize, recover from, and prevent freelance burnout in the UAE. Practical systems for Dubai and Abu Dhabi freelancers to build a sustainable solo business.","datePublished":"2026-07-04","dateModified":"2026-07-04","author":{"@type":"Organization","name":"SoloKit","url":"https://solokit.cloud"},"publisher":{"@type":"Organization","name":"SoloKit","url":"https://solokit.cloud"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://solokit.cloud/blog/freelance-burnout-uae"},"url":"https://solokit.cloud/blog/freelance-burnout-uae","articleSection":"Systems & Productivity","inLanguage":"en"},{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://solokit.cloud"},{"@type":"ListItem","position":2,"name":"Blog","item":"https://solokit.cloud/blog"},{"@type":"ListItem","position":3,"name":"Freelance Burnout in UAE: How to Recover and Build a Sustainable Business","item":"https://solokit.cloud/blog/freelance-burnout-uae"}]}]' }} />
       <Header />
       <main className="min-h-screen bg-white">
         <div className="max-w-3xl mx-auto px-4 py-10">

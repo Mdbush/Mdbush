@@ -73,6 +73,7 @@ const steps = [
 export default function BlogPostPage() {
   return (
     <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: '[{"@context":"https://schema.org","@type":"BlogPosting","headline":"Health Insurance for Freelancers in the UAE (2026 Guide)","description":"UAE freelancers must get their own health insurance — here\'s how. Compare Dubai vs Abu Dhabi requirements, AED costs, best plans, and what happens if you skip it.","datePublished":"2026-06-16","dateModified":"2026-06-16","author":{"@type":"Organization","name":"SoloKit","url":"https://solokit.cloud"},"publisher":{"@type":"Organization","name":"SoloKit","url":"https://solokit.cloud"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://solokit.cloud/blog/freelance-health-insurance-uae"},"url":"https://solokit.cloud/blog/freelance-health-insurance-uae","articleSection":"Tax & Finance","inLanguage":"en"},{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://solokit.cloud"},{"@type":"ListItem","position":2,"name":"Blog","item":"https://solokit.cloud/blog"},{"@type":"ListItem","position":3,"name":"Health Insurance for Freelancers in the UAE (2026 Guide)","item":"https://solokit.cloud/blog/freelance-health-insurance-uae"}]}]' }} />
       <Header />
       <main className="min-h-screen bg-white">
         <div className="max-w-3xl mx-auto px-4 py-10">

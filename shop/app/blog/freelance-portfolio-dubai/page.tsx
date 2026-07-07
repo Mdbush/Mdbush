@@ -75,6 +75,7 @@ const platforms = [
 export default function BlogPostPage() {
   return (
     <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: '[{"@context":"https://schema.org","@type":"BlogPosting","headline":"How to Build a Freelance Portfolio in Dubai With No Clients Yet","description":"Build a credible freelance portfolio in Dubai even with zero clients. Practical strategies for spec work, volunteer projects, and positioning that wins your first UAE clients.","datePublished":"2026-07-04","dateModified":"2026-07-04","author":{"@type":"Organization","name":"SoloKit","url":"https://solokit.cloud"},"publisher":{"@type":"Organization","name":"SoloKit","url":"https://solokit.cloud"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://solokit.cloud/blog/freelance-portfolio-dubai"},"url":"https://solokit.cloud/blog/freelance-portfolio-dubai","articleSection":"Systems & Productivity","inLanguage":"en"},{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://solokit.cloud"},{"@type":"ListItem","position":2,"name":"Blog","item":"https://solokit.cloud/blog"},{"@type":"ListItem","position":3,"name":"How to Build a Freelance Portfolio in Dubai With No Clients Yet","item":"https://solokit.cloud/blog/freelance-portfolio-dubai"}]}]' }} />
       <Header />
       <main className="min-h-screen bg-white">
         <div className="max-w-3xl mx-auto px-4 py-10">

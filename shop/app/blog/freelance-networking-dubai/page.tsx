@@ -57,6 +57,7 @@ const communities = [
 export default function BlogPostPage() {
   return (
     <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: '[{"@context":"https://schema.org","@type":"BlogPosting","headline":"How to Network as a Freelancer in Dubai (Without Being Salesy)","description":"Build a genuine professional network in Dubai as a freelancer. Practical advice on events, LinkedIn, community groups, and turning conversations into clients — without the cringe.","datePublished":"2026-07-04","dateModified":"2026-07-04","author":{"@type":"Organization","name":"SoloKit","url":"https://solokit.cloud"},"publisher":{"@type":"Organization","name":"SoloKit","url":"https://solokit.cloud"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://solokit.cloud/blog/freelance-networking-dubai"},"url":"https://solokit.cloud/blog/freelance-networking-dubai","articleSection":"Getting Clients","inLanguage":"en"},{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://solokit.cloud"},{"@type":"ListItem","position":2,"name":"Blog","item":"https://solokit.cloud/blog"},{"@type":"ListItem","position":3,"name":"How to Network as a Freelancer in Dubai (Without Being Salesy)","item":"https://solokit.cloud/blog/freelance-networking-dubai"}]}]' }} />
       <Header />
       <main className="min-h-screen bg-white">
         <div className="max-w-3xl mx-auto px-4 py-10">
