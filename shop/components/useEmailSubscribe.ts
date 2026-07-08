@@ -1,4 +1,5 @@
 import { useState, type FormEvent } from "react";
+import { track } from "@vercel/analytics";
 
 export type SubscribeStatus = "idle" | "loading" | "success" | "error";
 
@@ -7,8 +8,10 @@ export type SubscribeStatus = "idle" | "loading" | "success" | "error";
  *
  * Owns the email field + request status and POSTs to `/api/subscribe`. Consumers
  * ("use client" components) render the markup; this only handles the submit flow.
+ * `source` tags the `newsletter_signup` analytics event so each form is tracked
+ * separately.
  */
-export function useEmailSubscribe() {
+export function useEmailSubscribe(source: string) {
   const [email, setEmail] = useState("");
   const [status, setStatus] = useState<SubscribeStatus>("idle");
 
@@ -25,6 +28,7 @@ export function useEmailSubscribe() {
       if (res.ok) {
         setStatus("success");
         setEmail("");
+        track("newsletter_signup", { source });
       } else {
         setStatus("error");
       }

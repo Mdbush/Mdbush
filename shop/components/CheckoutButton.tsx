@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, useRef } from "react";
+import { track } from "@vercel/analytics";
 import { formatPrice } from "@/lib/products";
 
 export default function CheckoutButton({
@@ -15,6 +16,8 @@ export default function CheckoutButton({
 
   function handleSubmit() {
     setLoading(true);
+    // Fire-and-forget (sendBeacon) — survives the navigation to Lemon Squeezy.
+    track("checkout_click", { product: productSlug, price });
     // Form submits normally — browser follows the 303 redirect to Lemon Squeezy
   }
 

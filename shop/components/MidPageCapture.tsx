@@ -2,7 +2,7 @@
 import { useEmailSubscribe } from "./useEmailSubscribe";
 
 export default function MidPageCapture() {
-  const { email, setEmail, status, handleSubmit } = useEmailSubscribe();
+  const { email, setEmail, status, handleSubmit } = useEmailSubscribe("mid_page_capture");
 
   if (status === "success") {
     return (

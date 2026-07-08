@@ -2,7 +2,7 @@
 import { useEmailSubscribe } from "./useEmailSubscribe";
 
 export default function EmailCapture() {
-  const { email, setEmail, status, handleSubmit } = useEmailSubscribe();
+  const { email, setEmail, status, handleSubmit } = useEmailSubscribe("email_capture");
 
   return (
     <section className="bg-gradient-to-br from-gray-900 to-gray-800 py-14">
