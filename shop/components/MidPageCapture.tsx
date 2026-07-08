@@ -1,5 +1,6 @@
 "use client";
 import { useState } from "react";
+import { track } from "@vercel/analytics";
 
 export default function MidPageCapture() {
   const [email, setEmail] = useState("");
@@ -18,6 +19,7 @@ export default function MidPageCapture() {
       if (res.ok) {
         setStatus("success");
         setEmail("");
+        track("newsletter_signup", { source: "mid_page_capture" });
       } else {
         setStatus("error");
       }
