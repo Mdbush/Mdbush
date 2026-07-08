@@ -815,4 +815,181 @@ If they say "oh, interesting — do you work with companies like [X]?" you've go
 
 #PersonalBrand #DubaiFreelancer #Freelancing #UAE #SoloKit`,
   },
+  {
+    text: `The cheapest insurance a UAE freelancer can buy: a 50% deposit clause.
+
+Not because clients are dishonest — because projects change, priorities shift, and people get busy.
+
+When a client has paid 50% upfront:
+→ They show up to calls
+→ They give feedback faster
+→ They don't ghost on delivery
+
+If a client won't pay a deposit, that's the contract telling you something.
+
+We put the exact clause in the Contract Kit: solokit.cloud/products/freelance-contract-kit
+
+#FreelanceUAE #GetPaid #Contracts #SoloKit`,
+    theme: "contracts",
+  },
+  {
+    text: `Stop sending one price. Send three.
+
+Freelancers who quote a single number get haggled. Freelancers who offer three tiers get chosen.
+
+→ Essential (the "just enough" option)
+→ Recommended (where you actually want to land)
+→ Complete (the anchor that makes Recommended look sensible)
+
+Most clients pick the middle. So price the middle where you want to be.
+
+The pricing one-pager is in the Proposal Pack: solokit.cloud/products/client-proposal-pack
+
+#FreelanceUAE #Pricing #Proposals #SoloKit`,
+    theme: "pricing",
+  },
+  {
+    text: `~60% of freelance deals close in the follow-up — not the proposal.
+
+Yet most freelancers send a quote and go silent because "just checking in" feels awkward.
+
+The fix: never "check in." Add value instead.
+
+Email 2 in a good sequence says: "While this is on your desk, one idea — [a specific, useful suggestion for their problem]."
+
+That's not chasing. That's demonstrating what working with you feels like.
+
+#FreelanceUAE #ClientAcquisition #Proposals #SoloKit`,
+    theme: "getting clients",
+  },
+  {
+    text: `A UAE freelancer's late-payment escalation that actually works:
+
+Day 0 (due): "Just confirming invoice #X is due today."
+Day 7: "Invoice #X is 7 days overdue — can you confirm an ETA?"
+Day 14: "Per our contract, a 2% weekly late fee now applies."
+
+Most clients pay at step 1 or 2. Step 3 is for the ones who need to see the clause exists.
+
+Which is why the clause has to exist before you send the first invoice.
+
+#FreelanceUAE #GetPaid #Invoicing #SoloKit`,
+    theme: "admin",
+  },
+  {
+    text: `If you do something more than twice, write it down.
+
+The 5 systems that save UAE freelancers the most time:
+1. Client onboarding (first 72 hours)
+2. Proposal → contract → deposit
+3. Revision handling
+4. Invoice + follow-up
+5. Project closeout + testimonial
+
+Documented once, these run without you thinking. Undocumented, every project starts from zero.
+
+#FreelanceUAE #SOPs #Productivity #SoloKit`,
+    theme: "systems",
+  },
+  {
+    text: `Your freelance rate has a ceiling you can't see.
+
+It's your hourly rate × your available hours. At AED 150/hr × 25 hrs × 48 weeks, that's AED 180K/year — hard stop.
+
+You don't break it by working more. You break it by changing the model:
+→ Raise the rate
+→ Sell packages, not hours
+→ Build a product
+→ Subcontract and take a margin
+
+Most freelancers plateau for years without realising the ceiling is a business-model problem, not an effort problem.
+
+#FreelanceUAE #BusinessModel #Solopreneur #SoloKit`,
+    theme: "mindset",
+  },
+  {
+    text: `The discovery call is where the deal is won — before the proposal exists.
+
+Four questions that qualify a UAE client fast:
+1. "What does success look like 90 days after this is done?"
+2. "What's this costing you today?"
+3. "Is there a budget range you're working within?"
+4. "Who else is involved in the decision?"
+
+Answer these and your proposal writes itself. Skip them and you're guessing.
+
+#FreelanceUAE #Sales #Proposals #SoloKit`,
+    theme: "getting clients",
+  },
+  {
+    text: `Scope creep isn't a client problem. It's a documentation problem.
+
+If your agreement lists what's IN scope — and explicitly what's OUT — every "quick extra" has somewhere to go: a change request with a price.
+
+"Happy to add that. Here's the change request — AED [X], adds [Y] days."
+
+You didn't say no. You made scope a decision, not an assumption.
+
+#FreelanceUAE #Contracts #ScopeCreep #SoloKit`,
+    theme: "admin",
+  },
+  {
+    text: `The 3-sentence brief that saves 10 hours of revisions:
+
+Before you start any project, send:
+"Before I begin, confirming my understanding —
+[the problem you're solving]
+[what the deliverable looks like]
+[how success is measured]
+Does this match what you expect?"
+
+Two minutes to write. Saves a week of "that's not what I meant."
+
+#FreelanceUAE #FreelanceTips #ClientWork #SoloKit`,
+    theme: "productivity",
+  },
+  {
+    text: `The fastest way to grow freelance income in the UAE isn't new clients.
+
+It's keeping the ones you have.
+
+A client who pays AED 10K once is worth AED 50K+ over two years if you:
+→ Deliver great work
+→ Follow up 3 months later
+→ Offer a retainer or next phase
+→ Ask for a referral
+
+Most freelancers spend 80% of their energy on acquisition and 20% on retention. Flip it.
+
+#FreelanceUAE #ClientRetention #Retainers #SoloKit`,
+    theme: "retention",
+  },
+  {
+    text: `"I do social media" → you compete with everyone.
+"I do LinkedIn content for B2B SaaS in the UAE" → you're the obvious choice.
+
+Niching down feels risky. It's actually your fastest path to higher rates:
+→ Proposals take 20 minutes, not 2 hours
+→ Referrals happen naturally
+→ Your content attracts exactly the right clients
+
+The niche doesn't need to be tiny. It needs to be specific enough that the right client sees themselves in it.
+
+#FreelanceUAE #Positioning #DubaiFreelancer #SoloKit`,
+    theme: "positioning",
+  },
+  {
+    text: `AED 300/hour is not AED 300/hour of income.
+
+Before you set a UAE freelance rate, subtract:
+→ Unpaid holidays
+→ Health insurance (~AED 400/mo)
+→ Freelance permit + visa (averaged monthly)
+→ A 15% buffer for slow months
+
+To take home AED 20K/month, you often need to bill closer to AED 26K. Price for the business, not just the hour.
+
+#FreelanceUAE #FreelanceRates #Finance #SoloKit`,
+    theme: "finance",
+  },
 ];
