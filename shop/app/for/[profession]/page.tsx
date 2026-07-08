@@ -88,6 +88,128 @@ const professions: Record<string, ProfessionData> = {
     metaDescription:
       "CRM, proposal prompts, and SOP templates built for UAE freelance designers. Track clients, projects, and invoices in AED. Instant download.",
   },
+  writers: {
+    slug: "writers",
+    name: "writer",
+    namePlural: "writers",
+    headline: "Tools Built for Freelance Writers in the UAE",
+    subheadline:
+      "Copywriters, content writers, and ghostwriters: stop losing pitches to silence and getting paid late. Win the client, sign the deal, and run the whole thing in AED.",
+    painPoints: [
+      "Sending pitches and proposals that go quiet",
+      "Getting paid 30–60 days late — or chasing forever",
+      "Endless 'small tweaks' that were never in scope",
+      "Rewriting the same onboarding and brief emails every time",
+      "Quoting per word when you should be quoting per outcome",
+    ],
+    products: [
+      {
+        slug: "client-proposal-pack",
+        emoji: "🎯",
+        name: "Client Proposal Pack",
+        price: "AED 129",
+        why: "A proposal template, discovery-call script, tiered pricing one-pager, and a 3-email follow-up sequence — the exact system that turns 'let me think about it' into a signed writing project.",
+      },
+      {
+        slug: "ai-prompt-pack-pro",
+        emoji: "🤖",
+        name: "AI Prompt Pack Pro",
+        price: "AED 109",
+        why: "200 prompts for briefs, outlines, edits, and client emails. Use AI as a drafting layer while keeping your voice — produce more, faster, without sounding like a robot.",
+      },
+      {
+        slug: "freelance-contract-kit",
+        emoji: "📑",
+        name: "Freelance Contract Kit",
+        price: "AED 149",
+        why: "A service agreement with a 50% deposit clause, a scope + change-request template, and a late-fee library. Get paid on time and stop absorbing unpaid revisions.",
+      },
+      {
+        slug: "freelancer-client-crm",
+        emoji: "📋",
+        name: "Freelancer Client CRM",
+        price: "AED 175",
+        why: "Every client, draft, deadline, and invoice in one Notion workspace. Never lose a pitch in your inbox or forget an unpaid invoice again.",
+      },
+    ],
+    relatedGuides: [
+      { slug: "freelance-writer-rates-uae", title: "Freelance Writer Rates in the UAE (2026): What to Charge", time: "8 min" },
+      { slug: "freelance-copywriter-rates-uae", title: "Freelance Copywriter Rates in the UAE", time: "7 min" },
+      { slug: "how-to-write-freelance-proposal-uae", title: "How to Write a Freelance Proposal That Wins Clients", time: "7 min" },
+      { slug: "how-to-value-based-pricing-uae", title: "Value-Based Pricing for UAE Freelancers", time: "8 min" },
+      { slug: "freelance-contract-template-uae", title: "Freelance Contract Template for the UAE", time: "7 min" },
+      { slug: "how-to-get-clients-linkedin-uae", title: "How to Get Freelance Clients on LinkedIn (UAE)", time: "8 min" },
+    ],
+    testimonial: {
+      quote: "Rewrote my proposal with the template and closed a retainer the same week. It sells the outcome, not the word count — and the follow-up sequence does the chasing for me.",
+      author: "Layla H.",
+      role: "Freelance copywriter, Dubai",
+    },
+    metaTitle: "Tools & Templates for Freelance Writers in the UAE — SoloKit",
+    metaDescription:
+      "Proposal, contract, AI prompt, and CRM templates for UAE freelance writers and copywriters. Win clients, get paid on time, price in AED. Instant download.",
+  },
+  "video-editors": {
+    slug: "video-editors",
+    name: "video editor",
+    namePlural: "video editors",
+    headline: "Tools Built for Freelance Video Editors in the UAE",
+    subheadline:
+      "Editors and videographers: stop drowning in unpaid revision rounds and vague briefs. Lock the scope, collect the deposit, and run every project in AED.",
+    painPoints: [
+      "Endless revision rounds that were never priced in",
+      "Clients delivering footage late but expecting the same deadline",
+      "Handing over the final export before getting paid in full",
+      "No deposit, so projects stall halfway with your time already spent",
+      "Re-explaining your review-and-delivery process on every job",
+    ],
+    products: [
+      {
+        slug: "freelance-contract-kit",
+        emoji: "📑",
+        name: "Freelance Contract Kit",
+        price: "AED 149",
+        why: "A service agreement that caps revisions in writing, a 50% deposit clause, and an 'IP transfers on full payment' clause — so you never hand over the final cut before you're paid.",
+      },
+      {
+        slug: "client-proposal-pack",
+        emoji: "🎯",
+        name: "Client Proposal Pack",
+        price: "AED 129",
+        why: "A discovery script and tiered-pricing one-pager that packages your edit tiers (from a simple cut to full colour + sound) so clients choose a package instead of haggling per hour.",
+      },
+      {
+        slug: "freelancer-client-crm",
+        emoji: "📋",
+        name: "Freelancer Client CRM",
+        price: "AED 175",
+        why: "Track every project, footage-delivery date, revision round, and invoice in one Notion workspace. Know exactly what's owed and what's overdue.",
+      },
+      {
+        slug: "sop-starter-pack",
+        emoji: "📝",
+        name: "SOP Starter Pack",
+        price: "AED 175",
+        why: "Document your intake, review, and delivery process once — so clients know exactly how revisions and handover work, and every project runs the same clean way.",
+      },
+    ],
+    relatedGuides: [
+      { slug: "freelance-video-editor-rates-uae", title: "Freelance Video Editor Rates in the UAE (2026)", time: "8 min" },
+      { slug: "freelance-videographer-rates-uae", title: "Freelance Videographer Rates in the UAE", time: "7 min" },
+      { slug: "freelance-photographer-videographer-package-uae", title: "Photography & Videography Packages That Sell (UAE)", time: "7 min" },
+      { slug: "freelance-contract-template-uae", title: "Freelance Contract Template for the UAE", time: "7 min" },
+      { slug: "freelance-rate-calculator-uae", title: "Freelance Rate Calculator: How Much Should You Charge?", time: "8 min" },
+      { slug: "client-onboarding-freelance-uae", title: "Client Onboarding Process for UAE Freelancers", time: "6 min" },
+    ],
+    testimonial: {
+      quote: "The revision cap and deposit clause ended the free-work spiral. Clients respect the process now, and I get paid before the final export leaves my drive.",
+      author: "Omar F.",
+      role: "Freelance video editor, Dubai",
+    },
+    metaTitle: "Tools & Templates for Freelance Video Editors in the UAE — SoloKit",
+    metaDescription:
+      "Contract, proposal, CRM, and SOP templates for UAE freelance video editors and videographers. Cap revisions, collect deposits, price in AED. Instant download.",
+  },
   developers: {
     slug: "developers",
     name: "developer",
