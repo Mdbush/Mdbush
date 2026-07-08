@@ -98,6 +98,28 @@ export const products: Product[] = [
     ],
     category: "SOPs & Systems",
   },
+  {
+    id: "5",
+    slug: "freelance-contract-kit",
+    name: "Freelance Contract Kit",
+    tagline: "Contracts that actually get you paid — built for UAE freelancers.",
+    description:
+      "A pack of ready-to-use contract templates for UAE and GCC freelancers: service agreement, scope of work, retainer agreement, NDA, and a late-payment/deposit clause library. Plain-English, editable in Google Docs or Word, with the 50% upfront and late-fee terms that get you paid on time.",
+    price: 14900,
+    originalPrice: 24900,
+    lemonSqueezyVariantId: process.env.LS_VARIANT_CONTRACT_KIT ?? "",
+    emoji: "📑",
+    features: [
+      "Freelance service agreement (fixed-price & hourly)",
+      "Scope of work + change-request template",
+      "Monthly retainer agreement",
+      "One-way & mutual NDA",
+      "Deposit, late-fee & kill-fee clause library",
+      "Editable Google Docs + Word — no lawyer needed",
+    ],
+    category: "Legal & Contracts",
+    badge: "New",
+  },
 ];
 
 export function getProduct(slug: string): Product | undefined {
