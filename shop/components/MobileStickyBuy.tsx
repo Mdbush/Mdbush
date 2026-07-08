@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, useEffect, useRef } from "react";
+import { track } from "@vercel/analytics";
 import { formatPrice } from "@/lib/products";
 
 export default function MobileStickyBuy({
@@ -31,6 +32,7 @@ export default function MobileStickyBuy({
 
   function handleSubmit() {
     setLoading(true);
+    track("checkout_click", { product: productSlug, price, source: "mobile_sticky" });
   }
 
   return (
