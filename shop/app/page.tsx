@@ -197,6 +197,8 @@ export default function Home() {
                 { label: "Marketers", href: "/for/marketers" },
                 { label: "Consultants", href: "/for/consultants" },
                 { label: "Coaches", href: "/for/coaches" },
+                { label: "Writers", href: "/for/writers" },
+                { label: "Video Editors", href: "/for/video-editors" },
               ].map((item) => (
                 <Link
                   key={item.href}
