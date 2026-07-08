@@ -23,13 +23,14 @@ There are two top-level directories:
 
 ## `products/` — the sellable content
 
-Static source files for the four products. Each product exists as a Markdown
+Static source files for the products. Each product exists as a Markdown
 master and a generated PDF:
 
 - `ai-prompt-pack-pro.md` / `.pdf`
 - `freelancer-client-crm.md` / `.pdf`
 - `solopreneur-os.md` / `.pdf`
 - `sop-starter-pack.md` / `.pdf`
+- `freelance-contract-kit.md` (PDF to be generated)
 
 These are the deliverables customers receive (fulfilled via Lemon Squeezy, not
 served by the app). Editing them does not affect the website. There is no
