@@ -83,6 +83,18 @@ export default async function ProductPage({ params }: Props) {
       { q: "Can I customize the SOPs for my business?", a: "Yes — the templates are a starting structure. Rename them, add your specific steps, remove what doesn't apply." },
       { q: "I'm a solo operator with no team. Are SOPs still useful?", a: "Yes — SOPs are for you as much as for your team. They help you stay consistent and eventually delegate without long explanations." },
     ],
+    "freelance-contract-kit": [
+      { q: "Are these contracts valid in the UAE?", a: "They're written as general freelance agreements suitable for UAE and GCC work, in plain English. They're editable templates, not jurisdiction-specific legal advice — for a high-value or disputed contract, have a UAE lawyer review your final version." },
+      { q: "What format do they come in?", a: "Editable Google Docs and Microsoft Word files. Fill in the bracketed placeholders, then export to PDF and send for signature." },
+      { q: "Do I need a lawyer to use them?", a: "No — that's the point. The templates are ready to use with your details filled in. They cover the essentials most freelancers need without the legal bill." },
+      { q: "What's actually included?", a: "A freelance service agreement (fixed-price and hourly), a scope-of-work + change-request template, a monthly retainer agreement, one-way and mutual NDAs, and a clause library for deposits, late fees, and kill fees." },
+    ],
+    "client-proposal-pack": [
+      { q: "What's in the pack?", a: "A proposal template, a discovery-call script with qualifying questions, a pricing & packages one-pager, cold and warm pitch email templates, and a 3-email follow-up sequence." },
+      { q: "What format is it in?", a: "Editable Google Docs plus a Notion version. Fill in the placeholders with your client's details and your pricing, then export to PDF and send." },
+      { q: "Will this work for my type of freelance work?", a: "Yes — the frameworks are service-agnostic. Designers, developers, marketers, consultants, and coaches all use the same problem → outcome → price structure." },
+      { q: "How is this different from the Contract Kit?", a: "The Proposal Pack wins the client (pitch, proposal, follow-up). The Contract Kit protects the deal once they say yes (agreements, deposits, scope). They work best together." },
+    ],
   };
 
   const productFaqs = faqsMap[slug];
@@ -124,6 +136,18 @@ export default async function ProductPage({ params }: Props) {
       { quote: "The client offboarding SOP alone saved an awkward ending with a long-term client. Professional and clean.", author: "Yasmin A.", role: "Graphic designer, Abu Dhabi" },
       { quote: "I could finally delegate to my VA without spending 3 hours explaining everything. The SOPs did the work for me.", author: "Ryan C.", role: "Ecommerce consultant, Dubai" },
     ],
+    "freelance-contract-kit": [
+      { quote: "The 50% upfront clause changed everything. Clients pay the deposit and suddenly they respect the timeline. No more chasing.", author: "Hana M.", role: "Brand designer, Dubai" },
+      { quote: "Used the service agreement for a AED 30K project. When the client tried to add scope, the change-request template did the talking for me.", author: "Bilal R.", role: "Web developer, Abu Dhabi" },
+      { quote: "I used to work without contracts because lawyers are expensive. This kit gave me professional agreements in an afternoon.", author: "Sara T.", role: "Marketing consultant, Sharjah" },
+      { quote: "The late-fee clause got a 60-day overdue invoice paid in three days. Worth 100x the price.", author: "Omar F.", role: "Video producer, Dubai" },
+    ],
+    "client-proposal-pack": [
+      { quote: "Rewrote my proposal with this template and closed a AED 45K retainer the same week. It sells the outcome, not the hours.", author: "Layla H.", role: "Growth consultant, Dubai" },
+      { quote: "The follow-up sequence alone is gold. Two 'dead' leads replied and one signed — from emails I'd never have written.", author: "Yousef K.", role: "Web developer, Abu Dhabi" },
+      { quote: "The pricing one-pager with three tiers doubled my average project size. Clients pick the middle option every time.", author: "Mira S.", role: "Brand strategist, Sharjah" },
+      { quote: "I used to wing discovery calls. The script makes me sound senior and qualifies out the tyre-kickers fast.", author: "Adib N.", role: "UX designer, Dubai" },
+    ],
   };
 
   const testimonials = testimonialMap[slug] ?? [
@@ -150,6 +174,16 @@ export default async function ProductPage({ params }: Props) {
       { step: "1", title: "Duplicate or open in Docs", desc: "Get instant access to the Notion template and Google Docs folder. Choose whichever format you use daily." },
       { step: "2", title: "Customise for your business", desc: "Rename the SOPs, add your specific steps, remove what doesn't apply. Most people customise 10–15 SOPs actively." },
       { step: "3", title: "Share with your team or VA", desc: "Share the Notion page or Docs folder. Your VA or team member has full instructions — no more lengthy briefings." },
+    ],
+    "freelance-contract-kit": [
+      { step: "1", title: "Download the templates", desc: "Get the full kit instantly as editable Google Docs and Word files — service agreement, SOW, retainer, NDA, and the clause library." },
+      { step: "2", title: "Fill in your details", desc: "Replace the bracketed placeholders with your name, rates, payment terms, and project scope. Every clause is plain English." },
+      { step: "3", title: "Send and get signed", desc: "Export to PDF, send for e-signature, and collect your 50% deposit before you start. You're protected from day one." },
+    ],
+    "client-proposal-pack": [
+      { step: "1", title: "Run the discovery call", desc: "Use the script and qualifying questions to uncover the client's real problem, budget, and decision process before you quote." },
+      { step: "2", title: "Drop your details into the template", desc: "Swap the placeholders for their problem, your outcome, and your three pricing tiers. Ten minutes, not two hours." },
+      { step: "3", title: "Send, then follow up on autopilot", desc: "Send the proposal, then work the 3-email follow-up sequence. Most deals close on email two or three." },
     ],
   };
 
@@ -183,6 +217,20 @@ export default async function ProductPage({ params }: Props) {
       "Anyone who has onboarded a client differently every single time",
       "Business owners planning to scale or delegate",
       "Solopreneurs who want to stop being the bottleneck",
+    ],
+    "freelance-contract-kit": [
+      "Freelancers who still work on a verbal 'yes' with no contract",
+      "Anyone who has been paid late — or not at all",
+      "Consultants who keep getting hit with unpaid scope creep",
+      "Freelancers moving from small gigs to AED 10K+ projects",
+      "Solo operators who can't justify a lawyer for every deal",
+    ],
+    "client-proposal-pack": [
+      "Freelancers whose proposals go quiet and never close",
+      "Anyone still quoting a flat hourly rate with no packages",
+      "Consultants who dread writing proposals from scratch",
+      "Freelancers who never follow up after sending a quote",
+      "Solo operators who want to raise their average project size",
     ],
   };
 
@@ -373,6 +421,18 @@ export default async function ProductPage({ params }: Props) {
               { q: "I'm a solo operator with no team. Are SOPs still useful?", a: "Yes — SOPs are for you as much as for your team. They help you stay consistent, onboard clients properly, and eventually delegate without long explanations." },
               { q: "What if I only need some of the SOPs?", a: "Use whatever applies to your situation. You're buying all 50, but you might only ever use 10-15 actively. That's completely normal." },
             ],
+            "freelance-contract-kit": [
+              { q: "Are these contracts valid in the UAE?", a: "They're written as general freelance agreements suitable for UAE and GCC work, in plain English. They're editable templates, not jurisdiction-specific legal advice — for a high-value or disputed contract, have a UAE lawyer review your final version." },
+              { q: "What format do they come in?", a: "Editable Google Docs and Microsoft Word files. Fill in the bracketed placeholders, then export to PDF and send for signature." },
+              { q: "Do I need a lawyer to use them?", a: "No — that's the point. The templates are ready to use once you fill in your details, covering the essentials most freelancers need without the legal bill." },
+              { q: "What's included?", a: "A freelance service agreement (fixed-price and hourly), a scope-of-work + change-request template, a monthly retainer agreement, one-way and mutual NDAs, and a clause library for deposits, late fees, and kill fees." },
+            ],
+            "client-proposal-pack": [
+              { q: "What's in the pack?", a: "A proposal template, a discovery-call script with qualifying questions, a pricing & packages one-pager, cold and warm pitch email templates, and a 3-email follow-up sequence." },
+              { q: "What format is it in?", a: "Editable Google Docs plus a Notion version. Fill in the placeholders with your client's details and pricing, then export to PDF and send." },
+              { q: "Will this work for my type of freelance work?", a: "Yes — the frameworks are service-agnostic. Designers, developers, marketers, consultants, and coaches all use the same problem → outcome → price structure." },
+              { q: "How is this different from the Contract Kit?", a: "The Proposal Pack wins the client; the Contract Kit protects the deal once they say yes. They work best together." },
+            ],
           };
           const productFaqs = faqs[product.slug];
           if (!productFaqs) return null;
@@ -436,6 +496,16 @@ export default async function ProductPage({ params }: Props) {
               title: "Best SOP Templates for Freelancers and Online Businesses",
               slug: "sop-templates-freelancers-online-business",
               desc: "The 4 SOP categories every freelancer needs, and the most important one most skip.",
+            },
+            "freelance-contract-kit": {
+              title: "Freelance Contract Template for the UAE",
+              slug: "freelance-contract-template-uae",
+              desc: "What every UAE freelance contract needs — deposits, scope, late fees, and IP.",
+            },
+            "client-proposal-pack": {
+              title: "How to Write a Freelance Proposal That Wins (UAE)",
+              slug: "freelance-proposal-template-uae",
+              desc: "The problem → outcome → price structure that turns enquiries into signed clients.",
             },
           };
           const post = relatedPost[product.slug];

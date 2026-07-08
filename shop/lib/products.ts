@@ -98,6 +98,50 @@ export const products: Product[] = [
     ],
     category: "SOPs & Systems",
   },
+  {
+    id: "5",
+    slug: "freelance-contract-kit",
+    name: "Freelance Contract Kit",
+    tagline: "Contracts that actually get you paid — built for UAE freelancers.",
+    description:
+      "A pack of ready-to-use contract templates for UAE and GCC freelancers: service agreement, scope of work, retainer agreement, NDA, and a late-payment/deposit clause library. Plain-English, editable in Google Docs or Word, with the 50% upfront and late-fee terms that get you paid on time.",
+    price: 14900,
+    originalPrice: 24900,
+    lemonSqueezyVariantId: process.env.LS_VARIANT_CONTRACT_KIT ?? "",
+    emoji: "📑",
+    features: [
+      "Freelance service agreement (fixed-price & hourly)",
+      "Scope of work + change-request template",
+      "Monthly retainer agreement",
+      "One-way & mutual NDA",
+      "Deposit, late-fee & kill-fee clause library",
+      "Editable Google Docs + Word — no lawyer needed",
+    ],
+    category: "Legal & Contracts",
+    badge: "New",
+  },
+  {
+    id: "6",
+    slug: "client-proposal-pack",
+    name: "Client Proposal Pack",
+    tagline: "Win more clients with proposals that sell for you.",
+    description:
+      "Everything you need to turn enquiries into signed clients: a winning proposal template, a discovery-call script, a pricing & packages one-pager, a cold/warm pitch email, and a 3-email follow-up sequence. Built for UAE and GCC freelancers — AED pricing, outcome-led copy, ready to send today.",
+    price: 12900,
+    originalPrice: 19900,
+    lemonSqueezyVariantId: process.env.LS_VARIANT_PROPOSAL_PACK ?? "",
+    emoji: "🎯",
+    features: [
+      "Winning proposal template (problem → outcome → price)",
+      "Discovery-call script + qualifying questions",
+      "Pricing & packages one-pager (anchor + 3 tiers)",
+      "Cold & warm pitch email templates",
+      "3-email follow-up sequence that closes stalled deals",
+      "Editable Google Docs + Notion — fill in and send",
+    ],
+    category: "Client Acquisition",
+    badge: "New",
+  },
 ];
 
 export function getProduct(slug: string): Product | undefined {
