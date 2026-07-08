@@ -120,6 +120,28 @@ export const products: Product[] = [
     category: "Legal & Contracts",
     badge: "New",
   },
+  {
+    id: "6",
+    slug: "client-proposal-pack",
+    name: "Client Proposal Pack",
+    tagline: "Win more clients with proposals that sell for you.",
+    description:
+      "Everything you need to turn enquiries into signed clients: a winning proposal template, a discovery-call script, a pricing & packages one-pager, a cold/warm pitch email, and a 3-email follow-up sequence. Built for UAE and GCC freelancers — AED pricing, outcome-led copy, ready to send today.",
+    price: 12900,
+    originalPrice: 19900,
+    lemonSqueezyVariantId: process.env.LS_VARIANT_PROPOSAL_PACK ?? "",
+    emoji: "🎯",
+    features: [
+      "Winning proposal template (problem → outcome → price)",
+      "Discovery-call script + qualifying questions",
+      "Pricing & packages one-pager (anchor + 3 tiers)",
+      "Cold & warm pitch email templates",
+      "3-email follow-up sequence that closes stalled deals",
+      "Editable Google Docs + Notion — fill in and send",
+    ],
+    category: "Client Acquisition",
+    badge: "New",
+  },
 ];
 
 export function getProduct(slug: string): Product | undefined {
