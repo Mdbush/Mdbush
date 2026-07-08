@@ -1,67 +1,39 @@
 import Link from "next/link";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
-import { formatPrice } from "@/lib/products";
+import { products, formatPrice } from "@/lib/products";
 import type { Metadata } from "next";
 
+// The bundle IS the whole catalogue — derive everything from lib/products so the
+// product list, prices, and savings never drift when a product is added.
+const bundleProducts = products.map((p) => ({
+  slug: p.slug,
+  emoji: p.emoji,
+  name: p.name,
+  price: p.price,
+  originalPrice: p.originalPrice ?? p.price,
+  highlight: p.tagline,
+  keyFeature: p.features[0],
+}));
+
+// "If bought separately" = each product at its regular (pre-launch) price; the
+// bundle collects them at their current sale prices.
+const totalPrice = bundleProducts.reduce((sum, p) => sum + p.originalPrice, 0);
+const bundlePrice = bundleProducts.reduce((sum, p) => sum + p.price, 0);
+const savings = totalPrice - bundlePrice;
+const productCount = bundleProducts.length;
+
 export const metadata: Metadata = {
-  title: "Complete SoloKit Bundle — All 4 Products for AED 708",
-  description:
-    "Get the Freelancer CRM, Solopreneur OS, AI Prompt Pack, and SOP Starter Pack in one complete toolkit. Everything a UAE freelancer needs to run a professional business — save AED 288.",
+  title: `Complete SoloKit Bundle — All ${productCount} Products for ${formatPrice(bundlePrice)}`,
+  description: `Get all ${productCount} SoloKit products in one complete toolkit — everything a UAE freelancer needs to run a professional business. Save ${formatPrice(savings)} vs buying separately.`,
   alternates: { canonical: "/bundle" },
   openGraph: {
-    title: "Complete SoloKit Bundle — All 4 Products",
-    description: "Everything a UAE freelancer needs to run a professional business. Save AED 288.",
+    title: `Complete SoloKit Bundle — All ${productCount} Products`,
+    description: `Everything a UAE freelancer needs to run a professional business. Save ${formatPrice(savings)}.`,
     url: "/bundle",
     type: "website",
   },
 };
-
-const bundleProducts = [
-  {
-    slug: "freelancer-client-crm",
-    emoji: "📋",
-    name: "Freelancer Client CRM",
-    price: 17500,
-    originalPrice: 24900,
-    highlight: "Stop tracking clients in WhatsApp",
-    keyFeature: "Client pipeline + invoice log + 10 email templates",
-  },
-  {
-    slug: "solopreneur-os",
-    emoji: "🚀",
-    name: "Solopreneur OS",
-    price: 24900,
-    originalPrice: 34900,
-    highlight: "Your entire business in one Notion workspace",
-    keyFeature: "Revenue dashboard + 90-day planner + content calendar",
-  },
-  {
-    slug: "ai-prompt-pack-pro",
-    emoji: "🤖",
-    name: "AI Prompt Pack Pro",
-    price: 10900,
-    originalPrice: 14900,
-    highlight: "200 prompts for proposals, emails, and content",
-    keyFeature: "Works with Claude, ChatGPT, Gemini — copy and paste",
-  },
-  {
-    slug: "sop-starter-pack",
-    emoji: "📝",
-    name: "SOP Starter Pack",
-    price: 17500,
-    originalPrice: 24900,
-    highlight: "50 plug-in-play systems for your business",
-    keyFeature: "Client onboarding, content workflow, finance, delegation",
-  },
-];
-
-// "If bought separately" = each product at its regular (pre-launch) price.
-// The bundle collects all four at their current sale prices (AED 708 total),
-// so the saving vs regular pricing is AED 288 — matching the page metadata.
-const totalPrice = bundleProducts.reduce((sum, p) => sum + p.originalPrice, 0);
-const bundlePrice = bundleProducts.reduce((sum, p) => sum + p.price, 0);
-const savings = totalPrice - bundlePrice;
 
 const timeline = [
   { day: "Day 1", action: "Set up the CRM", result: "All your clients and leads in one place — done in 20 minutes" },
@@ -91,7 +63,7 @@ export default function BundlePage() {
               Everything you need to run a <span className="text-gradient">professional freelance business</span>
             </h1>
             <p className="text-lg text-gray-300 max-w-2xl mx-auto leading-relaxed mb-6">
-              Get all 4 SoloKit products — the CRM, OS, AI prompts, and SOPs — at launch pricing.
+              Get all {productCount} SoloKit products at launch pricing.
               Together they replace 5+ tools you&apos;d otherwise pay monthly for.
             </p>
             <div className="inline-flex items-center gap-4 bg-white/10 border border-white/20 rounded-2xl px-6 py-4 mb-8">
@@ -127,7 +99,7 @@ export default function BundlePage() {
               <span className="w-1 h-7 bg-emerald-500 rounded-full inline-block shrink-0"></span>
               What you get
             </h2>
-            <p className="text-gray-500 text-sm">4 products · Instant delivery · Lifetime access · 30-day guarantee</p>
+            <p className="text-gray-500 text-sm">{productCount} products · Instant delivery · Lifetime access · 30-day guarantee</p>
           </div>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-5 mb-12">
@@ -185,7 +157,7 @@ export default function BundlePage() {
             <span className="text-xs font-bold text-emerald-400 uppercase tracking-widest block mb-3">SoloKit</span>
             <h3 className="text-xl font-bold mb-2">Ready to get the full stack?</h3>
             <p className="text-gray-400 text-sm mb-6 max-w-md mx-auto">
-              Add all 4 products to your library. Each is a one-time payment — no subscriptions, no renewal fees.
+              Add all {productCount} products to your library. Each is a one-time payment — no subscriptions, no renewal fees.
             </p>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 max-w-xl mx-auto mb-6">
               {bundleProducts.map((p) => (
