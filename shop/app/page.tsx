@@ -3,7 +3,7 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import ProductCard from "@/components/ProductCard";
 import EmailCapture from "@/components/EmailCapture";
-import { products } from "@/lib/products";
+import { products, formatPrice } from "@/lib/products";
 
 const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? "https://solokit.cloud";
 
@@ -60,6 +60,11 @@ const faqJsonLd = {
 };
 
 export default function Home() {
+  // Complete-stack figures, derived from the catalogue so they never go stale.
+  const bundleTotal = products.reduce((sum, p) => sum + p.price, 0);
+  const bundleFullPrice = products.reduce((sum, p) => sum + (p.originalPrice ?? p.price), 0);
+  const bundleSavings = bundleFullPrice - bundleTotal;
+
   return (
     <>
       <script
@@ -212,23 +217,18 @@ export default function Home() {
               Complete Stack
             </span>
             <h2 className="text-2xl sm:text-3xl font-bold mb-3">
-              Get all 4 products — save AED 288
+              Get all {products.length} products — save {formatPrice(bundleSavings)}
             </h2>
             <p className="text-gray-300 mb-6 leading-relaxed text-sm max-w-xl mx-auto">
-              The Freelancer CRM, Solopreneur OS, AI Prompt Pack, and SOP Pack work better together.
-              At launch prices, you get everything for <strong className="text-white">AED 708</strong> — down from AED 996 at full price.
+              Every SoloKit product works better together. At launch prices you get all{" "}
+              {products.length} for <strong className="text-white">{formatPrice(bundleTotal)}</strong> — down from {formatPrice(bundleFullPrice)} at full price.
             </p>
-            <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 mb-8 text-sm">
-              {[
-                { emoji: "📋", name: "Client CRM", price: "AED 175" },
-                { emoji: "🚀", name: "Solopreneur OS", price: "AED 249" },
-                { emoji: "🤖", name: "AI Prompts", price: "AED 109" },
-                { emoji: "📝", name: "SOP Pack", price: "AED 175" },
-              ].map((p) => (
-                <div key={p.name} className="bg-white/10 rounded-xl p-3">
+            <div className="grid grid-cols-2 sm:grid-cols-3 gap-3 mb-8 text-sm">
+              {products.map((p) => (
+                <div key={p.id} className="bg-white/10 rounded-xl p-3">
                   <div className="text-2xl mb-1">{p.emoji}</div>
                   <p className="text-xs text-gray-300">{p.name}</p>
-                  <p className="font-bold text-white">{p.price}</p>
+                  <p className="font-bold text-white">{formatPrice(p.price)}</p>
                 </div>
               ))}
             </div>
