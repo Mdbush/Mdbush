@@ -47,8 +47,8 @@ describe("getProduct", () => {
 });
 
 describe("products catalog integrity", () => {
-  it("has exactly five products", () => {
-    expect(products).toHaveLength(5);
+  it("has exactly six products", () => {
+    expect(products).toHaveLength(6);
   });
 
   it("has unique ids and slugs", () => {

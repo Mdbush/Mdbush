@@ -31,6 +31,7 @@ master and a generated PDF:
 - `solopreneur-os.md` / `.pdf`
 - `sop-starter-pack.md` / `.pdf`
 - `freelance-contract-kit.md` (PDF to be generated)
+- `client-proposal-pack.md` (PDF to be generated)
 
 These are the deliverables customers receive (fulfilled via Lemon Squeezy, not
 served by the app). Editing them does not affect the website. There is no
