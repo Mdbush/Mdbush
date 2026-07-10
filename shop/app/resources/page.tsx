@@ -76,7 +76,7 @@ const sections = [
 
 const envVars = [
   { key: "NEXT_PUBLIC_SITE_URL", value: "https://solokit.cloud", status: "required" },
-  { key: "CRON_SECRET", value: "solokit2026secure", status: "required for cron" },
+  { key: "CRON_SECRET", value: "Set in Vercel", status: "required for cron" },
   { key: "BREVO_API_KEY", value: "Set in Vercel", status: "required for email" },
   { key: "LINKEDIN_ACCESS_TOKEN", value: "OAuth token from LinkedIn", status: "required for auto-post" },
   { key: "FACEBOOK_PAGE_ACCESS_TOKEN", value: "Page token from Meta", status: "required for auto-post" },
