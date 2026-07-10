@@ -63,6 +63,23 @@ describe("POST /api/webhook", () => {
     expect(await res.json()).toEqual({ received: true });
   });
 
+  it("acknowledges subscription_cancelled events", async () => {
+    const payload = JSON.stringify({ meta: { event_name: "subscription_cancelled" }, data: { id: "7" } });
+    const res = await POST(makeRequest(payload, sign(payload)));
+    expect(res.status).toBe(200);
+    expect(await res.json()).toEqual({ received: true });
+  });
+
+  it("acknowledges unknown event names without acting on them", async () => {
+    const fetchMock = vi.fn();
+    vi.stubGlobal("fetch", fetchMock);
+    const payload = JSON.stringify({ meta: { event_name: "refund_created" }, data: { id: "8" } });
+    const res = await POST(makeRequest(payload, sign(payload)));
+    expect(res.status).toBe(200);
+    expect(await res.json()).toEqual({ received: true });
+    expect(fetchMock).not.toHaveBeenCalled();
+  });
+
   it("acknowledges even when the body is not valid JSON", async () => {
     const payload = "not-json";
     const res = await POST(makeRequest(payload, sign(payload)));

@@ -13,7 +13,12 @@ export default defineConfig({
     coverage: {
       provider: "v8",
       reporter: ["text", "text-summary"],
-      include: ["lib/**/*.ts", "app/api/**/*.ts"],
+      include: [
+        "lib/**/*.ts",
+        "app/api/**/*.{ts,tsx}",
+        "app/sitemap.ts",
+        "app/robots.ts",
+      ],
     },
   },
 });

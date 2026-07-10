@@ -11,8 +11,9 @@ Quick reference:
 
 ```bash
 npm run dev     # dev server → http://localhost:3000
-npm run build   # production build (primary correctness gate — no tests exist)
+npm run build   # production build (catches type + build errors)
 npm run lint    # ESLint
+npm test        # Vitest unit tests (lib/ + API routes + consistency checks)
 ```
 
 - App Router in `app/`; server components by default, `"use client"` only when needed.

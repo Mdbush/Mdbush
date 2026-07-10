@@ -74,12 +74,16 @@ npm run dev        # local dev server → http://localhost:3000
 npm run build      # production build (also what Vercel runs)
 npm start          # serve the production build
 npm run lint       # ESLint (eslint-config-next, core-web-vitals + typescript)
+npm test           # Vitest (unit tests for lib/ and API routes)
+npm run test:coverage  # Vitest with v8 coverage report
 ```
 
-There is **no test suite** and no test runner configured. Validation before
-committing = `npm run build` (catches type + build errors) and `npm run lint`.
-Always run the build after non-trivial changes because most pages are statically
-generated at build time.
+Tests are **Vitest** (`*.test.ts` colocated with the code they cover — `lib/`
+and `app/api/**`, plus route-config tests like `app/sitemap.test.ts` and the
+blog consistency check in `app/blog/consistency.test.ts`). Validation before
+committing = `npm test`, `npm run lint`, and `npm run build` (catches type +
+build errors). Always run the build after non-trivial changes because most
+pages are statically generated at build time.
 
 ## Directory map (`shop/`)
 
@@ -247,7 +251,6 @@ Copy `shop/.env.local.example` → `shop/.env.local` (never commit it —
 
 - Do not commit `.env.local` or anything matching `.env*` (except the
   `.example` files). `.claude/` is gitignored at the repo root.
-- Run `npm run build` and `npm run lint` (from `shop/`) before committing
-  substantive changes — the build is the primary correctness gate since there
-  are no tests.
+- Run `npm test`, `npm run lint`, and `npm run build` (from `shop/`) before
+  committing substantive changes — CI runs all three on every PR.
 - Only open a pull request when explicitly asked.

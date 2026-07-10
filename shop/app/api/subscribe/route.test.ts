@@ -94,6 +94,37 @@ describe("POST /api/subscribe", () => {
     expect(fetchMock).toHaveBeenCalledTimes(2);
   });
 
+  it("still returns ok when the welcome email request fails on the network", async () => {
+    vi.stubEnv("BREVO_API_KEY", "brevo-key");
+    const fetchMock = vi
+      .fn()
+      .mockResolvedValueOnce({ ok: true, json: async () => ({}) })
+      .mockRejectedValueOnce(new Error("network down"));
+    vi.stubGlobal("fetch", fetchMock);
+
+    const res = await POST(makeRequest({ email: "user@example.com" }));
+    expect(res.status).toBe(200);
+    expect(await res.json()).toEqual({ ok: true });
+  });
+
+  it("still returns ok when Brevo rejects the welcome email", async () => {
+    vi.stubEnv("BREVO_API_KEY", "brevo-key");
+    const fetchMock = vi
+      .fn()
+      .mockResolvedValueOnce({ ok: true, json: async () => ({}) })
+      .mockResolvedValueOnce({
+        ok: false,
+        json: async () => {
+          throw new Error("no body");
+        },
+      });
+    vi.stubGlobal("fetch", fetchMock);
+
+    const res = await POST(makeRequest({ email: "user@example.com" }));
+    expect(res.status).toBe(200);
+    expect(await res.json()).toEqual({ ok: true });
+  });
+
   it("returns 500 when the Brevo contact call fails unexpectedly", async () => {
     vi.stubEnv("BREVO_API_KEY", "brevo-key");
     const fetchMock = vi
