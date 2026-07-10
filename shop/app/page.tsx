@@ -4,8 +4,7 @@ import Footer from "@/components/Footer";
 import ProductCard from "@/components/ProductCard";
 import EmailCapture from "@/components/EmailCapture";
 import { products, formatPrice } from "@/lib/products";
-
-const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? "https://solokit.cloud";
+import { SITE_URL as siteUrl } from "@/lib/site";
 
 const jsonLd = {
   "@context": "https://schema.org",

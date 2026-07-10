@@ -1,10 +1,8 @@
 import { MetadataRoute } from "next";
 import { products } from "@/lib/products";
+import { SITE_URL as base } from "@/lib/site";
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const rawBase = process.env.NEXT_PUBLIC_SITE_URL ?? "";
-  const base = rawBase.startsWith("http") ? rawBase : "https://solokit.cloud";
-
   const productUrls = products.map((p) => ({
     url: `${base}/products/${p.slug}`,
     lastModified: new Date(),

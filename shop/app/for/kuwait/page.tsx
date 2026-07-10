@@ -1,9 +1,8 @@
 import Link from "next/link";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import { SITE_URL as siteUrl } from "@/lib/site";
 import type { Metadata } from "next";
-
-const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? "https://solokit.cloud";
 
 export const metadata: Metadata = {
   title: "SoloKit for Kuwait Freelancers — Freelance Tools & Guides for KWD",

@@ -1,6 +1,6 @@
 import { NextResponse } from "next/server";
-
-const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? "https://solokit.cloud";
+import { SITE_URL } from "@/lib/site";
+import { addBrevoContact, sendBrevoEmail } from "@/lib/brevo";
 
 const welcomeHtml = () => `<!DOCTYPE html>
 <html>
@@ -101,19 +101,10 @@ export async function POST(request: Request) {
     }
 
     // Add contact to list
-    const contactRes = await fetch("https://api.brevo.com/v3/contacts", {
-      method: "POST",
-      headers: {
-        "api-key": apiKey,
-        "Content-Type": "application/json",
-        Accept: "application/json",
-      },
-      body: JSON.stringify({
-        email,
-        listIds: [2],
-        updateEnabled: true,
-        attributes: { SOURCE: "solokit-free-prompts" },
-      }),
+    const contactRes = await addBrevoContact(apiKey, {
+      email,
+      listIds: [2],
+      attributes: { SOURCE: "solokit-free-prompts" },
     });
 
     if (!contactRes.ok) {
@@ -127,20 +118,11 @@ export async function POST(request: Request) {
     }
 
     // Send welcome email with prompts
-    const senderEmail = process.env.BREVO_SENDER_EMAIL ?? "hello@solokit.cloud";
-    const emailRes = await fetch("https://api.brevo.com/v3/smtp/email", {
-      method: "POST",
-      headers: {
-        "api-key": apiKey,
-        "Content-Type": "application/json",
-        Accept: "application/json",
-      },
-      body: JSON.stringify({
-        sender: { name: "SoloKit", email: senderEmail },
-        to: [{ email }],
-        subject: "Your 10 free AI prompts (copy & paste ready)",
-        htmlContent: welcomeHtml(),
-      }),
+    const emailRes = await sendBrevoEmail(apiKey, {
+      senderName: "SoloKit",
+      to: email,
+      subject: "Your 10 free AI prompts (copy & paste ready)",
+      htmlContent: welcomeHtml(),
     }).catch((e) => {
       console.error("Welcome email network error:", e);
       return null;

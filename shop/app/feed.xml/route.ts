@@ -1,10 +1,9 @@
 import { posts } from "@/lib/blog-posts";
+import { SITE_URL as SITE } from "@/lib/site";
 
 // Static RSS 2.0 feed for the blog — generated at build time from the index.
 export const dynamic = "force-static";
 
-const rawBase = process.env.NEXT_PUBLIC_SITE_URL;
-const SITE = rawBase && rawBase.startsWith("http") ? rawBase : "https://solokit.cloud";
 const MAX_ITEMS = 50;
 
 function esc(s: string): string {
