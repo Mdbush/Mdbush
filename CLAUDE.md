@@ -74,12 +74,19 @@ npm run dev        # local dev server → http://localhost:3000
 npm run build      # production build (also what Vercel runs)
 npm start          # serve the production build
 npm run lint       # ESLint (eslint-config-next, core-web-vitals + typescript)
+npm test           # Vitest (unit tests for lib/ and the API routes)
+npm run test:watch # Vitest in watch mode
+npm run test:coverage  # Vitest with V8 coverage report
 ```
 
-There is **no test suite** and no test runner configured. Validation before
-committing = `npm run build` (catches type + build errors) and `npm run lint`.
-Always run the build after non-trivial changes because most pages are statically
-generated at build time.
+Tests are **Vitest** (`vitest.config.ts`), colocated with the code they cover
+(`lib/*.test.ts`, `app/api/**/route.test.ts`). They cover the product catalog,
+blog index, checkout/webhook/subscribe/cron API routes, and consistency between
+the blog index, the article files on disk, and the sitemap. Validation before
+committing = `npm test`, `npm run lint`, and `npm run build` (catches type +
+build errors). Always run the build after non-trivial changes because most
+pages are statically generated at build time. CI (`.github/workflows/ci.yml`)
+runs lint → test → build on every PR.
 
 ## Directory map (`shop/`)
 
@@ -141,8 +148,7 @@ listing and to build blog URLs in `sitemap.ts`.
 
 > **This index is maintained by hand and is _not_ derived from the article
 > files.** Each blog article is its own `app/blog/<slug>/page.tsx` with inline
-> `metadata` and content — there are more article routes on disk (~400) than
-> entries in `posts` (~356). When you **add a blog article**, you must:
+> `metadata` and content. When you **add a blog article**, you must:
 > 1. create `app/blog/<slug>/page.tsx` (copy an existing article for structure:
 >    `import Header`/`Footer`, export `metadata`, define content as local data
 >    arrays, render inside `<Header/> … <Footer/>`), **and**
@@ -150,6 +156,8 @@ listing and to build blog URLs in `sitemap.ts`.
 >    listing, **and**
 > 3. add its slug to the blog URL list in `app/sitemap.ts`.
 > Missing step 2 or 3 means the article exists but is unlinked/unindexed.
+> `lib/blog-consistency.test.ts` enforces that all three stay in sync — run
+> `npm test` after adding an article and it will name any slug you missed.
 
 ### `lib/lemonsqueezy.ts` — checkout helper
 `setupLemonSqueezy()` (configures the SDK with the API key) and
@@ -247,7 +255,7 @@ Copy `shop/.env.local.example` → `shop/.env.local` (never commit it —
 
 - Do not commit `.env.local` or anything matching `.env*` (except the
   `.example` files). `.claude/` is gitignored at the repo root.
-- Run `npm run build` and `npm run lint` (from `shop/`) before committing
-  substantive changes — the build is the primary correctness gate since there
-  are no tests.
+- Run `npm test`, `npm run lint`, and `npm run build` (from `shop/`) before
+  committing substantive changes — the build catches type errors in the many
+  statically generated pages; the tests cover `lib/` and the API routes.
 - Only open a pull request when explicitly asked.
