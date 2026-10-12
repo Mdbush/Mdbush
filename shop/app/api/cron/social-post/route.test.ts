@@ -27,6 +27,19 @@ describe("GET /api/cron/social-post", () => {
     expect((await GET(makeRequest("Bearer wrong"))).status).toBe(401);
   });
 
+  it("rejects crafted bearer values when the cron secret is missing or empty", async () => {
+    const fetchMock = vi.fn();
+    vi.stubGlobal("fetch", fetchMock);
+    vi.stubEnv("LINKEDIN_ACCESS_TOKEN", "configured-token");
+    for (const secret of [undefined, ""]) {
+      vi.stubEnv("CRON_SECRET", secret);
+      for (const auth of [undefined, "Bearer undefined", "Bearer ", "Bearer wrong"]) {
+        expect((await GET(makeRequest(auth))).status).toBe(401);
+      }
+    }
+    expect(fetchMock).not.toHaveBeenCalled();
+  });
+
   it("skips cleanly when no social tokens are configured", async () => {
     const res = await GET(makeRequest(`Bearer ${CRON_SECRET}`));
     expect(res.status).toBe(200);

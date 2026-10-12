@@ -14,6 +14,7 @@ function verifySignature(payload: string, signature: string, secret: string): bo
 }
 
 function getPurchaseEmailHtml(productName: string): string {
+  const safeProductName = productName.replace(/[&<>"']/g, (character) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" })[character]!);
   return `<!DOCTYPE html>
 <html>
 <head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"></head>
@@ -30,7 +31,7 @@ function getPurchaseEmailHtml(productName: string): string {
 <tr><td style="padding:40px;">
 <h1 style="margin:0 0 8px;font-size:24px;font-weight:700;color:#111827;">You're all set! 🎉</h1>
 <p style="margin:0 0 8px;color:#374151;font-size:15px;line-height:1.6;">
-  Thanks for buying <strong>${productName}</strong>. Check your inbox for the download link from Lemon Squeezy — it arrives within a few minutes.
+  Thanks for buying <strong>${safeProductName}</strong>. Check your inbox for the download link from Lemon Squeezy — it arrives within a few minutes.
 </p>
 <p style="margin:0 0 32px;color:#6b7280;font-size:14px;">Can't find it? Check your spam folder or search for "Lemon Squeezy".</p>
 
@@ -107,7 +108,10 @@ export async function POST(request: NextRequest) {
   try {
     event = JSON.parse(payload);
   } catch {
-    return NextResponse.json({ received: true });
+    return NextResponse.json({ error: "Invalid JSON" }, { status: 400 });
+  }
+  if (!event || typeof event !== "object" || Array.isArray(event)) {
+    return NextResponse.json({ error: "Invalid event" }, { status: 400 });
   }
   const eventName: string = (event.meta as Record<string, unknown>)?.event_name as string ?? "";
 
@@ -117,17 +121,16 @@ export async function POST(request: NextRequest) {
       const order = data?.attributes as Record<string, unknown>;
       const orderEmail = order?.user_email as string;
       const firstItem = (order?.first_order_item as Record<string, unknown>);
-      const productName = (firstItem?.product_name as string) ?? "SoloKit Product";
+      const productName = typeof firstItem?.product_name === "string" ? firstItem.product_name : "SoloKit Product";
 
       console.log("New order:", {
         id: data?.id,
-        email: orderEmail,
         status: order?.status,
         total: order?.total,
         product: productName,
       });
 
-      if (orderEmail) {
+      if (typeof orderEmail === "string" && orderEmail) {
         await handlePurchase(orderEmail, productName);
       }
       break;

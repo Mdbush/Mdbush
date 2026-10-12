@@ -8,7 +8,14 @@
  */
 export const SITE_URL: string = resolveSiteUrl();
 
-function resolveSiteUrl(): string {
-  const raw = process.env.NEXT_PUBLIC_SITE_URL;
-  return raw && raw.startsWith("http") ? raw : "https://solokit.cloud";
+export function resolveSiteUrl(raw = process.env.NEXT_PUBLIC_SITE_URL): string {
+  try {
+    const url = new URL(raw ?? "");
+    if (["http:", "https:"].includes(url.protocol) && !url.username && !url.password) {
+      return url.origin;
+    }
+  } catch {
+    // Missing, relative, or malformed values use the production origin.
+  }
+  return "https://solokit.cloud";
 }

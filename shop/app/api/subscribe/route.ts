@@ -69,6 +69,11 @@ ${[
 const rateLimitMap = new Map<string, { count: number; resetAt: number }>();
 function isRateLimited(ip: string): boolean {
   const now = Date.now();
+  // Bound memory by expiring old entries and refusing new keys at capacity.
+  for (const [key, value] of rateLimitMap) {
+    if (value.resetAt <= now) rateLimitMap.delete(key);
+  }
+  if (!rateLimitMap.has(ip) && rateLimitMap.size >= 10_000) return true;
   const entry = rateLimitMap.get(ip);
   if (!entry || entry.resetAt < now) {
     rateLimitMap.set(ip, { count: 1, resetAt: now + 60_000 });
@@ -87,9 +92,15 @@ export async function POST(request: Request) {
       return NextResponse.json({ error: "Too many requests" }, { status: 429 });
     }
 
-    const { email } = await request.json();
+    let body: unknown;
+    try {
+      body = await request.json();
+    } catch {
+      return NextResponse.json({ error: "Invalid JSON" }, { status: 400 });
+    }
+    const email = body && typeof body === "object" && "email" in body ? body.email : undefined;
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/;
-    if (!email || !emailRegex.test(email)) {
+    if (typeof email !== "string" || email.length > 254 || !emailRegex.test(email)) {
       return NextResponse.json({ error: "Invalid email" }, { status: 400 });
     }
 
@@ -97,7 +108,7 @@ export async function POST(request: Request) {
 
     if (!apiKey) {
       console.error("BREVO_API_KEY not configured");
-      return NextResponse.json({ ok: true });
+      return NextResponse.json({ error: "Subscription unavailable" }, { status: 503 });
     }
 
     // Add contact to list
@@ -131,6 +142,7 @@ export async function POST(request: Request) {
     if (!emailRes?.ok) {
       const errBody = await emailRes?.json().catch(() => ({}));
       console.error("Welcome email send failed:", errBody);
+      return NextResponse.json({ error: "Welcome email delivery failed" }, { status: 502 });
     }
 
     return NextResponse.json({ ok: true });

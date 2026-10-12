@@ -44,8 +44,8 @@ manually maintained assets.
 
 ## Tech stack
 
-- **Next.js 16.2.9** with the **App Router** (`app/` directory)
-- **React 19.2**
+- **Next.js 16.4.0** with the **App Router** (`app/` directory)
+- **React 19.2.8**
 - **TypeScript 5**, `strict: true`, path alias `@/*` → `shop/*`
 - **Tailwind CSS v4** via `@tailwindcss/postcss` (config is CSS-first in
   `app/globals.css` using `@import "tailwindcss"` and `@theme` — there is **no**
@@ -76,8 +76,9 @@ npm start          # serve the production build
 npm run lint       # ESLint (eslint-config-next, core-web-vitals + typescript)
 ```
 
-There is **no test suite** and no test runner configured. Validation before
-committing = `npm run build` (catches type + build errors) and `npm run lint`.
+A **Vitest 5** suite covers the library and API handlers. Use **Node.js 24**
+(the package engines and CI target this runtime). Validation before committing
+= `npm test`, `npm run build` (catches type + build errors), and `npm run lint`.
 Always run the build after non-trivial changes because most pages are statically
 generated at build time.
 
@@ -180,8 +181,8 @@ and rewrite files under `app/blog/`. Run with `node scripts/<name>.mjs` from
    **list 3** and sends a purchase-confirmation email.
 3. **`/api/subscribe`** powers the free-prompts opt-in: validates the email,
    in-memory rate-limits (5/min/IP), adds the contact to Brevo **list 2**, and
-   emails 10 sample prompts. Missing `BREVO_API_KEY` degrades gracefully
-   (returns ok, logs, sends nothing).
+   emails 10 sample prompts. Missing `BREVO_API_KEY` returns 503; failed welcome delivery returns 502
+   so the form does not report a subscription that was never delivered.
 
 ## Cron / social automation
 
@@ -247,7 +248,7 @@ Copy `shop/.env.local.example` → `shop/.env.local` (never commit it —
 
 - Do not commit `.env.local` or anything matching `.env*` (except the
   `.example` files). `.claude/` is gitignored at the repo root.
-- Run `npm run build` and `npm run lint` (from `shop/`) before committing
+- Run `npm test`, `npm run build` and `npm run lint` (from `shop/`) before committing
   substantive changes — the build is the primary correctness gate since there
   are no tests.
 - Only open a pull request when explicitly asked.

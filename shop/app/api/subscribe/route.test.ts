@@ -30,23 +30,37 @@ describe("POST /api/subscribe", () => {
     }
   });
 
+  it("rejects non-string email values and null bodies", async () => {
+    for (const body of [null, { email: ["user@example.com"] }, { email: 123 }, { email: {} }]) {
+      expect((await POST(makeRequest(body))).status).toBe(400);
+    }
+  });
+
+  it("returns 502 when the welcome email fails", async () => {
+    vi.stubEnv("BREVO_API_KEY", "brevo-key");
+    vi.stubGlobal("fetch", vi.fn()
+      .mockResolvedValueOnce({ ok: true })
+      .mockResolvedValueOnce({ ok: false, json: async () => ({}) }));
+    expect((await POST(makeRequest({ email: "user@example.com" }))).status).toBe(502);
+  });
+
   it("rejects a body with no email field", async () => {
     const res = await POST(makeRequest({}));
     expect(res.status).toBe(400);
   });
 
-  it("returns 500 on malformed JSON", async () => {
+  it("returns 400 on malformed JSON", async () => {
     const res = await POST(makeRequest("{not json"));
-    expect(res.status).toBe(500);
-    expect(await res.json()).toEqual({ error: "Server error" });
+    expect(res.status).toBe(400);
+    expect(await res.json()).toEqual({ error: "Invalid JSON" });
   });
 
-  it("accepts a valid email and no-ops when BREVO_API_KEY is unset", async () => {
+  it("returns 503 instead of false success when BREVO_API_KEY is unset", async () => {
     const fetchMock = vi.fn();
     vi.stubGlobal("fetch", fetchMock);
     const res = await POST(makeRequest({ email: "user@example.com" }));
-    expect(res.status).toBe(200);
-    expect(await res.json()).toEqual({ ok: true });
+    expect(res.status).toBe(503);
+    expect(await res.json()).toEqual({ error: "Subscription unavailable" });
     expect(fetchMock).not.toHaveBeenCalled();
   });
 
@@ -57,8 +71,8 @@ describe("POST /api/subscribe", () => {
       const res = await POST(makeRequest({ email: "user@example.com" }, ip));
       statuses.push(res.status);
     }
-    // First 5 pass validation (200), the 6th is throttled (429).
-    expect(statuses.slice(0, 5)).toEqual([200, 200, 200, 200, 200]);
+    // First 5 reach configuration checks (503), the 6th is throttled.
+    expect(statuses.slice(0, 5)).toEqual([503, 503, 503, 503, 503]);
     expect(statuses[5]).toBe(429);
   });
 

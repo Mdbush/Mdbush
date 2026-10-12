@@ -1,12 +1,18 @@
 import { NextRequest, NextResponse } from "next/server";
 import { getProduct } from "@/lib/products";
 import { createProductCheckout } from "@/lib/lemonsqueezy";
+import { SITE_URL } from "@/lib/site";
 
 export async function POST(request: NextRequest) {
-  const formData = await request.formData();
-  const productSlug = formData.get("productSlug") as string;
+  let formData: FormData;
+  try {
+    formData = await request.formData();
+  } catch {
+    return NextResponse.json({ error: "Invalid form data" }, { status: 400 });
+  }
+  const productSlug = formData.get("productSlug");
 
-  if (!productSlug) {
+  if (typeof productSlug !== "string" || !productSlug) {
     return NextResponse.json({ error: "Missing productSlug" }, { status: 400 });
   }
 
@@ -22,8 +28,7 @@ export async function POST(request: NextRequest) {
     );
   }
 
-  const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? "http://localhost:3000";
-  const successUrl = `${siteUrl}/success?product=${encodeURIComponent(productSlug)}`;
+  const successUrl = `${SITE_URL}/success?product=${encodeURIComponent(productSlug)}`;
 
   let checkout;
   try {

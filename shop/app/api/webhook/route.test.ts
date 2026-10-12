@@ -63,11 +63,30 @@ describe("POST /api/webhook", () => {
     expect(await res.json()).toEqual({ received: true });
   });
 
-  it("acknowledges even when the body is not valid JSON", async () => {
+  it("rejects signed invalid JSON", async () => {
     const payload = "not-json";
     const res = await POST(makeRequest(payload, sign(payload)));
-    expect(res.status).toBe(200);
-    expect(await res.json()).toEqual({ received: true });
+    expect(res.status).toBe(400);
+    expect(await res.json()).toEqual({ error: "Invalid JSON" });
+  });
+
+  it("rejects signed null and array event bodies", async () => {
+    for (const payload of ["null", "[]"]) {
+      expect((await POST(makeRequest(payload, sign(payload)))).status).toBe(400);
+    }
+  });
+
+  it("escapes untrusted product names in purchase email HTML", async () => {
+    vi.stubEnv("BREVO_API_KEY", "brevo-key");
+    const fetchMock = vi.fn().mockResolvedValue({ ok: true });
+    vi.stubGlobal("fetch", fetchMock);
+    const payload = JSON.stringify({ meta: { event_name: "order_created" }, data: {
+      attributes: { user_email: "buyer@example.com", first_order_item: { product_name: '<img src="x">&' } },
+    } });
+    expect((await POST(makeRequest(payload, sign(payload)))).status).toBe(200);
+    const html = JSON.parse(fetchMock.mock.calls[1][1].body).htmlContent;
+    expect(html).toContain("&lt;img src=&quot;x&quot;&gt;&amp;");
+    expect(html).not.toContain('<img src="x">');
   });
 
   it("does not call Brevo on order_created when BREVO_API_KEY is unset", async () => {
