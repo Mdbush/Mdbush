@@ -32,6 +32,9 @@ permissions:
 
 jobs:
   run-agent:
+    # Prevent unapproved recurring API spend and automated content creation.
+    # Explicit repository variable opt-in required even for manual dispatch.
+    if: ${{ vars.ENABLE_SOLOKIT_GROWTH_ENGINE == 'true' }}
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
